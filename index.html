@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Vision Stock Signal Analyzer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            color: #8892b0;
+            font-size: 1.1rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.2);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #00d4ff;
+        }
+        .feature-card p {
+            color: #8892b0;
+            line-height: 1.6;
+        }
+        .workflow {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 50px;
+        }
+        .workflow h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #00d4ff;
+        }
+        .workflow-steps {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            padding: 20px;
+        }
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .step h4 {
+            margin-bottom: 10px;
+        }
+        .step p {
+            color: #8892b0;
+            font-size: 0.9rem;
+        }
+        .tech-stack {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .tech-stack h2 {
+            margin-bottom: 20px;
+            color: #00d4ff;
+        }
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .cta {
+            text-align: center;
+            padding: 40px;
+        }
+        .cta a {
+            display: inline-block;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #8892b0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Vision Stock Signal Analyzer</h1>
+            <p class="subtitle">Gemini 2.5 Flash Vision API를 활용한 국내 주식 자동 분석 시스템</p>
+        </header>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>실시간 데이터 수집</h3>
+                <p>네이버 증권에서 거래량 상위 100개 종목(코스피 50 + 코스닥 50)의 실시간 데이터를 자동으로 수집합니다.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📸</div>
+                <h3>스크린샷 캡처</h3>
+                <p>Playwright를 활용한 헤드리스 브라우저로 각 종목의 상세 페이지를 고해상도로 캡처합니다.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI 비전 분석</h3>
+                <p>Gemini 2.5 Flash Vision API가 차트 패턴, 이동평균선, 거래량 등을 분석하여 투자 시그널을 도출합니다.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>시그널 리포트</h3>
+                <p>적극매수, 매수, 중립, 매도, 적극매도 5단계 시그널과 상세 분석 근거를 제공합니다.</p>
+            </div>
+        </div>
+
+        <div class="workflow">
+            <h2>분석 워크플로우</h2>
+            <div class="workflow-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>종목 수집</h4>
+                    <p>API로 거래량 상위 100개 종목 리스트 획득</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>스크린샷</h4>
+                    <p>각 종목 상세 페이지 풀스크린 캡처</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>AI 분석</h4>
+                    <p>Gemini Vision으로 차트 및 지표 분석</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>리포트</h4>
+                    <p>JSON/Markdown 형식으로 결과 저장</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-stack">
+            <h2>기술 스택</h2>
+            <div class="tech-badges">
+                <span class="badge">Python 3.10+</span>
+                <span class="badge">Playwright</span>
+                <span class="badge">Gemini 2.5 Flash</span>
+                <span class="badge">GitHub Actions</span>
+                <span class="badge">Asyncio</span>
+            </div>
+        </div>
+
+        <div class="cta">
+            <a href="https://github.com/xxonbang/top50_analyzer">GitHub에서 보기</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>AI Vision Stock Signal Analyzer (AVSSA) | Powered by Gemini 2.5 Flash</p>
+    </footer>
+</body>
+</html>
