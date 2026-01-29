@@ -14,6 +14,26 @@ from datetime import datetime, timedelta
 from modules.kis_client import KISClient
 
 
+def safe_int(value, default: int = 0) -> int:
+    """빈 문자열이나 None을 안전하게 정수로 변환"""
+    if value is None or value == "":
+        return default
+    try:
+        return int(value)
+    except (ValueError, TypeError):
+        return default
+
+
+def safe_float(value, default: float = 0.0) -> float:
+    """빈 문자열이나 None을 안전하게 실수로 변환"""
+    if value is None or value == "":
+        return default
+    try:
+        return float(value)
+    except (ValueError, TypeError):
+        return default
+
+
 class KISStockDetailAPI:
     """종목 상세 데이터 API"""
 
@@ -48,26 +68,26 @@ class KISStockDetailAPI:
         return {
             "stock_code": stock_code,
             "stock_name": output.get("rprs_mrkt_kor_name", ""),        # 종목명
-            "current_price": int(output.get("stck_prpr", 0)),         # 현재가
-            "change_price": int(output.get("prdy_vrss", 0)),          # 전일대비
-            "change_rate": float(output.get("prdy_ctrt", 0)),         # 등락률
+            "current_price": safe_int(output.get("stck_prpr", 0)),         # 현재가
+            "change_price": safe_int(output.get("prdy_vrss", 0)),          # 전일대비
+            "change_rate": safe_float(output.get("prdy_ctrt", 0)),         # 등락률
             "change_sign": output.get("prdy_vrss_sign", ""),          # 부호 (1:상승, 2:하락, 3:보합)
-            "open_price": int(output.get("stck_oprc", 0)),            # 시가
-            "high_price": int(output.get("stck_hgpr", 0)),            # 고가
-            "low_price": int(output.get("stck_lwpr", 0)),             # 저가
-            "prev_close": int(output.get("stck_sdpr", 0)),            # 전일종가
-            "volume": int(output.get("acml_vol", 0)),                 # 누적거래량
-            "trading_value": int(output.get("acml_tr_pbmn", 0)),      # 누적거래대금
-            "high_52week": int(output.get("stck_mxpr", 0)),           # 52주 최고가
-            "low_52week": int(output.get("stck_llam", 0)),            # 52주 최저가
-            "per": float(output.get("per", 0) or 0),                  # PER
-            "pbr": float(output.get("pbr", 0) or 0),                  # PBR
-            "eps": float(output.get("eps", 0) or 0),                  # EPS
-            "bps": float(output.get("bps", 0) or 0),                  # BPS
-            "market_cap": int(output.get("hts_avls", 0)),             # 시가총액 (억원)
-            "shares_outstanding": int(output.get("lstn_stcn", 0)),    # 상장주수
-            "foreign_ratio": float(output.get("hts_frgn_ehrt", 0)),   # 외국인소진율
-            "volume_turnover": float(output.get("vol_tnrt", 0)),      # 거래량회전율
+            "open_price": safe_int(output.get("stck_oprc", 0)),            # 시가
+            "high_price": safe_int(output.get("stck_hgpr", 0)),            # 고가
+            "low_price": safe_int(output.get("stck_lwpr", 0)),             # 저가
+            "prev_close": safe_int(output.get("stck_sdpr", 0)),            # 전일종가
+            "volume": safe_int(output.get("acml_vol", 0)),                 # 누적거래량
+            "trading_value": safe_int(output.get("acml_tr_pbmn", 0)),      # 누적거래대금
+            "high_52week": safe_int(output.get("stck_mxpr", 0)),           # 52주 최고가
+            "low_52week": safe_int(output.get("stck_llam", 0)),            # 52주 최저가
+            "per": safe_float(output.get("per", 0) or 0),                  # PER
+            "pbr": safe_float(output.get("pbr", 0) or 0),                  # PBR
+            "eps": safe_float(output.get("eps", 0) or 0),                  # EPS
+            "bps": safe_float(output.get("bps", 0) or 0),                  # BPS
+            "market_cap": safe_int(output.get("hts_avls", 0)),             # 시가총액 (억원)
+            "shares_outstanding": safe_int(output.get("lstn_stcn", 0)),    # 상장주수
+            "foreign_ratio": safe_float(output.get("hts_frgn_ehrt", 0)),   # 외국인소진율
+            "volume_turnover": safe_float(output.get("vol_tnrt", 0)),      # 거래량회전율
         }
 
     def get_asking_price(self, stock_code: str) -> Dict[str, Any]:
@@ -98,23 +118,23 @@ class KISStockDetailAPI:
 
         for i in range(1, 11):
             ask_prices.append({
-                "price": int(output.get(f"askp{i}", 0)),
-                "volume": int(output.get(f"askp_rsqn{i}", 0)),
+                "price": safe_int(output.get(f"askp{i}", 0)),
+                "volume": safe_int(output.get(f"askp_rsqn{i}", 0)),
             })
             bid_prices.append({
-                "price": int(output.get(f"bidp{i}", 0)),
-                "volume": int(output.get(f"bidp_rsqn{i}", 0)),
+                "price": safe_int(output.get(f"bidp{i}", 0)),
+                "volume": safe_int(output.get(f"bidp_rsqn{i}", 0)),
             })
 
         return {
             "stock_code": stock_code,
             "ask_prices": ask_prices,                                    # 매도호가
             "bid_prices": bid_prices,                                    # 매수호가
-            "total_ask_volume": int(output.get("total_askp_rsqn", 0)),  # 총매도잔량
-            "total_bid_volume": int(output.get("total_bidp_rsqn", 0)),  # 총매수잔량
-            "expected_price": int(output2.get("antc_cnpr", 0)),         # 예상체결가
-            "expected_volume": int(output2.get("antc_vol", 0)),         # 예상체결량
-            "expected_change_rate": float(output2.get("antc_cntg_prdy_ctrt", 0)),  # 예상등락률
+            "total_ask_volume": safe_int(output.get("total_askp_rsqn", 0)),  # 총매도잔량
+            "total_bid_volume": safe_int(output.get("total_bidp_rsqn", 0)),  # 총매수잔량
+            "expected_price": safe_int(output2.get("antc_cnpr", 0)),         # 예상체결가
+            "expected_volume": safe_int(output2.get("antc_vol", 0)),         # 예상체결량
+            "expected_change_rate": safe_float(output2.get("antc_cntg_prdy_ctrt", 0)),  # 예상등락률
         }
 
     def get_investor_trend(self, stock_code: str) -> Dict[str, Any]:
@@ -143,11 +163,11 @@ class KISStockDetailAPI:
         for item in output[:30]:  # 최근 30일
             daily_data.append({
                 "date": item.get("stck_bsop_date", ""),              # 영업일자
-                "close_price": int(item.get("stck_clpr", 0)),        # 종가
-                "change_rate": float(item.get("prdy_ctrt", 0)),      # 등락률
-                "foreign_net": int(item.get("frgn_ntby_qty", 0)),    # 외국인순매수
-                "organ_net": int(item.get("orgn_ntby_qty", 0)),      # 기관순매수
-                "individual_net": int(item.get("prsn_ntby_qty", 0)), # 개인순매수
+                "close_price": safe_int(item.get("stck_clpr", 0)),        # 종가
+                "change_rate": safe_float(item.get("prdy_ctrt", 0)),      # 등락률
+                "foreign_net": safe_int(item.get("frgn_ntby_qty", 0)),    # 외국인순매수
+                "organ_net": safe_int(item.get("orgn_ntby_qty", 0)),      # 기관순매수
+                "individual_net": safe_int(item.get("prsn_ntby_qty", 0)), # 개인순매수
             })
 
         return {
@@ -183,8 +203,8 @@ class KISStockDetailAPI:
             if name:
                 sell_members.append({
                     "member_name": name,
-                    "volume": int(output.get(f"total_seln_qty{i}", 0) or 0),
-                    "ratio": float(output.get(f"seln_mbcr_rlim{i}", 0) or 0),
+                    "volume": safe_int(output.get(f"total_seln_qty{i}", 0) or 0),
+                    "ratio": safe_float(output.get(f"seln_mbcr_rlim{i}", 0) or 0),
                 })
 
         # 매수 상위 5개 증권사
@@ -194,17 +214,17 @@ class KISStockDetailAPI:
             if name:
                 buy_members.append({
                     "member_name": name,
-                    "volume": int(output.get(f"total_shnu_qty{i}", 0) or 0),
-                    "ratio": float(output.get(f"shnu_mbcr_rlim{i}", 0) or 0),
+                    "volume": safe_int(output.get(f"total_shnu_qty{i}", 0) or 0),
+                    "ratio": safe_float(output.get(f"shnu_mbcr_rlim{i}", 0) or 0),
                 })
 
         return {
             "stock_code": stock_code,
             "sell_members": sell_members,
             "buy_members": buy_members,
-            "global_sell_total": int(output.get("glob_total_seln_qty", 0) or 0),
-            "global_buy_total": int(output.get("glob_total_shnu_qty", 0) or 0),
-            "global_net": int(output.get("glob_ntby_qty", 0) or 0),
+            "global_sell_total": safe_int(output.get("glob_total_seln_qty", 0) or 0),
+            "global_buy_total": safe_int(output.get("glob_total_shnu_qty", 0) or 0),
+            "global_net": safe_int(output.get("glob_ntby_qty", 0) or 0),
         }
 
     def get_daily_chart(
@@ -251,13 +271,13 @@ class KISStockDetailAPI:
         for item in output2:
             ohlcv.append({
                 "date": item.get("stck_bsop_date", ""),
-                "open": int(item.get("stck_oprc", 0)),
-                "high": int(item.get("stck_hgpr", 0)),
-                "low": int(item.get("stck_lwpr", 0)),
-                "close": int(item.get("stck_clpr", 0)),
-                "volume": int(item.get("acml_vol", 0)),
-                "trading_value": int(item.get("acml_tr_pbmn", 0)),
-                "change_rate": float(item.get("prdy_ctrt", 0)),
+                "open": safe_int(item.get("stck_oprc", 0)),
+                "high": safe_int(item.get("stck_hgpr", 0)),
+                "low": safe_int(item.get("stck_lwpr", 0)),
+                "close": safe_int(item.get("stck_clpr", 0)),
+                "volume": safe_int(item.get("acml_vol", 0)),
+                "trading_value": safe_int(item.get("acml_tr_pbmn", 0)),
+                "change_rate": safe_float(item.get("prdy_ctrt", 0)),
             })
 
         return {
@@ -293,11 +313,11 @@ class KISStockDetailAPI:
         for item in output[:100]:  # 최근 100건
             ticks.append({
                 "time": item.get("stck_cntg_hour", ""),          # 체결시간 (HHMMSS)
-                "price": int(item.get("stck_prpr", 0)),          # 체결가
-                "change_price": int(item.get("prdy_vrss", 0)),   # 전일대비
+                "price": safe_int(item.get("stck_prpr", 0)),          # 체결가
+                "change_price": safe_int(item.get("prdy_vrss", 0)),   # 전일대비
                 "change_sign": item.get("prdy_vrss_sign", ""),   # 부호
-                "volume": int(item.get("cntg_vol", 0)),          # 체결량
-                "cumulative_volume": int(item.get("acml_vol", 0)),  # 누적거래량
+                "volume": safe_int(item.get("cntg_vol", 0)),          # 체결량
+                "cumulative_volume": safe_int(item.get("acml_vol", 0)),  # 누적거래량
             })
 
         return {
@@ -332,13 +352,13 @@ class KISStockDetailAPI:
         for item in output[:5]:  # 최근 5년
             yearly_data.append({
                 "year": item.get("stac_yymm", ""),                    # 결산년월
-                "sales": int(item.get("sale_account", 0) or 0),       # 매출액
-                "operating_profit": int(item.get("bsop_prti", 0) or 0),  # 영업이익
-                "net_income": int(item.get("thtr_ntin", 0) or 0),     # 당기순이익
-                "roe": float(item.get("roe_val", 0) or 0),            # ROE
-                "eps": float(item.get("eps", 0) or 0),                # EPS
-                "bps": float(item.get("bps", 0) or 0),                # BPS
-                "debt_ratio": float(item.get("lblt_rate", 0) or 0),   # 부채비율
+                "sales": safe_int(item.get("sale_account", 0) or 0),       # 매출액
+                "operating_profit": safe_int(item.get("bsop_prti", 0) or 0),  # 영업이익
+                "net_income": safe_int(item.get("thtr_ntin", 0) or 0),     # 당기순이익
+                "roe": safe_float(item.get("roe_val", 0) or 0),            # ROE
+                "eps": safe_float(item.get("eps", 0) or 0),                # EPS
+                "bps": safe_float(item.get("bps", 0) or 0),                # BPS
+                "debt_ratio": safe_float(item.get("lblt_rate", 0) or 0),   # 부채비율
             })
 
         return {
@@ -394,13 +414,13 @@ class KISStockDetailAPI:
         for item in output[:days]:
             daily_prices.append({
                 "date": item.get("stck_bsop_date", ""),
-                "close": int(item.get("stck_clpr", 0)),
-                "open": int(item.get("stck_oprc", 0)),
-                "high": int(item.get("stck_hgpr", 0)),
-                "low": int(item.get("stck_lwpr", 0)),
-                "volume": int(item.get("acml_vol", 0)),
-                "trading_value": int(item.get("acml_tr_pbmn", 0)),
-                "change_rate": float(item.get("prdy_ctrt", 0)),
+                "close": safe_int(item.get("stck_clpr", 0)),
+                "open": safe_int(item.get("stck_oprc", 0)),
+                "high": safe_int(item.get("stck_hgpr", 0)),
+                "low": safe_int(item.get("stck_lwpr", 0)),
+                "volume": safe_int(item.get("acml_vol", 0)),
+                "trading_value": safe_int(item.get("acml_tr_pbmn", 0)),
+                "change_rate": safe_float(item.get("prdy_ctrt", 0)),
             })
 
         return {
@@ -434,9 +454,9 @@ class KISStockDetailAPI:
             for item in output[:20]:
                 program_data.append({
                     "time": item.get("bsop_hour", ""),
-                    "buy_volume": int(item.get("pgmg_buy_qty", 0) or 0),
-                    "sell_volume": int(item.get("pgmg_sell_qty", 0) or 0),
-                    "net_volume": int(item.get("pgmg_ntby_qty", 0) or 0),
+                    "buy_volume": safe_int(item.get("pgmg_buy_qty", 0) or 0),
+                    "sell_volume": safe_int(item.get("pgmg_sell_qty", 0) or 0),
+                    "net_volume": safe_int(item.get("pgmg_ntby_qty", 0) or 0),
                 })
 
             return {
@@ -472,8 +492,8 @@ class KISStockDetailAPI:
             for item in output[:30]:
                 credit_data.append({
                     "date": item.get("stck_bsop_date", ""),
-                    "credit_balance": int(item.get("crdt_ldng_rmnd", 0) or 0),  # 신용융자잔고
-                    "credit_ratio": float(item.get("crdt_rate", 0) or 0),        # 신용비율
+                    "credit_balance": safe_int(item.get("crdt_ldng_rmnd", 0) or 0),  # 신용융자잔고
+                    "credit_ratio": safe_float(item.get("crdt_rate", 0) or 0),        # 신용비율
                 })
 
             return {

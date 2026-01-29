@@ -27,7 +27,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from modules.kis_client import KISClient, TokenRefreshLimitError
 from modules.kis_rank import KISRankAPI
-from modules.kis_stock_detail import KISStockDetailAPI
+from modules.kis_stock_detail import KISStockDetailAPI, safe_int
 from modules.kis_collector import KISDataCollector, print_summary
 from config.settings import KIS_OUTPUT_DIR
 
@@ -82,7 +82,7 @@ def test_connection():
         result = client.get_stock_price("005930")
         if result.get("rt_cd") == "0":
             output = result.get("output", {})
-            print(f"  현재가: {int(output.get('stck_prpr', 0)):,}원")
+            print(f"  현재가: {safe_int(output.get('stck_prpr', 0)):,}원")
             print(f"  등락률: {output.get('prdy_ctrt', 'N/A')}%")
             print("\n[결과] API 연결 정상")
         else:

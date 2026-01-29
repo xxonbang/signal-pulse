@@ -9,6 +9,26 @@ from datetime import datetime
 from modules.kis_client import KISClient
 
 
+def safe_int(value, default: int = 0) -> int:
+    """빈 문자열이나 None을 안전하게 정수로 변환"""
+    if value is None or value == "":
+        return default
+    try:
+        return int(value)
+    except (ValueError, TypeError):
+        return default
+
+
+def safe_float(value, default: float = 0.0) -> float:
+    """빈 문자열이나 None을 안전하게 실수로 변환"""
+    if value is None or value == "":
+        return default
+    try:
+        return float(value)
+    except (ValueError, TypeError):
+        return default
+
+
 class KISRankAPI:
     """순위분석 API"""
 
@@ -158,7 +178,7 @@ class KISRankAPI:
                     all_stocks.append(stock)
 
         # 거래량 기준 정렬
-        all_stocks.sort(key=lambda x: int(x.get("acml_vol", 0)), reverse=True)
+        all_stocks.sort(key=lambda x: safe_int(x.get("acml_vol", 0)), reverse=True)
 
         return all_stocks
 
@@ -213,12 +233,12 @@ class KISRankAPI:
                 "rank": len(parsed) + 1,
                 "code": code,
                 "name": name,
-                "current_price": int(stock.get("stck_prpr", 0)),
-                "change_rate": float(stock.get("prdy_ctrt", 0)),
-                "change_price": int(stock.get("prdy_vrss", 0)),
-                "volume": int(stock.get("acml_vol", 0)),
-                "volume_rate": float(stock.get("vol_inrt", 0)),
-                "trading_value": int(stock.get("acml_tr_pbmn", 0)),
+                "current_price": safe_int(stock.get("stck_prpr", 0)),
+                "change_rate": safe_float(stock.get("prdy_ctrt", 0)),
+                "change_price": safe_int(stock.get("prdy_vrss", 0)),
+                "volume": safe_int(stock.get("acml_vol", 0)),
+                "volume_rate": safe_float(stock.get("vol_inrt", 0)),
+                "trading_value": safe_int(stock.get("acml_tr_pbmn", 0)),
                 "market": stock_market,
                 "is_etf": is_etf,
             })
