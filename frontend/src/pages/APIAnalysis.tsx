@@ -344,9 +344,9 @@ export function APIAnalysis() {
     return (
       <section id="api-analysis" className="mb-10">
         <EmptyState
-          icon="⚠️"
-          title="데이터를 불러올 수 없습니다"
-          description="KIS API 데이터 파일이 없거나 로드에 실패했습니다. 먼저 데이터를 수집해주세요."
+          icon="📡"
+          title="KIS API 데이터가 아직 없습니다"
+          description="한국투자증권 API 연동이 설정되지 않았거나, 아직 데이터가 수집되지 않았습니다. GitHub Secrets에 KIS_APP_KEY, KIS_APP_SECRET을 설정한 후 워크플로우를 실행해주세요."
         />
       </section>
     );

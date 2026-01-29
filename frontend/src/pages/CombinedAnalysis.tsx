@@ -379,7 +379,7 @@ export function CombinedAnalysis() {
         <EmptyState
           icon="📊"
           title="분석 데이터가 없습니다"
-          description="Vision AI 분석 또는 한투 API 데이터가 필요합니다."
+          description="Vision AI 분석 또는 한투 API 데이터가 수집되면 여기에 비교 결과가 표시됩니다."
         />
       </section>
     );
@@ -394,6 +394,14 @@ export function CombinedAnalysis() {
           <p className="text-sm text-text-muted">Vision AI와 한투 API 분석 결과 비교 검증</p>
         </div>
       </div>
+
+      {/* KIS 데이터 없음 안내 */}
+      {hasVisionData && !hasKISData && (
+        <div className="flex items-center gap-2 px-4 py-3 bg-amber-50 border border-amber-200 rounded-lg mb-5 text-sm text-amber-800">
+          <span>📡</span>
+          <span>한투 API 데이터가 아직 수집되지 않았습니다. 현재는 Vision AI 분석 결과만 표시됩니다.</span>
+        </div>
+      )}
 
       {/* 통계 요약 */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">

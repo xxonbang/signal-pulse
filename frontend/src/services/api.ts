@@ -26,19 +26,33 @@ export async function fetchHistoryIndex(): Promise<HistoryIndex> {
   return response.json();
 }
 
-// KIS API 데이터 fetch 함수들
-export async function fetchKISData(): Promise<KISGeminiData> {
-  const response = await fetch(`${BASE_URL}/results/kis/latest.json`);
-  if (!response.ok) {
-    throw new Error('Failed to fetch KIS data');
+// KIS API 데이터 fetch 함수들 (404 시 null 반환)
+export async function fetchKISData(): Promise<KISGeminiData | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/kis/latest.json`);
+    if (!response.ok) {
+      if (response.status === 404) {
+        return null; // 파일이 없으면 null 반환 (에러 아님)
+      }
+      throw new Error('Failed to fetch KIS data');
+    }
+    return response.json();
+  } catch {
+    return null;
   }
-  return response.json();
 }
 
-export async function fetchKISAnalysis(): Promise<KISAnalysisData> {
-  const response = await fetch(`${BASE_URL}/results/kis/analysis.json`);
-  if (!response.ok) {
-    throw new Error('Failed to fetch KIS analysis');
+export async function fetchKISAnalysis(): Promise<KISAnalysisData | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/kis/analysis.json`);
+    if (!response.ok) {
+      if (response.status === 404) {
+        return null; // 파일이 없으면 null 반환 (에러 아님)
+      }
+      throw new Error('Failed to fetch KIS analysis');
+    }
+    return response.json();
+  } catch {
+    return null;
   }
-  return response.json();
 }
