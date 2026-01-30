@@ -29,7 +29,8 @@ export async function fetchHistoryIndex(): Promise<HistoryIndex> {
 // KIS API 데이터 fetch 함수들 (404 시 null 반환)
 export async function fetchKISData(): Promise<KISGeminiData | null> {
   try {
-    const response = await fetch(`${BASE_URL}/results/kis/latest.json`);
+    // top50_gemini.json은 Gemini 분석용으로 변환된 데이터 (stocks 키 포함)
+    const response = await fetch(`${BASE_URL}/results/kis/top50_gemini.json`);
     if (!response.ok) {
       if (response.status === 404) {
         return null; // 파일이 없으면 null 반환 (에러 아님)
