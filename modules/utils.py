@@ -71,8 +71,6 @@ def parse_json_response(text: str, debug: bool = False) -> dict | None:
 
     if debug:
         print(f"[PARSE DEBUG] 원본 응답 길이: {len(text)}자")
-        print(f"[PARSE DEBUG] 응답 시작 100자: {text[:100]!r}")
-        print(f"[PARSE DEBUG] 응답 끝 100자: {text[-100:]!r}")
 
     # 시도할 JSON 문자열 후보들
     candidates = []
@@ -86,17 +84,20 @@ def parse_json_response(text: str, debug: bool = False) -> dict | None:
         if debug:
             print(f"[PARSE DEBUG] 마크다운 코드블록 발견: {len(json_match.group(1))}자")
 
-    # 2. 중괄호로 시작하고 끝나는 JSON 객체 추출
-    brace_match = re.search(r'(\{[\s\S]*\})', text)
-    if brace_match:
-        candidates.append(brace_match.group(1).strip())
-        candidate_sources.append("brace_extraction")
-        if debug:
-            print(f"[PARSE DEBUG] 중괄호 JSON 추출: {len(brace_match.group(1))}자")
+    # 2. 균형 잡힌 중괄호로 JSON 객체 추출 (첫 번째 { 부터 매칭되는 } 까지)
+    first_brace = text.find('{')
+    if first_brace != -1:
+        json_str = _extract_balanced_json(text[first_brace:])
+        if json_str:
+            candidates.append(json_str)
+            candidate_sources.append("balanced_brace")
+            if debug:
+                print(f"[PARSE DEBUG] 균형 중괄호 JSON 추출: {len(json_str)}자")
 
-    # 3. 원본 텍스트 그대로
-    candidates.append(text.strip())
-    candidate_sources.append("raw_text")
+    # 3. 원본 텍스트 그대로 (짧은 경우만)
+    if len(text) < 50000:
+        candidates.append(text.strip())
+        candidate_sources.append("raw_text")
 
     if debug:
         print(f"[PARSE DEBUG] 파싱 후보 수: {len(candidates)}개")
@@ -110,37 +111,59 @@ def parse_json_response(text: str, debug: bool = False) -> dict | None:
         try:
             result = json.loads(json_str)
             if debug:
-                print(f"[PARSE DEBUG] 성공 (후보 {idx+1}/{len(candidates)}, {source}, 직접 파싱)")
+                print(f"[PARSE DEBUG] 성공 (후보 {idx+1}/{len(candidates)}, {source})")
             return result
         except json.JSONDecodeError as e:
             if debug:
-                print(f"[PARSE DEBUG] 실패 (후보 {idx+1}, {source}, 직접): {str(e)[:50]}")
+                print(f"[PARSE DEBUG] 실패 (후보 {idx+1}, {source}): line {e.lineno} col {e.colno}")
 
         # 두 번째 시도: 특수문자 제거 후 파싱
         try:
             cleaned = re.sub(r'[\x00-\x1F\x7F]', '', json_str)
             result = json.loads(cleaned)
             if debug:
-                print(f"[PARSE DEBUG] 성공 (후보 {idx+1}/{len(candidates)}, {source}, 특수문자 제거)")
+                print(f"[PARSE DEBUG] 성공 (후보 {idx+1}/{len(candidates)}, {source}, 클린업)")
             return result
-        except json.JSONDecodeError as e:
-            if debug:
-                print(f"[PARSE DEBUG] 실패 (후보 {idx+1}, {source}, 특수문자 제거): {str(e)[:50]}")
-
-        # 세 번째 시도: 줄바꿈 정리 후 파싱
-        try:
-            cleaned = re.sub(r'\n\s*', ' ', json_str)
-            cleaned = re.sub(r'[\x00-\x1F\x7F]', '', cleaned)
-            result = json.loads(cleaned)
-            if debug:
-                print(f"[PARSE DEBUG] 성공 (후보 {idx+1}/{len(candidates)}, {source}, 줄바꿈 정리)")
-            return result
-        except json.JSONDecodeError as e:
-            if debug:
-                print(f"[PARSE DEBUG] 실패 (후보 {idx+1}, {source}, 줄바꿈 정리): {str(e)[:50]}")
+        except json.JSONDecodeError:
+            pass
 
     if debug:
         print(f"[PARSE DEBUG] 모든 파싱 시도 실패")
+    return None
+
+
+def _extract_balanced_json(text: str) -> str | None:
+    """균형 잡힌 중괄호로 JSON 추출 (첫 번째 완전한 JSON 객체)"""
+    if not text or text[0] != '{':
+        return None
+
+    depth = 0
+    in_string = False
+    escape_next = False
+
+    for i, char in enumerate(text):
+        if escape_next:
+            escape_next = False
+            continue
+
+        if char == '\\' and in_string:
+            escape_next = True
+            continue
+
+        if char == '"' and not escape_next:
+            in_string = not in_string
+            continue
+
+        if in_string:
+            continue
+
+        if char == '{':
+            depth += 1
+        elif char == '}':
+            depth -= 1
+            if depth == 0:
+                return text[:i + 1]
+
     return None
 
 
