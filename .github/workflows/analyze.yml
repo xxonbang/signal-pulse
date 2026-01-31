@@ -255,12 +255,31 @@ jobs:
           GEMINI_API_KEY_03: ${{ secrets.GEMINI_API_KEY_03 }}
         run: |
           echo "=== KIS 데이터 Gemini AI 분석 (배치 처리) ==="
+
+          # 환경변수 확인 (디버깅용)
+          echo "[DEBUG] GEMINI_API_KEY_01 set: $([ -n "$GEMINI_API_KEY_01" ] && echo 'YES' || echo 'NO')"
+          echo "[DEBUG] GEMINI_API_KEY_02 set: $([ -n "$GEMINI_API_KEY_02" ] && echo 'YES' || echo 'NO')"
+          echo "[DEBUG] GEMINI_API_KEY_03 set: $([ -n "$GEMINI_API_KEY_03" ] && echo 'YES' || echo 'NO')"
+
           python -c "
+          import os
           import json
           from pathlib import Path
           from datetime import datetime
+
+          # 환경변수 확인 (임포트 전)
+          print('[DEBUG-PY] GEMINI keys in os.environ before import:')
+          for i in range(1, 4):
+              key_name = f'GEMINI_API_KEY_0{i}'
+              val = os.environ.get(key_name, 'NOT SET')
+              print(f'  {key_name}: {val[:10]}...' if val != 'NOT SET' else f'  {key_name}: NOT SET')
+
           from modules.kis_data_transformer import KISDataTransformer
           from modules.ai_engine import analyze_kis_data_batch
+
+          # 임포트 후 settings 확인
+          from config.settings import GEMINI_API_KEYS
+          print(f'[DEBUG-PY] GEMINI_API_KEYS after import: {len(GEMINI_API_KEYS)}개')
 
           # KIS 원본 데이터 로드 (top50_latest.json 또는 latest.json)
           kis_raw_path = Path('results/kis/top50_latest.json')
