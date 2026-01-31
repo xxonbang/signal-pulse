@@ -42,7 +42,12 @@ export function getFilteredStocks(
   let filtered = market === 'kospi' ? kospi : market === 'kosdaq' ? kosdaq : results;
 
   if (signal) {
-    filtered = filtered.filter(r => r.signal === signal);
+    // Strict filtering: only include stocks that exactly match the signal
+    filtered = filtered.filter(r => {
+      const stockSignal = r.signal?.trim();
+      const filterSignal = signal.trim();
+      return stockSignal === filterSignal;
+    });
   }
 
   return filtered;
