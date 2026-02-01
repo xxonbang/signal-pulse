@@ -199,21 +199,78 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
             result = parse_json_response(response.text)
 
             if result and "results" in result:
-                analysis_results = result["results"]
+                raw_results = result["results"]
                 analysis_time = datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")
-
-                # 결과 수 검증 (입력 대비 80% 미만이면 경고)
                 expected_count = len(valid_stocks)
-                actual_count = len(analysis_results)
-                coverage_rate = (actual_count / expected_count * 100) if expected_count > 0 else 0
 
-                if coverage_rate < 80:
-                    print(f"[WARNING] 결과 부족: {actual_count}/{expected_count}개 ({coverage_rate:.1f}%)")
-                    print(f"[WARNING] max_output_tokens 한계 또는 모델 처리 한계일 수 있음")
+                # === 1. 중복 제거 (같은 종목코드는 첫 번째만 유지) ===
+                seen_codes = set()
+                deduped_results = []
+                duplicate_count = 0
+                for item in raw_results:
+                    code = item.get("code")
+                    if code and code not in seen_codes:
+                        seen_codes.add(code)
+                        deduped_results.append(item)
+                    elif code:
+                        duplicate_count += 1
 
-                # 캡처 시각 및 분석 시각 추가
-                for item in analysis_results:
-                    # 시그널 검증
+                if duplicate_count > 0:
+                    print(f"[INFO] 중복 제거: {len(raw_results)}개 → {len(deduped_results)}개 ({duplicate_count}개 중복)")
+
+                # === 2. 필수 필드 및 데이터 유효성 검증 ===
+                REQUIRED_FIELDS = ["name", "code", "signal"]
+                valid_results = []
+                invalid_count = 0
+                invalid_reasons = {"missing_field": 0, "null_value": 0, "invalid_code": 0}
+
+                for item in deduped_results:
+                    is_valid = True
+
+                    # 필수 필드 존재 여부
+                    for field in REQUIRED_FIELDS:
+                        if field not in item:
+                            is_valid = False
+                            invalid_reasons["missing_field"] += 1
+                            break
+
+                    if not is_valid:
+                        invalid_count += 1
+                        continue
+
+                    # null/빈 값 검증
+                    code = item.get("code")
+                    name = item.get("name")
+                    if not code or not name or code == "null" or name == "null":
+                        invalid_count += 1
+                        invalid_reasons["null_value"] += 1
+                        continue
+
+                    # 종목코드 형식 검증 (6자리 숫자)
+                    if not (isinstance(code, str) and len(code) == 6 and code.isdigit()):
+                        # 문자열 변환 시도
+                        try:
+                            code = str(code).zfill(6)
+                            if len(code) != 6 or not code.isdigit():
+                                raise ValueError()
+                            item["code"] = code
+                        except:
+                            invalid_count += 1
+                            invalid_reasons["invalid_code"] += 1
+                            continue
+
+                    valid_results.append(item)
+
+                if invalid_count > 0:
+                    print(f"[WARNING] 유효하지 않은 항목 제외: {invalid_count}개")
+                    print(f"[WARNING] 상세: 필드누락={invalid_reasons['missing_field']}, "
+                          f"null값={invalid_reasons['null_value']}, "
+                          f"잘못된코드={invalid_reasons['invalid_code']}")
+
+                # === 3. 시그널 검증 및 메타데이터 추가 ===
+                signal_stats = {}
+                for item in valid_results:
+                    # 시그널 유효성 검증
                     if item.get("signal") not in SIGNAL_CATEGORIES:
                         item["signal"] = "중립"
 
@@ -229,9 +286,22 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
 
                     item["analysis_time"] = analysis_time
 
-                print(f"\n[SUCCESS] 분석 완료: {len(analysis_results)}/{expected_count}개 종목 ({coverage_rate:.1f}%)")
+                    # 시그널 통계
+                    sig = item.get("signal", "중립")
+                    signal_stats[sig] = signal_stats.get(sig, 0) + 1
+
+                # === 4. 결과 수 검증 (입력 대비 80% 미만이면 경고) ===
+                actual_count = len(valid_results)
+                coverage_rate = (actual_count / expected_count * 100) if expected_count > 0 else 0
+
+                if coverage_rate < 80:
+                    print(f"[WARNING] 결과 부족: {actual_count}/{expected_count}개 ({coverage_rate:.1f}%)")
+                    print(f"[WARNING] max_output_tokens 한계 또는 모델 처리 한계일 수 있음")
+
+                print(f"\n[SUCCESS] 분석 완료: {actual_count}/{expected_count}개 종목 ({coverage_rate:.1f}%)")
+                print(f"[INFO] 시그널 분포: {signal_stats}")
                 rotate_to_next_key()
-                return analysis_results
+                return valid_results
 
             # 파싱 실패: 디버깅 로그와 함께 재파싱 시도
             print("[ERROR] 응답 파싱 실패 - API 호출은 성공했으나 JSON 파싱 불가")
