@@ -254,13 +254,13 @@ jobs:
           GEMINI_API_KEY_02: ${{ secrets.GEMINI_API_KEY_02 }}
           GEMINI_API_KEY_03: ${{ secrets.GEMINI_API_KEY_03 }}
         run: |
-          echo "=== KIS 데이터 Gemini AI 분석 ==="
+          echo "=== KIS 데이터 Gemini AI 분석 (배치 처리) ==="
           python -c "
           import json
           from pathlib import Path
           from datetime import datetime
           from modules.kis_data_transformer import KISDataTransformer
-          from modules.ai_engine import analyze_kis_data
+          from modules.ai_engine import analyze_kis_data_batch
 
           # KIS 원본 데이터 로드 (top50_latest.json 또는 latest.json)
           kis_raw_path = Path('results/kis/top50_latest.json')
@@ -295,10 +295,10 @@ jobs:
                   print(f'rankings 키: {list(raw_data[\"rankings\"].keys())}')
               exit(1)
 
-          # Gemini 단일 호출 분석 (max_output_tokens=65536 설정으로 대용량 응답 지원)
-          print('\\nGemini AI 분석 시작... (단일 API 호출, max_output_tokens=65536)')
-          analysis_results = analyze_kis_data(gemini_data)
-          print(f'\\n분석 완료: {len(analysis_results)}개 종목')
+          # Gemini 배치 분석 (20개씩 나눠서 분석 - 안정적인 결과 보장)
+          print('\\nGemini AI 배치 분석 시작... (20개씩 분할 처리)')
+          analysis_results = analyze_kis_data_batch(gemini_data, batch_size=20)
+          print(f'\\n전체 분석 완료: {len(analysis_results)}개 종목')
 
           # 분석 결과 저장 (프론트엔드 타입과 일치)
           output_data = {
