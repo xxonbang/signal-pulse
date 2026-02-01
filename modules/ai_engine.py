@@ -452,11 +452,23 @@ def analyze_kis_data(
             result = parse_json_response(response.text)
 
             if result and "results" in result:
-                analysis_results = result["results"]
+                raw_results = result["results"]
                 analysis_time = result.get(
                     "analysis_time",
                     datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")
                 )
+
+                # 중복 제거 (같은 종목코드는 첫 번째만 유지)
+                seen_codes = set()
+                analysis_results = []
+                for item in raw_results:
+                    code = item.get("code")
+                    if code and code not in seen_codes:
+                        seen_codes.add(code)
+                        analysis_results.append(item)
+
+                if len(raw_results) != len(analysis_results):
+                    print(f"[INFO] 중복 제거: {len(raw_results)}개 → {len(analysis_results)}개")
 
                 # 시그널 검증 및 메타데이터 추가
                 signal_stats = {}
