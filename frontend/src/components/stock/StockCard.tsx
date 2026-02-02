@@ -1,4 +1,5 @@
 import { SignalBadge } from '@/components/signal';
+import { NewsSection } from '@/components/news';
 import { formatTimeOnly } from '@/lib/utils';
 import type { StockResult } from '@/services/types';
 
@@ -27,6 +28,10 @@ export function StockCard({ stock }: StockCardProps) {
       <div className="text-[0.65rem] md:text-xs text-text-muted mt-2 md:mt-2.5 flex gap-2 md:gap-3">
         {stock.capture_time && <span>캡처 {formatTimeOnly(stock.capture_time)}</span>}
         {stock.analysis_time && <span>분석 {formatTimeOnly(stock.analysis_time)}</span>}
+      </div>
+      {/* 모바일용 뉴스 섹션 (md 미만에서만 표시) */}
+      <div className="md:hidden">
+        <NewsSection news={stock.news} isMobile={true} />
       </div>
     </div>
   );

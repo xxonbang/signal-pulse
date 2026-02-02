@@ -1,4 +1,5 @@
 import { SignalBadge } from '@/components/signal';
+import { NewsSection } from '@/components/news';
 import { formatTimeOnly } from '@/lib/utils';
 import type { StockResult } from '@/services/types';
 
@@ -28,8 +29,8 @@ export function StockTable({ stocks }: StockTableProps) {
         </thead>
         <tbody>
           {stocks.map((stock) => (
-            <tr key={stock.code} className="hover:bg-bg-primary">
-              <td className="px-4 py-3.5 border-b border-border-light align-middle whitespace-nowrap">
+            <tr key={stock.code} className="hover:bg-bg-primary group">
+              <td className="px-4 py-3.5 border-b border-border-light align-top whitespace-nowrap">
                 <a
                   href={`https://m.stock.naver.com/domestic/stock/${stock.code}/total`}
                   target="_blank"
@@ -40,15 +41,17 @@ export function StockTable({ stocks }: StockTableProps) {
                   <div className="text-xs text-text-muted font-mono mt-0.5">{stock.code}</div>
                 </a>
               </td>
-              <td className="px-4 py-3.5 border-b border-border-light align-middle whitespace-nowrap">
+              <td className="px-4 py-3.5 border-b border-border-light align-top whitespace-nowrap">
                 <SignalBadge signal={stock.signal} />
               </td>
-              <td className="px-4 py-3.5 border-b border-border-light align-middle">
+              <td className="px-4 py-3.5 border-b border-border-light align-top">
                 <div className="text-sm text-text-secondary leading-relaxed">
                   {stock.reason || '-'}
                 </div>
+                {/* 데스크톱용 뉴스 섹션 */}
+                <NewsSection news={stock.news} isMobile={false} />
               </td>
-              <td className="px-4 py-3.5 border-b border-border-light align-middle whitespace-nowrap">
+              <td className="px-4 py-3.5 border-b border-border-light align-top whitespace-nowrap">
                 <div className="text-xs text-text-muted leading-relaxed">
                   {stock.capture_time && (
                     <div>캡처: {formatTimeOnly(stock.capture_time)}</div>

@@ -1,10 +1,11 @@
 import { useState, useMemo, memo } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { fetchLatestData, fetchKISData, fetchKISAnalysis } from '@/services/api';
-import type { StockResult, KISStockData, KISAnalysisResult, MarketType, SignalType } from '@/services/types';
+import type { StockResult, KISStockData, KISAnalysisResult, MarketType, SignalType, NewsItem } from '@/services/types';
 import { LoadingSpinner, EmptyState } from '@/components/common';
 import { SignalBadge } from '@/components/signal';
 import { MarketTabs } from '@/components/stock';
+import { NewsSection } from '@/components/news';
 // useUIStore 구독 제거 - activeTab 변경 시 불필요한 리렌더링 방지
 import { cn } from '@/lib/utils';
 
@@ -18,8 +19,10 @@ interface CombinedStock {
   market: 'KOSPI' | 'KOSDAQ' | 'UNKNOWN';
   visionSignal?: SignalType;
   visionReason?: string;
+  visionNews?: NewsItem[];
   apiSignal?: SignalType;
   apiReason?: string;
+  apiNews?: NewsItem[];
   apiData?: KISStockData;
   matchStatus: MatchStatus;
   confidenceScore: number;
@@ -192,6 +195,21 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock }: { stock: Co
           </div>
         </div>
       )}
+
+      {/* 뉴스 섹션 - Vision 뉴스와 API 뉴스 중 있는 것 표시 (Vision 우선) */}
+      {(() => {
+        const combinedNews = stock.visionNews || stock.apiNews;
+        return combinedNews && combinedNews.length > 0 ? (
+          <>
+            <div className="md:hidden">
+              <NewsSection news={combinedNews} isMobile={true} />
+            </div>
+            <div className="hidden md:block">
+              <NewsSection news={combinedNews} isMobile={false} />
+            </div>
+          </>
+        ) : null;
+      })()}
     </div>
   );
 });
@@ -306,6 +324,7 @@ export function CombinedAnalysis() {
           market: market as 'KOSPI' | 'KOSDAQ',
           visionSignal: stock.signal,
           visionReason: stock.reason,
+          visionNews: stock.news,
           matchStatus: 'vision-only',
           confidenceScore: 0.5,
         });
@@ -328,6 +347,7 @@ export function CombinedAnalysis() {
           existing.apiData = stock;
           existing.apiSignal = analysis?.signal;
           existing.apiReason = analysis?.reason;
+          existing.apiNews = analysis?.news;
           existing.matchStatus = calculateMatchStatus(existing.visionSignal, existing.apiSignal);
           existing.confidenceScore = calculateConfidence(existing.matchStatus);
         } else {
@@ -339,6 +359,7 @@ export function CombinedAnalysis() {
             apiData: stock,
             apiSignal: analysis?.signal,
             apiReason: analysis?.reason,
+            apiNews: analysis?.news,
             matchStatus: analysis?.signal ? 'api-only' : 'api-only',
             confidenceScore: analysis?.signal ? 0.5 : 0,
           });

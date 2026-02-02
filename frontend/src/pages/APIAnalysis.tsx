@@ -5,6 +5,7 @@ import type { KISStockData, KISAnalysisResult, MarketType, SignalType, SignalCou
 import { LoadingSpinner, EmptyState, Button } from '@/components/common';
 import { SignalSummary, SignalBadge } from '@/components/signal';
 import { MarketTabs } from '@/components/stock';
+import { NewsSection } from '@/components/news';
 // useUIStore 구독 제거 - activeTab 변경 시 불필요한 리렌더링 방지
 
 // 숫자 포맷
@@ -174,6 +175,14 @@ function StockCard({
           </div>
         </div>
       )}
+
+      {/* 뉴스 섹션 */}
+      <div className="md:hidden">
+        <NewsSection news={analysis?.news} isMobile={true} />
+      </div>
+      <div className="hidden md:block">
+        <NewsSection news={analysis?.news} isMobile={false} />
+      </div>
     </div>
   );
 }

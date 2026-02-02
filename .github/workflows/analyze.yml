@@ -150,6 +150,8 @@ jobs:
           GEMINI_API_KEY_01: ${{ secrets.GEMINI_API_KEY_01 }}
           GEMINI_API_KEY_02: ${{ secrets.GEMINI_API_KEY_02 }}
           GEMINI_API_KEY_03: ${{ secrets.GEMINI_API_KEY_03 }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
         run: |
           python main.py
           echo "analysis_success=true" >> $GITHUB_OUTPUT
@@ -253,6 +255,8 @@ jobs:
           GEMINI_API_KEY_01: ${{ secrets.GEMINI_API_KEY_01 }}
           GEMINI_API_KEY_02: ${{ secrets.GEMINI_API_KEY_02 }}
           GEMINI_API_KEY_03: ${{ secrets.GEMINI_API_KEY_03 }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
         run: |
           echo "=== KIS 데이터 Gemini AI 분석 (배치 처리) ==="
           python -c "
@@ -261,6 +265,7 @@ jobs:
           from datetime import datetime, timedelta, timezone
           from modules.kis_data_transformer import KISDataTransformer
           from modules.ai_engine import analyze_kis_data_batch
+          from modules.naver_news import collect_news_for_stocks
 
           # KST 시간대
           KST = timezone(timedelta(hours=9))
@@ -300,6 +305,21 @@ jobs:
           print('\\nGemini AI 배치 분석 시작... (20개씩 분할 처리)')
           analysis_results = analyze_kis_data_batch(gemini_data, batch_size=20)
           print(f'\\n전체 분석 완료: {len(analysis_results)}개 종목')
+
+          # 뉴스 수집
+          print('\\n=== 종목별 뉴스 수집 ===')
+          stocks_for_news = [{'code': r['code'], 'name': r['name']} for r in analysis_results]
+          news_data = collect_news_for_stocks(stocks_for_news, news_count=3)
+
+          # 분석 결과에 뉴스 데이터 병합
+          if news_data:
+              for result in analysis_results:
+                  code = result.get('code', '')
+                  if code in news_data:
+                      result['news'] = news_data[code]
+              print(f'뉴스 데이터 병합 완료: {len(news_data)}개 종목')
+          else:
+              print('뉴스 수집 건너뜀 (API 키 미설정)')
 
           # 분석 결과 저장 (프론트엔드 타입과 일치)
           output_data = {

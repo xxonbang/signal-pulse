@@ -12,6 +12,7 @@ from config.settings import CAPTURES_DIR, OUTPUT_DIR, ROOT_DIR
 from modules.scraper import run_scraper
 from modules.ai_engine import analyze_stocks_batch
 from modules.utils import get_today_capture_dir, save_json, generate_markdown_report
+from modules.naver_news import collect_news_for_stocks
 
 # KST 시간대 (UTC+9)
 KST = timezone(timedelta(hours=9))
@@ -174,6 +175,21 @@ async def main():
 
     print(f"\n총 분석 완료: {len(all_results)}/{total_stocks}개 종목")
     analysis_results = all_results
+
+    # Phase 3.5: 뉴스 수집
+    print("\n=== Phase 3.5: 종목별 뉴스 수집 ===\n")
+    stocks_for_news = [{"code": r["code"], "name": r["name"]} for r in analysis_results]
+    news_data = collect_news_for_stocks(stocks_for_news, news_count=3)
+
+    # 분석 결과에 뉴스 데이터 병합
+    if news_data:
+        for result in analysis_results:
+            code = result.get("code", "")
+            if code in news_data:
+                result["news"] = news_data[code]
+        print(f"뉴스 데이터 병합 완료: {len(news_data)}개 종목")
+    else:
+        print("뉴스 수집 건너뜀 (API 키 미설정)")
 
     # Phase 4: 결과 저장
     print("\n=== Phase 4: 결과 저장 ===\n")

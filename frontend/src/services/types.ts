@@ -4,6 +4,15 @@ export type MarketType = 'all' | 'kospi' | 'kosdaq';
 
 export type AnalysisTab = 'vision' | 'api' | 'combined';
 
+// 뉴스 아이템 타입
+export interface NewsItem {
+  title: string;
+  link: string;
+  description: string;
+  pubDate: string;
+  originallink?: string;
+}
+
 export interface StockResult {
   code: string;
   name: string;
@@ -11,6 +20,7 @@ export interface StockResult {
   reason: string;
   capture_time?: string;
   analysis_time?: string;
+  news?: NewsItem[];
 }
 
 export interface AnalysisData {
@@ -113,6 +123,7 @@ export interface KISAnalysisResult {
   risk_level?: string;
   confidence?: number;
   analysis_time?: string;
+  news?: NewsItem[];
 }
 
 export interface KISAnalysisData {
