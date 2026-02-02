@@ -4,13 +4,20 @@ AI Vision Stock Signal Analyzer - 메인 실행 파일
 import asyncio
 import shutil
 import json
-from datetime import datetime, timedelta
+import time
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from config.settings import CAPTURES_DIR, OUTPUT_DIR, ROOT_DIR
 from modules.scraper import run_scraper
-from modules.ai_engine import analyze_stocks
+from modules.ai_engine import analyze_stocks_batch
 from modules.utils import get_today_capture_dir, save_json, generate_markdown_report
+
+# KST 시간대 (UTC+9)
+KST = timezone(timedelta(hours=9))
+
+# Vision 배치 처리 설정
+VISION_BATCH_SIZE = 40  # 40개씩 배치 처리
 
 
 # 분석 결과 보존 기간 (일)
@@ -92,7 +99,7 @@ def update_history_index(results_dir: Path):
 
     # 인덱스 파일 저장
     index_data = {
-        "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S"),
         "retention_days": RESULTS_RETENTION_DAYS,
         "total_records": len(history_files),
         "history": history_files
@@ -107,9 +114,12 @@ def update_history_index(results_dir: Path):
 
 async def main():
     """메인 파이프라인 실행"""
+    # KST 기준 현재 시간
+    now_kst = datetime.now(KST)
+
     print("=" * 60)
     print("  AI Vision Stock Signal Analyzer (AVSSA)")
-    print(f"  실행 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"  실행 시간: {now_kst.strftime('%Y-%m-%d %H:%M:%S')} KST")
     print("=" * 60)
 
     # Phase 0: 캡처 이미지 정리
@@ -135,13 +145,40 @@ async def main():
     # 캡처 디렉토리
     capture_dir = get_today_capture_dir(CAPTURES_DIR)
 
-    # Phase 3: AI 분석
-    analysis_results = analyze_stocks(scrape_results, capture_dir)
+    # Phase 3: AI 배치 분석 (VISION_BATCH_SIZE개씩 나눠서 처리)
+    print(f"\n=== Phase 3: AI 배치 분석 ({VISION_BATCH_SIZE}개씩 처리) ===\n")
+
+    all_results = []
+    total_stocks = len(scrape_results)
+    total_batches = (total_stocks + VISION_BATCH_SIZE - 1) // VISION_BATCH_SIZE
+
+    for i in range(0, total_stocks, VISION_BATCH_SIZE):
+        batch_stocks = scrape_results[i:i + VISION_BATCH_SIZE]
+        batch_num = i // VISION_BATCH_SIZE + 1
+
+        print(f"\n--- Vision 배치 {batch_num}/{total_batches} ({len(batch_stocks)}개 종목) ---")
+
+        batch_results = analyze_stocks_batch(batch_stocks, capture_dir)
+
+        if batch_results:
+            all_results.extend(batch_results)
+            print(f"[배치 {batch_num}] 완료: {len(batch_results)}개 분석")
+        else:
+            print(f"[배치 {batch_num}] 실패: 결과 없음")
+
+        # 배치 간 대기 (rate limit 방지)
+        if i + VISION_BATCH_SIZE < total_stocks:
+            print("다음 배치 대기 중... (5초)")
+            time.sleep(5)
+
+    print(f"\n총 분석 완료: {len(all_results)}/{total_stocks}개 종목")
+    analysis_results = all_results
 
     # Phase 4: 결과 저장
     print("\n=== Phase 4: 결과 저장 ===\n")
 
-    today = datetime.now().strftime("%Y-%m-%d")
+    # KST 기준 오늘 날짜
+    today = datetime.now(KST).strftime("%Y-%m-%d")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     # 분석 데이터 구성
