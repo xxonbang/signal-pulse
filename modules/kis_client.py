@@ -1,12 +1,18 @@
 """
 한국투자증권 Open API 클라이언트
 - OAuth 토큰 관리 (1일 1회 발급 제한 대응)
+- Supabase 연동 (키/토큰 공유)
 - API 호출 기본 기능
 
-주의사항:
-- 한국투자증권 API는 Access Token 발급이 1일 1회로 제한됩니다.
-- 토큰은 24시간 유효하므로, 캐시된 토큰을 최대한 재사용합니다.
-- 토큰이 만료되어도 먼저 사용을 시도하고, 실패 시에만 재발급합니다.
+키 관리 우선순위:
+1. Supabase에서 KIS 키 조회
+2. 환경변수 Fallback (KIS_APP_KEY, KIS_APP_SECRET)
+3. 환경변수 키가 유효하면 Supabase에 자동 동기화
+
+토큰 관리:
+- Supabase에 토큰 저장/조회 (여러 프로젝트 간 공유)
+- 로컬 파일 캐시 (Supabase 실패 시 Fallback)
+- 1일 1회 발급 제한 대응
 """
 import json
 import requests
@@ -24,6 +30,11 @@ from config.settings import (
     KIS_BASE_URL,
     ROOT_DIR,
 )
+from modules.supabase_client import (
+    get_credential_manager,
+    get_kis_credentials_with_fallback,
+    sync_kis_credentials_to_supabase,
+)
 
 
 class TokenExpiredError(Exception):
@@ -39,19 +50,31 @@ class TokenRefreshLimitError(Exception):
 class KISClient:
     """한국투자증권 API 클라이언트
 
+    키 관리 정책:
+    1. Supabase에서 KIS 키 조회
+    2. 실패 시 환경변수 Fallback
+    3. 환경변수 키가 유효하면 Supabase에 자동 동기화
+
     토큰 관리 정책:
-    1. 캐시된 토큰이 있으면 만료 여부와 관계없이 먼저 사용 시도
-    2. API 호출 실패(401) 시에만 토큰 재발급 시도
-    3. 재발급은 1일 1회 제한이므로, 마지막 발급 시간을 기록하여 중복 발급 방지
+    1. Supabase에서 토큰 조회 → 로컬 캐시 Fallback
+    2. 캐시된 토큰이 있으면 만료 여부와 관계없이 먼저 사용 시도
+    3. API 호출 실패(401) 시에만 토큰 재발급 시도
+    4. 재발급은 1일 1회 제한이므로, 마지막 발급 시간을 기록하여 중복 발급 방지
+    5. 새 토큰 발급 시 Supabase + 로컬에 모두 저장
     """
 
     def __init__(self):
-        self.app_key = KIS_APP_KEY
-        self.app_secret = KIS_APP_SECRET
+        # Supabase → 환경변수 Fallback으로 키 로드
+        app_key, app_secret, self._key_source = get_kis_credentials_with_fallback()
+        self.app_key = app_key
+        self.app_secret = app_secret
         self.account_no = KIS_ACCOUNT_NO
         self.base_url = KIS_BASE_URL
 
-        # 토큰 캐시 파일 경로
+        # Supabase 매니저
+        self._supabase = get_credential_manager()
+
+        # 토큰 캐시 파일 경로 (로컬 Fallback)
         self._token_cache_path = ROOT_DIR / ".kis_token_cache.json"
         self._access_token: Optional[str] = None
         self._token_expires_at: Optional[datetime] = None
@@ -68,7 +91,27 @@ class KISClient:
             raise ValueError("KIS_APP_SECRET 환경변수가 설정되지 않았습니다.")
 
     def _load_cached_token(self) -> bool:
-        """캐시된 토큰 로드 (만료 여부와 관계없이 로드)"""
+        """캐시된 토큰 로드 (Supabase → 로컬 파일 Fallback)"""
+        # 1. Supabase에서 토큰 조회 시도
+        if self._supabase.is_available():
+            token_data = self._supabase.get_kis_token()
+            if token_data and token_data.get('access_token'):
+                try:
+                    self._access_token = token_data.get('access_token')
+                    self._token_expires_at = datetime.fromisoformat(token_data['expires_at'])
+                    self._token_issued_at = datetime.fromisoformat(token_data['issued_at'])
+
+                    remaining = self._token_expires_at - datetime.now()
+                    if remaining.total_seconds() > 0:
+                        hours = remaining.total_seconds() / 3600
+                        print(f"[KIS] Supabase에서 토큰 로드 (유효시간: {hours:.1f}시간 남음)")
+                    else:
+                        print(f"[KIS] Supabase 토큰 로드 (만료됨, API 호출 시 재발급 시도)")
+                    return True
+                except (KeyError, ValueError) as e:
+                    print(f"[KIS] Supabase 토큰 파싱 실패: {e}")
+
+        # 2. 로컬 파일 캐시 Fallback
         if not self._token_cache_path.exists():
             return False
 
@@ -88,9 +131,9 @@ class KISClient:
             remaining = self._token_expires_at - datetime.now()
             if remaining.total_seconds() > 0:
                 hours = remaining.total_seconds() / 3600
-                print(f"[KIS] 캐시된 토큰 로드 완료 (유효시간: {hours:.1f}시간 남음)")
+                print(f"[KIS] 로컬 캐시에서 토큰 로드 (유효시간: {hours:.1f}시간 남음)")
             else:
-                print(f"[KIS] 캐시된 토큰 로드 (만료됨, API 호출 시 재발급 시도)")
+                print(f"[KIS] 로컬 캐시 토큰 로드 (만료됨, API 호출 시 재발급 시도)")
 
             return True
 
@@ -99,12 +142,24 @@ class KISClient:
             return False
 
     def _save_token_cache(self):
-        """토큰 캐시 저장"""
+        """토큰 캐시 저장 (Supabase + 로컬 파일)"""
+        expires_at_str = self._token_expires_at.isoformat()
+        issued_at_str = self._token_issued_at.isoformat()
+
+        # 1. Supabase에 저장
+        if self._supabase.is_available():
+            self._supabase.save_kis_token(
+                access_token=self._access_token,
+                expires_at=expires_at_str,
+                issued_at=issued_at_str,
+            )
+
+        # 2. 로컬 파일에도 저장 (Fallback용)
         cache = {
             "token": {
                 'access_token': self._access_token,
-                'expires_at': self._token_expires_at.isoformat(),
-                'issued_at': self._token_issued_at.isoformat(),
+                'expires_at': expires_at_str,
+                'issued_at': issued_at_str,
             }
         }
 
@@ -209,6 +264,11 @@ class KISClient:
 
         self._save_token_cache()
 
+        # 환경변수에서 키를 로드한 경우, Supabase에 동기화
+        if self._key_source == "env" and self._supabase.is_available():
+            print(f"[KIS] 환경변수 키가 유효함 → Supabase에 동기화")
+            sync_kis_credentials_to_supabase(self.app_key, self.app_secret)
+
         print(f"[KIS] 토큰 발급 완료 (유효기간: {expires_in // 3600}시간)")
 
         return self._access_token
@@ -291,6 +351,8 @@ class KISClient:
             "has_token": self._access_token is not None,
             "is_valid": self._is_token_valid(),
             "can_refresh": self._can_refresh_token(),
+            "key_source": self._key_source,
+            "supabase_available": self._supabase.is_available(),
         }
 
         if self._token_expires_at:

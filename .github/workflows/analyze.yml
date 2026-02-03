@@ -194,13 +194,19 @@ jobs:
         env:
           KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: |
-          if [ -z "$KIS_APP_KEY" ] || [ -z "$KIS_APP_SECRET" ]; then
+          # KIS 키가 환경변수 또는 Supabase에 있으면 진행
+          if [ -n "$KIS_APP_KEY" ] && [ -n "$KIS_APP_SECRET" ]; then
+            echo "KIS API credentials verified (env)."
+            echo "has_credentials=true" >> $GITHUB_OUTPUT
+          elif [ -n "$SUPABASE_URL" ] && [ -n "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "Supabase configured. KIS keys will be fetched from Supabase."
+            echo "has_credentials=true" >> $GITHUB_OUTPUT
+          else
             echo "::warning::KIS API credentials not configured. Skipping KIS analysis."
             echo "has_credentials=false" >> $GITHUB_OUTPUT
-          else
-            echo "KIS API credentials verified."
-            echo "has_credentials=true" >> $GITHUB_OUTPUT
           fi
 
       # 캐시 키용 날짜 (토큰은 24시간 유효)
@@ -228,6 +234,8 @@ jobs:
           KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
           KIS_ACCOUNT_NO: ${{ secrets.KIS_ACCOUNT_NO }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: |
           echo "=== KIS API 데이터 수집 ==="
           echo "::notice::KIS API는 등록된 IP에서만 접근 가능합니다. GitHub Actions에서 403 오류 발생 시 IP 제한 때문입니다."
@@ -257,6 +265,8 @@ jobs:
           GEMINI_API_KEY_03: ${{ secrets.GEMINI_API_KEY_03 }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: |
           echo "=== KIS 데이터 Gemini AI 분석 (배치 처리) ==="
           python -c "
