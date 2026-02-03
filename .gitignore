@@ -42,3 +42,4 @@ results/kis/rankings*.json
 !results/kis/kis_latest.json
 !results/kis/kis_analysis.json
 !results/kis/kis_gemini.json
+docs/SUPABASE_SHARED_GUIDE.md
