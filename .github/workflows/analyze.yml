@@ -411,10 +411,11 @@ jobs:
           LATEST_FILE=$(ls -t output/analysis_*.json 2>/dev/null | head -n1)
           if [ -n "$LATEST_FILE" ] && [ -f "$LATEST_FILE" ]; then
             cp "$LATEST_FILE" results/vision/vision_analysis.json
-            # 히스토리 파일명: analysis_YYYY-MM-DD.json → vision_YYYY-MM-DD.json
-            DATE_PART=$(basename "$LATEST_FILE" | sed 's/analysis_//' | sed 's/.json//')
-            cp "$LATEST_FILE" "results/vision/history/vision_${DATE_PART}.json"
-            echo "Vision 결과 복사 완료: $LATEST_FILE"
+            # 히스토리 파일명: vision_YYYY-MM-DD_HHMM.json (시간 포함, 하루 여러 번 저장 가능)
+            VISION_DATE=$(TZ='Asia/Seoul' date +'%Y-%m-%d')
+            VISION_TIME=$(TZ='Asia/Seoul' date +'%H%M')
+            cp "$LATEST_FILE" "results/vision/history/vision_${VISION_DATE}_${VISION_TIME}.json"
+            echo "Vision 히스토리 저장: vision_${VISION_DATE}_${VISION_TIME}.json"
           else
             echo "::warning::Vision 분석 결과 파일을 찾을 수 없습니다"
           fi
@@ -458,7 +459,11 @@ jobs:
               for item in sorted(vision_history_dir.iterdir(), reverse=True):
                   if item.is_file() and item.suffix == '.json':
                       try:
-                          date_str = item.stem.replace('vision_', '')
+                          # 파일명: vision_YYYY-MM-DD_HHMM.json 또는 vision_YYYY-MM-DD.json (레거시)
+                          name_parts = item.stem.replace('vision_', '').split('_')
+                          date_str = name_parts[0] if name_parts else ''
+                          time_str = name_parts[1] if len(name_parts) > 1 else ''
+
                           with open(item, 'r', encoding='utf-8') as f:
                               data = json.load(f)
                           signal_counts = {}
@@ -467,6 +472,7 @@ jobs:
                               signal_counts[signal] = signal_counts.get(signal, 0) + 1
                           vision_history_files.append({
                               'date': date_str,
+                              'time': time_str,
                               'filename': item.name,
                               'total_stocks': data.get('total_stocks', 0),
                               'signals': signal_counts
