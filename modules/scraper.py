@@ -204,11 +204,12 @@ async def capture_stock_screenshot(page: Page, stock: dict, capture_dir: Path, m
     return {**stock, "success": False, "error": "Max retries exceeded"}
 
 
-async def capture_all_screenshots(stocks: list[dict]) -> list[dict]:
+async def capture_all_screenshots(stocks: list[dict], capture_dir: Path = None) -> list[dict]:
     """모든 종목 스크린샷 캡처"""
     print("\n=== Phase 2: 스크린샷 캡처 ===\n")
 
-    capture_dir = get_today_capture_dir(CAPTURES_DIR)
+    if capture_dir is None:
+        capture_dir = get_today_capture_dir(CAPTURES_DIR)
     print(f"저장 경로: {capture_dir}\n")
 
     async with async_playwright() as p:
@@ -234,12 +235,12 @@ async def capture_all_screenshots(stocks: list[dict]) -> list[dict]:
     return results
 
 
-async def run_scraper(stocks: list[dict] = None) -> list[dict]:
+async def run_scraper(stocks: list[dict] = None, capture_dir: Path = None) -> list[dict]:
     """스크래퍼 메인 실행"""
     if stocks is None:
         stocks = await collect_all_stocks()
 
-    results = await capture_all_screenshots(stocks)
+    results = await capture_all_screenshots(stocks, capture_dir=capture_dir)
     return results
 
 

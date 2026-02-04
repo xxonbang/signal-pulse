@@ -142,10 +142,11 @@ async def main():
         print("삭제할 파일 없음")
 
     # Phase 1 & 2: 종목 수집 및 스크린샷 캡처
-    scrape_results = await run_scraper()
-
-    # 캡처 디렉토리
+    # 캡처 시작 전에 capture_dir 결정 (날짜 변경 방지)
     capture_dir = get_today_capture_dir(CAPTURES_DIR)
+    print(f"\n캡처 디렉토리: {capture_dir}")
+
+    scrape_results = await run_scraper(capture_dir=capture_dir)
 
     # Phase 3: AI 배치 분석 (VISION_BATCH_SIZE개씩 나눠서 처리)
     print(f"\n=== Phase 3: AI 배치 분석 ({VISION_BATCH_SIZE}개씩 처리) ===\n")
