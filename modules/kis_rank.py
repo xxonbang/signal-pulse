@@ -105,12 +105,17 @@ class KISRankAPI:
 
     def _fetch_volume_rank_raw(
         self,
+        market_code: str = "0000",
         price_min: str = "",
         price_max: str = "",
     ) -> List[Dict[str, Any]]:
         """거래량순위 원본 API 호출 (내부용)
 
         Args:
+            market_code: 시장 코드
+                - "0000": 전종목
+                - "0001": 코스피
+                - "1001": 코스닥
             price_min: 최소 가격 조건
             price_max: 최대 가격 조건
 
@@ -123,7 +128,7 @@ class KISRankAPI:
         params = {
             "FID_COND_MRKT_DIV_CODE": "J",
             "FID_COND_SCR_DIV_CODE": "20171",
-            "FID_INPUT_ISCD": "0000",
+            "FID_INPUT_ISCD": market_code,
             "FID_DIV_CLS_CODE": "0",
             "FID_BLNG_CLS_CODE": "0",
             "FID_TRGT_CLS_CODE": "0",
@@ -141,11 +146,17 @@ class KISRankAPI:
 
         return result.get("output", [])
 
-    def _collect_extended_stocks(self) -> List[Dict[str, Any]]:
+    def _collect_extended_stocks(self, market_code: str = "0000") -> List[Dict[str, Any]]:
         """가격대별 분할 조회로 확장된 종목 수집
 
         KIS API는 1회 최대 30개만 반환하므로,
         가격대별로 세분화하여 분할 조회합니다.
+
+        Args:
+            market_code: 시장 코드
+                - "0000": 전종목
+                - "0001": 코스피
+                - "1001": 코스닥
 
         Returns:
             중복 제거된 전체 종목 리스트 (거래량 순 정렬)
@@ -173,7 +184,7 @@ class KISRankAPI:
         seen_codes = set()
 
         for price_min, price_max in price_ranges:
-            stocks = self._fetch_volume_rank_raw(price_min, price_max)
+            stocks = self._fetch_volume_rank_raw(market_code, price_min, price_max)
             for stock in stocks:
                 code = stock.get("mksc_shrn_iscd", "")
                 if code and code not in seen_codes:
@@ -206,15 +217,43 @@ class KISRankAPI:
         Returns:
             거래량 순위 종목 리스트
         """
-        # ETF 제외 시 확장 조회 사용 (더 많은 종목 필요)
-        if extended and exclude_etf:
-            stocks = self._collect_extended_stocks()
-        else:
-            stocks = self._fetch_volume_rank_raw()
+        # 시장 코드 매핑 (FID_INPUT_ISCD)
+        # - "0001": 코스피
+        # - "1001": 코스닥
+        # - "0000": 전종목 (실제로는 코스피만 반환되는 문제 있음)
+        market_upper = market.upper()
+
+        # 시장별로 API 호출
+        if market_upper == "KOSPI":
+            market_codes = ["0001"]
+        elif market_upper == "KOSDAQ":
+            market_codes = ["1001"]
+        else:  # ALL
+            # 전종목은 코스피 + 코스닥 각각 조회하여 병합
+            market_codes = ["0001", "1001"]
+
+        # 종목 수집
+        all_stocks = []
+        seen_codes = set()
+
+        for market_code in market_codes:
+            if extended and exclude_etf:
+                stocks = self._collect_extended_stocks(market_code)
+            else:
+                stocks = self._fetch_volume_rank_raw(market_code)
+
+            for stock in stocks:
+                code = stock.get("mksc_shrn_iscd", "")
+                if code and code not in seen_codes:
+                    seen_codes.add(code)
+                    all_stocks.append(stock)
+
+        # 거래량 기준 정렬 (여러 시장 병합 시 필요)
+        all_stocks.sort(key=lambda x: safe_int(x.get("acml_vol", 0)), reverse=True)
 
         # 결과 정리 및 필터링
         parsed = []
-        for stock in stocks:
+        for stock in all_stocks:
             code = stock.get("mksc_shrn_iscd", "")
             name = stock.get("hts_kor_isnm", "")
             stock_market = self._determine_market(code)
@@ -223,14 +262,6 @@ class KISRankAPI:
             # ETF/ETN 제외 필터
             if exclude_etf and is_etf:
                 continue
-
-            # 시장 필터링
-            market_upper = market.upper()
-            if market_upper != "ALL":
-                if market_upper == "KOSPI" and stock_market not in ("KOSPI",):
-                    continue
-                if market_upper == "KOSDAQ" and stock_market != "KOSDAQ":
-                    continue
 
             parsed.append({
                 "rank": len(parsed) + 1,
