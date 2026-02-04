@@ -23,6 +23,16 @@ function formatPercent(num: number | null | undefined): string {
 // 투자자 동향 뱃지
 function FlowBadge({ value, label }: { value: number | null | undefined; label: string }) {
   if (value === null || value === undefined) return null;
+
+  // 값이 0이면 "장중" 표시 (장중에는 투자자 순매수 데이터 미확정)
+  if (value === 0) {
+    return (
+      <span className="inline-flex items-center px-1.5 md:px-2 py-0.5 rounded text-[0.65rem] md:text-xs font-medium bg-gray-100 text-gray-500">
+        {label}: 장중
+      </span>
+    );
+  }
+
   const isPositive = value > 0;
   const bgColor = isPositive ? 'bg-red-100 text-red-700' : 'bg-blue-100 text-blue-700';
   // 모바일에서는 숫자를 간략화
@@ -44,6 +54,41 @@ function TipText({ children }: { children: React.ReactNode }) {
         <path d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/>
       </svg>
       <span className="flex-1">{children}</span>
+    </div>
+  );
+}
+
+// 데이터 제공 현황 안내 컴포넌트
+function DataAvailabilityNotice() {
+  return (
+    <div className="mb-5 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl overflow-hidden">
+      <div className="px-3 md:px-4 py-2 md:py-2.5 bg-blue-100/50 border-b border-blue-200">
+        <div className="flex items-center gap-2">
+          <svg className="w-4 h-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 16v-4M12 8h.01"/>
+          </svg>
+          <span className="text-xs md:text-sm font-semibold text-blue-800">KIS API 데이터 제공 현황</span>
+        </div>
+      </div>
+      <div className="px-3 md:px-4 py-2.5 md:py-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3 text-[0.65rem] md:text-xs">
+          <div className="flex items-start gap-2">
+            <span className="text-green-500 font-bold mt-0.5">✓</span>
+            <div>
+              <span className="font-medium text-gray-700">장중 실시간 제공</span>
+              <p className="text-gray-500 mt-0.5">현재가, 등락률, 거래량, 거래대금, 호가</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-2">
+            <span className="text-amber-500 font-bold mt-0.5">!</span>
+            <div>
+              <span className="font-medium text-gray-700">장 마감 후 확정</span>
+              <p className="text-gray-500 mt-0.5">외인/기관/개인 순매수 (장중 "장중" 표시)</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -376,6 +421,9 @@ export function APIAnalysis() {
         totalStocks={kisData.meta.total_stocks}
         analyzedCount={analysisData?.total_analyzed || 0}
       />
+
+      {/* 데이터 제공 현황 안내 */}
+      <DataAvailabilityNotice />
 
       {/* 시그널 요약 - Vision AI와 동일한 컴포넌트 사용 */}
       {hasAnalysis && (
