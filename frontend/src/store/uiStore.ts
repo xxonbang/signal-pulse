@@ -1,8 +1,8 @@
 import { create } from 'zustand';
 import type { SignalType, MarketType, AnalysisTab } from '@/services/types';
 
-// 히스토리 타입: vision 또는 kis
-export type HistoryType = 'vision' | 'kis';
+// 히스토리 타입: vision, kis, combined
+export type HistoryType = 'vision' | 'kis' | 'combined';
 
 interface UIStore {
   // 현재 활성 탭

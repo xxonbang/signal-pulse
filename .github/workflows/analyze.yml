@@ -438,6 +438,182 @@ jobs:
             echo "::warning::KIS 변환 데이터 파일(kis_gemini.json)을 찾을 수 없습니다"
           fi
 
+      - name: Generate combined analysis
+        run: |
+          mkdir -p results/combined/history
+          python -c "
+          import json
+          from pathlib import Path
+          from datetime import datetime, timedelta, timezone
+
+          KST = timezone(timedelta(hours=9))
+          now = datetime.now(KST)
+
+          results_dir = Path('results')
+          vision_file = results_dir / 'vision' / 'vision_analysis.json'
+          kis_file = results_dir / 'kis' / 'kis_analysis.json'
+          kis_gemini_file = results_dir / 'kis' / 'kis_gemini.json'
+
+          # 시그널 레벨 (비교용)
+          signal_level = {
+              '적극매수': 2, '매수': 1, '중립': 0, '매도': -1, '적극매도': -2
+          }
+
+          def calculate_match_status(vision_signal, api_signal):
+              if not vision_signal and not api_signal:
+                  return 'mismatch'
+              if not vision_signal:
+                  return 'api-only'
+              if not api_signal:
+                  return 'vision-only'
+              if vision_signal == api_signal:
+                  return 'match'
+              diff = abs(signal_level.get(vision_signal, 0) - signal_level.get(api_signal, 0))
+              return 'partial' if diff <= 1 else 'mismatch'
+
+          def calculate_confidence(match_status):
+              return {'match': 1.0, 'partial': 0.7, 'vision-only': 0.5, 'api-only': 0.5, 'mismatch': 0.3}.get(match_status, 0)
+
+          # 데이터 로드
+          vision_data = {}
+          kis_analysis = {}
+          kis_gemini = {}
+
+          if vision_file.exists():
+              with open(vision_file, 'r', encoding='utf-8') as f:
+                  vision_data = json.load(f)
+
+          if kis_file.exists():
+              with open(kis_file, 'r', encoding='utf-8') as f:
+                  kis_analysis = json.load(f)
+
+          if kis_gemini_file.exists():
+              with open(kis_gemini_file, 'r', encoding='utf-8') as f:
+                  kis_gemini = json.load(f)
+
+          # KIS 분석 결과를 코드별 맵으로
+          kis_analysis_map = {}
+          for r in kis_analysis.get('results', []):
+              kis_analysis_map[r['code']] = r
+
+          # KIS 주가 데이터를 코드별 맵으로
+          kis_stocks = kis_gemini.get('stocks', {})
+
+          # 종목 병합
+          combined_stocks = {}
+
+          # Vision 데이터 추가
+          for stock in vision_data.get('results', []):
+              code = stock['code']
+              market = 'KOSDAQ' if code.startswith('3') or code.startswith('4') else 'KOSPI'
+              combined_stocks[code] = {
+                  'code': code,
+                  'name': stock['name'],
+                  'market': market,
+                  'vision_signal': stock.get('signal'),
+                  'vision_reason': stock.get('reason'),
+                  'vision_news': stock.get('news', []),
+                  'api_signal': None,
+                  'api_reason': None,
+                  'api_news': [],
+                  'api_data': None,
+              }
+
+          # KIS 데이터 추가/병합
+          for code, kis_stock in kis_stocks.items():
+              kis_result = kis_analysis_map.get(code, {})
+              if code in combined_stocks:
+                  # 기존 Vision 데이터에 API 추가
+                  combined_stocks[code]['api_signal'] = kis_result.get('signal')
+                  combined_stocks[code]['api_reason'] = kis_result.get('reason')
+                  combined_stocks[code]['api_news'] = kis_result.get('news', [])
+                  combined_stocks[code]['api_data'] = {
+                      'price': kis_stock.get('price'),
+                      'ranking': kis_stock.get('ranking'),
+                      'valuation': kis_stock.get('valuation'),
+                  }
+              else:
+                  # 새로운 API 전용 데이터
+                  combined_stocks[code] = {
+                      'code': code,
+                      'name': kis_stock.get('name', ''),
+                      'market': kis_stock.get('market', 'UNKNOWN'),
+                      'vision_signal': None,
+                      'vision_reason': None,
+                      'vision_news': [],
+                      'api_signal': kis_result.get('signal'),
+                      'api_reason': kis_result.get('reason'),
+                      'api_news': kis_result.get('news', []),
+                      'api_data': {
+                          'price': kis_stock.get('price'),
+                          'ranking': kis_stock.get('ranking'),
+                          'valuation': kis_stock.get('valuation'),
+                      },
+                  }
+
+          # 일치 상태 및 신뢰도 계산
+          for code, stock in combined_stocks.items():
+              stock['match_status'] = calculate_match_status(stock['vision_signal'], stock['api_signal'])
+              stock['confidence'] = calculate_confidence(stock['match_status'])
+
+          # 통계 계산
+          stats = {'total': 0, 'match': 0, 'partial': 0, 'mismatch': 0, 'vision_only': 0, 'api_only': 0}
+          total_confidence = 0
+          signal_counts = {'적극매수': 0, '매수': 0, '중립': 0, '매도': 0, '적극매도': 0}
+
+          for stock in combined_stocks.values():
+              stats['total'] += 1
+              status_key = stock['match_status'].replace('-', '_')
+              if status_key in stats:
+                  stats[status_key] += 1
+              total_confidence += stock['confidence']
+
+              # 시그널 카운트 (vision 또는 api)
+              for sig in [stock.get('vision_signal'), stock.get('api_signal')]:
+                  if sig and sig in signal_counts:
+                      signal_counts[sig] += 1
+
+          stats['avg_confidence'] = total_confidence / stats['total'] if stats['total'] > 0 else 0
+
+          # 결과 데이터 생성
+          combined_result = {
+              'generated_at': now.isoformat(),
+              'date': now.strftime('%Y-%m-%d'),
+              'time': now.strftime('%H%M'),
+              'stats': stats,
+              'signal_counts': signal_counts,
+              'stocks': list(combined_stocks.values()),
+              'source': {
+                  'vision': vision_file.name if vision_file.exists() else None,
+                  'kis_analysis': kis_file.name if kis_file.exists() else None,
+              }
+          }
+
+          # 최신 파일 저장
+          combined_dir = results_dir / 'combined'
+          combined_dir.mkdir(exist_ok=True)
+
+          with open(combined_dir / 'combined_analysis.json', 'w', encoding='utf-8') as f:
+              json.dump(combined_result, f, ensure_ascii=False, indent=2)
+
+          # 히스토리 저장
+          history_dir = combined_dir / 'history'
+          history_dir.mkdir(exist_ok=True)
+          history_filename = f\"combined_{now.strftime('%Y-%m-%d')}_{now.strftime('%H%M')}.json\"
+
+          with open(history_dir / history_filename, 'w', encoding='utf-8') as f:
+              json.dump(combined_result, f, ensure_ascii=False, indent=2)
+
+          print(f'종합분석 생성 완료: {stats[\"total\"]}개 종목')
+          print(f'  - 완전 일치: {stats[\"match\"]}개')
+          print(f'  - 유사: {stats[\"partial\"]}개')
+          print(f'  - 불일치: {stats[\"mismatch\"]}개')
+          print(f'  - Vision만: {stats[\"vision_only\"]}개')
+          print(f'  - API만: {stats[\"api_only\"]}개')
+          print(f'  - 평균 신뢰도: {stats[\"avg_confidence\"]*100:.1f}%')
+          print(f'히스토리 저장: {history_filename}')
+          "
+
       - name: Update history index
         run: |
           python -c "
@@ -537,6 +713,52 @@ jobs:
               json.dump(kis_index_data, f, ensure_ascii=False, indent=2)
 
           print(f'KIS 히스토리 인덱스 갱신: {len(kis_history_files)}개 기록')
+
+          # === Combined 히스토리 인덱스 ===
+          combined_dir = results_dir / 'combined'
+          combined_history_dir = combined_dir / 'history'
+
+          combined_history_files = []
+          if combined_history_dir.exists():
+              for item in sorted(combined_history_dir.iterdir(), reverse=True):
+                  if item.is_file() and item.suffix == '.json':
+                      try:
+                          # 파일명: combined_YYYY-MM-DD_HHMM.json
+                          name_parts = item.stem.replace('combined_', '').split('_')
+                          date_str = name_parts[0] if name_parts else ''
+                          time_str = name_parts[1] if len(name_parts) > 1 else ''
+
+                          with open(item, 'r', encoding='utf-8') as f:
+                              data = json.load(f)
+
+                          stats = data.get('stats', {})
+                          signal_counts = data.get('signal_counts', {})
+
+                          combined_history_files.append({
+                              'date': date_str,
+                              'time': time_str,
+                              'filename': item.name,
+                              'total_stocks': stats.get('total', len(data.get('stocks', []))),
+                              'match_count': stats.get('match', 0),
+                              'avg_confidence': stats.get('avg_confidence', 0),
+                              'signals': signal_counts
+                          })
+                      except Exception:
+                          continue
+
+          combined_index_data = {
+              'updated_at': datetime.now(KST).strftime('%Y-%m-%d %H:%M:%S'),
+              'retention_days': 30,
+              'total_records': len(combined_history_files),
+              'history': combined_history_files
+          }
+
+          if combined_dir.exists():
+              combined_index_path = combined_dir / 'history_index.json'
+              with open(combined_index_path, 'w', encoding='utf-8') as f:
+                  json.dump(combined_index_data, f, ensure_ascii=False, indent=2)
+
+              print(f'Combined 히스토리 인덱스 갱신: {len(combined_history_files)}개 기록')
           "
 
       - name: Commit results

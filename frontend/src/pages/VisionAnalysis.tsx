@@ -2,7 +2,7 @@ import { useVisionData } from '@/hooks/useVisionData';
 import { useHistoryData } from '@/hooks/useHistoryData';
 import { useHistoryIndex } from '@/hooks/useHistoryIndex';
 import { useUIStore } from '@/store/uiStore';
-import { LoadingSpinner, EmptyState, HistoryButton } from '@/components/common';
+import { LoadingSpinner, EmptyState, HistoryButton, Button } from '@/components/common';
 import { SignalSummary } from '@/components/signal';
 import { MarketTabs, StockList } from '@/components/stock';
 import { getSignalCounts, getFilteredStocks, categorizeStocks, getLatestAnalysisTime, formatTimeOnly } from '@/lib/utils';

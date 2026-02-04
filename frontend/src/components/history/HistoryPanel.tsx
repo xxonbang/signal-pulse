@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useHistoryIndex } from '@/hooks/useHistoryIndex';
 import { useUIStore, HistoryType } from '@/store/uiStore';
-import { fetchKISHistoryIndex } from '@/services/api';
+import { fetchKISHistoryIndex, fetchCombinedHistoryIndex } from '@/services/api';
 import { LoadingSpinner } from '@/components/common';
 import { HistoryItem } from './HistoryItem';
 import { cn } from '@/lib/utils';
@@ -29,6 +29,12 @@ export function HistoryPanel() {
     queryFn: fetchKISHistoryIndex,
   });
 
+  // Combined 히스토리
+  const { data: combinedHistoryIndex, isLoading: combinedLoading, error: combinedError } = useQuery({
+    queryKey: ['combined-history', 'index'],
+    queryFn: fetchCombinedHistoryIndex,
+  });
+
   // 패널이 열릴 때 탭 초기화
   useEffect(() => {
     if (isHistoryPanelOpen) {
@@ -36,9 +42,16 @@ export function HistoryPanel() {
     }
   }, [isHistoryPanelOpen, historyType]);
 
-  const historyIndex = activeTab === 'vision' ? visionHistoryIndex : kisHistoryIndex;
-  const isLoading = activeTab === 'vision' ? visionLoading : kisLoading;
-  const error = activeTab === 'vision' ? visionError : kisError;
+  // 현재 탭에 따른 데이터 선택
+  const historyIndex = activeTab === 'vision' ? visionHistoryIndex
+    : activeTab === 'kis' ? kisHistoryIndex
+    : combinedHistoryIndex;
+  const isLoading = activeTab === 'vision' ? visionLoading
+    : activeTab === 'kis' ? kisLoading
+    : combinedLoading;
+  const error = activeTab === 'vision' ? visionError
+    : activeTab === 'kis' ? kisError
+    : combinedError;
 
   const today = new Date().toISOString().split('T')[0];
 
@@ -96,31 +109,49 @@ export function HistoryPanel() {
             <button
               onClick={() => setActiveTab('vision')}
               className={cn(
-                'flex-1 py-1.5 md:py-2 px-3 rounded-md text-[0.7rem] md:text-xs font-medium transition-all',
+                'flex-1 py-1.5 md:py-2 px-2 md:px-3 rounded-md text-[0.6rem] md:text-xs font-medium transition-all',
                 activeTab === 'vision'
                   ? 'bg-white text-purple-700 shadow-sm'
                   : 'text-slate-500 hover:text-slate-700'
               )}
             >
-              <span className="mr-1">👁</span>
-              Vision AI
+              <span className="mr-0.5 md:mr-1">👁</span>
+              <span className="hidden md:inline">Vision AI</span>
+              <span className="md:hidden">Vision</span>
               {visionHistoryIndex && (
-                <span className="ml-1 text-slate-400">({visionHistoryIndex.total_records})</span>
+                <span className="ml-0.5 md:ml-1 text-slate-400">({visionHistoryIndex.total_records})</span>
               )}
             </button>
             <button
               onClick={() => setActiveTab('kis')}
               className={cn(
-                'flex-1 py-1.5 md:py-2 px-3 rounded-md text-[0.7rem] md:text-xs font-medium transition-all',
+                'flex-1 py-1.5 md:py-2 px-2 md:px-3 rounded-md text-[0.6rem] md:text-xs font-medium transition-all',
                 activeTab === 'kis'
                   ? 'bg-white text-cyan-700 shadow-sm'
                   : 'text-slate-500 hover:text-slate-700'
               )}
             >
-              <span className="mr-1">📡</span>
-              한투 API
+              <span className="mr-0.5 md:mr-1">📡</span>
+              <span className="hidden md:inline">한투 API</span>
+              <span className="md:hidden">API</span>
               {kisHistoryIndex && (
-                <span className="ml-1 text-slate-400">({kisHistoryIndex.total_records})</span>
+                <span className="ml-0.5 md:ml-1 text-slate-400">({kisHistoryIndex.total_records})</span>
+              )}
+            </button>
+            <button
+              onClick={() => setActiveTab('combined')}
+              className={cn(
+                'flex-1 py-1.5 md:py-2 px-2 md:px-3 rounded-md text-[0.6rem] md:text-xs font-medium transition-all',
+                activeTab === 'combined'
+                  ? 'bg-white text-indigo-700 shadow-sm'
+                  : 'text-slate-500 hover:text-slate-700'
+              )}
+            >
+              <span className="mr-0.5 md:mr-1">📊</span>
+              <span className="hidden md:inline">종합분석</span>
+              <span className="md:hidden">종합</span>
+              {combinedHistoryIndex && (
+                <span className="ml-0.5 md:ml-1 text-slate-400">({combinedHistoryIndex.total_records})</span>
               )}
             </button>
           </div>

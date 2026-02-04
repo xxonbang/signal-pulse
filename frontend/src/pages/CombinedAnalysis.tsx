@@ -1,7 +1,6 @@
 import { useState, useMemo, memo } from 'react';
-import { useQuery } from '@tanstack/react-query';
-import { fetchLatestData, fetchKISData, fetchKISAnalysis, fetchHistoryIndex, fetchKISHistoryIndex } from '@/services/api';
-import type { StockResult, KISStockData, KISAnalysisResult, MarketType, SignalType, NewsItem } from '@/services/types';
+import { useCombinedData, useCombinedHistoryData, useCombinedHistoryIndex } from '@/hooks/useCombinedData';
+import type { CombinedStock, CombinedAnalysisData, MarketType, SignalType, MatchStatus } from '@/services/types';
 import { LoadingSpinner, EmptyState, HistoryButton } from '@/components/common';
 import { SignalBadge } from '@/components/signal';
 import { MarketTabs } from '@/components/stock';
@@ -9,58 +8,8 @@ import { NewsSection } from '@/components/news';
 import { useUIStore } from '@/store/uiStore';
 import { cn } from '@/lib/utils';
 
-// 일치 상태 타입
-type MatchStatus = 'match' | 'partial' | 'mismatch' | 'vision-only' | 'api-only';
-
-// 통합 종목 데이터
-interface CombinedStock {
-  code: string;
-  name: string;
-  market: 'KOSPI' | 'KOSDAQ' | 'UNKNOWN';
-  visionSignal?: SignalType;
-  visionReason?: string;
-  visionNews?: NewsItem[];
-  apiSignal?: SignalType;
-  apiReason?: string;
-  apiNews?: NewsItem[];
-  apiData?: KISStockData;
-  matchStatus: MatchStatus;
-  confidenceScore: number;
-}
-
-// 시그널 레벨 (비교용)
-const signalLevel: Record<SignalType, number> = {
-  '적극매수': 2,
-  '매수': 1,
-  '중립': 0,
-  '매도': -1,
-  '적극매도': -2,
-};
-
-// 일치 상태 계산
-function calculateMatchStatus(visionSignal?: SignalType, apiSignal?: SignalType): MatchStatus {
-  if (!visionSignal && !apiSignal) return 'mismatch';
-  if (!visionSignal) return 'api-only';
-  if (!apiSignal) return 'vision-only';
-
-  if (visionSignal === apiSignal) return 'match';
-
-  const diff = Math.abs(signalLevel[visionSignal] - signalLevel[apiSignal]);
-  if (diff <= 1) return 'partial';
-  return 'mismatch';
-}
-
-// 신뢰도 점수 계산
-function calculateConfidence(matchStatus: MatchStatus): number {
-  switch (matchStatus) {
-    case 'match': return 1.0;
-    case 'partial': return 0.7;
-    case 'vision-only':
-    case 'api-only': return 0.5;
-    case 'mismatch': return 0.3;
-    default: return 0;
-  }
-}
+// 시그널 타입 리스트
+const SIGNAL_TYPES: SignalType[] = ['적극매수', '매수', '중립', '매도', '적극매도'];
 
 // 일치 상태 뱃지
 function MatchStatusBadge({ status }: { status: MatchStatus }) {
@@ -102,14 +51,14 @@ function ConfidenceBar({ score }: { score: number }) {
 const CombinedStockCard = memo(function CombinedStockCard({ stock }: { stock: CombinedStock }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const changeRate = stock.apiData?.price?.change_rate_pct ?? 0;
+  const changeRate = stock.api_data?.price?.change_rate_pct ?? 0;
   const priceChangeColor = changeRate > 0 ? 'text-red-500' : changeRate < 0 ? 'text-blue-500' : 'text-text-secondary';
 
   return (
     <div className={cn(
       'bg-bg-secondary border rounded-xl p-3 md:p-4',
-      stock.matchStatus === 'match' ? 'border-emerald-300 bg-emerald-50/30' :
-      stock.matchStatus === 'mismatch' ? 'border-red-300 bg-red-50/30' :
+      stock.match_status === 'match' ? 'border-emerald-300 bg-emerald-50/30' :
+      stock.match_status === 'mismatch' ? 'border-red-300 bg-red-50/30' :
       'border-border'
     )}>
       {/* 헤더 */}
@@ -128,16 +77,16 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock }: { stock: Co
               {stock.market}
             </span>
           </div>
-          {stock.apiData?.price?.current != null && (
+          {stock.api_data?.price?.current != null && (
             <div className="flex items-baseline gap-1.5 md:gap-2">
-              <span className="text-base md:text-lg font-bold">{stock.apiData.price.current.toLocaleString()}원</span>
+              <span className="text-base md:text-lg font-bold">{stock.api_data.price.current.toLocaleString()}원</span>
               <span className={cn('text-xs md:text-sm font-medium', priceChangeColor)}>
-                {(stock.apiData.price.change_rate_pct ?? 0) > 0 ? '+' : ''}{(stock.apiData.price.change_rate_pct ?? 0).toFixed(2)}%
+                {changeRate > 0 ? '+' : ''}{changeRate.toFixed(2)}%
               </span>
             </div>
           )}
         </div>
-        <MatchStatusBadge status={stock.matchStatus} />
+        <MatchStatusBadge status={stock.match_status} />
       </div>
 
       {/* 시그널 비교 */}
@@ -146,8 +95,8 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock }: { stock: Co
           <div className="text-[0.65rem] md:text-xs text-text-muted mb-1 md:mb-1.5 flex items-center gap-1">
             <span>👁</span> <span className="hidden md:inline">Vision AI</span><span className="md:hidden">Vision</span>
           </div>
-          {stock.visionSignal ? (
-            <SignalBadge signal={stock.visionSignal} />
+          {stock.vision_signal ? (
+            <SignalBadge signal={stock.vision_signal} />
           ) : (
             <span className="text-[0.65rem] md:text-xs text-text-muted">없음</span>
           )}
@@ -156,8 +105,8 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock }: { stock: Co
           <div className="text-[0.65rem] md:text-xs text-text-muted mb-1 md:mb-1.5 flex items-center gap-1">
             <span>📡</span> <span className="hidden md:inline">한투 API</span><span className="md:hidden">API</span>
           </div>
-          {stock.apiSignal ? (
-            <SignalBadge signal={stock.apiSignal} />
+          {stock.api_signal ? (
+            <SignalBadge signal={stock.api_signal} />
           ) : (
             <span className="text-[0.65rem] md:text-xs text-text-muted">없음</span>
           )}
@@ -167,11 +116,11 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock }: { stock: Co
       {/* 신뢰도 */}
       <div className="mb-2 md:mb-3">
         <div className="text-[0.65rem] md:text-xs text-text-muted mb-1">신뢰도</div>
-        <ConfidenceBar score={stock.confidenceScore} />
+        <ConfidenceBar score={stock.confidence} />
       </div>
 
       {/* 분석 근거 토글 */}
-      {(stock.visionReason || stock.apiReason) && (
+      {(stock.vision_reason || stock.api_reason) && (
         <div className="cursor-pointer" onClick={() => setIsExpanded(!isExpanded)}>
           <div className="flex items-center justify-between text-[0.65rem] md:text-xs text-text-muted mb-1">
             <span>분석 근거</span>
@@ -179,16 +128,16 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock }: { stock: Co
           </div>
           <div className={cn('overflow-hidden transition-all duration-300 ease-in-out', isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0')}>
             <div className="space-y-1.5 md:space-y-2">
-              {stock.visionReason && (
+              {stock.vision_reason && (
                 <div className="bg-purple-50 border border-purple-100 rounded-lg p-2 md:p-3">
                   <div className="text-[0.65rem] md:text-xs font-medium text-purple-700 mb-1">👁 Vision</div>
-                  <p className="text-xs md:text-sm text-text-secondary">{stock.visionReason}</p>
+                  <p className="text-xs md:text-sm text-text-secondary">{stock.vision_reason}</p>
                 </div>
               )}
-              {stock.apiReason && (
+              {stock.api_reason && (
                 <div className="bg-cyan-50 border border-cyan-100 rounded-lg p-2 md:p-3">
                   <div className="text-[0.65rem] md:text-xs font-medium text-cyan-700 mb-1">📡 API</div>
-                  <p className="text-xs md:text-sm text-text-secondary">{stock.apiReason}</p>
+                  <p className="text-xs md:text-sm text-text-secondary">{stock.api_reason}</p>
                 </div>
               )}
             </div>
@@ -198,7 +147,7 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock }: { stock: Co
 
       {/* 뉴스 섹션 - Vision 뉴스와 API 뉴스 중 있는 것 표시 (Vision 우선) */}
       {(() => {
-        const combinedNews = stock.visionNews || stock.apiNews;
+        const combinedNews = stock.vision_news?.length ? stock.vision_news : stock.api_news;
         return combinedNews && combinedNews.length > 0 ? (
           <>
             <div className="md:hidden">
@@ -252,32 +201,32 @@ function TipText({ children }: { children: React.ReactNode }) {
   );
 }
 
-// 시그널 타입 리스트
-const SIGNAL_TYPES: SignalType[] = ['적극매수', '매수', '중립', '매도', '적극매도'];
-
 
 export function CombinedAnalysis() {
   const [marketFilter, setMarketFilter] = useState<MarketType>('all');
   // 멀티셀렉트: 빈 Set = 전체 선택
   const [matchFilters, setMatchFilters] = useState<Set<MatchStatus>>(new Set());
   const [signalFilters, setSignalFilters] = useState<Set<SignalType>>(new Set());
-  const { openHistoryPanel } = useUIStore();
+  const { openHistoryPanel, isViewingHistory, viewingHistoryFile, historyType } = useUIStore();
 
-  // 히스토리 인덱스 로드 (Vision + KIS 통합)
-  const { data: visionHistoryIndex } = useQuery({
-    queryKey: ['history', 'index'],
-    queryFn: fetchHistoryIndex,
-  });
-  const { data: kisHistoryIndex } = useQuery({
-    queryKey: ['kis-history', 'index'],
-    queryFn: fetchKISHistoryIndex,
-  });
+  // 종합분석 히스토리 인덱스
+  const { data: combinedHistoryIndex } = useCombinedHistoryIndex();
 
-  // 통합 히스토리 카운트 (더 많은 쪽)
-  const historyCount = Math.max(
-    visionHistoryIndex?.total_records || 0,
-    kisHistoryIndex?.total_records || 0
+  // 히스토리 카운트
+  const historyCount = combinedHistoryIndex?.total_records || 0;
+
+  // 최신 데이터
+  const { data: latestData, isLoading: isLoadingLatest } = useCombinedData();
+
+  // 히스토리 데이터 (종합분석 히스토리를 볼 때만)
+  const isCombinedHistory = isViewingHistory && historyType === 'combined';
+  const { data: historyData, isLoading: isLoadingHistory } = useCombinedHistoryData(
+    isCombinedHistory ? viewingHistoryFile : null
   );
+
+  // 실제 사용할 데이터 선택
+  const data: CombinedAnalysisData | null | undefined = isCombinedHistory ? historyData : latestData;
+  const isLoading = isCombinedHistory ? isLoadingHistory : isLoadingLatest;
 
   // 필터 토글 함수
   const toggleMatchFilter = (status: MatchStatus) => {
@@ -309,87 +258,11 @@ export function CombinedAnalysis() {
     setSignalFilters(new Set());
   };
 
-  // Vision AI 데이터 로드
-  const { data: visionData, isLoading: isLoadingVision } = useQuery({
-    queryKey: ['vision', 'latest'],
-    queryFn: fetchLatestData,
-  });
-
-  // KIS 데이터 로드
-  const { data: kisData, isLoading: isLoadingKIS } = useQuery({
-    queryKey: ['kis-data'],
-    queryFn: fetchKISData,
-  });
-
-  // KIS 분석 결과 로드
-  const { data: kisAnalysis, isLoading: isLoadingAnalysis } = useQuery({
-    queryKey: ['kis-analysis'],
-    queryFn: fetchKISAnalysis,
-  });
-
-  // 통합 데이터 생성
-  const combinedStocks = useMemo((): CombinedStock[] => {
-    const stockMap = new Map<string, CombinedStock>();
-
-    // Vision AI 데이터 추가
-    if (visionData?.results) {
-      visionData.results.forEach((stock: StockResult) => {
-        const market = stock.code.startsWith('3') || stock.code.startsWith('4') ? 'KOSDAQ' : 'KOSPI';
-        stockMap.set(stock.code, {
-          code: stock.code,
-          name: stock.name,
-          market: market as 'KOSPI' | 'KOSDAQ',
-          visionSignal: stock.signal,
-          visionReason: stock.reason,
-          visionNews: stock.news,
-          matchStatus: 'vision-only',
-          confidenceScore: 0.5,
-        });
-      });
-    }
-
-    // KIS 데이터 및 분석 결과 추가
-    if (kisData?.stocks) {
-      const analysisMap = new Map<string, KISAnalysisResult>();
-      if (kisAnalysis?.results) {
-        kisAnalysis.results.forEach(r => analysisMap.set(r.code, r));
-      }
-
-      Object.values(kisData.stocks).forEach((stock: KISStockData) => {
-        const analysis = analysisMap.get(stock.code);
-        const existing = stockMap.get(stock.code);
-
-        if (existing) {
-          // 기존 Vision 데이터에 API 데이터 병합
-          existing.apiData = stock;
-          existing.apiSignal = analysis?.signal;
-          existing.apiReason = analysis?.reason;
-          existing.apiNews = analysis?.news;
-          existing.matchStatus = calculateMatchStatus(existing.visionSignal, existing.apiSignal);
-          existing.confidenceScore = calculateConfidence(existing.matchStatus);
-        } else {
-          // 새로운 API 전용 데이터
-          stockMap.set(stock.code, {
-            code: stock.code,
-            name: stock.name,
-            market: stock.market,
-            apiData: stock,
-            apiSignal: analysis?.signal,
-            apiReason: analysis?.reason,
-            apiNews: analysis?.news,
-            matchStatus: analysis?.signal ? 'api-only' : 'api-only',
-            confidenceScore: analysis?.signal ? 0.5 : 0,
-          });
-        }
-      });
-    }
-
-    return Array.from(stockMap.values());
-  }, [visionData, kisData, kisAnalysis]);
-
-  // 필터링
+  // 필터링된 종목
   const filteredStocks = useMemo(() => {
-    let stocks = combinedStocks;
+    if (!data?.stocks) return [];
+
+    let stocks = [...data.stocks];
 
     // 시장 필터
     if (marketFilter !== 'all') {
@@ -398,88 +271,62 @@ export function CombinedAnalysis() {
 
     // 일치 상태 필터 (멀티셀렉트: 빈 Set = 전체)
     if (matchFilters.size > 0) {
-      stocks = stocks.filter(s => matchFilters.has(s.matchStatus));
+      stocks = stocks.filter(s => matchFilters.has(s.match_status));
     }
 
     // 시그널 필터 (멀티셀렉트: 빈 Set = 전체)
     // OR 로직: vision 또는 api 시그널 중 하나라도 선택된 필터에 포함되면 표시
     if (signalFilters.size > 0) {
       stocks = stocks.filter(s => {
-        const visionMatch = s.visionSignal && signalFilters.has(s.visionSignal);
-        const apiMatch = s.apiSignal && signalFilters.has(s.apiSignal);
+        const visionMatch = s.vision_signal && signalFilters.has(s.vision_signal);
+        const apiMatch = s.api_signal && signalFilters.has(s.api_signal);
         return visionMatch || apiMatch;
       });
     }
 
     // 신뢰도 순으로 정렬 (높은 순)
-    return stocks.sort((a, b) => b.confidenceScore - a.confidenceScore);
-  }, [combinedStocks, marketFilter, matchFilters, signalFilters]);
+    return stocks.sort((a, b) => b.confidence - a.confidence);
+  }, [data, marketFilter, matchFilters, signalFilters]);
 
-  // 통계 계산 (단일 순회로 최적화)
-  const stats = useMemo(() => {
-    let matched = 0, partial = 0, mismatched = 0, visionOnly = 0, apiOnly = 0;
-    let totalConfidence = 0;
+  // 통계 데이터 (pre-calculated에서 가져옴)
+  const stats = data?.stats || { total: 0, match: 0, partial: 0, mismatch: 0, vision_only: 0, api_only: 0, avg_confidence: 0 };
 
-    for (const s of combinedStocks) {
-      switch (s.matchStatus) {
-        case 'match': matched++; break;
-        case 'partial': partial++; break;
-        case 'mismatch': mismatched++; break;
-        case 'vision-only': visionOnly++; break;
-        case 'api-only': apiOnly++; break;
-      }
-      totalConfidence += s.confidenceScore;
+  // 시장별 카운트 + 시그널별 카운트
+  const { marketCounts, signalCounts } = useMemo(() => {
+    if (!data?.stocks) {
+      return {
+        marketCounts: { all: 0, kospi: 0, kosdaq: 0 },
+        signalCounts: { '적극매수': 0, '매수': 0, '중립': 0, '매도': 0, '적극매도': 0 } as Record<SignalType, number>,
+      };
     }
 
-    const total = combinedStocks.length;
-    const avgConfidence = total > 0 ? totalConfidence / total : 0;
-
-    return { total, matched, partial, mismatched, visionOnly, apiOnly, avgConfidence };
-  }, [combinedStocks]);
-
-  // 시장별 카운트 + 시그널별 카운트 (단일 순회)
-  const { marketCounts, signalCounts } = useMemo(() => {
     let kospi = 0, kosdaq = 0;
-    const signals: Record<SignalType, number> = {
-      '적극매수': 0, '매수': 0, '중립': 0, '매도': 0, '적극매도': 0
-    };
-
-    for (const s of combinedStocks) {
-      // 시장 카운트
+    for (const s of data.stocks) {
       if (s.market === 'KOSPI') kospi++;
       else if (s.market === 'KOSDAQ') kosdaq++;
-
-      // 시그널 카운트 (vision 또는 api 중 하나라도 해당되면 카운트)
-      if (s.visionSignal) signals[s.visionSignal]++;
-      if (s.apiSignal && s.apiSignal !== s.visionSignal) signals[s.apiSignal]++;
     }
 
     return {
       marketCounts: { all: filteredStocks.length, kospi, kosdaq },
-      signalCounts: signals,
+      signalCounts: data.signal_counts || { '적극매수': 0, '매수': 0, '중립': 0, '매도': 0, '적극매도': 0 },
     };
-  }, [combinedStocks, filteredStocks]);
-
-  const isLoading = isLoadingVision || isLoadingKIS || isLoadingAnalysis;
+  }, [data, filteredStocks]);
 
   if (isLoading) {
     return (
       <section id="combined-analysis" className="mb-10">
-        <LoadingSpinner message="데이터 통합 중..." />
+        <LoadingSpinner message="종합 분석 데이터 로딩 중..." />
       </section>
     );
   }
 
-  const hasVisionData = visionData && visionData.results && visionData.results.length > 0;
-  const hasKISData = kisData?.stocks && Object.keys(kisData.stocks).length > 0;
-
-  if (!hasVisionData && !hasKISData) {
+  if (!data || !data.stocks || data.stocks.length === 0) {
     return (
       <section id="combined-analysis" className="mb-10">
         <EmptyState
           icon="📊"
-          title="분석 데이터가 없습니다"
-          description="Vision AI 분석 또는 한투 API 데이터가 수집되면 여기에 비교 결과가 표시됩니다."
+          title="종합 분석 데이터가 없습니다"
+          description="Vision AI 분석과 한투 API 분석이 완료되면 여기에 비교 결과가 표시됩니다."
         />
       </section>
     );
@@ -491,37 +338,36 @@ export function CombinedAnalysis() {
       <div className="flex justify-between items-center mb-5 flex-wrap gap-3">
         <div className="flex-1">
           <h2 className="text-xl font-bold text-text-primary mb-1">분석 종합</h2>
-          <p className="text-sm text-text-muted">Vision AI와 한투 API 분석 결과 비교 검증</p>
+          <p className="text-sm text-text-muted">
+            Vision AI와 한투 API 분석 결과 비교 검증
+            {isCombinedHistory && viewingHistoryFile && (
+              <span className="ml-2 text-indigo-600">
+                (히스토리: {data.date} {data.time})
+              </span>
+            )}
+          </p>
         </div>
         <HistoryButton
-          onClick={() => openHistoryPanel('vision')}
+          onClick={() => openHistoryPanel('combined')}
           count={historyCount}
         />
       </div>
 
-      {/* KIS 데이터 없음 안내 */}
-      {hasVisionData && !hasKISData && (
-        <div className="flex items-center gap-2 px-4 py-3 bg-amber-50 border border-amber-200 rounded-lg mb-5 text-sm text-amber-800">
-          <span>📡</span>
-          <span>한투 API 데이터가 아직 수집되지 않았습니다. 현재는 Vision AI 분석 결과만 표시됩니다.</span>
-        </div>
-      )}
-
       {/* 통계 요약 */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
         <StatCard icon="📊" label="총 종목" value={stats.total} colorClass="bg-gray-100" />
-        <StatCard icon="✓" label="완전 일치" value={stats.matched} subValue={`${((stats.matched / stats.total) * 100).toFixed(0)}%`} colorClass="bg-emerald-100" />
+        <StatCard icon="✓" label="완전 일치" value={stats.match} subValue={stats.total > 0 ? `${((stats.match / stats.total) * 100).toFixed(0)}%` : '0%'} colorClass="bg-emerald-100" />
         <StatCard icon="≈" label="유사" value={stats.partial} colorClass="bg-blue-100" />
-        <StatCard icon="✗" label="불일치" value={stats.mismatched} colorClass="bg-red-100" />
+        <StatCard icon="✗" label="불일치" value={stats.mismatch} colorClass="bg-red-100" />
       </div>
 
       {/* 평균 신뢰도 */}
       <div className="bg-bg-secondary border border-border rounded-xl p-4 mb-5">
         <div className="flex items-center justify-between mb-2">
           <span className="text-sm font-medium">평균 신뢰도</span>
-          <span className="text-lg font-bold">{(stats.avgConfidence * 100).toFixed(0)}%</span>
+          <span className="text-lg font-bold">{(stats.avg_confidence * 100).toFixed(0)}%</span>
         </div>
-        <ConfidenceBar score={stats.avgConfidence} />
+        <ConfidenceBar score={stats.avg_confidence} />
         <p className="text-xs text-text-muted mt-2">
           두 분석 소스의 일치율이 높을수록 신뢰도가 높습니다. 완전 일치=100%, 유사=70%, 단일 소스=50%, 불일치=30%
         </p>
@@ -550,11 +396,11 @@ export function CombinedAnalysis() {
           <div className="text-xs text-text-muted mb-2">일치 상태 (복수 선택 가능)</div>
           <div className="flex flex-wrap gap-2">
             {[
-              { value: 'match' as MatchStatus, label: '완전 일치', icon: '✓', count: stats.matched },
+              { value: 'match' as MatchStatus, label: '완전 일치', icon: '✓', count: stats.match },
               { value: 'partial' as MatchStatus, label: '유사', icon: '≈', count: stats.partial },
-              { value: 'mismatch' as MatchStatus, label: '불일치', icon: '✗', count: stats.mismatched },
-              { value: 'vision-only' as MatchStatus, label: 'Vision만', icon: '👁', count: stats.visionOnly },
-              { value: 'api-only' as MatchStatus, label: 'API만', icon: '📡', count: stats.apiOnly },
+              { value: 'mismatch' as MatchStatus, label: '불일치', icon: '✗', count: stats.mismatch },
+              { value: 'vision-only' as MatchStatus, label: 'Vision만', icon: '👁', count: stats.vision_only },
+              { value: 'api-only' as MatchStatus, label: 'API만', icon: '📡', count: stats.api_only },
             ].map(({ value, label, icon, count }) => (
               <button
                 key={value}

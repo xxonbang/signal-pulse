@@ -1,4 +1,4 @@
-import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData } from './types';
+import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData, CombinedAnalysisData } from './types';
 
 const BASE_URL = import.meta.env.DEV ? '' : '.';
 
@@ -82,6 +82,52 @@ export async function fetchKISHistoryData(filename: string): Promise<KISAnalysis
         return null;
       }
       throw new Error('Failed to fetch KIS history data');
+    }
+    return response.json();
+  } catch {
+    return null;
+  }
+}
+
+// Combined 분석 API 함수들
+export async function fetchCombinedAnalysis(): Promise<CombinedAnalysisData | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/combined/combined_analysis.json`);
+    if (!response.ok) {
+      if (response.status === 404) {
+        return null;
+      }
+      throw new Error('Failed to fetch combined analysis');
+    }
+    return response.json();
+  } catch {
+    return null;
+  }
+}
+
+export async function fetchCombinedHistoryIndex(): Promise<HistoryIndex | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/combined/history_index.json`);
+    if (!response.ok) {
+      if (response.status === 404) {
+        return null;
+      }
+      throw new Error('Failed to fetch combined history index');
+    }
+    return response.json();
+  } catch {
+    return null;
+  }
+}
+
+export async function fetchCombinedHistoryData(filename: string): Promise<CombinedAnalysisData | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/combined/history/${filename}`);
+    if (!response.ok) {
+      if (response.status === 404) {
+        return null;
+      }
+      throw new Error('Failed to fetch combined history data');
     }
     return response.json();
   } catch {

@@ -132,3 +132,56 @@ export interface KISAnalysisData {
   total_analyzed: number;
   results: KISAnalysisResult[];
 }
+
+// Combined 분석 타입
+export type MatchStatus = 'match' | 'partial' | 'mismatch' | 'vision-only' | 'api-only';
+
+export interface CombinedStock {
+  code: string;
+  name: string;
+  market: 'KOSPI' | 'KOSDAQ' | 'UNKNOWN';
+  vision_signal: SignalType | null;
+  vision_reason: string | null;
+  vision_news: NewsItem[];
+  api_signal: SignalType | null;
+  api_reason: string | null;
+  api_news: NewsItem[];
+  api_data: {
+    price?: {
+      current: number;
+      change_rate_pct: number;
+    };
+    ranking?: {
+      volume_rank: number;
+    };
+    valuation?: {
+      per: number;
+      pbr: number;
+    };
+  } | null;
+  match_status: MatchStatus;
+  confidence: number;
+}
+
+export interface CombinedAnalysisStats {
+  total: number;
+  match: number;
+  partial: number;
+  mismatch: number;
+  vision_only: number;
+  api_only: number;
+  avg_confidence: number;
+}
+
+export interface CombinedAnalysisData {
+  generated_at: string;
+  date: string;
+  time: string;
+  stats: CombinedAnalysisStats;
+  signal_counts: Record<SignalType, number>;
+  stocks: CombinedStock[];
+  source: {
+    vision: string | null;
+    kis_analysis: string | null;
+  };
+}
