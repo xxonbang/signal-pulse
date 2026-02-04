@@ -159,7 +159,11 @@ function AnalysisContent({ data }: { data: AnalysisData }) {
         <EmptyState
           icon="🔍"
           title="해당 조건의 종목이 없습니다"
-          description={`${activeMarket === 'kospi' ? '코스피' : activeMarket === 'kosdaq' ? '코스닥' : '전체'} 시장에서 "${activeSignal}" 시그널 종목을 찾을 수 없습니다.`}
+          description={
+            activeSignal
+              ? `${activeMarket === 'kospi' ? '코스피' : activeMarket === 'kosdaq' ? '코스닥' : '전체'} 시장에서 "${activeSignal}" 시그널 종목을 찾을 수 없습니다.`
+              : `${activeMarket === 'kospi' ? '코스피' : activeMarket === 'kosdaq' ? '코스닥' : '전체'} 시장에 분석된 종목이 없습니다.`
+          }
         />
       ) : (
         <>
