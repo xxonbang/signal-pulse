@@ -53,8 +53,8 @@ def rotate_to_next_key():
     _current_key_index = (_current_key_index + 1) % len(GEMINI_API_KEYS)
 
 
-# 배치 분석 프롬프트
-BATCH_ANALYSIS_PROMPT = """당신은 20년 경력의 대한민국 주식 시장 전문 퀀트 애널리스트입니다.
+# Vision AI 분석 프롬프트
+VISION_ANALYSIS_PROMPT = """당신은 20년 경력의 대한민국 주식 시장 전문 퀀트 애널리스트입니다.
 
 아래에 {count}개의 네이버 증권 종목 상세 페이지 스크린샷이 첨부되어 있습니다.
 각 이미지에 대해 다음 작업을 수행하세요:
@@ -153,7 +153,7 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
     ])
 
     # 프롬프트 생성
-    prompt = BATCH_ANALYSIS_PROMPT.format(
+    prompt = VISION_ANALYSIS_PROMPT.format(
         count=len(valid_stocks),
         stock_list=stock_list_str
     )
