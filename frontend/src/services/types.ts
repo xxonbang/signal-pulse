@@ -16,8 +16,20 @@ export interface NewsItem {
 export interface StockResult {
   code: string;
   name: string;
+  market?: string;  // 코스피/코스닥
+  current_price?: number;
+  change_rate?: number;
   signal: SignalType;
   reason: string;
+  key_factors?: {
+    price_trend: string;
+    volume_signal: string;
+    foreign_flow: string;
+    institution_flow: string;
+    valuation: string;
+  };
+  risk_level?: string;
+  confidence?: number;
   capture_time?: string;
   analysis_time?: string;
   news?: NewsItem[];

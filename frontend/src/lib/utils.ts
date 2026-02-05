@@ -7,6 +7,20 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function categorizeStocks(results: StockResult[]) {
+  // market 필드가 있으면 해당 필드로 분류, 없으면 인덱스 기반 (하위 호환성)
+  const hasMarketField = results.some(r => r.market);
+
+  if (hasMarketField) {
+    const kospi = results.filter(r =>
+      r.market === '코스피' || r.market === 'KOSPI'
+    );
+    const kosdaq = results.filter(r =>
+      r.market === '코스닥' || r.market === 'KOSDAQ'
+    );
+    return { kospi, kosdaq };
+  }
+
+  // 하위 호환: market 필드 없으면 인덱스 기반
   const kospi = results.slice(0, 50);
   const kosdaq = results.slice(50, 120);
   return { kospi, kosdaq };
