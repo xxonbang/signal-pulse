@@ -24,13 +24,12 @@ export function ScrollToTop() {
       aria-label="페이지 최상단으로 이동"
       style={{
         background: hovered
-          ? 'linear-gradient(135deg, rgba(37,99,235,0.75), rgba(8,145,178,0.75))'
-          : 'linear-gradient(135deg, rgba(37,99,235,0.4), rgba(8,145,178,0.4))',
+          ? 'linear-gradient(135deg, rgba(37,99,235,0.7), rgba(8,145,178,0.7))'
+          : 'linear-gradient(135deg, rgba(37,99,235,0.35), rgba(8,145,178,0.35))',
       }}
       className={`
         fixed bottom-6 right-6 z-50
         w-11 h-11 rounded-full
-        backdrop-blur-md
         shadow-lg shadow-blue-500/15
         flex items-center justify-center
         transition-all duration-300 ease-out
