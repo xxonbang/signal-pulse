@@ -1,6 +1,6 @@
 import { useEffect, useState, lazy, Suspense } from 'react';
 import { QueryClient, QueryClientProvider, useQueryClient } from '@tanstack/react-query';
-import { Navigation, Toast } from '@/components/common';
+import { Navigation, Toast, ScrollToTop } from '@/components/common';
 import { AnalysisTabs, Footer } from '@/components/layout';
 import { HistoryPanel } from '@/components/history';
 import { VisionAnalysis, APIAnalysis } from '@/pages';
@@ -104,6 +104,7 @@ function AppContent() {
       </main>
 
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
