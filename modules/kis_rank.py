@@ -191,8 +191,8 @@ class KISRankAPI:
                     seen_codes.add(code)
                     all_stocks.append(stock)
 
-        # 거래량 기준 정렬
-        all_stocks.sort(key=lambda x: safe_int(x.get("acml_vol", 0)), reverse=True)
+        # 거래대금 기준 정렬
+        all_stocks.sort(key=lambda x: safe_int(x.get("acml_tr_pbmn", 0)), reverse=True)
 
         return all_stocks
 
@@ -259,8 +259,8 @@ class KISRankAPI:
                     stock["_market"] = actual_market
                     all_stocks.append(stock)
 
-        # 거래량 기준 정렬 (여러 시장 병합 시 필요)
-        all_stocks.sort(key=lambda x: safe_int(x.get("acml_vol", 0)), reverse=True)
+        # 거래대금 기준 정렬 (여러 시장 병합 시 필요)
+        all_stocks.sort(key=lambda x: safe_int(x.get("acml_tr_pbmn", 0)), reverse=True)
 
         # 결과 정리 및 필터링
         parsed = []
