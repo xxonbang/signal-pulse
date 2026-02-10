@@ -9,9 +9,10 @@ interface StockBadgeProps {
 }
 
 export function StockBadge({ stock, category, date }: StockBadgeProps) {
-  const { excludedStocks, toggleStock } = useSimulationStore();
+  const { excludedStocks, toggleStock, simulationMode } = useSimulationStore();
   const key = stockKey(date, category, stock.code);
   const isExcluded = excludedStocks.has(key);
+  const isHighMode = simulationMode === 'high';
 
   return (
     <label
@@ -55,18 +56,33 @@ export function StockBadge({ stock, category, date }: StockBadgeProps) {
         </div>
         <div className="flex items-center gap-2 mt-0.5 text-xs text-text-muted">
           {stock.open_price !== null ? (
-            <>
-              <span>시가 {stock.open_price.toLocaleString()}</span>
-              <span>→</span>
-              <span>종가 {stock.close_price?.toLocaleString()}</span>
-            </>
+            isHighMode ? (
+              stock.high_price !== null && stock.high_price !== undefined ? (
+                <>
+                  <span>시가 {stock.open_price.toLocaleString()}</span>
+                  <span>→</span>
+                  <span>고가 {stock.high_price.toLocaleString()}</span>
+                </>
+              ) : (
+                <>
+                  <span>시가 {stock.open_price.toLocaleString()}</span>
+                  <span className="text-text-muted/60">고가 미수집</span>
+                </>
+              )
+            ) : (
+              <>
+                <span>시가 {stock.open_price.toLocaleString()}</span>
+                <span>→</span>
+                <span>종가 {stock.close_price?.toLocaleString()}</span>
+              </>
+            )
           ) : (
             <span>가격 미수집</span>
           )}
         </div>
       </div>
 
-      <ReturnDisplay value={stock.return_pct} size="sm" />
+      <ReturnDisplay value={isHighMode ? stock.high_return_pct : stock.return_pct} size="sm" />
     </label>
   );
 }

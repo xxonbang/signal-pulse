@@ -217,7 +217,9 @@ export interface SimulationStock {
   market: string;
   open_price: number | null;
   close_price: number | null;
+  high_price: number | null;
   return_pct: number | null;
+  high_return_pct: number | null;
 }
 
 export type SimulationCategory = 'vision' | 'kis' | 'combined';

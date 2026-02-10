@@ -17,7 +17,7 @@ function formatDateLabel(dateStr: string) {
 }
 
 export function DateSelector({ items, dataByDate }: DateSelectorProps) {
-  const { selectedDates, activeDetailDate, activeCategories, excludedStocks, toggleDate, selectAllDates, deselectAllDates, setActiveDetailDate } = useSimulationStore();
+  const { selectedDates, activeDetailDate, activeCategories, excludedStocks, simulationMode, toggleDate, selectAllDates, deselectAllDates, setActiveDetailDate } = useSimulationStore();
 
   const allDates = useMemo(() => items.map((item) => item.date), [items]);
   const allSelected = allDates.length > 0 && allDates.every((d) => selectedDates.has(d));
@@ -43,9 +43,10 @@ export function DateSelector({ items, dataByDate }: DateSelectorProps) {
             if (!activeCategories.has(cat)) return;
             if (excludedStocks.has(stockKey(item.date, cat, s.code))) return;
             included++;
-            if (s.open_price !== null && s.close_price !== null) {
+            const sellPrice = simulationMode === 'high' ? s.high_price : s.close_price;
+            if (s.open_price !== null && sellPrice !== null && sellPrice !== undefined) {
               invested += s.open_price;
-              value += s.close_price;
+              value += sellPrice;
             }
           });
         }
@@ -57,7 +58,7 @@ export function DateSelector({ items, dataByDate }: DateSelectorProps) {
       };
     });
     return stats;
-  }, [items, dataByDate, activeCategories, excludedStocks]);
+  }, [items, dataByDate, activeCategories, excludedStocks, simulationMode]);
 
   return (
     <div className="border border-border rounded-2xl overflow-hidden">

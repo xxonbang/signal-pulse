@@ -1,12 +1,17 @@
 import { create } from 'zustand';
 import type { SimulationCategory } from '@/services/types';
 
+export type SimulationMode = 'close' | 'high';
+
 // 제외 키 형식: "date:category:code"
 function stockKey(date: string, category: SimulationCategory, code: string) {
   return `${date}:${category}:${code}`;
 }
 
 interface SimulationStore {
+  // 시뮬레이션 모드 (종가 매도 vs 최고가 매도)
+  simulationMode: SimulationMode;
+
   // 카테고리 토글
   activeCategories: Set<SimulationCategory>;
 
@@ -20,6 +25,8 @@ interface SimulationStore {
   activeDetailDate: string | null;
 
   // Actions
+  setSimulationMode: (mode: SimulationMode) => void;
+
   toggleCategory: (category: SimulationCategory) => void;
   setCategories: (categories: SimulationCategory[]) => void;
 
@@ -36,10 +43,13 @@ interface SimulationStore {
 }
 
 export const useSimulationStore = create<SimulationStore>((set, get) => ({
+  simulationMode: 'close' as SimulationMode,
   activeCategories: new Set<SimulationCategory>(['vision', 'kis', 'combined']),
   excludedStocks: new Set<string>(),
   selectedDates: new Set<string>(),
   activeDetailDate: null,
+
+  setSimulationMode: (mode) => set({ simulationMode: mode }),
 
   toggleCategory: (category) =>
     set((state) => {

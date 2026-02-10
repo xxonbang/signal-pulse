@@ -7,121 +7,151 @@
         "code": "005930",
         "name": "삼성전자",
         "market": "KOSPI",
-        "open_price": 77120,
-        "close_price": 78600,
-        "return_pct": 1.92
+        "open_price": 74140,
+        "close_price": 74670,
+        "high_price": 76040,
+        "return_pct": 0.71,
+        "high_return_pct": 2.56
       },
       {
         "code": "128820",
         "name": "대성산업",
         "market": "KOSPI",
-        "open_price": 8250,
-        "close_price": 8360,
-        "return_pct": 1.33
+        "open_price": 8290,
+        "close_price": 8060,
+        "high_price": 8500,
+        "return_pct": -2.77,
+        "high_return_pct": 2.53
       },
       {
         "code": "161000",
         "name": "애경케미칼",
         "market": "KOSPI",
-        "open_price": 9690,
-        "close_price": 9620,
-        "return_pct": -0.72
+        "open_price": 9800,
+        "close_price": 9670,
+        "high_price": 10030,
+        "return_pct": -1.33,
+        "high_return_pct": 2.35
       },
       {
         "code": "316140",
         "name": "우리금융지주",
         "market": "KOSPI",
-        "open_price": 12050,
-        "close_price": 12250,
-        "return_pct": 1.66
+        "open_price": 11980,
+        "close_price": 12460,
+        "high_price": 12720,
+        "return_pct": 4.01,
+        "high_return_pct": 6.18
       },
       {
         "code": "290660",
         "name": "네오펙트",
         "market": "KOSPI",
-        "open_price": 1170,
-        "close_price": 1180,
-        "return_pct": 0.85
+        "open_price": 1150,
+        "close_price": 1120,
+        "high_price": 1180,
+        "return_pct": -2.61,
+        "high_return_pct": 2.61
       },
       {
         "code": "038500",
         "name": "삼표시멘트",
         "market": "KOSPI",
-        "open_price": 10880,
-        "close_price": 10740,
-        "return_pct": -1.29
+        "open_price": 10650,
+        "close_price": 10940,
+        "high_price": 11100,
+        "return_pct": 2.72,
+        "high_return_pct": 4.23
       },
       {
         "code": "003310",
         "name": "대주산업",
         "market": "KOSPI",
-        "open_price": 5390,
+        "open_price": 5480,
         "close_price": 5620,
-        "return_pct": 4.27
+        "high_price": 5730,
+        "return_pct": 2.55,
+        "high_return_pct": 4.56
       },
       {
         "code": "012210",
         "name": "삼미금속",
         "market": "KOSPI",
-        "open_price": 16440,
-        "close_price": 16170,
-        "return_pct": -1.64
+        "open_price": 16140,
+        "close_price": 16680,
+        "high_price": 16730,
+        "return_pct": 3.35,
+        "high_return_pct": 3.66
       },
       {
         "code": "090710",
         "name": "휴림로봇",
         "market": "KOSPI",
-        "open_price": 14020,
-        "close_price": 14180,
-        "return_pct": 1.14
+        "open_price": 14140,
+        "close_price": 14500,
+        "high_price": 14630,
+        "return_pct": 2.55,
+        "high_return_pct": 3.47
       },
       {
         "code": "380550",
         "name": "뉴로핏",
         "market": "KOSPI",
-        "open_price": 36990,
-        "close_price": 36870,
-        "return_pct": -0.32
+        "open_price": 36880,
+        "close_price": 37170,
+        "high_price": 37760,
+        "return_pct": 0.79,
+        "high_return_pct": 2.39
       },
       {
         "code": "038460",
         "name": "바이오스마트",
         "market": "KOSPI",
-        "open_price": 5790,
-        "close_price": 5960,
-        "return_pct": 2.94
+        "open_price": 5650,
+        "close_price": 5820,
+        "high_price": 5880,
+        "return_pct": 3.01,
+        "high_return_pct": 4.07
       },
       {
         "code": "354200",
         "name": "엔젠바이오",
         "market": "KOSPI",
-        "open_price": 2660,
-        "close_price": 2630,
-        "return_pct": -1.13
+        "open_price": 2670,
+        "close_price": 2650,
+        "high_price": 2690,
+        "return_pct": -0.75,
+        "high_return_pct": 0.75
       },
       {
         "code": "146060",
         "name": "율촌",
         "market": "KOSPI",
-        "open_price": 2020,
-        "close_price": 1960,
-        "return_pct": -2.97
+        "open_price": 2010,
+        "close_price": 1980,
+        "high_price": 2020,
+        "return_pct": -1.49,
+        "high_return_pct": 0.5
       },
       {
         "code": "222420",
         "name": "쎄노텍",
         "market": "KOSPI",
-        "open_price": 1950,
-        "close_price": 1970,
-        "return_pct": 1.03
+        "open_price": 1990,
+        "close_price": 2050,
+        "high_price": 2060,
+        "return_pct": 3.02,
+        "high_return_pct": 3.52
       },
       {
         "code": "052900",
         "name": "KX하이텍",
         "market": "KOSPI",
-        "open_price": 1120,
+        "open_price": 1080,
         "close_price": 1090,
-        "return_pct": -2.68
+        "high_price": 1110,
+        "return_pct": 0.93,
+        "high_return_pct": 2.78
       }
     ]
   }

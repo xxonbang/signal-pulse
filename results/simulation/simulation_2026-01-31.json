@@ -7,105 +7,131 @@
         "code": "001440",
         "name": "대한전선",
         "market": "KOSPI",
-        "open_price": 29840,
-        "close_price": 30780,
-        "return_pct": 3.15
+        "open_price": 29750,
+        "close_price": 29160,
+        "high_price": 30530,
+        "return_pct": -1.98,
+        "high_return_pct": 2.62
       },
       {
         "code": "012030",
         "name": "DB",
         "market": "KOSPI",
-        "open_price": 1790,
-        "close_price": 1800,
-        "return_pct": 0.56
+        "open_price": 1830,
+        "close_price": 1900,
+        "high_price": 1930,
+        "return_pct": 3.83,
+        "high_return_pct": 5.46
       },
       {
         "code": "006805",
         "name": "미래에셋증권우",
         "market": "KOSPI",
-        "open_price": 19110,
-        "close_price": 20000,
-        "return_pct": 4.66
+        "open_price": 19450,
+        "close_price": 19550,
+        "high_price": 19660,
+        "return_pct": 0.51,
+        "high_return_pct": 1.08
       },
       {
         "code": "00680K",
         "name": "미래에셋증권2우B",
         "market": "KOSPI",
-        "open_price": 16020,
-        "close_price": 15600,
-        "return_pct": -2.62
+        "open_price": 15570,
+        "close_price": 16280,
+        "high_price": 16510,
+        "return_pct": 4.56,
+        "high_return_pct": 6.04
       },
       {
         "code": "187660",
         "name": "현대ADM",
         "market": "KOSPI",
-        "open_price": 3330,
+        "open_price": 3450,
         "close_price": 3460,
-        "return_pct": 3.9
+        "high_price": 3470,
+        "return_pct": 0.29,
+        "high_return_pct": 0.58
       },
       {
         "code": "215600",
         "name": "신라젠",
         "market": "KOSPI",
-        "open_price": 4460,
-        "close_price": 4610,
-        "return_pct": 3.36
+        "open_price": 4500,
+        "close_price": 4380,
+        "high_price": 4520,
+        "return_pct": -2.67,
+        "high_return_pct": 0.44
       },
       {
         "code": "080220",
         "name": "제주반도체",
         "market": "KOSPI",
-        "open_price": 43740,
-        "close_price": 45880,
-        "return_pct": 4.89
+        "open_price": 43460,
+        "close_price": 43210,
+        "high_price": 44760,
+        "return_pct": -0.58,
+        "high_return_pct": 2.99
       },
       {
         "code": "012210",
         "name": "삼미금속",
         "market": "KOSPI",
-        "open_price": 13930,
-        "close_price": 14570,
-        "return_pct": 4.59
+        "open_price": 13530,
+        "close_price": 13950,
+        "high_price": 14200,
+        "return_pct": 3.1,
+        "high_return_pct": 4.95
       },
       {
         "code": "003380",
         "name": "하림지주",
         "market": "KOSPI",
-        "open_price": 14760,
-        "close_price": 15040,
-        "return_pct": 1.9
+        "open_price": 14670,
+        "close_price": 14490,
+        "high_price": 14900,
+        "return_pct": -1.23,
+        "high_return_pct": 1.57
       },
       {
         "code": "396300",
         "name": "세아메카닉스",
         "market": "KOSPI",
-        "open_price": 4590,
-        "close_price": 4640,
-        "return_pct": 1.09
+        "open_price": 4520,
+        "close_price": 4540,
+        "high_price": 4660,
+        "return_pct": 0.44,
+        "high_return_pct": 3.1
       },
       {
         "code": "115610",
         "name": "이미지스",
         "market": "KOSPI",
-        "open_price": 1770,
-        "close_price": 1790,
-        "return_pct": 1.13
+        "open_price": 1780,
+        "close_price": 1770,
+        "high_price": 1810,
+        "return_pct": -0.56,
+        "high_return_pct": 1.69
       },
       {
         "code": "466910",
         "name": "엔에이치스팩30호",
         "market": "KOSPI",
-        "open_price": 3790,
-        "close_price": 3900,
-        "return_pct": 2.9
+        "open_price": 3720,
+        "close_price": 3830,
+        "high_price": 3940,
+        "return_pct": 2.96,
+        "high_return_pct": 5.91
       },
       {
         "code": "060720",
         "name": "KH바텍",
         "market": "KOSPI",
-        "open_price": 19090,
-        "close_price": 18910,
-        "return_pct": -0.94
+        "open_price": 18780,
+        "close_price": 18530,
+        "high_price": 19150,
+        "return_pct": -1.33,
+        "high_return_pct": 1.97
       }
     ]
   }

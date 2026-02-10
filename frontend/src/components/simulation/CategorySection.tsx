@@ -23,7 +23,7 @@ interface CategorySectionProps {
 }
 
 export function CategorySection({ category, stocks, date }: CategorySectionProps) {
-  const { activeCategories, toggleCategory, excludedStocks, excludeAllStocks, includeAllStocks } = useSimulationStore();
+  const { activeCategories, toggleCategory, excludedStocks, excludeAllStocks, includeAllStocks, simulationMode } = useSimulationStore();
   const isActive = activeCategories.has(category);
   const [expanded, setExpanded] = useState(true);
 
@@ -35,14 +35,19 @@ export function CategorySection({ category, stocks, date }: CategorySectionProps
   );
 
   const avgReturn = useMemo(() => {
-    const included = stocks.filter(
-      (s) => !excludedStocks.has(stockKey(date, category, s.code)) && s.open_price !== null && s.close_price !== null
-    );
+    const included = stocks.filter((s) => {
+      if (excludedStocks.has(stockKey(date, category, s.code))) return false;
+      const sellPrice = simulationMode === 'high' ? s.high_price : s.close_price;
+      return s.open_price !== null && sellPrice !== null && sellPrice !== undefined;
+    });
     if (included.length === 0) return null;
     const invested = included.reduce((sum, s) => sum + s.open_price!, 0);
-    const value = included.reduce((sum, s) => sum + s.close_price!, 0);
+    const value = included.reduce((sum, s) => {
+      const sellPrice = simulationMode === 'high' ? s.high_price! : s.close_price!;
+      return sum + sellPrice;
+    }, 0);
     return invested > 0 ? (value - invested) / invested * 100 : null;
-  }, [stocks, excludedStocks, category, date]);
+  }, [stocks, excludedStocks, category, date, simulationMode]);
 
   const includedCount = stocks.filter(
     (s) => !excludedStocks.has(stockKey(date, category, s.code))

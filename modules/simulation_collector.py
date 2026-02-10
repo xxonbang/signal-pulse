@@ -113,11 +113,12 @@ class SimulationCollector:
             output = result.get("output", {})
             open_price = int(output.get("stck_oprc", 0))
             close_price = int(output.get("stck_prpr", 0))
+            high_price = int(output.get("stck_hgpr", 0))
 
             if open_price == 0:
                 return None
 
-            return {"open_price": open_price, "close_price": close_price}
+            return {"open_price": open_price, "close_price": close_price, "high_price": high_price}
         except Exception as e:
             print(f"[Simulation] 가격 조회 에러 ({stock_code}): {e}")
             return None
@@ -142,9 +143,10 @@ class SimulationCollector:
                 if item.get("stck_bsop_date") == date_key:
                     open_price = int(item.get("stck_oprc", 0))
                     close_price = int(item.get("stck_clpr", 0))
+                    high_price = int(item.get("stck_hgpr", 0))
                     if open_price == 0:
                         return None
-                    return {"open_price": open_price, "close_price": close_price}
+                    return {"open_price": open_price, "close_price": close_price, "high_price": high_price}
 
             return None
         except Exception as e:
@@ -194,15 +196,22 @@ class SimulationCollector:
             for stock in stocks:
                 code = stock["code"]
                 price = prices.get(code)
+                open_p = price["open_price"] if price else None
+                close_p = price["close_price"] if price else None
+                high_p = price["high_price"] if price else None
                 entry: dict = {
                     "code": code,
                     "name": stock["name"],
                     "market": stock["market"],
-                    "open_price": price["open_price"] if price else None,
-                    "close_price": price["close_price"] if price else None,
+                    "open_price": open_p,
+                    "close_price": close_p,
+                    "high_price": high_p,
                     "return_pct": round(
-                        (price["close_price"] - price["open_price"]) / price["open_price"] * 100, 2
-                    ) if price and price["open_price"] > 0 else None,
+                        (close_p - open_p) / open_p * 100, 2
+                    ) if open_p and close_p and open_p > 0 else None,
+                    "high_return_pct": round(
+                        (high_p - open_p) / open_p * 100, 2
+                    ) if open_p and high_p and open_p > 0 else None,
                 }
                 cat_results.append(entry)
             result_categories[cat] = cat_results
@@ -262,15 +271,22 @@ class SimulationCollector:
             for stock in stocks:
                 code = stock["code"]
                 price = prices.get(code)
+                open_p = price["open_price"] if price else None
+                close_p = price["close_price"] if price else None
+                high_p = price["high_price"] if price else None
                 entry: dict = {
                     "code": code,
                     "name": stock["name"],
                     "market": stock["market"],
-                    "open_price": price["open_price"] if price else None,
-                    "close_price": price["close_price"] if price else None,
+                    "open_price": open_p,
+                    "close_price": close_p,
+                    "high_price": high_p,
                     "return_pct": round(
-                        (price["close_price"] - price["open_price"]) / price["open_price"] * 100, 2
-                    ) if price and price["open_price"] > 0 else None,
+                        (close_p - open_p) / open_p * 100, 2
+                    ) if open_p and close_p and open_p > 0 else None,
+                    "high_return_pct": round(
+                        (high_p - open_p) / open_p * 100, 2
+                    ) if open_p and high_p and open_p > 0 else None,
                 }
                 cat_results.append(entry)
             result_categories[cat] = cat_results

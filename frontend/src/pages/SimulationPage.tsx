@@ -1,8 +1,10 @@
 import { useEffect, useRef, useMemo } from 'react';
 import { useSimulationIndex, useSimulationMultipleDates } from '@/hooks/useSimulationData';
 import { useSimulationStore } from '@/store/simulationStore';
+import type { SimulationMode } from '@/store/simulationStore';
 import { SimulationSummary, DateSelector, CategorySection, CollectionTrigger } from '@/components/simulation';
 import { LoadingSpinner, EmptyState } from '@/components/common';
+import { cn } from '@/lib/utils';
 import type { SimulationData, SimulationCategory } from '@/services/types';
 
 export function SimulationPage() {
@@ -64,6 +66,7 @@ export function SimulationPage() {
   return (
     <div className="space-y-4">
       <PageHeader />
+      <SimulationModeTabs />
 
       {/* 종합 수익률 */}
       <SimulationSummary dataByDate={dataByDate} />
@@ -108,15 +111,47 @@ export function SimulationPage() {
 }
 
 function PageHeader() {
+  const { simulationMode } = useSimulationStore();
+  const desc = simulationMode === 'close'
+    ? '적극매수 시그널 종목의 시가 매수 → 종가 매도 수익률'
+    : '적극매수 시그널 종목의 시가 매수 → 장중 최고가 매도 수익률';
+
   return (
     <div className="flex items-center justify-between">
       <div>
         <h2 className="text-lg md:text-xl font-bold">모의투자 시뮬레이션</h2>
-        <p className="text-xs text-text-muted mt-0.5">
-          적극매수 시그널 종목의 시가 매수 → 종가 매도 수익률
-        </p>
+        <p className="text-xs text-text-muted mt-0.5">{desc}</p>
       </div>
       <CollectionTrigger />
+    </div>
+  );
+}
+
+const MODE_TABS: { key: SimulationMode; label: string; shortLabel: string }[] = [
+  { key: 'close', label: '종가 매도', shortLabel: '종가' },
+  { key: 'high', label: '최고가 매도', shortLabel: '최고가' },
+];
+
+function SimulationModeTabs() {
+  const { simulationMode, setSimulationMode } = useSimulationStore();
+
+  return (
+    <div className="flex gap-1 bg-bg-secondary p-1 rounded-xl border border-border">
+      {MODE_TABS.map((tab) => (
+        <button
+          key={tab.key}
+          onClick={() => setSimulationMode(tab.key)}
+          className={cn(
+            'flex-1 py-2 md:py-2.5 px-3 md:px-4 rounded-lg text-xs md:text-sm font-semibold transition-all text-center',
+            simulationMode === tab.key
+              ? 'bg-accent-primary text-white'
+              : 'text-text-muted hover:text-text-secondary hover:bg-bg-primary'
+          )}
+        >
+          <span className="hidden sm:inline">{tab.label}</span>
+          <span className="sm:hidden">{tab.shortLabel}</span>
+        </button>
+      ))}
     </div>
   );
 }

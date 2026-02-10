@@ -7,25 +7,31 @@
         "code": "008600",
         "name": "윌비스",
         "market": "KOSPI",
-        "open_price": 1310,
-        "close_price": 1370,
-        "return_pct": 4.58
+        "open_price": 1280,
+        "close_price": 1270,
+        "high_price": 1290,
+        "return_pct": -0.78,
+        "high_return_pct": 0.78
       },
       {
         "code": "003490",
         "name": "대한항공",
         "market": "KOSPI",
-        "open_price": 26370,
-        "close_price": 25630,
-        "return_pct": -2.81
+        "open_price": 27320,
+        "close_price": 27750,
+        "high_price": 27940,
+        "return_pct": 1.57,
+        "high_return_pct": 2.27
       },
       {
         "code": "038500",
         "name": "삼표시멘트",
         "market": "KOSPI",
-        "open_price": 1060,
-        "close_price": 1090,
-        "return_pct": 2.83
+        "open_price": 1090,
+        "close_price": 1060,
+        "high_price": 1110,
+        "return_pct": -2.75,
+        "high_return_pct": 1.83
       }
     ]
   }

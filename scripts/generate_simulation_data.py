@@ -62,7 +62,7 @@ def get_market(stock, category):
 
 
 def generate_sim_prices(current_price):
-    """Generate realistic open/close prices from current_price."""
+    """Generate realistic open/close/high prices from current_price."""
     open_factor = random.uniform(0.97, 1.03)
     open_price = int(round(current_price * open_factor, -1))
     if open_price == 0:
@@ -74,12 +74,19 @@ def generate_sim_prices(current_price):
     if close_price == 0:
         close_price = open_price
 
+    # High price: at least max(open, close), with some extra
+    high_price = int(round(max(open_price, close_price) * random.uniform(1.0, 1.03), -1))
+    if high_price == 0:
+        high_price = max(open_price, close_price)
+
     if open_price == 0:
         return_pct = 0.0
+        high_return_pct = 0.0
     else:
         return_pct = round((close_price - open_price) / open_price * 100, 2)
+        high_return_pct = round((high_price - open_price) / open_price * 100, 2)
 
-    return open_price, close_price, return_pct
+    return open_price, close_price, high_price, return_pct, high_return_pct
 
 
 def extract_vision_stocks(history_entry):
@@ -96,14 +103,16 @@ def extract_vision_stocks(history_entry):
             price = get_current_price(s, "vision")
             if not price:
                 continue
-            open_p, close_p, ret = generate_sim_prices(price)
+            open_p, close_p, high_p, ret, high_ret = generate_sim_prices(price)
             stocks.append({
                 "code": s.get("code", ""),
                 "name": s.get("name", ""),
                 "market": get_market(s, "vision"),
                 "open_price": open_p,
                 "close_price": close_p,
+                "high_price": high_p,
                 "return_pct": ret,
+                "high_return_pct": high_ret,
             })
     return stocks
 
@@ -122,14 +131,16 @@ def extract_kis_stocks(history_entry):
             price = get_current_price(s, "kis")
             if not price:
                 continue
-            open_p, close_p, ret = generate_sim_prices(price)
+            open_p, close_p, high_p, ret, high_ret = generate_sim_prices(price)
             stocks.append({
                 "code": s.get("code", ""),
                 "name": s.get("name", ""),
                 "market": get_market(s, "kis"),
                 "open_price": open_p,
                 "close_price": close_p,
+                "high_price": high_p,
                 "return_pct": ret,
+                "high_return_pct": high_ret,
             })
     return stocks
 
@@ -148,14 +159,16 @@ def extract_combined_stocks(history_entry):
             price = get_current_price(s, "combined")
             if not price:
                 continue
-            open_p, close_p, ret = generate_sim_prices(price)
+            open_p, close_p, high_p, ret, high_ret = generate_sim_prices(price)
             stocks.append({
                 "code": s.get("code", ""),
                 "name": s.get("name", ""),
                 "market": get_market(s, "combined"),
                 "open_price": open_p,
                 "close_price": close_p,
+                "high_price": high_p,
                 "return_pct": ret,
+                "high_return_pct": high_ret,
             })
     return stocks
 

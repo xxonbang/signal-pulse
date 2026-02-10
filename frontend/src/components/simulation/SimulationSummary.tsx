@@ -20,7 +20,7 @@ const CATEGORY_ICONS: Record<SimulationCategory, string> = {
 };
 
 export function SimulationSummary({ dataByDate }: SimulationSummaryProps) {
-  const { selectedDates, activeCategories, excludedStocks } = useSimulationStore();
+  const { selectedDates, activeCategories, excludedStocks, simulationMode } = useSimulationStore();
 
   const stats = useMemo(() => {
     let totalInvested = 0;
@@ -46,15 +46,17 @@ export function SimulationSummary({ dataByDate }: SimulationSummaryProps) {
           stocks.forEach((stock) => {
             if (excludedStocks.has(stockKey(date, cat, stock.code))) return;
             totalStocks++;
-            if (stock.open_price !== null && stock.close_price !== null) {
+            const sellPrice = simulationMode === 'high' ? stock.high_price : stock.close_price;
+            const returnPct = simulationMode === 'high' ? stock.high_return_pct : stock.return_pct;
+            if (stock.open_price !== null && sellPrice !== null && sellPrice !== undefined) {
               pricedStocks++;
               totalInvested += stock.open_price;
-              totalValue += stock.close_price;
+              totalValue += sellPrice;
               catInvested[cat] += stock.open_price;
-              catValue[cat] += stock.close_price;
+              catValue[cat] += sellPrice;
               catCount[cat]++;
               dateHasData = true;
-              if (stock.return_pct !== null && stock.return_pct > 0) wins++;
+              if (returnPct !== null && returnPct !== undefined && returnPct > 0) wins++;
             }
           });
         }
@@ -81,7 +83,7 @@ export function SimulationSummary({ dataByDate }: SimulationSummaryProps) {
     const winRate = pricedStocks > 0 ? (wins / pricedStocks) * 100 : null;
 
     return { avg, catAvg, catCount, totalStocks, pricedStocks, selectedDays: datesWithData, winRate, wins, losses };
-  }, [selectedDates, dataByDate, activeCategories, excludedStocks]);
+  }, [selectedDates, dataByDate, activeCategories, excludedStocks, simulationMode]);
 
   return (
     <div className="border border-border rounded-2xl p-4 md:p-6 bg-bg-secondary/30">

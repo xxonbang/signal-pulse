@@ -7,33 +7,41 @@
         "code": "008830",
         "name": "대동기어",
         "market": "KOSDAQ",
-        "open_price": 22880,
-        "close_price": 23900,
-        "return_pct": 4.46
+        "open_price": 22870,
+        "close_price": 22890,
+        "high_price": 23290,
+        "return_pct": 0.09,
+        "high_return_pct": 1.84
       },
       {
         "code": "440110",
         "name": "파두",
         "market": "KOSDAQ",
-        "open_price": 43910,
-        "close_price": 45110,
-        "return_pct": 2.73
+        "open_price": 44040,
+        "close_price": 45220,
+        "high_price": 45220,
+        "return_pct": 2.68,
+        "high_return_pct": 2.68
       },
       {
         "code": "067290",
         "name": "JW신약",
         "market": "KOSDAQ",
-        "open_price": 2000,
-        "close_price": 2000,
-        "return_pct": 0.0
+        "open_price": 2080,
+        "close_price": 2110,
+        "high_price": 2160,
+        "return_pct": 1.44,
+        "high_return_pct": 3.85
       },
       {
         "code": "056090",
         "name": "시지메드텍",
         "market": "KOSDAQ",
-        "open_price": 2050,
-        "close_price": 2040,
-        "return_pct": -0.49
+        "open_price": 2060,
+        "close_price": 2110,
+        "high_price": 2130,
+        "return_pct": 2.43,
+        "high_return_pct": 3.4
       }
     ],
     "kis": [
@@ -41,33 +49,41 @@
         "code": "036170",
         "name": "에이치엠넥스",
         "market": "KOSDAQ",
-        "open_price": 1730,
-        "close_price": 1780,
-        "return_pct": 2.89
+        "open_price": 1700,
+        "close_price": 1740,
+        "high_price": 1760,
+        "return_pct": 2.35,
+        "high_return_pct": 3.53
       },
       {
         "code": "003490",
         "name": "대한항공",
         "market": "KOSPI",
-        "open_price": 23530,
-        "close_price": 23690,
-        "return_pct": 0.68
+        "open_price": 23880,
+        "close_price": 24780,
+        "high_price": 25320,
+        "return_pct": 3.77,
+        "high_return_pct": 6.03
       },
       {
         "code": "066430",
         "name": "아이로보틱스",
         "market": "KOSDAQ",
-        "open_price": 3800,
-        "close_price": 3990,
-        "return_pct": 5.0
+        "open_price": 3650,
+        "close_price": 3630,
+        "high_price": 3690,
+        "return_pct": -0.55,
+        "high_return_pct": 1.1
       },
       {
         "code": "048470",
         "name": "대동스틸",
         "market": "KOSDAQ",
-        "open_price": 3240,
-        "close_price": 3200,
-        "return_pct": -1.23
+        "open_price": 3310,
+        "close_price": 3290,
+        "high_price": 3320,
+        "return_pct": -0.6,
+        "high_return_pct": 0.3
       },
       {
         "code": "002070",
@@ -75,95 +91,119 @@
         "market": "KOSPI",
         "open_price": 580,
         "close_price": 610,
-        "return_pct": 5.17
+        "high_price": 620,
+        "return_pct": 5.17,
+        "high_return_pct": 6.9
       },
       {
         "code": "043200",
         "name": "파루",
         "market": "KOSDAQ",
         "open_price": 1110,
-        "close_price": 1150,
-        "return_pct": 3.6
+        "close_price": 1130,
+        "high_price": 1140,
+        "return_pct": 1.8,
+        "high_return_pct": 2.7
       },
       {
         "code": "008830",
         "name": "대동기어",
         "market": "KOSDAQ",
-        "open_price": 22670,
-        "close_price": 22280,
-        "return_pct": -1.72
+        "open_price": 22920,
+        "close_price": 22230,
+        "high_price": 23120,
+        "return_pct": -3.01,
+        "high_return_pct": 0.87
       },
       {
         "code": "323410",
         "name": "카카오뱅크",
         "market": "KOSPI",
-        "open_price": 27390,
-        "close_price": 28110,
-        "return_pct": 2.63
+        "open_price": 26740,
+        "close_price": 27180,
+        "high_price": 27710,
+        "return_pct": 1.65,
+        "high_return_pct": 3.63
       },
       {
         "code": "115530",
         "name": "씨엔플러스",
         "market": "KOSDAQ",
         "open_price": 400,
-        "close_price": 420,
-        "return_pct": 5.0
+        "close_price": 400,
+        "high_price": 400,
+        "return_pct": 0.0,
+        "high_return_pct": 0.0
       },
       {
         "code": "023440",
         "name": "제이스코홀딩스",
         "market": "KOSDAQ",
-        "open_price": 880,
-        "close_price": 850,
-        "return_pct": -3.41
+        "open_price": 870,
+        "close_price": 910,
+        "high_price": 930,
+        "return_pct": 4.6,
+        "high_return_pct": 6.9
       },
       {
         "code": "016600",
         "name": "큐캐피탈",
         "market": "KOSDAQ",
-        "open_price": 330,
-        "close_price": 330,
-        "return_pct": 0.0
+        "open_price": 320,
+        "close_price": 310,
+        "high_price": 320,
+        "return_pct": -3.12,
+        "high_return_pct": 0.0
       },
       {
         "code": "121850",
         "name": "코이즈",
         "market": "KOSDAQ",
-        "open_price": 6420,
-        "close_price": 6710,
-        "return_pct": 4.52
+        "open_price": 6410,
+        "close_price": 6390,
+        "high_price": 6570,
+        "return_pct": -0.31,
+        "high_return_pct": 2.5
       },
       {
         "code": "440110",
         "name": "파두",
         "market": "KOSDAQ",
-        "open_price": 43720,
-        "close_price": 42810,
-        "return_pct": -2.08
+        "open_price": 45370,
+        "close_price": 46450,
+        "high_price": 46760,
+        "return_pct": 2.38,
+        "high_return_pct": 3.06
       },
       {
         "code": "065060",
         "name": "지엔코",
         "market": "KOSDAQ",
         "open_price": 820,
-        "close_price": 830,
-        "return_pct": 1.22
+        "close_price": 800,
+        "high_price": 830,
+        "return_pct": -2.44,
+        "high_return_pct": 1.22
       },
       {
         "code": "080160",
         "name": "모두투어",
         "market": "KOSDAQ",
-        "open_price": 16460,
-        "close_price": 16760,
-        "return_pct": 1.82
+        "open_price": 16670,
+        "close_price": 17300,
+        "high_price": 17340,
+        "return_pct": 3.78,
+        "high_return_pct": 4.02
       },
       {
         "code": "322000",
         "name": "HD현대에너지솔루션",
         "market": "KOSPI",
-        "open_price": 82970,
-        "close_price": 81830,
-        "return_pct": -1.37
+        "open_price": 81480,
+        "close_price": 83140,
+        "high_price": 83620,
+        "return_pct": 2.04,
+        "high_return_pct": 2.63
       },
       {
         "code": "227950",
@@ -171,15 +211,19 @@
         "market": "KOSDAQ",
         "open_price": 450,
         "close_price": 450,
-        "return_pct": 0.0
+        "high_price": 450,
+        "return_pct": 0.0,
+        "high_return_pct": 0.0
       },
       {
         "code": "011930",
         "name": "신성이엔지",
         "market": "KOSPI",
-        "open_price": 2100,
-        "close_price": 2190,
-        "return_pct": 4.29
+        "open_price": 2120,
+        "close_price": 2060,
+        "high_price": 2170,
+        "return_pct": -2.83,
+        "high_return_pct": 2.36
       }
     ],
     "combined": [
@@ -187,17 +231,21 @@
         "code": "008830",
         "name": "대동기어",
         "market": "KOSPI",
-        "open_price": 23320,
-        "close_price": 22790,
-        "return_pct": -2.27
+        "open_price": 23220,
+        "close_price": 22720,
+        "high_price": 23520,
+        "return_pct": -2.15,
+        "high_return_pct": 1.29
       },
       {
         "code": "440110",
         "name": "파두",
         "market": "KOSDAQ",
-        "open_price": 44500,
-        "close_price": 44150,
-        "return_pct": -0.79
+        "open_price": 43830,
+        "close_price": 45870,
+        "high_price": 46580,
+        "return_pct": 4.65,
+        "high_return_pct": 6.27
       }
     ]
   }
