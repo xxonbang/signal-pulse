@@ -183,6 +183,15 @@ export interface CombinedStock {
   } | null;
   vision_news_analysis?: NewsAnalysis;
   api_news_analysis?: NewsAnalysis;
+  api_key_factors?: {
+    price_trend: string;
+    volume_signal: string;
+    foreign_flow: string;
+    institution_flow: string;
+    valuation: string;
+  };
+  api_risk_level?: string;
+  api_confidence?: number;
   match_status: MatchStatus;
   confidence: number;
 }

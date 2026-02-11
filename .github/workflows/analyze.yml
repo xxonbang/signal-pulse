@@ -518,6 +518,9 @@ jobs:
                   'api_reason': None,
                   'api_news': [],
                   'api_news_analysis': None,
+                  'api_key_factors': None,
+                  'api_risk_level': None,
+                  'api_confidence': None,
                   'api_data': None,
               }
 
@@ -530,6 +533,9 @@ jobs:
                   combined_stocks[code]['api_reason'] = kis_result.get('reason')
                   combined_stocks[code]['api_news'] = kis_result.get('news', [])
                   combined_stocks[code]['api_news_analysis'] = kis_result.get('news_analysis')
+                  combined_stocks[code]['api_key_factors'] = kis_result.get('key_factors')
+                  combined_stocks[code]['api_risk_level'] = kis_result.get('risk_level')
+                  combined_stocks[code]['api_confidence'] = kis_result.get('confidence')
                   combined_stocks[code]['api_data'] = {
                       'price': kis_stock.get('price'),
                       'ranking': kis_stock.get('ranking'),
@@ -549,6 +555,9 @@ jobs:
                       'api_reason': kis_result.get('reason'),
                       'api_news': kis_result.get('news', []),
                       'api_news_analysis': kis_result.get('news_analysis'),
+                      'api_key_factors': kis_result.get('key_factors'),
+                      'api_risk_level': kis_result.get('risk_level'),
+                      'api_confidence': kis_result.get('confidence'),
                       'api_data': {
                           'price': kis_stock.get('price'),
                           'ranking': kis_stock.get('ranking'),

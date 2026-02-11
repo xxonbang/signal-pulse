@@ -4,6 +4,7 @@ import type { CombinedStock, CombinedAnalysisData, MarketType, SignalType, Match
 import { LoadingSpinner, EmptyState, AnimatedNumber } from '@/components/common';
 import { SignalBadge } from '@/components/signal';
 import { MarketTabs } from '@/components/stock';
+import { NewsAnalysisSection } from '@/components/stock/NewsAnalysisSection';
 import { NewsSection } from '@/components/news';
 import { useUIStore } from '@/store/uiStore';
 import { cn } from '@/lib/utils';
@@ -126,18 +127,37 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock }: { stock: Co
             <span>분석 근거</span>
             <span className="transition-transform duration-200" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
           </div>
-          <div className={cn('overflow-hidden transition-all duration-300 ease-in-out', isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0')}>
+          <div className={cn('overflow-hidden transition-all duration-300 ease-in-out', isExpanded ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0')}>
             <div className="space-y-1.5 md:space-y-2">
               {stock.vision_reason && (
                 <div className="bg-purple-50 border border-purple-100 rounded-lg p-2 md:p-3">
                   <div className="text-[0.65rem] md:text-xs font-medium text-purple-700 mb-1">👁 Vision</div>
                   <p className="text-xs md:text-sm text-text-secondary">{stock.vision_reason}</p>
+                  <NewsAnalysisSection newsAnalysis={stock.vision_news_analysis} />
                 </div>
               )}
               {stock.api_reason && (
                 <div className="bg-cyan-50 border border-cyan-100 rounded-lg p-2 md:p-3">
                   <div className="text-[0.65rem] md:text-xs font-medium text-cyan-700 mb-1">📡 API</div>
                   <p className="text-xs md:text-sm text-text-secondary">{stock.api_reason}</p>
+                  {stock.api_key_factors && (
+                    <div className="mt-2 pt-2 border-t border-cyan-100">
+                      <div className="grid grid-cols-2 gap-1.5 md:gap-2 text-[0.65rem] md:text-xs">
+                        <div><span className="text-text-muted">추세:</span> {stock.api_key_factors.price_trend}</div>
+                        <div><span className="text-text-muted">거래량:</span> {stock.api_key_factors.volume_signal}</div>
+                        <div><span className="text-text-muted">외인:</span> {stock.api_key_factors.foreign_flow}</div>
+                        <div><span className="text-text-muted">밸류:</span> {stock.api_key_factors.valuation}</div>
+                      </div>
+                    </div>
+                  )}
+                  {(stock.api_confidence != null || stock.api_risk_level) && (
+                    <div className="mt-2 text-[0.65rem] md:text-xs text-text-muted">
+                      {stock.api_confidence != null && <>신뢰도: {((stock.api_confidence ?? 0) * 100).toFixed(0)}%</>}
+                      {stock.api_confidence != null && stock.api_risk_level && ' | '}
+                      {stock.api_risk_level && <>위험도: {stock.api_risk_level}</>}
+                    </div>
+                  )}
+                  <NewsAnalysisSection newsAnalysis={stock.api_news_analysis} />
                 </div>
               )}
             </div>
