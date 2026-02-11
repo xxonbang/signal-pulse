@@ -45,6 +45,8 @@ interface SimulationStore {
   setActiveDetailDate: (date: string | null) => void;
 
   setAnalysisTime: (date: string, time: string | null) => void;
+
+  resetAll: (allDates: string[]) => void;
 }
 
 export const useSimulationStore = create<SimulationStore>((set, get) => ({
@@ -123,6 +125,16 @@ export const useSimulationStore = create<SimulationStore>((set, get) => ({
 
   setActiveDetailDate: (date) =>
     set({ activeDetailDate: date }),
+
+  resetAll: (allDates) =>
+    set({
+      simulationMode: 'close' as SimulationMode,
+      activeCategories: new Set<SimulationCategory>(['vision', 'kis', 'combined']),
+      excludedStocks: new Set<string>(),
+      selectedDates: new Set(allDates),
+      activeDetailDate: allDates.length > 0 ? [...allDates].sort().reverse()[0] : null,
+      analysisTimeOverrides: {},
+    }),
 
   setAnalysisTime: (date, time) =>
     set((state) => {

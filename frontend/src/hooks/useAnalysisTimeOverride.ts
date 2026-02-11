@@ -176,7 +176,7 @@ export function useAnalysisTimeOverride(
         stockInfos = combinedData.stocks
           .filter(
             (s) =>
-              s.vision_signal === '적극매수' && s.api_signal === '적극매수',
+              s.match_status === 'match' && s.vision_signal === '적극매수',
           )
           .map((s) => ({ code: s.code, name: s.name, market: s.market }));
       }

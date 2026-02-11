@@ -408,71 +408,86 @@ class SimulationCollector:
         return self._save_simulation(simulation_data)
 
     def _get_strong_buy_from_history(self, target_date: str) -> dict[str, list[dict]]:
-        """히스토리 파일에서 해당 날짜의 적극매수 종목 추출"""
+        """히스토리 파일에서 해당 날짜의 최초 분석 적극매수 종목 추출"""
         categories: dict[str, list[dict]] = {"vision": [], "kis": [], "combined": []}
 
-        # Vision 히스토리
+        # Vision 히스토리 — 최초 분석 기준
         vision_index = self._load_json(self.RESULTS_DIR / "vision" / "history_index.json")
         if vision_index:
-            for item in vision_index.get("history", []):
-                if item.get("date") == target_date:
-                    data = self._load_json(
-                        self.RESULTS_DIR / "vision" / "history" / item["filename"]
-                    )
-                    if data:
-                        for stock in data.get("results", []):
-                            if stock.get("signal") == "적극매수":
-                                market = stock.get("market", "")
-                                if market in ("코스피", "KOSPI"):
-                                    market = "KOSPI"
-                                elif market in ("코스닥", "KOSDAQ"):
-                                    market = "KOSDAQ"
-                                categories["vision"].append({
-                                    "code": stock["code"],
-                                    "name": stock["name"],
-                                    "market": market,
-                                })
-                    break
+            today_items = [
+                h for h in vision_index.get("history", [])
+                if h.get("date") == target_date
+            ]
+            today_items.sort(key=lambda x: x.get("time", "9999"))
+            if today_items:
+                earliest = today_items[0]
+                print(f"[Simulation] Vision 백필 최초 분석: {earliest['filename']}")
+                data = self._load_json(
+                    self.RESULTS_DIR / "vision" / "history" / earliest["filename"]
+                )
+                if data:
+                    for stock in data.get("results", []):
+                        if stock.get("signal") == "적극매수":
+                            market = stock.get("market", "")
+                            if market in ("코스피", "KOSPI"):
+                                market = "KOSPI"
+                            elif market in ("코스닥", "KOSDAQ"):
+                                market = "KOSDAQ"
+                            categories["vision"].append({
+                                "code": stock["code"],
+                                "name": stock["name"],
+                                "market": market,
+                            })
 
-        # KIS 히스토리
+        # KIS 히스토리 — 최초 분석 기준
         kis_index = self._load_json(self.RESULTS_DIR / "kis" / "history_index.json")
         if kis_index:
-            for item in kis_index.get("history", []):
-                if item.get("date") == target_date:
-                    data = self._load_json(
-                        self.RESULTS_DIR / "kis" / "history" / item["filename"]
-                    )
-                    if data:
-                        for stock in data.get("results", []):
-                            if stock.get("signal") == "적극매수":
-                                categories["kis"].append({
-                                    "code": stock["code"],
-                                    "name": stock["name"],
-                                    "market": stock.get("market", ""),
-                                })
-                    break
+            today_items = [
+                h for h in kis_index.get("history", [])
+                if h.get("date") == target_date
+            ]
+            today_items.sort(key=lambda x: x.get("time", "9999"))
+            if today_items:
+                earliest = today_items[0]
+                print(f"[Simulation] KIS 백필 최초 분석: {earliest['filename']}")
+                data = self._load_json(
+                    self.RESULTS_DIR / "kis" / "history" / earliest["filename"]
+                )
+                if data:
+                    for stock in data.get("results", []):
+                        if stock.get("signal") == "적극매수":
+                            categories["kis"].append({
+                                "code": stock["code"],
+                                "name": stock["name"],
+                                "market": stock.get("market", ""),
+                            })
 
-        # Combined 히스토리
+        # Combined 히스토리 — 최초 분석 기준
         combined_index = self._load_json(self.RESULTS_DIR / "combined" / "history_index.json")
         if combined_index:
-            for item in combined_index.get("history", []):
-                if item.get("date") == target_date:
-                    data = self._load_json(
-                        self.RESULTS_DIR / "combined" / "history" / item["filename"]
-                    )
-                    if data:
-                        for stock in data.get("stocks", []):
-                            if (stock.get("match_status") == "match"
-                                    and stock.get("vision_signal") == "적극매수"):
-                                categories["combined"].append({
-                                    "code": stock["code"],
-                                    "name": stock["name"],
-                                    "market": stock.get("market", ""),
-                                })
-                    break
+            today_items = [
+                h for h in combined_index.get("history", [])
+                if h.get("date") == target_date
+            ]
+            today_items.sort(key=lambda x: x.get("time", "9999"))
+            if today_items:
+                earliest = today_items[0]
+                print(f"[Simulation] Combined 백필 최초 분석: {earliest['filename']}")
+                data = self._load_json(
+                    self.RESULTS_DIR / "combined" / "history" / earliest["filename"]
+                )
+                if data:
+                    for stock in data.get("stocks", []):
+                        if (stock.get("match_status") == "match"
+                                and stock.get("vision_signal") == "적극매수"):
+                            categories["combined"].append({
+                                "code": stock["code"],
+                                "name": stock["name"],
+                                "market": stock.get("market", ""),
+                            })
 
         for cat, stocks in categories.items():
-            print(f"[Simulation] {cat} 적극매수 ({target_date}): {len(stocks)}개")
+            print(f"[Simulation] {cat} 적극매수 ({target_date}, 최초 분석 기준): {len(stocks)}개")
 
         return categories
 

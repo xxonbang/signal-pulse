@@ -815,6 +815,14 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
 
+      - name: Trigger simulation collection
+        if: steps.commit.outputs.committed == 'true'
+        run: |
+          gh workflow run simulation.yml
+          echo "Triggered simulation.yml workflow"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
   notify-skip:
     needs: check-market
     if: needs.check-market.outputs.is_market_open != 'true' && github.event_name != 'workflow_dispatch'

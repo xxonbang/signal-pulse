@@ -56,6 +56,12 @@ export function SimulationPage() {
     isLoading: timeOverrideLoading,
   } = useAnalysisTimeOverride(activeDetailDate, detailData);
 
+  // 오버라이드 반영된 데이터맵 (종합수익률·날짜 컴포넌트에 전달)
+  const effectiveDataByDate = useMemo(() => {
+    if (!overriddenData || !activeDetailDate) return dataByDate;
+    return { ...dataByDate, [activeDetailDate]: overriddenData };
+  }, [dataByDate, overriddenData, activeDetailDate]);
+
   if (indexLoading) {
     return <LoadingSpinner message="시뮬레이션 데이터 로딩 중..." />;
   }
@@ -75,14 +81,14 @@ export function SimulationPage() {
 
   return (
     <div className="space-y-3 md:space-y-4">
-      <PageHeader />
+      <PageHeader allDates={index.history.map((h) => h.date)} />
       <SimulationModeTabs />
 
       {/* 종합 수익률 */}
-      <SimulationSummary dataByDate={dataByDate} />
+      <SimulationSummary dataByDate={effectiveDataByDate} />
 
       {/* 날짜 선택 */}
-      <DateSelector items={index.history} dataByDate={dataByDate} />
+      <DateSelector items={index.history} dataByDate={effectiveDataByDate} />
 
       {/* 로딩 */}
       {isAnyLoading && (
@@ -107,17 +113,14 @@ export function SimulationPage() {
             isLoading={timeOverrideLoading}
           />
 
-          {(['vision', 'kis', 'combined'] as SimulationCategory[]).map((cat) => {
-            const displayData = overriddenData ?? detailData;
-            return (
-              <CategorySection
-                key={cat}
-                category={cat}
-                stocks={displayData.categories[cat] || []}
-                date={activeDetailDate}
-              />
-            );
-          })}
+          {(['vision', 'kis', 'combined'] as SimulationCategory[]).map((cat) => (
+            <CategorySection
+              key={cat}
+              category={cat}
+              stocks={effectiveDataByDate[activeDetailDate]?.categories[cat] || []}
+              date={activeDetailDate}
+            />
+          ))}
         </div>
       )}
 
@@ -130,8 +133,8 @@ export function SimulationPage() {
   );
 }
 
-function PageHeader() {
-  const { simulationMode } = useSimulationStore();
+function PageHeader({ allDates }: { allDates?: string[] }) {
+  const { simulationMode, resetAll } = useSimulationStore();
   const { isAdmin } = useAuthStore();
   const desc = simulationMode === 'close'
     ? '적극매수 시그널 종목의 시가 매수 → 종가 매도 수익률'
@@ -143,7 +146,17 @@ function PageHeader() {
         <h2 className="text-lg md:text-xl font-bold">모의투자 시뮬레이션</h2>
         <p className="text-xs text-text-muted mt-0.5">{desc}</p>
       </div>
-      {isAdmin && <CollectionTrigger />}
+      <div className="flex items-center gap-2">
+        {allDates && (
+          <button
+            onClick={() => resetAll(allDates)}
+            className="px-3 py-1.5 text-xs font-medium text-text-muted hover:text-text-secondary bg-bg-secondary hover:bg-bg-primary border border-border rounded-lg transition-all"
+          >
+            초기화
+          </button>
+        )}
+        {isAdmin && <CollectionTrigger />}
+      </div>
     </div>
   );
 }
