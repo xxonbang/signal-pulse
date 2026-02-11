@@ -78,7 +78,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "api_risk_level": "낮음",
+      "api_confidence": 0.7
     },
     {
       "code": "001740",
@@ -261,7 +270,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "api_risk_level": "높음",
+      "api_confidence": 0.5
     },
     {
       "code": "452300",
@@ -1176,7 +1194,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "증가",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "api_risk_level": "중간",
+      "api_confidence": 0.65
     },
     {
       "code": "45226K",
@@ -1359,7 +1386,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "api_risk_level": "중간",
+      "api_confidence": 0.5
     },
     {
       "code": "028670",
@@ -1481,7 +1517,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "api_risk_level": "낮음",
+      "api_confidence": 0.7
     },
     {
       "code": "005930",
@@ -1542,7 +1587,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "api_risk_level": "중간",
+      "api_confidence": 0.6
     },
     {
       "code": "086520",
@@ -1603,7 +1657,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "api_risk_level": "높음",
+      "api_confidence": 0.6
     },
     {
       "code": "011930",
@@ -2335,7 +2398,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "api_risk_level": "높음",
+      "api_confidence": 0.8
     },
     {
       "code": "365330",
@@ -2640,7 +2712,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "api_risk_level": "중간",
+      "api_confidence": 0.8
     },
     {
       "code": "027360",
@@ -3067,7 +3148,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "api_risk_level": "높음",
+      "api_confidence": 0.4
     },
     {
       "code": "056090",
@@ -3250,7 +3340,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "api_risk_level": "낮음",
+      "api_confidence": 0.7
     },
     {
       "code": "001440",
@@ -3494,7 +3593,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "api_risk_level": "중간",
+      "api_confidence": 0.75
     },
     {
       "code": "001360",
@@ -3921,7 +4029,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "api_risk_level": "중간",
+      "api_confidence": 0.7
     },
     {
       "code": "389680",
@@ -4104,7 +4221,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "api_risk_level": "낮음",
+      "api_confidence": 0.5
     },
     {
       "code": "099220",
@@ -4531,7 +4657,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "api_risk_level": "중간",
+      "api_confidence": 0.8
     },
     {
       "code": "003310",
@@ -4836,7 +4971,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "api_risk_level": "높음",
+      "api_confidence": 0.8
     },
     {
       "code": "083470",
@@ -5019,7 +5163,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "api_risk_level": "낮음",
+      "api_confidence": 0.75
     },
     {
       "code": "088350",
@@ -5202,7 +5355,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "api_risk_level": "중간",
+      "api_confidence": 0.8
     },
     {
       "code": "009830",
@@ -5263,7 +5425,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "api_risk_level": "중간",
+      "api_confidence": 0.7
     },
     {
       "code": "008600",
@@ -5507,7 +5678,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "api_risk_level": "중간",
+      "api_confidence": 0.6
     },
     {
       "code": "272210",
@@ -5629,7 +5809,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "api_risk_level": "중간",
+      "api_confidence": 0.4
     },
     {
       "code": "006340",
@@ -6117,7 +6306,16 @@
         }
       },
       "match_status": "api-only",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "api_key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "api_risk_level": "높음",
+      "api_confidence": 0.7
     }
   ],
   "source": {
