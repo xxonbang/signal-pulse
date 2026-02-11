@@ -1,10 +1,12 @@
 import { Logo } from './Logo';
 import { useUIStore } from '@/store/uiStore';
+import { useAuthStore } from '@/store/authStore';
 import { useQuery } from '@tanstack/react-query';
 import { fetchCombinedHistoryIndex } from '@/services/api';
 
 export function Navigation() {
   const { currentPage, setCurrentPage, isCompactView, toggleCompactView, openHistoryPanel } = useUIStore();
+  const { user, signOut } = useAuthStore();
 
   // Combined 히스토리 인덱스
   const { data: historyIndex } = useQuery({
@@ -106,6 +108,27 @@ export function Navigation() {
             )}
             <span className="hidden md:inline">{isCompactView ? '일반' : 'Compact'}</span>
           </button>
+
+          {/* 로그아웃 */}
+          {user && (
+            <button
+              onClick={signOut}
+              className="flex items-center gap-1.5 px-2.5 md:px-3 py-1.5 md:py-2
+                bg-bg-secondary text-text-secondary
+                border border-border
+                rounded-lg text-xs md:text-sm font-medium
+                hover:border-red-400 hover:text-red-500
+                transition-all"
+              title={user.email ?? '로그아웃'}
+            >
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/>
+                <polyline points="16 17 21 12 16 7"/>
+                <line x1="21" y1="12" x2="9" y2="12"/>
+              </svg>
+              <span className="hidden md:inline">LOGOUT</span>
+            </button>
+          )}
         </div>
       </div>
     </nav>

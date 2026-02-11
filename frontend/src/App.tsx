@@ -3,8 +3,9 @@ import { QueryClient, QueryClientProvider, useQueryClient } from '@tanstack/reac
 import { Navigation, Toast, ScrollToTop } from '@/components/common';
 import { AnalysisTabs, Footer } from '@/components/layout';
 import { HistoryPanel } from '@/components/history';
-import { VisionAnalysis, APIAnalysis } from '@/pages';
+import { VisionAnalysis, APIAnalysis, AuthPage } from '@/pages';
 import { LoadingSpinner } from '@/components/common';
+import { useAuthStore } from '@/store/authStore';
 
 // CombinedAnalysis는 lazy loading - 처음 접근 시에만 로드
 const CombinedAnalysis = lazy(() => import('@/pages/CombinedAnalysis').then(m => ({ default: m.CombinedAnalysis })));
@@ -119,10 +120,32 @@ function AppContent() {
   );
 }
 
+function AuthGuard() {
+  const { user, isLoading, initialize } = useAuthStore();
+
+  useEffect(() => {
+    initialize();
+  }, [initialize]);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-bg-primary flex items-center justify-center">
+        <LoadingSpinner message="세션 확인 중..." />
+      </div>
+    );
+  }
+
+  if (!user) {
+    return <AuthPage />;
+  }
+
+  return <AppContent />;
+}
+
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <AppContent />
+      <AuthGuard />
     </QueryClientProvider>
   );
 }
