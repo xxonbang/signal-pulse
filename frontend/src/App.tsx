@@ -94,6 +94,11 @@ function MainContent() {
 }
 
 function AppContent() {
+  // 로그인 후 진입 시 스크롤 최상단으로 이동
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // 앱 로드 시 모든 데이터 미리 로드
   usePrefetchAllData();
   const { currentPage } = useUIStore();
