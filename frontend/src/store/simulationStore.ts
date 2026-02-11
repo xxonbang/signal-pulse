@@ -24,6 +24,9 @@ interface SimulationStore {
   // 상세보기 활성 날짜
   activeDetailDate: string | null;
 
+  // 분석 시간대 오버라이드 (날짜별 선택된 시간, 예: { "2026-02-11": "2020" })
+  analysisTimeOverrides: Record<string, string>;
+
   // Actions
   setSimulationMode: (mode: SimulationMode) => void;
 
@@ -40,6 +43,8 @@ interface SimulationStore {
   deselectAllDates: () => void;
 
   setActiveDetailDate: (date: string | null) => void;
+
+  setAnalysisTime: (date: string, time: string | null) => void;
 }
 
 export const useSimulationStore = create<SimulationStore>((set, get) => ({
@@ -48,6 +53,7 @@ export const useSimulationStore = create<SimulationStore>((set, get) => ({
   excludedStocks: new Set<string>(),
   selectedDates: new Set<string>(),
   activeDetailDate: null,
+  analysisTimeOverrides: {},
 
   setSimulationMode: (mode) => set({ simulationMode: mode }),
 
@@ -117,6 +123,17 @@ export const useSimulationStore = create<SimulationStore>((set, get) => ({
 
   setActiveDetailDate: (date) =>
     set({ activeDetailDate: date }),
+
+  setAnalysisTime: (date, time) =>
+    set((state) => {
+      const next = { ...state.analysisTimeOverrides };
+      if (time === null) {
+        delete next[date];
+      } else {
+        next[date] = time;
+      }
+      return { analysisTimeOverrides: next };
+    }),
 }));
 
 export { stockKey };

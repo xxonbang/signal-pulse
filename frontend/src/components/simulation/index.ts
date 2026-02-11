@@ -4,3 +4,4 @@ export { CategorySection } from './CategorySection';
 export { StockBadge } from './StockBadge';
 export { ReturnDisplay } from './ReturnDisplay';
 export { CollectionTrigger } from './CollectionTrigger';
+export { AnalysisTimeSelector } from './AnalysisTimeSelector';

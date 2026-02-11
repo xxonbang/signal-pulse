@@ -102,7 +102,7 @@ export function DateSelector({ items, dataByDate }: DateSelectorProps) {
       </div>
 
       {/* 날짜 카드 그리드 */}
-      <div className="p-3 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-2">
+      <div className="p-2 md:p-3 grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7 gap-1.5 md:gap-2">
         {items.map((item) => {
           const isSelected = selectedDates.has(item.date);
           const isDetail = activeDetailDate === item.date;
@@ -141,7 +141,7 @@ export function DateSelector({ items, dataByDate }: DateSelectorProps) {
                   setActiveDetailDate(item.date);
                 }}
                 className={`
-                  w-full flex flex-col items-center gap-0.5 px-2 py-3
+                  w-full flex flex-col items-center gap-0.5 px-1.5 md:px-2 py-2.5 md:py-3
                   rounded-xl border transition-all text-center
                   ${isDetail
                     ? 'bg-accent-primary text-white border-accent-primary shadow-md scale-[1.02]'
@@ -152,21 +152,21 @@ export function DateSelector({ items, dataByDate }: DateSelectorProps) {
                 `}
               >
                 {/* 날짜 */}
-                <span className={`text-sm font-bold tabular-nums ${isDetail ? 'text-white' : ''}`}>
+                <span className={`text-xs md:text-sm font-bold tabular-nums ${isDetail ? 'text-white' : ''}`}>
                   {short}
                 </span>
-                <span className={`text-[0.6rem] ${isDetail ? 'text-white/70' : 'text-text-muted'}`}>
+                <span className={`text-[0.55rem] md:text-[0.6rem] ${isDetail ? 'text-white/70' : 'text-text-muted'}`}>
                   {weekday}
                 </span>
 
                 {/* 종목수 */}
-                <span className={`text-[0.6rem] mt-1 ${isDetail ? 'text-white/60' : 'text-text-muted/70'}`}>
-                  {stat ? `${stat.includedCount}/${stat.totalCount}` : `${item.total_stocks}`}종목
+                <span className={`text-[0.55rem] md:text-[0.6rem] mt-0.5 md:mt-1 ${isDetail ? 'text-white/60' : 'text-text-muted/70'}`}>
+                  {stat ? `${stat.includedCount}/${stat.totalCount}` : `${item.total_stocks}`}
                 </span>
 
                 {/* 수익률 */}
                 {avgReturn !== null ? (
-                  <span className={`text-xs font-bold tabular-nums
+                  <span className={`text-[0.65rem] md:text-xs font-bold tabular-nums
                     ${isDetail
                       ? 'text-white'
                       : avgReturn > 0 ? 'text-signal-strong-buy' : avgReturn < 0 ? 'text-signal-strong-sell' : 'text-text-muted'
@@ -175,7 +175,7 @@ export function DateSelector({ items, dataByDate }: DateSelectorProps) {
                     {avgReturn > 0 ? '+' : ''}{avgReturn.toFixed(2)}%
                   </span>
                 ) : (
-                  <span className={`text-xs ${isDetail ? 'text-white/40' : 'text-text-muted/40'}`}>
+                  <span className={`text-[0.65rem] md:text-xs ${isDetail ? 'text-white/40' : 'text-text-muted/40'}`}>
                     -
                   </span>
                 )}

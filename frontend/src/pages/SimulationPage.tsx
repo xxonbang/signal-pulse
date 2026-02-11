@@ -1,15 +1,17 @@
 import { useEffect, useRef, useMemo } from 'react';
 import { useSimulationIndex, useSimulationMultipleDates } from '@/hooks/useSimulationData';
 import { useSimulationStore } from '@/store/simulationStore';
+import { useAuthStore } from '@/store/authStore';
 import type { SimulationMode } from '@/store/simulationStore';
-import { SimulationSummary, DateSelector, CategorySection, CollectionTrigger } from '@/components/simulation';
+import { SimulationSummary, DateSelector, CategorySection, CollectionTrigger, AnalysisTimeSelector } from '@/components/simulation';
+import { useAnalysisTimeOverride } from '@/hooks/useAnalysisTimeOverride';
 import { LoadingSpinner, EmptyState } from '@/components/common';
 import { cn } from '@/lib/utils';
 import type { SimulationData, SimulationCategory } from '@/services/types';
 
 export function SimulationPage() {
   const { data: index, isLoading: indexLoading } = useSimulationIndex();
-  const { activeDetailDate, selectAllDates } = useSimulationStore();
+  const { activeDetailDate, selectAllDates, setAnalysisTime } = useSimulationStore();
   const initializedRef = useRef(false);
 
   // 인덱스 최초 로드 시에만 전체 선택 (이후 사용자 조작은 존중)
@@ -46,6 +48,14 @@ export function SimulationPage() {
   // 상세보기 날짜의 데이터
   const detailData = activeDetailDate ? dataByDate[activeDetailDate] : null;
 
+  // 분석 시간대 오버라이드 훅
+  const {
+    availableTimes,
+    selectedTime,
+    overriddenData,
+    isLoading: timeOverrideLoading,
+  } = useAnalysisTimeOverride(activeDetailDate, detailData);
+
   if (indexLoading) {
     return <LoadingSpinner message="시뮬레이션 데이터 로딩 중..." />;
   }
@@ -64,7 +74,7 @@ export function SimulationPage() {
   }
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-3 md:space-y-4">
       <PageHeader />
       <SimulationModeTabs />
 
@@ -90,14 +100,24 @@ export function SimulationPage() {
             {activeDetailDate} 상세
           </h3>
 
-          {(['vision', 'kis', 'combined'] as SimulationCategory[]).map((cat) => (
-            <CategorySection
-              key={cat}
-              category={cat}
-              stocks={detailData.categories[cat] || []}
-              date={activeDetailDate}
-            />
-          ))}
+          <AnalysisTimeSelector
+            availableTimes={availableTimes}
+            selectedTime={selectedTime}
+            onSelect={(time) => setAnalysisTime(activeDetailDate, time)}
+            isLoading={timeOverrideLoading}
+          />
+
+          {(['vision', 'kis', 'combined'] as SimulationCategory[]).map((cat) => {
+            const displayData = overriddenData ?? detailData;
+            return (
+              <CategorySection
+                key={cat}
+                category={cat}
+                stocks={displayData.categories[cat] || []}
+                date={activeDetailDate}
+              />
+            );
+          })}
         </div>
       )}
 
@@ -112,6 +132,7 @@ export function SimulationPage() {
 
 function PageHeader() {
   const { simulationMode } = useSimulationStore();
+  const { isAdmin } = useAuthStore();
   const desc = simulationMode === 'close'
     ? '적극매수 시그널 종목의 시가 매수 → 종가 매도 수익률'
     : '적극매수 시그널 종목의 시가 매수 → 장중 최고가 매도 수익률';
@@ -122,7 +143,7 @@ function PageHeader() {
         <h2 className="text-lg md:text-xl font-bold">모의투자 시뮬레이션</h2>
         <p className="text-xs text-text-muted mt-0.5">{desc}</p>
       </div>
-      <CollectionTrigger />
+      {isAdmin && <CollectionTrigger />}
     </div>
   );
 }

@@ -4,10 +4,10 @@ import { StockBadge } from './StockBadge';
 import { ReturnDisplay } from './ReturnDisplay';
 import { useSimulationStore, stockKey } from '@/store/simulationStore';
 
-const CATEGORY_LABELS: Record<SimulationCategory, string> = {
-  vision: 'Vision AI 적극매수',
-  kis: 'KIS API 적극매수',
-  combined: 'Combined 완전일치',
+const CATEGORY_LABELS: Record<SimulationCategory, { full: string; short: string }> = {
+  vision: { full: 'Vision AI 적극매수', short: 'Vision' },
+  kis: { full: 'KIS API 적극매수', short: 'KIS' },
+  combined: { full: 'Combined 완전일치', short: 'Combined' },
 };
 
 const CATEGORY_ICONS: Record<SimulationCategory, string> = {
@@ -58,34 +58,35 @@ export function CategorySection({ category, stocks, date }: CategorySectionProps
   return (
     <div className={`border rounded-2xl overflow-hidden transition-opacity ${isActive ? 'border-border' : 'border-border/50 opacity-50'}`}>
       {/* 헤더 */}
-      <div className="flex items-center justify-between px-4 py-3 bg-bg-secondary/50">
-        <div className="flex items-center gap-2">
-          <label className="flex items-center gap-2 cursor-pointer select-none">
-            <input
-              type="checkbox"
-              checked={isActive}
-              onChange={() => toggleCategory(category)}
-              className="w-4 h-4 rounded accent-accent-primary"
-            />
-            <span className="text-base">{CATEGORY_ICONS[category]}</span>
-            <span className="font-semibold text-sm">{CATEGORY_LABELS[category]}</span>
-            <span className="text-xs text-text-muted">
-              {includedCount}/{stocks.length}
-            </span>
-          </label>
-        </div>
+      <div className="flex items-center justify-between px-3 md:px-4 py-2.5 md:py-3 bg-bg-secondary/50 gap-2">
+        <label className="flex items-center gap-1.5 md:gap-2 cursor-pointer select-none min-w-0">
+          <input
+            type="checkbox"
+            checked={isActive}
+            onChange={() => toggleCategory(category)}
+            className="w-4 h-4 rounded accent-accent-primary flex-shrink-0"
+          />
+          <span className="text-base flex-shrink-0">{CATEGORY_ICONS[category]}</span>
+          <span className="font-semibold text-xs md:text-sm truncate">
+            <span className="hidden sm:inline">{CATEGORY_LABELS[category].full}</span>
+            <span className="sm:hidden">{CATEGORY_LABELS[category].short}</span>
+          </span>
+          <span className="text-[0.65rem] md:text-xs text-text-muted flex-shrink-0 tabular-nums">
+            {includedCount}/{stocks.length}
+          </span>
+        </label>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-1.5 md:gap-3 flex-shrink-0">
           <ReturnDisplay value={isActive ? avgReturn : null} size="md" />
           <button
             onClick={() => allExcluded ? includeAllStocks(date, category, codes) : excludeAllStocks(date, category, codes)}
-            className="text-[0.65rem] text-text-muted hover:text-accent-primary transition-colors"
+            className="text-[0.65rem] text-text-muted hover:text-accent-primary transition-colors whitespace-nowrap"
           >
             {allExcluded ? '전체선택' : '전체해제'}
           </button>
           <button
             onClick={() => setExpanded(!expanded)}
-            className="p-1 text-text-muted hover:text-text-secondary transition-colors"
+            className="p-0.5 md:p-1 text-text-muted hover:text-text-secondary transition-colors flex-shrink-0"
           >
             <svg
               className={`w-4 h-4 transition-transform ${expanded ? '' : '-rotate-90'}`}
@@ -99,7 +100,7 @@ export function CategorySection({ category, stocks, date }: CategorySectionProps
 
       {/* 종목 그리드 */}
       {isActive && expanded && (
-        <div className="p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+        <div className="p-2 md:p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-2">
           {stocks.map((stock) => (
             <StockBadge key={stock.code} stock={stock} category={category} date={date} />
           ))}

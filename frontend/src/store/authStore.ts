@@ -6,29 +6,39 @@ interface AuthStore {
   user: User | null;
   session: Session | null;
   isLoading: boolean;
+  isAdmin: boolean;
   initialize: () => Promise<void>;
   signUp: (email: string, password: string) => Promise<{ error: AuthError | null }>;
   signIn: (email: string, password: string) => Promise<{ error: AuthError | null }>;
   signOut: () => Promise<void>;
 }
 
+function checkAdmin(user: User | null): boolean {
+  return user?.app_metadata?.role === 'admin';
+}
+
 export const useAuthStore = create<AuthStore>((set) => ({
   user: null,
   session: null,
   isLoading: true,
+  isAdmin: false,
 
   initialize: async () => {
     const { data: { session } } = await supabase.auth.getSession();
+    const user = session?.user ?? null;
     set({
       session,
-      user: session?.user ?? null,
+      user,
       isLoading: false,
+      isAdmin: checkAdmin(user),
     });
 
     supabase.auth.onAuthStateChange((_event, session) => {
+      const user = session?.user ?? null;
       set({
         session,
-        user: session?.user ?? null,
+        user,
+        isAdmin: checkAdmin(user),
       });
     });
   },

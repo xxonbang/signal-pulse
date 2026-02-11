@@ -14,10 +14,13 @@ export function StockBadge({ stock, category, date }: StockBadgeProps) {
   const isExcluded = excludedStocks.has(key);
   const isHighMode = simulationMode === 'high';
 
+  const sellLabel = isHighMode ? '고가' : '종가';
+  const sellPrice = isHighMode ? stock.high_price : stock.close_price;
+
   return (
     <label
       className={`
-        flex items-center gap-2 px-3 py-2.5
+        flex items-center gap-1.5 md:gap-2 px-2.5 md:px-3 py-2 md:py-2.5
         bg-bg-secondary border rounded-xl
         cursor-pointer select-none transition-all
         ${isExcluded
@@ -34,8 +37,8 @@ export function StockBadge({ stock, category, date }: StockBadgeProps) {
       />
 
       <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-1.5">
-          <span className={`text-sm font-medium truncate ${isExcluded ? 'line-through' : ''}`}>
+        <div className="flex items-center gap-1">
+          <span className={`text-xs md:text-sm font-medium truncate ${isExcluded ? 'line-through' : ''}`}>
             {stock.name}
           </span>
           <a
@@ -46,34 +49,26 @@ export function StockBadge({ stock, category, date }: StockBadgeProps) {
             className="flex-shrink-0 text-text-muted hover:text-accent-primary transition-colors"
             title="네이버 금융에서 보기"
           >
-            <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg className="w-3 h-3 md:w-3.5 md:h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
               <polyline points="15 3 21 3 21 9"/>
               <line x1="10" y1="14" x2="21" y2="3"/>
             </svg>
           </a>
-          <span className="text-[0.65rem] text-text-muted">{stock.code}</span>
+          <span className="text-[0.6rem] md:text-[0.65rem] text-text-muted">{stock.code}</span>
         </div>
-        <div className="flex items-center gap-2 mt-0.5 text-xs text-text-muted">
+        <div className="flex items-center gap-1 md:gap-2 mt-0.5 text-[0.65rem] md:text-xs text-text-muted tabular-nums">
           {stock.open_price !== null ? (
-            isHighMode ? (
-              stock.high_price !== null && stock.high_price !== undefined ? (
-                <>
-                  <span>시가 {stock.open_price.toLocaleString()}</span>
-                  <span>→</span>
-                  <span>고가 {stock.high_price.toLocaleString()}</span>
-                </>
-              ) : (
-                <>
-                  <span>시가 {stock.open_price.toLocaleString()}</span>
-                  <span className="text-text-muted/60">고가 미수집</span>
-                </>
-              )
+            sellPrice !== null && sellPrice !== undefined ? (
+              <>
+                <span>{stock.open_price.toLocaleString()}</span>
+                <span>→</span>
+                <span>{sellLabel} {sellPrice.toLocaleString()}</span>
+              </>
             ) : (
               <>
                 <span>시가 {stock.open_price.toLocaleString()}</span>
-                <span>→</span>
-                <span>종가 {stock.close_price?.toLocaleString()}</span>
+                <span className="text-text-muted/60">{sellLabel} 미수집</span>
               </>
             )
           ) : (

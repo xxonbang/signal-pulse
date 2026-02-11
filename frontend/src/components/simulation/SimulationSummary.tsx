@@ -106,7 +106,7 @@ export function SimulationSummary({ dataByDate }: SimulationSummaryProps) {
   }, [selectedDates, dataByDate, activeCategories, excludedStocks, simulationMode]);
 
   return (
-    <div className="border border-border rounded-2xl p-4 md:p-6 bg-bg-secondary/30">
+    <div className="border border-border rounded-2xl p-3 md:p-6 bg-bg-secondary/30">
       {/* 메인 수익률 - 모바일: 세로 정렬 */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-4 md:mb-5">
         <div className="flex items-center justify-between md:block">
