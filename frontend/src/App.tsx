@@ -13,6 +13,7 @@ const CombinedAnalysis = lazy(() => import('@/pages/CombinedAnalysis').then(m =>
 const SimulationPage = lazy(() => import('@/pages/SimulationPage').then(m => ({ default: m.SimulationPage })));
 
 import { useUIStore } from '@/store/uiStore';
+import { useUserHistory } from '@/hooks/useUserHistory';
 import { fetchLatestData, fetchKISData, fetchKISAnalysis, fetchHistoryIndex } from '@/services/api';
 
 const queryClient = new QueryClient({
@@ -101,6 +102,7 @@ function AppContent() {
 
   // 앱 로드 시 모든 데이터 미리 로드
   usePrefetchAllData();
+  useUserHistory();
   const { currentPage } = useUIStore();
 
   return (
