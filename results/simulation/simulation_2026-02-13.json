@@ -1,0 +1,52 @@
+{
+  "date": "2026-02-13",
+  "collected_at": "2026-02-13T08:05:17.675658+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "032820",
+        "name": "우리기술",
+        "market": "KOSDAQ",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      }
+    ],
+    "kis": [
+      {
+        "code": "000890",
+        "name": "보해양조",
+        "market": "KOSPI",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "019570",
+        "name": "플루토스",
+        "market": "KOSDAQ",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      },
+      {
+        "code": "012340",
+        "name": "뉴인텍",
+        "market": "KOSDAQ",
+        "open_price": null,
+        "close_price": null,
+        "high_price": null,
+        "return_pct": null,
+        "high_return_pct": null
+      }
+    ],
+    "combined": []
+  },
+  "all_prices": {}
+}
