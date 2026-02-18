@@ -575,10 +575,10 @@ class KISStockDetailAPI:
         }
 
     def get_program_trading(self, stock_code: str) -> Dict[str, Any]:
-        """종목별 프로그램매매추이 (체결)
+        """종목별 프로그램매매추이 (체결) — 당일 실시간 데이터
 
         Returns:
-            실시간 프로그램 매매 현황
+            실시간 프로그램 매매 현황 (장중에만 유효, 장 마감 후 0)
         """
         path = "/uapi/domestic-stock/v1/quotations/program-trade-by-stock"
         tr_id = "FHPPG04650100"
@@ -608,6 +608,55 @@ class KISStockDetailAPI:
             return {
                 "stock_code": stock_code,
                 "program_trading": program_data,
+            }
+        except Exception as e:
+            return {"error": str(e)}
+
+    def get_program_trading_daily(self, stock_code: str, days: int = 5) -> Dict[str, Any]:
+        """종목별 프로그램매매추이 (일별) — 날짜별 누적 데이터
+
+        장 마감 후에도 유효한 일별 프로그램 매매 누적 데이터를 조회한다.
+
+        Args:
+            stock_code: 종목코드
+            days: 조회 일수 (기본 5일)
+
+        Returns:
+            일별 프로그램 매매 현황
+        """
+        path = "/uapi/domestic-stock/v1/quotations/program-trade-by-stock-daily"
+        tr_id = "FHPPG04650200"
+
+        end_date = datetime.now(KST).strftime("%Y%m%d")
+        start_date = (datetime.now(KST) - timedelta(days=days)).strftime("%Y%m%d")
+
+        params = {
+            "FID_COND_MRKT_DIV_CODE": "J",
+            "FID_INPUT_ISCD": stock_code,
+            "FID_INPUT_DATE_1": start_date,
+            "FID_INPUT_DATE_2": end_date,
+        }
+
+        try:
+            result = self.client.request("GET", path, tr_id, params=params)
+
+            if result.get("rt_cd") != "0":
+                return {"error": result.get("msg1", "Unknown error")}
+
+            output = result.get("output", [])
+
+            daily_data = []
+            for item in output:
+                daily_data.append({
+                    "date": item.get("stck_bsop_date", ""),
+                    "buy_volume": safe_int(item.get("pgmg_buy_qty", 0) or 0),
+                    "sell_volume": safe_int(item.get("pgmg_sell_qty", 0) or 0),
+                    "net_volume": safe_int(item.get("pgmg_ntby_qty", 0) or 0),
+                })
+
+            return {
+                "stock_code": stock_code,
+                "program_trading_daily": daily_data,
             }
         except Exception as e:
             return {"error": str(e)}
@@ -760,8 +809,10 @@ class KISStockDetailAPI:
             data["foreign_institution_summary"] = self.get_foreign_institution_summary(stock_code)
             time.sleep(0.1)
 
-            # 프로그램매매 (실패해도 계속 진행)
+            # 프로그램매매 - 체결(실시간) + 일별 누적
             data["program_trading"] = self.get_program_trading(stock_code)
+            time.sleep(0.1)
+            data["program_trading_daily"] = self.get_program_trading_daily(stock_code)
 
         return data
 

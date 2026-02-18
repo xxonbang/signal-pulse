@@ -284,10 +284,18 @@ class CriteriaEvaluator:
             foreign_net = today.get("foreign_net", 0)
             institution_net = today.get("organ_net", 0)
 
-        # 프로그램 매매 순매수량 합산
-        prog_data = details.get("program_trading", {})
-        prog_list = prog_data.get("program_trading", [])
-        program_net = sum(p.get("net_volume", 0) for p in prog_list)
+        # 프로그램 매매 순매수량 (일별 데이터 우선, 없으면 체결 데이터 fallback)
+        prog_daily = details.get("program_trading_daily", {})
+        prog_daily_list = prog_daily.get("program_trading_daily", [])
+        if prog_daily_list:
+            # 일별 데이터: 최신일(첫 번째) 기준
+            today_prog = prog_daily_list[0]
+            program_net = today_prog.get("net_volume", 0)
+        else:
+            # fallback: 체결(실시간) 데이터 합산
+            prog_data = details.get("program_trading", {})
+            prog_list = prog_data.get("program_trading", [])
+            program_net = sum(p.get("net_volume", 0) for p in prog_list)
 
         criteria = {
             "high_breakout": self.check_high_breakout(current_price, ohlcv, w52_high),
