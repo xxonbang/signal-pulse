@@ -2,12 +2,15 @@ import { useState, useMemo, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { fetchKISData, fetchKISAnalysis } from '@/services/api';
 import { useKISHistoryData } from '@/hooks/useKISHistoryData';
-import type { KISStockData, KISAnalysisResult, KISAnalysisData, MarketType, SignalType, SignalCounts } from '@/services/types';
-import { LoadingSpinner, EmptyState, Button, AnimatedNumber } from '@/components/common';
+import { useCriteriaData } from '@/hooks/useCriteriaData';
+import type { KISStockData, KISAnalysisResult, KISAnalysisData, MarketType, SignalType, SignalCounts, StockCriteria } from '@/services/types';
+import { LoadingSpinner, EmptyState, Button, AnimatedNumber, KosdaqStatusBanner } from '@/components/common';
 import { SignalSummary, SignalBadge } from '@/components/signal';
-import { MarketTabs, NewsAnalysisSection } from '@/components/stock';
+import { MarketTabs, NewsAnalysisSection, CriteriaLegend } from '@/components/stock';
+import { CriteriaIndicator } from '@/components/stock/CriteriaIndicator';
 import { NewsSection } from '@/components/news';
 import { useUIStore } from '@/store/uiStore';
+import { useAuthStore } from '@/store/authStore';
 
 // 숫자 포맷
 function formatNumber(num: number | null | undefined): string {
@@ -180,12 +183,14 @@ function StockCard({
   stock,
   analysis,
   isExpanded,
-  onToggle
+  onToggle,
+  criteria
 }: {
   stock: KISStockData;
   analysis?: KISAnalysisResult;
   isExpanded: boolean;
   onToggle: () => void;
+  criteria?: StockCriteria | null;
 }) {
   const changeRate = stock.price?.change_rate_pct ?? 0;
   const priceChangeColor = changeRate > 0 ? 'text-red-500' : changeRate < 0 ? 'text-blue-500' : 'text-text-secondary';
@@ -253,6 +258,9 @@ function StockCard({
         <FlowBadge value={stock.investor_flow?.today?.institution_net} label="기관" isEstimated={stock.investor_flow?.is_estimated} />
         <FlowBadge value={stock.investor_flow?.today?.individual_net} label="개인" isEstimated={stock.investor_flow?.is_estimated} />
       </div>
+
+      {/* Criteria 인디케이터 */}
+      {criteria && <CriteriaIndicator criteria={criteria} />}
 
       {/* 분석 근거 (있는 경우) */}
       {analysis && (
@@ -357,6 +365,8 @@ export function APIAnalysis() {
   const [signalFilter, setSignalFilter] = useState<SignalType | null>(null);
   const [expandedCards, setExpandedCards] = useState<Set<string>>(new Set());
   const { isViewingHistory, viewingHistoryDateTime, isCompactView } = useUIStore();
+  const { data: criteriaData } = useCriteriaData();
+  const isAdmin = useAuthStore((s) => s.isAdmin);
 
   // viewingHistoryDateTime: "2026-02-04_0700" → filename: "kis_2026-02-04_0700.json"
   const historyFilename = viewingHistoryDateTime ? `kis_${viewingHistoryDateTime}.json` : null;
@@ -553,6 +563,8 @@ export function APIAnalysis() {
         <ViewingHistoryBanner dateTime={viewingHistoryDateTime} />
       )}
 
+      <KosdaqStatusBanner />
+
       {/* 메타 정보 */}
       <ResultsMeta
         analysisTime={analysisData?.analysis_time || kisData?.meta.original_collected_at || ''}
@@ -571,6 +583,7 @@ export function APIAnalysis() {
             activeSignal={signalFilter}
             onFilter={handleSignalFilter}
           />
+          <CriteriaLegend isAdmin={isAdmin} hasCriteriaData={!!criteriaData} />
           <TipText>
             시그널 카드를 클릭하면 필터가 적용되어, 해당되는 종목만 확인 가능합니다
           </TipText>
@@ -627,6 +640,9 @@ export function APIAnalysis() {
                     <div className="min-w-0 flex-1">
                       <div className="font-medium text-sm text-text-primary truncate">{analysis.name}</div>
                       <div className="text-xs text-text-muted font-mono">{analysis.code}</div>
+                      {isAdmin && criteriaData?.[analysis.code] && (
+                        <CriteriaIndicator criteria={criteriaData[analysis.code]} isCompact />
+                      )}
                     </div>
                     <SignalBadge signal={analysis.signal} size="sm" />
                   </a>
@@ -643,6 +659,9 @@ export function APIAnalysis() {
                     <div className="min-w-0 flex-1">
                       <div className="font-medium text-sm text-text-primary truncate">{stock.name}</div>
                       <div className="text-xs text-text-muted font-mono">{stock.code}</div>
+                      {isAdmin && criteriaData?.[stock.code] && (
+                        <CriteriaIndicator criteria={criteriaData[stock.code]} isCompact />
+                      )}
                     </div>
                     {analysisMap[stock.code] && (
                       <SignalBadge signal={analysisMap[stock.code].signal} size="sm" />
@@ -662,6 +681,7 @@ export function APIAnalysis() {
                     analysis={analysis}
                     isExpanded={expandedCards.has(analysis.code)}
                     onToggle={() => toggleCard(analysis.code)}
+                    criteria={isAdmin ? criteriaData?.[analysis.code] ?? null : null}
                   />
                 ))
               ) : (
@@ -673,6 +693,7 @@ export function APIAnalysis() {
                     analysis={analysisMap[stock.code]}
                     isExpanded={expandedCards.has(stock.code)}
                     onToggle={() => toggleCard(stock.code)}
+                    criteria={isAdmin ? criteriaData?.[stock.code] ?? null : null}
                   />
                 ))
               )}
@@ -694,11 +715,13 @@ export function APIAnalysis() {
 function HistoryStockCard({
   analysis,
   isExpanded,
-  onToggle
+  onToggle,
+  criteria
 }: {
   analysis: KISAnalysisResult;
   isExpanded: boolean;
   onToggle: () => void;
+  criteria?: StockCriteria | null;
 }) {
   const changeRate = analysis.change_rate ?? 0;
   const priceChangeColor = changeRate > 0 ? 'text-red-500' : changeRate < 0 ? 'text-blue-500' : 'text-text-secondary';
@@ -736,6 +759,9 @@ function HistoryStockCard({
           <SignalBadge signal={analysis.signal} />
         </div>
       </div>
+
+      {/* Criteria 인디케이터 */}
+      {criteria && <CriteriaIndicator criteria={criteria} />}
 
       {/* 분석 근거 */}
       <div

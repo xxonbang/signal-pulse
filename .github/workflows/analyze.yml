@@ -359,12 +359,17 @@ jobs:
 
       - name: Evaluate stock criteria
         if: steps.kis_collect.outputs.kis_collected == 'true'
+        env:
+          KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
+          KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: |
-          echo "=== 종목 선정 기준 평가 ==="
+          echo "=== 종목 선정 기준 평가 (공매도 포함) ==="
           python -c "
           import json
           from pathlib import Path
-          from modules.criteria_evaluator import CriteriaEvaluator
+          from modules.criteria_evaluator import CriteriaEvaluator, collect_short_selling_data
 
           raw_path = Path('results/kis/kis_latest.json')
           if not raw_path.exists():
@@ -374,7 +379,15 @@ jobs:
           with open(raw_path, 'r', encoding='utf-8') as f:
               raw_data = json.load(f)
 
-          evaluator = CriteriaEvaluator(raw_data)
+          # 공매도 데이터 수집
+          stock_codes = list(raw_data.get('stock_details', {}).keys())
+          try:
+              short_selling = collect_short_selling_data(stock_codes)
+          except Exception as e:
+              print(f'공매도 수집 실패 (스킵): {e}')
+              short_selling = {}
+
+          evaluator = CriteriaEvaluator(raw_data, short_selling_data=short_selling)
           criteria_data = evaluator.evaluate_all()
 
           output_path = Path('results/kis/criteria_data.json')
@@ -385,17 +398,39 @@ jobs:
           total = len(criteria_data)
           met_counts = {}
           all_met_count = 0
+          short_alert_count = 0
           for code, c in criteria_data.items():
               if c.get('all_met'):
                   all_met_count += 1
-              for key in ['high_breakout','momentum_history','resistance_breakout','ma_alignment','supply_demand','program_trading','top30_trading_value']:
+              if c.get('short_selling_alert', {}).get('met'):
+                  short_alert_count += 1
+              for key in ['high_breakout','momentum_history','resistance_breakout','ma_alignment','supply_demand','program_trading','top30_trading_value','market_cap_range']:
                   if c.get(key, {}).get('met'):
                       met_counts[key] = met_counts.get(key, 0) + 1
 
           print(f'기준 평가 완료: {total}개 종목')
           for key, count in met_counts.items():
               print(f'  {key}: {count}/{total}')
+          print(f'  short_selling_alert: {short_alert_count}/{total}')
           print(f'  ALL MET: {all_met_count}/{total}')
+          "
+
+      - name: Evaluate market status
+        if: steps.kis_collect.outputs.kis_collected == 'true'
+        continue-on-error: true
+        env:
+          KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
+          KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          echo "=== KOSDAQ 지수 상태 평가 ==="
+          python -c "
+          from modules.kis_client import KISClient
+          from modules.market_status_evaluator import evaluate_and_save
+
+          client = KISClient()
+          evaluate_and_save(client)
           "
 
       # KIS 토큰 캐시 저장 (1일 1회 발급 제한 대응)

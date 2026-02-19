@@ -7,12 +7,13 @@ interface CriteriaLegendProps {
 
 const LEGEND_ITEMS = [
   { dotColor: 'bg-red-500', label: '전고점 돌파' },
+  { dotColor: 'bg-blue-500', label: '외국인/기관 수급' },
+  { dotColor: 'bg-violet-500', label: '프로그램 매매' },
   { dotColor: 'bg-orange-500', label: '끼 보유' },
   { dotColor: 'bg-yellow-400', label: '저항선 돌파' },
   { dotColor: 'bg-teal-500', label: '정배열' },
-  { dotColor: 'bg-blue-500', label: '외국인/기관 수급' },
-  { dotColor: 'bg-violet-500', label: '프로그램 매매' },
   { dotColor: 'bg-fuchsia-500', label: '거래대금 TOP30' },
+  { dotColor: 'bg-lime-500', label: '시가총액 적정' },
 ];
 
 export function CriteriaLegend({ isAdmin, hasCriteriaData }: CriteriaLegendProps) {

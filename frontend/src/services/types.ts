@@ -174,6 +174,8 @@ export interface StockCriteria {
   supply_demand: CriterionResult;
   program_trading: CriterionResult;
   top30_trading_value: CriterionResult;
+  market_cap_range: CriterionResult;
+  short_selling_alert?: CriterionResult;
   all_met: boolean;
 }
 
@@ -240,6 +242,16 @@ export interface CombinedAnalysisData {
     kis_analysis: string | null;
   };
   criteria_data?: Record<string, StockCriteria> | null;
+}
+
+// KOSDAQ 시장 상태
+export interface MarketStatus {
+  status: 'bullish' | 'bearish' | 'mixed' | 'unknown';
+  current?: number;
+  ma_values: Record<string, number>;
+  reason: string;
+  evaluated_at?: string;
+  data_days?: number;
 }
 
 // 모의투자 시뮬레이션 타입

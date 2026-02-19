@@ -1,4 +1,4 @@
-import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData, CombinedAnalysisData, SimulationIndex, SimulationData } from './types';
+import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData, CombinedAnalysisData, SimulationIndex, SimulationData, StockCriteria, MarketStatus } from './types';
 
 const BASE_URL = import.meta.env.DEV ? '' : '.';
 
@@ -128,6 +128,34 @@ export async function fetchCombinedHistoryData(filename: string): Promise<Combin
         return null;
       }
       throw new Error('Failed to fetch combined history data');
+    }
+    return response.json();
+  } catch {
+    return null;
+  }
+}
+
+// Criteria 데이터 fetch
+export async function fetchCriteriaData(): Promise<Record<string, StockCriteria> | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/kis/criteria_data.json`);
+    if (!response.ok) {
+      if (response.status === 404) return null;
+      throw new Error('Failed to fetch criteria data');
+    }
+    return response.json();
+  } catch {
+    return null;
+  }
+}
+
+// Market Status (KOSDAQ 지수 상태) fetch
+export async function fetchMarketStatus(): Promise<MarketStatus | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/kis/market_status.json`);
+    if (!response.ok) {
+      if (response.status === 404) return null;
+      throw new Error('Failed to fetch market status');
     }
     return response.json();
   } catch {

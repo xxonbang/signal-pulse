@@ -691,6 +691,47 @@ class KISStockDetailAPI:
         except Exception as e:
             return {"error": str(e)}
 
+    def get_short_selling(self, stock_code: str) -> Dict[str, Any]:
+        """주식 공매도 일별추이 조회 (당일)
+
+        Returns:
+            공매도 비중(%) 및 공매도 체결 수량
+        """
+        path = "/uapi/domestic-stock/v1/quotations/daily-short-sale"
+        tr_id = "FHPST04830000"
+
+        now = datetime.now(KST)
+        today = now.strftime("%Y%m%d")
+
+        params = {
+            "FID_COND_MRKT_DIV_CODE": "J",
+            "FID_INPUT_ISCD": stock_code,
+            "FID_INPUT_DATE_1": today,
+            "FID_INPUT_DATE_2": today,
+        }
+
+        try:
+            result = self.client.request("GET", path, tr_id, params=params)
+
+            if result.get("rt_cd") != "0":
+                return {"error": result.get("msg1", "Unknown error")}
+
+            output2 = result.get("output2", [])
+            if not output2:
+                return {"stock_code": stock_code, "short_ratio": 0, "short_qty": 0}
+
+            item = output2[0]
+            short_ratio = safe_float(item.get("ssts_vol_rlim", 0))
+            short_qty = safe_int(item.get("ssts_cntg_qty", 0))
+
+            return {
+                "stock_code": stock_code,
+                "short_ratio": short_ratio,
+                "short_qty": short_qty,
+            }
+        except Exception as e:
+            return {"error": str(e)}
+
     def get_foreign_institution_summary(self, stock_code: str) -> Dict[str, Any]:
         """외인/기관 매매 요약 (투자자 동향에서 추출)
 

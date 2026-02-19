@@ -1,7 +1,7 @@
 import { useState, useMemo, memo } from 'react';
 import { useCombinedData, useCombinedHistoryData } from '@/hooks/useCombinedData';
 import type { CombinedStock, CombinedAnalysisData, MarketType, SignalType, MatchStatus, StockCriteria } from '@/services/types';
-import { LoadingSpinner, EmptyState, AnimatedNumber } from '@/components/common';
+import { LoadingSpinner, EmptyState, AnimatedNumber, KosdaqStatusBanner } from '@/components/common';
 import { SignalBadge } from '@/components/signal';
 import { MarketTabs } from '@/components/stock';
 import { NewsAnalysisSection } from '@/components/stock/NewsAnalysisSection';
@@ -66,7 +66,11 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock, criteria, isA
       stock.match_status === 'match' ? 'border-emerald-300 bg-emerald-50/30' :
       stock.match_status === 'mismatch' ? 'border-red-300 bg-red-50/30' :
       'border-border',
-      isAdmin && criteria?.all_met && 'ring-2 ring-yellow-400/70 animate-shimmer'
+      isAdmin && criteria?.short_selling_alert?.met
+        ? 'ring-2 ring-red-500/70 animate-danger-shimmer'
+        : isAdmin && criteria?.all_met
+          ? 'ring-2 ring-yellow-400/70 animate-shimmer'
+          : '',
     )}>
       {/* 헤더 */}
       <div className="flex justify-between items-start mb-2 md:mb-3">
@@ -98,7 +102,14 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock, criteria, isA
 
       {/* 기준 인디케이터 (Admin 전용) */}
       {isAdmin && criteria && (
-        <CriteriaIndicator criteria={criteria} />
+        <>
+          <CriteriaIndicator criteria={criteria} />
+          {criteria.short_selling_alert?.met && (
+            <span className="text-[9px] text-red-600 font-medium">
+              공매도 주의 ({criteria.short_selling_alert.reason})
+            </span>
+          )}
+        </>
       )}
 
       {/* 시그널 비교 */}
@@ -446,6 +457,8 @@ export function CombinedAnalysis() {
       {isViewingHistory && viewingHistoryDateTime && (
         <ViewingHistoryBanner dateTime={viewingHistoryDateTime} />
       )}
+
+      <KosdaqStatusBanner />
 
       {/* 통계 요약 */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">

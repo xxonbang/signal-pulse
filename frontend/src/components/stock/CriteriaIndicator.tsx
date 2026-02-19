@@ -4,12 +4,13 @@ import { cn } from '@/lib/utils';
 
 const CRITERIA_CONFIG = [
   { key: 'high_breakout', dotColor: 'bg-red-500', badgeBg: 'bg-red-100', badgeText: 'text-red-700', label: '전고점', fullLabel: '전고점 돌파' },
+  { key: 'supply_demand', dotColor: 'bg-blue-500', badgeBg: 'bg-blue-100', badgeText: 'text-blue-700', label: '수급', fullLabel: '외국인/기관 수급' },
+  { key: 'program_trading', dotColor: 'bg-violet-500', badgeBg: 'bg-violet-100', badgeText: 'text-violet-700', label: '프로그램', fullLabel: '프로그램 매매' },
   { key: 'momentum_history', dotColor: 'bg-orange-500', badgeBg: 'bg-orange-100', badgeText: 'text-orange-700', label: '끼', fullLabel: '끼 보유' },
   { key: 'resistance_breakout', dotColor: 'bg-yellow-400', badgeBg: 'bg-yellow-100', badgeText: 'text-yellow-700', label: '저항선', fullLabel: '저항선 돌파' },
   { key: 'ma_alignment', dotColor: 'bg-teal-500', badgeBg: 'bg-teal-100', badgeText: 'text-teal-700', label: '정배열', fullLabel: '이동평균선 정배열' },
-  { key: 'supply_demand', dotColor: 'bg-blue-500', badgeBg: 'bg-blue-100', badgeText: 'text-blue-700', label: '수급', fullLabel: '외국인/기관 수급' },
-  { key: 'program_trading', dotColor: 'bg-violet-500', badgeBg: 'bg-violet-100', badgeText: 'text-violet-700', label: '프로그램', fullLabel: '프로그램 매매' },
   { key: 'top30_trading_value', dotColor: 'bg-fuchsia-500', badgeBg: 'bg-fuchsia-100', badgeText: 'text-fuchsia-700', label: 'TOP30', fullLabel: '거래대금 TOP30' },
+  { key: 'market_cap_range', dotColor: 'bg-lime-500', badgeBg: 'bg-lime-100', badgeText: 'text-lime-700', label: '시총', fullLabel: '시가총액 적정 범위' },
 ] as const;
 
 interface CriteriaIndicatorProps {

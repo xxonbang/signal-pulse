@@ -49,9 +49,14 @@ export default {
           '0%, 100%': { boxShadow: '0 0 6px 1px rgba(234, 179, 8, 0.25)' },
           '50%': { boxShadow: '0 0 20px 4px rgba(234, 179, 8, 0.5)' },
         },
+        'danger-shimmer': {
+          '0%, 100%': { boxShadow: '0 0 6px 1px rgba(239, 68, 68, 0.25)' },
+          '50%': { boxShadow: '0 0 20px 4px rgba(239, 68, 68, 0.5)' },
+        },
       },
       animation: {
         shimmer: 'shimmer 3s ease-in-out infinite',
+        'danger-shimmer': 'danger-shimmer 2s ease-in-out infinite',
       },
     },
   },

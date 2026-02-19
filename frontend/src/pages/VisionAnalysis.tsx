@@ -1,11 +1,13 @@
 import { useVisionData } from '@/hooks/useVisionData';
 import { useHistoryData } from '@/hooks/useHistoryData';
+import { useCriteriaData } from '@/hooks/useCriteriaData';
 import { useUIStore } from '@/store/uiStore';
-import { LoadingSpinner, EmptyState, Button, AnimatedNumber } from '@/components/common';
+import { useAuthStore } from '@/store/authStore';
+import { LoadingSpinner, EmptyState, Button, AnimatedNumber, KosdaqStatusBanner } from '@/components/common';
 import { SignalSummary } from '@/components/signal';
-import { MarketTabs, StockList } from '@/components/stock';
+import { MarketTabs, StockList, CriteriaLegend } from '@/components/stock';
 import { getSignalCounts, getFilteredStocks, categorizeStocks, getLatestAnalysisTime, formatTimeOnly } from '@/lib/utils';
-import type { AnalysisData, SignalType } from '@/services/types';
+import type { AnalysisData, SignalType, StockCriteria } from '@/services/types';
 
 function TipText({ children }: { children: React.ReactNode }) {
   return (
@@ -120,7 +122,7 @@ function ResultsMeta({ data }: { data: AnalysisData }) {
   );
 }
 
-function AnalysisContent({ data }: { data: AnalysisData }) {
+function AnalysisContent({ data, criteriaData, isAdmin }: { data: AnalysisData; criteriaData: Record<string, StockCriteria> | null; isAdmin: boolean }) {
   const { activeMarket, setMarketFilter, activeSignal, toggleSignalFilter, clearSignalFilter } = useUIStore();
 
   const { kospi, kosdaq } = categorizeStocks(data.results);
@@ -142,6 +144,8 @@ function AnalysisContent({ data }: { data: AnalysisData }) {
         activeSignal={activeSignal}
         onFilter={toggleSignalFilter}
       />
+
+      <CriteriaLegend isAdmin={isAdmin} hasCriteriaData={!!criteriaData} />
 
       <TipText>
         시그널 카드를 클릭하면 필터가 적용되어, 해당되는 종목만 확인 가능합니다
@@ -170,7 +174,7 @@ function AnalysisContent({ data }: { data: AnalysisData }) {
           <TipText>
             종목명을 클릭하면 네이버 금융에서 해당 종목의 실시간 정보 화면으로 이동합니다
           </TipText>
-          <StockList stocks={filteredStocks} />
+          <StockList stocks={filteredStocks} criteriaData={isAdmin ? criteriaData : null} />
         </>
       )}
     </>
@@ -179,6 +183,8 @@ function AnalysisContent({ data }: { data: AnalysisData }) {
 
 export function VisionAnalysis() {
   const { isViewingHistory, viewingHistoryDateTime } = useUIStore();
+  const { data: criteriaData } = useCriteriaData();
+  const isAdmin = useAuthStore((s) => s.isAdmin);
 
   // viewingHistoryDateTime: "2026-02-04_0700" → filename: "vision_2026-02-04_0700.json"
   const historyFilename = viewingHistoryDateTime ? `vision_${viewingHistoryDateTime}.json` : null;
@@ -203,6 +209,8 @@ export function VisionAnalysis() {
         <ViewingHistoryBanner dateTime={viewingHistoryDateTime} />
       )}
 
+      <KosdaqStatusBanner />
+
       {isLoading && <LoadingSpinner message="분석 결과를 불러오는 중..." />}
 
       {error && !isLoading && (
@@ -213,7 +221,7 @@ export function VisionAnalysis() {
         />
       )}
 
-      {data && !isLoading && <AnalysisContent data={data} />}
+      {data && !isLoading && <AnalysisContent data={data} criteriaData={criteriaData ?? null} isAdmin={isAdmin} />}
     </section>
   );
 }

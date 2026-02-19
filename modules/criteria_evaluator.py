@@ -1,9 +1,9 @@
-"""종목 선정 기준 평가 모듈 (7-Criteria Evaluator)
+"""종목 선정 기준 평가 모듈 (8-Criteria + Short Selling Alert)
 
 KIS API로 수집된 kis_latest.json 데이터를 기반으로
-모든 종목을 7개 독립 기준으로 평가한다.
+모든 종목을 8개 독립 기준으로 평가한다.
 
-기준:
+기준 (all_met 포함):
   1. 전고점 돌파 (빨강)
   2. 끼 보유 (주황)
   3. 심리적 저항선 돌파 (노랑)
@@ -11,6 +11,10 @@ KIS API로 수집된 kis_latest.json 데이터를 기반으로
   5. 외국인/기관 수급 (파랑)
   6. 프로그램 매매 (보라)
   7. 거래대금 TOP30 (자홍)
+  8. 시가총액 적정 범위 (라임)
+
+경고 (all_met 제외):
+  - 공매도 비중 경고 (5% 이상: 경고, 10% 이상: 극단)
 """
 
 from __future__ import annotations
@@ -38,10 +42,11 @@ ROUND_LEVELS = [
 
 
 class CriteriaEvaluator:
-    def __init__(self, kis_raw_data: dict):
+    def __init__(self, kis_raw_data: dict, short_selling_data: dict | None = None):
         self.stock_details = kis_raw_data.get("stock_details", {})
         self.rankings = kis_raw_data.get("rankings", {})
         self._top30_codes = self._build_top30_set()
+        self._short_selling = short_selling_data or {}
 
     def _build_top30_set(self) -> set:
         """거래대금 TOP30 종목코드 집합 구성 (KOSPI+KOSDAQ 합산)"""
@@ -264,6 +269,44 @@ class CriteriaEvaluator:
             "reason": "거래대금 TOP30" if met else "TOP30 아님",
         }
 
+    def check_market_cap(self, market_cap: float) -> dict:
+        """8. 시가총액 적정 범위: 3,000억 ~ 10조 (억원 단위)"""
+        market_cap = market_cap or 0
+        if market_cap <= 0:
+            return {"met": False, "reason": "시가총액 데이터 없음"}
+        MIN_CAP = 3000     # 3,000억원
+        MAX_CAP = 100000   # 10조원
+        met = MIN_CAP <= market_cap <= MAX_CAP
+        if market_cap < MIN_CAP:
+            reason = f"시가총액 {market_cap:,.0f}억원 (기준 미달: 3,000억 미만)"
+        elif market_cap > MAX_CAP:
+            reason = f"시가총액 {market_cap:,.0f}억원 (기준 초과: 10조 초과)"
+        else:
+            reason = f"시가총액 {market_cap:,.0f}억원 (적정 범위: 3,000억~10조)"
+        return {"met": met, "reason": reason}
+
+    def check_short_selling(self, short_ratio: float) -> dict:
+        """공매도 비중 경고 (부정적 지표, all_met에서 제외)
+
+        기준값: 5% (전체 거래량 대비 공매도 비중)
+          정상: 1~3% (한국 시장 평균)
+          경고: 5% 이상 (평균의 약 2배, 공매도 세력 집중)
+          극단: 10% 이상 (숏스퀴즈 위험)
+        """
+        short_ratio = short_ratio or 0
+        if short_ratio <= 0:
+            return {"met": False, "reason": "공매도 데이터 없음"}
+        WARNING = 5.0
+        EXTREME = 10.0
+        met = short_ratio >= WARNING
+        if short_ratio >= EXTREME:
+            reason = f"공매도 {short_ratio:.1f}% (극단: 숏스퀴즈 위험)"
+        elif short_ratio >= WARNING:
+            reason = f"공매도 {short_ratio:.1f}% (경고: 세력 집중)"
+        else:
+            reason = f"공매도 {short_ratio:.1f}% (정상)"
+        return {"met": met, "reason": reason}
+
     def evaluate_stock(self, code: str) -> dict:
         """단일 종목 7개 기준 평가"""
         details = self.stock_details.get(code, {})
@@ -287,6 +330,9 @@ class CriteriaEvaluator:
             foreign_net = today.get("foreign_net") or 0
             institution_net = today.get("organ_net") or 0
 
+        # 시가총액 (억원)
+        market_cap = cp_data.get("market_cap") or 0
+
         # 프로그램 매매 순매수량 (일별 데이터 우선, 없으면 체결 데이터 fallback)
         prog_daily = details.get("program_trading_daily") or {}
         prog_daily_list = prog_daily.get("program_trading_daily") or []
@@ -308,11 +354,19 @@ class CriteriaEvaluator:
             "supply_demand": self.check_supply_demand(foreign_net, institution_net),
             "program_trading": self.check_program_trading(program_net),
             "top30_trading_value": self.check_top30_trading_value(code),
+            "market_cap_range": self.check_market_cap(market_cap),
         }
 
+        # 공매도 경고 (데이터가 있을 때만 추가)
+        ss = self._short_selling.get(code)
+        if ss and ss.get("short_ratio", 0) > 0:
+            criteria["short_selling_alert"] = self.check_short_selling(ss["short_ratio"])
+
+        # all_met에서 제외할 키 (부정적 지표, 메타 키)
+        exclude_from_all_met = {"all_met", "short_selling_alert"}
         criteria["all_met"] = all(
             c["met"] for key, c in criteria.items()
-            if key != "all_met" and isinstance(c, dict)
+            if key not in exclude_from_all_met and isinstance(c, dict)
         )
 
         return criteria
@@ -325,6 +379,40 @@ class CriteriaEvaluator:
         return result
 
 
+def collect_short_selling_data(stock_codes: list[str]) -> dict:
+    """전 종목 공매도 데이터 수집 (KIS API 개별 호출)
+
+    rate limiter가 초당 20건이므로 0.05초 간격으로 호출.
+    200개 종목 ≈ 10초, 400개 ≈ 20초.
+
+    Returns:
+        {종목코드: {"short_ratio": float, "short_qty": int}, ...}
+    """
+    import time
+    from modules.kis_stock_detail import KISStockDetailAPI
+
+    api = KISStockDetailAPI()
+    result = {}
+    total = len(stock_codes)
+
+    print(f"공매도 데이터 수집: {total}개 종목")
+    for i, code in enumerate(stock_codes):
+        try:
+            data = api.get_short_selling(code)
+            if "error" not in data and data.get("short_ratio", 0) > 0:
+                result[code] = data
+        except Exception:
+            pass
+
+        if (i + 1) % 50 == 0:
+            print(f"  진행: {i + 1}/{total}")
+
+        time.sleep(0.05)
+
+    print(f"공매도 데이터 수집 완료: {len(result)}개 종목 (비중 > 0)")
+    return result
+
+
 if __name__ == "__main__":
     raw_path = Path("results/kis/kis_latest.json")
     if not raw_path.exists():
@@ -334,7 +422,11 @@ if __name__ == "__main__":
     with open(raw_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    evaluator = CriteriaEvaluator(data)
+    # 공매도 데이터 수집
+    stock_codes = list(data.get("stock_details", {}).keys())
+    short_selling = collect_short_selling_data(stock_codes)
+
+    evaluator = CriteriaEvaluator(data, short_selling_data=short_selling)
     result = evaluator.evaluate_all()
 
     output_path = Path("results/kis/criteria_data.json")
@@ -345,12 +437,16 @@ if __name__ == "__main__":
     total = len(result)
     met_counts: dict[str, int] = {}
     all_met_count = 0
+    short_alert_count = 0
     for code, c in result.items():
         if c.get("all_met"):
             all_met_count += 1
+        if c.get("short_selling_alert", {}).get("met"):
+            short_alert_count += 1
         for key in [
             "high_breakout", "momentum_history", "resistance_breakout",
             "ma_alignment", "supply_demand", "program_trading", "top30_trading_value",
+            "market_cap_range",
         ]:
             if c.get(key, {}).get("met"):
                 met_counts[key] = met_counts.get(key, 0) + 1
@@ -358,5 +454,6 @@ if __name__ == "__main__":
     print(f"기준 평가 완료: {total}개 종목")
     for key, count in met_counts.items():
         print(f"  {key}: {count}/{total}")
+    print(f"  short_selling_alert: {short_alert_count}/{total}")
     print(f"  ALL MET: {all_met_count}/{total}")
     print(f"저장: {output_path}")

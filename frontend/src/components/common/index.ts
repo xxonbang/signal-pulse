@@ -8,3 +8,4 @@ export { HistoryButton } from './HistoryButton';
 export { Toast } from './Toast';
 export { AnimatedNumber } from './AnimatedNumber';
 export { ScrollToTop } from './ScrollToTop';
+export { KosdaqStatusBanner } from './KosdaqStatusBanner';
