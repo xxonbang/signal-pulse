@@ -13,6 +13,26 @@ from PIL import Image
 import io
 
 
+def safe_int(value, default: int = 0) -> int:
+    """빈 문자열이나 None을 안전하게 정수로 변환"""
+    if value is None or value == "":
+        return default
+    try:
+        return int(float(value))
+    except (ValueError, TypeError):
+        return default
+
+
+def safe_float(value, default: float = 0.0) -> float:
+    """빈 문자열이나 None을 안전하게 실수로 변환"""
+    if value is None or value == "":
+        return default
+    try:
+        return float(value)
+    except (ValueError, TypeError):
+        return default
+
+
 def get_today_capture_dir(base_dir: Path) -> Path:
     """오늘 날짜의 캡처 디렉토리 반환"""
     today = datetime.now(KST).strftime("%Y-%m-%d")

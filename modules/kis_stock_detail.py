@@ -16,26 +16,7 @@ KST = timezone(timedelta(hours=9))
 
 from modules.kis_client import KISClient
 from modules.market_calendar import is_market_hours
-
-
-def safe_int(value, default: int = 0) -> int:
-    """빈 문자열이나 None을 안전하게 정수로 변환"""
-    if value is None or value == "":
-        return default
-    try:
-        return int(float(value))
-    except (ValueError, TypeError):
-        return default
-
-
-def safe_float(value, default: float = 0.0) -> float:
-    """빈 문자열이나 None을 안전하게 실수로 변환"""
-    if value is None or value == "":
-        return default
-    try:
-        return float(value)
-    except (ValueError, TypeError):
-        return default
+from modules.utils import safe_int, safe_float
 
 
 class KISStockDetailAPI:
