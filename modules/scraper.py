@@ -34,8 +34,12 @@ async def fetch_stock_list_from_api(page: Page, api_url: str, market: str, max_s
 
     if not isinstance(data, list):
         print(f"[{market}] API 응답이 리스트가 아닙니다: {type(data).__name__}")
-        print(f"[{market}] 응답 내용: {str(data)[:200]}")
+        print(f"[{market}] 응답 내용: {str(data)[:500]}")
+        print(f"[{market}] HTTP 상태: {response.status}")
         return []
+
+    if len(data) < max_stocks:
+        print(f"[{market}] WARNING: API 응답 {len(data)}개 < 요청 {max_stocks}개")
 
     stocks = []
     for item in data[:max_stocks]:
@@ -234,8 +238,13 @@ async def capture_all_screenshots(stocks: list[dict], capture_dir: Path = None) 
 
         await browser.close()
 
-    success = sum(1 for r in results if r.get("success"))
-    print(f"\n캡처 완료: 성공 {success}, 실패 {len(results) - success}")
+    success_count = sum(1 for r in results if r.get("success"))
+    fail_count = len(results) - success_count
+    print(f"\n캡처 완료: 성공 {success_count}, 실패 {fail_count} (총 {len(results)}개)")
+
+    if fail_count > 0:
+        failed_names = [r.get("name", r.get("code", "?")) for r in results if not r.get("success")]
+        print(f"[실패 종목] {failed_names[:20]}{'...' if len(failed_names) > 20 else ''}")
 
     return results
 

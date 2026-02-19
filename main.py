@@ -167,7 +167,15 @@ async def main():
             all_results.extend(batch_results)
             print(f"[배치 {batch_num}] 완료: {len(batch_results)}개 분석")
         else:
-            print(f"[배치 {batch_num}] 실패: 결과 없음")
+            # 배치 실패 시 1회 재시도
+            print(f"[배치 {batch_num}] 실패: 5초 후 재시도...")
+            time.sleep(5)
+            batch_results = analyze_stocks_batch(batch_stocks, capture_dir)
+            if batch_results:
+                all_results.extend(batch_results)
+                print(f"[배치 {batch_num}] 재시도 성공: {len(batch_results)}개 분석")
+            else:
+                print(f"[배치 {batch_num}] 재시도 실패: {len(batch_stocks)}개 종목 손실")
 
         # 배치 간 대기 (rate limit 방지)
         if i + VISION_BATCH_SIZE < total_stocks:
@@ -175,6 +183,21 @@ async def main():
             time.sleep(5)
 
     print(f"\n총 분석 완료: {len(all_results)}/{total_stocks}개 종목")
+
+    # 누락 종목 보충 재분석 (20% 이상 누락 시)
+    analyzed_codes = set(r.get("code") for r in all_results if r.get("code"))
+    missing_stocks = [s for s in scrape_results if s.get("success") and s.get("code") not in analyzed_codes]
+
+    if missing_stocks and len(missing_stocks) / max(total_stocks, 1) >= 0.2:
+        print(f"\n=== 누락 종목 보충 분석 ({len(missing_stocks)}개) ===\n")
+        supplement_results = analyze_stocks_batch(missing_stocks, capture_dir)
+        if supplement_results:
+            all_results.extend(supplement_results)
+            print(f"[보충] {len(supplement_results)}개 종목 추가 분석 완료")
+        else:
+            print(f"[보충] 재분석 실패: {len(missing_stocks)}개 종목 여전히 누락")
+        print(f"\n최종 분석 결과: {len(all_results)}/{total_stocks}개 종목")
+
     analysis_results = all_results
 
     # Phase 3.5: 뉴스 수집

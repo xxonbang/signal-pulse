@@ -32,7 +32,6 @@ export function CriteriaIndicator({ criteria, isCompact = false }: CriteriaIndic
   if (metCriteria.length === 0) return null;
 
   const handleClick = (e: React.MouseEvent) => {
-    if (isCompact) return;
     e.preventDefault();
     e.stopPropagation();
     setShowPopup(!showPopup);
@@ -52,9 +51,12 @@ export function CriteriaIndicator({ criteria, isCompact = false }: CriteriaIndic
 
         return (
           <div key={config.key}>
-            {/* Compact: 작은 도트만 */}
+            {/* Compact: 작은 도트 (클릭 가능) */}
             {isCompact ? (
-              <span className={cn('inline-block w-1.5 h-1.5 rounded-full', config.dotColor)} />
+              <button
+                onClick={handleClick}
+                className={cn('inline-block w-1.5 h-1.5 rounded-full', config.dotColor)}
+              />
             ) : (
               <>
                 {/* 모바일: 도트 */}
@@ -83,7 +85,7 @@ export function CriteriaIndicator({ criteria, isCompact = false }: CriteriaIndic
       })}
 
       {/* 통합 팝업: 충족 + 미충족 기준 */}
-      {!isCompact && showPopup && (
+      {showPopup && (
         <div
           className="absolute top-full left-0 mt-1 z-50 w-72 sm:w-80 bg-white border border-border rounded-lg shadow-lg p-3 max-h-80 overflow-y-auto"
           onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}
