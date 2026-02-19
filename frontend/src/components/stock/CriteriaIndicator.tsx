@@ -44,45 +44,38 @@ export function CriteriaIndicator({ criteria, isCompact = false }: CriteriaIndic
   };
 
   return (
-    <div className="relative flex flex-wrap items-center gap-1 sm:gap-1.5 my-1">
-      {metCriteria.map((config) => {
-        const result = criteria[config.key as keyof StockCriteria] as CriterionResult;
-        const is52w = config.key === 'high_breakout' && result.is_52w_high;
+    <div className="relative my-1">
+      <button
+        onClick={handleClick}
+        className="flex flex-wrap items-center gap-1 sm:gap-1.5 py-1 -my-1 cursor-pointer"
+      >
+        {metCriteria.map((config) => {
+          const result = criteria[config.key as keyof StockCriteria] as CriterionResult;
+          const is52w = config.key === 'high_breakout' && result.is_52w_high;
 
-        return (
-          <div key={config.key}>
-            {/* Compact: 작은 도트 (클릭 가능) */}
-            {isCompact ? (
-              <button
-                onClick={handleClick}
-                className={cn('inline-block w-1.5 h-1.5 rounded-full', config.dotColor)}
-              />
-            ) : (
-              <>
-                {/* 모바일: 도트 */}
-                <button
-                  onClick={handleClick}
-                  className={cn(
-                    'sm:hidden inline-block w-2.5 h-2.5 rounded-full',
-                    config.dotColor,
-                  )}
-                />
-                {/* PC: 뱃지 */}
-                <button
-                  onClick={handleClick}
-                  className={cn(
+          return (
+            <span key={config.key}>
+              {/* Compact: 작은 도트 */}
+              {isCompact ? (
+                <span className={cn('inline-block w-1.5 h-1.5 rounded-full', config.dotColor)} />
+              ) : (
+                <>
+                  {/* 모바일: 도트 */}
+                  <span className={cn('sm:hidden inline-block w-2.5 h-2.5 rounded-full', config.dotColor)} />
+                  {/* PC: 뱃지 */}
+                  <span className={cn(
                     'hidden sm:inline-flex items-center gap-1 rounded-full px-1.5 py-0.5 text-[9px] font-medium leading-none',
                     config.badgeBg, config.badgeText,
-                  )}
-                >
-                  <span className={cn('inline-block w-1.5 h-1.5 rounded-full', config.dotColor)} />
-                  {is52w ? '52주 신고가' : config.label}
-                </button>
-              </>
-            )}
-          </div>
-        );
-      })}
+                  )}>
+                    <span className={cn('inline-block w-1.5 h-1.5 rounded-full', config.dotColor)} />
+                    {is52w ? '52주 신고가' : config.label}
+                  </span>
+                </>
+              )}
+            </span>
+          );
+        })}
+      </button>
 
       {/* 통합 팝업: 충족 + 미충족 기준 */}
       {showPopup && (
@@ -94,9 +87,9 @@ export function CriteriaIndicator({ criteria, isCompact = false }: CriteriaIndic
             <span className="text-xs font-semibold text-text-primary">종목 기준 평가</span>
             <button
               onClick={handleClose}
-              className="text-text-muted hover:text-text-primary text-xs"
+              className="flex items-center justify-center w-7 h-7 -mr-1 rounded-full text-text-muted hover:text-text-primary hover:bg-gray-100 text-sm font-bold transition-colors"
             >
-              X
+              ✕
             </button>
           </div>
 
