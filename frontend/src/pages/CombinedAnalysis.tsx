@@ -456,11 +456,11 @@ export function CombinedAnalysis() {
               분석 일시
             </div>
             <div className="text-sm md:text-base font-bold text-text-primary">
-              {data.date}
+              {data.generated_at?.slice(0, 10) || data.date}
             </div>
-            {data.time && (
+            {data.generated_at && (
               <div className="text-[0.65rem] md:text-xs text-text-muted font-medium">
-                {data.time.length === 4 ? `${data.time.slice(0, 2)}:${data.time.slice(2)}` : data.time}
+                {data.generated_at.slice(11, 19)}
               </div>
             )}
           </div>
