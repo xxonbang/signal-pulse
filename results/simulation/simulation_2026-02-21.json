@@ -1,0 +1,57 @@
+{
+  "date": "2026-02-21",
+  "collected_at": "2026-02-21T01:14:14.793176+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "012450",
+        "name": "한화에어로스페이스",
+        "market": "KOSPI",
+        "open_price": 1224000,
+        "close_price": 1242000,
+        "high_price": 1258000,
+        "return_pct": 1.47,
+        "high_return_pct": 2.78
+      },
+      {
+        "code": "047050",
+        "name": "포스코인터내셔널",
+        "market": "KOSPI",
+        "open_price": 69800,
+        "close_price": 75300,
+        "high_price": 78600,
+        "return_pct": 7.88,
+        "high_return_pct": 12.61
+      },
+      {
+        "code": "032820",
+        "name": "우리기술",
+        "market": "KOSDAQ",
+        "open_price": 13160,
+        "close_price": 14850,
+        "high_price": 16180,
+        "return_pct": 12.84,
+        "high_return_pct": 22.95
+      }
+    ],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {
+    "047050": {
+      "open_price": 69800,
+      "close_price": 75300,
+      "high_price": 78600
+    },
+    "032820": {
+      "open_price": 13160,
+      "close_price": 14850,
+      "high_price": 16180
+    },
+    "012450": {
+      "open_price": 1224000,
+      "close_price": 1242000,
+      "high_price": 1258000
+    }
+  }
+}
