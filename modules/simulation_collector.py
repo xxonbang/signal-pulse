@@ -17,6 +17,7 @@ from typing import Optional
 
 from config.settings import ROOT_DIR
 from modules.kis_client import KISClient
+from modules.market_calendar import is_market_hours
 
 
 class SimulationCollector:
@@ -268,6 +269,11 @@ class SimulationCollector:
         kst = pytz.timezone("Asia/Seoul")
         now = datetime.now(kst)
         today_str = now.strftime("%Y-%m-%d")
+
+        # 장중에는 종가 미확정 → 수집 차단
+        if is_market_hours():
+            print(f"\n[Simulation] 장중(09:00~15:30)에는 종가가 확정되지 않아 수집을 건너뜁니다.")
+            return {}
 
         print(f"\n[Simulation] 당일 수집 시작: {today_str}")
         print("=" * 60)
