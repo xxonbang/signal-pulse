@@ -13,6 +13,12 @@ const CRITERIA_CONFIG = [
   { key: 'market_cap_range', dotColor: 'bg-lime-500', badgeBg: 'bg-lime-100', badgeText: 'text-lime-700', label: '시총', fullLabel: '시가총액 적정 범위' },
 ] as const;
 
+const ALERT_CONFIG = [
+  { key: 'short_selling_alert', dotColor: 'bg-red-500', label: '공매도 경고' },
+  { key: 'overheating_alert', dotColor: 'bg-orange-500', label: '과열 경고' },
+  { key: 'reverse_ma_alert', dotColor: 'bg-violet-500', label: '역배열 경고' },
+] as const;
+
 interface CriteriaIndicatorProps {
   criteria: StockCriteria;
   isCompact?: boolean;
@@ -66,6 +72,10 @@ export function CriteriaIndicator({ criteria, isCompact = false }: CriteriaIndic
 
   const unmetCriteria = CRITERIA_CONFIG.filter(
     (c) => !(criteria[c.key as keyof StockCriteria] as CriterionResult)?.met
+  );
+
+  const activeAlerts = ALERT_CONFIG.filter(
+    (a) => (criteria[a.key as keyof StockCriteria] as CriterionResult | undefined)?.met
   );
 
   if (metCriteria.length === 0) return null;
@@ -132,6 +142,29 @@ export function CriteriaIndicator({ criteria, isCompact = false }: CriteriaIndic
               ✕
             </button>
           </div>
+
+          {/* 경고 표시 */}
+          {activeAlerts.length > 0 && (
+            <>
+              <div className="space-y-1.5 mb-2">
+                {activeAlerts.map((alert) => {
+                  const result = criteria[alert.key as keyof StockCriteria] as CriterionResult;
+                  return (
+                    <div key={alert.key} className="flex items-start gap-1.5 bg-red-50 rounded px-2 py-1.5">
+                      <span className={cn('inline-block w-2 h-2 rounded-full flex-shrink-0 mt-0.5', alert.dotColor)} />
+                      <div>
+                        <span className="text-[11px] font-medium text-red-700">{alert.label}</span>
+                        <p className="text-[10px] text-red-600 leading-relaxed">
+                          {result.reason || '상세 정보 없음'}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="border-t border-border my-2" />
+            </>
+          )}
 
           {/* 충족 기준 */}
           <p className="text-[10px] font-medium text-green-600 mb-1.5">충족 ({metCriteria.length})</p>
