@@ -338,8 +338,12 @@ export function CombinedAnalysis() {
       });
     }
 
-    // 신뢰도 순으로 정렬 (높은 순)
-    return stocks.sort((a, b) => b.confidence - a.confidence);
+    // 거래대금 순위 기준 정렬 (API 데이터의 volume_rank 사용, 없으면 뒤로)
+    return stocks.sort((a, b) => {
+      const rankA = a.api_data?.ranking?.volume_rank ?? Infinity;
+      const rankB = b.api_data?.ranking?.volume_rank ?? Infinity;
+      return rankA - rankB;
+    });
   }, [data, marketFilter, matchFilters, signalFilters]);
 
   // 통계 데이터 (pre-calculated에서 가져옴)
