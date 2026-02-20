@@ -7,10 +7,24 @@ import { VisionAnalysis, APIAnalysis, AuthPage } from '@/pages';
 import { LoadingSpinner } from '@/components/common';
 import { useAuthStore } from '@/store/authStore';
 
-// CombinedAnalysis는 lazy loading - 처음 접근 시에만 로드
-const CombinedAnalysis = lazy(() => import('@/pages/CombinedAnalysis').then(m => ({ default: m.CombinedAnalysis })));
-// SimulationPage는 lazy loading
-const SimulationPage = lazy(() => import('@/pages/SimulationPage').then(m => ({ default: m.SimulationPage })));
+// 청크 로드 실패(배포 후 해시 변경) 시 자동 새로고침
+function lazyWithReload(factory: () => Promise<{ default: React.ComponentType }>) {
+  return lazy(() =>
+    factory().catch(() => {
+      const key = 'chunk_reload';
+      if (!sessionStorage.getItem(key)) {
+        sessionStorage.setItem(key, '1');
+        window.location.reload();
+        return new Promise(() => {}); // reload 중 렌더 차단
+      }
+      sessionStorage.removeItem(key);
+      return { default: () => null }; // 2회 연속 실패 시 빈 화면 (무한 루프 방지)
+    })
+  );
+}
+
+const CombinedAnalysis = lazyWithReload(() => import('@/pages/CombinedAnalysis').then(m => ({ default: m.CombinedAnalysis })));
+const SimulationPage = lazyWithReload(() => import('@/pages/SimulationPage').then(m => ({ default: m.SimulationPage })));
 
 import { useUIStore } from '@/store/uiStore';
 import { useUserHistory } from '@/hooks/useUserHistory';
