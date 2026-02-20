@@ -445,6 +445,37 @@ export function CombinedAnalysis() {
 
       <KosdaqStatusBanner />
 
+      {/* 분석 일시 */}
+      <div className="grid grid-cols-2 gap-2 md:gap-3 mb-4 md:mb-5">
+        <div className="bg-bg-secondary border border-border rounded-xl px-3 md:px-4 py-2.5 md:py-3 flex items-center gap-2 md:gap-3 shadow-sm">
+          <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-blue-100 flex items-center justify-center text-base md:text-xl flex-shrink-0">
+            📅
+          </div>
+          <div className="min-w-0 flex-1">
+            <div className="text-[0.6rem] md:text-[0.65rem] text-text-muted uppercase tracking-wide font-semibold">
+              분석 일시
+            </div>
+            <div className="text-sm md:text-base font-bold text-text-primary">
+              {data.date}
+            </div>
+            {data.time && (
+              <div className="text-[0.65rem] md:text-xs text-text-muted font-medium">{data.time}</div>
+            )}
+          </div>
+        </div>
+        <div className="bg-bg-secondary border border-border rounded-xl px-3 md:px-4 py-2.5 md:py-3 flex items-center gap-2 md:gap-3 shadow-sm">
+          <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-emerald-100 flex items-center justify-center text-base md:text-xl flex-shrink-0">
+            📊
+          </div>
+          <div className="min-w-0 flex-1">
+            <div className="text-[0.6rem] md:text-[0.65rem] text-text-muted uppercase tracking-wide font-semibold">
+              분석 종목
+            </div>
+            <div className="text-sm md:text-base font-bold text-text-primary"><AnimatedNumber value={stats.total} duration={500} />개</div>
+          </div>
+        </div>
+      </div>
+
       {/* 통계 요약 */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
         <StatCard icon="📊" label="총 종목" value={stats.total} colorClass="bg-gray-100" />
