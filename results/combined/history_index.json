@@ -1,8 +1,23 @@
 {
-  "updated_at": "2026-02-20 16:41:49",
+  "updated_at": "2026-02-20 21:04:47",
   "retention_days": 30,
-  "total_records": 29,
+  "total_records": 31,
   "history": [
+    {
+      "date": "2026-02-20",
+      "time": "2104",
+      "filename": "combined_2026-02-20_2104.json",
+      "total_stocks": 219,
+      "match_count": 17,
+      "avg_confidence": 0.4639269406392696,
+      "signals": {
+        "적극매수": 19,
+        "매수": 77,
+        "중립": 78,
+        "매도": 30,
+        "적극매도": 7
+      }
+    },
     {
       "date": "2026-02-20",
       "time": "1641",
@@ -16,6 +31,21 @@
         "중립": 65,
         "매도": 24,
         "적극매도": 7
+      }
+    },
+    {
+      "date": "2026-02-20",
+      "time": "1535",
+      "filename": "combined_2026-02-20_1535.json",
+      "total_stocks": 220,
+      "match_count": 18,
+      "avg_confidence": 0.5340909090909092,
+      "signals": {
+        "적극매수": 44,
+        "매수": 84,
+        "중립": 54,
+        "매도": 55,
+        "적극매도": 4
       }
     },
     {
