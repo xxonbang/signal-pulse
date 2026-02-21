@@ -1,0 +1,2099 @@
+{
+  "analysis_time": "2026-02-21 10:08:52",
+  "total_analyzed": 42,
+  "results": [
+    {
+      "code": "071050",
+      "name": "한국금융지주",
+      "market": "KOSPI",
+      "current_price": 292500,
+      "change_rate": 3.17,
+      "signal": "매수",
+      "reason": "기술적 추세는 '상승'이며, RSI-14는 '과매수' 상태입니다. 거래량은 '보통' 수준입니다. 외인 수급은 '매도우위', 기관 수급은 '매수우위'이며, 호가 잔량비율은 111.76으로 매수세 우위입니다. 밸류에이션은 '적정' 수준이며, PEG는 '성장 대비 저평가'입니다. ROE 17.02%, OPM 12.32%, 부채비율 954.24%로 펀더멘탈은 양호합니다. 최근 뉴스 심리는 '긍정'이며, 주요 재료는 '한국금융지주, 역대 최대 실적 달성… 목표주가 31만원으로 상향 - 키움...'입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "한국금융지주, 역대 최대 실적 달성… 목표주가 31만원으로 상향 - 키움..."
+        ],
+        "catalyst": "자회사 한국투자증권의 역대 최대 실적 달성과 목표주가 상향."
+      },
+      "analysis_time": "2026-02-21 09:55:13",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "한국금융지주, 역대 최대 실적 달성… 목표주가 31만원으로 상향 - 키움...",
+          "link": "https://www.s-journal.co.kr/news/articleView.html?idxno=38878",
+          "description": "키움증권은 한국금융지주 실적이 계속 좋아질 것으로 보고 목표 주가를 26만원에서 31만원으로 대폭 올렸다. 특히, 주주들에게 주는 배당금이 매력적이라는 점이 좋은 점수를 받았다. 2025년치 배당금은 한 주당...",
+          "pubDate": "02-20 17:30",
+          "originallink": "https://www.s-journal.co.kr/news/articleView.html?idxno=38878"
+        },
+        {
+          "title": "[ET특징주] 한투 '2조 클럽' 달성… 한국금융지주 주가 10%↑",
+          "link": "https://n.news.naver.com/mnews/article/030/0003399069?sid=101",
+          "description": "한국투자증권이 '2조 클럽'에 입성하면서 모회사인 한국금융지주 주가가 급등했다. 12일 오후 1시 21분 기준 한국금융지주(071050) 주가는 전 거래일 대비 10.38% 상승한 25만원에 거래되고 있다. 전날 한국투자증권은...",
+          "pubDate": "02-12 13:27",
+          "originallink": "https://www.etnews.com/20260212000225"
+        },
+        {
+          "title": "증권사 첫 ‘2조클럽’ 입성에 한국금융지주 신고가",
+          "link": "https://n.news.naver.com/mnews/article/009/0005636343?sid=101",
+          "description": "자회사 한국투자증권의 호실적 소식에 한국금융지주 주가가 12일 급등하고 있다. 한국거래소에 따르면, 이날 오전 9시 31분 기준 한국금융지주는 전일 대비 12.58% 오른 25만5000원에 거래되며 52주 신고가를 달성했다....",
+          "pubDate": "02-12 09:58",
+          "originallink": "https://www.mk.co.kr/article/11960773"
+        }
+      ]
+    },
+    {
+      "code": "004020",
+      "name": "현대제철",
+      "market": "KOSPI",
+      "current_price": 38950,
+      "change_rate": 11.76,
+      "signal": "매수",
+      "reason": "기술적 추세는 '강한 상승'이며, RSI-14는 '과매수' 상태입니다. 거래량은 '급증' 수준입니다. 외인 수급은 '혼조/중립', 기관 수급은 '매수우위'이며, 호가 잔량비율은 210.54으로 매수세 우위입니다. 밸류에이션은 '평가 보류(적자)' 수준이며, PEG는 '산출 불가'입니다. ROE -0.12%, OPM 1.02%, 부채비율 71.11%로 펀더멘탈은 주의합니다. 최근 뉴스 심리는 '긍정'이며, 주요 재료는 '현대제철 목표가 4만1000원 유지... 반등 신호는 남았다'입니다.",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "급증",
+        "foreign_flow": "혼조/중립",
+        "institution_flow": "매수우위",
+        "valuation": "평가 보류(적자)"
+      },
+      "risk_level": "중간",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "현대제철 목표가 4만1000원 유지... 반등 신호는 남았다"
+        ],
+        "catalyst": "단기 실적 부진에도 불구하고 시황 회복과 수익성 정상화 가능성에 대한 기대감."
+      },
+      "analysis_time": "2026-02-21 09:55:13",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "현대제철 목표가 4만1000원 유지... 반등 신호는 남았다",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430078",
+          "description": "한편 삼성증권은 현대제철에 대해 투자의견 '매수'를 유지하고, 목표주가는 4만 1000원을 제시했다. 단기 실적 부진에도 불구하고 시황 회복과 수익성 정상화 가능성을 감안하면 중장기 투자 매력은 유효하다는 판단이다....",
+          "pubDate": "02-17 11:20",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430078"
+        },
+        {
+          "title": "중국 수요 둔화 직격탄… 현대제철·세아제강 주가 '흔들'",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429434",
+          "description": "현대제철과 세아제강지주도 1%대 약세다. 업황 개선 기대가 살아나지 못하는 분위기다. 지주사와 특수강 계열도 동반 하락한다. 세아홀딩스와 세아베스틸지주는 2% 안팎 밀린다. KG스틸과 동국제강 역시 약세다. 건설...",
+          "pubDate": "02-13 10:02",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429434"
+        },
+        {
+          "title": "\"쇳물도 이젠 초록색\"... 현대제철, 2029년 '탄소 제로' 제철소로 승부수",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=428535",
+          "description": "쓰려는 현대제철의 뚝심이 매섭다. 차량 구동 모터 전문기업 에스피지는 4%대 강세다. 철도차량용 모터 및 정밀감속기 수요 기대가 주가를 끌어올린다. 전력·배전 장비 업체 세명전기, 철도 자동화 시스템 기업 푸른기술...",
+          "pubDate": "02-11 14:34",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=428535"
+        }
+      ]
+    },
+    {
+      "code": "000720",
+      "name": "현대건설",
+      "market": "KOSPI",
+      "current_price": 128300,
+      "change_rate": 3.22,
+      "signal": "매수",
+      "reason": "기술적 추세는 '강한 상승'이며, RSI-14는 '과매수' 상태입니다. 거래량은 '보통' 수준입니다. 외인 수급은 '혼조/중립', 기관 수급은 '매수우위'이며, 호가 잔량비율은 163.39으로 매수세 우위입니다. 밸류에이션은 '평가 보류(적자)' 수준이며, PEG는 '산출 불가'입니다. ROE -3.22%, OPM 2.32%, 부채비율 170.93%로 펀더멘탈은 주의합니다. 최근 뉴스 심리는 '긍정'이며, 주요 재료는 '일회성 비용 털었다… HD현대건설기계, 통합 시너지 폭발하나'입니다.",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "보통",
+        "foreign_flow": "혼조/중립",
+        "institution_flow": "매수우위",
+        "valuation": "평가 보류(적자)"
+      },
+      "risk_level": "중간",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "일회성 비용 털었다… HD현대건설기계, 통합 시너지 폭발하나",
+          "원자력발전 관련주, '덩실덩실' 일진파워·비에이치아이·현대건설·한전...",
+          "현대건설 주가, 급등세... 왜?"
+        ],
+        "catalyst": "자회사 HD현대건설기계의 통합 시너지 기대 및 원자력 발전 테마 모멘텀, 서울 강남 재건축 사업 기대감."
+      },
+      "analysis_time": "2026-02-21 09:55:13",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "일회성 비용 털었다… HD현대건설기계, 통합 시너지 폭발하나",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=431007",
+          "description": "보고서는 HD현대건설기계에 대해 목표주가 19만 2000원과 투자의견 매수를 제시했다. 통합 법인 출범이 단기 이벤트에 그치지 않고 중장기 구조적 성장의 출발점이 될 수 있다는 점을 근거로 들었다.",
+          "pubDate": "02-21 08:02",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=431007"
+        },
+        {
+          "title": "원자력발전 관련주, '덩실덩실' 일진파워·비에이치아이·현대건설·한전...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249926",
+          "description": "일진파워와 비에이치아이와 현대건설의 주가 상승률은 각각각 13.94%, 10.23%, 8.75%다. 대우건설과 보성파워텍과 한전산업은 전 거래일 대비 각각각 630원, 580원, 1300원 오른 7930원과 9760원 그리고 2만2700원에 장을...",
+          "pubDate": "02-20 00:16",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249926"
+        },
+        {
+          "title": "현대건설 주가, 급등세... 왜?",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142438",
+          "description": "사진=현대건설 현대건설 주가가 급등 중이다. 19일 오후 1시 51분 KRX 기준 현대건설은 전 거래일 대비 9.62%(1만1000원) 상승한 12만5300원에 거래 중이다. 서울 강남 재건축 최대어로 꼽히는 압구정5구역을 둘러싸고...",
+          "pubDate": "02-19 13:56",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142438"
+        }
+      ]
+    },
+    {
+      "code": "475150",
+      "name": "SK이터닉스",
+      "market": "KOSPI",
+      "current_price": 30050,
+      "change_rate": 5.81,
+      "signal": "매수",
+      "reason": "기술적 추세는 '강한 상승'이며, RSI-14는 '과매수' 상태입니다. 거래량은 '급증' 수준입니다. 외인 수급은 '매도우위', 기관 수급은 '매수우위'이며, 호가 잔량비율은 223.23으로 매수세 우위입니다. 밸류에이션은 '고평가' 수준이며, PEG는 '산출 불가'입니다. ROE 12.66%, OPM 8.57%, 부채비율 472.13%로 펀더멘탈은 주의합니다. 최근 뉴스 심리는 '긍정'이며, 주요 재료는 '전력저장장치(ESS) 관련주, '웃음꽃' 지투파워·SK이터닉스·디케이티·...'입니다.",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "전력저장장치(ESS) 관련주, '웃음꽃' 지투파워·SK이터닉스·디케이티·...",
+          "2월 2주차 SK이터닉스 주가 2만원 후반대 급등 마감",
+          "SK이터닉스 등급 하향 검토…주가는 23% 급등"
+        ],
+        "catalyst": "전력저장장치(ESS) 관련주로서의 테마 모멘텀과 높은 주가 상승률. 대주주 변경 관련 불확실성 존재."
+      },
+      "analysis_time": "2026-02-21 09:55:13",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "전력저장장치(ESS) 관련주, '웃음꽃' 지투파워·SK이터닉스·디케이티·...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=250001",
+          "description": "SK이노베이션과 SK이터닉스의 주가 상승률은 각각 7.59%, 5.81%다. 씨아이에스와 LG전자와 디케이티는 전 거래일 대비 각각각 360원, 2500원, 170원 오른 1만3830원과 12만3,600원 그리고 1만970원에 거래됐다. 씨아이에스와...",
+          "pubDate": "02-20 18:06",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=250001"
+        },
+        {
+          "title": "2월 2주차 SK이터닉스 주가 2만원 후반대 급등 마감",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15969889",
+          "description": "13일 KRX 마감 기준, 네이버페이 증권에 따르면 SK이터닉스 주가는 2월 13일 대폭 상승하며 28,650원에 장을 마감했다. 이는 전일 종가인 23,150원 대비 5,500원 상승한 수치로, 23.76%의 높은 상승률을 기록했다....",
+          "pubDate": "02-14 09:52",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15969889"
+        },
+        {
+          "title": "SK이터닉스 등급 하향 검토…주가는 23% 급등",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15969033",
+          "description": "신용도 조정 여부와 실제 거래 종결 시점이 향후 주가 변동성의 분기점이 될 전망이다. ○ KKR로 대주주 변경 시 '1노치' 상향 제거 연합뉴스는 2026년 2월 13일 보도에서 나이스신용평가가 SK이터닉스의 장기 및 단기...",
+          "pubDate": "02-13 18:50",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15969033"
+        }
+      ]
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "market": "KOSPI",
+      "current_price": 254500,
+      "change_rate": 0.59,
+      "signal": "중립",
+      "reason": "기술적 추세는 '하락'이며, RSI-14는 '중립' 상태입니다. 거래량은 '증가' 수준입니다. 외인 수급은 '매도우위', 기관 수급은 '매도우위'이며, 호가 잔량비율은 126.25으로 매수세 우위입니다. 밸류에이션은 '적정' 수준이며, PEG는 '산출 불가'입니다. ROE 8.46%, OPM 18.07%, 부채비율 41.60%로 펀더멘탈은 보통합니다. 최근 뉴스 심리는 '중립'이며, 주요 재료는 '이해진 복귀에도 멈춰선 네이버 주가, 신사업·AI 성과 가시화가 숙제'입니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "증가",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "[코스피 5천 그늘④] 이해진 복귀에도 멈춰선 네이버 주가, 신사업·AI 성...",
+          "네이버 주가, 박스권 횡보... 증권가 전망은?",
+          "네이버 주가 상승...\"올해 AI 이익 성장세 유효\" 분석"
+        ],
+        "catalyst": "이해진 창업자의 복귀에도 주가는 박스권 횡보 중이며, 신사업 및 AI 성과 가시화가 관건입니다."
+      },
+      "analysis_time": "2026-02-21 09:55:13",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[코스피 5천 그늘④] 이해진 복귀에도 멈춰선 네이버 주가, 신사업·AI 성...",
+          "link": "https://www.businesspost.co.kr/BP?command=article_view&num=429862",
+          "description": "-글 싣는 순서 ④ 이해진 복귀에도 멈춰선 네이버 주가, 신사업·AI 성과 가시화가 숙제 ⑤ GS건설 강한 '자이'만큼 커진 주택주 그림자, 허윤홍 새 성장동력 모색 박차 ⑥ KT 주가에 붙은 저평가 꼬리표, '탈통신' AICT 사업...",
+          "pubDate": "02-10 17:02",
+          "originallink": "https://www.businesspost.co.kr/BP?command=article_view&num=429862"
+        },
+        {
+          "title": "네이버 주가, 박스권 횡보... 증권가 전망은?",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1141065",
+          "description": "사진= 연합뉴스 네이버 주가가 다시 박스권 횡보 흐름을 보이고 있다. 9일 오후 3시 30분 KRX 기준 네이버는 전 거래일 대비 0.40%(1000원) 오른 25만원에 장을 마감했다. 이날 NH투자증권은 네이버에 대해 인공지능(AI) 관련...",
+          "pubDate": "02-09 15:58",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1141065"
+        },
+        {
+          "title": "네이버 주가 상승...\"올해 AI 이익 성장세 유효\" 분석",
+          "link": "https://www.gukjenews.com/news/articleView.html?idxno=3501775",
+          "description": "네이버 본사 전경(국제뉴스/DB) 네이버 주가가 소폭 오르고 있다. 9일 오후 1시 25분 기준 네이버는 1.20% 상승한 25만 2000원에 거래 중이다. 한국투자증권은 이날 네이버에 대해 투자 의견 '매수(Buy)'와 목표 주가 33만원을...",
+          "pubDate": "02-09 13:40",
+          "originallink": "https://www.gukjenews.com/news/articleView.html?idxno=3501775"
+        }
+      ]
+    },
+    {
+      "code": "006910",
+      "name": "보성파워텍",
+      "market": "KOSDAQ",
+      "current_price": 12680,
+      "change_rate": 29.92,
+      "signal": "적극매수",
+      "reason": "기술적으로 강한 상승 추세 유지 (최근 29.92% 상승) 및 거래량 급증 (204.94% 전일 대비 증가)을 보입니다. 호가 잔량 매수세 우위와 5일간 외인 3838361원, 기관 53020원 동반 순매수를 기록했습니다. 최근 한미 원전 협력 기대감 관련 긍정적 뉴스 존재합니다. 다만 RSI 83.40으로 과매수 구간입니다.",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "[상한가 종목] 미래에셋생명-흥국화재 이어 보성파워텍-롯데손해보험 등...",
+          "[이격도과열 종목] 광동제약 미래에셋생명 보성파워텍 한화생명 '앗~뜨...",
+          "보성파워텍, 한미 원전 협력 기대감에 상한가"
+        ],
+        "catalyst": "한미 원전 협력 기대감"
+      },
+      "analysis_time": "2026-02-21 09:59:15",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[상한가 종목] 미래에셋생명-흥국화재 이어 보성파워텍-롯데손해보험 등...",
+          "link": "http://www.econonews.co.kr/news/articleView.html?idxno=428175",
+          "description": "한화생명 주가흐름 (그래픽=네이버페이 증권 캡처) 20일 상한가 종목은 한화생명, 미래에셋생명, 롯데손해보험, 광동제약, 흥국화재, SG세계물산, 에이엔피, 한국ANKOR유전, 흥국화재우, 보성파워텍, 체리부로...",
+          "pubDate": "02-20 21:30",
+          "originallink": "http://www.econonews.co.kr/news/articleView.html?idxno=428175"
+        },
+        {
+          "title": "[이격도과열 종목] 광동제약 미래에셋생명 보성파워텍 한화생명 '앗~뜨...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430937",
+          "description": "한국거래소에 따르면 이날 상한가를 기록한 종목은 광동제약, 미래에셋생명, 롯데손해보험, 흥국화재우, 보성파워텍, 한화생명, SG세계물산, 체리부로, 흥국화재 등이다. 보험·생명주가 무더기 급등하며 금융...",
+          "pubDate": "02-20 16:36",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430937"
+        },
+        {
+          "title": "보성파워텍, 한미 원전 협력 기대감에 상한가",
+          "link": "https://www.jbnews.com/news/articleView.html?idxno=1499173",
+          "description": "［중부매일 박상철 기자］ 충북 충주에 위치한 보성파워텍 주가가 한미 원전 협력 기대감에 힘입어 상한가를 기록했다. 20일 보성파워텍은 전 거래일 대비 29.92%(2920원) 오른 1만2천680원에 거래됐다. 장 초반부터...",
+          "pubDate": "02-20 14:16",
+          "originallink": "https://www.jbnews.com/news/articleView.html?idxno=1499173"
+        }
+      ]
+    },
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "market": "KOSPI",
+      "current_price": 949000,
+      "change_rate": 6.15,
+      "signal": "매수",
+      "reason": "기술적으로 상승 추세 유지 (최근 6.15% 상승) 및 거래량 증가 (153.86% 전일 대비 증가)를 보입니다. 5일간 외인 945370원, 기관 704380원 동반 순매수 유지. PEG 비율 0.87로 성장 대비 저평가되어 있습니다. 최근 HBM 시장 선점 및 D램 가격 상승 관련 긍정적 뉴스 존재합니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "HBM 점유율 1위 SK하이닉스도 ‘코리아 디스카운트’",
+          "SK하이닉스, 장중 '95만닉스' 터치… '100만닉스' 시대 가시권",
+          "5800 뚫은 코스피, 진짜 ‘육천피’ 가나…美 한파에도 SK하이닉스 ‘95..."
+        ],
+        "catalyst": "HBM 시장 선점 및 D램 가격 상승"
+      },
+      "analysis_time": "2026-02-21 09:59:15",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "HBM 점유율 1위 SK하이닉스도 ‘코리아 디스카운트’",
+          "link": "https://n.news.naver.com/mnews/article/011/0004591938?sid=104",
+          "description": "첸은 “지난 1년간 주가가 340% 급등했지만 SK하이닉스의 2027년 예상 주가수익비율(PER)은 4배로, 메모리 반도체 업체 중 최저 수준”이라고 지적했다. SK하이닉스는 같은 국내 기업인 삼성전자보다도 취약한 것으로...",
+          "pubDate": "02-21 09:07",
+          "originallink": "https://www.sedaily.com/article/20010808?ref=naver"
+        },
+        {
+          "title": "SK하이닉스, 장중 '95만닉스' 터치… '100만닉스' 시대 가시권",
+          "link": "https://n.news.naver.com/mnews/article/018/0006221762?sid=101",
+          "description": "증권가에서는 SK하이닉스의 목표주가를 잇달아 상향 조정하고 있다. 6세대 고대역폭메모리(HBM4) 시장의 선점 효과와 범용 D램 가격 상승세가 겹치면서 주요 증권사들은 2026년 영업이익이 100조원을 넘어설 것으로...",
+          "pubDate": "02-20 20:57",
+          "originallink": "http://www.edaily.co.kr/news/newspath.asp?newsid=05385766645352488"
+        },
+        {
+          "title": "5800 뚫은 코스피, 진짜 ‘육천피’ 가나…美 한파에도 SK하이닉스 ‘95...",
+          "link": "https://n.news.naver.com/mnews/article/016/0002602869?sid=101",
+          "description": "그런 분위기 속에서도 국내 증시 대장주인 삼성전자는 0.05% 오른 19만100원으로 거래를 종료하며 ‘19만전자(삼성전자 주가 19만원대)’를 사수했다. SK하이닉스도 6.15% 급등한 94만9000원으로 마감해 사상 최고치를...",
+          "pubDate": "02-20 20:06",
+          "originallink": "https://biz.heraldcorp.com/article/10679302?ref=naver"
+        }
+      ]
+    },
+    {
+      "code": "080220",
+      "name": "제주반도체",
+      "market": "KOSDAQ",
+      "current_price": 45700,
+      "change_rate": -2.04,
+      "signal": "매도",
+      "reason": "기술적으로 하락 추세 (최근 2.04% 하락)를 보입니다. 거래량 감소 (76.28% 전일 대비 감소). 호가 잔량 매도세 우위 (매수/매도 비율 104.5) 이나, 5일간 외인 -907572원 순매도 지속. PER 80.6, PBR 8.36로 고평가되어 있으며, PEG 비율 3.22로 성장 대비 고평가되어 있습니다. 최근 관련 뉴스 없음.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "SFA반도체·제주반도체, 상승에 급등…특히 제주반도체 5% 급등에 4만800...",
+          "2월 2주차 제주반도체 4만5천원대 등락 반복",
+          "황주원 부사장, 제주반도체 주식 1만주 매도"
+        ],
+        "catalyst": "관련 뉴스 없음"
+      },
+      "analysis_time": "2026-02-21 09:59:15",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "SFA반도체·제주반도체, 상승에 급등…특히 제주반도체 5% 급등에 4만800...",
+          "link": "http://www.econonews.co.kr/news/articleView.html?idxno=427958",
+          "description": "SFA반도체 주가흐름 (그래픽=네이버페이 증권 캡처) 반도체주인 SFA반도체, 제주반도체가 상승에 급등 중이다. SFA반도체는 19일 코스닥 시장에서 오전 9시5분 현재 전 거래일보다 1.69%(120원) 상승한 7200원에...",
+          "pubDate": "02-19 09:08",
+          "originallink": "http://www.econonews.co.kr/news/articleView.html?idxno=427958"
+        },
+        {
+          "title": "2월 2주차 제주반도체 4만5천원대 등락 반복",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=496196",
+          "description": "제주반도체ci 지난 5거래일간 제주반도체의 주가는 등락을 반복하는 움직임을 보였다. 먼저 2월 9일에는 시가 46,500원으로 시작하여 장중 고가 48,600원을 기록한 뒤 47,300원에 장을 마쳤다. 다음 날인 2월...",
+          "pubDate": "02-14 10:38",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=496196"
+        },
+        {
+          "title": "황주원 부사장, 제주반도체 주식 1만주 매도",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=629534",
+          "description": "2026년 2월 10일 한국거래소 기준 제주반도체의 주가는 전일 대비 1.37% 하락한 4만6650원에 거래를 마쳤다. 최근 결산 기준 제주반도체의 재무 상태는 자산총계 2254억원, 부채총계 412억원, 자본총계...",
+          "pubDate": "02-10 16:56",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=629534"
+        }
+      ]
+    },
+    {
+      "code": "065450",
+      "name": "빅텍",
+      "market": "KOSDAQ",
+      "current_price": 4465,
+      "change_rate": 11.21,
+      "signal": "매수",
+      "reason": "기술적으로 상승 추세 유지 (최근 11.21% 상승) 및 거래량 급증 (1808.68% 전일 대비 증가)을 보입니다. 호가 잔량 매수세 우위 (매수/매도 비율 350.4). 최근 방산 계약 관련 긍정적 뉴스 존재합니다. 다만 ROE 6.01%, OPM 4.44%로 수익성이 낮고, 부채비율 118.08%로 보통 수준입니다. EPS 성장률이 -69.92%로 부정적입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "빅텍, 방위사업청과 111억4200만원 규모 소형전자전장비 계약 체결",
+          "빅텍, 주가 급등…\"전쟁 격화\" 러시아-우크라, ICBM·에이태큼스 주고받...",
+          "빅텍, 주가 급락…\"푸틴, ‘우크라 휴전 협정’ 논의 의향” 방산株 줄..."
+        ],
+        "catalyst": "방산 계약 및 지정학적 리스크"
+      },
+      "analysis_time": "2026-02-21 09:59:15",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "빅텍, 방위사업청과 111억4200만원 규모 소형전자전장비 계약 체결",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=612582",
+          "description": "12월 12일 오후 1시 50분 한국거래소 기준 빅텍의 주가는 전일 대비 75원(+2.08%) 상승한 3680원에 거래되고 있다. 최근 실적에 따르면, 빅텍은 최근 결산 기준으로 자산총계 1072억원, 부채총계 489억원...",
+          "pubDate": "12-12 14:06",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=612582"
+        },
+        {
+          "title": "빅텍, 주가 급등…\"전쟁 격화\" 러시아-우크라, ICBM·에이태큼스 주고받...",
+          "link": "http://www.thebigdata.co.kr/view.php?ud=202411220219112729cd1e7f0bdf_23",
+          "description": "빅텍 주가가 시간외 매매에서 급등했다. 22일 한국거래소에 따르면 전일 시간외 매매에서 빅텍 주가는 종가보다 1.22% 오른 4565원에 거래를 마쳤다. 빅텍의 시간외 거래량은 8만1625주이다. 이는 우크라이나 공군이 21일...",
+          "pubDate": "11-22 02:20",
+          "originallink": "http://www.thebigdata.co.kr/view.php?ud=202411220219112729cd1e7f0bdf_23"
+        },
+        {
+          "title": "빅텍, 주가 급락…\"푸틴, ‘우크라 휴전 협정’ 논의 의향” 방산株 줄...",
+          "link": "http://www.thebigdata.co.kr/view.php?ud=202411210558222468cd1e7f0bdf_23",
+          "description": "빅텍 주가가 시간외 매매에서 급락했다. 21일 한국거래소에 따르면 전일 시간외 매매에서 빅텍 주가는 종가보다 1.95% 내린 4535원에 거래를 마쳤다. 빅텍의 시간외 거래량은 5만7631주이다. 이는 블라디미르 푸틴 러시아...",
+          "pubDate": "11-21 06:00",
+          "originallink": "http://www.thebigdata.co.kr/view.php?ud=202411210558222468cd1e7f0bdf_23"
+        }
+      ]
+    },
+    {
+      "code": "018880",
+      "name": "한온시스템",
+      "market": "KOSPI",
+      "current_price": 4945,
+      "change_rate": -6.17,
+      "signal": "매도",
+      "reason": "기술적으로 하락 추세 (최근 6.17% 하락)를 보입니다. 5일간 외인 -16283203원, 기관 4237787원 순매수 유지. PER -7.87, EPS -628.0으로 적자 기업이며, PBR 1.27로 적정 수준입니다. 부채비율 245.67%로 높은 부채비율이 우려됩니다. 최근 자동차 열 관리 시스템 성장 관련 긍정적 뉴스 존재합니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가 (적자)"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "한온시스템 주가, 강세... 장중 20%대 웃음꽃",
+          "한온시스템 주가 15% 도약…5000원선 돌파",
+          "최근 5거래일 한온시스템 3천원대서 4천원대 도약"
+        ],
+        "catalyst": "자동차 열 관리 시스템 성장"
+      },
+      "analysis_time": "2026-02-21 09:59:15",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "한온시스템 주가, 강세... 장중 20%대 웃음꽃",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142454",
+          "description": "한온시스템 주가가 가파른 상승세를 보이고 있다. 19일 오후 2시 50분 KRX 기준 한온시스템은 전 거래일 대비 22.87%(1020원) 상승한 5480원에 거래 중이다. 한온시스템은 한국앤컴퍼니그룹 계열사로, 글로벌 자동차 열...",
+          "pubDate": "02-19 14:58",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142454"
+        },
+        {
+          "title": "한온시스템 주가 15% 도약…5000원선 돌파",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=556469",
+          "description": "한온시스템(018880) 주가가 19일 장에서 급등세를 보이고 있다. 한온시스템은 19일 오전 10시 57분 현재 5150원에 거래되고 있다. 전일 종가보다 15.47% 올랐다. 한온시스템은 앞서 지난 13일 연휴를 앞둔 장에서 1.59...",
+          "pubDate": "02-19 11:02",
+          "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=556469"
+        },
+        {
+          "title": "최근 5거래일 한온시스템 3천원대서 4천원대 도약",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15969888",
+          "description": "지난 5거래일간 한온시스템의 주가 흐름을 살펴보면, 2월 9일 3,900원의 시가로 시작하여 3,875원에 마감하며 3천원 후반대에서 움직임을 보였다. 이후 2월 10일에는 4,100원의 시가로 출발하여 4,570원에 마감하며...",
+          "pubDate": "02-14 09:52",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15969888"
+        }
+      ]
+    },
+    {
+      "code": "403870",
+      "name": "HPSP",
+      "market": "KOSDAQ",
+      "current_price": 45900,
+      "change_rate": -0.76,
+      "signal": "중립",
+      "reason": "기술적으로 횡보 추세. 거래량 감소 (42.40% 전일 대비 감소). 호가 잔량 매도세 우위 (매수/매도 비율 33.65). 5일간 외인 919854원 순매수 지속. PER 0.0, PBR 0.0, EPS 0.0, BPS 0.0으로 밸류에이션 정보가 제한적입니다. 최근 반도체 업황 개선 및 장비 투자 관련 긍정적 뉴스 존재합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "반도체 장비 관련주, '봄꽃만개' 엔투텍·유니테스트·테크윙·HPSP·SFA반...",
+          "HPSP, 임직원 대상 자기주식 4410주 처분 결정",
+          "HPSP, 보통주 169만9120주 소각 결정"
+        ],
+        "catalyst": "반도체 업황 개선 및 장비 투자"
+      },
+      "analysis_time": "2026-02-21 09:59:15",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "반도체 장비 관련주, '봄꽃만개' 엔투텍·유니테스트·테크윙·HPSP·SFA반...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249923",
+          "description": "서진시스템과 HPSP와 에이팩트의 주가 상승률은 각각각 9.15%, 8.57%, 7.92%다. 주성엔지니어링과 고영과 SFA반도체는 전 거래일 대비 각각각 4000원, 1950원, 390원 오른 5만5000원과 3만3000원 그리고 7470원에 거래를 마쳤다....",
+          "pubDate": "02-20 00:10",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249923"
+        },
+        {
+          "title": "HPSP, 임직원 대상 자기주식 4410주 처분 결정",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=630912",
+          "description": "2026년 2월 12일 기준, HPSP의 주가는 전일 대비 1.62% 하락한 4만2500원에 거래되고 있다. HPSP는 2022년 7월 15일 코스닥 시장에 상장된 특수 목적용 기계 제조업체다. 주요사항보고서(자기주식처분결정) 금융위원회...",
+          "pubDate": "02-12 18:26",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=630912"
+        },
+        {
+          "title": "HPSP, 보통주 169만9120주 소각 결정",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=630893",
+          "description": "종목 시세 정보에 따르면 HPSP의 주가는 2월 12일 16시 10분 기준 4만2500원이며, 전일 대비 700원(-1.62%) 하락했다. 최근 실적(2024년 12월 개별 기준)에서 자산총계는 3199억원, 부채총계는 420억원, 자본총계는...",
+          "pubDate": "02-12 17:50",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=630893"
+        }
+      ]
+    },
+    {
+      "code": "010170",
+      "name": "대한광통신",
+      "market": "KOSDAQ",
+      "current_price": 4110,
+      "change_rate": 14.97,
+      "signal": "매수",
+      "reason": "종합 점수 0.35. 기술적 상승 모멘텀 (0.40), 강력한 수급 매수세 (0.70), 긍정적 재료 부각 (1.00), 밸류에이션 고평가 부담 (0.30).",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "대한광통신 주가 15% 폭등랠리… 북미 광케이블 수주 잭팟 기대감에 매...",
+          "대한광통신 주가 급등, 다심 광케이블 공급계약",
+          "대한광통신 주가, 급등세... 왜?"
+        ],
+        "catalyst": "미국 글로벌 AI·XR(확장현실) 플랫폼 기업의 AI 데이터센터에 다심 광케이블 공급계약을 체결하며 실적 개선 기대감 및 AI 산업 성장 모멘텀."
+      },
+      "analysis_time": "2026-02-21 10:03:21",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "대한광통신 주가 15% 폭등랠리… 북미 광케이블 수주 잭팟 기대감에 매...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430865",
+          "description": "가장 뜨거운 관심을 받는 종목은 광케이블 전문 기업인 대한광통신이다. 20일 한국거래소에 따르면 글로벌... 반면 일부 종목은 단기 주가 부담과 차익 실현 매물에 고전하고 있다. 스마트폰 부품사 자화전자는 현재 6.10...",
+          "pubDate": "02-20 14:38",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430865"
+        },
+        {
+          "title": "대한광통신 주가 급등, 다심 광케이블 공급계약",
+          "link": "https://www.gukjenews.com/news/articleView.html?idxno=3509725",
+          "description": "대한광통신 로고 대한광통신 주가가 급등하고 있다. 20일 오전 11시 8분 기준 대한광통신은 15.38%(550원) 상승한 4125원에 거래되고 있다. 이날 대한광통신은 미국 글로벌 AI·XR(확장현실) 플랫폼 기업의 AI 데이터센터에...",
+          "pubDate": "02-20 11:14",
+          "originallink": "https://www.gukjenews.com/news/articleView.html?idxno=3509725"
+        },
+        {
+          "title": "대한광통신 주가, 급등세... 왜?",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142564",
+          "description": "사진=대한광통신 대한광통신 주가가 급등 중이다. 20일 오전 10시 27분 KRX 기준 대한광통신은 전 거래일 대비 16.92%(605원) 상승한 4180원에 거래 중이다. 대한광통신은 이날 미국 글로벌 AI·XR(확장현실) 플랫폼 기업의 AI...",
+          "pubDate": "02-20 10:32",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142564"
+        }
+      ]
+    },
+    {
+      "code": "046120",
+      "name": "오르비텍",
+      "market": "KOSDAQ",
+      "current_price": 6980,
+      "change_rate": 11.32,
+      "signal": "매수",
+      "reason": "종합 점수 0.34. 기술적 상승 모멘텀 (0.25), 강력한 수급 매수세 (0.40), 긍정적 재료 부각 (1.00), 밸류에이션 고평가 부담 (0.00).",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "급증",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "오르비텍 최대주주 성진홀딩스, 오르비텍 주식등의 수 변동 없어…총 지...",
+          "원전 관리 35년 외길… 오르비텍, 'K-원전' 수출의 숨은 일등공신",
+          "원자력발전 관련주, '웃음꽃' 한전산업·오르비텍·보성파워텍·한신기..."
+        ],
+        "catalyst": "비파괴 검사 기술을 바탕으로 항공기 부품 제조와 원전 정비 사업을 영위하며 K-원전 수출의 숨은 공신으로 평가받고 있음."
+      },
+      "analysis_time": "2026-02-21 10:03:21",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "오르비텍 최대주주 성진홀딩스, 오르비텍 주식등의 수 변동 없어…총 지...",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632779",
+          "description": "종목 시세 정보에 따르면 오르비텍의 주가는 2월 20일 16시 10분 기준 장마감 기준 6980원이며, 전일 대비 710원(11.32%) 상승했다. 오르비텍은 2010년 6월 15일 코스닥 시장에 상장된 기타 과학기술 서비스업체다....",
+          "pubDate": "02-20 17:50",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632779"
+        },
+        {
+          "title": "원전 관리 35년 외길… 오르비텍, 'K-원전' 수출의 숨은 일등공신",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429999",
+          "description": "이날 시장의 상승세는 오르비텍이 압도했다. 비파괴 검사 기술을 바탕으로 항공기 부품 제조와 원전 정비... 켄코아에어로스페이스는 글로벌 민수 항공기 생산량 회복에 따른 수주 증가 기대감이 주가를 지지했다. 한편...",
+          "pubDate": "02-16 13:42",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429999"
+        },
+        {
+          "title": "원자력발전 관련주, '웃음꽃' 한전산업·오르비텍·보성파워텍·한신기...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249593",
+          "description": "한전산업과 오르비텍과 보성파워텍의 주가 상승률은 각각각 19.24%, 14.61%, 12.38%다. 한신기계와 우리기술과 대우건설은 전 거래일 대비 각각각 350원, 2850원, 420원 오른 4590원과 1만2350원 그리고 7480원에 장을 마감했다....",
+          "pubDate": "02-12 00:10",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249593"
+        }
+      ]
+    },
+    {
+      "code": "222080",
+      "name": "씨아이에스",
+      "market": "KOSDAQ",
+      "current_price": 13830,
+      "change_rate": 2.67,
+      "signal": "매수",
+      "reason": "종합 점수 0.17. 기술적 상승 모멘텀 (0.05), 강력한 수급 매수세 (0.35), 긍정적 재료 부각 (1.00), 밸류에이션 적정 수준 (0.05).",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "보통",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "2차전지(전고체) 관련주, '봄바람 살랑살랑' 씨아이에스·아이엘·삼성전...",
+          "삼화콘덴서·씨아이에스, ESS 핵심 부품 기술력 부각에 주가 폭등랠리",
+          "씨아이에스, 지난해 당기순이익 287억3160만5551원… 전년 대비 48.86% 감..."
+        ],
+        "catalyst": "2차전지 전극 공정 장비 제조사로 ESS 핵심 부품 기술력이 부각되며 주가 상승. 다만 지난해 당기순이익은 감소."
+      },
+      "analysis_time": "2026-02-21 10:03:21",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2차전지(전고체) 관련주, '봄바람 살랑살랑' 씨아이에스·아이엘·삼성전...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=249919",
+          "description": "씨아이에스와 아이엘의 주가 상승률은 각각 10.86%, 14.29%다. 나인테크와 삼성전기는 전 거래일 대비 각각 25원, 4만8500원 오른 3575원과 35만8000원에 장을 마감했다. 나인테크와 삼성전기의 주가 상승률은 각각 0.70%, 15.67...",
+          "pubDate": "02-19 18:10",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=249919"
+        },
+        {
+          "title": "삼화콘덴서·씨아이에스, ESS 핵심 부품 기술력 부각에 주가 폭등랠리",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430630",
+          "description": "2차전지 전극 공정 장비 제조사인 씨아이에스 역시 10.86% 상승한 1만 3470원을 기록하며 장을 마감했다. 태양광 및 에너지 솔루션 전문 HD현대에너지솔루션도 10%대 상승률을 보이며 에너지 전환 수혜주로서의 면모를...",
+          "pubDate": "02-19 17:58",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430630"
+        },
+        {
+          "title": "씨아이에스, 지난해 당기순이익 287억3160만5551원… 전년 대비 48.86% 감...",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=630346",
+          "description": "종목 시세 정보에 따르면 씨아이에스의 주가는 2월 11일 16시 10분 기준 1만3310원이며, 전일 대비 440원(-3.20%) 하락했다. 씨아이에스는 2015년 9월 2일 코스닥시장에 상장된 특수 목적용 기계 제조업체다....",
+          "pubDate": "02-11 21:00",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=630346"
+        }
+      ]
+    },
+    {
+      "code": "064260",
+      "name": "다날",
+      "market": "KOSDAQ",
+      "current_price": 8890,
+      "change_rate": 1.95,
+      "signal": "중립",
+      "reason": "종합 점수 0.10. 기술적 횡보 (0.00), 강력한 수급 매수세 (0.40), 긍정적 재료 부각 (1.00), 밸류에이션 고평가 부담 (-0.15).",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "급증",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "[Who Is ?] 박성찬 다날 회장",
+          "[ET특징주] 다날 주가 5%↑… 스테이블코인 결제 관련 특허 취득",
+          "[특징주]다날, 스테이블코인 관련 특허 취득에 9%↑"
+        ],
+        "catalyst": "법인월렛 기반 디지털자산 연계 결제 기술에 대한 특허 등록을 완료하고 블록체인 결제 인프라 분야 핵심 기술력을 확보함."
+      },
+      "analysis_time": "2026-02-21 10:03:21",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[Who Is ?] 박성찬 다날 회장",
+          "link": "https://www.businesspost.co.kr/BP?command=article_view&num=429901",
+          "description": "보유 지분 과반을 담보로 대출을 받으면서 지배력 약화 우려가 있었지만, 최근 다날 주가가 급등세를 보이면서 주담대를 모두 상환할 수 있게 됐다. 박성찬은 2025년 10월1일 보유하고 있던 다날 지분 4.78%(330만 주)를...",
+          "pubDate": "02-11 07:30",
+          "originallink": "https://www.businesspost.co.kr/BP?command=article_view&num=429901"
+        },
+        {
+          "title": "[ET특징주] 다날 주가 5%↑… 스테이블코인 결제 관련 특허 취득",
+          "link": "https://n.news.naver.com/mnews/article/030/0003397701?sid=101",
+          "description": "9일 오후 1시 18분 기준 다날(064260) 주가는 전 거래일 대비 5.38% 상승한 9010원에 거래되고 있다. 이날 다날은 법인월렛 기반 디지털자산 연계 결제 기술에 대한 특허 등록을 완료하고, 블록체인 결제 인프라 분야의 핵심...",
+          "pubDate": "02-09 13:24",
+          "originallink": "https://www.etnews.com/20260209000193"
+        },
+        {
+          "title": "[특징주]다날, 스테이블코인 관련 특허 취득에 9%↑",
+          "link": "https://n.news.naver.com/mnews/article/277/0005718944?sid=101",
+          "description": "스테이블코인 관련 특허를 취득한 다날의 주가가 급등했다. 9일 오전 10시25분 기준 다날은 전 거래일 대비 780원(9.12%) 오른 9330원에 거래됐다. 이날 다날은 법인월렛 기반 디지털자산 연계 결제 기술에 대한 특허 등록을...",
+          "pubDate": "02-09 10:29",
+          "originallink": "https://view.asiae.co.kr/article/2026020910290849972"
+        }
+      ]
+    },
+    {
+      "code": "005940",
+      "name": "NH투자증권",
+      "market": "KOSPI",
+      "current_price": 39200,
+      "change_rate": 6.67,
+      "signal": "매수",
+      "reason": "종합 점수 0.19. 기술적 강한 상승 모멘텀 (0.05), 수급 매도세 (-0.05), 밸류에이션 고평가 부담 (-0.20).",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [],
+        "catalyst": "관련 뉴스 없음"
+      },
+      "analysis_time": "2026-02-21 10:03:21",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "240810",
+      "name": "원익IPS",
+      "market": "KOSDAQ",
+      "current_price": 119300,
+      "change_rate": 2.05,
+      "signal": "매수",
+      "reason": "종합 점수 0.23. 기술적 강한 상승 모멘텀 (0.35), 긍정적 재료 부각 (1.00), 밸류에이션 고평가 부담 (0.15), 수급 매도세 (-0.05).",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "원익IPS, 설비투자 방향 바뀌는 순간…실적 구조가 달라지는 분기점",
+          "매출 85%가 장비… 원익IPS, 미세공정 핵심 기업 부상",
+          "“원익IPS, 반도체 업황 개선·설비투자 수혜 기대”"
+        ],
+        "catalyst": "반도체 업황 개선 및 주요 고객사(삼성전자, 삼성디스플레이)의 설비투자 확대에 따른 수혜 기대. 미세공정 특화 장비 기술력 부각."
+      },
+      "analysis_time": "2026-02-21 10:03:21",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "원익IPS, 설비투자 방향 바뀌는 순간…실적 구조가 달라지는 분기점",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=556050",
+          "description": "단기 주가 등락보다 국면 전환 시 수혜 강도를 기준으로 투자 판단 기준을 재설정할 필요가 있다. 한국IR협의회 분석이 시사하는 바는 명확하다. 원익IPS는 지금 가격보다 구조와 흐름을 먼저 점검해야 할 구간에 위치해...",
+          "pubDate": "02-15 15:26",
+          "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=556050"
+        },
+        {
+          "title": "매출 85%가 장비… 원익IPS, 미세공정 핵심 기업 부상",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429748",
+          "description": "원익IPS에 대해 별도의 목표주가와 투자의견은 제시하지 않았다. 다만 미세공정 특화 장비 기술력과 주요 고객사와의 견고한 협력 관계를 바탕으로 국내 반도체 장비 대표주로서의 위상을 유지할 것으로 평가했다.",
+          "pubDate": "02-14 10:32",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=429748"
+        },
+        {
+          "title": "“원익IPS, 반도체 업황 개선·설비투자 수혜 기대”",
+          "link": "https://www.news2day.co.kr/article/20260213500169",
+          "description": "기반으로 원익IPS는 삼성전자나 삼성디스플레이가 설비투자를 확대할 때 대표적인 수혜주로 평가된다. 이는 미국 시장에서 메모리 반도체 기업인 마이크론 테크놀로지(Micron Technology)의 실적이 늘어나고 주가가...",
+          "pubDate": "02-13 10:30",
+          "originallink": "https://www.news2day.co.kr/article/20260213500169"
+        }
+      ]
+    },
+    {
+      "code": "064350",
+      "name": "현대로템",
+      "market": "KOSPI",
+      "current_price": 220000,
+      "change_rate": 4.76,
+      "signal": "매수",
+      "reason": "현대로템은 52주 고점 대비 60% 수준에 위치하며, RSI 55.41로 과매수/과매도 구간을 벗어났습니다. 외국인과 기관의 5일 누적 순매수가 각각 39.5만주, 3.4만주로 매수 우위를 보이며, 영업이익 성장률이 150.34%로 양호한 펀더멘탈을 기반으로 독일 투자매체에서 긍정적 평가가 나왔습니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "고평가",
+        "trend_strength": "상승"
+      },
+      "risk_level": "중간",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "현대로템 주가 강세, 22만원선 도달 여부 주목",
+          "독일 투자매체, 현대로템 인프라 투자 및 국방 예산 확대 수혜 주목"
+        ],
+        "catalyst": "인프라 투자 및 국방 예산 확대에 따른 실적 기대감과 독일 투자매체의 긍정적 평가가 주요 매수 요인입니다."
+      },
+      "analysis_time": "2026-02-21 10:07:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "현대로템 주가 3%↑…향후 22만원선 도달 여부는?",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=556719",
+          "description": "현대로템(064350) 주가가 20일 장에서 강세를 보이고 있다. 현대로템은 20일 오후 1시 22분 현재 21만7500원에 거래되고 있다. 전일 대비 7500원(+3.57%) 올랐다. 현대로템은 앞서 지난 19일 장에서도 강세로 마감한 바...",
+          "pubDate": "02-20 13:28",
+          "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=556719"
+        },
+        {
+          "title": "독일 투자매체, 현대로템 주목 \"인프라 투자·국방 예산 확대 수혜\"",
+          "link": "https://www.theguru.co.kr/news/article.html?no=98238",
+          "description": "끝으로 \"전문가들은 현대로템의 주가 전망을 조심스럽게 낙관적에서 매우 긍정적으로 평가하고 있다\"며 \"전반적으로 현대로템은 철도 호황과 방산 경기 호황 사이에 전략적으로 매우 유리한 틈새시장을 점유하고 있다...",
+          "pubDate": "02-20 09:52",
+          "originallink": "https://www.theguru.co.kr/news/article.html?no=98238"
+        },
+        {
+          "title": "현대로템 주가 5% 털썩, 장초반 강세 지키지 못하고…20만원선 사수하나...",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=555085",
+          "description": "현대로템(064350) 주가가 10일 장에서 약세를 보이고 있다. 현대로템은 10일 오후 2시 26분 현재 20만1000원에 거래되고 있다. 전일 종가보다 11500원(-5.41%) 내렸다. 현대로템은 앞서 지난 9일 장에서 강세로 마쳤지만...",
+          "pubDate": "02-10 14:32",
+          "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=555085"
+        }
+      ]
+    },
+    {
+      "code": "196170",
+      "name": "알테오젠",
+      "market": "KOSDAQ",
+      "current_price": 402000,
+      "change_rate": -2.31,
+      "signal": "중립",
+      "reason": "알테오젠은 52주 고점 대비 40% 수준에 위치하며, RSI 47.44로 중립 구간입니다. 호가 잔량 비율은 339.37로 매수세 우위를 보이지만, 외국인의 당일 순매도가 -3.4만주이고, PEG 비율이 22.84로 매우 고평가되어 있습니다. 기술수출 모멘텀 재점화 기대감이 있으나 주가 하락 및 시총 경쟁 뉴스가 동시에 존재합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "고평가",
+        "trend_strength": "횡보"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "혼조",
+        "key_news": [
+          "알테오젠, 기술수출 모멘텀 재점화 기대",
+          "알테오젠 주가 하락, 코스닥 시총 1위 경쟁 중"
+        ],
+        "catalyst": "비만 치료제 개발 및 기술수출 모멘텀 재점화 기대감이 있으나, 최근 주가 하락 및 에코프로와의 시총 경쟁 등 불확실성도 존재합니다."
+      },
+      "analysis_time": "2026-02-21 10:07:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "비만 3중 작용제까지 장착… 알테오젠, 기술수출 모멘텀 재점화",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=431015",
+          "description": "하나증권은 알테오젠에 대해 목표주가 58만원, 투자의견 매수를 유지했다. 글로벌 파트너사들의 임상 진전과 신규 기술 확장을 감안할 때 중장기 성장 스토리는 유효하다는 판단이다. 시장의 시선이 다시 알테오젠으로...",
+          "pubDate": "02-21 08:48",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=431015"
+        },
+        {
+          "title": "코스닥...비에이치아이 · 우리기술 '껑충', 알테오젠 '뚝'",
+          "link": "http://www.choicenews.co.kr/news/articleView.html?idxno=161317",
+          "description": "코스피 지수가 SK하이닉스 등 시총 상위주들의 주가 급등 속에 또다시 역대 최고치를 경신한 반면... 제약바이오주 중 삼천당제약(0.63%), 케어젠(3.37%), 보로노이(0.86%) 등이 상승한 반면 알테오젠(-2.31...",
+          "pubDate": "02-20 16:28",
+          "originallink": "http://www.choicenews.co.kr/news/articleView.html?idxno=161317"
+        },
+        {
+          "title": "에코프로, 코스닥 시총 1위 탈환…알테오젠과 엎치락뒤치락",
+          "link": "https://www.ccdn.co.kr/news/articleView.html?idxno=1064036",
+          "description": "알테오젠의 주가가 1월부터 힘없이 떨어지고 에코프로 형제의 주가가 치고 올라가면서 올해 들어서만 여러 차례 코스닥 시총 1위 자리가 뒤바뀌고 있다. 지난 1월 30일에는 에코프로비엠이 시총 1위를 꿰찬 뒤 지난...",
+          "pubDate": "02-19 19:20",
+          "originallink": "https://www.ccdn.co.kr/news/articleView.html?idxno=1064036"
+        }
+      ]
+    },
+    {
+      "code": "060250",
+      "name": "NHN KCP",
+      "market": "KOSDAQ",
+      "current_price": 22800,
+      "change_rate": 4.59,
+      "signal": "매수",
+      "reason": "NHN KCP는 현재 52주 고점 대비 60% 수준에 위치하며, RSI 61.63으로 중립입니다. 호가 잔량 비율이 237.51로 강한 매수세 우위를 보이고, 기관의 5일 누적 순매수가 13.2만주로 긍정적입니다. 디지털자산 정책 기대 및 신사업 추진 소식이 호재로 작용하고 있습니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정",
+        "trend_strength": "상승"
+      },
+      "risk_level": "중간",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "NHN KCP, 디지털자산 정책 기대 및 신사업 준비로 투자심리 개선",
+          "NHN KCP, PG 성장 지속 및 스테이블코인으로 결제 생태계 확장"
+        ],
+        "catalyst": "디지털자산 정책에 대한 기대감과 신사업(스테이블코인)을 통한 결제 생태계 확장 가능성이 주가에 긍정적인 영향을 미치고 있습니다."
+      },
+      "analysis_time": "2026-02-21 10:07:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "“NHN KCP, 스테이블코인 기대 반영 구간…목표가↑”",
+          "link": "https://www.etoday.co.kr/news/view/2557308",
+          "description": "이투데이=김효숙 기자 | NH투자증권은 19일 NHN KCP에 대해 디지털자산 정책 기대와 신사업 준비가 맞물리며 투자심리 개선이 예상된다고 평가했다. 투자의견 ‘매수(Buy)’를 유지하고 목표주가는 2만1000원에서...",
+          "pubDate": "02-19 08:56",
+          "originallink": "https://www.etoday.co.kr/news/view/2557308"
+        },
+        {
+          "title": "NH투자증권 \"NHN KCP, 신사업 기대감 반영 구간\"",
+          "link": "https://www.cstimes.com/news/articleView.html?idxno=693853",
+          "description": "컨슈머타임스=김지훈 기자 | NH투자증권이 19일 NHN KCP에 대해 신사업 기대감이 반영되는 구간이라며 투자의견 '매수', 목표주가는 기존 21만원에서 28만으로 상향 조정했다. 윤유동 연구원은 \"디지털자산 이슈가 언급될...",
+          "pubDate": "02-19 08:20",
+          "originallink": "https://www.cstimes.com/news/articleView.html?idxno=693853"
+        },
+        {
+          "title": "LS증권 \"NHN KCP, PG 성장 지속…스테이블코인으로 결제 생태계 확장\"",
+          "link": "https://www.etoday.co.kr/news/view/2556532",
+          "description": "목표 주가를 2만5000원으로 상향했다. 조은애 LS증권 연구원은 “NHN KCP의 4분기 거래대금은 14조원으로 전년 동기 대비 10% 증가해 온라인쇼핑 시장 성장률을 상회했다”라며 “국내외 가맹점 확대에 따른 시장점유율...",
+          "pubDate": "02-13 08:28",
+          "originallink": "https://www.etoday.co.kr/news/view/2556532"
+        }
+      ]
+    },
+    {
+      "code": "247540",
+      "name": "에코프로비엠",
+      "market": "KOSDAQ",
+      "current_price": 214000,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "reason": "에코프로비엠은 52주 고점 대비 54% 수준에 있으며, RSI 58.47로 중립입니다. 호가 잔량 비율 144.91로 매수세 우위이나, 외국인의 5일 누적 순매도가 -20.4만주로 매도 우위입니다. PER은 음수(-216.82)로 적자 지속 중이며, 펀더멘탈은 개선이 필요해 보입니다. 다만 전고체 배터리 기대감으로 투자심리는 살아있습니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가",
+        "trend_strength": "횡보"
+      },
+      "risk_level": "높음",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "혼조",
+        "key_news": [
+          "전고체 배터리 기대감에 주가 상승",
+          "에코프로비엠 코스닥 시총 1위 탈환"
+        ],
+        "catalyst": "전고체 배터리 등 2차전지 산업 전반의 긍정적 기대감이 투자심리를 이끌지만, 단기적으로 외국인 매도세와 실적 부진으로 인한 밸류에이션 부담이 공존합니다."
+      },
+      "analysis_time": "2026-02-21 10:07:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "에코프로비엠, 주가 2월 20일 장중 213,500원 0.23% 하락",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=496794",
+          "description": "동일 업종 등락률이 -0.69%를 나타낸 가운데, 에코프로비엠의 주가 하락률은 0.23%로 업종 평균 대비 상대적으로 양호한 흐름을 보이고 있다. 시간대별 시세 흐름을 살펴보면, 9시에는 213,000원으로...",
+          "pubDate": "02-20 16:12",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=496794"
+        },
+        {
+          "title": "전고체 배터리 기대만발…에코프로비엠 ‘숨고르기’는 끝났다",
+          "link": "https://n.news.naver.com/mnews/article/024/0000103576?sid=101",
+          "description": "에코프로비엠 주가 급등 알테오젠 제치고 시총 1위 탈환 에코프로비엠은 지난 1월 29일 하루에만 7.42% 오른 24만6000원에 거래를 마쳤다. 1.15% 하락한 코스닥 제약 바이오 대장주 알테오젠을 제치고 2024년 8월 27일 이후...",
+          "pubDate": "02-19 21:01",
+          "originallink": "https://www.mk.co.kr/article/11955869"
+        },
+        {
+          "title": "에코프로비엠·엘앤에프 주가 질주... 양극재 대장주들 투심 사로 잡았...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430632",
+          "description": "양극재 생산 전문인 에코프로비엠 또한 9.13% 상승한 21만 4000원을 기록하며 시총 상위주의 위엄을 보였다. 하이니켈 양극재 기술력을 보유한 엘앤에프와 전구체 생산을 담당하는 에코프로머티 역시 4%대 오름세를...",
+          "pubDate": "02-19 18:06",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430632"
+        }
+      ]
+    },
+    {
+      "code": "048410",
+      "name": "현대바이오",
+      "market": "KOSDAQ",
+      "current_price": 13670,
+      "change_rate": -0.51,
+      "signal": "매도",
+      "reason": "현대바이오는 RSI 76.17로 과매수 구간에 진입했으며, 52주 고점 대비 49% 수준에 있습니다. 호가 잔량 비율은 66.85로 매도세 우위이며, 외국인 5일 누적 순매도가 -30.5만주로 매도 흐름입니다. PER은 음수(-166.71)로 적자를 기록 중이며, 한국거래소에서 투자경고종목 해제에도 불구하고 추가 주가 상승 시 재지정될 예정으로 투자 주의가 필요합니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가",
+        "trend_strength": "상승"
+      },
+      "risk_level": "높음",
+      "confidence": 0.8,
+      "news_analysis": {
+        "sentiment": "부정",
+        "key_news": [
+          "현대바이오 투자경고종목 해제, 추가 주가 상승 시 재지정 예고",
+          "현대바이오 매매거래정지 예고, 투자자 유의 필요"
+        ],
+        "catalyst": "한국거래소의 투자경고종목 및 매매거래정지 예고로 인한 시장의 경고가 주가에 부정적인 영향을 미치고 있습니다."
+      },
+      "analysis_time": "2026-02-21 10:07:18",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[공시속보] 현대바이오 투자경고종목 해제→투자주의 지정 및 재지정 예...",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15978908",
+          "description": "한국거래소에 따르면 현대바이오(048410)가 투자경고종목에서 해제돼 2026년 2월 23일(1일간)... 추가 주가 상승 시 투자경고종목으로 재지정될 예정이라 설명했다. 거래소는 해제 이유에 대해 \"10일째(해제요건 미...",
+          "pubDate": "02-20 20:22",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15978908"
+        },
+        {
+          "title": "[공시속보] 현대바이오, 매매거래정지 예고→투자자 유의 필요",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15977225",
+          "description": "향후 현대바이오의 주가 변동성에 따라 실제로 매매거래정지 조건이 충족될 경우 정지일에 해당되는 2월 23일 1일간 매매거래가 정지될 예정이라 투자자들의 각별한 주의가 필요한 상황이다. [톱스타뉴스=]",
+          "pubDate": "02-19 20:30",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15977225"
+        }
+      ]
+    },
+    {
+      "code": "267320",
+      "name": "나인테크",
+      "market": "KOSDAQ",
+      "current_price": 3780,
+      "change_rate": 5.73,
+      "signal": "중립",
+      "reason": "기술적 분석은 20일간의 상승 추세와 금일 5.73% 상승, 거래량 1248.01% 급증으로 긍정적이나, 수급은 외국인과 기관의 지속적인 순매도세(-5일 합계 외인 -1.3만, 기관 -0.8만)를 보입니다. 밸류에이션은 PER -30.98, ROE -16.14%로 매우 부진하며 PBR 2.34로 고평가 상태입니다. 반면, 관계사의 희토류 핵심소재 일본 공급 뉴스는 긍정적 재료로 작용하고 있습니다. 각 분석 축의 상충되는 신호로 인해 중립으로 판단합니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "나인테크 관계사 연화신소재, 희토류 핵심소재 불화리튬 일본 공급",
+          "나인테크, 관계사 日 희토류 핵심소재 공급에 상승",
+          "2차전지 관련주 맑음"
+        ],
+        "catalyst": "관계사인 연화신소재의 희토류 핵심소재 일본 공급 소식으로 신사업 확장 및 매출 증대에 대한 기대감이 형성되고 있습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "2차전지 관련주, '맑음' 나인테크·글로벌에스엠·대성하이텍... '흐림' ...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=250011",
+          "description": "나인테크와 글로벌에스엠의 주가 상승률은 각각 5.73%, 15.06%다. 대성하이텍과 SK이노베이션과 씨아이에스는 전 거래일 대비 각각각 880원, 9000원, 360원 오른 7240원과 12만7600원 그리고 1만3830원에 장을 마감했다....",
+          "pubDate": "02-21 00:20",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=250011"
+        },
+        {
+          "title": "나인테크 관계사 연화신소재, 희토류 핵심소재 불화리튬 일본 공급…수...",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=496723",
+          "description": "장비·소재 역량을 연계해 중장기적으로 글로벌 로봇 및 첨단 소재 밸류체인에서 핵심적인 역할을 수행할 것\"이라고 강조했다. 한편 이날 오후 1시 50분 기준 나인테크 주가는 전 거래일 대비 20.7% 오른 4315원에 거래되고 있다.",
+          "pubDate": "02-20 13:56",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=496723"
+        },
+        {
+          "title": "[특징주] 나인테크, 관계사 日에 희토류 핵심소재 공급에 상승…'자원무...",
+          "link": "https://www.cstimes.com/news/articleView.html?idxno=694156",
+          "description": "컨슈머타임스=전은정 기자 | 나인테크 주가가 상승중이다. 나인테크는 20일 오후 1시45분 현재 전일보다 6.71% 오른 3875원에 거래중이다. 나인테크가 관계사 연화신소재의 일본향(向) 희토류 핵심소재 공급 성과에 힘입어...",
+          "pubDate": "02-20 13:50",
+          "originallink": "https://www.cstimes.com/news/articleView.html?idxno=694156"
+        }
+      ]
+    },
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "market": "KOSPI",
+      "current_price": 127600,
+      "change_rate": 7.59,
+      "signal": "매수",
+      "reason": "기술적으로는 20일간의 상승 추세와 금일 7.59% 급등 및 거래량 244.59% 증가로 긍정적입니다. 수급 측면에서는 외국인과 기관이 당일 및 5일 합계 모두 순매수 우위(5일 합계 외인 +49.2만, 기관 +31.1만)를 보이며 강한 매수세를 형성하고 있습니다. 밸류에이션은 PBR 0.77로 저평가 구간에 있으나, PER은 -6.01로 적자 상태이며 PEG 비율도 -0.09로 성장성 대비 고평가 가능성이 있습니다. 베트남 LNG 사업 수주 소식은 긍정적인 재료입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "SK이노베이션, 3.3조 규모 베트남 LNG 사업 수주"
+        ],
+        "catalyst": "베트남 액화천연가스(LNG) 발전 프로젝트 사업자로 선정되어 대규모 사업 수주에 대한 기대감이 주가를 견인하고 있습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "SK이노베이션·SK이노베이션우, 상승에 급등…특히 SK이노베이션 8% 급등...",
+          "link": "http://www.econonews.co.kr/news/articleView.html?idxno=428150",
+          "description": "SK이노베이션 주가흐름 (그래픽=네이버페이 증권 캡처) SK이노베이션과 SK이노베이션우가 상승에 급등 중이다. SK이노베이션은 20일 코스피 시장에서 오후 1시39분 현재 전 거래일보다 7.93%(9400원) 상승한...",
+          "pubDate": "02-20 13:42",
+          "originallink": "http://www.econonews.co.kr/news/articleView.html?idxno=428150"
+        },
+        {
+          "title": "SK이노베이션 주가 상승, 3.3조 규모 베트남 LNG 사업 수주",
+          "link": "https://www.gukjenews.com/news/articleView.html?idxno=3509705",
+          "description": "SK이노베이션 로고 SK이노베이션 주가가 상승세다. 20일 오전 10시 43분 기준 SK이노베이션은 6.41%(7600원) 상승한 12만 6200원에 거래되고 있다. 베트남 액화천연가스(LNG) 발전 프로젝트 사업자로 선정됐다는 소식에...",
+          "pubDate": "02-20 10:52",
+          "originallink": "https://www.gukjenews.com/news/articleView.html?idxno=3509705"
+        }
+      ]
+    },
+    {
+      "code": "437730",
+      "name": "삼현",
+      "market": "KOSDAQ",
+      "current_price": 49150,
+      "change_rate": -6.38,
+      "signal": "매도",
+      "reason": "기술적으로 20일간 하락 추세가 이어지는 가운데 금일 -6.38% 하락했습니다. RSI는 33.88로 중립 구간이지만, 52주 고점 대비 45.45% 위치로 고점 부담이 있습니다. 수급은 당일 및 5일 합계 외국인과 기관이 강한 순매수 우위를 보이며 상방 압력을 높이고 있으나(5일 합계 외인 +107.7만, 기관 +13.4만), 밸류에이션은 PER 178.73, PBR 13.55로 극심한 고평가 상태입니다. 재료는 애프터마켓 급등 소식이 있으나, 지배주주의 주식 수 감소 공시와 충돌하며, 높은 밸류에이션이 부담됩니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "혼재",
+        "key_news": [
+          "삼현 애프터마켓서 10% 급등, 투자자 주목 집중",
+          "삼현 사실상지배주주 황성호, 삼현 주식등의 수 193만2766주 감소"
+        ],
+        "catalyst": "애프터마켓에서의 주가 급등 소식은 긍정적이나, 지배주주의 주식 감소 공시는 매도 심리에 부정적으로 작용할 수 있습니다. 긍정적 요인과 부정적 요인이 혼재되어 있습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "삼현 애프터마켓서 10% 급등, 투자자 주목 집중",
+          "link": "https://www.tokenpost.kr/news/market/332722",
+          "description": "삼현의 주가 급등은 종가 이후에 매매가 이루어지는 애프터마켓에서 발생했다. 이 시장은 정규 거래시간이 끝난 후에도 주식을 사고팔 수 있도록 도와주는 플랫폼이다. 이러한 상승세는 투자자들 사이에서 삼현에 대한...",
+          "pubDate": "02-21 03:36",
+          "originallink": "https://www.tokenpost.kr/news/market/332722"
+        },
+        {
+          "title": "삼현 사실상지배주주 황성호, 삼현 주식등의 수 193만2766주 감소…총 지...",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632468",
+          "description": "종목 시세 정보에 따르면 삼현의 주가는 2월 20일 10시 51분 기준 4만9200원이며, 전일 대비 3300원(-6.29%) 하락했다. 삼현은 2024년 3월 21일 코스닥 시장에 상장된 자동차 신품 부품 제조업체다....",
+          "pubDate": "02-20 11:06",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=632468"
+        }
+      ]
+    },
+    {
+      "code": "038500",
+      "name": "삼표시멘트",
+      "market": "KOSDAQ",
+      "current_price": 14510,
+      "change_rate": 3.05,
+      "signal": "중립",
+      "reason": "기술적으로 20일간 큰 변동성을 보인 후 금일 3.05% 상승했으며, RSI는 63.32로 중립입니다. 수급은 외국인이 당일 순매수(+9.6만), 기관이 소량 순매수(+0.15만)했지만, 5일 합계 외인/기관 순매도가 더 큽니다. 밸류에이션은 PER 23.67, PBR 2.06으로 적정~고평가 수준이며, ROE 5.34%, OPM 8.94%로 보통 수준입니다. 최근 성수동 재료로 급등했으나, 실적 역성장 우려가 있어 중립적인 판단이 필요합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "혼재",
+        "key_news": [
+          "성수동 호재·실적 역성장…삼표시멘트, 주가 오락가락",
+          "3개월 간 주가 400% 폭등, '실적 역성장' 삼표시멘트의 기이한 질주"
+        ],
+        "catalyst": "성수동 재개발 기대감으로 주가가 급등했지만, 실적 역성장 우려가 동시에 제기되며 투자 심리가 혼재되어 있습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "성수동 호재·실적 역성장…삼표시멘트, 주가 오락가락",
+          "link": "https://n.news.naver.com/mnews/article/011/0004590648?sid=101",
+          "description": "15일 한국거래소에 따르면 삼표시멘트 주가는 지난 13일 종가 기준 1만 4510원에 거래를 마쳤다. 약 3개월 전과 비교하면 여전히 3.5배 이상 오른 수준이다. 시가총액은 1조 5659억 원, 주가수익비율(PER) 39.11배에 달한다....",
+          "pubDate": "02-15 16:00",
+          "originallink": "https://www.sedaily.com/article/20009337?ref=naver"
+        },
+        {
+          "title": "2월 2주차 삼표시멘트 급락 후 반등 마감",
+          "link": "https://www.topstarnews.net/news/articleView.html?idxno=15969905",
+          "description": "13일 KRX 마감 기준, 네이버페이 증권에 따르면 삼표시멘트 주가는 최근 5거래일간 큰 폭의 변동성을 보인 끝에 2월 13일 장을 14,510원에 마감했다. 20,000원대에서 시작된 가격은 주초 급격한 하락세를...",
+          "pubDate": "02-14 10:08",
+          "originallink": "https://www.topstarnews.net/news/articleView.html?idxno=15969905"
+        },
+        {
+          "title": "3개월 간 주가 400% 폭등, '실적 역성장' 삼표시멘트의 기이한 질주",
+          "link": "https://realty.chosun.com/site/data/html_dir/2026/02/11/2026021101671.html",
+          "description": "주가 4배 뛰었는데 내실은 후퇴 성수동 기대감에 주가 폭주 영업이익 26%·순이익 38% 급감 [땅집고] 삼표시멘트 주가가 최근 3개월 사이 400% 넘게 급등했다. 주가는 한때 2만 원 선을 넘보며 52주 최고가에 근접했지만 정작...",
+          "pubDate": "02-12 06:02",
+          "originallink": "https://realty.chosun.com/site/data/html_dir/2026/02/11/2026021101671.html"
+        }
+      ]
+    },
+    {
+      "code": "348340",
+      "name": "뉴로메카",
+      "market": "KOSDAQ",
+      "current_price": 78000,
+      "change_rate": -5.57,
+      "signal": "매도",
+      "reason": "기술적으로 20일간 하락 추세를 보이며 금일 -5.57% 하락했고, 52주 고점 대비 40.52% 위치에 있습니다. RSI 48.55는 중립입니다. 수급은 외국인과 기관이 당일 및 5일 합계 순매도 우위를 보이며 매도세가 짙습니다(5일 합계 외인 -0.89만, 기관 +0.72만으로 외인 매도세가 더 강함). 밸류에이션은 PER -49.09, PBR 76.1로 매우 고평가되어 있으며, ROE -155.09%, OPM -101.8% 등 펀더멘탈이 매우 취약합니다. 로봇 관련 재료는 긍정적이지만, 주가에 대한 신중한 접근이 필요합니다.",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "증가",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "뉴로메카, 피지컬 AI 로봇 자동화 언급…설 이후 로봇주 흐름 속 재평가",
+          "뉴로메카, 주가 음봉에서 양봉 전환에도 방향성은 신중히 볼 구간"
+        ],
+        "catalyst": "피지컬 AI 로봇 자동화 사업에 대한 언급과 로봇주 전반의 흐름 속에서 재평가 기대감이 있습니다. 하지만 실적보다 미래 성장성 기대가 선반영된 경향이 있습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "뉴로메카, 피지컬 AI 로봇 자동화 언급…설 이후 로봇주 흐름 속 재평가...",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=556360",
+          "description": "뉴로메카는 협동로봇과 로봇 제어 소프트웨어를 중심으로 사업을 전개해온 로봇 전문 기업이다. 산업... 로봇 산업 및 개별 종목의 주가 변동성은 매우 클 수 있으며, 투자에 따른 손실은 투자자 본인의 책임입니다. 투자...",
+          "pubDate": "02-19 06:30",
+          "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=556360"
+        },
+        {
+          "title": "뉴로메카, 주가 음봉에서 양봉 전환에도 방향성은 신중히 볼 구간...'변...",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=555541",
+          "description": "뉴로메카가 음봉에서 양봉으로 돌아섰다. 12일 오후 12시 49분 현재는 보합 상황이라고 할 수 있다. 언제든... 특히 실적보다 미래 성장성에 대한 기대가 먼저 주가에 선반영되는 경우가 많아, 장중 변동 폭이 커지는 일이...",
+          "pubDate": "02-12 12:50",
+          "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=555541"
+        },
+        {
+          "title": "뉴로메카, 8만8600원 마감…추가상장 맞물리며 하루 4900원 조정",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=555154",
+          "description": "정리하면, 10일 뉴로메카의 주가 하락은 단일 요인으로 단정하기 어렵다. 다만 중장기적인 기업 가치나 사업 내용과는 별개로, 단기 주가 흐름에서는 구조적 이벤트가 영향을 미쳤다고 볼 수 있다. [본 기사는 투자...",
+          "pubDate": "02-11 00:00",
+          "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=555154"
+        }
+      ]
+    },
+    {
+      "code": "347700",
+      "name": "스피어",
+      "market": "KOSDAQ",
+      "current_price": 45650,
+      "change_rate": 3.51,
+      "signal": "매수",
+      "reason": "기술적으로는 20일간 강한 상승 추세를 보였고, 금일 3.51% 상승했습니다. 거래량 변화율 193.08%로 증가했으며, RSI는 91.63으로 과매수 구간입니다. 수급은 호가잔량비율 519.01로 강한 매수세 우위이며, 외국인은 5일 합계 순매수(+15.9만)를 보였으나 기관은 순매도(-47.1만)입니다. 밸류에이션은 PER -47.01, ROE -9.61%로 적자 상태이며 PBR 32.19로 극심한 고평가 상태입니다. 미국 우주항공 업체와의 대규모 공급계약 체결 뉴스는 강력한 호재입니다.",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "스피어, 美 우주항공 업체와 대규모 공급계약… 52주 최고가 경신",
+          "우주항공산업 관련주, '덩실덩실' 스피어"
+        ],
+        "catalyst": "미국 우주항공 업체와의 430억원 규모 대규모 공급 계약 체결은 매출 증대 및 시장 점유율 확대에 대한 강력한 긍정적 재료입니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "우주항공산업 관련주, '덩실덩실' 스피어·LK삼양·한화시스템·태웅·비...",
+          "link": "http://www.finomy.com/news/articleView.html?idxno=250009",
+          "description": "스피어와 퍼스텍의 주가 상승률은 각각 3.51%, 26.08%다. 덕산하이메탈과 태웅은 전 거래일 대비 각각 1350원, 3300원 오른 1만2900원과 3만6400원에 장을 마감했다. 덕산하이메탈과 태웅의 주가 상승률은 각각 11.69%, 9.97%다....",
+          "pubDate": "02-21 00:10",
+          "originallink": "http://www.finomy.com/news/articleView.html?idxno=250009"
+        },
+        {
+          "title": "[ET특징주] 스피어, 美 우주항공 업체와 대규모 공급계약… 52주 최고가",
+          "link": "https://n.news.naver.com/mnews/article/030/0003400562?sid=101",
+          "description": "스피어가 미국 우주항공 업체와 430억원 규모의 공급 계약을 체결하면서 주가가 강세다. 20일 오후 2시 45분 기준 스피어(347700)는 전 거래일 대비 4.20% 상승한 4만 5950원에 거래되고 있다. 장 초반 주가는 52주...",
+          "pubDate": "02-20 14:49",
+          "originallink": "https://www.etnews.com/20260220000193"
+        },
+        {
+          "title": "[특징주] 스피어 주가 6% 강세...美 우주항공 업체와 대규모 공급계약",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=496674",
+          "description": "|중앙이코노미뉴스 엄현식 기자| 스피어 주가가 6% 강세를 보이고 있다. 20일 한국거래소에 따르면 오전 10시 45분 기준 스피어 주가는 전 거래일 대비 6.80% 상승한 4만7100원에 거래되고 있다. 스피어는 전날인 19일...",
+          "pubDate": "02-20 10:48",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=496674"
+        }
+      ]
+    },
+    {
+      "code": "016360",
+      "name": "삼성증권",
+      "market": "KOSPI",
+      "current_price": 114500,
+      "change_rate": 2.69,
+      "signal": "매도",
+      "reason": "기술적으로는 20일간 상승 추세를 보이며 금일 2.69% 상승했으나, RSI 79.55로 과매수 구간입니다. 수급은 외국인이 당일 및 5일 합계 강한 순매도(-5일 합계 -79.5만)를 보이며 매도세 우위입니다. 밸류에이션은 PER 11.37, PBR 1.40으로 적정 수준이나, 부채비율이 866.95%로 매우 높아 재무 건전성에 대한 주의가 필요합니다. 삼성증권의 씨앤씨인터내셔널 투자의견 하향 뉴스는 자체적인 기업 가치 변화보다는 분석 의견입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "삼성증권, 씨앤씨인터내셔널 투자의견 하향…실적 가시성 악화"
+        ],
+        "catalyst": "삼성증권 자체에 대한 재료라기보다, 삼성증권이 분석한 타 기업에 대한 투자의견 조정 소식입니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "삼성증권, 씨앤씨인터내셔널 투자의견 하향…\"실적 가시성 악화\"",
+          "link": "https://n.news.naver.com/mnews/article/001/0015913377?sid=101",
+          "description": "삼성증권은 씨앤씨인터내셔널에 대한 투자의견을 '중립'(HOLD)으로 하향했다고 20일 밝혔다. 이가영... 이 연구원은 씨앤씨인터내셔널에 대한 목표주가도 5만원에서 3만원으로 40% 낮춰잡았다. 이는 전 거래일 종가 기준...",
+          "pubDate": "02-20 08:14",
+          "originallink": "https://www.yna.co.kr/view/AKR20260220023500008?input=1195m"
+        }
+      ]
+    },
+    {
+      "code": "000370",
+      "name": "한화손해보험",
+      "market": "KOSPI",
+      "current_price": 9300,
+      "change_rate": 25.17,
+      "signal": "적극매수",
+      "reason": "기술적으로 20일간 강한 상승 추세를 보였고, 금일 25.17% 급등하며 52주 신고가를 경신했습니다. 거래량은 1194.92% 급증했으며, RSI는 84.10으로 과매수 구간입니다. 수급은 외국인과 기관이 당일 및 5일 합계 순매수 우위(5일 합계 외인 +1.9만, 기관 +24.5만)를 보이며 매수세가 강합니다. 밸류에이션은 PER 4.19, PBR 0.50으로 저평가되어 있으며, ROE 8.70%, OPM 6.36%로 양호합니다. 보험주 순환매 장세에 따른 강세 뉴스가 강력한 재료입니다.",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.9,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "한화손해보험 20%대 급등…보험주 강세 시그널",
+          "한화손해보험 주가 장중 20%대 올라, 순환매 장세에서 보험주 강세",
+          "순환매 장세, 증권 다음은 보험?…한화손해보험 16% 오름세"
+        ],
+        "catalyst": "금융 및 증권 관련주에서 보험 업종으로 투자자 관심이 이동하며 순환매 강세가 나타나고 있어 긍정적입니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[속보] 한화손해보험 20%대 급등…장중 VI 연속 발동하며 보험주 강세 시...",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=556685",
+          "description": "속에서 한화손해보험은 단기 수급이 빠르게 유입되며 섹터 내에서도 변동성이 두드러진 종목으로 부각됐다. 다만 급격한 상승과 연속적인 VI 발동이 동시에 나타난 구간인 만큼, 향후 주가 방향은 거래량 흐름과...",
+          "pubDate": "02-20 11:06",
+          "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=556685"
+        },
+        {
+          "title": "한화손해보험 주가 장중 20%대 올라, 순환매 장세에서 보험주 강세",
+          "link": "https://www.businesspost.co.kr/BP?command=article_view&num=430623",
+          "description": "20일 오전 장중 한화손해보험 주가가 크게 오르고 있다. 같은 시각 한화생명(17.13%) 흥국화재(16.12%) 롯데손해보험(13.23%) 삼성화재(10.53%) 미래에셋생명(9.43%) DB손해보험(7.09%) 등 대표 보험주 주가도 큰 폭으로...",
+          "pubDate": "02-20 10:52",
+          "originallink": "https://www.businesspost.co.kr/BP?command=article_view&num=430623"
+        },
+        {
+          "title": "순환매 장세, 증권 다음은 보험?…한화손해보험 16% 오름세 [특징주]",
+          "link": "https://n.news.naver.com/mnews/article/119/0003061197?sid=101",
+          "description": "금융 및 증권 관련주가 단기 급등하자 상대적으로 오름세가 덜했던 보험 업종으로 투자자 관심이 옮겨가는 모양새다. 한국거래소에 따르면, 이날 오전 9시 43분 코스피 시장에서 한화손해보험은 전장 대비 16.55...",
+          "pubDate": "02-20 09:48",
+          "originallink": "https://www.dailian.co.kr/news/view/1612235/?sc=Naver"
+        }
+      ]
+    },
+    {
+      "code": "187660",
+      "name": "현대ADM",
+      "market": "KOSDAQ",
+      "current_price": 9280,
+      "change_rate": 5.57,
+      "signal": "매수",
+      "reason": "기술적으로는 20일간 강한 상승 추세와 금일 5.57% 상승, 거래량 102.09% 증가를 보이며 RSI 92.20으로 과매수 구간입니다. 52주 고점 대비 51.64% 위치입니다. 수급은 호가잔량비율이 29.07로 매도세 우위인 반면, 5일 합계 외국인/기관 순매수는 혼조세(-5일 외인 -54.2만, 기관 -8.5만)를 보입니다. 밸류에이션은 PER -20.13, PBR 57.64로 극심한 고평가 및 적자 상태이며, ROE -118.31%, OPM -163.92%로 펀더멘탈이 매우 취약합니다. 세계 최초 전이암 차단 기전 규명 및 사명 변경 재료가 긍정적입니다.",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "현대ADM 주가, 급등세... 왜? (사명변경)",
+          "현대ADM, '페니트리움바이오사이언스'로 사명 변경...핵심 약물 명확화",
+          "현대ADM 주가 21%↑...세계 최초 전이암 차단 기전 규명"
+        ],
+        "catalyst": "사명 변경을 통한 핵심 약물 파이프라인 강조 및 세계 최초 전이암 차단 기전 규명 소식이 긍정적인 투자 심리를 형성하고 있습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "현대ADM 주가, 급등세... 왜?",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142569",
+          "description": "사진=현대ADM 현대ADM 주가가 급등 중이다. 20일 오전 10시 54분 KRX 기준 현대ADM은 전 거래일 대비 13.88%(1220원) 상승한 1만10원에 거래 중이다. 현대ADM바이오가 사명을 '페니트리움바이오사이언스'로 변경한다....",
+          "pubDate": "02-20 10:56",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142569"
+        },
+        {
+          "title": "현대ADM, '페니트리움바이오사이언스'로 사명 변경...\"자사 핵심 약물 명...",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=496663",
+          "description": "임상시험을 신속히 추진하고, 글로벌 제약사와의 협력 및 기술이전(License-out) 등 사업화 전략을 본격화할 방침이다. 한편 이날 오전 10시 30분 기준 현대ADM 주가는 전 거래일 대비 2.62% 하락한 8560원에 거래되고 있다.",
+          "pubDate": "02-20 10:32",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=496663"
+        },
+        {
+          "title": "현대ADM 주가 21%↑...세계 최초 전이암 차단 기전 규명",
+          "link": "https://www.gukjenews.com/news/articleView.html?idxno=3508932",
+          "description": "현대adm 현대ADM 주가가 강세를 보이고 있다. 19일 낮 12시 13분 기준 현대ADM은 21.68% 상승한 8980원에 거래 중이다. 최근 현대ADM바이오는 세계 최초로 전이암 차단에 대한 기전을 밝혀냈다고 밝혔다. 씨앤팜...",
+          "pubDate": "02-19 12:26",
+          "originallink": "https://www.gukjenews.com/news/articleView.html?idxno=3508932"
+        }
+      ]
+    },
+    {
+      "code": "009830",
+      "name": "한화솔루션",
+      "market": "KOSPI",
+      "current_price": 53000,
+      "change_rate": -9.4,
+      "signal": "매수",
+      "reason": "기술적으로 20일간 강한 상승 추세를 보였지만, 금일 -9.4% 급락하며 RSI 71.61로 과매수 구간입니다. 수급은 호가잔량비율 262.29로 강한 매수세 우위이나, 당일 외국인과 기관이 대량 순매도했습니다(-82.5만, -83.6만). 5일 합계로는 외국인 +243.4만, 기관 -47.5만으로 혼조세입니다. 밸류에이션은 PBR 0.96으로 저평가되어 있으나, PER -6.58로 적자 상태이며 ROE -4.83% 등 펀더멘탈은 취약합니다. 태양광 실적 개선 전망 및 AMPC 확대 효과 기대 재료가 긍정적입니다.",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "한화솔루션, 2026년 태양광 실적 개선, 모듈 ASP +5 cent/W 상승 전망",
+          "시총 9조 한화솔루션…태양광 수직계열화 '레벨업'",
+          "일론 머스크 우주 태양광 기대감에 전날 27% 오른 한화솔루션"
+        ],
+        "catalyst": "2026년 태양광 실적 개선 전망, 미국 태양광 공급망 재편 및 첨단제조세액공제(AMPC) 확대 효과, 우주 태양광 사업 기대감 등 긍정적 재료가 많습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[헬로스톡] 2월 20일 주목할 종목: 삼성SDI·한화솔루션·LG디스플레이·...",
+          "link": "https://www.hellot.net/news/article.html?no=110560",
+          "description": "한화솔루션 — 2026년 태양광 실적 개선, 모듈 ASP +5 cent/W 상승 전망 하나증권은 한화솔루션에 대해 목표주가를 6만5,000원으로 상향(기존 4만7,000원)하고 투자의견 BUY를 유지했다. 현재가 5만8,500원 대비...",
+          "pubDate": "02-20 18:34",
+          "originallink": "https://www.hellot.net/news/article.html?no=110560"
+        },
+        {
+          "title": "시총 9조 한화솔루션…태양광 수직계열화 '레벨업' [stock&톡]",
+          "link": "https://www.newsway.co.kr/news/view?ud=2026022010041837124",
+          "description": "한화솔루션 주가가 이달 들어 가파르게 상승하며 단기 레벨을 끌어올렸다. 미국 태양광 공급망 재편 과정에서의 수혜 기대와 첨단제조세액공제(AMPC) 확대 효과가 반영되면서 실적 구조가 바뀔 것이라는 분석이...",
+          "pubDate": "02-20 13:30",
+          "originallink": "https://www.newsway.co.kr/news/view?ud=2026022010041837124"
+        },
+        {
+          "title": "[특징주] 일론 머스크 우주 태양광 기대감에 전날 27% 오른 한화솔루션...",
+          "link": "https://n.news.naver.com/mnews/article/366/0001143301?sid=101",
+          "description": "전날 한화솔루션은 우주 태양광 사업 기대감에 27.45% 넘게 급등했지만, 이날 증권가에서는 현 주가가 적정 가치 대비 과도하다는 분석이 나오며 투자 심리가 다소 위축됐다. 전유진 iM증권 연구원은 “전일 종가...",
+          "pubDate": "02-20 09:53",
+          "originallink": "https://biz.chosun.com/stock/stock_general/2026/02/20/M7O3CPGFORBAXEBR2SHGELI6FA/?utm_source=naver&utm_medium=original&utm_campaign=biz"
+        }
+      ]
+    },
+    {
+      "code": "218410",
+      "name": "RFHIC",
+      "market": "KOSDAQ",
+      "current_price": 63200,
+      "change_rate": 7.3,
+      "signal": "매수",
+      "reason": "기술적으로 20일간 강한 상승 추세와 금일 7.30% 상승을 보이며, RSI 80.16으로 과매수 구간입니다. 52주 고점 대비 60.19% 위치에 있습니다. 수급은 호가잔량비율 97.43으로 매도세 우위이나, 5일 합계 외국인/기관 순매수는 매수세 우위(외인 +6.7만, 기관 +12.4만)입니다. 밸류에이션은 PER 65.22, PBR 5.20으로 고평가되어 있지만, ROE 5.0%, OPM 16.58% 등 펀더멘탈은 양호합니다. KB증권 목표가 상향 및 방산 수혜 기대감은 강력한 호재입니다.",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "RFHIC, 장 초반 강세…목표가 상향·방산수혜 기대감",
+          "RFHIC, 레이시온과 대규모 수주로 주가 목표 50% 상향 조정",
+          "“RFHIC, 방산 부문 가파른 실적 성장세…목표가↑”-KB"
+        ],
+        "catalyst": "KB증권의 목표가 상향 및 레이시온과의 대규모 수주, 해외 방산 부문의 가파른 실적 성장 기대감 등 강력한 긍정적 재료가 있습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "RFHIC, 장 초반 강세…목표가 상향·방산수혜 기대감",
+          "link": "https://n.news.naver.com/mnews/article/008/0005319917?sid=101",
+          "description": "KB증권은 이날 RFHIC에 대한 목표주가를 기존 대비 50% 상향해 7만5000원으로 제시한 리포트를 발간했다. 이창민·김연수 KB증권 연구원은 \"목표가를 상향한 이유는 업황 호조에 따른 통신·방산 실적 추정치...",
+          "pubDate": "02-20 09:42",
+          "originallink": "https://www.mt.co.kr/stock/2026/02/20/2026022009385980688"
+        },
+        {
+          "title": "RFHIC, 레이시온과 대규모 수주로 주가 목표 50% 상향 조정",
+          "link": "https://www.tokenpost.kr/news/market/332490",
+          "description": "시장에서 안정적인 실적을 보여주는 우량주로 자리매김하는 데 기여할 것으로 보인다. 이를 통해 코스닥 활성화 정책의 수혜를 받을 가능성도 엿보인다. RFHIC의 앞으로의 실적과 주가 추이에 관심이 집중되고 있다.",
+          "pubDate": "02-20 09:30",
+          "originallink": "https://www.tokenpost.kr/news/market/332490"
+        },
+        {
+          "title": "“RFHIC, 방산 부문 가파른 실적 성장세…목표가↑”-KB",
+          "link": "https://www.itooza.com/common/iview.php?no=2026022009055252827",
+          "description": "KB증권은 20일 RFHIC에 대해 해외 방산 부문의 가파른 실적 성장이 예상된다며 목표주가를 기존 5만원에서 7만5000원으로 올리고, ‘매수(Buy)’ 투자의견을 유지했다. 전 거래일 종가는 5만8900원이다. 이 증권사 이창민...",
+          "pubDate": "02-20 09:06",
+          "originallink": "https://www.itooza.com/common/iview.php?no=2026022009055252827"
+        }
+      ]
+    },
+    {
+      "code": "388210",
+      "name": "씨엠티엑스",
+      "market": "KOSDAQ",
+      "current_price": 152500,
+      "change_rate": 6.2,
+      "signal": "매수",
+      "reason": "기술적으로 20일간 강한 상승 추세를 보이며 금일 6.20% 상승했습니다. RSI는 65.15로 중립이며, 52주 고점 대비 57.51% 위치에 있습니다. 수급은 호가잔량비율 806.34로 강한 매수세 우위이며, 외국인은 5일 합계 순매수(+19.6만)를 보였습니다. 기관은 5일 합계 순매도(-6.9만)이나, 20일 합계 순매수(+27.7만)로 매수세 전환 가능성이 있습니다. 밸류에이션은 PER 49.21로 고평가되어 있으며, PBR -17.31, ROE null 등 펀더멘탈 데이터가 일부 부족하지만 OPM 35.3%로 수익성이 좋습니다. 관련 뉴스는 오래되어 재료 영향은 제한적입니다.",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [],
+        "catalyst": "관련 뉴스 없음"
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "씨엠티엑스, 12월 22일 장중 94,800원 0.73% 하락",
+          "link": "https://www.joongangenews.com/news/articleView.html?idxno=478054",
+          "description": "|중앙이코노미뉴스 강한솔 기자|출처=네이버페이 증권 22일 오전 10시 26분 기준, 네이버페이 증권에 따르면 씨엠티엑스 주가가 지난 종가 95,500원 대비 700원(0.73%) 하락한 94,800원에 거래되고 있다....",
+          "pubDate": "12-22 10:44",
+          "originallink": "https://www.joongangenews.com/news/articleView.html?idxno=478054"
+        },
+        {
+          "title": "코스닥 기관, 알테오젠·씨엠티엑스·에스엠·씨엠티엑스주가 '훨훨'",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=407475",
+          "description": "에코프로비엠, 씨엠티엑스, 에스엠, JYP Ent. 등 기술·바이오 중심 종목이 이름을 올렸다. 반대로 순매도... 시장 관계자는 \"기관 순매수 상위 종목 중심의 매수세는 향후 실적 개선과 주가 안정성을 동시에 기대할 수...",
+          "pubDate": "12-17 16:10",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=407475"
+        },
+        {
+          "title": "씨엠티엑스 주가 12월 12일 오전 장중 75,800원 2.02% 상승세",
+          "link": "https://www.job-post.co.kr/news/articleView.html?idxno=196183",
+          "description": "또한, 현재 씨엠티엑스의 주가 상승률은 동일업종 등락률 +0.65%보다 높은 2.02% 상승률을 보이고 있다. 외국인 소진율은 1.13%이다. 지난 거래일 씨엠티엑스는 78,300원에 시가를 형성했으며, 고가 78,900원, 저가...",
+          "pubDate": "12-12 12:02",
+          "originallink": "https://www.job-post.co.kr/news/articleView.html?idxno=196183"
+        }
+      ]
+    },
+    {
+      "code": "329180",
+      "name": "HD현대중공업",
+      "market": "KOSPI",
+      "current_price": 602000,
+      "change_rate": 4.88,
+      "signal": "매수",
+      "reason": "기술적으로 20일간 횡보하는 추세 속 금일 4.88% 상승했으며, RSI 58.56으로 중립입니다. 수급은 기관이 5일 합계 순매수(+20.5만)로 강한 매수 우위를 보였으나, 외국인은 순매도(-6.1만)입니다. 밸류에이션은 PER 85.99, PBR 9.37로 고평가되어 있지만, ROE 21.68%, OPM 11.81%로 펀더멘탈이 매우 우수하며, EPS 성장률 48.98%로 성장성도 좋습니다. 백악관의 미국 조선 역량 재건 방안 발표는 강력한 긍정적 재료입니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "HD현대중공업 등 조선주 급등 백악관 미국 조선 역량 재건 방안 발표",
+          "HD현대중공업, 美 조선업 재건계획 발표 영향 '상승'",
+          "조선주, 트럼프 '조선업 재건' 청사진에 강세"
+        ],
+        "catalyst": "백악관의 미국 조선 역량 재건 방안 발표는 국내 조선업체들에게 긍정적인 사업 환경을 제공할 것으로 기대됩니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[특징주 & 리포트] 'HD현대중공업 등 조선주 급등' 등",
+          "link": "https://n.news.naver.com/mnews/article/015/0005252571?sid=101",
+          "description": "● HD현대중공업 등 조선주 급등 HD현대중공업과 한화오션 등 조선 관련주가 19일 급등했다. 백악관의 미국 조선 역량 재건 방안 발표가 촉매 역할을 했다. HD현대중공업이 5.71% 상승한 57만4000원에 마감했고...",
+          "pubDate": "02-19 17:26",
+          "originallink": "https://www.hankyung.com/article/2026021919791"
+        },
+        {
+          "title": "[특징주] HD현대중공업, 美 조선업 재건계획 발표 영향 '상승'",
+          "link": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1231707",
+          "description": "HD현대중공업 주가가 상승세를 보이고 있다. 19일 오전 11시 18분 기준 현재 전 거래일 대비 +6.45% 오른 57만 8,500원에 거래되고 있다. 거래량은 18만 4,440주다. 이는 백악관이 미국의 조선 역량 재건 방안을 담은...",
+          "pubDate": "02-19 11:22",
+          "originallink": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1231707"
+        },
+        {
+          "title": "조선주, 트럼프 '조선업 재건' 청사진에 강세…HD현대중공업 7%↑[특징주...",
+          "link": "https://n.news.naver.com/mnews/article/018/0006220585?sid=101",
+          "description": "조선주가 일제히 강세를 보이고 있다. 19일 엠피닥터에 따르면 이날 오전 9시9분 현재 HD현대중공업(329180)은 전거래일 대비 7.18% 오른 58만2000원에 거래 중이다. 장중 전장 대비 9.39% 상승한 59만4000원까지...",
+          "pubDate": "02-19 09:18",
+          "originallink": "http://www.edaily.co.kr/news/newspath.asp?newsid=03106166645352160"
+        }
+      ]
+    },
+    {
+      "code": "004090",
+      "name": "한국석유",
+      "market": "KOSPI",
+      "current_price": 18840,
+      "change_rate": 15.23,
+      "signal": "매수",
+      "reason": "기술적으로는 20일간 상승 추세와 금일 15.23% 급등, 거래량 1013.16% 급증을 보였으나 RSI 75.99로 과매수 구간입니다. 52주 고점 대비 70.36% 위치입니다. 수급은 당일 외국인 대량 순매도(-36.9만)에도 불구하고 개인 순매수(+38.5만)로 상쇄되며 호가잔량비율은 492.41로 강한 매수세 우위를 보입니다. 밸류에이션은 PER 18.33, PBR 1.20으로 적정 수준입니다. 중동 불안에 따른 유가 급등 수혜주로 지목되며 강한 재료 모멘텀을 받고 있습니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "중동 불안에 기름값 불꽃랠리… 한국석유, 지정학적 리스크에 주가 15%대 급등",
+          "한국석유 주가 오후 들어 급등…20% 껑충"
+        ],
+        "catalyst": "중동 지역의 지정학적 리스크 심화로 인한 유가 급등은 한국석유의 실적 개선 기대감으로 이어지며 강한 상승 모멘텀을 제공하고 있습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "김상수 이사, 한국석유공업 주식 1000주 장내매수",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=617100",
+          "description": "12월 30일 오후 12시 20분 한국거래소 기준 한국석유공업의 주가는 전일 대비 0.14% 상승한 1만3910원에 거래되고 있다. 최근 실적을 보면, 한국석유공업은 2024년 12월 결산 기준으로 매출액 7212억원, 영업이익...",
+          "pubDate": "12-30 12:36",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=617100"
+        },
+        {
+          "title": "중동 불안에 기름값 불꽃랠리… 한국석유, 지정학적 리스크에 주가 15%대...",
+          "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430886",
+          "description": "20일 한국거래소에 따르면 이날 오후 3시19분 현재 석유류 판매 전문 기업인 한국석유는 중동 지역의 긴장 상태가 이어지며 유가 급등 수혜주로 지목된 영향으로 현재 15.60% 상승한 1만 8900원에 거래중이다. 고휘발성...",
+          "pubDate": "02-20 15:24",
+          "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=430886"
+        },
+        {
+          "title": "한국석유 주가 오후 들어 급등…20% 껑충",
+          "link": "https://www.cbci.co.kr/news/articleView.html?idxno=556736",
+          "description": "한국석유(004090) 주가가 20일 장에서 급등세를 보이고 있다. 한국석유는 20일 오후 2시 54분 현재 19760원에 거래되고 있다. 전일 종가보다 3410원(+20.86%) 올랐다. 장중 한때 2만원선을 넘기도 했다. 한국석유는 금일...",
+          "pubDate": "02-20 15:00",
+          "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=556736"
+        }
+      ]
+    },
+    {
+      "code": "066570",
+      "name": "LG전자",
+      "market": "KOSPI",
+      "current_price": 123600,
+      "change_rate": 2.06,
+      "signal": "매수",
+      "reason": "기술적으로 20일간 강한 상승 추세와 금일 2.06% 상승을 보였으며, RSI 67.28로 중립 구간입니다. 52주 고점 대비 59.85% 위치입니다. 수급은 외국인과 기관이 당일 및 5일 합계 모두 순매수 우위(5일 합계 외인 +11.5만, 기관 +70.7만)를 보이며 매수세가 강합니다. 밸류에이션은 PER 60.83, PBR 1.06으로 PBR은 저평가이나 PER은 고평가이며, ROE 4.99%로 다소 부진합니다. 피지컬 AI 로봇 및 전장 사업 재평가 기대감은 긍정적입니다.",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.8,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "LG전자 공매도 잔액 1000억 돌파…쇼트 vs 재평가 논쟁 속 한 달 새 34% 상승",
+          "GE·월풀 뒤쫓는 LG전자…연말 美 주방가전 빅3 오른다",
+          "휴머노이드 텀블링하는데…LG전자, 로봇주로 인정받을 수 있을까"
+        ],
+        "catalyst": "피지컬 AI, 로봇틱스, 전장 등 신사업 가치에 대한 재평가 기대감과 북미 주방가전 시장에서의 성장 기대감이 긍정적입니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "LG전자 공매도 잔액 1000억 돌파…‘쇼트 vs 재평가’ 논쟁 속 한 달 새...",
+          "link": "https://n.news.naver.com/mnews/article/011/0004591820?sid=101",
+          "description": "LG전자 주가는 올 들어 34.49% 상승한 가운데 이달에만 24.72% 오르며 가파른 상승 폭을 그리고 있다. 피지컬 인공지능(AI), 로보틱스, 전장 등 신사업 가치가 본격화할 것이라는 전망 속에 최근 한 달 동안 7개 증권사가...",
+          "pubDate": "02-20 18:11",
+          "originallink": "https://www.sedaily.com/article/20010786?ref=naver"
+        },
+        {
+          "title": "GE·월풀 뒤쫓는 LG전자…“연말 美 주방가전 빅3 오른다”",
+          "link": "https://n.news.naver.com/mnews/article/011/0004591582?sid=101",
+          "description": "독자 유형별 맞춤 뉴스 6개를 선별해 제공합니다 ■ 한국 기업의 북미 B2B 시장 공략 가속화: LG전자(066570)... 2%, 장부가 10조 원 이상) 매각을 추진하며 주가가 8.95% 급등했다. 한화솔루션(009830)은 우주태양광 관련...",
+          "pubDate": "02-20 06:58",
+          "originallink": "https://www.sedaily.com/article/20010454?ref=naver"
+        },
+        {
+          "title": "휴머노이드 텀블링하는데…LG전자, 로봇주로 인정받을 수 있을까",
+          "link": "https://ilyo.co.kr/?ac=article_view&entry_id=508437",
+          "description": "현대차가 휴머노이드 로봇 아틀라스를 공개하면서 주가가 큰 폭 뛰었던 것과 달리, LG전자는 1월 내내 최소한 주가 측면에서는 두각을 드러내지 못했다. #큰 그림은 그리고 있는데… LG전자는 자사의 클로이드가...",
+          "pubDate": "02-19 15:04",
+          "originallink": "https://ilyo.co.kr/?ac=article_view&entry_id=508437"
+        }
+      ]
+    },
+    {
+      "code": "028260",
+      "name": "삼성물산",
+      "market": "KOSPI",
+      "current_price": 331000,
+      "change_rate": 3.6,
+      "signal": "중립",
+      "reason": "기술적으로 20일간 횡보 추세에서 금일 3.6% 상승했으며, RSI 64.17로 중립입니다. 수급은 당일 외국인과 기관이 순매수 우위이나, 5일 합계는 외국인이 순매도(-9.6만), 기관이 순매수(+14.4만)로 혼조세입니다. 밸류에이션은 PER 26.95, PBR 1.74로 적정~고평가 수준이며, ROE 5.77%, OPM 8.26%로 양호한 펀더멘탈을 보입니다. 미국 SMR 기업 뉴스케일파워 지분 매각 소식은 투자 회수 관점에서는 긍정적이나, 신사업 확장 모멘텀을 둔화시킬 수 있어 중립적으로 판단합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "key_news": [
+          "삼성물산, '美 SMR 대장주' 뉴스케일파워 지분 360만주 매각",
+          "삼성물산, 3년간 최대 9.4조 투자…에너지·바이오 신사업 집중"
+        ],
+        "catalyst": "미국 SMR 기업 뉴스케일파워 지분 매각은 투자 회수 측면에서 긍정적이나, 에너지·바이오 신사업 투자 계획과는 별개의 이슈로 시장 영향은 중립적일 수 있습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "[영상] 삼성물산, '美 SMR 대장주' 뉴스케일파워 지분 360만주 매각",
+          "link": "https://www.theguru.co.kr/news/article.html?no=98272",
+          "description": "삼성물산이 미국 소형모듈원전(SMR) 기업 뉴스케일파워 지분을 절반 넘게 매각했습니다. 지난해 주가가 많이 오름에 따라 투자 회수에 나선 것으로 풀이됩니다. 자세한 내용은 더구루 홈페이지에서 만나보실 수...",
+          "pubDate": "02-21 08:02",
+          "originallink": "https://www.theguru.co.kr/news/article.html?no=98272"
+        },
+        {
+          "title": "[단독] 삼성물산, '美 SMR 대장주' 뉴스케일파워 지분 360만주 매각",
+          "link": "https://www.theguru.co.kr/news/article.html?no=98219",
+          "description": "작년 4분기 360만주 매도 주가 상승으로 투자 회수 삼성물산이 미국 소형모듈원전(SMR) 기업 뉴스케일파워 지분을 절반 넘게 매각했다. 지난해 주가가 많이 오름에 따라 투자 회수에 나선 것으로 풀이된다. 20일...",
+          "pubDate": "02-20 08:58",
+          "originallink": "https://www.theguru.co.kr/news/article.html?no=98219"
+        },
+        {
+          "title": "삼성물산, 3년간 최대 9.4조 투자…에너지·바이오 신사업 집중",
+          "link": "https://n.news.naver.com/mnews/article/011/0004591583?sid=101",
+          "description": "독자 유형별 맞춤 뉴스 6개를 선별해 제공합니다 ■ 삼성물산(028260), 에너지·바이오 중심 대규모 투자... 삼성SDI(006400),삼성디스플레이 지분 매각 추진에 주가 9% ‘들썩’ - 핵심 요약: 삼성SDI가 삼성디스플레이...",
+          "pubDate": "02-20 07:00",
+          "originallink": "https://www.sedaily.com/article/20010455?ref=naver"
+        }
+      ]
+    },
+    {
+      "code": "034220",
+      "name": "LG디스플레이",
+      "market": "KOSPI",
+      "current_price": 13310,
+      "change_rate": 8.39,
+      "signal": "매수",
+      "reason": "기술적으로 20일간 상승 추세와 금일 8.39% 급등, 거래량 274.35% 증가를 보였으며, RSI 66.32로 중립입니다. 수급은 외국인이 당일 및 5일 합계 강한 순매수(+5일 합계 +317.6만)를 보이며 매수세 우위입니다. 밸류에이션은 PBR 1.02로 적정하나, PER -2.45, ROE -4.89%로 적자 상태이며 부채비율 262.76%로 높은 편입니다. 피지컬 AI 분야 진출 기대감 및 1분기 호실적 전망은 긍정적인 재료입니다.",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "LG디스플레이, 피지컬AI 진출 기대에 8% 급등 마감",
+          "대신증권 'LG디스플레이, 1분기 서프라이즈… 피지컬AI가 두 번째 성장축'"
+        ],
+        "catalyst": "피지컬 AI 분야 진출 기대감과 함께 1분기 호실적 전망이 더해지며 새로운 성장 동력에 대한 기대감이 높아지고 있습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "LG디스플레이, 피지컬AI 진출 기대에 8% 급등 마감[핫스탁](종합)",
+          "link": "https://n.news.naver.com/mnews/article/003/0013778427?sid=101",
+          "description": "피지컬AI 분야 진출 기대감이 주가에 반영된 것으로 풀이된다. 이날 대신증권은 LG디스플레이에 대해 1분기 호실적 전망과 피지컬AI 분야 진출 기대감에 따라 투자의견 '매수', 목표주가 1만7000원을 유지했다. 박강호...",
+          "pubDate": "02-20 15:40",
+          "originallink": "https://www.newsis.com/view/NISX20260220_0003520379"
+        },
+        {
+          "title": "대신증권 \"LG디스플레이, 1분기 서프라이즈… 피지컬AI가 두 번째 성장축...",
+          "link": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3056068",
+          "description": "LG디스플레이,대신증권 대신증권은 20일 LG디스플레이의 목표주가 1만7000원을 유지했다. 사진=LG디스플레이 대신증권이 20일 LG디스플레이에 대한 투자의견 '매수(BUY)'와 목표주가 1만7000원을 유지했다. 박강호...",
+          "pubDate": "02-20 14:42",
+          "originallink": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3056068"
+        },
+        {
+          "title": "[특징주] LG디스플레이, 피지컬AI 확장 기대 '상승'",
+          "link": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1232104",
+          "description": "LG디스플레이 주가가 상승세를 보이고 있다. 20일 오전 12시 18분 기준 현재 전 거래일 대비 +8.39% 오른 1만 3,310원에 거래되고 있다. 거래량은 1,850만 9,932주다. 이는 LG디스플레이의 주력상품인 유기 발광 다이오드...",
+          "pubDate": "02-20 12:20",
+          "originallink": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1232104"
+        }
+      ]
+    },
+    {
+      "code": "105840",
+      "name": "우진",
+      "market": "KOSPI",
+      "current_price": 27300,
+      "change_rate": 3.41,
+      "signal": "중립",
+      "reason": "기술적으로 20일간 횡보 추세에서 금일 3.41% 상승했으며, RSI 63.49로 중립입니다. 52주 고점 대비 49.03% 위치입니다. 수급은 당일 외국인 순매도(-2.2만), 기관 순매수(+1.3만)로 혼조세이며, 5일 합계 외국인 순매수(+7.6만), 기관 순매수(+6.1만)로 긍정적입니다. 밸류에이션은 PER 40.75, PBR 2.84로 고평가되어 있지만, ROE 6.67%, OPM 11.86%, 부채비율 18.89%로 펀더멘탈은 안정적입니다. 국내 유일의 원전 계측기 독점 공급 지위는 긍정적인 재료이나, 우진아이엔에스의 실적 뉴스는 관련성이 떨어집니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "우진 주가, 급등세... 왜? (원전 계측기 독점 공급)"
+        ],
+        "catalyst": "국내 유일의 원전 계측기 독점 공급 지위가 부각되며 원전 테마에서 긍정적인 모멘텀을 받고 있습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "우진 주가, 급등세... 왜?",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1142561",
+          "description": "사진=우진 우진 주가가 급등 중이다. 20일 오전 10시 10분 KRX 기준 우진은 전 거래일 대비 8.05%(2125원) 상승한 2만8525원에 거래 중이다. 지엘리서치는 이날 우진에 대해 국내 유일의 원전 계측기 독점 공급 지위를...",
+          "pubDate": "02-20 10:14",
+          "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1142561"
+        },
+        {
+          "title": "우진아이엔에스, 지난해 영업이익 57억6583만원…흑자전환",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=631366",
+          "description": "종목 시세 정보에 따르면 우진아이엔에스의 주가는 2월 13일 15시 46분 기준 4075원이며, 전일 대비 420원(-9.34%) 하락했다. 우진아이엔에스는 2018년 9월 14일 코스피 시장에 상장된 건물설비 설치 공사업...",
+          "pubDate": "02-13 16:00",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=631366"
+        },
+        {
+          "title": "우진아이엔에스, 2025년 연간 영업이익 57억6700만원… 전년 대비 흑자전...",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=631342",
+          "description": "코스피 시장에 상장된 건물설비 설치 공사업 업체다. 종목 시세 정보에 따르면 우진아이엔에스의 주가는 2월 13일 15시 02분 기준 4050원이며, 전일 대비 445원(-9.90%) 하락했다. 영업(잠정)실적(공정공시)",
+          "pubDate": "02-13 15:16",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=631342"
+        }
+      ]
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "market": "KOSPI",
+      "current_price": 190100,
+      "change_rate": 0.05,
+      "signal": "매수",
+      "reason": "기술적으로 20일간 강한 상승 추세와 금일 0.05% 상승을 보였으나, RSI 77.08로 과매수 구간입니다. 수급은 당일 외국인 대량 순매도(-1083.9만)와 개인 대량 순매수(+632.0만), 기관 순매수(+342.7만)로 혼조세입니다. 5일 합계로는 기관 순매수 우위(+591.7만)입니다. 밸류에이션은 PER 38.40, PBR 3.28로 고평가되어 있지만, ROE 8.37%, OPM 9.81%, 부채비율 26.64%로 펀더멘탈은 우수합니다. 반도체 슈퍼사이클 및 갤럭시 S26 공개 기대감은 강력한 재료입니다.",
+      "key_factors": {
+        "price_trend": "강한 상승",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.7,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "‘20만전자’ 코앞 삼성전자…‘고점 vs 랠리’ 갈림길 언제쯤",
+          "삼성전자, '19만전자' 넘어 어디까지?[오늘저녁]",
+          "계좌에 삼성전자·하이닉스 없으면 ‘포모’ 극심… 코스피 시총의 40% 차지"
+        ],
+        "catalyst": "반도체 슈퍼사이클 도래와 갤럭시 S26 신제품 공개에 대한 기대감으로 강력한 시장 모멘텀을 받고 있습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "‘20만전자’ 코앞 삼성전자…‘고점 vs 랠리’ 갈림길 언제쯤",
+          "link": "https://n.news.naver.com/mnews/article/029/0003011776?sid=101",
+          "description": "삼성전자 주가가 20만원을 눈앞에 두고 있다. ‘반도체 슈퍼사이클’에 삼성전자의 올해 영업이익 전망치가 200조원까지 육박한 가운데, 시장에서는 삼성전자 주가가 어느 선까지 오를지 관심이 높아지고 있다....",
+          "pubDate": "02-21 05:00",
+          "originallink": "https://www.dt.co.kr/article/12047546?ref=naver"
+        },
+        {
+          "title": "삼성전자, '19만전자' 넘어 어디까지?[오늘저녁]",
+          "link": "https://n.news.naver.com/mnews/article/079/0004117313?sid=103",
+          "description": "삼성전자 주가가 최근 19만원선까지 올라섰습니다. 반도체 업황 개선 기대에 더해, 다음 주 공개될 갤럭시 S26이 상승세에 힘을 보탤지 주목되고 있습니다. 미국 샌프란시스코에서 열릴 신제품 공개를 앞두고 분위기는...",
+          "pubDate": "02-20 17:01",
+          "originallink": "https://www.nocutnews.co.kr/news/6474009?utm_source=naver&utm_medium=article&utm_campaign=20260220050031"
+        },
+        {
+          "title": "계좌에 삼성전자·하이닉스 없으면 ‘포모’ 극심… 코스피 시총의 40% ...",
+          "link": "https://n.news.naver.com/mnews/article/366/0001143415?sid=101",
+          "description": "‘반도체 수퍼 사이클(초호황)’ 효과에 삼성전자와 SK하이닉스 주가가 고공행진하면서, 두 기업의 코스피 시가총액 비중이 40%에 육박한 것이다. 20일 기준 삼성전자와 SK하이닉스의 시가총액은 각각 1125조원...",
+          "pubDate": "02-20 16:33",
+          "originallink": "https://biz.chosun.com/stock/stock_general/2026/02/20/QLA3C7U72BATNLWQX4H7NUO32A/?utm_source=naver&utm_medium=original&utm_campaign=biz"
+        }
+      ]
+    },
+    {
+      "code": "478340",
+      "name": "나라스페이스테크놀로지",
+      "market": "KOSDAQ",
+      "current_price": 54300,
+      "change_rate": -1.99,
+      "signal": "중립",
+      "reason": "기술적으로 20일간 횡보 추세에서 금일 -1.99% 하락했으며, RSI 57.48로 중립입니다. 수급은 당일 외국인/기관 순매도, 개인 순매수이며, 5일 합계 외국인 순매수(+8.5만), 기관 순매도(-2.5만)로 혼조세입니다. 밸류에이션은 PER -45.48, PBR -11.85, EPS -1194로 적자 상태이며, BPS도 음수로 펀더멘탈이 매우 취약합니다. 스페이스X의 xAI 인수 및 AI 위성 관련 재료는 긍정적이나, 기업의 실질적인 수익성 개선 여부는 불확실합니다.",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "key_news": [
+          "나라스페이스테크놀로지, 지난해 매출액 132억3586만5704원… 전년 대비 성장",
+          "나라스페이스테크놀로지, 스페이스X xAI 인수·AI 100만기 위성 관련주로 강세"
+        ],
+        "catalyst": "스페이스X의 AI 기업 xAI 인수 및 AI 연산 위성 구축 등 우주 위성 산업의 글로벌 환경 변화가 긍정적인 테마 모멘텀으로 작용하고 있습니다."
+      },
+      "analysis_time": "2026-02-21 09:00:00",
+      "data_source": "KIS_API",
+      "news": [
+        {
+          "title": "나라스페이스테크놀로지, 지난해 매출액 132억3586만5704원… 전년 대비...",
+          "link": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=631050",
+          "description": "종목 시세 정보에 따르면 나라스페이스테크놀로지의 주가는 2월 12일 16시 10분 기준 5만4000원이며, 전일 대비 2400원(+4.65%) 상승했다. 매출액또는손익구조30%(대규모법인은15%)이상변동",
+          "pubDate": "02-12 21:00",
+          "originallink": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=631050"
+        },
+        {
+          "title": "[특징주] 나라스페이스테크놀로지, 스페이스X xAI 인수·AI 100만기 위성...",
+          "link": "https://www.financialpost.co.kr/news/articleView.html?idxno=246450",
+          "description": "우주 위성 산업을 둘러싼 글로벌 환경 변화가 본격화되면서 나라스페이스테크놀로지의 주가가 강세를 보이고 있다. 일론 머스크가 이끄는 SpaceX가 인공지능(AI) 기업 xAI를 인수했다고 공식 발표하고, AI 연산을 위한...",
+          "pubDate": "02-03 09:22",
+          "originallink": "https://www.financialpost.co.kr/news/articleView.html?idxno=246450"
+        }
+      ]
+    }
+  ]
+}
