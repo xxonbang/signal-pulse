@@ -322,11 +322,11 @@ jobs:
           news_collected = len([v for v in naver_news.values() if v])
           print(f'뉴스 수집 완료: {news_collected}/{len(stocks_for_news)}개 종목')
 
-          # Gemini 배치 분석 (20개씩, 뉴스 포함 + 미수집 종목은 google_search 보완)
-          print('\\nGemini AI 배치 분석 시작... (20개씩 분할 처리)')
+          # Gemini 배치 분석 (10개씩, 뉴스 포함)
+          print('\\nGemini AI 배치 분석 시작... (10개씩 분할 처리)')
           analysis_results = analyze_kis_data_batch(
               gemini_data,
-              batch_size=20,
+              batch_size=10,
               news_data=naver_news if naver_news else None,
           )
           print(f'\\n전체 분석 완료: {len(analysis_results)}개 종목')
