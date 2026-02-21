@@ -1,6 +1,6 @@
 {
   "date": "2026-02-21",
-  "collected_at": "2026-02-21T01:14:14.793176+09:00",
+  "collected_at": "2026-02-21T09:20:19.531576+09:00",
   "categories": {
     "vision": [
       {
@@ -38,20 +38,50 @@
     "combined": []
   },
   "all_prices": {
+    "012450": {
+      "open_price": 1224000,
+      "close_price": 1242000,
+      "high_price": 1258000
+    },
+    "298040": {
+      "open_price": 2450000,
+      "close_price": 2633000,
+      "high_price": 2657000
+    },
+    "272210": {
+      "open_price": 120300,
+      "close_price": 116500,
+      "high_price": 121800
+    },
     "047050": {
       "open_price": 69800,
       "close_price": 75300,
       "high_price": 78600
+    },
+    "006910": {
+      "open_price": 9870,
+      "close_price": 12680,
+      "high_price": 12680
     },
     "032820": {
       "open_price": 13160,
       "close_price": 14850,
       "high_price": 16180
     },
-    "012450": {
-      "open_price": 1224000,
-      "close_price": 1242000,
-      "high_price": 1258000
+    "267260": {
+      "open_price": 967000,
+      "close_price": 1011000,
+      "high_price": 1012000
+    },
+    "024060": {
+      "open_price": 16820,
+      "close_price": 19040,
+      "high_price": 19620
+    },
+    "130660": {
+      "open_price": 22800,
+      "close_price": 25550,
+      "high_price": 27800
     }
   }
 }
