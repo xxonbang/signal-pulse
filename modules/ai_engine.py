@@ -522,13 +522,12 @@ KIS_ANALYSIS_PROMPT = """당신은 20년 경력의 대한민국 주식 시장 �
 - 부채비율: 100% 미만 안정적, 200% 초과 주의
 
 ### 2-4. 재료 분석 (가중치 15%)
-아래 제공된 뉴스 데이터를 우선 활용하여 각 종목의 재료를 분석하세요.
+아래 제공된 뉴스 데이터를 활용하여 각 종목의 재료를 분석하세요.
 - 호재/악재 여부 및 시장 심리 판단
 - 실적, M&A, 신사업, 규제, 소송 등 주요 재료 파악
 - 테마 및 섹터 모멘텀 평가
 - 뉴스 시의성: 오늘 날짜 기준 1주일 이내를 '최근'으로 간주하세요.
-- 뉴스가 없는 종목만 google_search를 사용하여 "{{종목명}} 주식 뉴스"로 검색하여 보완하세요.
-- google_search로도 뉴스를 찾지 못한 종목: sentiment="중립", catalyst="관련 뉴스 없음"으로 설정하세요.
+- 뉴스가 없는 종목: sentiment="중립", catalyst="관련 뉴스 없음"으로 설정하세요.
 
 ## 3. 계산 지표 활용
 다음 지표들을 직접 계산하여 분석에 반영하세요:
@@ -608,7 +607,7 @@ KIS_ANALYSIS_PROMPT = """당신은 20년 경력의 대한민국 주식 시장 �
 2. 종목과 해당 종목에 대한 분석 결과가 정확히 매칭되도록 주의하세요.
 3. 입력 데이터의 종목 순서와 출력 결과의 순서가 동일해야 합니다.
 4. 뉴스 데이터가 제공된 종목은 해당 데이터를 기반으로 news_analysis를 작성하세요.
-5. 뉴스 데이터가 없는 종목만 google_search로 보완하세요. 뉴스가 이미 제공된 종목은 google_search를 사용하지 마세요.
+5. 뉴스가 없는 종목은 sentiment="중립", catalyst="관련 뉴스 없음"으로 설정하세요.
 """
 
 
@@ -667,7 +666,7 @@ def analyze_kis_data(
     if batch_news:
         news_section = "```json\n" + json.dumps(batch_news, ensure_ascii=False, indent=2) + "\n```"
     else:
-        news_section = "뉴스 데이터가 제공되지 않았습니다. 모든 종목에 대해 google_search를 사용하여 \"{{종목명}} 주식 뉴스\"로 검색하세요."
+        news_section = "뉴스 데이터가 제공되지 않았습니다. 뉴스가 없는 종목은 sentiment=\"중립\", catalyst=\"관련 뉴스 없음\"으로 설정하세요."
 
     # 프롬프트 생성
     today = datetime.now(KST).strftime("%Y-%m-%d")
@@ -709,7 +708,7 @@ def analyze_kis_data(
                 ],
                 config={
                     "max_output_tokens": 65536,  # 최대 출력 토큰 (기본값 8K → 64K)
-                    "tools": [{"google_search": {}}],  # 뉴스 없는 종목 보완용
+                    # google_search 비활성화: 도구 호출이 출력 토큰을 소모하여 결과 누락 유발
                 }
             )
 
