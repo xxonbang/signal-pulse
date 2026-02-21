@@ -1,6 +1,6 @@
 {
   "date": "2026-02-21",
-  "total_stocks": 99,
+  "total_stocks": 76,
   "results": [
     {
       "name": "SK하이닉스",
@@ -13,7 +13,7 @@
       "key_factors": {
         "price_trend": "상승",
         "volume_signal": "급증",
-        "foreign_flow": "매수우위",
+        "foreign_flow": "매도우위",
         "institution_flow": "매수우위",
         "valuation": "고평가"
       },
@@ -119,8 +119,8 @@
       "signal": "중립",
       "reason": "현재가 103,500원으로 전일대비 하락(-2.59%)했으며, 고저 대비 위치가 48.06%로 중간 수준이다. 외국인(+2,099,012주)은 순매수 중이나, 기관(-2,686,467주)은 강한 순매도를 보여 수급이 엇갈린다. 최근 뉴스에서 주가 급등 기여도가 언급된 점 외에 뚜렷한 재료는 보이지 않는다.",
       "key_factors": {
-        "price_trend": "횡보",
-        "volume_signal": "보통",
+        "price_trend": "상승",
+        "volume_signal": "급증",
         "foreign_flow": "매수우위",
         "institution_flow": "매도우위",
         "valuation": "적정"
@@ -128,7 +128,7 @@
       "risk_level": "중간",
       "confidence": 0.45,
       "news_analysis": {
-        "sentiment": "중립",
+        "sentiment": "긍정",
         "key_news": [
           "SK하이닉스가 코스피 상승을 주도한 가운데 두산에너빌리티의 기여도 언급"
         ],
@@ -273,7 +273,7 @@
       "signal": "중립",
       "reason": "현재가 135,100원으로 소폭 상승했으나, 고저 대비 위치가 3.01%로 저가에 가깝다. 최근 외국인은 순매수(+1,600,000주)를 보인 반면 기관은 순매도(-1,692,601주)를 보여 수급 방향성이 불분명하다.",
       "key_factors": {
-        "price_trend": "횡보",
+        "price_trend": "상승",
         "volume_signal": "보통",
         "foreign_flow": "매수우위",
         "institution_flow": "매도우위",
@@ -318,7 +318,7 @@
       "risk_level": "낮음",
       "confidence": 0.4,
       "news_analysis": {
-        "sentiment": "중립",
+        "sentiment": "긍정",
         "key_news": [
           "SK증권, ELS 상품 불완전판매 의혹 관련 분쟁조정 소식",
           "SK증권, 사모펀드 운용 부문 강화 및 성장 모색"
@@ -406,7 +406,7 @@
       "name": "한화에어로스페이스",
       "code": "012450",
       "market": "코스피",
-      "current_price": 1242000,
+      "current_price": 1251000,
       "change_rate": 8.88,
       "signal": "매수",
       "reason": "현재가 1,242,000원으로 전일대비 크게 상승(+8.88%)했으며, 고저 대비 위치가 84.72%로 고가에 가깝다. 외국인(+885,000주)은 순매수, 기관(-116,065주)은 순매도로 수급이 다소 엇갈리지만, 가격 모멘텀이 매우 강하며 폴란드 방산 수출 관련 긍정적 뉴스가 확인된다.",
@@ -2007,7 +2007,7 @@
         "volume_signal": "증가",
         "foreign_flow": "매수우위",
         "institution_flow": "매수우위",
-        "valuation": "적정"
+        "valuation": "저평가"
       },
       "risk_level": "중간",
       "confidence": 0.9,
@@ -2058,7 +2058,7 @@
         "volume_signal": "증가",
         "foreign_flow": "매수우위",
         "institution_flow": "매수우위",
-        "valuation": "고평가"
+        "valuation": "적정"
       },
       "risk_level": "중간",
       "confidence": 1.0,
@@ -2107,12 +2107,12 @@
       "reason": "HD한국조선해양은 조선업 수주 릴레이와 미국 투자 환경 조성 기대로 강세를 보이고 있으며, 현재 주가는 일중 최고가에 도달했습니다. 외국인과 기관이 동반 순매수하며 수급 또한 매우 긍정적인 상황입니다.",
       "key_factors": {
         "price_trend": "상승",
-        "volume_signal": "증가",
+        "volume_signal": "급증",
         "foreign_flow": "매수우위",
         "institution_flow": "매수우위",
         "valuation": "저평가"
       },
-      "risk_level": "낮음",
+      "risk_level": "중간",
       "confidence": 0.9,
       "news_analysis": {
         "sentiment": "긍정",
@@ -2204,7 +2204,7 @@
         "valuation": "저평가"
       },
       "risk_level": "낮음",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "news_analysis": {
         "sentiment": "긍정",
         "key_news": [
@@ -2280,12 +2280,12 @@
       "reason": "하나금융지주는 코스피 최고치 경신과 고배당 ETF 자금 유입 등 긍정적인 시장 환경 속에서 주가가 일중 최고가에 도달했습니다. 외국인과 기관의 강한 순매수가 이어지고 있으며, 우수한 서비스 평가 및 주주환원 기대감 또한 주가에 긍정적인 영향을 미치고 있습니다.",
       "key_factors": {
         "price_trend": "상승",
-        "volume_signal": "보통",
+        "volume_signal": "급증",
         "foreign_flow": "매수우위",
         "institution_flow": "매수우위",
         "valuation": "저평가"
       },
-      "risk_level": "낮음",
+      "risk_level": "중간",
       "confidence": 0.9,
       "news_analysis": {
         "sentiment": "긍정",
@@ -2322,10 +2322,10 @@
         "institution_flow": "매수우위",
         "valuation": "적정"
       },
-      "risk_level": "중간",
-      "confidence": 0.7,
+      "risk_level": "높음",
+      "confidence": 0.9,
       "news_analysis": {
-        "sentiment": "긍정",
+        "sentiment": "부정",
         "key_news": [
           "[특징주] 미국-이란 공격 임박설에 정유주↑⋯SK이노베이션 6%대 상승",
           "SK이노베이션, 3.3兆 초대형 베트남 LNG발전 사업자 선정",
@@ -2365,7 +2365,7 @@
         "volume_signal": "보통",
         "foreign_flow": "중립",
         "institution_flow": "매수우위",
-        "valuation": "적정"
+        "valuation": "저평가"
       },
       "risk_level": "중간",
       "confidence": 0.8,
@@ -2416,13 +2416,13 @@
         "price_trend": "상승",
         "volume_signal": "증가",
         "foreign_flow": "매도우위",
-        "institution_flow": "매수우위",
-        "valuation": "저평가"
+        "institution_flow": "매도우위",
+        "valuation": "적정"
       },
       "risk_level": "중간",
       "confidence": 0.8,
       "news_analysis": {
-        "sentiment": "긍정",
+        "sentiment": "부정",
         "key_news": [
           "삼성증권 주가, 2월 19일 장중 114100원 12.97% 상승",
           "금융지주 시총 추월…증권주 '뜨거운 계절'",
@@ -2455,8 +2455,8 @@
         "price_trend": "상승",
         "volume_signal": "급증",
         "foreign_flow": "매수우위",
-        "institution_flow": "매수우위",
-        "valuation": "고평가"
+        "institution_flow": "매도우위",
+        "valuation": "적정"
       },
       "risk_level": "높음",
       "confidence": 0.8,
@@ -2513,7 +2513,7 @@
       "risk_level": "높음",
       "confidence": 0.8,
       "news_analysis": {
-        "sentiment": "긍정",
+        "sentiment": "부정",
         "key_news": [
           "보성파워텍 주가, 강세... 한미 원전 협력 기대감",
           "[특징주] 보성파워텍, AI 전력 사용량 급등 전망에 주가↑",
@@ -2565,7 +2565,7 @@
       "risk_level": "높음",
       "confidence": 0.6,
       "news_analysis": {
-        "sentiment": "긍정",
+        "sentiment": "중립",
         "key_news": [
           "흥구석유, +16.33% 상승폭 확대",
           "[특징주] 미국-이란 공격 임박설에 정유주↑⋯SK이노베이션 6%대 상승",
@@ -3349,11 +3349,11 @@
         "price_trend": "상승",
         "volume_signal": "보통",
         "foreign_flow": "매도우위",
-        "institution_flow": "매수우위",
+        "institution_flow": "매도우위",
         "valuation": "고평가"
       },
       "risk_level": "높음",
-      "confidence": 0.7,
+      "confidence": 0.4,
       "news_analysis": {
         "sentiment": "긍정",
         "key_news": [
@@ -3557,7 +3557,7 @@
       "signal": "매수",
       "reason": "DSC인베스트먼트는 벤처투자 시장의 활황과 '창투사 테마'의 상승세에 힘입어 긍정적인 시장 분위기를 형성하고 있습니다. 외국인의 순매수가 확인되었으며, 유니콘 기업 등장 등 벤처투자 열기가 고조되고 있어 매수 시그널로 판단합니다.",
       "key_factors": {
-        "price_trend": "상승",
+        "price_trend": "횡보",
         "volume_signal": "보통",
         "foreign_flow": "매수우위",
         "institution_flow": "매도우위",
@@ -3566,7 +3566,7 @@
       "risk_level": "중간",
       "confidence": 0.8,
       "news_analysis": {
-        "sentiment": "긍정",
+        "sentiment": "중립",
         "key_news": [
           "특징주, DSC인베스트먼트-창투사 테마 상승세에 5.83% ↑",
           "[스타 주식시세] 02월 20일 오전 09시 19분 DSC인베스트먼트(241520) 주가",
