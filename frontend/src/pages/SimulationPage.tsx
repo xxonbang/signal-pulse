@@ -1,4 +1,4 @@
-import { useEffect, useRef, useMemo } from 'react';
+import { useEffect, useRef, useMemo, useState } from 'react';
 import { useSimulationIndex, useSimulationMultipleDates } from '@/hooks/useSimulationData';
 import { useSimulationStore } from '@/store/simulationStore';
 import { useAuthStore } from '@/store/authStore';
@@ -7,7 +7,9 @@ import { SimulationSummary, DateSelector, CategorySection, CollectionTrigger, An
 import { useAnalysisTimeOverride } from '@/hooks/useAnalysisTimeOverride';
 import { LoadingSpinner, EmptyState } from '@/components/common';
 import { cn } from '@/lib/utils';
-import type { SimulationData, SimulationCategory } from '@/services/types';
+import { matchStock } from '@/lib/koreanSearch';
+import type { AvailableTime } from '@/hooks/useAnalysisTimeOverride';
+import type { SimulationData, SimulationStock, SimulationCategory } from '@/services/types';
 
 export function SimulationPage() {
   const { data: index, isLoading: indexLoading } = useSimulationIndex();
@@ -100,28 +102,14 @@ export function SimulationPage() {
 
       {/* 상세보기 */}
       {activeDetailDate && detailData && (
-        <div className="space-y-3">
-          <h3 className="text-sm font-semibold text-text-secondary flex items-center gap-2">
-            <span className="w-2 h-2 bg-accent-primary rounded-full" />
-            {activeDetailDate} 상세
-          </h3>
-
-          <AnalysisTimeSelector
-            availableTimes={availableTimes}
-            selectedTime={selectedTime}
-            onSelect={(time) => setAnalysisTime(activeDetailDate, time)}
-            isLoading={timeOverrideLoading}
-          />
-
-          {(['vision', 'kis', 'combined'] as SimulationCategory[]).map((cat) => (
-            <CategorySection
-              key={cat}
-              category={cat}
-              stocks={effectiveDataByDate[activeDetailDate]?.categories[cat] || []}
-              date={activeDetailDate}
-            />
-          ))}
-        </div>
+        <DetailSection
+          date={activeDetailDate}
+          data={effectiveDataByDate[activeDetailDate]}
+          availableTimes={availableTimes}
+          selectedTime={selectedTime}
+          onSelectTime={(time) => setAnalysisTime(activeDetailDate, time)}
+          isTimeLoading={timeOverrideLoading}
+        />
       )}
 
       {activeDetailDate && !detailData && !isAnyLoading && (
@@ -141,16 +129,16 @@ function PageHeader({ allDates }: { allDates?: string[] }) {
     : '적극매수 시그널 종목의 시가 매수 → 장중 최고가 매도 수익률';
 
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
       <div>
         <h2 className="text-lg md:text-xl font-bold">모의투자 시뮬레이션</h2>
         <p className="text-xs text-text-muted mt-0.5">{desc}</p>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 flex-shrink-0">
         {allDates && (
           <button
             onClick={() => resetAll(allDates)}
-            className="px-3 py-1.5 text-xs font-medium text-text-muted hover:text-text-secondary bg-bg-secondary hover:bg-bg-primary border border-border rounded-lg transition-all"
+            className="px-3 py-1.5 text-xs font-medium text-text-muted hover:text-text-secondary bg-bg-secondary hover:bg-bg-primary border border-border rounded-lg transition-all whitespace-nowrap"
           >
             초기화
           </button>
@@ -185,6 +173,106 @@ function SimulationModeTabs() {
           <span className="hidden sm:inline">{tab.label}</span>
           <span className="sm:hidden">{tab.shortLabel}</span>
         </button>
+      ))}
+    </div>
+  );
+}
+
+interface DetailSectionProps {
+  date: string;
+  data: SimulationData | undefined;
+  availableTimes: AvailableTime[];
+  selectedTime: string | null;
+  onSelectTime: (time: string | null) => void;
+  isTimeLoading: boolean;
+}
+
+function DetailSection({ date, data, availableTimes, selectedTime, onSelectTime, isTimeLoading }: DetailSectionProps) {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  // 검색 필터링된 종목 (카테고리별)
+  const filteredCategories = useMemo(() => {
+    const cats = data?.categories;
+    if (!cats) return { vision: [], kis: [], combined: [] };
+
+    const filter = (stocks: SimulationStock[]) =>
+      searchQuery
+        ? stocks.filter((s) => matchStock(searchQuery, s.name, s.code))
+        : stocks;
+
+    return {
+      vision: filter(cats.vision || []),
+      kis: filter(cats.kis || []),
+      combined: filter(cats.combined || []),
+    };
+  }, [data, searchQuery]);
+
+  const totalFiltered = filteredCategories.vision.length + filteredCategories.kis.length + filteredCategories.combined.length;
+  const totalAll = (data?.categories.vision?.length || 0) + (data?.categories.kis?.length || 0) + (data?.categories.combined?.length || 0);
+  const isFiltering = searchQuery.length > 0;
+
+  return (
+    <div className="space-y-3">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <h3 className="text-sm font-semibold text-text-secondary flex items-center gap-2">
+          <span className="w-2 h-2 bg-accent-primary rounded-full" />
+          {date} 상세
+        </h3>
+
+        {/* 종목 검색 */}
+        <div className="relative">
+          <svg
+            className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-text-muted pointer-events-none"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="종목 검색 (초성 가능)"
+            className="w-full sm:w-48 pl-8 pr-8 py-1.5 text-xs
+              bg-bg-secondary border border-border rounded-lg
+              placeholder:text-text-muted/50
+              focus:outline-none focus:border-accent-primary/50 focus:ring-1 focus:ring-accent-primary/20
+              transition-all"
+          />
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery('')}
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-text-muted hover:text-text-secondary transition-colors"
+            >
+              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          )}
+        </div>
+      </div>
+
+      {isFiltering && (
+        <p className="text-[0.65rem] text-text-muted">
+          검색 결과: {totalFiltered}/{totalAll}개 종목
+        </p>
+      )}
+
+      <AnalysisTimeSelector
+        availableTimes={availableTimes}
+        selectedTime={selectedTime}
+        onSelect={onSelectTime}
+        isLoading={isTimeLoading}
+      />
+
+      {(['vision', 'kis', 'combined'] as SimulationCategory[]).map((cat) => (
+        <CategorySection
+          key={cat}
+          category={cat}
+          stocks={filteredCategories[cat]}
+          date={date}
+        />
       ))}
     </div>
   );
