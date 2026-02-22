@@ -16,6 +16,7 @@ from google.genai.errors import ClientError, ServerError
 KST = timezone(timedelta(hours=9))
 
 from config.settings import GEMINI_API_KEYS, GEMINI_MODEL, GEMINI_MODEL_LITE, SIGNAL_CATEGORIES
+from modules.key_monitor import record_alert
 from modules.utils import parse_json_response, resize_image
 
 
@@ -57,6 +58,7 @@ def get_next_api_key() -> tuple[str, int] | None:
 
     if not available:
         print("[ERROR] 모든 키 소진 (daily_exhausted)")
+        record_alert("GEMINI", "", "quota_exhausted", "모든 키 소진 (daily_exhausted)")
         return None
 
     # 여유 프로젝트 우선 (request_count 가장 낮은 키)
@@ -92,7 +94,7 @@ VISION_ANALYSIS_PROMPT = """당신은 20년 경력의 대한민국 주식 시장
 아래에 {count}개의 네이버 증권 종목 상세 페이지 스크린샷이 첨부되어 있습니다.
 각 이미지에 대해 다음 작업을 수행하세요:
 
-## 1. 데이터 추출
+{macro_context}## 1. 데이터 추출
 이미지에서 다음 항목들을 추출하세요:
 - 기본정보: 종목명, 종목코드, 시장구분(코스피/코스닥)
 - 가격정보: 현재가, 전일대비, 등락률, 전일, 시가, 고가, 저가
@@ -202,7 +204,7 @@ VISION_ANALYSIS_PROMPT = """당신은 20년 경력의 대한민국 주식 시장
 """
 
 
-def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retries: int = min(2 * len(GEMINI_API_KEYS), 10)) -> list[dict]:
+def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retries: int = min(2 * len(GEMINI_API_KEYS), 10), macro_context: str = "") -> list[dict]:
     """모든 종목 이미지를 한 번에 배치 분석 (API 1회 호출)"""
     print("\n=== Phase 3: AI 배치 분석 (Vision) ===\n")
     print(f"[INFO] 사용 가능한 API 키: {len(GEMINI_API_KEYS)}개")
@@ -254,7 +256,8 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
     prompt = VISION_ANALYSIS_PROMPT.format(
         count=len(valid_stocks),
         stock_list=stock_list_str,
-        today=today
+        today=today,
+        macro_context=macro_context,
     )
 
     # API 호출 시도
@@ -262,6 +265,7 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
         key_info = get_next_api_key()
         if not key_info:
             print("[ERROR] 사용 가능한 API 키가 없습니다.")
+            record_alert("GEMINI", "", "no_available_key", "Vision 분석: 사용 가능한 API 키 없음")
             return []
 
         api_key, key_index = key_info
@@ -464,6 +468,7 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
             elif e.code in (400, 401, 403):
                 _key_states[key_index].daily_exhausted = True
                 print(f"  [KEY #{key_index + 1}] 영구 제외 (HTTP {e.code})")
+                record_alert("GEMINI", f"KEY_{key_index+1}", "auth_error", f"Vision: HTTP {e.code} 키 영구 제외")
                 continue
             elif e.code == 404:
                 print("[ERROR] 모델을 찾을 수 없습니다.")
@@ -483,13 +488,14 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
             time.sleep(backoff)
 
     print(f"[ERROR] {max_retries}회 시도 후 실패 (모든 API 키 쿼터 소진)")
+    record_alert("GEMINI", "", "all_retries_failed", f"Vision: {max_retries}회 시도 후 실패")
     return []
 
 
 # 하위 호환성을 위한 별칭
-def analyze_stocks(scrape_results: list[dict], capture_dir: Path) -> list[dict]:
+def analyze_stocks(scrape_results: list[dict], capture_dir: Path, macro_context: str = "") -> list[dict]:
     """analyze_stocks_batch의 별칭 (하위 호환성)"""
-    return analyze_stocks_batch(scrape_results, capture_dir)
+    return analyze_stocks_batch(scrape_results, capture_dir, macro_context=macro_context)
 
 
 # KIS API 데이터 분석에 사용할 필수 필드
@@ -536,7 +542,7 @@ KIS_ANALYSIS_PROMPT = """당신은 20년 경력의 대한민국 주식 시장 �
 
 아래에 한국투자증권 OpenAPI에서 수집한 {count}개 종목의 실시간 데이터가 JSON 형식으로 제공됩니다.
 
-## 1. 데이터 설명
+{macro_context}## 1. 데이터 설명
 각 종목에는 다음 정보가 포함되어 있습니다:
 - **code**: 종목코드
 - **name**: 종목명
@@ -672,6 +678,7 @@ def analyze_kis_data(
     stocks_data: dict,
     stock_codes: list[str] | None = None,
     max_retries: int = min(2 * len(GEMINI_API_KEYS), 10),
+    macro_context: str = "",
 ) -> list[dict]:
     """KIS API 데이터 기반 종목 분석
 
@@ -716,7 +723,8 @@ def analyze_kis_data(
     prompt = KIS_ANALYSIS_PROMPT.format(
         count=len(reduced_stocks),
         stock_data=reduced_json,
-        today=today
+        today=today,
+        macro_context=macro_context,
     )
     print(f"[INFO] 프롬프트 길이: {len(prompt):,}자\n")
 
@@ -725,6 +733,7 @@ def analyze_kis_data(
         key_info = get_next_api_key()
         if not key_info:
             print("[ERROR] 사용 가능한 API 키가 없습니다.")
+            record_alert("GEMINI", "", "no_available_key", "KIS 분석: 사용 가능한 API 키 없음")
             return []
 
         api_key, key_index = key_info
@@ -864,6 +873,7 @@ def analyze_kis_data(
             elif e.code in (400, 401, 403):
                 _key_states[key_index].daily_exhausted = True
                 print(f"  [KEY #{key_index + 1}] 영구 제외 (HTTP {e.code})")
+                record_alert("GEMINI", f"KEY_{key_index+1}", "auth_error", f"KIS 분석: HTTP {e.code} 키 영구 제외")
                 continue
             elif e.code == 404:
                 print("[ERROR] 모델을 찾을 수 없습니다.")
@@ -883,6 +893,7 @@ def analyze_kis_data(
             time.sleep(backoff)
 
     print(f"[ERROR] {max_retries}회 시도 후 실패")
+    record_alert("GEMINI", "", "all_retries_failed", f"KIS 분석: {max_retries}회 시도 후 실패")
     return []
 
 
@@ -890,6 +901,7 @@ def analyze_kis_data_batch(
     stocks_data: dict,
     batch_size: int = 10,
     max_retries: int = min(2 * len(GEMINI_API_KEYS), 10),
+    macro_context: str = "",
 ) -> list[dict]:
     """KIS API 데이터 배치 분석 (대량 종목용)
 
@@ -920,6 +932,7 @@ def analyze_kis_data_batch(
             stocks_data,
             stock_codes=batch_codes,
             max_retries=max_retries,
+            macro_context=macro_context,
         )
 
         if results:
@@ -952,6 +965,7 @@ def analyze_kis_data_batch(
                 stocks_data,
                 stock_codes=retry_codes,
                 max_retries=max_retries,
+                macro_context=macro_context,
             )
 
             if results:

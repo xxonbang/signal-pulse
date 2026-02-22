@@ -12,6 +12,7 @@ from config.settings import CAPTURES_DIR, OUTPUT_DIR, ROOT_DIR
 from modules.scraper import run_scraper
 from modules.ai_engine import analyze_stocks_batch
 from modules.utils import get_today_capture_dir, save_json, generate_markdown_report
+from modules.key_monitor import flush_alerts
 from modules.naver_news import collect_news_for_stocks
 
 # KST 시간대 (UTC+9)
@@ -148,6 +149,15 @@ async def main():
 
     scrape_results = await run_scraper(capture_dir=capture_dir)
 
+    # Phase 2.5: 거시 환경 수집
+    print("\n=== Phase 2.5: 거시 환경 수집 ===\n")
+    from modules.macro_context import build_macro_context
+    macro_context = build_macro_context(results_dir)
+    if macro_context:
+        print(f"거시 환경 데이터 수집 완료 ({len(macro_context)}자)")
+    else:
+        print("거시 환경 데이터 없음 (기존 동작 유지)")
+
     # Phase 3: AI 배치 분석 (VISION_BATCH_SIZE개씩 나눠서 처리)
     print(f"\n=== Phase 3: AI 배치 분석 ({VISION_BATCH_SIZE}개씩 처리) ===\n")
 
@@ -162,7 +172,7 @@ async def main():
 
         print(f"\n--- Vision 배치 {batch_num}/{total_batches} ({len(batch_stocks)}개 종목) ---")
 
-        batch_results = analyze_stocks_batch(batch_stocks, capture_dir)
+        batch_results = analyze_stocks_batch(batch_stocks, capture_dir, macro_context=macro_context)
 
         if batch_results:
             all_results.extend(batch_results)
@@ -193,7 +203,7 @@ async def main():
 
             print(f"\n--- 보충 배치 {retry_num}/{supplement_batches} ({len(batch)}개) ---")
 
-            results = analyze_stocks_batch(batch, capture_dir)
+            results = analyze_stocks_batch(batch, capture_dir, macro_context=macro_context)
             if results:
                 all_results.extend(results)
                 print(f"[보충 {retry_num}] {len(results)}개 복구")
@@ -273,6 +283,9 @@ async def main():
 
     for signal, count in sorted(signal_count.items()):
         print(f"  {signal}: {count}개")
+
+    # 키 에러 알림 처리
+    flush_alerts(results_dir)
 
     print("\n" + "=" * 60)
     print("  분석 완료!")

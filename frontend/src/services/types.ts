@@ -257,6 +257,20 @@ export interface MarketStatus {
   data_days?: number;
 }
 
+// API 키 에러 알림 타입
+export interface KeyAlert {
+  timestamp: string;
+  source: string;
+  key_name: string;
+  error_type: string;
+  message: string;
+}
+
+export interface KeyAlertData {
+  updated_at: string;
+  alerts: KeyAlert[];
+}
+
 // 모의투자 시뮬레이션 타입
 export interface SimulationStock {
   code: string;

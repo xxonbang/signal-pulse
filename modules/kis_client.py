@@ -30,6 +30,7 @@ from config.settings import (
     KIS_BASE_URL,
     ROOT_DIR,
 )
+from modules.key_monitor import record_alert
 from modules.supabase_client import (
     get_credential_manager,
     get_kis_credentials_with_fallback,
@@ -238,6 +239,7 @@ class KISClient:
         if not self._can_refresh_token():
             remaining = timedelta(hours=23) - (datetime.now(timezone.utc) - self._token_issued_at)
             hours = remaining.total_seconds() / 3600
+            record_alert("KIS", "", "token_refresh_limit", f"토큰 재발급 1일 제한 초과 (잔여 {hours:.1f}시간)")
             raise TokenRefreshLimitError(
                 f"토큰 재발급은 1일 1회로 제한됩니다. "
                 f"약 {hours:.1f}시간 후에 다시 시도하세요. "
@@ -270,6 +272,7 @@ class KISClient:
             print(f"       2. KIS Developers에서 API 서비스 미신청 또는 만료 (1년 유효)")
             print(f"       3. 모의투자 키를 실전투자 URL에 사용 중")
             print(f"[해결] KIS Developers (https://apiportal.koreainvestment.com)에서 확인하세요")
+            record_alert("KIS", "", "auth_error", "토큰 발급 403 Forbidden")
 
         response.raise_for_status()
 
@@ -336,6 +339,7 @@ class KISClient:
             # 401 Unauthorized: 토큰 만료
             if response.status_code == 401 and _retry:
                 print(f"[KIS] 토큰이 유효하지 않습니다. 재발급 시도...")
+                record_alert("KIS", "", "token_expired", "API 호출 401 Unauthorized")
                 self._refresh_token()
                 # 재시도 (재귀 방지를 위해 _retry=False)
                 return self.request(method, path, tr_id, params, body, tr_cont, _retry=False)

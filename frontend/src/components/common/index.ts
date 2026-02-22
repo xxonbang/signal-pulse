@@ -11,3 +11,4 @@ export { KosdaqStatusBanner } from './KosdaqStatusBanner';
 export { TipText } from './TipText';
 export { ViewingHistoryBanner } from './ViewingHistoryBanner';
 export { FilterIndicator } from './FilterIndicator';
+export { KeyAlertBanner } from './KeyAlertBanner';

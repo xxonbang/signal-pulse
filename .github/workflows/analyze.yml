@@ -157,6 +157,8 @@ jobs:
           GEMINI_API_KEY_05: ${{ secrets.GEMINI_API_KEY_05 }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          ALERT_SMTP_USER: ${{ secrets.ALERT_SMTP_USER }}
+          ALERT_SMTP_PASSWORD: ${{ secrets.ALERT_SMTP_PASSWORD }}
         run: |
           python main.py
           echo "analysis_success=true" >> $GITHUB_OUTPUT
@@ -261,6 +263,24 @@ jobs:
             echo "::warning::KIS 데이터 수집 실패"
           fi
 
+      - name: Evaluate market status
+        if: steps.kis_collect.outputs.kis_collected == 'true'
+        continue-on-error: true
+        env:
+          KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
+          KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          echo "=== KOSDAQ 지수 상태 평가 ==="
+          python -c "
+          from modules.kis_client import KISClient
+          from modules.market_status_evaluator import evaluate_and_save
+
+          client = KISClient()
+          evaluate_and_save(client)
+          "
+
       - name: Run KIS Gemini analysis
         if: steps.kis_collect.outputs.kis_collected == 'true'
         id: kis_analysis
@@ -274,6 +294,8 @@ jobs:
           GEMINI_API_KEY_05: ${{ secrets.GEMINI_API_KEY_05 }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          ALERT_SMTP_USER: ${{ secrets.ALERT_SMTP_USER }}
+          ALERT_SMTP_PASSWORD: ${{ secrets.ALERT_SMTP_PASSWORD }}
         run: |
           echo "=== KIS 데이터 Gemini AI 분석 (배치 처리) ==="
           python -c "
@@ -282,6 +304,7 @@ jobs:
           from datetime import datetime, timedelta, timezone
           from modules.kis_data_transformer import KISDataTransformer
           from modules.ai_engine import analyze_kis_data_batch
+          from modules.macro_context import build_macro_context
 
           # KST 시간대
           KST = timezone(timedelta(hours=9))
@@ -317,11 +340,15 @@ jobs:
                   print(f'rankings 키: {list(raw_data[\"rankings\"].keys())}')
               exit(1)
 
+          # 거시 환경 수집
+          macro_context = build_macro_context(Path('results'))
+
           # Gemini 배치 분석 (10개씩, google_search로 뉴스 검색)
           print('\\nGemini AI 배치 분석 시작... (10개씩 분할 처리)')
           analysis_results = analyze_kis_data_batch(
               gemini_data,
               batch_size=10,
+              macro_context=macro_context,
           )
           print(f'\\n전체 분석 완료: {len(analysis_results)}개 종목')
 
@@ -347,6 +374,10 @@ jobs:
           print('\\n=== 시그널 요약 ===')
           for signal, count in sorted(signal_counts.items()):
               print(f'  {signal}: {count}개')
+
+          # 키 에러 알림 처리
+          from modules.key_monitor import flush_alerts
+          flush_alerts(Path('results'))
           "
           echo "kis_success=true" >> $GITHUB_OUTPUT
 
@@ -406,24 +437,6 @@ jobs:
               print(f'  {key}: {count}/{total}')
           print(f'  short_selling_alert: {short_alert_count}/{total}')
           print(f'  ALL MET: {all_met_count}/{total}')
-          "
-
-      - name: Evaluate market status
-        if: steps.kis_collect.outputs.kis_collected == 'true'
-        continue-on-error: true
-        env:
-          KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
-          KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: |
-          echo "=== KOSDAQ 지수 상태 평가 ==="
-          python -c "
-          from modules.kis_client import KISClient
-          from modules.market_status_evaluator import evaluate_and_save
-
-          client = KISClient()
-          evaluate_and_save(client)
           "
 
       # KIS 토큰 캐시 저장 (1일 1회 발급 제한 대응)

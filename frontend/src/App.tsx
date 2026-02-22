@@ -1,6 +1,6 @@
 import { useEffect, useState, lazy, Suspense } from 'react';
 import { QueryClient, QueryClientProvider, useQueryClient } from '@tanstack/react-query';
-import { Navigation, Toast, ScrollToTop } from '@/components/common';
+import { Navigation, Toast, ScrollToTop, KeyAlertBanner } from '@/components/common';
 import { AnalysisTabs, Footer } from '@/components/layout';
 import { HistoryPanel } from '@/components/history';
 import { VisionAnalysis, APIAnalysis, AuthPage } from '@/pages';
@@ -126,6 +126,7 @@ function AppContent() {
       <Toast />
 
       <main className="max-w-[1200px] mx-auto px-4 md:px-6 pt-20 md:pt-24 pb-10">
+        <KeyAlertBanner />
         {currentPage === 'home' ? (
           <MainContent />
         ) : (

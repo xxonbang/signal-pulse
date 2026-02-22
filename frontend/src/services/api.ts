@@ -1,4 +1,4 @@
-import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData, CombinedAnalysisData, SimulationIndex, SimulationData, StockCriteria, MarketStatus } from './types';
+import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData, CombinedAnalysisData, SimulationIndex, SimulationData, StockCriteria, MarketStatus, KeyAlertData } from './types';
 
 const BASE_URL = import.meta.env.DEV ? '' : '.';
 
@@ -156,6 +156,20 @@ export async function fetchMarketStatus(): Promise<MarketStatus | null> {
     if (!response.ok) {
       if (response.status === 404) return null;
       throw new Error('Failed to fetch market status');
+    }
+    return response.json();
+  } catch {
+    return null;
+  }
+}
+
+// Key Alert API
+export async function fetchKeyAlerts(): Promise<KeyAlertData | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/system/key_alerts.json`);
+    if (!response.ok) {
+      if (response.status === 404) return null;
+      throw new Error('Failed to fetch key alerts');
     }
     return response.json();
   } catch {
