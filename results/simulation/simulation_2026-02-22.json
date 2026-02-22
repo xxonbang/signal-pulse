@@ -1,0 +1,169 @@
+{
+  "date": "2026-02-22",
+  "collected_at": "2026-02-22T14:00:15.530063+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "000660",
+        "name": "SK하이닉스",
+        "market": "KOSPI",
+        "open_price": 892000,
+        "close_price": 949000,
+        "high_price": 955000,
+        "return_pct": 6.39,
+        "high_return_pct": 7.06
+      },
+      {
+        "code": "267260",
+        "name": "HD현대일렉트릭",
+        "market": "KOSPI",
+        "open_price": 967000,
+        "close_price": 1011000,
+        "high_price": 1012000,
+        "return_pct": 4.55,
+        "high_return_pct": 4.65
+      }
+    ],
+    "kis": [
+      {
+        "code": "000660",
+        "name": "SK하이닉스",
+        "market": "KOSPI",
+        "open_price": 892000,
+        "close_price": 949000,
+        "high_price": 955000,
+        "return_pct": 6.39,
+        "high_return_pct": 7.06
+      },
+      {
+        "code": "105840",
+        "name": "우진",
+        "market": "KOSPI",
+        "open_price": 26450,
+        "close_price": 27300,
+        "high_price": 30100,
+        "return_pct": 3.21,
+        "high_return_pct": 13.8
+      },
+      {
+        "code": "096770",
+        "name": "SK이노베이션",
+        "market": "KOSPI",
+        "open_price": 121700,
+        "close_price": 127600,
+        "high_price": 128700,
+        "return_pct": 4.85,
+        "high_return_pct": 5.75
+      },
+      {
+        "code": "171090",
+        "name": "선익시스템",
+        "market": "KOSDAQ",
+        "open_price": 131100,
+        "close_price": 131000,
+        "high_price": 144000,
+        "return_pct": -0.08,
+        "high_return_pct": 9.84
+      },
+      {
+        "code": "452260",
+        "name": "한화갤러리아",
+        "market": "KOSPI",
+        "open_price": 2610,
+        "close_price": 2930,
+        "high_price": 3180,
+        "return_pct": 12.26,
+        "high_return_pct": 21.84
+      },
+      {
+        "code": "042660",
+        "name": "한화오션",
+        "market": "KOSPI",
+        "open_price": 143000,
+        "close_price": 149900,
+        "high_price": 151400,
+        "return_pct": 4.83,
+        "high_return_pct": 5.87
+      },
+      {
+        "code": "000370",
+        "name": "한화손해보험",
+        "market": "KOSPI",
+        "open_price": 7580,
+        "close_price": 9300,
+        "high_price": 9540,
+        "return_pct": 22.69,
+        "high_return_pct": 25.86
+      },
+      {
+        "code": "004090",
+        "name": "한국석유",
+        "market": "KOSPI",
+        "open_price": 17190,
+        "close_price": 18840,
+        "high_price": 20200,
+        "return_pct": 9.6,
+        "high_return_pct": 17.51
+      }
+    ],
+    "combined": [
+      {
+        "code": "000660",
+        "name": "SK하이닉스",
+        "market": "KOSPI",
+        "open_price": 892000,
+        "close_price": 949000,
+        "high_price": 955000,
+        "return_pct": 6.39,
+        "high_return_pct": 7.06
+      }
+    ]
+  },
+  "all_prices": {
+    "096770": {
+      "open_price": 121700,
+      "close_price": 127600,
+      "high_price": 128700
+    },
+    "105840": {
+      "open_price": 26450,
+      "close_price": 27300,
+      "high_price": 30100
+    },
+    "004090": {
+      "open_price": 17190,
+      "close_price": 18840,
+      "high_price": 20200
+    },
+    "000660": {
+      "open_price": 892000,
+      "close_price": 949000,
+      "high_price": 955000
+    },
+    "171090": {
+      "open_price": 131100,
+      "close_price": 131000,
+      "high_price": 144000
+    },
+    "042660": {
+      "open_price": 143000,
+      "close_price": 149900,
+      "high_price": 151400
+    },
+    "000370": {
+      "open_price": 7580,
+      "close_price": 9300,
+      "high_price": 9540
+    },
+    "267260": {
+      "open_price": 967000,
+      "close_price": 1011000,
+      "high_price": 1012000
+    },
+    "452260": {
+      "open_price": 2610,
+      "close_price": 2930,
+      "high_price": 3180
+    }
+  }
+}
