@@ -22,7 +22,7 @@ def fetch_macro_summary() -> str:
     실패 시 빈 문자열 반환 (분석 중단 없음).
     """
     # 순환 임포트 방지
-    from modules.ai_engine import get_next_api_key
+    from modules.ai_engine import get_next_api_key, mark_success
 
     key_info = get_next_api_key()
     if not key_info:
@@ -52,6 +52,7 @@ def fetch_macro_summary() -> str:
         text = (response.text or "").strip()
         if text:
             print(f"[MACRO] 시장 동향 수집 완료 ({len(text)}자)")
+            mark_success(key_index)
         return text
 
     except (ClientError, ServerError, Exception) as e:

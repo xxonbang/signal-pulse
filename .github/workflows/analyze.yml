@@ -113,7 +113,7 @@ jobs:
       (needs.check-market.outputs.is_market_open == 'true' || github.event_name == 'workflow_dispatch') &&
       github.event.inputs.skip_vision != 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 60
     outputs:
       success: ${{ steps.analysis.outputs.analysis_success }}
 

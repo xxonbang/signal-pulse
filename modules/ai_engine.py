@@ -23,8 +23,9 @@ from modules.utils import parse_json_response, resize_image
 @dataclass
 class KeyState:
     index: int
-    request_count: int = 0
-    fail_count: int = 0
+    request_count: int = 0       # 할당 횟수 (로깅용)
+    success_count: int = 0       # 성공 횟수
+    consecutive_429: int = 0     # 연속 429 횟수
     daily_exhausted: bool = False
     cooldown_until: float = 0.0
 
@@ -53,7 +54,6 @@ def get_next_api_key() -> tuple[str, int] | None:
         for ks in _key_states:
             if not ks.daily_exhausted:
                 ks.cooldown_until = 0.0
-                ks.fail_count = 0
         available = [ks for ks in _key_states if ks.is_available()]
 
     if not available:
@@ -68,22 +68,34 @@ def get_next_api_key() -> tuple[str, int] | None:
 
 
 def handle_rate_limit(key_index: int):
-    """429 에러 후 RPM/RPD 분류 및 쿨다운 설정"""
-    ks = _key_states[key_index]
-    ks.fail_count += 1
+    """429 에러 후 RPM/RPD 분류 및 쿨다운 설정
 
-    if ks.request_count >= 10:
-        # RPD(당일 소진) 추정
+    연속 429 횟수 기반으로 RPD 소진을 판정:
+    - 연속 3회 미만: RPM(일시적) → 쿨다운 설정
+    - 연속 3회 이상: RPD(당일 소진) → daily_exhausted 마킹
+    """
+    ks = _key_states[key_index]
+    ks.consecutive_429 += 1
+
+    if ks.consecutive_429 >= 3:
+        # 연속 3회 429 → RPD 소진 확정
         ks.daily_exhausted = True
-        print(f"  [KEY #{key_index + 1}] RPD 소진 추정 (requests={ks.request_count}). 당일 제외.")
+        print(f"  [KEY #{key_index + 1}] RPD 소진 확정 (연속 429: {ks.consecutive_429}회, 성공: {ks.success_count}회). 당일 제외.")
     else:
         # RPM(일시적) → 지수 백오프 쿨다운
-        cooldown = min(30 * (2 ** (ks.fail_count - 1)), 300)
+        cooldown = min(30 * (2 ** (ks.consecutive_429 - 1)), 300)
         ks.cooldown_until = time.time() + cooldown
-        print(f"  [KEY #{key_index + 1}] RPM 제한. 쿨다운 {cooldown}초 설정.")
+        print(f"  [KEY #{key_index + 1}] RPM 제한. 쿨다운 {cooldown}초 설정. (연속 429: {ks.consecutive_429}회)")
 
     avail_count = sum(1 for ks in _key_states if ks.is_available())
     print(f"  남은 사용 가능 키: {avail_count}개")
+
+
+def mark_success(key_index: int):
+    """API 호출 성공 시 호출 — 연속 429 카운터를 리셋"""
+    ks = _key_states[key_index]
+    ks.success_count += 1
+    ks.consecutive_429 = 0
 
 
 # Vision AI 분석 프롬프트
@@ -447,6 +459,7 @@ def analyze_stocks_batch(scrape_results: list[dict], capture_dir: Path, max_retr
 
                 print(f"\n[SUCCESS] 분석 완료: {actual_count}/{expected_count}개 종목 ({coverage_rate:.1f}%)")
                 print(f"[INFO] 시그널 분포: {signal_stats}")
+                mark_success(key_index)
                 return valid_results
 
             # 파싱 실패: 디버깅 로그와 함께 재파싱 시도
@@ -852,6 +865,7 @@ def analyze_kis_data(
 
                 print(f"\n[SUCCESS] 분석 완료: {len(analysis_results)}/{expected_count}개 종목 ({coverage_rate:.1f}%)")
                 print(f"[INFO] 시그널 분포: {signal_stats}")
+                mark_success(key_index)
                 return analysis_results
 
             # 파싱 실패: 다른 키로 재시도
