@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import type { SimulationStock, SimulationCategory } from '@/services/types';
 import { StockBadge } from './StockBadge';
 import { ReturnDisplay } from './ReturnDisplay';
@@ -20,13 +20,12 @@ interface CategorySectionProps {
   category: SimulationCategory;
   stocks: SimulationStock[];
   date: string;
-  expanded: boolean;
-  onToggleExpand: () => void;
 }
 
-export function CategorySection({ category, stocks, date, expanded, onToggleExpand }: CategorySectionProps) {
+export function CategorySection({ category, stocks, date }: CategorySectionProps) {
   const { activeCategories, toggleCategory, excludedStocks, excludeAllStocks, includeAllStocks, simulationMode } = useSimulationStore();
   const isActive = activeCategories.has(category);
+  const [expanded, setExpanded] = useState(true);
 
   const codes = useMemo(() => stocks.map((s) => s.code), [stocks]);
 
@@ -86,7 +85,13 @@ export function CategorySection({ category, stocks, date, expanded, onToggleExpa
             {allExcluded ? '전체선택' : '전체해제'}
           </button>
           <button
-            onClick={onToggleExpand}
+            onClick={() => setExpanded(!expanded)}
+            className="px-2.5 py-1 text-xs font-medium text-text-muted hover:text-text-secondary bg-bg-secondary hover:bg-bg-primary border border-border rounded-lg transition-all whitespace-nowrap"
+          >
+            {expanded ? '전체 접기' : '전체 펼치기'}
+          </button>
+          <button
+            onClick={() => setExpanded(!expanded)}
             className="p-0.5 md:p-1 text-text-muted hover:text-text-secondary transition-colors flex-shrink-0"
           >
             <svg
