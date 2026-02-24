@@ -26,6 +26,7 @@ export function CategorySection({ category, stocks, date }: CategorySectionProps
   const { activeCategories, toggleCategory, excludedStocks, excludeAllStocks, includeAllStocks, simulationMode } = useSimulationStore();
   const isActive = activeCategories.has(category);
   const [expanded, setExpanded] = useState(true);
+  const [expandedStocks, setExpandedStocks] = useState<Set<string>>(new Set());
 
   const codes = useMemo(() => stocks.map((s) => s.code), [stocks]);
 
@@ -52,6 +53,16 @@ export function CategorySection({ category, stocks, date }: CategorySectionProps
   const includedCount = stocks.filter(
     (s) => !excludedStocks.has(stockKey(date, category, s.code))
   ).length;
+
+  const allStocksExpanded = codes.length > 0 && codes.every((c) => expandedStocks.has(c));
+
+  const toggleStockExpand = (code: string) => {
+    setExpandedStocks((prev) => {
+      const next = new Set(prev);
+      next.has(code) ? next.delete(code) : next.add(code);
+      return next;
+    });
+  };
 
   if (stocks.length === 0) return null;
 
@@ -85,10 +96,10 @@ export function CategorySection({ category, stocks, date }: CategorySectionProps
             {allExcluded ? '전체선택' : '전체해제'}
           </button>
           <button
-            onClick={() => setExpanded(!expanded)}
+            onClick={() => setExpandedStocks(allStocksExpanded ? new Set() : new Set(codes))}
             className="px-2.5 py-1 text-xs font-medium text-text-muted hover:text-text-secondary bg-bg-secondary hover:bg-bg-primary border border-border rounded-lg transition-all whitespace-nowrap"
           >
-            {expanded ? '전체 접기' : '전체 펼치기'}
+            {allStocksExpanded ? '전체 접기' : '전체 펼치기'}
           </button>
           <button
             onClick={() => setExpanded(!expanded)}
@@ -108,7 +119,14 @@ export function CategorySection({ category, stocks, date }: CategorySectionProps
       {isActive && expanded && (
         <div className="p-2 md:p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-2">
           {stocks.map((stock) => (
-            <StockBadge key={stock.code} stock={stock} category={category} date={date} />
+            <StockBadge
+              key={stock.code}
+              stock={stock}
+              category={category}
+              date={date}
+              isExpanded={expandedStocks.has(stock.code)}
+              onToggle={() => toggleStockExpand(stock.code)}
+            />
           ))}
         </div>
       )}
