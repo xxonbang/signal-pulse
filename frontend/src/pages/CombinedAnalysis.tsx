@@ -62,6 +62,25 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock, criteria, isA
   const [isVisionDetailOpen, setIsVisionDetailOpen] = useState(false);
   const [isApiDetailOpen, setIsApiDetailOpen] = useState(false);
 
+  const hasVisionDetail = !!(stock.vision_reason && stock.vision_news_analysis);
+  const hasApiDetail = !!(stock.api_reason && (stock.api_key_factors || stock.api_confidence != null || stock.api_risk_level || stock.api_news_analysis));
+  const hasReason = !!(stock.vision_reason || stock.api_reason);
+  const allDetailExpanded = hasReason && isExpanded
+    && (!hasVisionDetail || isVisionDetailOpen)
+    && (!hasApiDetail || isApiDetailOpen);
+
+  const handleExpandAll = () => {
+    if (!isExpanded) toggleExpand();
+    if (hasVisionDetail) setIsVisionDetailOpen(true);
+    if (hasApiDetail) setIsApiDetailOpen(true);
+  };
+
+  const handleCollapseAll = () => {
+    if (isExpanded) toggleExpand();
+    setIsVisionDetailOpen(false);
+    setIsApiDetailOpen(false);
+  };
+
   const changeRate = stock.api_data?.price?.change_rate_pct ?? 0;
   const priceChangeColor = changeRate > 0 ? 'text-red-500' : changeRate < 0 ? 'text-blue-500' : 'text-text-secondary';
 
@@ -159,7 +178,17 @@ const CombinedStockCard = memo(function CombinedStockCard({ stock, criteria, isA
         <div className="cursor-pointer" onClick={toggleExpand}>
           <div className="flex items-center justify-between text-[0.65rem] md:text-xs text-text-muted mb-1">
             <span>분석 근거</span>
-            <span className="transition-transform duration-200" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+            <div className="flex items-center gap-2">
+              {(hasVisionDetail || hasApiDetail) && (
+                <button
+                  onClick={(e) => { e.stopPropagation(); allDetailExpanded ? handleCollapseAll() : handleExpandAll(); }}
+                  className="px-2 py-0.5 text-[0.65rem] md:text-xs font-medium text-text-muted hover:text-text-secondary bg-bg-secondary hover:bg-bg-primary border border-border rounded-lg transition-all"
+                >
+                  {allDetailExpanded ? '전체 접기' : '전체 펼치기'}
+                </button>
+              )}
+              <span className="transition-transform duration-200" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+            </div>
           </div>
           <div className={cn('overflow-hidden transition-all duration-300 ease-in-out', isExpanded ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0')}>
             <div className="space-y-1.5 md:space-y-2">
