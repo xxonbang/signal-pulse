@@ -104,19 +104,28 @@ export function CriteriaIndicator({ criteria, isCompact = false }: CriteriaIndic
 
           return (
             <span key={config.key}>
-              {/* Compact: 작은 도트 */}
+              {/* Compact: 작은 도트 (52주 신고가면 👑) */}
               {isCompact ? (
-                <span className={cn('inline-block w-1.5 h-1.5 rounded-full', config.dotColor)} />
+                is52w
+                  ? <span className="text-[10px] leading-none">👑</span>
+                  : <span className={cn('inline-block w-1.5 h-1.5 rounded-full', config.dotColor)} />
               ) : (
                 <>
-                  {/* 모바일: 도트 */}
-                  <span className={cn('sm:hidden inline-block w-2.5 h-2.5 rounded-full', config.dotColor)} />
+                  {/* 모바일: 도트 (52주 신고가면 👑) */}
+                  {is52w
+                    ? <span className="sm:hidden text-sm leading-none">👑</span>
+                    : <span className={cn('sm:hidden inline-block w-2.5 h-2.5 rounded-full', config.dotColor)} />
+                  }
                   {/* PC: 뱃지 */}
                   <span className={cn(
                     'hidden sm:inline-flex items-center gap-1 rounded-full px-1.5 py-0.5 text-[9px] font-medium leading-none',
-                    config.badgeBg, config.badgeText,
+                    is52w ? 'bg-amber-100 text-amber-700' : config.badgeBg,
+                    is52w ? '' : config.badgeText,
                   )}>
-                    <span className={cn('inline-block w-1.5 h-1.5 rounded-full', config.dotColor)} />
+                    {is52w
+                      ? <span className="text-[9px] leading-none">👑</span>
+                      : <span className={cn('inline-block w-1.5 h-1.5 rounded-full', config.dotColor)} />
+                    }
                     {is52w ? '52주 신고가' : config.label}
                   </span>
                 </>
@@ -175,7 +184,10 @@ export function CriteriaIndicator({ criteria, isCompact = false }: CriteriaIndic
               return (
                 <div key={config.key}>
                   <div className="flex items-center gap-1.5">
-                    <span className={cn('inline-block w-2 h-2 rounded-full flex-shrink-0', config.dotColor)} />
+                    {is52w
+                      ? <span className="text-xs leading-none flex-shrink-0">👑</span>
+                      : <span className={cn('inline-block w-2 h-2 rounded-full flex-shrink-0', config.dotColor)} />
+                    }
                     <span className="text-[11px] font-medium text-text-primary">
                       {is52w ? '52주 신고가 돌파' : config.fullLabel}
                     </span>
