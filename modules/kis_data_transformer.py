@@ -505,15 +505,25 @@ class KISDataTransformer:
 
     @staticmethod
     def _extract_recent_changes(daily_chart: Dict[str, Any], days: int = 6) -> list:
-        """최근 N일의 등락률만 추출"""
+        """최근 N일의 등락률만 추출 (종가 기반으로 직접 계산)"""
         if not daily_chart:
             return []
         ohlcv = daily_chart.get("ohlcv", [])
-        return [
-            {"date": c.get("date"), "change_rate": c.get("change_rate")}
-            for c in ohlcv[:days]
-            if c.get("date")
-        ]
+        # ohlcv는 최신→과거 순. change_rate를 전일 종가 대비로 계산
+        result = []
+        for i, c in enumerate(ohlcv[:days]):
+            date = c.get("date")
+            if not date:
+                continue
+            close = c.get("close", 0)
+            # 다음 인덱스가 전일 데이터 (최신→과거 순이므로)
+            prev_close = ohlcv[i + 1].get("close", 0) if i + 1 < len(ohlcv) else 0
+            if prev_close and prev_close > 0:
+                change_rate = round((close - prev_close) / prev_close * 100, 2)
+            else:
+                change_rate = 0.0
+            result.append({"date": date, "change_rate": change_rate})
+        return result
 
     def save_transformed_data(
         self,
