@@ -1,6 +1,6 @@
-"""KOSDAQ 지수 정배열/역배열 판정 모듈
+"""KOSPI/KOSDAQ 지수 정배열/역배열 판정 모듈
 
-KIS API로 KOSDAQ 종합지수 일봉 데이터를 수집하고
+KIS API로 KOSPI/KOSDAQ 종합지수 일봉 데이터를 수집하고
 이동평균선 정배열/역배열/혼조 상태를 판정한다.
 결과를 results/kis/market_status.json에 저장.
 """
@@ -14,6 +14,12 @@ from pathlib import Path
 from typing import Any
 
 KST = timezone(timedelta(hours=9))
+
+# 지수 코드: KOSPI=0001, KOSDAQ=2001
+INDEX_CODES = {
+    "kospi": ("0001", "KOSPI"),
+    "kosdaq": ("2001", "KOSDAQ"),
+}
 
 
 def _parse_index_output(output2: list) -> list[dict]:
@@ -34,10 +40,13 @@ def _parse_index_output(output2: list) -> list[dict]:
     return ohlcv
 
 
-def fetch_kosdaq_index(client: Any, days: int = 300) -> list[dict]:
-    """KOSDAQ 종합지수 일봉 데이터 조회 (날짜 분할로 120일+ 확보)
+def fetch_index_data(client: Any, index_code: str, days: int = 300) -> list[dict]:
+    """지수 일봉 데이터 조회 (날짜 분할로 120일+ 확보)
 
-    API가 1회 최대 50건을 반환하므로 날짜 범위를 분할하여 조회한다.
+    Args:
+        client: KISClient 인스턴스
+        index_code: 지수 코드 (0001=KOSPI, 2001=KOSDAQ)
+        days: 조회 캘린더일 수
 
     Returns:
         최신순 정렬된 일봉 리스트 [{date, close, open, high, low, volume}, ...]
@@ -56,7 +65,7 @@ def fetch_kosdaq_index(client: Any, days: int = 300) -> list[dict]:
 
         params = {
             "FID_COND_MRKT_DIV_CODE": "U",
-            "FID_INPUT_ISCD": "2001",
+            "FID_INPUT_ISCD": index_code,
             "FID_INPUT_DATE_1": start_dt.strftime("%Y%m%d"),
             "FID_INPUT_DATE_2": end_dt.strftime("%Y%m%d"),
             "FID_PERIOD_DIV_CODE": "D",
@@ -80,11 +89,12 @@ def fetch_kosdaq_index(client: Any, days: int = 300) -> list[dict]:
     return ohlcv
 
 
-def evaluate_kosdaq_alignment(ohlcv: list[dict]) -> dict:
-    """KOSDAQ 지수 정배열/역배열/혼조 판정
+def evaluate_alignment(ohlcv: list[dict], market_name: str) -> dict:
+    """지수 정배열/역배열/혼조 판정
 
     Args:
         ohlcv: 최신순 정렬된 일봉 데이터
+        market_name: 시장 이름 (KOSPI/KOSDAQ)
 
     Returns:
         {status: "bullish"|"bearish"|"mixed", current, ma_values, reason}
@@ -132,14 +142,14 @@ def evaluate_kosdaq_alignment(ohlcv: list[dict]) -> dict:
     if is_bullish:
         status = "bullish"
         checked = ">".join(f"MA{p}" for p, _ in available)
-        reason = f"KOSDAQ 정배열 (현재가>{checked})"
+        reason = f"{market_name} 정배열 (현재가>{checked})"
     elif is_bearish:
         status = "bearish"
         checked = "<".join(f"MA{p}" for p, _ in available)
-        reason = f"KOSDAQ 역배열 (현재가<{checked})"
+        reason = f"{market_name} 역배열 (현재가<{checked})"
     else:
         status = "mixed"
-        reason = "KOSDAQ 혼조 (정배열도 역배열도 아님)"
+        reason = f"{market_name} 혼조 (정배열도 역배열도 아님)"
 
     return {
         "status": status,
@@ -150,28 +160,37 @@ def evaluate_kosdaq_alignment(ohlcv: list[dict]) -> dict:
 
 
 def evaluate_and_save(client: Any, output_dir: str = "results/kis") -> dict:
-    """KOSDAQ 지수 상태 평가 및 저장"""
-    print("=== KOSDAQ 지수 상태 평가 ===")
+    """KOSPI/KOSDAQ 지수 상태 평가 및 저장"""
+    result = {}
 
-    ohlcv = fetch_kosdaq_index(client)
-    print(f"KOSDAQ 일봉 데이터: {len(ohlcv)}일")
+    for key, (code, name) in INDEX_CODES.items():
+        print(f"=== {name} 지수 상태 평가 ===")
+        ohlcv = fetch_index_data(client, code)
+        print(f"{name} 일봉 데이터: {len(ohlcv)}일")
 
-    result = evaluate_kosdaq_alignment(ohlcv)
-    result["evaluated_at"] = datetime.now(KST).isoformat()
-    result["data_days"] = len(ohlcv)
+        evaluation = evaluate_alignment(ohlcv, name)
+        evaluation["evaluated_at"] = datetime.now(KST).isoformat()
+        evaluation["data_days"] = len(ohlcv)
+
+        print(f"상태: {evaluation['status']}")
+        print(f"현재: {evaluation.get('current', 'N/A')}")
+        print(f"사유: {evaluation['reason']}")
+        print(f"MA: {evaluation['ma_values']}")
+
+        result[key] = evaluation
 
     output_path = Path(output_dir) / "market_status.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
-    print(f"상태: {result['status']}")
-    print(f"현재: {result.get('current', 'N/A')}")
-    print(f"사유: {result['reason']}")
-    print(f"MA: {result['ma_values']}")
     print(f"저장: {output_path}")
-
     return result
+
+
+# 하위 호환: 기존 함수명 유지
+fetch_kosdaq_index = lambda client, days=300: fetch_index_data(client, "2001", days)
+evaluate_kosdaq_alignment = lambda ohlcv: evaluate_alignment(ohlcv, "KOSDAQ")
 
 
 if __name__ == "__main__":

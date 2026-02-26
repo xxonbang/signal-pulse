@@ -1,4 +1,4 @@
-import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData, CombinedAnalysisData, SimulationIndex, SimulationData, StockCriteria, MarketStatus, KeyAlertData } from './types';
+import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData, CombinedAnalysisData, SimulationIndex, SimulationData, StockCriteria, MarketStatusData, MarketIndexStatus, KeyAlertData } from './types';
 
 const BASE_URL = import.meta.env.DEV ? '' : '.';
 
@@ -149,15 +149,20 @@ export async function fetchCriteriaData(): Promise<Record<string, StockCriteria>
   }
 }
 
-// Market Status (KOSDAQ 지수 상태) fetch
-export async function fetchMarketStatus(): Promise<MarketStatus | null> {
+// Market Status (KOSPI/KOSDAQ 지수 상태) fetch
+export async function fetchMarketStatus(): Promise<MarketStatusData | null> {
   try {
     const response = await fetch(`${BASE_URL}/results/kis/market_status.json`);
     if (!response.ok) {
       if (response.status === 404) return null;
       throw new Error('Failed to fetch market status');
     }
-    return response.json();
+    const data = await response.json();
+    // 하위 호환: 기존 단일 객체 형식이면 kosdaq으로 래핑
+    if (data && 'status' in data && !('kospi' in data)) {
+      return { kospi: { status: 'unknown', ma_values: {}, reason: '' }, kosdaq: data as MarketIndexStatus };
+    }
+    return data as MarketStatusData;
   } catch {
     return null;
   }

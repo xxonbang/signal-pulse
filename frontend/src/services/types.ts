@@ -255,8 +255,8 @@ export interface CombinedAnalysisData {
   criteria_data?: Record<string, StockCriteria> | null;
 }
 
-// KOSDAQ 시장 상태
-export interface MarketStatus {
+// 개별 시장 상태
+export interface MarketIndexStatus {
   status: 'bullish' | 'bearish' | 'mixed' | 'unknown';
   current?: number;
   ma_values: Record<string, number>;
@@ -264,6 +264,15 @@ export interface MarketStatus {
   evaluated_at?: string;
   data_days?: number;
 }
+
+// KOSPI/KOSDAQ 시장 상태
+export interface MarketStatusData {
+  kospi: MarketIndexStatus;
+  kosdaq: MarketIndexStatus;
+}
+
+/** @deprecated 하위 호환용 */
+export type MarketStatus = MarketIndexStatus;
 
 // API 키 에러 알림 타입
 export interface KeyAlert {

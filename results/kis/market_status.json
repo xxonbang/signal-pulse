@@ -1,14 +1,21 @@
 {
-  "status": "bullish",
-  "current": 944.02,
-  "ma_values": {
-    "MA5": 895.95,
-    "MA10": 861.0,
-    "MA20": 815.51,
-    "MA60": 710.7,
-    "MA120": 613.27
+  "kospi": {
+    "status": "unknown",
+    "ma_values": {},
+    "reason": "다음 워크플로우 실행 시 업데이트됩니다"
   },
-  "reason": "KOSDAQ 정배열 (현재가>MA5>MA10>MA20>MA60>MA120)",
-  "evaluated_at": "2026-02-26T19:13:45.450836+09:00",
-  "data_days": 139
+  "kosdaq": {
+    "status": "bullish",
+    "current": 944.02,
+    "ma_values": {
+      "MA5": 895.95,
+      "MA10": 861.0,
+      "MA20": 815.51,
+      "MA60": 710.7,
+      "MA120": 613.27
+    },
+    "reason": "KOSDAQ 정배열 (현재가>MA5>MA10>MA20>MA60>MA120)",
+    "evaluated_at": "2026-02-26T19:13:45.450836+09:00",
+    "data_days": 139
+  }
 }
