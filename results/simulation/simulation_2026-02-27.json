@@ -1,6 +1,6 @@
 {
   "date": "2026-02-27",
-  "collected_at": "2026-02-27T15:40:20.275037+09:00",
+  "collected_at": "2026-02-27T19:59:30.965497+09:00",
   "categories": {
     "vision": [
       {
@@ -288,145 +288,260 @@
     "combined": []
   },
   "all_prices": {
-    "086790": {
-      "open_price": 123000,
-      "close_price": 121800,
-      "high_price": 123200
+    "011070": {
+      "open_price": 333000,
+      "close_price": 319000,
+      "high_price": 333000
     },
-    "005380": {
-      "open_price": 592000,
-      "close_price": 674000,
-      "high_price": 687000
-    },
-    "240810": {
-      "open_price": 122000,
-      "close_price": 125600,
-      "high_price": 131100
-    },
-    "066570": {
-      "open_price": 144700,
-      "close_price": 145700,
-      "high_price": 151900
-    },
-    "234340": {
-      "open_price": 27100,
-      "close_price": 27450,
-      "high_price": 30050
+    "011930": {
+      "open_price": 2135,
+      "close_price": 2450,
+      "high_price": 2590
     },
     "131030": {
       "open_price": 13320,
       "close_price": 11780,
       "high_price": 13890
     },
-    "000270": {
-      "open_price": 199600,
-      "close_price": 205500,
-      "high_price": 212500
-    },
-    "034220": {
-      "open_price": 15750,
-      "close_price": 14340,
-      "high_price": 15750
-    },
-    "000250": {
-      "open_price": 857000,
-      "close_price": 825000,
-      "high_price": 860000
-    },
-    "003530": {
-      "open_price": 8390,
-      "close_price": 8340,
-      "high_price": 8650
-    },
-    "008830": {
-      "open_price": 23850,
-      "close_price": 24550,
-      "high_price": 25150
-    },
-    "377300": {
-      "open_price": 69800,
-      "close_price": 66900,
-      "high_price": 70300
-    },
-    "011070": {
-      "open_price": 333000,
-      "close_price": 319000,
-      "high_price": 333000
-    },
-    "067310": {
-      "open_price": 36000,
-      "close_price": 36200,
-      "high_price": 37500
-    },
-    "000660": {
-      "open_price": 1050000,
-      "close_price": 1061000,
-      "high_price": 1096000
-    },
-    "196170": {
-      "open_price": 399000,
-      "close_price": 407500,
-      "high_price": 409500
-    },
-    "058470": {
-      "open_price": 101600,
-      "close_price": 106200,
-      "high_price": 108700
-    },
     "006400": {
       "open_price": 439500,
       "close_price": 466000,
       "high_price": 473500
-    },
-    "039440": {
-      "open_price": 39000,
-      "close_price": 38150,
-      "high_price": 40400
-    },
-    "278470": {
-      "open_price": 317000,
-      "close_price": 312500,
-      "high_price": 322000
-    },
-    "058610": {
-      "open_price": 147100,
-      "close_price": 144600,
-      "high_price": 149500
-    },
-    "051910": {
-      "open_price": 381000,
-      "close_price": 417500,
-      "high_price": 424000
-    },
-    "012330": {
-      "open_price": 507000,
-      "close_price": 517000,
-      "high_price": 531000
-    },
-    "489790": {
-      "open_price": 81900,
-      "close_price": 85400,
-      "high_price": 90000
     },
     "010120": {
       "open_price": 798000,
       "close_price": 787000,
       "high_price": 812000
     },
-    "005935": {
-      "open_price": 141300,
-      "close_price": 143800,
-      "high_price": 148100
+    "024060": {
+      "open_price": 18650,
+      "close_price": 17610,
+      "high_price": 19200
+    },
+    "066570": {
+      "open_price": 144700,
+      "close_price": 145700,
+      "high_price": 151900
+    },
+    "000660": {
+      "open_price": 1050000,
+      "close_price": 1061000,
+      "high_price": 1096000
+    },
+    "086790": {
+      "open_price": 123000,
+      "close_price": 121800,
+      "high_price": 123200
+    },
+    "004020": {
+      "open_price": 38800,
+      "close_price": 46500,
+      "high_price": 50400
+    },
+    "316140": {
+      "open_price": 37500,
+      "close_price": 36000,
+      "high_price": 37550
+    },
+    "222080": {
+      "open_price": 13700,
+      "close_price": 14690,
+      "high_price": 15430
+    },
+    "012330": {
+      "open_price": 507000,
+      "close_price": 517000,
+      "high_price": 531000
+    },
+    "278470": {
+      "open_price": 317000,
+      "close_price": 312500,
+      "high_price": 322000
+    },
+    "000270": {
+      "open_price": 199600,
+      "close_price": 205500,
+      "high_price": 212500
+    },
+    "196170": {
+      "open_price": 399000,
+      "close_price": 407500,
+      "high_price": 409500
+    },
+    "055550": {
+      "open_price": 99500,
+      "close_price": 96900,
+      "high_price": 99500
+    },
+    "234340": {
+      "open_price": 27100,
+      "close_price": 27450,
+      "high_price": 30050
+    },
+    "101490": {
+      "open_price": 89900,
+      "close_price": 98700,
+      "high_price": 102300
+    },
+    "178320": {
+      "open_price": 38150,
+      "close_price": 47550,
+      "high_price": 49450
+    },
+    "491000": {
+      "open_price": 86900,
+      "close_price": 89700,
+      "high_price": 94400
+    },
+    "083650": {
+      "open_price": 90000,
+      "close_price": 93500,
+      "high_price": 93900
+    },
+    "008830": {
+      "open_price": 23850,
+      "close_price": 24550,
+      "high_price": 25150
+    },
+    "005380": {
+      "open_price": 592000,
+      "close_price": 674000,
+      "high_price": 687000
+    },
+    "229000": {
+      "open_price": 5200,
+      "close_price": 5860,
+      "high_price": 5860
+    },
+    "034220": {
+      "open_price": 15750,
+      "close_price": 14340,
+      "high_price": 15750
+    },
+    "039440": {
+      "open_price": 39000,
+      "close_price": 38150,
+      "high_price": 40400
+    },
+    "377300": {
+      "open_price": 69800,
+      "close_price": 66900,
+      "high_price": 70300
+    },
+    "064350": {
+      "open_price": 225000,
+      "close_price": 230500,
+      "high_price": 242500
+    },
+    "012200": {
+      "open_price": 8220,
+      "close_price": 9160,
+      "high_price": 10270
+    },
+    "058610": {
+      "open_price": 147100,
+      "close_price": 144600,
+      "high_price": 149500
+    },
+    "000150": {
+      "open_price": 1195000,
+      "close_price": 1278000,
+      "high_price": 1295000
+    },
+    "001440": {
+      "open_price": 35200,
+      "close_price": 36000,
+      "high_price": 37350
+    },
+    "067310": {
+      "open_price": 36000,
+      "close_price": 36200,
+      "high_price": 37500
+    },
+    "456160": {
+      "open_price": 105200,
+      "close_price": 108200,
+      "high_price": 114100
+    },
+    "006340": {
+      "open_price": 6380,
+      "close_price": 6790,
+      "high_price": 7490
+    },
+    "122870": {
+      "open_price": 72200,
+      "close_price": 74000,
+      "high_price": 77600
     },
     "018880": {
       "open_price": 4690,
       "close_price": 4640,
       "high_price": 4800
     },
-    "064350": {
-      "open_price": 225000,
-      "close_price": 230500,
-      "high_price": 242500
+    "036930": {
+      "open_price": 54700,
+      "close_price": 56100,
+      "high_price": 58000
+    },
+    "240810": {
+      "open_price": 122000,
+      "close_price": 125600,
+      "high_price": 131100
+    },
+    "329180": {
+      "open_price": 599000,
+      "close_price": 603000,
+      "high_price": 620000
+    },
+    "005935": {
+      "open_price": 141300,
+      "close_price": 143800,
+      "high_price": 148100
+    },
+    "005490": {
+      "open_price": 401000,
+      "close_price": 413000,
+      "high_price": 427500
+    },
+    "489790": {
+      "open_price": 81900,
+      "close_price": 85400,
+      "high_price": 90000
+    },
+    "322000": {
+      "open_price": 80700,
+      "close_price": 104000,
+      "high_price": 104000
+    },
+    "003530": {
+      "open_price": 8390,
+      "close_price": 8340,
+      "high_price": 8650
+    },
+    "051910": {
+      "open_price": 381000,
+      "close_price": 417500,
+      "high_price": 424000
+    },
+    "027360": {
+      "open_price": 4685,
+      "close_price": 5810,
+      "high_price": 5810
+    },
+    "058470": {
+      "open_price": 101600,
+      "close_price": 106200,
+      "high_price": 108700
+    },
+    "042700": {
+      "open_price": 263500,
+      "close_price": 323500,
+      "high_price": 332500
+    },
+    "000250": {
+      "open_price": 857000,
+      "close_price": 825000,
+      "high_price": 860000
     }
   }
 }
