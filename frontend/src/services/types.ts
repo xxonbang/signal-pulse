@@ -296,6 +296,7 @@ export interface SimulationStock {
   open_price: number | null;
   close_price: number | null;
   high_price: number | null;
+  high_price_time: string | null;
   return_pct: number | null;
   high_return_pct: number | null;
 }
@@ -306,6 +307,7 @@ export interface SimulationPriceEntry {
   open_price: number;
   close_price: number | null;
   high_price: number | null;
+  high_price_time: string | null;
 }
 
 export interface SimulationData {

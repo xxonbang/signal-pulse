@@ -572,14 +572,14 @@ class KISClient:
         }
         return self.request("GET", path, tr_id, params=params)
 
-    def get_stock_daily_ccld(self, stock_code: str) -> Dict[str, Any]:
+    def get_stock_daily_ccld(self, stock_code: str, hour: str = "") -> Dict[str, Any]:
         """주식현재가 당일시간대별체결 조회"""
         path = "/uapi/domestic-stock/v1/quotations/inquire-time-itemconclusion"
         tr_id = "FHPST01060000"
         params = {
             "FID_COND_MRKT_DIV_CODE": "J",
             "FID_INPUT_ISCD": stock_code,
-            "FID_INPUT_HOUR_1": "",
+            "FID_INPUT_HOUR_1": hour,
         }
         return self.request("GET", path, tr_id, params=params)
 

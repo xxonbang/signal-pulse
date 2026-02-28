@@ -128,6 +128,53 @@ class SimulationCollector:
             print(f"[Simulation] 가격 조회 에러 ({stock_code}): {e}")
             return None
 
+    def fetch_high_price_time(self, stock_code: str, high_price: int) -> Optional[str]:
+        """당일 체결 데이터에서 고가 최초 도달 시각 조회
+
+        Args:
+            stock_code: 종목코드
+            high_price: 고가 가격 (정수)
+
+        Returns:
+            "HH:MM" 형식 문자열 또는 None
+        """
+        earliest_time = None
+        hour = ""
+        max_pages = 20
+
+        for page in range(max_pages):
+            try:
+                result = self.kis.get_stock_daily_ccld(stock_code, hour)
+                if result.get("rt_cd") != "0":
+                    break
+
+                items = result.get("output2", [])
+                if not items:
+                    break
+
+                for item in items:
+                    tick_price = int(item.get("stck_prpr", 0))
+                    tick_time = item.get("stck_cntg_hour", "")  # "HHMMSS"
+                    if tick_price == high_price and len(tick_time) >= 4:
+                        formatted = f"{tick_time[:2]}:{tick_time[2:4]}"
+                        if earliest_time is None or formatted < earliest_time:
+                            earliest_time = formatted
+
+                # 다음 페이지: 마지막 틱의 시각을 hour로 전달
+                last_time = items[-1].get("stck_cntg_hour", "")
+                if not last_time or last_time == hour:
+                    break
+                hour = last_time
+
+                if page < max_pages - 1:
+                    time.sleep(0.05)
+
+            except Exception as e:
+                print(f"[Simulation] 고가 시각 조회 에러 ({stock_code}): {e}")
+                break
+
+        return earliest_time
+
     def fetch_daily_price(self, stock_code: str, target_date: str) -> Optional[dict]:
         """과거 날짜의 시가/종가 조회 (backfill용)
 
@@ -310,6 +357,20 @@ class SimulationCollector:
                 print("가격 미수집")
             time.sleep(0.1)  # API rate limit
 
+        # 고가 시각 수집
+        high_price_times: dict[str, Optional[str]] = {}
+        codes_with_high = [(c, p) for c, p in prices.items() if p and p.get("high_price")]
+        if codes_with_high:
+            print(f"\n[Simulation] 고가 시각 수집: {len(codes_with_high)}개 종목")
+            for i, (code, price) in enumerate(codes_with_high, 1):
+                stock_info = all_codes.get(code, {})
+                name = stock_info.get("name", code)
+                print(f"  [{i}/{len(codes_with_high)}] {name} ({code})...", end=" ")
+                hpt = self.fetch_high_price_time(code, price["high_price"])
+                high_price_times[code] = hpt
+                print(hpt or "시각 미확인")
+                time.sleep(0.1)
+
         # 카테고리별 결과 조립
         result_categories = {}
         for cat, stocks in categories.items():
@@ -327,6 +388,7 @@ class SimulationCollector:
                     "open_price": open_p,
                     "close_price": close_p,
                     "high_price": high_p,
+                    "high_price_time": high_price_times.get(code),
                     "return_pct": round(
                         (close_p - open_p) / open_p * 100, 2
                     ) if open_p and close_p and open_p > 0 else None,
@@ -346,6 +408,7 @@ class SimulationCollector:
                     "open_price": price["open_price"],
                     "close_price": price["close_price"],
                     "high_price": price["high_price"],
+                    "high_price_time": high_price_times.get(code),
                 }
 
         simulation_data = {

@@ -117,6 +117,7 @@ export function StockBadge({ stock, category, date, isExpanded, onToggle }: Stoc
               <span className="text-text-muted/70">고가</span>
               <span>{stock.high_price !== null ? stock.high_price.toLocaleString() : '-'}</span>
               {stock.high_return_pct !== null && <ReturnDisplay value={stock.high_return_pct} size="sm" />}
+              {stock.high_price_time && <span className="text-text-muted/50">{stock.high_price_time}</span>}
             </div>
           </div>
         </div>

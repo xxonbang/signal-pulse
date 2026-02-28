@@ -142,6 +142,7 @@ export function useAnalysisTimeOverride(
         open: number | null;
         close: number | null;
         high: number | null;
+        high_price_time: string | null;
         return_pct: number | null;
         high_return_pct: number | null;
       }
@@ -157,6 +158,7 @@ export function useAnalysisTimeOverride(
           open,
           close,
           high,
+          high_price_time: p.high_price_time ?? null,
           return_pct: open && close && open > 0
             ? Math.round((close - open) / open * 10000) / 100
             : null,
@@ -175,6 +177,7 @@ export function useAnalysisTimeOverride(
             open: stock.open_price,
             close: stock.close_price,
             high: stock.high_price,
+            high_price_time: stock.high_price_time ?? null,
             return_pct: stock.return_pct,
             high_return_pct: stock.high_return_pct,
           });
@@ -213,6 +216,7 @@ export function useAnalysisTimeOverride(
             open_price: prices.open,
             close_price: prices.close,
             high_price: prices.high,
+            high_price_time: prices.high_price_time,
             return_pct: prices.return_pct,
             high_return_pct: prices.high_return_pct,
           };
@@ -225,6 +229,7 @@ export function useAnalysisTimeOverride(
           open_price: null,
           close_price: null,
           high_price: null,
+          high_price_time: null,
           return_pct: null,
           high_return_pct: null,
         };
