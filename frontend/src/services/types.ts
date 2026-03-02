@@ -255,6 +255,17 @@ export interface CombinedAnalysisData {
   criteria_data?: Record<string, StockCriteria> | null;
 }
 
+// CNN Fear & Greed 지수
+export interface FearGreedData {
+  score: number;
+  rating: string;
+  timestamp: string;
+  previous_close: number;
+  previous_1_week: number;
+  previous_1_month: number;
+  previous_1_year: number;
+}
+
 // 개별 시장 상태
 export interface MarketIndexStatus {
   status: 'bullish' | 'bearish' | 'mixed' | 'unknown';

@@ -435,12 +435,16 @@ class SimulationCollector:
         # 전 시그널 추적: 카테고리별 모든 종목의 시그널 기록 (가격 조회 없이)
         all_signals = self._collect_all_signals(today_str)
 
+        # Fear & Greed 지수 (macro_context가 저장한 JSON 읽기)
+        fear_greed = self._load_fear_greed()
+
         simulation_data = {
             "date": today_str,
             "collected_at": now.isoformat(),
             "categories": result_categories,
             "all_prices": all_prices,
             "all_signals": all_signals,
+            "fear_greed": fear_greed,
         }
 
         return self._save_simulation(simulation_data)
@@ -710,6 +714,13 @@ class SimulationCollector:
                     signals[code]["kis_signal"] = stock.get("signal")
 
         return signals
+
+    def _load_fear_greed(self) -> Optional[dict]:
+        """results/kis/fear_greed.json에서 Fear & Greed 데이터 읽기"""
+        data = self._load_json(self.RESULTS_DIR / "kis" / "fear_greed.json")
+        if data and "score" in data:
+            return {"score": data["score"], "rating": data.get("rating", "")}
+        return None
 
     def _save_simulation(self, data: dict) -> dict:
         """시뮬레이션 결과 저장 & 인덱스 갱신"""

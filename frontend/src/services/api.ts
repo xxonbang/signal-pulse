@@ -1,4 +1,4 @@
-import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData, CombinedAnalysisData, SimulationIndex, SimulationData, StockCriteria, MarketStatusData, MarketIndexStatus, KeyAlertData } from './types';
+import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData, CombinedAnalysisData, SimulationIndex, SimulationData, StockCriteria, MarketStatusData, MarketIndexStatus, KeyAlertData, FearGreedData } from './types';
 
 const BASE_URL = import.meta.env.DEV ? '' : '.';
 
@@ -163,6 +163,20 @@ export async function fetchMarketStatus(): Promise<MarketStatusData | null> {
       return { kospi: { status: 'unknown', ma_values: {}, reason: '' }, kosdaq: data as MarketIndexStatus };
     }
     return data as MarketStatusData;
+  } catch {
+    return null;
+  }
+}
+
+// Fear & Greed 지수
+export async function fetchFearGreedIndex(): Promise<FearGreedData | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/kis/fear_greed.json`);
+    if (!response.ok) {
+      if (response.status === 404) return null;
+      throw new Error('Failed to fetch fear greed index');
+    }
+    return response.json();
   } catch {
     return null;
   }
