@@ -312,18 +312,6 @@ def validate_and_recalculate(item: dict) -> dict:
     # confidence 재계산
     item["confidence"] = round(total / 10, 2)
 
-    # signal 재판정
-    if total >= 8.0:
-        item["signal"] = "적극매수"
-    elif total >= 6.5:
-        item["signal"] = "매수"
-    elif total >= 3.5:
-        item["signal"] = "중립"
-    elif total >= 2.0:
-        item["signal"] = "매도"
-    else:
-        item["signal"] = "적극매도"
-
     return item
 
 
@@ -1038,7 +1026,6 @@ def analyze_kis_data(
 
     # API 호출 시도 (파싱 실패, 429 오류 등 모두 재시도)
     consecutive_parse_failures = 0
-    use_json_mime = True  # response_mime_type 사용 시도
     for attempt in range(max_retries):
         key_info = get_next_api_key()
         if not key_info:
@@ -1067,13 +1054,6 @@ def analyze_kis_data(
             print(f"[API] 요청 데이터: {len(prompt):,}자")
             api_start_time = time.time()
 
-            api_config = {
-                "max_output_tokens": 65536,
-                "tools": [{"google_search": {}}],
-            }
-            if use_json_mime:
-                api_config["response_mime_type"] = "application/json"
-
             response = client.models.generate_content(
                 model=GEMINI_MODEL_LITE,
                 contents=[
@@ -1082,7 +1062,10 @@ def analyze_kis_data(
                         "parts": [{"text": prompt}]
                     }
                 ],
-                config=api_config,
+                config={
+                    "max_output_tokens": 65536,
+                    "tools": [{"google_search": {}}],
+                },
             )
 
             api_elapsed = time.time() - api_start_time
@@ -1207,11 +1190,6 @@ def analyze_kis_data(
                     time.sleep(backoff)
                 continue
             elif e.code == 400:
-                if use_json_mime:
-                    # response_mime_type과 google_search 충돌 가능 → 제거 후 재시도
-                    print(f"  HTTP 400: response_mime_type 제거 후 재시도")
-                    use_json_mime = False
-                    continue
                 # INVALID_ARGUMENT — 요청 자체 문제, 다른 키로 재시도해도 동일
                 print(f"  요청 오류 (HTTP 400). 동일 요청 재시도 불가.")
                 record_alert("GEMINI", f"KEY_{key_index+1}", "request_error", f"KIS 분석: HTTP 400 요청 오류")
