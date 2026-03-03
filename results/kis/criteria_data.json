@@ -1,9 +1,9 @@
 {
-  "016920": {
+  "020760": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 956, 6개월고가 1,286, 52주고가 1,242)"
+      "reason": "미돌파 (현재가 902, 6개월고가 944, 52주고가 1,172)"
     },
     "momentum_history": {
       "met": false,
@@ -19,11 +19,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 978.6,
-        "MA10": 991.8,
-        "MA20": 1003.0,
-        "MA60": 1037.7,
-        "MA120": 1090.0
+        "MA5": 902.0,
+        "MA10": 902.0,
+        "MA20": 902.0,
+        "MA60": 903.4,
+        "MA120": 908.3
       }
     },
     "supply_demand": {
@@ -40,23 +40,23 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 253억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 465억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": false,
-      "reason": "RSI 34.2 (정상)"
+      "reason": "RSI 19.8 (정상)"
     },
     "reverse_ma_alert": {
       "met": true,
-      "reason": "역배열 (현재가 956 < MA5=979, MA10=992, MA20=1,003, MA60=1,038)"
+      "reason": "역배열 (현재가 902 < MA5=902, MA10=902, MA20=902, MA60=903)"
     },
     "all_met": false
   },
-  "002780": {
+  "022220": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 763, 6개월고가 869, 52주고가 991)"
+      "reason": "미돌파 (현재가 577, 6개월고가 915, 52주고가 750)"
     },
     "momentum_history": {
       "met": false,
@@ -72,117 +72,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 781.9,
-        "MA10": 790.1,
-        "MA20": 780.5,
-        "MA60": 745.5,
-        "MA120": 724.1
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 1,110억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 47.5 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "004270": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 773, 6개월고가 1,039, 52주고가 1,004)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 783.2,
-        "MA10": 790.1,
-        "MA20": 799.7,
-        "MA60": 836.7,
-        "MA120": 890.4
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 280억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 33.2 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 773 < MA5=783, MA10=790, MA20=800, MA60=837)"
-    },
-    "all_met": false
-  },
-  "023440": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 783, 6개월고가 1,733, 52주고가 1,017)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 770.6,
-        "MA10": 772.3,
-        "MA20": 773.2,
-        "MA60": 821.1,
-        "MA120": 1040.6
+        "MA5": 590.1,
+        "MA10": 600.0,
+        "MA20": 617.9,
+        "MA60": 669.9,
+        "MA120": 730.4
       }
     },
     "supply_demand": {
@@ -199,129 +93,23 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 706억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 299억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": false,
-      "reason": "RSI 51.9 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "044380": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 336, 6개월고가 594, 52주고가 436)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 356.4,
-        "MA10": 371.0,
-        "MA20": 385.6,
-        "MA60": 415.9,
-        "MA120": 455.8
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 217억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 25.6 (정상)"
+      "reason": "RSI 31.9 (정상)"
     },
     "reverse_ma_alert": {
       "met": true,
-      "reason": "역배열 (현재가 336 < MA5=356, MA10=371, MA20=386, MA60=416)"
+      "reason": "역배열 (현재가 577 < MA5=590, MA10=600, MA20=618, MA60=670)"
     },
     "all_met": false
   },
-  "021880": {
+  "016600": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 249, 6개월고가 336, 52주고가 323)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 256.3,
-        "MA10": 260.1,
-        "MA20": 259.0,
-        "MA60": 257.3,
-        "MA120": 270.4
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 528억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 44.6 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "044180": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 280, 6개월고가 992, 52주고가 364)"
+      "reason": "미돌파 (현재가 337, 6개월고가 447, 52주고가 438)"
     },
     "momentum_history": {
       "met": true,
@@ -337,11 +125,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 304.3,
-        "MA10": 326.7,
-        "MA20": 364.8,
-        "MA60": 471.3,
-        "MA120": 566.2
+        "MA5": 352.2,
+        "MA10": 350.7,
+        "MA20": 329.9,
+        "MA60": 287.9,
+        "MA120": 273.4
       }
     },
     "supply_demand": {
@@ -358,15 +146,68 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 75억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 601억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": false,
-      "reason": "RSI 31.7 (정상)"
+      "reason": "RSI 55.9 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "008600": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 263, 6개월고가 544, 52주고가 341)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 272.2,
+        "MA10": 286.3,
+        "MA20": 301.2,
+        "MA60": 315.4,
+        "MA120": 324.7
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 177억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 36.9 (정상)"
     },
     "reverse_ma_alert": {
       "met": true,
-      "reason": "역배열 (현재가 280 < MA5=304, MA10=327, MA20=365, MA60=471)"
+      "reason": "역배열 (현재가 263 < MA5=272, MA10=286, MA20=301, MA60=315)"
     },
     "all_met": false
   },
@@ -423,64 +264,11 @@
     },
     "all_met": false
   },
-  "027580": {
+  "004270": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 555, 6개월고가 1,072, 52주고가 721)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 589.1,
-        "MA10": 638.0,
-        "MA20": 692.7,
-        "MA60": 759.3,
-        "MA120": 813.7
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 328억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 25.1 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 555 < MA5=589, MA10=638, MA20=693, MA60=759)"
-    },
-    "all_met": false
-  },
-  "025750": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 607, 6개월고가 713, 52주고가 789)"
+      "reason": "미돌파 (현재가 773, 6개월고가 1,039, 52주고가 1,004)"
     },
     "momentum_history": {
       "met": false,
@@ -496,647 +284,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 618.1,
-        "MA10": 621.3,
-        "MA20": 620.7,
-        "MA60": 627.8,
-        "MA120": 648.1
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 489억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 43.0 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "031860": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 270, 6개월고가 1,157, 52주고가 351)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 326.4,
-        "MA10": 380.6,
-        "MA20": 446.7,
-        "MA60": 567.3,
-        "MA120": 676.3
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 51억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 14.8 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 270 < MA5=326, MA10=381, MA20=447, MA60=567)"
-    },
-    "all_met": false
-  },
-  "056730": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 488, 6개월고가 762, 52주고가 634)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 499.4,
-        "MA10": 513.1,
-        "MA20": 530.6,
-        "MA60": 576.1,
-        "MA120": 632.8
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 362억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 18.0 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 488 < MA5=499, MA10=513, MA20=531, MA60=576)"
-    },
-    "all_met": false
-  },
-  "008290": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 359, 6개월고가 684, 52주고가 466)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 368.3,
-        "MA10": 377.3,
-        "MA20": 394.3,
-        "MA60": 432.9,
-        "MA120": 471.9
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 146억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 40.3 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 359 < MA5=368, MA10=377, MA20=394, MA60=433)"
-    },
-    "all_met": false
-  },
-  "001290": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 1,250, 6개월고가 1,782, 52주고가 1,625)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 1294.2,
-        "MA10": 1212.8,
-        "MA20": 1063.5,
-        "MA60": 848.9,
-        "MA120": 782.7
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 1,354억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 61.8 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "000180": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 1,630, 6개월고가 1,849, 52주고가 2,115)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 1663.9,
-        "MA10": 1663.5,
-        "MA20": 1616.7,
-        "MA60": 1546.6,
-        "MA120": 1576.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 1,137억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 54.5 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "033050": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 892, 6개월고가 952, 52주고가 1,159)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 893.5,
-        "MA10": 885.5,
-        "MA20": 871.9,
-        "MA60": 845.6,
-        "MA120": 830.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 291억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 59.1 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "020760": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 902, 6개월고가 944, 52주고가 1,172)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 902.0,
-        "MA10": 902.0,
-        "MA20": 902.0,
-        "MA60": 903.4,
-        "MA120": 908.3
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 465억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 19.8 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 902 < MA5=902, MA10=902, MA20=902, MA60=903)"
-    },
-    "all_met": false
-  },
-  "035620": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 285, 6개월고가 505, 52주고가 370)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 285.0,
-        "MA10": 290.6,
-        "MA20": 303.6,
-        "MA60": 342.4,
-        "MA120": 389.9
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 212억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 35.5 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "012340": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 604, 6개월고가 956, 52주고가 785)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 638.2,
-        "MA10": 643.3,
-        "MA20": 613.2,
-        "MA60": 547.3,
-        "MA120": 516.1
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 323억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 51.1 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "011080": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 505, 6개월고가 1,172, 52주고가 656)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 564.6,
-        "MA10": 605.4,
-        "MA20": 642.5,
-        "MA60": 692.3,
-        "MA120": 725.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 217억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 15.5 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 505 < MA5=565, MA10=605, MA20=643, MA60=692)"
-    },
-    "all_met": false
-  },
-  "015260": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 510, 6개월고가 820, 52주고가 663)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 543.6,
-        "MA10": 529.9,
-        "MA20": 498.0,
-        "MA60": 467.7,
-        "MA120": 481.5
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 230억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 52.3 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "015020": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 434, 6개월고가 709, 52주고가 564)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 450.5,
-        "MA10": 468.9,
-        "MA20": 497.5,
-        "MA60": 544.6,
-        "MA120": 575.3
+        "MA5": 783.2,
+        "MA10": 790.1,
+        "MA20": 799.7,
+        "MA60": 836.7,
+        "MA120": 890.4
       }
     },
     "supply_demand": {
@@ -1153,23 +305,23 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 186억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 280억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": false,
-      "reason": "RSI 33.6 (정상)"
+      "reason": "RSI 33.2 (정상)"
     },
     "reverse_ma_alert": {
       "met": true,
-      "reason": "역배열 (현재가 434 < MA5=451, MA10=469, MA20=498, MA60=545)"
+      "reason": "역배열 (현재가 773 < MA5=783, MA10=790, MA20=800, MA60=837)"
     },
     "all_met": false
   },
-  "044480": {
+  "013720": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 221, 6개월고가 714, 52주고가 287)"
+      "reason": "미돌파 (현재가 737, 6개월고가 1,240, 52주고가 958)"
     },
     "momentum_history": {
       "met": true,
@@ -1185,11 +337,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 231.0,
-        "MA10": 240.2,
-        "MA20": 252.2,
-        "MA60": 284.6,
-        "MA120": 332.7
+        "MA5": 736.6,
+        "MA10": 748.0,
+        "MA20": 785.1,
+        "MA60": 821.5,
+        "MA120": 855.6
       }
     },
     "supply_demand": {
@@ -1206,329 +358,11 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 178억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 448억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": false,
-      "reason": "RSI 32.3 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 221 < MA5=231, MA10=240, MA20=252, MA60=285)"
-    },
-    "all_met": false
-  },
-  "007720": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 578, 6개월고가 1,050, 52주고가 751)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 594.5,
-        "MA10": 605.3,
-        "MA20": 612.6,
-        "MA60": 642.6,
-        "MA120": 711.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 583억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 35.5 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 578 < MA5=594, MA10=605, MA20=613, MA60=643)"
-    },
-    "all_met": false
-  },
-  "065420": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 190, 6개월고가 334, 52주고가 247)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 188.7,
-        "MA10": 193.4,
-        "MA20": 202.9,
-        "MA60": 224.9,
-        "MA120": 247.3
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 136억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 37.2 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "032800": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 345, 6개월고가 600, 52주고가 448)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 355.0,
-        "MA10": 368.6,
-        "MA20": 392.0,
-        "MA60": 442.5,
-        "MA120": 474.6
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 159억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 26.7 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 345 < MA5=355, MA10=369, MA20=392, MA60=443)"
-    },
-    "all_met": false
-  },
-  "001620": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 860, 6개월고가 964, 52주고가 1,118)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": true,
-      "reason": "정배열 확인 (현재가>MA5>MA10>MA20>MA60>MA120)",
-      "ma_values": {
-        "MA5": 824.1,
-        "MA10": 763.3,
-        "MA20": 690.0,
-        "MA60": 586.7,
-        "MA120": 533.6
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 957억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": true,
-      "reason": "RSI 82.7 (위험: 과매수 극단)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "043090": {
-    "high_breakout": {
-      "met": true,
-      "is_52w_high": false,
-      "reason": "6개월 고점 돌파 (현재가 380 >= 6개월고가 380)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 380.0,
-        "MA10": 380.0,
-        "MA20": 380.0,
-        "MA60": 380.0,
-        "MA120": 380.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 47억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": true,
-      "reason": "RSI 100.0 (위험: 과매수 극단)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "002630": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 590, 6개월고가 816, 52주고가 767)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 608.3,
-        "MA10": 612.6,
-        "MA20": 603.3,
-        "MA60": 593.6,
-        "MA120": 597.6
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 700억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 48.5 (정상)"
+      "reason": "RSI 43.6 (정상)"
     },
     "reverse_ma_alert": {
       "met": false,
@@ -1589,64 +423,11 @@
     },
     "all_met": false
   },
-  "145210": {
+  "016920": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 363, 6개월고가 1,133, 52주고가 471)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 374.4,
-        "MA10": 390.0,
-        "MA20": 431.1,
-        "MA60": 575.5,
-        "MA120": 699.4
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 153억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 28.9 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 363 < MA5=374, MA10=390, MA20=431, MA60=576)"
-    },
-    "all_met": false
-  },
-  "069460": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 558, 6개월고가 1,981, 52주고가 725)"
+      "reason": "미돌파 (현재가 956, 6개월고가 1,286, 52주고가 1,242)"
     },
     "momentum_history": {
       "met": false,
@@ -1662,11 +443,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 593.4,
-        "MA10": 675.8,
-        "MA20": 851.4,
-        "MA60": 1211.2,
-        "MA120": 1479.0
+        "MA5": 978.6,
+        "MA10": 991.8,
+        "MA20": 1003.0,
+        "MA60": 1037.7,
+        "MA120": 1090.0
       }
     },
     "supply_demand": {
@@ -1683,1340 +464,15 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 486억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 253억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": false,
-      "reason": "RSI 11.0 (정상)"
+      "reason": "RSI 34.2 (정상)"
     },
     "reverse_ma_alert": {
       "met": true,
-      "reason": "역배열 (현재가 558 < MA5=593, MA10=676, MA20=851, MA60=1,211)"
-    },
-    "all_met": false
-  },
-  "019550": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 750, 6개월고가 961, 52주고가 975)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 784.6,
-        "MA10": 804.1,
-        "MA20": 798.3,
-        "MA60": 761.7,
-        "MA120": 741.7
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 1,215억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 44.0 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "000040": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 385, 6개월고가 600, 52주고가 500)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 392.5,
-        "MA10": 400.1,
-        "MA20": 410.5,
-        "MA60": 438.8,
-        "MA120": 475.8
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 333억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 30.9 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 385 < MA5=392, MA10=400, MA20=410, MA60=439)"
-    },
-    "all_met": false
-  },
-  "008600": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 263, 6개월고가 544, 52주고가 341)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 272.2,
-        "MA10": 286.3,
-        "MA20": 301.2,
-        "MA60": 315.4,
-        "MA120": 324.7
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 177억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 36.9 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 263 < MA5=272, MA10=286, MA20=301, MA60=315)"
-    },
-    "all_met": false
-  },
-  "025440": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 951, 6개월고가 1,530, 52주고가 1,236)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 978.4,
-        "MA10": 995.7,
-        "MA20": 1013.7,
-        "MA60": 970.9,
-        "MA120": 879.6
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 464억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 40.6 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "016790": {
-    "high_breakout": {
-      "met": true,
-      "is_52w_high": false,
-      "reason": "6개월 고점 돌파 (현재가 994 >= 6개월고가 994)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 994.0,
-        "MA10": 994.0,
-        "MA20": 994.0,
-        "MA60": 994.0,
-        "MA120": 994.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 1,873억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": true,
-      "reason": "RSI 100.0 (위험: 과매수 극단)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "003060": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 307, 6개월고가 693, 52주고가 399)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 329.7,
-        "MA10": 359.7,
-        "MA20": 402.5,
-        "MA60": 480.8,
-        "MA120": 537.9
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 609억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 23.5 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 307 < MA5=330, MA10=360, MA20=403, MA60=481)"
-    },
-    "all_met": false
-  },
-  "032680": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 261, 6개월고가 355, 52주고가 339)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 270.9,
-        "MA10": 272.6,
-        "MA20": 271.8,
-        "MA60": 276.3,
-        "MA120": 282.2
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 276억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 46.5 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "065150": {
-    "high_breakout": {
-      "met": true,
-      "is_52w_high": false,
-      "reason": "6개월 고점 돌파 (현재가 145 >= 6개월고가 145)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 145.0,
-        "MA10": 145.0,
-        "MA20": 145.0,
-        "MA60": 145.0,
-        "MA120": 145.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 231억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": true,
-      "reason": "RSI 100.0 (위험: 과매수 극단)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "011300": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 361, 6개월고가 588, 52주고가 469)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 371.3,
-        "MA10": 379.5,
-        "MA20": 384.0,
-        "MA60": 383.9,
-        "MA120": 390.3
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 563억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 44.0 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "002680": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 648, 6개월고가 959, 52주고가 842)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 648.4,
-        "MA10": 653.0,
-        "MA20": 662.6,
-        "MA60": 688.3,
-        "MA120": 714.6
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 209억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 43.6 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 648 < MA5=648, MA10=653, MA20=663, MA60=688)"
-    },
-    "all_met": false
-  },
-  "019570": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 378, 6개월고가 946, 52주고가 491)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 400.8,
-        "MA10": 417.4,
-        "MA20": 404.3,
-        "MA60": 346.7,
-        "MA120": 320.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 254억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 48.6 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "016600": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 337, 6개월고가 447, 52주고가 438)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 352.2,
-        "MA10": 350.7,
-        "MA20": 329.9,
-        "MA60": 287.9,
-        "MA120": 273.4
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 601억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 55.9 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "024890": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 786, 6개월고가 1,000, 52주고가 1,021)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 795.3,
-        "MA10": 800.0,
-        "MA20": 809.5,
-        "MA60": 815.3,
-        "MA120": 819.4
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 324억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 40.9 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 786 < MA5=795, MA10=800, MA20=809, MA60=815)"
-    },
-    "all_met": false
-  },
-  "006490": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 465, 6개월고가 935, 52주고가 604)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 483.4,
-        "MA10": 512.8,
-        "MA20": 558.1,
-        "MA60": 641.2,
-        "MA120": 698.8
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 585억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 29.2 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 465 < MA5=483, MA10=513, MA20=558, MA60=641)"
-    },
-    "all_met": false
-  },
-  "058450": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 399, 6개월고가 1,315, 52주고가 518)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 509.1,
-        "MA10": 625.8,
-        "MA20": 738.6,
-        "MA60": 848.7,
-        "MA120": 921.3
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 80억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 18.1 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 399 < MA5=509, MA10=626, MA20=739, MA60=849)"
-    },
-    "all_met": false
-  },
-  "009460": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 529, 6개월고가 655, 52주고가 687)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 529.2,
-        "MA10": 526.4,
-        "MA20": 522.5,
-        "MA60": 528.6,
-        "MA120": 558.8
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 316억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 53.4 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "002070": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 521, 6개월고가 784, 52주고가 677)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 540.5,
-        "MA10": 552.7,
-        "MA20": 561.9,
-        "MA60": 597.1,
-        "MA120": 656.6
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 235억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 30.9 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 521 < MA5=541, MA10=553, MA20=562, MA60=597)"
-    },
-    "all_met": false
-  },
-  "002210": {
-    "high_breakout": {
-      "met": true,
-      "is_52w_high": false,
-      "reason": "6개월 고점 돌파 (현재가 973 >= 6개월고가 973)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 973.0,
-        "MA10": 973.0,
-        "MA20": 973.0,
-        "MA60": 973.0,
-        "MA120": 973.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 259억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": true,
-      "reason": "RSI 100.0 (위험: 과매수 극단)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "027040": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 244, 6개월고가 266, 52주고가 317)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": true,
-      "reason": "정배열 확인 (현재가>MA5>MA10>MA20>MA60>MA120)",
-      "ma_values": {
-        "MA5": 239.9,
-        "MA10": 231.9,
-        "MA20": 223.2,
-        "MA60": 211.5,
-        "MA120": 209.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 170억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 67.1 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "013720": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 737, 6개월고가 1,240, 52주고가 958)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 736.6,
-        "MA10": 748.0,
-        "MA20": 785.1,
-        "MA60": 821.5,
-        "MA120": 855.6
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 448억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 43.6 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "000890": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 485, 6개월고가 529, 52주고가 630)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 489.5,
-        "MA10": 483.5,
-        "MA20": 466.1,
-        "MA60": 442.9,
-        "MA120": 443.5
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 670억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 63.1 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "083660": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 285, 6개월고가 1,453, 52주고가 370)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 290.0,
-        "MA10": 318.1,
-        "MA20": 368.8,
-        "MA60": 490.7,
-        "MA120": 668.5
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 179억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 29.3 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 285 < MA5=290, MA10=318, MA20=369, MA60=491)"
-    },
-    "all_met": false
-  },
-  "009730": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 640, 6개월고가 1,000, 52주고가 832)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 639.2,
-        "MA10": 637.6,
-        "MA20": 633.6,
-        "MA60": 666.3,
-        "MA120": 754.7
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 396억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 51.0 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "011090": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 476, 6개월고가 834, 52주고가 618)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 485.9,
-        "MA10": 494.3,
-        "MA20": 504.5,
-        "MA60": 527.6,
-        "MA120": 547.3
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 286억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 30.4 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 476 < MA5=486, MA10=494, MA20=505, MA60=528)"
-    },
-    "all_met": false
-  },
-  "002360": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 480, 6개월고가 483, 52주고가 624)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 437.3,
-        "MA10": 415.4,
-        "MA20": 397.0,
-        "MA60": 386.0,
-        "MA120": 395.8
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 533억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": true,
-      "reason": "RSI 76.2 (주의: 과매수 구간)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
+      "reason": "역배열 (현재가 956 < MA5=979, MA10=992, MA20=1,003, MA60=1,038)"
     },
     "all_met": false
   },
@@ -3126,17 +582,17 @@
     },
     "all_met": false
   },
-  "033170": {
+  "065420": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 804, 6개월고가 1,183, 52주고가 1,045)"
+      "reason": "미돌파 (현재가 190, 6개월고가 334, 52주고가 247)"
     },
     "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
+      "met": false,
+      "had_limit_up": false,
       "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
+      "reason": "급등 이력 없음"
     },
     "resistance_breakout": {
       "met": false,
@@ -3146,11 +602,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 834.8,
-        "MA10": 843.9,
-        "MA20": 843.7,
-        "MA60": 816.8,
-        "MA120": 785.3
+        "MA5": 188.7,
+        "MA10": 193.4,
+        "MA20": 202.9,
+        "MA60": 224.9,
+        "MA120": 247.3
       }
     },
     "supply_demand": {
@@ -3167,64 +623,11 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 689억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 136억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": false,
-      "reason": "RSI 45.1 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "001020": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 801, 6개월고가 1,040, 52주고가 1,041)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 768.4,
-        "MA10": 721.9,
-        "MA20": 677.6,
-        "MA60": 647.8,
-        "MA120": 670.7
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 1,426억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": true,
-      "reason": "RSI 73.4 (주의: 과매수 구간)"
+      "reason": "RSI 37.2 (정상)"
     },
     "reverse_ma_alert": {
       "met": false,
@@ -3285,17 +688,17 @@
     },
     "all_met": false
   },
-  "083640": {
+  "009460": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 418, 6개월고가 834, 52주고가 543)"
+      "reason": "미돌파 (현재가 529, 6개월고가 655, 52주고가 687)"
     },
     "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
+      "met": false,
+      "had_limit_up": false,
       "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
+      "reason": "급등 이력 없음"
     },
     "resistance_breakout": {
       "met": false,
@@ -3305,11 +708,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 436.1,
-        "MA10": 439.7,
-        "MA20": 424.3,
-        "MA60": 361.6,
-        "MA120": 327.1
+        "MA5": 529.2,
+        "MA10": 526.4,
+        "MA20": 522.5,
+        "MA60": 528.6,
+        "MA120": 558.8
       }
     },
     "supply_demand": {
@@ -3326,11 +729,11 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 325억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 316억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": false,
-      "reason": "RSI 51.0 (정상)"
+      "reason": "RSI 53.4 (정상)"
     },
     "reverse_ma_alert": {
       "met": false,
@@ -3338,11 +741,64 @@
     },
     "all_met": false
   },
-  "004410": {
+  "002680": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 212, 6개월고가 283, 52주고가 275)"
+      "reason": "미돌파 (현재가 648, 6개월고가 959, 52주고가 842)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 648.4,
+        "MA10": 653.0,
+        "MA20": 662.6,
+        "MA60": 688.3,
+        "MA120": 714.6
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 209억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 43.6 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 648 < MA5=648, MA10=653, MA20=663, MA60=688)"
+    },
+    "all_met": false
+  },
+  "006490": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 465, 6개월고가 935, 52주고가 604)"
     },
     "momentum_history": {
       "met": true,
@@ -3358,11 +814,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 220.3,
-        "MA10": 210.3,
-        "MA20": 191.0,
-        "MA60": 166.9,
-        "MA120": 161.3
+        "MA5": 483.4,
+        "MA10": 512.8,
+        "MA20": 558.1,
+        "MA60": 641.2,
+        "MA120": 698.8
       }
     },
     "supply_demand": {
@@ -3379,11 +835,329 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 827억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 585억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": false,
-      "reason": "RSI 60.1 (정상)"
+      "reason": "RSI 29.2 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 465 < MA5=483, MA10=513, MA20=558, MA60=641)"
+    },
+    "all_met": false
+  },
+  "011090": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 476, 6개월고가 834, 52주고가 618)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 485.9,
+        "MA10": 494.3,
+        "MA20": 504.5,
+        "MA60": 527.6,
+        "MA120": 547.3
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 286억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 30.4 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 476 < MA5=486, MA10=494, MA20=505, MA60=528)"
+    },
+    "all_met": false
+  },
+  "032800": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 345, 6개월고가 600, 52주고가 448)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 355.0,
+        "MA10": 368.6,
+        "MA20": 392.0,
+        "MA60": 442.5,
+        "MA120": 474.6
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 159억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 26.7 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 345 < MA5=355, MA10=369, MA20=392, MA60=443)"
+    },
+    "all_met": false
+  },
+  "032790": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 667, 6개월고가 1,275, 52주고가 867)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 699.1,
+        "MA10": 750.9,
+        "MA20": 838.3,
+        "MA60": 954.5,
+        "MA120": 963.7
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 343억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 26.0 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 667 < MA5=699, MA10=751, MA20=838, MA60=954)"
+    },
+    "all_met": false
+  },
+  "019490": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 541, 6개월고가 902, 52주고가 703)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 541.0,
+        "MA10": 541.0,
+        "MA20": 541.1,
+        "MA60": 553.7,
+        "MA120": 595.8
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 413억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 30.0 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 541 < MA5=541, MA10=541, MA20=541, MA60=554)"
+    },
+    "all_met": false
+  },
+  "015260": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 510, 6개월고가 820, 52주고가 663)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 543.6,
+        "MA10": 529.9,
+        "MA20": 498.0,
+        "MA60": 467.7,
+        "MA120": 481.5
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 230억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 52.3 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "025750": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 607, 6개월고가 713, 52주고가 789)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 618.1,
+        "MA10": 621.3,
+        "MA20": 620.7,
+        "MA60": 627.8,
+        "MA120": 648.1
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 489억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 43.0 (정상)"
     },
     "reverse_ma_alert": {
       "met": false,
@@ -3444,11 +1218,11 @@
     },
     "all_met": false
   },
-  "002880": {
+  "065150": {
     "high_breakout": {
-      "met": false,
+      "met": true,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 983, 6개월고가 1,530, 52주고가 1,277)"
+      "reason": "6개월 고점 돌파 (현재가 145 >= 6개월고가 145)"
     },
     "momentum_history": {
       "met": false,
@@ -3464,64 +1238,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 1000.1,
-        "MA10": 1011.2,
-        "MA20": 1025.1,
-        "MA60": 1064.0,
-        "MA120": 1105.2
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 460억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 35.6 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 983 < MA5=1,000, MA10=1,011, MA20=1,025, MA60=1,064)"
-    },
-    "all_met": false
-  },
-  "014990": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 833, 6개월고가 1,281, 52주고가 1,082)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 852.1,
-        "MA10": 857.7,
-        "MA20": 849.9,
-        "MA60": 870.3,
-        "MA120": 961.7
+        "MA5": 145.0,
+        "MA10": 145.0,
+        "MA20": 145.0,
+        "MA60": 145.0,
+        "MA120": 145.0
       }
     },
     "supply_demand": {
@@ -3538,60 +1259,7 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 626억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 47.6 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "082660": {
-    "high_breakout": {
-      "met": true,
-      "is_52w_high": false,
-      "reason": "6개월 고점 돌파 (현재가 480 >= 6개월고가 480)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 480.0,
-        "MA10": 480.0,
-        "MA20": 480.0,
-        "MA60": 480.0,
-        "MA120": 480.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 478억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 231억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": true,
@@ -3600,165 +1268,6 @@
     "reverse_ma_alert": {
       "met": false,
       "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "060900": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 295, 6개월고가 974, 52주고가 383)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 306.3,
-        "MA10": 343.5,
-        "MA20": 405.9,
-        "MA60": 512.6,
-        "MA120": 576.1
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 235억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 15.9 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 295 < MA5=306, MA10=344, MA20=406, MA60=513)"
-    },
-    "all_met": false
-  },
-  "079190": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 415, 6개월고가 715, 52주고가 539)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 428.5,
-        "MA10": 436.0,
-        "MA20": 448.6,
-        "MA60": 469.3,
-        "MA120": 477.8
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 159억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 43.7 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 415 < MA5=429, MA10=436, MA20=449, MA60=469)"
-    },
-    "all_met": false
-  },
-  "049080": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 459, 6개월고가 649, 52주고가 596)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 462.9,
-        "MA10": 463.6,
-        "MA20": 480.0,
-        "MA60": 513.7,
-        "MA120": 515.8
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 390억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 44.4 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 459 < MA5=463, MA10=464, MA20=480, MA60=514)"
     },
     "all_met": false
   },
@@ -3815,11 +1324,11 @@
     },
     "all_met": false
   },
-  "022220": {
+  "000180": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 577, 6개월고가 915, 52주고가 750)"
+      "reason": "미돌파 (현재가 1,630, 6개월고가 1,849, 52주고가 2,115)"
     },
     "momentum_history": {
       "met": false,
@@ -3835,11 +1344,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 590.1,
-        "MA10": 600.0,
-        "MA20": 617.9,
-        "MA60": 669.9,
-        "MA120": 730.4
+        "MA5": 1663.9,
+        "MA10": 1663.5,
+        "MA20": 1616.7,
+        "MA60": 1546.6,
+        "MA120": 1576.0
       }
     },
     "supply_demand": {
@@ -3856,117 +1365,11 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 299억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 1,137억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": false,
-      "reason": "RSI 31.9 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 577 < MA5=590, MA10=600, MA20=618, MA60=670)"
-    },
-    "all_met": false
-  },
-  "078130": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 295, 6개월고가 518, 52주고가 383)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 307.3,
-        "MA10": 318.2,
-        "MA20": 329.1,
-        "MA60": 350.3,
-        "MA120": 384.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": true,
-      "reason": "시가총액 3,326억원 (적정 범위: 3,000억~10조)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 25.8 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 295 < MA5=307, MA10=318, MA20=329, MA60=350)"
-    },
-    "all_met": false
-  },
-  "005320": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 571, 6개월고가 625, 52주고가 742)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 572.1,
-        "MA10": 546.2,
-        "MA20": 510.8,
-        "MA60": 482.3,
-        "MA120": 498.4
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 390억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 67.1 (정상)"
+      "reason": "RSI 54.5 (정상)"
     },
     "reverse_ma_alert": {
       "met": false,
@@ -3974,11 +1377,11 @@
     },
     "all_met": false
   },
-  "004060": {
+  "012340": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 617, 6개월고가 903, 52주고가 802)"
+      "reason": "미돌파 (현재가 604, 6개월고가 956, 52주고가 785)"
     },
     "momentum_history": {
       "met": true,
@@ -3994,11 +1397,117 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 637.6,
-        "MA10": 611.0,
-        "MA20": 543.9,
-        "MA60": 430.6,
-        "MA120": 376.9
+        "MA5": 638.2,
+        "MA10": 643.3,
+        "MA20": 613.2,
+        "MA60": 547.3,
+        "MA120": 516.1
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 323억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 51.1 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "049080": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 459, 6개월고가 649, 52주고가 596)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 462.9,
+        "MA10": 463.6,
+        "MA20": 480.0,
+        "MA60": 513.7,
+        "MA120": 515.8
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 390억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 44.4 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 459 < MA5=463, MA10=464, MA20=480, MA60=514)"
+    },
+    "all_met": false
+  },
+  "002880": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 983, 6개월고가 1,530, 52주고가 1,277)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 1000.1,
+        "MA10": 1011.2,
+        "MA20": 1025.1,
+        "MA60": 1064.0,
+        "MA120": 1105.2
       }
     },
     "supply_demand": {
@@ -4015,11 +1524,700 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 1,249억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 460억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": false,
-      "reason": "RSI 61.1 (정상)"
+      "reason": "RSI 35.6 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 983 < MA5=1,000, MA10=1,011, MA20=1,025, MA60=1,064)"
+    },
+    "all_met": false
+  },
+  "101390": {
+    "high_breakout": {
+      "met": true,
+      "is_52w_high": false,
+      "reason": "6개월 고점 돌파 (현재가 396 >= 6개월고가 396)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 396.0,
+        "MA10": 396.0,
+        "MA20": 396.0,
+        "MA60": 396.0,
+        "MA120": 396.0
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 55억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": true,
+      "reason": "RSI 100.0 (위험: 과매수 극단)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "024890": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 786, 6개월고가 1,000, 52주고가 1,021)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 795.3,
+        "MA10": 800.0,
+        "MA20": 809.5,
+        "MA60": 815.3,
+        "MA120": 819.4
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 324억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 40.9 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 786 < MA5=795, MA10=800, MA20=809, MA60=815)"
+    },
+    "all_met": false
+  },
+  "042040": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 172, 6개월고가 260, 52주고가 223)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 171.2,
+        "MA10": 175.6,
+        "MA20": 184.9,
+        "MA60": 202.2,
+        "MA120": 216.8
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 336억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 33.0 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "033170": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 804, 6개월고가 1,183, 52주고가 1,045)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 834.8,
+        "MA10": 843.9,
+        "MA20": 843.7,
+        "MA60": 816.8,
+        "MA120": 785.3
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 689억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 45.1 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "008290": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 359, 6개월고가 684, 52주고가 466)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 368.3,
+        "MA10": 377.3,
+        "MA20": 394.3,
+        "MA60": 432.9,
+        "MA120": 471.9
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 146억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 40.3 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 359 < MA5=368, MA10=377, MA20=394, MA60=433)"
+    },
+    "all_met": false
+  },
+  "000890": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 485, 6개월고가 529, 52주고가 630)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 489.5,
+        "MA10": 483.5,
+        "MA20": 466.1,
+        "MA60": 442.9,
+        "MA120": 443.5
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 670억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 63.1 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "069460": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 558, 6개월고가 1,981, 52주고가 725)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 593.4,
+        "MA10": 675.8,
+        "MA20": 851.4,
+        "MA60": 1211.2,
+        "MA120": 1479.0
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 486억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 11.0 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 558 < MA5=593, MA10=676, MA20=851, MA60=1,211)"
+    },
+    "all_met": false
+  },
+  "078860": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 394, 6개월고가 1,586, 52주고가 512)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 466.0,
+        "MA10": 595.2,
+        "MA20": 746.1,
+        "MA60": 973.3,
+        "MA120": 1144.8
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 234억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 9.8 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 394 < MA5=466, MA10=595, MA20=746, MA60=973)"
+    },
+    "all_met": false
+  },
+  "005030": {
+    "high_breakout": {
+      "met": true,
+      "is_52w_high": false,
+      "reason": "6개월 고점 돌파 (현재가 486 >= 6개월고가 486)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 486.0,
+        "MA10": 486.0,
+        "MA20": 486.0,
+        "MA60": 486.0,
+        "MA120": 486.0
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 383억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": true,
+      "reason": "RSI 100.0 (위험: 과매수 극단)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "038880": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 133, 6개월고가 201, 52주고가 172)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 136.2,
+        "MA10": 136.8,
+        "MA20": 139.4,
+        "MA60": 150.3,
+        "MA120": 164.1
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 500억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 43.1 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 133 < MA5=136, MA10=137, MA20=139, MA60=150)"
+    },
+    "all_met": false
+  },
+  "001290": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 1,250, 6개월고가 1,782, 52주고가 1,625)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 1294.2,
+        "MA10": 1212.8,
+        "MA20": 1063.5,
+        "MA60": 848.9,
+        "MA120": 782.7
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 1,354억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 61.8 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "015020": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 434, 6개월고가 709, 52주고가 564)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 450.5,
+        "MA10": 468.9,
+        "MA20": 497.5,
+        "MA60": 544.6,
+        "MA120": 575.3
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 186억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 33.6 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 434 < MA5=451, MA10=469, MA20=498, MA60=545)"
+    },
+    "all_met": false
+  },
+  "083640": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 418, 6개월고가 834, 52주고가 543)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 436.1,
+        "MA10": 439.7,
+        "MA20": 424.3,
+        "MA60": 361.6,
+        "MA120": 327.1
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 325억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 51.0 (정상)"
     },
     "reverse_ma_alert": {
       "met": false,
@@ -4080,17 +2278,17 @@
     },
     "all_met": false
   },
-  "001210": {
+  "078130": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 831, 6개월고가 1,392, 52주고가 1,080)"
+      "reason": "미돌파 (현재가 295, 6개월고가 518, 52주고가 383)"
     },
     "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
+      "met": false,
+      "had_limit_up": false,
       "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
+      "reason": "급등 이력 없음"
     },
     "resistance_breakout": {
       "met": false,
@@ -4100,11 +2298,64 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 877.0,
-        "MA10": 895.3,
-        "MA20": 909.3,
-        "MA60": 866.7,
-        "MA120": 823.3
+        "MA5": 307.3,
+        "MA10": 318.2,
+        "MA20": 329.1,
+        "MA60": 350.3,
+        "MA120": 384.0
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": true,
+      "reason": "시가총액 3,326억원 (적정 범위: 3,000억~10조)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 25.8 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 295 < MA5=307, MA10=318, MA20=329, MA60=350)"
+    },
+    "all_met": false
+  },
+  "002210": {
+    "high_breakout": {
+      "met": true,
+      "is_52w_high": false,
+      "reason": "6개월 고점 돌파 (현재가 973 >= 6개월고가 973)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 973.0,
+        "MA10": 973.0,
+        "MA20": 973.0,
+        "MA60": 973.0,
+        "MA120": 973.0
       }
     },
     "supply_demand": {
@@ -4121,11 +2372,11 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 512억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 259억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
-      "met": false,
-      "reason": "RSI 42.1 (정상)"
+      "met": true,
+      "reason": "RSI 100.0 (위험: 과매수 극단)"
     },
     "reverse_ma_alert": {
       "met": false,
@@ -4133,11 +2384,11 @@
     },
     "all_met": false
   },
-  "018700": {
+  "001020": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 713, 6개월고가 1,157, 52주고가 926)"
+      "reason": "미돌파 (현재가 801, 6개월고가 1,040, 52주고가 1,041)"
     },
     "momentum_history": {
       "met": false,
@@ -4153,11 +2404,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 735.4,
-        "MA10": 772.4,
-        "MA20": 818.0,
-        "MA60": 887.3,
-        "MA120": 960.4
+        "MA5": 768.4,
+        "MA10": 721.9,
+        "MA20": 677.6,
+        "MA60": 647.8,
+        "MA120": 670.7
       }
     },
     "supply_demand": {
@@ -4169,34 +2420,34 @@
       "reason": "프로그램 순매수량: +0"
     },
     "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
+      "met": true,
+      "reason": "거래대금 TOP30"
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 250억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 1,426억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
-      "met": false,
-      "reason": "RSI 24.3 (정상)"
+      "met": true,
+      "reason": "RSI 73.4 (주의: 과매수 구간)"
     },
     "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 713 < MA5=735, MA10=772, MA20=818, MA60=887)"
+      "met": false,
+      "reason": "역배열 아님"
     },
     "all_met": false
   },
-  "042040": {
+  "032680": {
     "high_breakout": {
       "met": false,
       "is_52w_high": false,
-      "reason": "미돌파 (현재가 172, 6개월고가 260, 52주고가 223)"
+      "reason": "미돌파 (현재가 261, 6개월고가 355, 52주고가 339)"
     },
     "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
+      "met": true,
+      "had_limit_up": true,
       "had_momentum": false,
-      "reason": "급등 이력 없음"
+      "reason": "상한가 이력 있음(>=29%)"
     },
     "resistance_breakout": {
       "met": false,
@@ -4206,11 +2457,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 171.2,
-        "MA10": 175.6,
-        "MA20": 184.9,
-        "MA60": 202.2,
-        "MA120": 216.8
+        "MA5": 270.9,
+        "MA10": 272.6,
+        "MA20": 271.8,
+        "MA60": 276.3,
+        "MA120": 282.2
       }
     },
     "supply_demand": {
@@ -4227,11 +2478,64 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 336억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 276억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": false,
-      "reason": "RSI 33.0 (정상)"
+      "reason": "RSI 46.5 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "035620": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 285, 6개월고가 505, 52주고가 370)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 285.0,
+        "MA10": 290.6,
+        "MA20": 303.6,
+        "MA60": 342.4,
+        "MA120": 389.9
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 212억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 35.5 (정상)"
     },
     "reverse_ma_alert": {
       "met": false,
@@ -4292,11 +2596,11 @@
     },
     "all_met": false
   },
-  "015590": {
+  "007720": {
     "high_breakout": {
-      "met": true,
+      "met": false,
       "is_52w_high": false,
-      "reason": "6개월 고점 돌파 (현재가 515 >= 6개월고가 515)"
+      "reason": "미돌파 (현재가 578, 6개월고가 1,050, 52주고가 751)"
     },
     "momentum_history": {
       "met": false,
@@ -4312,11 +2616,11 @@
       "met": false,
       "reason": "정배열 아님",
       "ma_values": {
-        "MA5": 515.0,
-        "MA10": 515.0,
-        "MA20": 515.0,
-        "MA60": 515.0,
-        "MA120": 515.0
+        "MA5": 594.5,
+        "MA10": 605.3,
+        "MA20": 612.6,
+        "MA60": 642.6,
+        "MA120": 711.0
       }
     },
     "supply_demand": {
@@ -4333,7 +2637,166 @@
     },
     "market_cap_range": {
       "met": false,
-      "reason": "시가총액 1,220억원 (기준 미달: 3,000억 미만)"
+      "reason": "시가총액 583억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 35.5 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 578 < MA5=594, MA10=605, MA20=613, MA60=643)"
+    },
+    "all_met": false
+  },
+  "058450": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 399, 6개월고가 1,315, 52주고가 518)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 509.1,
+        "MA10": 625.8,
+        "MA20": 738.6,
+        "MA60": 848.7,
+        "MA120": 921.3
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 80억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 18.1 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 399 < MA5=509, MA10=626, MA20=739, MA60=849)"
+    },
+    "all_met": false
+  },
+  "002630": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 590, 6개월고가 816, 52주고가 767)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 608.3,
+        "MA10": 612.6,
+        "MA20": 603.3,
+        "MA60": 593.6,
+        "MA120": 597.6
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 700억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 48.5 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "016790": {
+    "high_breakout": {
+      "met": true,
+      "is_52w_high": false,
+      "reason": "6개월 고점 돌파 (현재가 994 >= 6개월고가 994)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 994.0,
+        "MA10": 994.0,
+        "MA20": 994.0,
+        "MA60": 994.0,
+        "MA120": 994.0
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 1,873억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": true,
@@ -4342,6 +2805,218 @@
     "reverse_ma_alert": {
       "met": false,
       "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "083660": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 285, 6개월고가 1,453, 52주고가 370)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 290.0,
+        "MA10": 318.1,
+        "MA20": 368.8,
+        "MA60": 490.7,
+        "MA120": 668.5
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 179억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 29.3 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 285 < MA5=290, MA10=318, MA20=369, MA60=491)"
+    },
+    "all_met": false
+  },
+  "056730": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 488, 6개월고가 762, 52주고가 634)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 499.4,
+        "MA10": 513.1,
+        "MA20": 530.6,
+        "MA60": 576.1,
+        "MA120": 632.8
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 362억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 18.0 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 488 < MA5=499, MA10=513, MA20=531, MA60=576)"
+    },
+    "all_met": false
+  },
+  "060900": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 295, 6개월고가 974, 52주고가 383)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 306.3,
+        "MA10": 343.5,
+        "MA20": 405.9,
+        "MA60": 512.6,
+        "MA120": 576.1
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 235억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 15.9 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 295 < MA5=306, MA10=344, MA20=406, MA60=513)"
+    },
+    "all_met": false
+  },
+  "044480": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 221, 6개월고가 714, 52주고가 287)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 231.0,
+        "MA10": 240.2,
+        "MA20": 252.2,
+        "MA60": 284.6,
+        "MA120": 332.7
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 178억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 32.3 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 221 < MA5=231, MA10=240, MA20=252, MA60=285)"
     },
     "all_met": false
   },
@@ -4398,589 +3073,6 @@
     },
     "all_met": false
   },
-  "004870": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 387, 6개월고가 629, 52주고가 503)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 404.8,
-        "MA10": 421.3,
-        "MA20": 438.0,
-        "MA60": 464.0,
-        "MA120": 491.7
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 438억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 28.6 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 387 < MA5=405, MA10=421, MA20=438, MA60=464)"
-    },
-    "all_met": false
-  },
-  "012160": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 582, 6개월고가 808, 52주고가 756)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 611.2,
-        "MA10": 603.5,
-        "MA20": 570.9,
-        "MA60": 535.6,
-        "MA120": 547.2
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 590억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 53.5 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "097800": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 438, 6개월고가 753, 52주고가 569)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 452.6,
-        "MA10": 464.8,
-        "MA20": 484.4,
-        "MA60": 511.2,
-        "MA120": 526.8
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 598억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 39.6 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 438 < MA5=453, MA10=465, MA20=484, MA60=511)"
-    },
-    "all_met": false
-  },
-  "038880": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 133, 6개월고가 201, 52주고가 172)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 136.2,
-        "MA10": 136.8,
-        "MA20": 139.4,
-        "MA60": 150.3,
-        "MA120": 164.1
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 500억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 43.1 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 133 < MA5=136, MA10=137, MA20=139, MA60=150)"
-    },
-    "all_met": false
-  },
-  "019490": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 541, 6개월고가 902, 52주고가 703)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 541.0,
-        "MA10": 541.0,
-        "MA20": 541.1,
-        "MA60": 553.7,
-        "MA120": 595.8
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 413억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 30.0 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 541 < MA5=541, MA10=541, MA20=541, MA60=554)"
-    },
-    "all_met": false
-  },
-  "118000": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 325, 6개월고가 409, 52주고가 422)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 330.2,
-        "MA10": 326.6,
-        "MA20": 318.6,
-        "MA60": 310.6,
-        "MA120": 314.1
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 558억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 55.0 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "085310": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 995, 6개월고가 1,761, 52주고가 1,293)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 1022.9,
-        "MA10": 1055.1,
-        "MA20": 1090.3,
-        "MA60": 1170.0,
-        "MA120": 1253.5
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 785억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 33.1 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 995 < MA5=1,023, MA10=1,055, MA20=1,090, MA60=1,170)"
-    },
-    "all_met": false
-  },
-  "001360": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 1,846, 6개월고가 2,320, 52주고가 2,395)"
-    },
-    "momentum_history": {
-      "met": true,
-      "had_limit_up": true,
-      "had_momentum": false,
-      "reason": "상한가 이력 있음(>=29%)"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 1927.8,
-        "MA10": 1971.9,
-        "MA20": 1944.9,
-        "MA60": 1777.1,
-        "MA120": 1667.2
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 1,738억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 46.2 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "032790": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 667, 6개월고가 1,275, 52주고가 867)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 699.1,
-        "MA10": 750.9,
-        "MA20": 838.3,
-        "MA60": 954.5,
-        "MA120": 963.7
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 343억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 26.0 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 667 < MA5=699, MA10=751, MA20=838, MA60=954)"
-    },
-    "all_met": false
-  },
-  "101390": {
-    "high_breakout": {
-      "met": true,
-      "is_52w_high": false,
-      "reason": "6개월 고점 돌파 (현재가 396 >= 6개월고가 396)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 396.0,
-        "MA10": 396.0,
-        "MA20": 396.0,
-        "MA60": 396.0,
-        "MA120": 396.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 55억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": true,
-      "reason": "RSI 100.0 (위험: 과매수 극단)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "078860": {
-    "high_breakout": {
-      "met": false,
-      "is_52w_high": false,
-      "reason": "미돌파 (현재가 394, 6개월고가 1,586, 52주고가 512)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 466.0,
-        "MA10": 595.2,
-        "MA20": 746.1,
-        "MA60": 973.3,
-        "MA120": 1144.8
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": false,
-      "reason": "TOP30 아님"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 234억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": false,
-      "reason": "RSI 9.8 (정상)"
-    },
-    "reverse_ma_alert": {
-      "met": true,
-      "reason": "역배열 (현재가 394 < MA5=466, MA10=595, MA20=746, MA60=973)"
-    },
-    "all_met": false
-  },
   "030350": {
     "high_breakout": {
       "met": true,
@@ -5023,59 +3115,6 @@
     "market_cap_range": {
       "met": false,
       "reason": "시가총액 152억원 (기준 미달: 3,000억 미만)"
-    },
-    "overheating_alert": {
-      "met": true,
-      "reason": "RSI 100.0 (위험: 과매수 극단)"
-    },
-    "reverse_ma_alert": {
-      "met": false,
-      "reason": "역배열 아님"
-    },
-    "all_met": false
-  },
-  "005030": {
-    "high_breakout": {
-      "met": true,
-      "is_52w_high": false,
-      "reason": "6개월 고점 돌파 (현재가 486 >= 6개월고가 486)"
-    },
-    "momentum_history": {
-      "met": false,
-      "had_limit_up": false,
-      "had_momentum": false,
-      "reason": "급등 이력 없음"
-    },
-    "resistance_breakout": {
-      "met": false,
-      "reason": "하락 또는 데이터 없음"
-    },
-    "ma_alignment": {
-      "met": false,
-      "reason": "정배열 아님",
-      "ma_values": {
-        "MA5": 486.0,
-        "MA10": 486.0,
-        "MA20": 486.0,
-        "MA60": 486.0,
-        "MA120": 486.0
-      }
-    },
-    "supply_demand": {
-      "met": false,
-      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
-    },
-    "program_trading": {
-      "met": false,
-      "reason": "프로그램 순매수량: +0"
-    },
-    "top30_trading_value": {
-      "met": true,
-      "reason": "거래대금 TOP30"
-    },
-    "market_cap_range": {
-      "met": false,
-      "reason": "시가총액 383억원 (기준 미달: 3,000억 미만)"
     },
     "overheating_alert": {
       "met": true,
@@ -5140,6 +3179,377 @@
     },
     "all_met": false
   },
+  "027040": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 244, 6개월고가 266, 52주고가 317)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": true,
+      "reason": "정배열 확인 (현재가>MA5>MA10>MA20>MA60>MA120)",
+      "ma_values": {
+        "MA5": 239.9,
+        "MA10": 231.9,
+        "MA20": 223.2,
+        "MA60": 211.5,
+        "MA120": 209.0
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 170억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 67.1 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "000040": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 385, 6개월고가 600, 52주고가 500)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 392.5,
+        "MA10": 400.1,
+        "MA20": 410.5,
+        "MA60": 438.8,
+        "MA120": 475.8
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 333억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 30.9 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 385 < MA5=392, MA10=400, MA20=410, MA60=439)"
+    },
+    "all_met": false
+  },
+  "001210": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 831, 6개월고가 1,392, 52주고가 1,080)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 877.0,
+        "MA10": 895.3,
+        "MA20": 909.3,
+        "MA60": 866.7,
+        "MA120": 823.3
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 512억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 42.1 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "002780": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 763, 6개월고가 869, 52주고가 991)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 781.9,
+        "MA10": 790.1,
+        "MA20": 780.5,
+        "MA60": 745.5,
+        "MA120": 724.1
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 1,110억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 47.5 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "015590": {
+    "high_breakout": {
+      "met": true,
+      "is_52w_high": false,
+      "reason": "6개월 고점 돌파 (현재가 515 >= 6개월고가 515)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 515.0,
+        "MA10": 515.0,
+        "MA20": 515.0,
+        "MA60": 515.0,
+        "MA120": 515.0
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 1,220억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": true,
+      "reason": "RSI 100.0 (위험: 과매수 극단)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "004060": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 617, 6개월고가 903, 52주고가 802)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 637.6,
+        "MA10": 611.0,
+        "MA20": 543.9,
+        "MA60": 430.6,
+        "MA120": 376.9
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 1,249억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 61.1 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "019550": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 750, 6개월고가 961, 52주고가 975)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 784.6,
+        "MA10": 804.1,
+        "MA20": 798.3,
+        "MA60": 761.7,
+        "MA120": 741.7
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 1,215억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 44.0 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
   "052770": {
     "high_breakout": {
       "met": false,
@@ -5190,6 +3600,483 @@
     "reverse_ma_alert": {
       "met": true,
       "reason": "역배열 (현재가 465 < MA5=501, MA10=553, MA20=654, MA60=981)"
+    },
+    "all_met": false
+  },
+  "002070": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 521, 6개월고가 784, 52주고가 677)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 540.5,
+        "MA10": 552.7,
+        "MA20": 561.9,
+        "MA60": 597.1,
+        "MA120": 656.6
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 235억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 30.9 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 521 < MA5=541, MA10=553, MA20=562, MA60=597)"
+    },
+    "all_met": false
+  },
+  "085310": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 995, 6개월고가 1,761, 52주고가 1,293)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 1022.9,
+        "MA10": 1055.1,
+        "MA20": 1090.3,
+        "MA60": 1170.0,
+        "MA120": 1253.5
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 785억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 33.1 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 995 < MA5=1,023, MA10=1,055, MA20=1,090, MA60=1,170)"
+    },
+    "all_met": false
+  },
+  "145210": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 363, 6개월고가 1,133, 52주고가 471)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 374.4,
+        "MA10": 390.0,
+        "MA20": 431.1,
+        "MA60": 575.5,
+        "MA120": 699.4
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 153억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 28.9 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 363 < MA5=374, MA10=390, MA20=431, MA60=576)"
+    },
+    "all_met": false
+  },
+  "018700": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 713, 6개월고가 1,157, 52주고가 926)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 735.4,
+        "MA10": 772.4,
+        "MA20": 818.0,
+        "MA60": 887.3,
+        "MA120": 960.4
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 250억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 24.3 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 713 < MA5=735, MA10=772, MA20=818, MA60=887)"
+    },
+    "all_met": false
+  },
+  "003060": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 307, 6개월고가 693, 52주고가 399)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 329.7,
+        "MA10": 359.7,
+        "MA20": 402.5,
+        "MA60": 480.8,
+        "MA120": 537.9
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 609억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 23.5 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 307 < MA5=330, MA10=360, MA20=403, MA60=481)"
+    },
+    "all_met": false
+  },
+  "011300": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 361, 6개월고가 588, 52주고가 469)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 371.3,
+        "MA10": 379.5,
+        "MA20": 384.0,
+        "MA60": 383.9,
+        "MA120": 390.3
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 563억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 44.0 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "005320": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 571, 6개월고가 625, 52주고가 742)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 572.1,
+        "MA10": 546.2,
+        "MA20": 510.8,
+        "MA60": 482.3,
+        "MA120": 498.4
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 390억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 67.1 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "004410": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 212, 6개월고가 283, 52주고가 275)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 220.3,
+        "MA10": 210.3,
+        "MA20": 191.0,
+        "MA60": 166.9,
+        "MA120": 161.3
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 827억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 60.1 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "011080": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 505, 6개월고가 1,172, 52주고가 656)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 564.6,
+        "MA10": 605.4,
+        "MA20": 642.5,
+        "MA60": 692.3,
+        "MA120": 725.0
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 217억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 15.5 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 505 < MA5=565, MA10=605, MA20=643, MA60=692)"
     },
     "all_met": false
   },
@@ -5246,6 +4133,165 @@
     },
     "all_met": false
   },
+  "002360": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 480, 6개월고가 483, 52주고가 624)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 437.3,
+        "MA10": 415.4,
+        "MA20": 397.0,
+        "MA60": 386.0,
+        "MA120": 395.8
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 533억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": true,
+      "reason": "RSI 76.2 (주의: 과매수 구간)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "021880": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 249, 6개월고가 336, 52주고가 323)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 256.3,
+        "MA10": 260.1,
+        "MA20": 259.0,
+        "MA60": 257.3,
+        "MA120": 270.4
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 528억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 44.6 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "025440": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 951, 6개월고가 1,530, 52주고가 1,236)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 978.4,
+        "MA10": 995.7,
+        "MA20": 1013.7,
+        "MA60": 970.9,
+        "MA120": 879.6
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 464억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 40.6 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
   "027970": {
     "high_breakout": {
       "met": false,
@@ -5292,6 +4338,960 @@
     "overheating_alert": {
       "met": false,
       "reason": "RSI 58.0 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "118000": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 325, 6개월고가 409, 52주고가 422)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 330.2,
+        "MA10": 326.6,
+        "MA20": 318.6,
+        "MA60": 310.6,
+        "MA120": 314.1
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 558억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 55.0 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "027580": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 555, 6개월고가 1,072, 52주고가 721)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 589.1,
+        "MA10": 638.0,
+        "MA20": 692.7,
+        "MA60": 759.3,
+        "MA120": 813.7
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 328억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 25.1 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 555 < MA5=589, MA10=638, MA20=693, MA60=759)"
+    },
+    "all_met": false
+  },
+  "004870": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 387, 6개월고가 629, 52주고가 503)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 404.8,
+        "MA10": 421.3,
+        "MA20": 438.0,
+        "MA60": 464.0,
+        "MA120": 491.7
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 438억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 28.6 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 387 < MA5=405, MA10=421, MA20=438, MA60=464)"
+    },
+    "all_met": false
+  },
+  "097800": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 438, 6개월고가 753, 52주고가 569)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 452.6,
+        "MA10": 464.8,
+        "MA20": 484.4,
+        "MA60": 511.2,
+        "MA120": 526.8
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 598억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 39.6 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 438 < MA5=453, MA10=465, MA20=484, MA60=511)"
+    },
+    "all_met": false
+  },
+  "079190": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 415, 6개월고가 715, 52주고가 539)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 428.5,
+        "MA10": 436.0,
+        "MA20": 448.6,
+        "MA60": 469.3,
+        "MA120": 477.8
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 159억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 43.7 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 415 < MA5=429, MA10=436, MA20=449, MA60=469)"
+    },
+    "all_met": false
+  },
+  "082660": {
+    "high_breakout": {
+      "met": true,
+      "is_52w_high": false,
+      "reason": "6개월 고점 돌파 (현재가 480 >= 6개월고가 480)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 480.0,
+        "MA10": 480.0,
+        "MA20": 480.0,
+        "MA60": 480.0,
+        "MA120": 480.0
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 478억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": true,
+      "reason": "RSI 100.0 (위험: 과매수 극단)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "009730": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 640, 6개월고가 1,000, 52주고가 832)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 639.2,
+        "MA10": 637.6,
+        "MA20": 633.6,
+        "MA60": 666.3,
+        "MA120": 754.7
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 396억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 51.0 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "014990": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 833, 6개월고가 1,281, 52주고가 1,082)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 852.1,
+        "MA10": 857.7,
+        "MA20": 849.9,
+        "MA60": 870.3,
+        "MA120": 961.7
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 626억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 47.6 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "001360": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 1,846, 6개월고가 2,320, 52주고가 2,395)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 1927.8,
+        "MA10": 1971.9,
+        "MA20": 1944.9,
+        "MA60": 1777.1,
+        "MA120": 1667.2
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 1,738억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 46.2 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "044380": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 336, 6개월고가 594, 52주고가 436)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 356.4,
+        "MA10": 371.0,
+        "MA20": 385.6,
+        "MA60": 415.9,
+        "MA120": 455.8
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 217억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 25.6 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 336 < MA5=356, MA10=371, MA20=386, MA60=416)"
+    },
+    "all_met": false
+  },
+  "031860": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 270, 6개월고가 1,157, 52주고가 351)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 326.4,
+        "MA10": 380.6,
+        "MA20": 446.7,
+        "MA60": 567.3,
+        "MA120": 676.3
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 51억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 14.8 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 270 < MA5=326, MA10=381, MA20=447, MA60=567)"
+    },
+    "all_met": false
+  },
+  "023440": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 783, 6개월고가 1,733, 52주고가 1,017)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 770.6,
+        "MA10": 772.3,
+        "MA20": 773.2,
+        "MA60": 821.1,
+        "MA120": 1040.6
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 706억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 51.9 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "001620": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 860, 6개월고가 964, 52주고가 1,118)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": true,
+      "reason": "정배열 확인 (현재가>MA5>MA10>MA20>MA60>MA120)",
+      "ma_values": {
+        "MA5": 824.1,
+        "MA10": 763.3,
+        "MA20": 690.0,
+        "MA60": 586.7,
+        "MA120": 533.6
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": true,
+      "reason": "거래대금 TOP30"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 957억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": true,
+      "reason": "RSI 82.7 (위험: 과매수 극단)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "012160": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 582, 6개월고가 808, 52주고가 756)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 611.2,
+        "MA10": 603.5,
+        "MA20": 570.9,
+        "MA60": 535.6,
+        "MA120": 547.2
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 590억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 53.5 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "033050": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 892, 6개월고가 952, 52주고가 1,159)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 893.5,
+        "MA10": 885.5,
+        "MA20": 871.9,
+        "MA60": 845.6,
+        "MA120": 830.0
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 291억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 59.1 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "043090": {
+    "high_breakout": {
+      "met": true,
+      "is_52w_high": false,
+      "reason": "6개월 고점 돌파 (현재가 380 >= 6개월고가 380)"
+    },
+    "momentum_history": {
+      "met": false,
+      "had_limit_up": false,
+      "had_momentum": false,
+      "reason": "급등 이력 없음"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 380.0,
+        "MA10": 380.0,
+        "MA20": 380.0,
+        "MA60": 380.0,
+        "MA120": 380.0
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 47억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": true,
+      "reason": "RSI 100.0 (위험: 과매수 극단)"
+    },
+    "reverse_ma_alert": {
+      "met": false,
+      "reason": "역배열 아님"
+    },
+    "all_met": false
+  },
+  "044180": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 280, 6개월고가 992, 52주고가 364)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 304.3,
+        "MA10": 326.7,
+        "MA20": 364.8,
+        "MA60": 471.3,
+        "MA120": 566.2
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 75억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 31.7 (정상)"
+    },
+    "reverse_ma_alert": {
+      "met": true,
+      "reason": "역배열 (현재가 280 < MA5=304, MA10=327, MA20=365, MA60=471)"
+    },
+    "all_met": false
+  },
+  "019570": {
+    "high_breakout": {
+      "met": false,
+      "is_52w_high": false,
+      "reason": "미돌파 (현재가 378, 6개월고가 946, 52주고가 491)"
+    },
+    "momentum_history": {
+      "met": true,
+      "had_limit_up": true,
+      "had_momentum": false,
+      "reason": "상한가 이력 있음(>=29%)"
+    },
+    "resistance_breakout": {
+      "met": false,
+      "reason": "하락 또는 데이터 없음"
+    },
+    "ma_alignment": {
+      "met": false,
+      "reason": "정배열 아님",
+      "ma_values": {
+        "MA5": 400.8,
+        "MA10": 417.4,
+        "MA20": 404.3,
+        "MA60": 346.7,
+        "MA120": 320.0
+      }
+    },
+    "supply_demand": {
+      "met": false,
+      "reason": "외국인 순매도(+0), 기관 순매도(+0)"
+    },
+    "program_trading": {
+      "met": false,
+      "reason": "프로그램 순매수량: +0"
+    },
+    "top30_trading_value": {
+      "met": false,
+      "reason": "TOP30 아님"
+    },
+    "market_cap_range": {
+      "met": false,
+      "reason": "시가총액 254억원 (기준 미달: 3,000억 미만)"
+    },
+    "overheating_alert": {
+      "met": false,
+      "reason": "RSI 48.6 (정상)"
     },
     "reverse_ma_alert": {
       "met": false,
