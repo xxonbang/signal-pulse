@@ -222,7 +222,7 @@ confidence = 종합점수 / 10 (소수점 둘째 자리까지)
         "material": 재료점수(0~10),
         "total": 종합점수(0~10, 가중평균)
       }},
-      "reason": "분석 근거 (2~3문장, 반드시 구체적 수치를 인용. 예: RSI 72, PER 8.3, 외인 순매수 +150억 등)",
+      "reason": "사용자 친화적 분석 근거 (2~3문장). 구체적 수치(RSI, PER, 외인 순매수 등)를 인용하되, 'X점수 N점' 같은 내부 채점 결과는 scores 필드에만 기록하고 여기에 절대 포함하지 마세요.",
       "key_factors": {{
         "price_trend": "상승/횡보/하락",
         "volume_signal": "급증/증가/보통/감소",
@@ -300,6 +300,14 @@ def validate_and_recalculate(item: dict) -> dict:
 
     # confidence 재계산
     item["confidence"] = round(total / 10, 2)
+
+    # reason에서 내부 점수 패턴 제거 (예: "기술점수 6.5점 (추세: bullish, RSI-14: 89.42), ")
+    reason = item.get("reason", "")
+    if reason:
+        reason = re.sub(r'(기술|수급|밸류|재료)점수\s*\d+\.?\d*점\s*\([^)]*?\)[.,\s]*', '', reason)
+        reason = re.sub(r'^[\s,.]+|[\s,.]+$', '', reason)
+        if reason:
+            item["reason"] = reason
 
     return item
 
@@ -873,7 +881,7 @@ confidence = 종합점수 / 10 (소수점 둘째 자리까지)
         "material": 재료점수(0~10),
         "total": 종합점수(0~10, 가중평균)
       }},
-      "reason": "분석 근거 (2~3문장, 반드시 구체적 수치를 인용. 예: RSI 72, PER 8.3, 외인 순매수 +150억 등)",
+      "reason": "사용자 친화적 분석 근거 (2~3문장). 구체적 수치(RSI, PER, 외인 순매수 등)를 인용하되, 'X점수 N점' 같은 내부 채점 결과는 scores 필드에만 기록하고 여기에 절대 포함하지 마세요.",
       "key_factors": {{
         "price_trend": "상승/횡보/하락",
         "volume_signal": "급증/증가/보통/감소",
