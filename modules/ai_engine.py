@@ -69,26 +69,20 @@ def get_next_api_key() -> tuple[str, int] | None:
 
 
 def handle_rate_limit(key_index: int, retry_delay: float | None = None):
-    """429 에러 후 RPM/RPD 분류 및 쿨다운 설정
+    """429 에러 시 쿨다운 설정 (RPM 제한 대응)
 
-    연속 429 횟수 기반으로 RPD 소진을 판정:
-    - 연속 3회 미만: RPM(일시적) → 쿨다운 설정
-    - 연속 3회 이상: RPD(당일 소진) → daily_exhausted 마킹
+    모든 429는 RPM(일시적) 제한으로 처리 — 쿨다운만 설정.
+    daily_exhausted는 절대 마킹하지 않음 (401/403 인증 오류에서만 사용).
     """
     ks = _key_states[key_index]
     ks.consecutive_429 += 1
 
-    if ks.consecutive_429 >= 3:
-        ks.daily_exhausted = True
-        print(f"  [KEY #{key_index + 1}] RPD 소진 확정 (연속 429: {ks.consecutive_429}회, 성공: {ks.success_count}회). 당일 제외.")
+    if retry_delay and retry_delay > 0:
+        cooldown = min(retry_delay + random.uniform(1, 5), 300)
     else:
-        # RPM(일시적) → 쿨다운 설정
-        if retry_delay and retry_delay > 0:
-            cooldown = min(retry_delay + random.uniform(1, 5), 300)
-        else:
-            cooldown = min(30 * (2 ** (ks.consecutive_429 - 1)), 300)
-        ks.cooldown_until = time.time() + cooldown
-        print(f"  [KEY #{key_index + 1}] RPM 제한. 쿨다운 {cooldown:.0f}초 설정. (연속 429: {ks.consecutive_429}회)")
+        cooldown = min(30 * (2 ** (ks.consecutive_429 - 1)), 300)
+    ks.cooldown_until = time.time() + cooldown
+    print(f"  [KEY #{key_index + 1}] RPM 제한. 쿨다운 {cooldown:.0f}초 설정. (연속 429: {ks.consecutive_429}회)")
 
     avail_count = sum(1 for ks in _key_states if ks.is_available())
     print(f"  남은 사용 가능 키: {avail_count}개")
