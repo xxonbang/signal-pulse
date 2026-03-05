@@ -1,83 +1,114 @@
 {
   "date": "2026-03-05",
-  "collected_at": "2026-03-05T07:52:31.227145+09:00",
+  "collected_at": "2026-03-05T15:40:22.438858+09:00",
   "categories": {
     "vision": [
       {
         "code": "005380",
         "name": "현대차",
         "market": "KOSPI",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "low_price": null,
+        "open_price": 565000,
+        "close_price": 548000,
+        "high_price": 582000,
+        "low_price": 540000,
         "high_price_time": null,
-        "return_pct": null,
-        "return_pct_net": null,
-        "high_return_pct": null,
-        "stop_result": null
+        "return_pct": -3.01,
+        "return_pct_net": -3.34,
+        "high_return_pct": 3.01,
+        "stop_result": "stop_loss"
       },
       {
         "code": "010950",
         "name": "S-Oil",
         "market": "KOSPI",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "low_price": null,
+        "open_price": 125600,
+        "close_price": 134700,
+        "high_price": 136700,
+        "low_price": 115000,
         "high_price_time": null,
-        "return_pct": null,
-        "return_pct_net": null,
-        "high_return_pct": null,
-        "stop_result": null
+        "return_pct": 7.25,
+        "return_pct_net": 6.92,
+        "high_return_pct": 8.84,
+        "stop_result": "stop_loss"
       },
       {
         "code": "012450",
         "name": "한화에어로스페이스",
         "market": "KOSPI",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "low_price": null,
+        "open_price": 1361000,
+        "close_price": 1381000,
+        "high_price": 1486000,
+        "low_price": 1322000,
         "high_price_time": null,
-        "return_pct": null,
-        "return_pct_net": null,
-        "high_return_pct": null,
-        "stop_result": null
+        "return_pct": 1.47,
+        "return_pct_net": 1.14,
+        "high_return_pct": 9.18,
+        "stop_result": "take_profit"
       },
       {
         "code": "042700",
         "name": "한미반도체",
         "market": "KOSPI",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "low_price": null,
+        "open_price": 302000,
+        "close_price": 315000,
+        "high_price": 323000,
+        "low_price": 301000,
         "high_price_time": null,
-        "return_pct": null,
-        "return_pct_net": null,
-        "high_return_pct": null,
-        "stop_result": null
+        "return_pct": 4.3,
+        "return_pct_net": 3.97,
+        "high_return_pct": 6.95,
+        "stop_result": "take_profit"
       },
       {
         "code": "034020",
         "name": "두산에너빌리티",
         "market": "KOSPI",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "low_price": null,
+        "open_price": 91000,
+        "close_price": 90500,
+        "high_price": 93200,
+        "low_price": 89100,
         "high_price_time": null,
-        "return_pct": null,
-        "return_pct_net": null,
-        "high_return_pct": null,
+        "return_pct": -0.55,
+        "return_pct_net": -0.88,
+        "high_return_pct": 2.42,
         "stop_result": null
       }
     ],
     "kis": [],
     "combined": []
   },
-  "all_prices": {},
+  "all_prices": {
+    "005380": {
+      "open_price": 565000,
+      "close_price": 548000,
+      "high_price": 582000,
+      "high_price_time": null
+    },
+    "012450": {
+      "open_price": 1361000,
+      "close_price": 1381000,
+      "high_price": 1486000,
+      "high_price_time": null
+    },
+    "042700": {
+      "open_price": 302000,
+      "close_price": 315000,
+      "high_price": 323000,
+      "high_price_time": null
+    },
+    "010950": {
+      "open_price": 125600,
+      "close_price": 134700,
+      "high_price": 136700,
+      "high_price_time": null
+    },
+    "034020": {
+      "open_price": 91000,
+      "close_price": 90500,
+      "high_price": 93200,
+      "high_price_time": null
+    }
+  },
   "all_signals": {
     "005930": {
       "name": "삼성전자",
