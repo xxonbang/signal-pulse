@@ -21,7 +21,7 @@ const CATEGORY_ICONS: Record<SimulationCategory, string> = {
 };
 
 export function SimulationSummary({ dataByDate }: SimulationSummaryProps) {
-  const { selectedDates, activeCategories, excludedStocks, simulationMode } = useSimulationStore();
+  const { selectedDates, activeCategories, excludedStocks, simulationMode, investmentMode } = useSimulationStore();
   const queryClient = useQueryClient();
 
   // 오늘 날짜의 마지막 수집 시각
@@ -45,6 +45,7 @@ export function SimulationSummary({ dataByDate }: SimulationSummaryProps) {
   const stats = useMemo(() => {
     let totalInvested = 0;
     let totalValue = 0;
+    let totalReturnSum = 0;
     let totalStocks = 0;
     let pricedStocks = 0;
     let wins = 0;
@@ -52,6 +53,7 @@ export function SimulationSummary({ dataByDate }: SimulationSummaryProps) {
 
     const catInvested: Record<SimulationCategory, number> = { vision: 0, kis: 0, combined: 0 };
     const catValue: Record<SimulationCategory, number> = { vision: 0, kis: 0, combined: 0 };
+    const catReturnSum: Record<SimulationCategory, number> = { vision: 0, kis: 0, combined: 0 };
     const catCount: Record<SimulationCategory, number> = { vision: 0, kis: 0, combined: 0 };
 
     selectedDates.forEach((date) => {
@@ -74,6 +76,10 @@ export function SimulationSummary({ dataByDate }: SimulationSummaryProps) {
               totalValue += sellPrice;
               catInvested[cat] += stock.open_price;
               catValue[cat] += sellPrice;
+              if (returnPct != null) {
+                totalReturnSum += returnPct;
+                catReturnSum[cat] += returnPct;
+              }
               catCount[cat]++;
               dateHasData = true;
               if (returnPct !== null && returnPct !== undefined && returnPct > 0) wins++;
@@ -85,25 +91,31 @@ export function SimulationSummary({ dataByDate }: SimulationSummaryProps) {
       if (dateHasData) datesWithData++;
     });
 
-    // 총 투자금 대비 총 수익금 비율
-    const avg = totalInvested > 0
-      ? (totalValue - totalInvested) / totalInvested * 100
-      : null;
+    // 투자 방식에 따라 수익률 계산
+    let avg: number | null;
+    const catAvg: Record<SimulationCategory, number | null> = { vision: null, kis: null, combined: null };
 
-    const catAvg: Record<SimulationCategory, number | null> = {
-      vision: null, kis: null, combined: null,
-    };
-    for (const cat of ['vision', 'kis', 'combined'] as SimulationCategory[]) {
-      catAvg[cat] = catInvested[cat] > 0
-        ? (catValue[cat] - catInvested[cat]) / catInvested[cat] * 100
-        : null;
+    if (investmentMode === 'equal_amount') {
+      // 동일 금액: 각 종목 수익률의 단순 평균 (equal-weighted)
+      avg = pricedStocks > 0 ? totalReturnSum / pricedStocks : null;
+      for (const cat of ['vision', 'kis', 'combined'] as SimulationCategory[]) {
+        catAvg[cat] = catCount[cat] > 0 ? catReturnSum[cat] / catCount[cat] : null;
+      }
+    } else {
+      // 1주씩: 총 투자금 대비 총 수익금 비율 (price-weighted)
+      avg = totalInvested > 0 ? (totalValue - totalInvested) / totalInvested * 100 : null;
+      for (const cat of ['vision', 'kis', 'combined'] as SimulationCategory[]) {
+        catAvg[cat] = catInvested[cat] > 0
+          ? (catValue[cat] - catInvested[cat]) / catInvested[cat] * 100
+          : null;
+      }
     }
 
     const losses = pricedStocks - wins;
     const winRate = pricedStocks > 0 ? (wins / pricedStocks) * 100 : null;
 
     return { avg, catAvg, catCount, totalStocks, pricedStocks, selectedDays: datesWithData, winRate, wins, losses };
-  }, [selectedDates, dataByDate, activeCategories, excludedStocks, simulationMode]);
+  }, [selectedDates, dataByDate, activeCategories, excludedStocks, simulationMode, investmentMode]);
 
   return (
     <div className="border border-border rounded-2xl p-3 md:p-6 bg-bg-secondary/30">

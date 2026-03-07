@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import type { SimulationCategory } from '@/services/types';
 
 export type SimulationMode = 'close' | 'high';
+export type InvestmentMode = 'per_share' | 'equal_amount';
 
 // 제외 키 형식: "date:category:code"
 function stockKey(date: string, category: SimulationCategory, code: string) {
@@ -11,6 +12,9 @@ function stockKey(date: string, category: SimulationCategory, code: string) {
 interface SimulationStore {
   // 시뮬레이션 모드 (종가 매도 vs 최고가 매도)
   simulationMode: SimulationMode;
+
+  // 투자 방식 (1주씩 vs 동일 금액)
+  investmentMode: InvestmentMode;
 
   // 카테고리 토글
   activeCategories: Set<SimulationCategory>;
@@ -29,6 +33,7 @@ interface SimulationStore {
 
   // Actions
   setSimulationMode: (mode: SimulationMode) => void;
+  setInvestmentMode: (mode: InvestmentMode) => void;
 
   toggleCategory: (category: SimulationCategory) => void;
   setCategories: (categories: SimulationCategory[]) => void;
@@ -51,6 +56,7 @@ interface SimulationStore {
 
 export const useSimulationStore = create<SimulationStore>((set, get) => ({
   simulationMode: 'close' as SimulationMode,
+  investmentMode: 'per_share' as InvestmentMode,
   activeCategories: new Set<SimulationCategory>(['vision', 'kis', 'combined']),
   excludedStocks: new Set<string>(),
   selectedDates: new Set<string>(),
@@ -58,6 +64,7 @@ export const useSimulationStore = create<SimulationStore>((set, get) => ({
   analysisTimeOverrides: {},
 
   setSimulationMode: (mode) => set({ simulationMode: mode }),
+  setInvestmentMode: (mode) => set({ investmentMode: mode }),
 
   toggleCategory: (category) =>
     set((state) => {
@@ -129,6 +136,7 @@ export const useSimulationStore = create<SimulationStore>((set, get) => ({
   resetAll: (allDates) =>
     set({
       simulationMode: 'close' as SimulationMode,
+      investmentMode: 'per_share' as InvestmentMode,
       activeCategories: new Set<SimulationCategory>(['vision', 'kis', 'combined']),
       excludedStocks: new Set<string>(),
       selectedDates: new Set(allDates),

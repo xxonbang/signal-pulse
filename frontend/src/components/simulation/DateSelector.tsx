@@ -17,7 +17,7 @@ function formatDateLabel(dateStr: string) {
 }
 
 export function DateSelector({ items, dataByDate }: DateSelectorProps) {
-  const { selectedDates, activeDetailDate, activeCategories, excludedStocks, simulationMode, toggleDate, selectAllDates, deselectAllDates, setActiveDetailDate } = useSimulationStore();
+  const { selectedDates, activeDetailDate, activeCategories, excludedStocks, simulationMode, investmentMode, toggleDate, selectAllDates, deselectAllDates, setActiveDetailDate } = useSimulationStore();
 
   const allDates = useMemo(() => items.map((item) => item.date), [items]);
   const allSelected = allDates.length > 0 && allDates.every((d) => selectedDates.has(d));
@@ -34,6 +34,8 @@ export function DateSelector({ items, dataByDate }: DateSelectorProps) {
       }
       let invested = 0;
       let value = 0;
+      let returnSum = 0;
+      let pricedCount = 0;
       let included = 0;
       let total = 0;
       (Object.entries(data.categories) as [SimulationCategory, typeof data.categories.vision][]).forEach(
@@ -44,21 +46,30 @@ export function DateSelector({ items, dataByDate }: DateSelectorProps) {
             if (excludedStocks.has(stockKey(item.date, cat, s.code))) return;
             included++;
             const sellPrice = simulationMode === 'high' ? s.high_price : s.close_price;
+            const returnPct = simulationMode === 'high' ? s.high_return_pct : s.return_pct;
             if (s.open_price != null && s.open_price > 0 && sellPrice != null && sellPrice > 0) {
               invested += s.open_price;
               value += sellPrice;
+              if (returnPct != null) {
+                returnSum += returnPct;
+              }
+              pricedCount++;
             }
           });
         }
       );
-      stats[item.date] = {
-        avgReturn: invested > 0 ? (value - invested) / invested * 100 : null,
-        includedCount: included,
-        totalCount: total,
-      };
+
+      let avgReturn: number | null;
+      if (investmentMode === 'equal_amount') {
+        avgReturn = pricedCount > 0 ? returnSum / pricedCount : null;
+      } else {
+        avgReturn = invested > 0 ? (value - invested) / invested * 100 : null;
+      }
+
+      stats[item.date] = { avgReturn, includedCount: included, totalCount: total };
     });
     return stats;
-  }, [items, dataByDate, activeCategories, excludedStocks, simulationMode]);
+  }, [items, dataByDate, activeCategories, excludedStocks, simulationMode, investmentMode]);
 
   return (
     <div className="border border-border rounded-2xl overflow-hidden">

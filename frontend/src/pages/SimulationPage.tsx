@@ -2,7 +2,7 @@ import { useEffect, useRef, useMemo } from 'react';
 import { useSimulationIndex, useSimulationMultipleDates } from '@/hooks/useSimulationData';
 import { useSimulationStore } from '@/store/simulationStore';
 import { useAuthStore } from '@/store/authStore';
-import type { SimulationMode } from '@/store/simulationStore';
+import type { SimulationMode, InvestmentMode } from '@/store/simulationStore';
 import { SimulationSummary, DateSelector, CategorySection, CollectionTrigger, AnalysisTimeSelector } from '@/components/simulation';
 import { useAnalysisTimeOverride } from '@/hooks/useAnalysisTimeOverride';
 import { LoadingSpinner, EmptyState } from '@/components/common';
@@ -89,7 +89,10 @@ export function SimulationPage() {
   return (
     <div className="space-y-3 md:space-y-4">
       <PageHeader allDates={tradingDayHistory.map((h) => h.date)} />
-      <SimulationModeTabs />
+      <div className="flex flex-col sm:flex-row gap-2">
+        <SimulationModeTabs />
+        <InvestmentModeTabs />
+      </div>
 
       {/* 종합 수익률 */}
       <SimulationSummary dataByDate={effectiveDataByDate} />
@@ -127,11 +130,11 @@ export function SimulationPage() {
 }
 
 function PageHeader({ allDates }: { allDates?: string[] }) {
-  const { simulationMode, resetAll } = useSimulationStore();
+  const { simulationMode, investmentMode, resetAll } = useSimulationStore();
   const { isAdmin } = useAuthStore();
-  const desc = simulationMode === 'close'
-    ? '적극매수 시그널 종목의 시가 매수 → 종가 매도 수익률'
-    : '적극매수 시그널 종목의 시가 매수 → 장중 최고가 매도 수익률';
+  const modeLabel = simulationMode === 'close' ? '종가 매도' : '최고가 매도';
+  const investLabel = investmentMode === 'per_share' ? '종목당 1주' : '동일 금액';
+  const desc = `적극매수 시그널 종목 · ${investLabel} · 시가 매수 → ${modeLabel}`;
 
   return (
     <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
@@ -163,7 +166,7 @@ function SimulationModeTabs() {
   const { simulationMode, setSimulationMode } = useSimulationStore();
 
   return (
-    <div className="flex gap-1 bg-bg-secondary p-1 rounded-xl border border-border">
+    <div className="flex gap-1 bg-bg-secondary p-1 rounded-xl border border-border flex-1">
       {MODE_TABS.map((tab) => (
         <button
           key={tab.key}
@@ -171,6 +174,35 @@ function SimulationModeTabs() {
           className={cn(
             'flex-1 py-2 md:py-2.5 px-3 md:px-4 rounded-lg text-xs md:text-sm font-semibold transition-all text-center',
             simulationMode === tab.key
+              ? 'bg-accent-primary text-white'
+              : 'text-text-muted hover:text-text-secondary hover:bg-bg-primary'
+          )}
+        >
+          <span className="hidden sm:inline">{tab.label}</span>
+          <span className="sm:hidden">{tab.shortLabel}</span>
+        </button>
+      ))}
+    </div>
+  );
+}
+
+const INVESTMENT_TABS: { key: InvestmentMode; label: string; shortLabel: string }[] = [
+  { key: 'per_share', label: '종목당 1주', shortLabel: '1주씩' },
+  { key: 'equal_amount', label: '동일 금액', shortLabel: '동일금액' },
+];
+
+function InvestmentModeTabs() {
+  const { investmentMode, setInvestmentMode } = useSimulationStore();
+
+  return (
+    <div className="flex gap-1 bg-bg-secondary p-1 rounded-xl border border-border flex-1">
+      {INVESTMENT_TABS.map((tab) => (
+        <button
+          key={tab.key}
+          onClick={() => setInvestmentMode(tab.key)}
+          className={cn(
+            'flex-1 py-2 md:py-2.5 px-3 md:px-4 rounded-lg text-xs md:text-sm font-semibold transition-all text-center',
+            investmentMode === tab.key
               ? 'bg-accent-primary text-white'
               : 'text-text-muted hover:text-text-secondary hover:bg-bg-primary'
           )}
