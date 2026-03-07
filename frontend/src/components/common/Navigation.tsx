@@ -1,3 +1,4 @@
+import { useState, useCallback } from 'react';
 import { Logo } from './Logo';
 import { useUIStore } from '@/store/uiStore';
 import { useAuthStore } from '@/store/authStore';
@@ -7,6 +8,16 @@ import { fetchCombinedHistoryIndex } from '@/services/api';
 export function Navigation() {
   const { currentPage, setCurrentPage, isCompactView, toggleCompactView, openHistoryPanel } = useUIStore();
   const { user, signOut } = useAuthStore();
+  const [toast, setToast] = useState<string | null>(null);
+
+  const handleHistoryClick = useCallback(() => {
+    if (currentPage !== 'home') {
+      setToast('메인화면에서만 동작합니다');
+      setTimeout(() => setToast(null), 3000);
+      return;
+    }
+    openHistoryPanel();
+  }, [currentPage, openHistoryPanel]);
 
   // Combined 히스토리 인덱스
   const { data: historyIndex } = useQuery({
@@ -52,7 +63,7 @@ export function Navigation() {
 
           {/* 히스토리 버튼 - 보조 액션 */}
           <button
-            onClick={openHistoryPanel}
+            onClick={handleHistoryClick}
             className="flex items-center gap-1.5 px-2.5 md:px-3 py-1.5 md:py-2
               text-text-muted
               rounded-lg text-xs md:text-sm font-medium
@@ -129,6 +140,12 @@ export function Navigation() {
           )}
         </div>
       </div>
+      {/* Toast */}
+      {toast && (
+        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 px-4 py-2 bg-gray-800 text-white text-xs md:text-sm font-medium rounded-lg shadow-lg animate-fade-in whitespace-nowrap">
+          {toast}
+        </div>
+      )}
     </nav>
   );
 }
