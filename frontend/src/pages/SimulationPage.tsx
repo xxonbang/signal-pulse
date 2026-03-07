@@ -135,7 +135,7 @@ function PageHeader({ allDates }: { allDates?: string[] }) {
     <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
       <div>
         <h2 className="text-lg md:text-xl font-bold">모의투자 시뮬레이션</h2>
-        <p className="text-xs text-text-muted mt-0.5 flex items-center gap-1 flex-wrap">
+        <p className="text-xs md:text-sm text-text-secondary mt-0.5 flex items-center gap-1.5 flex-wrap">
           <span>적극매수 시그널 종목</span>
           <span className="text-border">·</span>
           <span className="font-semibold text-accent-primary">{investLabel}</span>
@@ -203,7 +203,7 @@ function SimulationControls() {
 function ControlGroup({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="flex-1">
-      <span className="text-[0.6rem] font-semibold text-text-muted/70 uppercase tracking-widest ml-1 mb-1 block">
+      <span className="text-[0.65rem] md:text-xs font-semibold text-text-secondary/70 tracking-wide ml-1 mb-1 block">
         {label}
       </span>
       <div className="flex gap-1 bg-bg-secondary p-1 rounded-xl border border-border">
