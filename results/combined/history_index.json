@@ -23,13 +23,15 @@
       "time": "0739",
       "filename": "combined_2026-03-06_0739.json",
       "total_stocks": 199,
-      "match_summary": {
-        "match": 0,
-        "partial": 0,
-        "mismatch": 0,
-        "vision-only": 99,
-        "api-only": 100
-      }
+      "signals": {
+        "적극매수": 2,
+        "매수": 29,
+        "중립": 147,
+        "매도": 19,
+        "적극매도": 2
+      },
+      "match_count": 0,
+      "avg_confidence": 0.4987
     },
     {
       "date": "2026-03-05",
