@@ -134,12 +134,20 @@ const FEAR_GREED_LABELS: Record<string, string> = {
 };
 
 const FEAR_GREED_LEGEND = [
-  { label: '극단적 공포', range: '0–24', color: 'bg-red-500' },
-  { label: '공포', range: '25–44', color: 'bg-orange-400' },
-  { label: '중립', range: '45–55', color: 'bg-gray-400' },
-  { label: '탐욕', range: '56–75', color: 'bg-green-500' },
-  { label: '극단적 탐욕', range: '76–100', color: 'bg-emerald-600' },
+  { label: '극단적 공포', range: '0–24', color: 'bg-red-500', hex: '#ef4444' },
+  { label: '공포', range: '25–44', color: 'bg-orange-400', hex: '#fb923c' },
+  { label: '중립', range: '45–55', color: 'bg-gray-400', hex: '#9ca3af' },
+  { label: '탐욕', range: '56–75', color: 'bg-green-500', hex: '#22c55e' },
+  { label: '극단적 탐욕', range: '76–100', color: 'bg-emerald-600', hex: '#059669' },
 ];
+
+function getFearGreedBarColor(score: number): string {
+  if (score <= 24) return '#ef4444';
+  if (score <= 44) return '#fb923c';
+  if (score <= 55) return '#9ca3af';
+  if (score <= 75) return '#22c55e';
+  return '#059669';
+}
 
 function FearGreedCard({ data }: { data: FearGreedData }) {
   const [open, setOpen] = useState(false);
@@ -166,11 +174,7 @@ function FearGreedCard({ data }: { data: FearGreedData }) {
         <div className="flex-1 mx-1 h-2 bg-black/10 rounded-full overflow-hidden min-w-[40px]">
           <div
             className="h-full rounded-full transition-all duration-500"
-            style={{
-              width: `${pct}%`,
-              background: `linear-gradient(90deg, #dc2626 0%, #f97316 25%, #6b7280 50%, #22c55e 75%, #059669 100%)`,
-              backgroundSize: '100vw',
-            }}
+            style={{ width: `${pct}%`, backgroundColor: getFearGreedBarColor(data.score) }}
           />
         </div>
         <span className="ml-auto font-bold text-sm sm:text-base tabular-nums flex-shrink-0">
@@ -223,12 +227,20 @@ function getVixStyle(current: number) {
 }
 
 const VIX_LEGEND = [
-  { label: '매우 안정', range: '~12', color: 'bg-emerald-600' },
-  { label: '안정', range: '12–20', color: 'bg-green-500' },
-  { label: '보통', range: '20–25', color: 'bg-gray-400' },
-  { label: '불안', range: '25–30', color: 'bg-orange-400' },
-  { label: '공포', range: '30+', color: 'bg-red-500' },
+  { label: '매우 안정', range: '~12', color: 'bg-emerald-600', hex: '#059669' },
+  { label: '안정', range: '12–20', color: 'bg-green-500', hex: '#22c55e' },
+  { label: '보통', range: '20–25', color: 'bg-gray-400', hex: '#9ca3af' },
+  { label: '불안', range: '25–30', color: 'bg-orange-400', hex: '#fb923c' },
+  { label: '공포', range: '30+', color: 'bg-red-500', hex: '#ef4444' },
 ];
+
+function getVixBarColor(current: number): string {
+  if (current <= 12) return '#059669';
+  if (current <= 20) return '#22c55e';
+  if (current <= 25) return '#9ca3af';
+  if (current <= 30) return '#fb923c';
+  return '#ef4444';
+}
 
 function VixCard({ data }: { data: VixData }) {
   const [open, setOpen] = useState(false);
@@ -256,11 +268,7 @@ function VixCard({ data }: { data: VixData }) {
         <div className="flex-1 mx-1 h-2 bg-black/10 rounded-full overflow-hidden min-w-[40px]">
           <div
             className="h-full rounded-full transition-all duration-500"
-            style={{
-              width: `${vixPct}%`,
-              background: `linear-gradient(90deg, #059669 0%, #22c55e 25%, #6b7280 50%, #f97316 75%, #dc2626 100%)`,
-              backgroundSize: '100vw',
-            }}
+            style={{ width: `${vixPct}%`, backgroundColor: getVixBarColor(data.current) }}
           />
         </div>
         <span className="ml-auto font-bold text-sm sm:text-base tabular-nums flex-shrink-0">
