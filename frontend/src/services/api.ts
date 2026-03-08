@@ -1,4 +1,4 @@
-import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData, CombinedAnalysisData, SimulationIndex, SimulationData, StockCriteria, MarketStatusData, MarketIndexStatus, KeyAlertData, FearGreedData } from './types';
+import type { AnalysisData, HistoryIndex, KISGeminiData, KISAnalysisData, CombinedAnalysisData, SimulationIndex, SimulationData, StockCriteria, MarketStatusData, MarketIndexStatus, KeyAlertData, FearGreedData, VixData } from './types';
 
 const BASE_URL = import.meta.env.DEV ? '' : '.';
 
@@ -189,6 +189,20 @@ export async function fetchKeyAlerts(): Promise<KeyAlertData | null> {
     if (!response.ok) {
       if (response.status === 404) return null;
       throw new Error('Failed to fetch key alerts');
+    }
+    return response.json();
+  } catch {
+    return null;
+  }
+}
+
+// VIX 지수
+export async function fetchVixData(): Promise<VixData | null> {
+  try {
+    const response = await fetch(`${BASE_URL}/results/kis/vix.json`);
+    if (!response.ok) {
+      if (response.status === 404) return null;
+      throw new Error('Failed to fetch VIX data');
     }
     return response.json();
   } catch {

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { useMarketStatus, useFearGreedIndex } from '@/hooks/useMarketStatus';
+import { useMarketStatus, useFearGreedIndex, useVixIndex } from '@/hooks/useMarketStatus';
 import { useAuthStore } from '@/store/authStore';
-import type { MarketIndexStatus, FearGreedData } from '@/services/types';
+import type { MarketIndexStatus, FearGreedData, VixData } from '@/services/types';
 
 const STATUS_STYLES = {
   bullish: 'from-emerald-500/10 to-emerald-600/5 border-emerald-300/60 text-emerald-800',
@@ -163,24 +163,98 @@ function FearGreedCard({ data }: { data: FearGreedData }) {
   );
 }
 
+const VIX_THRESHOLDS = [
+  { max: 12, label: '매우 안정', bg: 'from-emerald-600/15 to-emerald-700/5 border-emerald-400/60', text: 'text-emerald-800', badge: 'bg-emerald-100 text-emerald-700 border-emerald-300' },
+  { max: 20, label: '안정', bg: 'from-green-500/10 to-green-600/5 border-green-300/60', text: 'text-green-800', badge: 'bg-green-100 text-green-700 border-green-300' },
+  { max: 25, label: '보통', bg: 'from-gray-400/10 to-gray-500/5 border-gray-300/60', text: 'text-gray-700', badge: 'bg-gray-100 text-gray-600 border-gray-300' },
+  { max: 30, label: '불안', bg: 'from-orange-500/10 to-orange-600/5 border-orange-300/60', text: 'text-orange-800', badge: 'bg-orange-100 text-orange-700 border-orange-300' },
+  { max: Infinity, label: '공포', bg: 'from-red-600/15 to-red-700/5 border-red-400/60', text: 'text-red-800', badge: 'bg-red-100 text-red-700 border-red-300' },
+] as const;
+
+function getVixStyle(current: number) {
+  return VIX_THRESHOLDS.find(t => current <= t.max)!;
+}
+
+function VixCard({ data }: { data: VixData }) {
+  const [open, setOpen] = useState(false);
+
+  const style = getVixStyle(data.current);
+  const changeColor = data.change > 0 ? 'text-red-500' : data.change < 0 ? 'text-emerald-600' : '';
+
+  return (
+    <div className={`bg-gradient-to-r ${style.bg} ${style.text} border rounded-lg overflow-hidden`}>
+      <button
+        type="button"
+        onClick={() => setOpen(v => !v)}
+        className="w-full flex items-center gap-2 px-3 py-2 cursor-pointer"
+      >
+        <span className="text-base flex-shrink-0">📉</span>
+        <span className="font-semibold text-xs sm:text-sm whitespace-nowrap">VIX</span>
+        <span className={`text-[10px] sm:text-xs px-1.5 py-0.5 rounded border font-medium flex-shrink-0 ${style.badge}`}>
+          {style.label}
+        </span>
+        <span className="flex-1" />
+        <span className="font-bold text-sm sm:text-base tabular-nums flex-shrink-0">
+          {data.current.toFixed(2)}
+        </span>
+        <svg
+          className={`w-4 h-4 flex-shrink-0 opacity-50 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+          fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-40' : 'max-h-0'}`}>
+        <div className="px-3 pb-2.5 grid grid-cols-3 gap-x-3 gap-y-1.5 text-xs sm:text-sm">
+          <div className="flex flex-col">
+            <span className="text-[10px] uppercase tracking-wider opacity-40 font-medium">현재</span>
+            <span className="tabular-nums font-bold">{data.current.toFixed(2)}</span>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-[10px] uppercase tracking-wider opacity-40 font-medium">전일</span>
+            <span className="tabular-nums font-semibold">{data.previous_close.toFixed(2)}</span>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-[10px] uppercase tracking-wider opacity-40 font-medium">변동</span>
+            <span className={`tabular-nums font-semibold ${changeColor}`}>
+              {data.change >= 0 ? '+' : ''}{data.change.toFixed(2)} ({data.change_pct >= 0 ? '+' : ''}{data.change_pct.toFixed(2)}%)
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function KosdaqStatusBanner() {
   const { isAdmin } = useAuthStore();
   const { data: marketStatus } = useMarketStatus();
   const { data: fearGreed } = useFearGreedIndex();
+  const { data: vix } = useVixIndex();
 
   if (!isAdmin) return null;
 
   const hasKospi = marketStatus?.kospi?.status && marketStatus.kospi.status !== 'unknown';
   const hasKosdaq = marketStatus?.kosdaq?.status && marketStatus.kosdaq.status !== 'unknown';
   const hasFearGreed = fearGreed && typeof fearGreed.score === 'number';
+  const hasVix = vix && typeof vix.current === 'number';
 
-  if (!hasKospi && !hasKosdaq && !hasFearGreed) return null;
+  if (!hasKospi && !hasKosdaq && !hasFearGreed && !hasVix) return null;
 
   return (
     <div className="flex flex-col gap-2 mb-3">
-      {hasFearGreed && <FearGreedCard data={fearGreed} />}
-      {hasKospi && <IndexCard data={marketStatus!.kospi} label="코스피" icon="📈" />}
-      {hasKosdaq && <IndexCard data={marketStatus!.kosdaq} label="코스닥" icon="📊" />}
+      {(hasFearGreed || hasVix) && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          {hasFearGreed && <FearGreedCard data={fearGreed} />}
+          {hasVix && <VixCard data={vix} />}
+        </div>
+      )}
+      {(hasKospi || hasKosdaq) && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          {hasKospi && <IndexCard data={marketStatus!.kospi} label="코스피" icon="📈" />}
+          {hasKosdaq && <IndexCard data={marketStatus!.kosdaq} label="코스닥" icon="📊" />}
+        </div>
+      )}
     </div>
   );
 }

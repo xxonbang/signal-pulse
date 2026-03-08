@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { fetchMarketStatus, fetchFearGreedIndex } from '@/services/api';
+import { fetchMarketStatus, fetchFearGreedIndex, fetchVixData } from '@/services/api';
 
 export function useMarketStatus() {
   return useQuery({
@@ -14,6 +14,15 @@ export function useFearGreedIndex() {
   return useQuery({
     queryKey: ['fear-greed-index'],
     queryFn: fetchFearGreedIndex,
+    staleTime: 1000 * 60 * 5,
+    retry: 1,
+  });
+}
+
+export function useVixIndex() {
+  return useQuery({
+    queryKey: ['vix-index'],
+    queryFn: fetchVixData,
     staleTime: 1000 * 60 * 5,
     retry: 1,
   });

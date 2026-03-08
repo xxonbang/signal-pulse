@@ -266,6 +266,16 @@ export interface FearGreedData {
   previous_1_year: number;
 }
 
+export interface VixData {
+  current: number;
+  previous_close: number;
+  change: number;
+  change_pct: number;
+  score: number;
+  rating: string;
+  timestamp: string;
+}
+
 // 개별 시장 상태
 export interface MarketIndexStatus {
   status: 'bullish' | 'bearish' | 'mixed' | 'unknown';

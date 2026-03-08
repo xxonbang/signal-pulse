@@ -149,6 +149,62 @@ def fetch_fear_greed_index(results_dir: Path | None = None) -> str:
         return ""
 
 
+def fetch_vix_index(results_dir: Path | None = None) -> str:
+    """VIX 지수 수집 (CNN Fear & Greed graphdata API)
+
+    results_dir이 주어지면 results_dir/kis/vix.json에 저장.
+    실패 시 빈 문자열 반환.
+    """
+    url = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                       "AppleWebKit/537.36 (KHTML, like Gecko) "
+                       "Chrome/122.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "https://edition.cnn.com/markets/fear-and-greed",
+        "Origin": "https://edition.cnn.com",
+    }
+
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            raw = json.loads(resp.read().decode())
+
+        vix = raw.get("market_volatility_vix", {})
+        vix_data = vix.get("data", [])
+        if not vix_data:
+            return ""
+
+        current = vix_data[-1]["y"]
+        previous = vix_data[-2]["y"] if len(vix_data) >= 2 else current
+        change = round(current - previous, 2)
+        change_pct = round(change / previous * 100, 2) if previous else 0
+
+        save_data = {
+            "current": round(current, 2),
+            "previous_close": round(previous, 2),
+            "change": change,
+            "change_pct": change_pct,
+            "score": vix.get("score", 0),
+            "rating": vix.get("rating", ""),
+            "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S+00:00", time.gmtime()),
+        }
+
+        if results_dir:
+            save_path = results_dir / "kis" / "vix.json"
+            save_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(save_path, "w", encoding="utf-8") as f:
+                json.dump(save_data, f, ensure_ascii=False, indent=2)
+
+        text = f"- VIX 지수: {current:.2f} (전일 대비: {change:+.2f}, {change_pct:+.2f}%)"
+        print(f"[MACRO] VIX 수집 완료: {current:.2f}")
+        return text
+
+    except Exception as e:
+        print(f"[MACRO] VIX 수집 실패 (스킵): {type(e).__name__}: {str(e)[:100]}")
+        return ""
+
+
 def build_macro_context(results_dir: Path) -> str:
     """거시 환경 데이터를 합쳐서 프롬프트용 텍스트 생성
 
@@ -157,8 +213,9 @@ def build_macro_context(results_dir: Path) -> str:
     summary = fetch_macro_summary()
     status = load_market_status(results_dir)
     fear_greed = fetch_fear_greed_index(results_dir)
+    vix = fetch_vix_index(results_dir)
 
-    parts = [p for p in [summary, status, fear_greed] if p]
+    parts = [p for p in [summary, status, fear_greed, vix] if p]
     if not parts:
         return ""
 
