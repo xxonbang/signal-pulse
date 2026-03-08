@@ -1,7 +1,45 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useMarketStatus, useFearGreedIndex, useVixIndex } from '@/hooks/useMarketStatus';
 import { useAuthStore } from '@/store/authStore';
 import type { MarketIndexStatus, FearGreedData, VixData } from '@/services/types';
+
+function LegendPopup({ items, onClose }: { items: { label: string; range: string; color: string }[]; onClose: () => void }) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) onClose();
+    }
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [onClose]);
+
+  return (
+    <div ref={ref} className="absolute z-50 top-full mt-1 left-0 sm:left-auto sm:right-0 bg-white border border-gray-200 rounded-lg shadow-lg p-2.5 min-w-[160px] text-xs">
+      {items.map(({ label, range, color }) => (
+        <div key={label} className="flex items-center gap-2 py-0.5">
+          <span className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${color}`} />
+          <span className="font-medium">{label}</span>
+          <span className="ml-auto text-gray-400 tabular-nums">{range}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function HelpButton({ onClick }: { onClick: (e: React.MouseEvent) => void }) {
+  return (
+    <span
+      role="button"
+      tabIndex={0}
+      onClick={onClick}
+      onKeyDown={e => { if (e.key === 'Enter') onClick(e as unknown as React.MouseEvent); }}
+      className="inline-flex items-center justify-center w-4 h-4 rounded-full border border-current opacity-40 hover:opacity-70 cursor-pointer text-[9px] font-bold leading-none flex-shrink-0 transition-opacity"
+    >
+      ?
+    </span>
+  );
+}
 
 const STATUS_STYLES = {
   bullish: 'from-emerald-500/10 to-emerald-600/5 border-emerald-300/60 text-emerald-800',
@@ -95,8 +133,17 @@ const FEAR_GREED_LABELS: Record<string, string> = {
   'extreme greed': '극단적 탐욕',
 };
 
+const FEAR_GREED_LEGEND = [
+  { label: '극단적 공포', range: '0–24', color: 'bg-red-500' },
+  { label: '공포', range: '25–44', color: 'bg-orange-400' },
+  { label: '중립', range: '45–55', color: 'bg-gray-400' },
+  { label: '탐욕', range: '56–75', color: 'bg-green-500' },
+  { label: '극단적 탐욕', range: '76–100', color: 'bg-emerald-600' },
+];
+
 function FearGreedCard({ data }: { data: FearGreedData }) {
   const [open, setOpen] = useState(false);
+  const [showLegend, setShowLegend] = useState(false);
 
   const style = FEAR_GREED_STYLES[data.rating] ?? FEAR_GREED_STYLES['neutral']!;
   const label = FEAR_GREED_LABELS[data.rating] ?? data.rating;
@@ -105,7 +152,7 @@ function FearGreedCard({ data }: { data: FearGreedData }) {
   const pct = Math.max(0, Math.min(100, data.score));
 
   return (
-    <div className={`bg-gradient-to-r ${style.bg} ${style.text} border rounded-lg overflow-hidden`}>
+    <div className={`bg-gradient-to-r ${style.bg} ${style.text} border rounded-lg overflow-hidden relative`}>
       <button
         type="button"
         onClick={() => setOpen(v => !v)}
@@ -116,6 +163,7 @@ function FearGreedCard({ data }: { data: FearGreedData }) {
         <span className={`text-[10px] sm:text-xs px-1.5 py-0.5 rounded border font-medium flex-shrink-0 ${style.badge}`}>
           {label}
         </span>
+        <HelpButton onClick={e => { e.stopPropagation(); setShowLegend(v => !v); }} />
         {/* 미니 게이지 바 */}
         <div className="flex-1 mx-1 h-2 bg-black/10 rounded-full overflow-hidden min-w-[40px]">
           <div
@@ -159,6 +207,7 @@ function FearGreedCard({ data }: { data: FearGreedData }) {
           })}
         </div>
       </div>
+      {showLegend && <LegendPopup items={FEAR_GREED_LEGEND} onClose={() => setShowLegend(false)} />}
     </div>
   );
 }
@@ -175,14 +224,23 @@ function getVixStyle(current: number) {
   return VIX_THRESHOLDS.find(t => current <= t.max)!;
 }
 
+const VIX_LEGEND = [
+  { label: '매우 안정', range: '~12', color: 'bg-emerald-600' },
+  { label: '안정', range: '12–20', color: 'bg-green-500' },
+  { label: '보통', range: '20–25', color: 'bg-gray-400' },
+  { label: '불안', range: '25–30', color: 'bg-orange-400' },
+  { label: '공포', range: '30+', color: 'bg-red-500' },
+];
+
 function VixCard({ data }: { data: VixData }) {
   const [open, setOpen] = useState(false);
+  const [showLegend, setShowLegend] = useState(false);
 
   const style = getVixStyle(data.current);
   const changeColor = data.change > 0 ? 'text-red-500' : data.change < 0 ? 'text-emerald-600' : '';
 
   return (
-    <div className={`bg-gradient-to-r ${style.bg} ${style.text} border rounded-lg overflow-hidden`}>
+    <div className={`bg-gradient-to-r ${style.bg} ${style.text} border rounded-lg overflow-hidden relative`}>
       <button
         type="button"
         onClick={() => setOpen(v => !v)}
@@ -193,6 +251,7 @@ function VixCard({ data }: { data: VixData }) {
         <span className={`text-[10px] sm:text-xs px-1.5 py-0.5 rounded border font-medium flex-shrink-0 ${style.badge}`}>
           {style.label}
         </span>
+        <HelpButton onClick={e => { e.stopPropagation(); setShowLegend(v => !v); }} />
         <span className="flex-1" />
         <span className="font-bold text-sm sm:text-base tabular-nums flex-shrink-0">
           {data.current.toFixed(2)}
@@ -222,6 +281,7 @@ function VixCard({ data }: { data: VixData }) {
           </div>
         </div>
       </div>
+      {showLegend && <LegendPopup items={VIX_LEGEND} onClose={() => setShowLegend(false)} />}
     </div>
   );
 }
