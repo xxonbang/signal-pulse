@@ -36,7 +36,7 @@ export function RecentChanges({ changes }: { changes?: RecentChange[] }) {
               style={{ backgroundColor: bgColor }}
               title={`${dateLabel}: ${sign}${rate.toFixed(2)}%`}
             >
-              <span className={`text-[0.65rem] md:text-xs font-bold leading-none tabular-nums ${color}`}>
+              <span className={`text-[0.6rem] md:text-[0.65rem] font-bold leading-none tabular-nums ${color}`}>
                 {sign}{Math.abs(rate).toFixed(1)}%
               </span>
               <span className="text-[0.55rem] md:text-[0.6rem] text-text-muted/50 leading-none mt-0.5 tabular-nums">
