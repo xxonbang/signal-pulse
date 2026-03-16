@@ -1,27 +1,34 @@
 {
   "date": "2026-03-16",
-  "collected_at": "2026-03-16T07:43:56.056765+09:00",
+  "collected_at": "2026-03-16T15:40:20.014412+09:00",
   "categories": {
     "vision": [
       {
         "code": "105560",
         "name": "KB금융",
         "market": "KOSPI",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "low_price": null,
+        "open_price": 149300,
+        "close_price": 149300,
+        "high_price": 153200,
+        "low_price": 147200,
         "high_price_time": null,
-        "return_pct": null,
-        "return_pct_net": null,
-        "high_return_pct": null,
+        "return_pct": 0.0,
+        "return_pct_net": -0.33,
+        "high_return_pct": 2.61,
         "stop_result": null
       }
     ],
     "kis": [],
     "combined": []
   },
-  "all_prices": {},
+  "all_prices": {
+    "105560": {
+      "open_price": 149300,
+      "close_price": 149300,
+      "high_price": 153200,
+      "high_price_time": null
+    }
+  },
   "all_signals": {
     "005930": {
       "name": "삼성전자",
