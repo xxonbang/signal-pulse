@@ -1,21 +1,21 @@
 {
   "date": "2026-03-17",
-  "collected_at": "2026-03-17T07:49:51.308902+09:00",
+  "collected_at": "2026-03-17T15:40:20.560804+09:00",
   "categories": {
     "vision": [
       {
         "code": "079550",
         "name": "LIG넥스원",
         "market": "KOSPI",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "low_price": null,
+        "open_price": 725000,
+        "close_price": 705000,
+        "high_price": 726000,
+        "low_price": 692000,
         "high_price_time": null,
-        "return_pct": null,
-        "return_pct_net": null,
-        "high_return_pct": null,
-        "stop_result": null
+        "return_pct": -2.76,
+        "return_pct_net": -3.09,
+        "high_return_pct": 0.14,
+        "stop_result": "stop_loss"
       }
     ],
     "kis": [
@@ -23,34 +23,53 @@
         "code": "222800",
         "name": "심텍",
         "market": "KOSDAQ",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "low_price": null,
+        "open_price": 58700,
+        "close_price": 56500,
+        "high_price": 58900,
+        "low_price": 55700,
         "high_price_time": null,
-        "return_pct": null,
-        "return_pct_net": null,
-        "high_return_pct": null,
-        "stop_result": null
+        "return_pct": -3.75,
+        "return_pct_net": -4.08,
+        "high_return_pct": 0.34,
+        "stop_result": "stop_loss"
       },
       {
         "code": "087010",
         "name": "펩트론",
         "market": "KOSDAQ",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "low_price": null,
+        "open_price": 319500,
+        "close_price": 311000,
+        "high_price": 326500,
+        "low_price": 309000,
         "high_price_time": null,
-        "return_pct": null,
-        "return_pct_net": null,
-        "high_return_pct": null,
-        "stop_result": null
+        "return_pct": -2.66,
+        "return_pct_net": -2.99,
+        "high_return_pct": 2.19,
+        "stop_result": "stop_loss"
       }
     ],
     "combined": []
   },
-  "all_prices": {},
+  "all_prices": {
+    "222800": {
+      "open_price": 58700,
+      "close_price": 56500,
+      "high_price": 58900,
+      "high_price_time": null
+    },
+    "079550": {
+      "open_price": 725000,
+      "close_price": 705000,
+      "high_price": 726000,
+      "high_price_time": null
+    },
+    "087010": {
+      "open_price": 319500,
+      "close_price": 311000,
+      "high_price": 326500,
+      "high_price_time": null
+    }
+  },
   "all_signals": {
     "005930": {
       "name": "삼성전자",
