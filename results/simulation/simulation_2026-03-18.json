@@ -1,27 +1,34 @@
 {
   "date": "2026-03-18",
-  "collected_at": "2026-03-18T07:46:26.124140+09:00",
+  "collected_at": "2026-03-18T15:40:23.454005+09:00",
   "categories": {
     "vision": [
       {
         "code": "034020",
         "name": "두산에너빌리티",
         "market": "KOSPI",
-        "open_price": null,
-        "close_price": null,
-        "high_price": null,
-        "low_price": null,
+        "open_price": 106800,
+        "close_price": 107300,
+        "high_price": 108600,
+        "low_price": 106500,
         "high_price_time": null,
-        "return_pct": null,
-        "return_pct_net": null,
-        "high_return_pct": null,
+        "return_pct": 0.47,
+        "return_pct_net": 0.14,
+        "high_return_pct": 1.69,
         "stop_result": null
       }
     ],
     "kis": [],
     "combined": []
   },
-  "all_prices": {},
+  "all_prices": {
+    "034020": {
+      "open_price": 106800,
+      "close_price": 107300,
+      "high_price": 108600,
+      "high_price_time": null
+    }
+  },
   "all_signals": {
     "005930": {
       "name": "삼성전자",
