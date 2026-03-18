@@ -18,7 +18,7 @@ KST = timezone(timedelta(hours=9))
 # 지수 코드: KOSPI=0001, KOSDAQ=2001
 INDEX_CODES = {
     "kospi": ("0001", "KOSPI"),
-    "kosdaq": ("2001", "KOSDAQ"),
+    "kosdaq": ("1001", "KOSDAQ"),
 }
 
 
@@ -189,7 +189,7 @@ def evaluate_and_save(client: Any, output_dir: str = "results/kis") -> dict:
 
 
 # 하위 호환: 기존 함수명 유지
-fetch_kosdaq_index = lambda client, days=300: fetch_index_data(client, "2001", days)
+fetch_kosdaq_index = lambda client, days=300: fetch_index_data(client, "1001", days)
 evaluate_kosdaq_alignment = lambda ohlcv: evaluate_alignment(ohlcv, "KOSDAQ")
 
 

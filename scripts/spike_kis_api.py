@@ -29,7 +29,7 @@ def test_kosdaq_index_chart(client: KISClient):
     tr_id = "FHKUP03500100"
     params = {
         "FID_COND_MRKT_DIV_CODE": "U",
-        "FID_INPUT_ISCD": "2001",  # 코스닥 종합
+        "FID_INPUT_ISCD": "1001",  # 코스닥 종합
         "FID_INPUT_DATE_1": start_date,
         "FID_INPUT_DATE_2": end_date,
         "FID_PERIOD_DIV_CODE": "D",
