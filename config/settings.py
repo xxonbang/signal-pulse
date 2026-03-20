@@ -65,4 +65,5 @@ KIS_OUTPUT_DIR = ROOT_DIR / "results" / "kis"
 
 # Supabase 설정 (KIS API 키 공유용)
 SUPABASE_URL = os.getenv("SUPABASE_URL", "https://fyklcplybyfrfryopzvx.supabase.co")
-SUPABASE_SERVICE_ROLE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+SUPABASE_PUBLISHABLE_KEY = os.getenv("SUPABASE_PUBLISHABLE_KEY")
+SUPASECRET_KEY = os.getenv("SUPASECRET_KEY")

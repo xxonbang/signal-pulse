@@ -68,7 +68,7 @@ jobs:
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
           KIS_ACCOUNT_NO: ${{ secrets.KIS_ACCOUNT_NO }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPASECRET_KEY: ${{ secrets.SUPASECRET_KEY }}
         run: |
           if [ "${{ github.event.inputs.rebuild }}" == "true" ]; then
             python simulation_main.py --rebuild

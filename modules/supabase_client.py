@@ -25,7 +25,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from config.settings import SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
+from config.settings import SUPABASE_URL, SUPASECRET_KEY
 
 
 class SupabaseCredentialManager:
@@ -47,12 +47,12 @@ class SupabaseCredentialManager:
             self._init_error = "supabase 패키지가 설치되지 않았습니다"
             return None
 
-        if not SUPABASE_URL or not SUPABASE_SERVICE_ROLE_KEY:
-            self._init_error = "SUPABASE_URL 또는 SUPABASE_SERVICE_ROLE_KEY가 설정되지 않았습니다"
+        if not SUPABASE_URL or not SUPASECRET_KEY:
+            self._init_error = "SUPABASE_URL 또는 SUPASECRET_KEY가 설정되지 않았습니다"
             return None
 
         try:
-            self._client = create_client(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY)
+            self._client = create_client(SUPABASE_URL, SUPASECRET_KEY)
             return self._client
         except Exception as e:
             self._init_error = f"Supabase 클라이언트 생성 실패: {e}"

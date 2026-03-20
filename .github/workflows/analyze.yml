@@ -218,13 +218,13 @@ jobs:
           KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPASECRET_KEY: ${{ secrets.SUPASECRET_KEY }}
         run: |
           # KIS 키가 환경변수 또는 Supabase에 있으면 진행
           if [ -n "$KIS_APP_KEY" ] && [ -n "$KIS_APP_SECRET" ]; then
             echo "KIS API credentials verified (env)."
             echo "has_credentials=true" >> $GITHUB_OUTPUT
-          elif [ -n "$SUPABASE_URL" ] && [ -n "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+          elif [ -n "$SUPABASE_URL" ] && [ -n "$SUPASECRET_KEY" ]; then
             echo "Supabase configured. KIS keys will be fetched from Supabase."
             echo "has_credentials=true" >> $GITHUB_OUTPUT
           else
@@ -258,7 +258,7 @@ jobs:
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
           KIS_ACCOUNT_NO: ${{ secrets.KIS_ACCOUNT_NO }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPASECRET_KEY: ${{ secrets.SUPASECRET_KEY }}
         run: |
           echo "=== KIS API 데이터 수집 ==="
           echo "::notice::KIS API는 등록된 IP에서만 접근 가능합니다. GitHub Actions에서 403 오류 발생 시 IP 제한 때문입니다."
@@ -284,7 +284,7 @@ jobs:
           KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPASECRET_KEY: ${{ secrets.SUPASECRET_KEY }}
         run: |
           echo "=== KOSDAQ 지수 상태 평가 ==="
           python -c "
@@ -307,7 +307,7 @@ jobs:
           GEMINI_API_KEY_04: ${{ secrets.GEMINI_API_KEY_04 }}
           GEMINI_API_KEY_05: ${{ secrets.GEMINI_API_KEY_05 }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPASECRET_KEY: ${{ secrets.SUPASECRET_KEY }}
           ALERT_SMTP_USER: ${{ secrets.ALERT_SMTP_USER }}
           ALERT_SMTP_PASSWORD: ${{ secrets.ALERT_SMTP_PASSWORD }}
         run: |
@@ -401,7 +401,7 @@ jobs:
           KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPASECRET_KEY: ${{ secrets.SUPASECRET_KEY }}
         run: |
           echo "=== 종목 선정 기준 평가 (공매도 포함) ==="
           python -c "
