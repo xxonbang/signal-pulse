@@ -113,7 +113,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
-            MSG=$(printf "<b>[Signal Pulse][Stock Analysis] 시작</b>\n시장 상태: ${{ steps.check.outputs.market_status }}")
+            MSG=$(printf "<b>[Stock Analysis] 시작</b>\n시장 상태: ${{ steps.check.outputs.market_status }}")
             curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
               -d chat_id="${TELEGRAM_CHAT_ID}" \
               -d parse_mode=HTML \
@@ -975,13 +975,13 @@ jobs:
             [ "$KIS" == "failure" ] && FAILED_JOBS="${FAILED_JOBS}KIS, "
             [ "$DEPLOY" == "failure" ] && FAILED_JOBS="${FAILED_JOBS}Deploy, "
             FAILED_JOBS="${FAILED_JOBS%, }"
-            MSG=$(printf "<b>[Signal Pulse][Stock Analysis] 실패</b>\n실패 항목: ${FAILED_JOBS}")
+            MSG=$(printf "<b>[Stock Analysis] 실패</b>\n실패 항목: ${FAILED_JOBS}")
           else
             VISION_STATUS="Skip"
             KIS_STATUS="Skip"
             [ "$VISION" == "success" ] && VISION_STATUS="OK"
             [ "$KIS" == "success" ] && KIS_STATUS="OK"
-            MSG=$(printf "<b>[Signal Pulse][Stock Analysis] 완료</b>\nVision: ${VISION_STATUS}, KIS: ${KIS_STATUS}")
+            MSG=$(printf "<b>[Stock Analysis] 완료</b>\nVision: ${VISION_STATUS}, KIS: ${KIS_STATUS}")
           fi
 
           curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
