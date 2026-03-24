@@ -1,7 +1,17 @@
 {
-  "updated_at": "2026-03-24T19:43:24.034723+09:00",
-  "total_records": 50,
+  "updated_at": "2026-03-25T07:48:40.969725+09:00",
+  "total_records": 51,
   "history": [
+    {
+      "date": "2026-03-25",
+      "filename": "simulation_2026-03-25.json",
+      "total_stocks": 0,
+      "category_counts": {
+        "vision": 0,
+        "kis": 0,
+        "combined": 0
+      }
+    },
     {
       "date": "2026-03-24",
       "filename": "simulation_2026-03-24.json",
