@@ -50,7 +50,7 @@ def test_baseline_missing_scores_returns_unchanged():
 
 
 def test_baseline_none_score_gets_default():
-    """현재: None 점수 → 5.0 기본값"""
+    """수정 후: None 점수 → 가중평균에서 제외"""
     item = {
         "signal": "매수",
         "scores": {
@@ -61,12 +61,12 @@ def test_baseline_none_score_gets_default():
         },
     }
     result = validate_and_recalculate(item)
-    assert result["scores"]["valuation"] == 5.0
-    assert result["scores"]["total"] == 7.4
+    assert result["scores"]["valuation"] is None
+    assert result["scores"]["total"] == 8.0
 
 
 def test_baseline_signal_not_reclassified():
-    """현재 버그: total 재계산해도 signal은 Gemini 원래 값 유지"""
+    """수정 후: total 기준으로 signal 재분류됨"""
     item = {
         "signal": "매수",
         "scores": {
@@ -78,7 +78,7 @@ def test_baseline_signal_not_reclassified():
     }
     result = validate_and_recalculate(item)
     assert result["scores"]["total"] == 9.0
-    assert result["signal"] == "매수"
+    assert result["signal"] == "적극매수"
 
 
 # === 그룹 2: 개선 후 기대 동작 (현재 FAIL) ===

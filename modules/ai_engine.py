@@ -16,7 +16,7 @@ from google.genai.errors import ClientError, ServerError
 # KST 시간대
 KST = timezone(timedelta(hours=9))
 
-from config.settings import GEMINI_API_KEYS, GEMINI_MODEL, GEMINI_MODEL_LITE, SIGNAL_CATEGORIES
+from config.settings import GEMINI_API_KEYS, GEMINI_MODEL, GEMINI_MODEL_LITE, SIGNAL_CATEGORIES, SIGNAL_THRESHOLDS
 from modules.key_monitor import record_alert
 from modules.utils import parse_json_response, resize_image
 
@@ -286,7 +286,8 @@ confidence = 종합점수 / 10 (소수점 둘째 자리까지)
 def validate_and_recalculate(item: dict) -> dict:
     """scores 필드 검증 및 종합점수/confidence/signal 재계산
 
-    AI 응답의 scores가 누락되거나 total이 가중평균과 불일치할 때 보정.
+    - 유효한 점수만으로 가중평균 재계산 (None/비숫자 항목은 제외)
+    - 재계산된 total 기준으로 signal 재분류
     """
     scores = item.get("scores")
     if not scores or not isinstance(scores, dict):
@@ -294,23 +295,39 @@ def validate_and_recalculate(item: dict) -> dict:
 
     weights = {"technical": 0.30, "supply_demand": 0.35, "valuation": 0.20, "material": 0.15}
 
-    # 개별 점수를 0~10 범위로 클램프
-    for key in weights:
+    # 유효 점수 수집 + 클램프, 비유효 → None
+    available = {}
+    for key, w in weights.items():
         val = scores.get(key)
         if isinstance(val, (int, float)):
-            scores[key] = max(0.0, min(10.0, float(val)))
+            clamped = max(0.0, min(10.0, float(val)))
+            scores[key] = clamped
+            available[key] = (clamped, w)
         else:
-            scores[key] = 5.0  # 기본값
+            scores[key] = None
 
-    # 가중평균 재계산
-    total = sum(scores[k] * w for k, w in weights.items())
+    # 가중평균 재계산 (유효 항목만, 가중치 재분배)
+    if available:
+        total_weight = sum(w for _, w in available.values())
+        total = sum(val * (w / total_weight) for val, w in available.values())
+    else:
+        total = 5.0
+
     scores["total"] = round(total, 2)
     item["scores"] = scores
+
+    # signal 재분류 (total 기준)
+    signal = "적극매도"
+    for threshold, label in SIGNAL_THRESHOLDS:
+        if total >= threshold:
+            signal = label
+            break
+    item["signal"] = signal
 
     # confidence 재계산
     item["confidence"] = round(total / 10, 2)
 
-    # reason에서 내부 점수 패턴 제거 (예: "기술점수 6.5점 (추세: bullish, RSI-14: 89.42), ")
+    # reason에서 내부 점수 패턴 제거
     reason = item.get("reason", "")
     if reason:
         reason = re.sub(r'(기술|수급|밸류|재료)점수\s*\d+\.?\d*점\s*\([^)]*?\)[.,\s]*', '', reason)
