@@ -1,5 +1,7 @@
 """validate_and_recalculate 함수 테스트"""
 import sys
+import json
+import copy
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).parent.parent
@@ -161,3 +163,70 @@ def test_improved_string_score_treated_as_none():
     result = validate_and_recalculate(item)
     assert result["scores"]["valuation"] is None
     assert result["scores"]["total"] == 8.0
+
+
+def test_regression_vision_data():
+    """실제 Vision 분석 결과에 수정된 validate 적용 — side-effect 검증"""
+    from config.settings import SIGNAL_CATEGORIES
+
+    vision_path = ROOT_DIR / "results" / "vision" / "vision_analysis.json"
+    if not vision_path.exists():
+        return  # CI 환경 등 데이터 없으면 skip
+
+    with open(vision_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    results = data.get("results", [])
+    assert len(results) > 0, "결과 데이터 비어있음"
+
+    changed_signals = []
+    for item in results:
+        original_signal = item.get("signal")
+        original_total = item.get("scores", {}).get("total")
+        test_item = copy.deepcopy(item)
+        validate_and_recalculate(test_item)
+
+        new_signal = test_item["signal"]
+        new_total = test_item["scores"]["total"]
+
+        if original_signal != new_signal:
+            changed_signals.append({
+                "code": item.get("code"),
+                "name": item.get("name"),
+                "total": original_total,
+                "new_total": new_total,
+                "old_signal": original_signal,
+                "new_signal": new_signal,
+            })
+
+        # 범위 검증
+        assert 0.0 <= new_total <= 10.0, f"{item.get('code')}: total={new_total} out of range"
+        assert new_signal in SIGNAL_CATEGORIES, f"{item.get('code')}: invalid signal '{new_signal}'"
+
+    if changed_signals:
+        print(f"\n[INFO] signal 재분류된 종목 {len(changed_signals)}건:")
+        for c in changed_signals:
+            print(f"  {c['code']} {c['name']}: total {c['total']}→{c['new_total']}, signal {c['old_signal']}→{c['new_signal']}")
+
+
+def test_regression_kis_data():
+    """실제 KIS 분석 결과에 수정된 validate 적용 — side-effect 검증"""
+    from config.settings import SIGNAL_CATEGORIES
+
+    kis_path = ROOT_DIR / "results" / "kis" / "kis_analysis.json"
+    if not kis_path.exists():
+        return
+
+    with open(kis_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    results = data.get("results", [])
+    assert len(results) > 0, "결과 데이터 비어있음"
+
+    for item in results:
+        test_item = copy.deepcopy(item)
+        validate_and_recalculate(test_item)
+        new_total = test_item["scores"]["total"]
+        new_signal = test_item["signal"]
+        assert 0.0 <= new_total <= 10.0, f"{item.get('code')}: total={new_total} out of range"
+        assert new_signal in SIGNAL_CATEGORIES, f"{item.get('code')}: invalid signal '{new_signal}'"
