@@ -16,10 +16,10 @@ export function Logo() {
         </svg>
       </div>
       <div className="flex flex-col leading-tight">
-        <span className="text-lg font-extrabold tracking-tight text-accent-primary">
+        <span className="text-base font-extrabold tracking-tight text-accent-primary">
           SignalPulse
         </span>
-        <span className="text-xs font-medium text-text-muted uppercase tracking-wider">
+        <span className="text-[0.5625rem] font-medium text-text-muted uppercase tracking-wider whitespace-nowrap">
           AI Stock Signal Analyzer
         </span>
       </div>
