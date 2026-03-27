@@ -5,44 +5,18 @@ export function Toast() {
 
   return (
     <div
-      style={{
-        position: 'fixed',
-        bottom: '24px',
-        left: '50%',
-        transform: 'translateX(-50%)',
-        zIndex: 300,
-        pointerEvents: toast.isVisible ? 'auto' : 'none',
-      }}
+      className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[300]"
+      style={{ pointerEvents: toast.isVisible ? 'auto' : 'none' }}
     >
       <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '12px',
-          padding: '10px 16px',
-          backgroundColor: 'rgba(30, 41, 59, 0.95)',
-          color: 'white',
-          fontSize: '14px',
-          fontWeight: 500,
-          borderRadius: '12px',
-          boxShadow: '0 10px 25px rgba(0, 0, 0, 0.2)',
-          opacity: toast.isVisible ? 1 : 0,
-          transition: 'opacity 0.3s ease-out',
-        }}
+        role="status"
+        aria-live="polite"
+        className={`flex items-center gap-3 px-4 py-2.5 bg-text-primary/95 text-white text-sm font-medium rounded-xl shadow-lg transition-opacity duration-300 ${
+          toast.isVisible ? 'opacity-100' : 'opacity-0'
+        }`}
       >
         {/* 체크 아이콘 */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: '20px',
-            height: '20px',
-            backgroundColor: '#10b981',
-            borderRadius: '50%',
-            flexShrink: 0,
-          }}
-        >
+        <div className="flex items-center justify-center w-5 h-5 bg-status-success rounded-full flex-shrink-0">
           <svg
             width="12"
             height="12"
@@ -52,13 +26,14 @@ export function Toast() {
             strokeWidth="3"
             strokeLinecap="round"
             strokeLinejoin="round"
+            aria-hidden="true"
           >
             <polyline points="20 6 9 17 4 12"/>
           </svg>
         </div>
 
         {/* 메시지 */}
-        <span style={{ whiteSpace: 'nowrap' }}>{toast.message}</span>
+        <span className="whitespace-nowrap">{toast.message}</span>
       </div>
     </div>
   );

@@ -60,7 +60,7 @@ export function StockCard({ stock, isCompact = false, criteria }: StockCardProps
         {stock.reason || '-'}
       </div>
       <NewsAnalysisSection newsAnalysis={stock.news_analysis} />
-      <div className="text-[0.65rem] md:text-xs text-text-muted mt-2 md:mt-2.5 flex gap-2 md:gap-3">
+      <div className="text-xs text-text-muted mt-2 md:mt-2.5 flex gap-2 md:gap-3">
         {stock.capture_time && <span>캡처 {formatTimeOnly(stock.capture_time)}</span>}
         {stock.analysis_time && <span>분석 {formatTimeOnly(stock.analysis_time)}</span>}
       </div>

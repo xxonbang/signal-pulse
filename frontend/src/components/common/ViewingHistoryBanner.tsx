@@ -8,9 +8,9 @@ export function ViewingHistoryBanner({ dateTime }: { dateTime: string }) {
   const displayTime = time ? `${time.slice(0, 2)}:${time.slice(2)}` : '';
 
   return (
-    <div className="flex items-center justify-between gap-2 md:gap-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-3 md:px-5 py-2.5 md:py-3 rounded-xl mb-4 md:mb-5">
+    <div className="flex items-center justify-between gap-2 md:gap-3 bg-accent-primary text-white px-3 md:px-5 py-2.5 md:py-3 rounded-xl mb-4 md:mb-5" role="status">
       <span className="font-semibold text-xs md:text-base flex items-center gap-2">
-        <span className="text-base md:text-lg">📅</span>
+        <svg className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
         <span>
           {date} {displayTime && <span className="text-white/80">{displayTime}</span>}
           <span className="text-white/90"> 일시의 데이터 표시 중</span>

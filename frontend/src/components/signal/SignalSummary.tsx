@@ -11,7 +11,7 @@ const signals: SignalType[] = ['적극매수', '매수', '중립', '매도', '�
 
 export function SignalSummary({ counts, activeSignal, onFilter }: SignalSummaryProps) {
   return (
-    <div className="grid grid-cols-5 gap-2 md:gap-3.5 mb-6">
+    <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 md:gap-3.5 mb-6">
       {signals.map((signal) => (
         <SignalCard
           key={signal}

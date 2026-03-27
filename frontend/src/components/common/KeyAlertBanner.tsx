@@ -19,18 +19,18 @@ export function KeyAlertBanner() {
   const latest = data.alerts[data.alerts.length - 1];
 
   return (
-    <div className="mb-4 rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-400">
+    <div className="mb-4 rounded-lg border border-status-danger/30 bg-status-danger/10 px-4 py-3 text-sm text-status-danger" role="alert">
       <div className="flex items-start justify-between gap-2">
         <div>
           <span className="font-semibold">API 키 에러 {data.alerts.length}건</span>
-          <span className="ml-2 text-red-400/70">({data.updated_at})</span>
-          <p className="mt-1 text-red-400/80">
+          <span className="ml-2 text-status-danger/70">({data.updated_at})</span>
+          <p className="mt-1 text-status-danger/80">
             [{latest.source}] {latest.message}
           </p>
         </div>
         <button
           onClick={() => setDismissed(true)}
-          className="shrink-0 text-red-400/60 hover:text-red-400"
+          className="shrink-0 text-status-danger/60 hover:text-status-danger"
         >
           &times;
         </button>

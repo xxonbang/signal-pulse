@@ -8,7 +8,7 @@ export function RecentChanges({ changes }: { changes?: RecentChange[] }) {
 
   return (
     <div className="flex items-center gap-1">
-      <span className="text-[0.6rem] md:text-[0.65rem] text-text-muted/60 font-semibold tracking-wider uppercase flex-shrink-0">
+      <span className="text-xs text-text-muted/60 font-semibold tracking-wider uppercase flex-shrink-0">
         등락
       </span>
       <div className="flex items-center gap-[3px] flex-1 min-w-0 overflow-x-auto">
@@ -16,13 +16,13 @@ export function RecentChanges({ changes }: { changes?: RecentChange[] }) {
           const rate = item.change_rate ?? 0;
           const isPositive = rate > 0;
           const isNegative = rate < 0;
-          const color = isPositive ? 'text-red-600' : isNegative ? 'text-blue-600' : 'text-text-muted/70';
+          const color = isPositive ? 'text-status-danger' : isNegative ? 'text-status-info' : 'text-text-muted/70';
           const sign = isPositive ? '+' : '';
           const dateLabel = item.date ? `${item.date.slice(4, 6)}/${item.date.slice(6, 8)}` : '';
 
           // 변동률 크기에 비례한 배경 강도
           const absRate = Math.abs(rate);
-          const intensity = Math.min(absRate / 15, 1); // 15% 이상이면 최대 강도
+          const intensity = Math.min(absRate / 15, 1);
           const bgColor = isPositive
             ? `rgba(239, 68, 68, ${0.04 + intensity * 0.1})`
             : isNegative
@@ -36,10 +36,10 @@ export function RecentChanges({ changes }: { changes?: RecentChange[] }) {
               style={{ backgroundColor: bgColor }}
               title={`${dateLabel}: ${sign}${rate.toFixed(2)}%`}
             >
-              <span className={`text-[0.6rem] md:text-[0.65rem] font-bold leading-none tabular-nums ${color}`}>
+              <span className={`text-xs font-bold leading-none tabular-nums ${color}`}>
                 {sign}{Math.abs(rate).toFixed(1)}%
               </span>
-              <span className="text-[0.55rem] md:text-[0.6rem] text-text-muted/50 leading-none mt-0.5 tabular-nums">
+              <span className="text-[0.625rem] text-text-muted/50 leading-none mt-0.5 tabular-nums">
                 {dateLabel}
               </span>
             </div>

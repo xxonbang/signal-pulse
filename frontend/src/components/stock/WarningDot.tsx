@@ -1,9 +1,9 @@
 import type { StockCriteria } from '@/services/types';
 
 const ALERTS = [
-  { key: 'short_selling_alert', color: 'bg-red-500' },
-  { key: 'overheating_alert', color: 'bg-orange-500' },
-  { key: 'reverse_ma_alert', color: 'bg-violet-500' },
+  { key: 'short_selling_alert', color: 'bg-status-danger' },
+  { key: 'overheating_alert', color: 'bg-status-warning' },
+  { key: 'reverse_ma_alert', color: 'bg-criteria-program' },
 ] as const;
 
 export function WarningDot({ criteria, className }: {

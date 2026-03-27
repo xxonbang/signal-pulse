@@ -56,7 +56,7 @@ function HistoryItem({
             </span>
           )}
           {isToday && (
-            <span className="px-1.5 py-0.5 bg-indigo-100 text-indigo-700 text-[0.6rem] md:text-xs rounded font-medium">
+            <span className="px-1.5 py-0.5 bg-accent-primary/10 text-accent-primary text-xs rounded font-medium">
               오늘
             </span>
           )}
@@ -161,7 +161,7 @@ export function HistoryPanel() {
         </div>
 
         {/* Info */}
-        <div className="px-4 md:px-5 py-2.5 md:py-3 bg-indigo-50/50 text-[0.65rem] md:text-xs text-indigo-700 border-b border-indigo-100">
+        <div className="px-4 md:px-5 py-2.5 md:py-3 bg-accent-primary/5 text-xs text-accent-primary border-b border-accent-primary/10">
           <div className="flex items-center gap-1.5">
             <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <circle cx="12" cy="12" r="10"/>

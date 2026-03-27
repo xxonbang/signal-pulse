@@ -26,7 +26,7 @@ export function Navigation() {
   });
 
   return (
-    <nav aria-label="메인 네비게이션" className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-border z-50 px-4 md:px-6 pt-[env(safe-area-inset-top)]">
+    <nav aria-label="메인 네비게이션" className="fixed top-0 left-0 right-0 bg-bg-secondary border-b border-border z-50 px-4 md:px-6 pt-[env(safe-area-inset-top)]">
       <div className="max-w-[1200px] mx-auto flex justify-between items-center h-14 md:h-16">
         <Logo />
 
@@ -40,7 +40,7 @@ export function Navigation() {
               border border-accent-primary/30
               rounded-lg text-xs md:text-sm font-semibold
               hover:bg-accent-primary hover:text-white
-              transition-all"
+              transition-colors"
           >
             {currentPage === 'home' ? (
               <>
@@ -68,7 +68,7 @@ export function Navigation() {
               text-text-muted
               rounded-lg text-xs md:text-sm font-medium
               hover:bg-bg-primary hover:text-text-secondary
-              transition-all"
+              transition-colors"
           >
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="12" cy="12" r="10"/>
@@ -77,7 +77,7 @@ export function Navigation() {
             <span className="hidden md:inline">히스토리</span>
             {historyIndex?.total_records !== undefined && (
               <span className="flex items-center justify-center min-w-[1.1rem] h-[1.1rem] px-1
-                bg-accent-primary/10 text-accent-primary text-[0.65rem] font-semibold
+                bg-accent-primary/10 text-accent-primary text-xs font-semibold
                 rounded-full"
               >
                 {historyIndex.total_records}
@@ -91,7 +91,7 @@ export function Navigation() {
             className={`
               flex items-center gap-1.5 px-2.5 md:px-3 py-1.5 md:py-2
               rounded-lg text-xs md:text-sm font-medium
-              border transition-all
+              border transition-colors
               ${isCompactView
                 ? 'bg-accent-primary text-white border-accent-primary'
                 : 'bg-bg-secondary text-text-secondary border-border hover:border-accent-primary hover:text-accent-primary'
@@ -126,8 +126,8 @@ export function Navigation() {
               className="flex items-center gap-1.5 px-2 md:px-2.5 py-1.5 md:py-2
                 text-text-muted/60
                 rounded-lg text-xs md:text-sm font-medium
-                hover:text-red-500 hover:bg-red-50
-                transition-all"
+                hover:text-status-danger hover:bg-status-danger/5
+                transition-colors"
               title={user.email ?? '로그아웃'}
             >
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -142,7 +142,7 @@ export function Navigation() {
       </div>
       {/* Toast */}
       {toast && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 px-4 py-2 bg-gray-800 text-white text-xs md:text-sm font-medium rounded-lg shadow-lg animate-fade-in whitespace-nowrap">
+        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 px-4 py-2 bg-text-primary/95 text-white text-xs md:text-sm font-medium rounded-lg shadow-lg animate-fade-in whitespace-nowrap">
           {toast}
         </div>
       )}

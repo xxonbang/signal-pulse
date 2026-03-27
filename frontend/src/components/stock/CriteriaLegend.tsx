@@ -7,16 +7,16 @@ interface CriteriaLegendProps {
 }
 
 const LEGEND_ITEMS = [
-  { dotColor: 'bg-red-500', label: '전고점 돌파', desc: '6개월(120영업일) 고가를 현재가가 돌파한 종목' },
+  { dotColor: 'bg-criteria-breakout', label: '전고점 돌파', desc: '6개월(120영업일) 고가를 현재가가 돌파한 종목' },
   { icon: '👑', label: '52주 신고가', desc: '52주 신고가를 현재가가 돌파한 종목 (더 강력한 매수 신호)' },
-  { dotColor: 'bg-blue-500', label: '외국인/기관 수급', desc: '외국인과 기관이 동시에 순매수 중인 종목' },
-  { dotColor: 'bg-violet-500', label: '프로그램 매매', desc: '프로그램 순매수량이 양수인 종목' },
-  { dotColor: 'bg-orange-500', label: '끼 보유', desc: '상한가(29%↑) 이력 또는 거래대금 1,000억 이상 + 시초가 대비 종가 10%↑ 이력이 있는 종목' },
-  { dotColor: 'bg-yellow-400', label: '저항선 돌파', desc: '심리적 저항선(호가 단위 경계, 라운드 넘버)을 전일종가 기준으로 현재가가 돌파한 종목' },
-  { dotColor: 'bg-teal-500', label: '정배열', desc: '현재가 > MA5 > MA10 > MA20 > MA60 > MA120 이동평균선 정배열 상태인 종목' },
-  { dotColor: 'bg-fuchsia-500', label: '거래대금 TOP30', desc: 'KOSPI+KOSDAQ 합산 거래대금 상위 30위 이내 종목' },
-  { dotColor: 'bg-lime-500', label: '시가총액 적정', desc: '시가총액 3,000억 ~ 10조원 범위 내 종목' },
-  { dotColor: 'bg-yellow-400/30 ring-1 ring-yellow-400', label: '전체 충족', desc: '위 8개 기준을 모두 충족한 종목' },
+  { dotColor: 'bg-criteria-supply', label: '외국인/기관 수급', desc: '외국인과 기관이 동시에 순매수 중인 종목' },
+  { dotColor: 'bg-criteria-program', label: '프로그램 매매', desc: '프로그램 순매수량이 양수인 종목' },
+  { dotColor: 'bg-criteria-short', label: '끼 보유', desc: '상한가(29%↑) 이력 또는 거래대금 1,000억 이상 + 시초가 대비 종가 10%↑ 이력이 있는 종목' },
+  { dotColor: 'bg-criteria-52w', label: '저항선 돌파', desc: '심리적 저항선(호가 단위 경계, 라운드 넘버)을 전일종가 기준으로 현재가가 돌파한 종목' },
+  { dotColor: 'bg-criteria-consensus', label: '정배열', desc: '현재가 > MA5 > MA10 > MA20 > MA60 > MA120 이동평균선 정배열 상태인 종목' },
+  { dotColor: 'bg-criteria-volume', label: '거래대금 TOP30', desc: 'KOSPI+KOSDAQ 합산 거래대금 상위 30위 이내 종목' },
+  { dotColor: 'bg-criteria-valuation', label: '시가총액 적정', desc: '시가총액 3,000억 ~ 10조원 범위 내 종목' },
+  { dotColor: 'bg-criteria-52w/30 ring-1 ring-criteria-52w', label: '전체 충족', desc: '위 8개 기준을 모두 충족한 종목' },
 ];
 
 export function CriteriaLegend({ isAdmin, hasCriteriaData }: CriteriaLegendProps) {

@@ -14,6 +14,41 @@ export default {
           'sell': '#ea580c',
           'strong-sell': '#dc2626',
         },
+        // 시그널 배경색 (badge, card 배경용)
+        'signal-bg': {
+          'strong-buy': '#d1fae5',  // emerald-100
+          'buy': '#d1fae5',         // emerald-100
+          'neutral': '#fef3c7',     // amber-100
+          'sell': '#ffedd5',        // orange-100
+          'strong-sell': '#fee2e2', // red-100
+        },
+        // 기준 지표(criteria) 색상
+        criteria: {
+          breakout: '#ef4444',   // red-500
+          supply: '#3b82f6',     // blue-500
+          program: '#8b5cf6',    // violet-500
+          short: '#f97316',      // orange-500
+          '52w': '#eab308',      // yellow-500
+          valuation: '#06b6d4',  // cyan-500
+          consensus: '#10b981',  // emerald-500
+          volume: '#6366f1',     // indigo-500
+        },
+        // 감성(sentiment) 색상
+        sentiment: {
+          positive: '#059669',   // emerald-600 계열
+          'positive-bg': '#d1fae5',
+          neutral: '#6b7280',    // gray-500 계열
+          'neutral-bg': '#f3f4f6',
+          negative: '#dc2626',   // red-600 계열
+          'negative-bg': '#fee2e2',
+        },
+        // 상태(status) 색상
+        status: {
+          danger: '#ef4444',
+          warning: '#f97316',
+          success: '#10b981',
+          info: '#3b82f6',
+        },
         accent: {
           primary: '#2563eb',
           'primary-light': '#3b82f6',
@@ -25,6 +60,7 @@ export default {
           card: '#ffffff',
           'card-hover': '#f1f3f4',
           accent: '#e8f4fd',
+          subtle: 'rgba(0,0,0,0.03)',
         },
         text: {
           primary: '#1a1a2e',

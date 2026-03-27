@@ -21,23 +21,23 @@ body {
   }
 
   .signal-badge-적극매수 {
-    @apply bg-emerald-100 text-signal-strong-buy;
+    @apply bg-signal-bg-strong-buy text-signal-strong-buy;
   }
 
   .signal-badge-매수 {
-    @apply bg-emerald-100 text-signal-buy;
+    @apply bg-signal-bg-buy text-signal-buy;
   }
 
   .signal-badge-중립 {
-    @apply bg-amber-100 text-signal-neutral;
+    @apply bg-signal-bg-neutral text-signal-neutral;
   }
 
   .signal-badge-매도 {
-    @apply bg-orange-100 text-signal-sell;
+    @apply bg-signal-bg-sell text-signal-sell;
   }
 
   .signal-badge-적극매도 {
-    @apply bg-red-100 text-signal-strong-sell;
+    @apply bg-signal-bg-strong-sell text-signal-strong-sell;
   }
 }
 
@@ -49,4 +49,14 @@ body {
 
 .animate-spin {
   animation: spin 1s linear infinite;
+}
+
+/* 사용자가 모션 줄이기를 선호하면 모든 애니메이션/전환 최소화 */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

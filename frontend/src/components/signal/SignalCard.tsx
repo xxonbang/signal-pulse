@@ -70,44 +70,44 @@ const colorStyles: Record<string, {
   text: string;
 }> = {
   'strong-buy': {
-    base: 'border-emerald-600/20',
-    hover: 'hover:border-emerald-600/40 hover:shadow-emerald-600/10',
-    active: 'border-emerald-600 bg-emerald-600/5',
-    bar: 'bg-emerald-600',
-    icon: 'bg-emerald-600/10 text-emerald-600',
-    text: 'text-emerald-600',
+    base: 'border-signal-strong-buy/20',
+    hover: 'hover:border-signal-strong-buy/40 hover:shadow-signal-strong-buy/10',
+    active: 'border-signal-strong-buy bg-signal-strong-buy/5',
+    bar: 'bg-signal-strong-buy',
+    icon: 'bg-signal-strong-buy/10 text-signal-strong-buy',
+    text: 'text-signal-strong-buy',
   },
   'buy': {
-    base: 'border-emerald-500/20',
-    hover: 'hover:border-emerald-500/40 hover:shadow-emerald-500/10',
-    active: 'border-emerald-500 bg-emerald-500/5',
-    bar: 'bg-emerald-500',
-    icon: 'bg-emerald-500/10 text-emerald-500',
-    text: 'text-emerald-500',
+    base: 'border-signal-buy/20',
+    hover: 'hover:border-signal-buy/40 hover:shadow-signal-buy/10',
+    active: 'border-signal-buy bg-signal-buy/5',
+    bar: 'bg-signal-buy',
+    icon: 'bg-signal-buy/10 text-signal-buy',
+    text: 'text-signal-buy',
   },
   'neutral': {
-    base: 'border-amber-600/20',
-    hover: 'hover:border-amber-600/40 hover:shadow-amber-600/10',
-    active: 'border-amber-600 bg-amber-600/5',
-    bar: 'bg-amber-600',
-    icon: 'bg-amber-600/10 text-amber-600',
-    text: 'text-amber-600',
+    base: 'border-signal-neutral/20',
+    hover: 'hover:border-signal-neutral/40 hover:shadow-signal-neutral/10',
+    active: 'border-signal-neutral bg-signal-neutral/5',
+    bar: 'bg-signal-neutral',
+    icon: 'bg-signal-neutral/10 text-signal-neutral',
+    text: 'text-signal-neutral',
   },
   'sell': {
-    base: 'border-orange-600/20',
-    hover: 'hover:border-orange-600/40 hover:shadow-orange-600/10',
-    active: 'border-orange-600 bg-orange-600/5',
-    bar: 'bg-orange-600',
-    icon: 'bg-orange-600/10 text-orange-600',
-    text: 'text-orange-600',
+    base: 'border-signal-sell/20',
+    hover: 'hover:border-signal-sell/40 hover:shadow-signal-sell/10',
+    active: 'border-signal-sell bg-signal-sell/5',
+    bar: 'bg-signal-sell',
+    icon: 'bg-signal-sell/10 text-signal-sell',
+    text: 'text-signal-sell',
   },
   'strong-sell': {
-    base: 'border-red-600/20',
-    hover: 'hover:border-red-600/40 hover:shadow-red-600/10',
-    active: 'border-red-600 bg-red-600/5',
-    bar: 'bg-red-600',
-    icon: 'bg-red-600/10 text-red-600',
-    text: 'text-red-600',
+    base: 'border-signal-strong-sell/20',
+    hover: 'hover:border-signal-strong-sell/40 hover:shadow-signal-strong-sell/10',
+    active: 'border-signal-strong-sell bg-signal-strong-sell/5',
+    bar: 'bg-signal-strong-sell',
+    icon: 'bg-signal-strong-sell/10 text-signal-strong-sell',
+    text: 'text-signal-strong-sell',
   },
 };
 
@@ -120,7 +120,7 @@ export function SignalCard({ signal, count, active = false, onClick }: SignalCar
       onClick={onClick}
       className={cn(
         'relative bg-bg-secondary rounded-xl md:rounded-2xl py-3 px-1 md:py-5 md:px-4 text-center',
-        'transition-all duration-300 ease-out cursor-pointer overflow-hidden border',
+        'transition-[border-color,box-shadow,transform] duration-300 ease-out cursor-pointer overflow-hidden border',
         'shadow-sm hover:-translate-y-1 hover:shadow-lg',
         styles.base,
         styles.hover,
@@ -145,7 +145,7 @@ export function SignalCard({ signal, count, active = false, onClick }: SignalCar
       </div>
 
       {/* Label */}
-      <div className={cn('text-[0.65rem] md:text-xs font-semibold uppercase tracking-wide', styles.text)}>
+      <div className={cn('text-xs font-semibold uppercase tracking-wide', styles.text)}>
         {config.label}
       </div>
 
