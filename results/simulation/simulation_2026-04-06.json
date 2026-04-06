@@ -1,0 +1,411 @@
+{
+  "date": "2026-04-06",
+  "collected_at": "2026-04-06T15:40:22.907260+09:00",
+  "categories": {
+    "vision": [],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {
+    "010950": {
+      "open_price": 111300,
+      "close_price": 118100,
+      "high_price": 120400,
+      "high_price_time": null
+    }
+  },
+  "all_signals": {
+    "005930": {
+      "name": "삼성전자",
+      "vision_signal": "중립"
+    },
+    "000660": {
+      "name": "SK하이닉스",
+      "vision_signal": "중립"
+    },
+    "047040": {
+      "name": "대우건설",
+      "vision_signal": "중립"
+    },
+    "006400": {
+      "name": "삼성SDI",
+      "vision_signal": "중립"
+    },
+    "028050": {
+      "name": "삼성E&A",
+      "vision_signal": "중립"
+    },
+    "008350": {
+      "name": "남선알미늄",
+      "vision_signal": "중립"
+    },
+    "011930": {
+      "name": "신성이엔지",
+      "vision_signal": "매수"
+    },
+    "322000": {
+      "name": "HD현대에너지솔루션",
+      "vision_signal": "중립"
+    },
+    "005935": {
+      "name": "삼성전자우",
+      "vision_signal": "중립"
+    },
+    "079550": {
+      "name": "LIG넥스원",
+      "vision_signal": "중립"
+    },
+    "103140": {
+      "name": "풍산",
+      "vision_signal": "매수"
+    },
+    "475150": {
+      "name": "SK이터닉스",
+      "vision_signal": "적극매도"
+    },
+    "005380": {
+      "name": "현대차",
+      "vision_signal": "중립"
+    },
+    "003280": {
+      "name": "흥아해운",
+      "vision_signal": "중립"
+    },
+    "034020": {
+      "name": "두산에너빌리티",
+      "vision_signal": "중립"
+    },
+    "375500": {
+      "name": "DL이앤씨",
+      "vision_signal": "매수"
+    },
+    "066970": {
+      "name": "엘앤에프",
+      "vision_signal": "중립"
+    },
+    "017900": {
+      "name": "광전자",
+      "vision_signal": "중립"
+    },
+    "001250": {
+      "name": "GS글로벌",
+      "vision_signal": "매수"
+    },
+    "373220": {
+      "name": "LG에너지솔루션",
+      "vision_signal": "중립"
+    },
+    "018470": {
+      "name": "조일알미늄",
+      "vision_signal": "중립"
+    },
+    "272210": {
+      "name": "한화시스템",
+      "vision_signal": "중립"
+    },
+    "012450": {
+      "name": "한화에어로스페이스",
+      "vision_signal": "매수"
+    },
+    "009150": {
+      "name": "삼성전기",
+      "vision_signal": "매수"
+    },
+    "035420": {
+      "name": "NAVER",
+      "vision_signal": "중립"
+    },
+    "009830": {
+      "name": "한화솔루션",
+      "vision_signal": "중립"
+    },
+    "402340": {
+      "name": "SK스퀘어",
+      "vision_signal": "중립"
+    },
+    "092790": {
+      "name": "넥스틸",
+      "vision_signal": "매수"
+    },
+    "064350": {
+      "name": "현대로템",
+      "vision_signal": "매수"
+    },
+    "001780": {
+      "name": "알루코",
+      "vision_signal": "매수"
+    },
+    "329180": {
+      "name": "HD현대중공업",
+      "vision_signal": "매도"
+    },
+    "042700": {
+      "name": "한미반도체",
+      "vision_signal": "중립"
+    },
+    "006110": {
+      "name": "삼아알미늄",
+      "vision_signal": "매수"
+    },
+    "047810": {
+      "name": "한국항공우주",
+      "vision_signal": "중립"
+    },
+    "000720": {
+      "name": "현대건설",
+      "vision_signal": "매도"
+    },
+    "093370": {
+      "name": "후성",
+      "vision_signal": "매수"
+    },
+    "010950": {
+      "name": "S-Oil",
+      "vision_signal": "적극매수"
+    },
+    "006800": {
+      "name": "미래에셋증권",
+      "vision_signal": "중립"
+    },
+    "010120": {
+      "name": "LS ELECTRIC",
+      "vision_signal": "중립"
+    },
+    "042660": {
+      "name": "한화오션",
+      "vision_signal": "매수"
+    },
+    "298040": {
+      "name": "효성중공업",
+      "vision_signal": "중립"
+    },
+    "279570": {
+      "name": "케이뱅크",
+      "vision_signal": "중립"
+    },
+    "005490": {
+      "name": "POSCO홀딩스",
+      "vision_signal": "매수"
+    },
+    "028260": {
+      "name": "삼성물산",
+      "vision_signal": "매수"
+    },
+    "051910": {
+      "name": "LG화학",
+      "vision_signal": "매수"
+    },
+    "000270": {
+      "name": "기아",
+      "vision_signal": "매수"
+    },
+    "450080": {
+      "name": "에코프로머티",
+      "vision_signal": "중립"
+    },
+    "353200": {
+      "name": "대덕전자",
+      "vision_signal": "중립"
+    },
+    "015760": {
+      "name": "한국전력",
+      "vision_signal": "중립"
+    },
+    "100090": {
+      "name": "SK오션플랜트",
+      "vision_signal": "중립"
+    },
+    "010170": {
+      "name": "대한광통신",
+      "vision_signal": "중립"
+    },
+    "062970": {
+      "name": "한국첨단소재",
+      "vision_signal": "매수"
+    },
+    "032820": {
+      "name": "우리기술",
+      "vision_signal": "중립"
+    },
+    "000250": {
+      "name": "삼천당제약",
+      "vision_signal": "중립"
+    },
+    "049080": {
+      "name": "기가레인",
+      "vision_signal": "매수"
+    },
+    "050890": {
+      "name": "쏠리드",
+      "vision_signal": "매도"
+    },
+    "086520": {
+      "name": "에코프로",
+      "vision_signal": "중립"
+    },
+    "376900": {
+      "name": "로킷헬스케어",
+      "vision_signal": "매도"
+    },
+    "033790": {
+      "name": "피노",
+      "vision_signal": "매도"
+    },
+    "247540": {
+      "name": "에코프로비엠",
+      "vision_signal": "중립"
+    },
+    "005860": {
+      "name": "한일사료",
+      "vision_signal": "중립"
+    },
+    "234340": {
+      "name": "헥토파이낸셜",
+      "vision_signal": "중립"
+    },
+    "046970": {
+      "name": "우리로",
+      "vision_signal": "매도"
+    },
+    "425040": {
+      "name": "티이엠씨",
+      "vision_signal": "중립"
+    },
+    "038110": {
+      "name": "에코플라스틱",
+      "vision_signal": "중립"
+    },
+    "024060": {
+      "name": "흥구석유",
+      "vision_signal": "중립"
+    },
+    "402490": {
+      "name": "그린리소스",
+      "vision_signal": "중립"
+    },
+    "196170": {
+      "name": "알테오젠",
+      "vision_signal": "중립"
+    },
+    "027360": {
+      "name": "아주IB투자",
+      "vision_signal": "중립"
+    },
+    "263750": {
+      "name": "펄어비스",
+      "vision_signal": "중립"
+    },
+    "408470": {
+      "name": "한패스",
+      "vision_signal": "중립"
+    },
+    "064260": {
+      "name": "다날",
+      "vision_signal": "중립"
+    },
+    "023160": {
+      "name": "태광",
+      "vision_signal": "중립"
+    },
+    "038500": {
+      "name": "삼표시멘트",
+      "vision_signal": "중립"
+    },
+    "100790": {
+      "name": "미래에셋벤처투자",
+      "vision_signal": "중립"
+    },
+    "060250": {
+      "name": "NHN KCP",
+      "vision_signal": "중립"
+    },
+    "476830": {
+      "name": "알지노믹스",
+      "vision_signal": "중립"
+    },
+    "138080": {
+      "name": "오이솔루션",
+      "vision_signal": "중립"
+    },
+    "141080": {
+      "name": "리가켐바이오",
+      "vision_signal": "적극매도"
+    },
+    "069540": {
+      "name": "빛과전자",
+      "vision_signal": "중립"
+    },
+    "340440": {
+      "name": "세림B&G",
+      "vision_signal": "매수"
+    },
+    "298380": {
+      "name": "에이비엘바이오",
+      "vision_signal": "중립"
+    },
+    "222800": {
+      "name": "심텍",
+      "vision_signal": "매도"
+    },
+    "058470": {
+      "name": "리노공업",
+      "vision_signal": "중립"
+    },
+    "178320": {
+      "name": "서진시스템",
+      "vision_signal": "중립"
+    },
+    "095910": {
+      "name": "에스에너지",
+      "vision_signal": "중립"
+    },
+    "086450": {
+      "name": "동국제약",
+      "vision_signal": "중립"
+    },
+    "046120": {
+      "name": "오르비텍",
+      "vision_signal": "중립"
+    },
+    "218410": {
+      "name": "RFHIC",
+      "vision_signal": "중립"
+    },
+    "466100": {
+      "name": "클로봇",
+      "vision_signal": "매도"
+    },
+    "036930": {
+      "name": "주성엔지니어링",
+      "vision_signal": "중립"
+    },
+    "065440": {
+      "name": "이루온",
+      "vision_signal": "중립"
+    },
+    "174900": {
+      "name": "앱클론",
+      "vision_signal": "중립"
+    },
+    "100590": {
+      "name": "머큐리",
+      "vision_signal": "중립"
+    },
+    "330860": {
+      "name": "네패스아크",
+      "vision_signal": "매수"
+    },
+    "201490": {
+      "name": "미투온",
+      "vision_signal": "매수"
+    },
+    "090710": {
+      "name": "휴림로봇",
+      "vision_signal": "중립"
+    }
+  },
+  "fear_greed": {
+    "score": 19.3142857142857,
+    "rating": "extreme fear"
+  }
+}
