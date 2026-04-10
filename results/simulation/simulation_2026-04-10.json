@@ -1,0 +1,136 @@
+{
+  "date": "2026-04-10",
+  "collected_at": "2026-04-10T15:40:25.435413+09:00",
+  "categories": {
+    "vision": [],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {},
+  "all_signals": {
+    "005930": {
+      "name": "삼성전자",
+      "vision_signal": "매수"
+    },
+    "000660": {
+      "name": "SK하이닉스",
+      "vision_signal": "매수"
+    },
+    "047040": {
+      "name": "대우건설",
+      "vision_signal": "중립"
+    },
+    "009150": {
+      "name": "삼성전기",
+      "vision_signal": "매수"
+    },
+    "011930": {
+      "name": "신성이엔지",
+      "vision_signal": "중립"
+    },
+    "005880": {
+      "name": "대한해운",
+      "vision_signal": "중립"
+    },
+    "079550": {
+      "name": "LIG넥스원",
+      "vision_signal": "중립"
+    },
+    "010820": {
+      "name": "퍼스텍",
+      "vision_signal": "중립"
+    },
+    "005380": {
+      "name": "현대차",
+      "vision_signal": "중립"
+    },
+    "006360": {
+      "name": "GS건설",
+      "vision_signal": "매수"
+    },
+    "003280": {
+      "name": "흥아해운",
+      "vision_signal": "중립"
+    },
+    "000720": {
+      "name": "현대건설",
+      "vision_signal": "중립"
+    },
+    "005935": {
+      "name": "삼성전자우",
+      "vision_signal": "중립"
+    },
+    "006400": {
+      "name": "삼성SDI",
+      "vision_signal": "중립"
+    },
+    "012450": {
+      "name": "한화에어로스페이스",
+      "vision_signal": "중립"
+    },
+    "028050": {
+      "name": "삼성E&A",
+      "vision_signal": "중립"
+    },
+    "375500": {
+      "name": "DL이앤씨",
+      "vision_signal": "매수"
+    },
+    "042700": {
+      "name": "한미반도체",
+      "vision_signal": "중립"
+    },
+    "034020": {
+      "name": "두산에너빌리티",
+      "vision_signal": "중립"
+    },
+    "000270": {
+      "name": "기아",
+      "vision_signal": "중립"
+    },
+    "278470": {
+      "name": "에이피알",
+      "vision_signal": "중립"
+    },
+    "322000": {
+      "name": "HD현대에너지솔루션",
+      "vision_signal": "중립"
+    },
+    "001440": {
+      "name": "대한전선",
+      "vision_signal": "중립"
+    },
+    "402340": {
+      "name": "SK스퀘어",
+      "vision_signal": "중립"
+    },
+    "353200": {
+      "name": "대덕전자",
+      "vision_signal": "매수"
+    },
+    "298040": {
+      "name": "효성중공업",
+      "vision_signal": "매수"
+    },
+    "066970": {
+      "name": "엘앤에프",
+      "vision_signal": "중립"
+    },
+    "011070": {
+      "name": "LG이노텍",
+      "vision_signal": "매수"
+    },
+    "034220": {
+      "name": "LG디스플레이",
+      "vision_signal": "중립"
+    },
+    "062040": {
+      "name": "산일전기",
+      "vision_signal": "매수"
+    }
+  },
+  "fear_greed": {
+    "score": 36.0571428571429,
+    "rating": "fear"
+  }
+}
