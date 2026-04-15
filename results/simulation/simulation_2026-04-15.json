@@ -1,0 +1,57 @@
+{
+  "date": "2026-04-15",
+  "collected_at": "2026-04-15T15:40:22.499512+09:00",
+  "categories": {
+    "vision": [
+      {
+        "code": "000660",
+        "name": "SK하이닉스",
+        "market": "KOSPI",
+        "open_price": 1165000,
+        "close_price": 1136000,
+        "high_price": 1173000,
+        "low_price": 1130000,
+        "high_price_time": null,
+        "return_pct": -2.49,
+        "return_pct_net": -2.82,
+        "high_return_pct": 0.69,
+        "stop_result": "stop_loss"
+      },
+      {
+        "code": "017670",
+        "name": "SK텔레콤",
+        "market": "KOSPI",
+        "open_price": 99500,
+        "close_price": 98100,
+        "high_price": 100400,
+        "low_price": 97300,
+        "high_price_time": null,
+        "return_pct": -1.41,
+        "return_pct_net": -1.74,
+        "high_return_pct": 0.9,
+        "stop_result": null
+      }
+    ],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {
+    "017670": {
+      "open_price": 99500,
+      "close_price": 98100,
+      "high_price": 100400,
+      "high_price_time": null
+    },
+    "000660": {
+      "open_price": 1165000,
+      "close_price": 1136000,
+      "high_price": 1173000,
+      "high_price_time": null
+    }
+  },
+  "all_signals": {},
+  "fear_greed": {
+    "score": 46.9428571428571,
+    "rating": "neutral"
+  }
+}
