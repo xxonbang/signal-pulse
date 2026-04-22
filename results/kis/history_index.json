@@ -1,8 +1,18 @@
 {
-  "updated_at": "2026-04-22 13:52:10",
+  "updated_at": "2026-04-22 20:15:47",
   "retention_days": 30,
-  "total_records": 159,
+  "total_records": 160,
   "history": [
+    {
+      "date": "2026-04-22",
+      "time": "2015",
+      "filename": "kis_2026-04-22_2015.json",
+      "total_stocks": 39,
+      "signals": {
+        "중립": 34,
+        "매수": 5
+      }
+    },
     {
       "date": "2026-04-22",
       "time": "1352",
