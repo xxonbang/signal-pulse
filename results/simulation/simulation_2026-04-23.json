@@ -1,0 +1,299 @@
+{
+  "date": "2026-04-23",
+  "collected_at": "2026-04-23T15:40:28.946293+09:00",
+  "categories": {
+    "vision": [],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {
+    "006360": {
+      "open_price": 43450,
+      "close_price": 41550,
+      "high_price": 43600,
+      "high_price_time": null
+    }
+  },
+  "all_signals": {
+    "005930": {
+      "name": "삼성전자",
+      "vision_signal": "중립"
+    },
+    "000660": {
+      "name": "SK하이닉스",
+      "vision_signal": "매수"
+    },
+    "047040": {
+      "name": "대우건설",
+      "vision_signal": "중립"
+    },
+    "006340": {
+      "name": "대원전선",
+      "vision_signal": "중립"
+    },
+    "034020": {
+      "name": "두산에너빌리티",
+      "vision_signal": "매수"
+    },
+    "001440": {
+      "name": "대한전선",
+      "vision_signal": "중립"
+    },
+    "010140": {
+      "name": "삼성중공업",
+      "vision_signal": "매수"
+    },
+    "009150": {
+      "name": "삼성전기",
+      "vision_signal": "매수"
+    },
+    "006400": {
+      "name": "삼성SDI",
+      "vision_signal": "매수"
+    },
+    "010120": {
+      "name": "LS ELECTRIC",
+      "vision_signal": "중립"
+    },
+    "005935": {
+      "name": "삼성전자우",
+      "vision_signal": "매수"
+    },
+    "005380": {
+      "name": "현대차",
+      "vision_signal": "중립"
+    },
+    "329180": {
+      "name": "HD현대중공업",
+      "vision_signal": "중립"
+    },
+    "402340": {
+      "name": "SK스퀘어",
+      "vision_signal": "중립"
+    },
+    "011930": {
+      "name": "신성이엔지",
+      "vision_signal": "중립"
+    },
+    "000720": {
+      "name": "현대건설",
+      "vision_signal": "중립"
+    },
+    "003280": {
+      "name": "흥아해운",
+      "vision_signal": "중립"
+    },
+    "079550": {
+      "name": "LIG넥스원",
+      "vision_signal": "중립"
+    },
+    "007660": {
+      "name": "이수페타시스",
+      "vision_signal": "중립"
+    },
+    "042700": {
+      "name": "한미반도체",
+      "vision_signal": "중립"
+    },
+    "042660": {
+      "name": "한화오션",
+      "vision_signal": "매수"
+    },
+    "298040": {
+      "name": "효성중공업",
+      "vision_signal": "중립"
+    },
+    "097230": {
+      "name": "HJ중공업",
+      "vision_signal": "중립"
+    },
+    "373220": {
+      "name": "LG에너지솔루션",
+      "vision_signal": "중립"
+    },
+    "011070": {
+      "name": "LG이노텍",
+      "vision_signal": "매수"
+    },
+    "012450": {
+      "name": "한화에어로스페이스",
+      "vision_signal": "중립"
+    },
+    "006800": {
+      "name": "미래에셋증권",
+      "vision_signal": "중립"
+    },
+    "034220": {
+      "name": "LG디스플레이",
+      "vision_signal": "중립"
+    },
+    "005490": {
+      "name": "POSCO홀딩스",
+      "vision_signal": "매수"
+    },
+    "267260": {
+      "name": "HD현대일렉트릭",
+      "vision_signal": "매수"
+    },
+    "028260": {
+      "name": "삼성물산",
+      "vision_signal": "매수"
+    },
+    "322000": {
+      "name": "HD현대에너지솔루션",
+      "vision_signal": "중립"
+    },
+    "092220": {
+      "name": "KEC",
+      "vision_signal": "중립"
+    },
+    "064350": {
+      "name": "현대로템",
+      "vision_signal": "중립"
+    },
+    "105560": {
+      "name": "KB금융",
+      "vision_signal": "중립"
+    },
+    "000270": {
+      "name": "기아",
+      "vision_signal": "매수"
+    },
+    "006360": {
+      "name": "GS건설",
+      "vision_signal": "적극매수"
+    },
+    "105840": {
+      "name": "우진",
+      "vision_signal": "매수"
+    },
+    "066570": {
+      "name": "LG전자",
+      "vision_signal": "매수"
+    },
+    "450080": {
+      "name": "에코프로머티",
+      "vision_signal": "중립"
+    },
+    "035420": {
+      "name": "NAVER",
+      "vision_signal": "매수"
+    },
+    "207940": {
+      "name": "삼성바이오로직스",
+      "vision_signal": "매도"
+    },
+    "082740": {
+      "name": "한화엔진",
+      "vision_signal": "중립"
+    },
+    "028050": {
+      "name": "삼성E&A",
+      "vision_signal": "중립"
+    },
+    "066970": {
+      "name": "엘앤에프",
+      "vision_signal": "중립"
+    },
+    "336370": {
+      "name": "솔루스첨단소재",
+      "vision_signal": "중립"
+    },
+    "012330": {
+      "name": "현대모비스",
+      "vision_signal": "매수"
+    },
+    "009540": {
+      "name": "HD한국조선해양",
+      "vision_signal": "매수"
+    },
+    "009830": {
+      "name": "한화솔루션",
+      "vision_signal": "중립"
+    },
+    "015760": {
+      "name": "한국전력",
+      "vision_signal": "중립"
+    },
+    "032820": {
+      "name": "우리기술",
+      "vision_signal": "중립"
+    },
+    "100790": {
+      "name": "미래에셋벤처투자",
+      "vision_signal": "중립"
+    },
+    "006910": {
+      "name": "보성파워텍",
+      "vision_signal": "중립"
+    },
+    "403870": {
+      "name": "HPSP",
+      "vision_signal": "중립"
+    },
+    "027360": {
+      "name": "아주IB투자",
+      "vision_signal": "중립"
+    },
+    "046120": {
+      "name": "오르비텍",
+      "vision_signal": "중립"
+    },
+    "086520": {
+      "name": "에코프로",
+      "vision_signal": "중립"
+    },
+    "417200": {
+      "name": "LS머트리얼즈",
+      "vision_signal": "중립"
+    },
+    "178320": {
+      "name": "서진시스템",
+      "vision_signal": "중립"
+    },
+    "036930": {
+      "name": "주성엔지니어링",
+      "vision_signal": "중립"
+    },
+    "010170": {
+      "name": "대한광통신",
+      "vision_signal": "매도"
+    },
+    "077360": {
+      "name": "덕산하이메탈",
+      "vision_signal": "중립"
+    },
+    "000250": {
+      "name": "삼천당제약",
+      "vision_signal": "매도"
+    },
+    "043260": {
+      "name": "성호전자",
+      "vision_signal": "매도"
+    },
+    "332570": {
+      "name": "PS일렉트로닉스",
+      "vision_signal": "중립"
+    },
+    "058470": {
+      "name": "리노공업",
+      "vision_signal": "중립"
+    },
+    "222080": {
+      "name": "씨아이에스",
+      "vision_signal": "중립"
+    },
+    "247540": {
+      "name": "에코프로비엠",
+      "vision_signal": "매도"
+    },
+    "049080": {
+      "name": "기가레인",
+      "vision_signal": "중립"
+    }
+  },
+  "fear_greed": {
+    "score": 68.0571428571429,
+    "rating": "greed"
+  }
+}
