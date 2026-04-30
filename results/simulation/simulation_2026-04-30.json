@@ -1,22 +1,22 @@
 {
   "date": "2026-04-30",
-  "collected_at": "2026-04-30T15:40:29.925527+09:00",
+  "collected_at": "2026-04-30T20:16:12.906276+09:00",
   "categories": {
     "vision": [],
     "kis": [],
     "combined": []
   },
   "all_prices": {
-    "001440": {
-      "open_price": 51700,
-      "close_price": 56300,
-      "high_price": 59400,
-      "high_price_time": null
-    },
     "006340": {
       "open_price": 12970,
       "close_price": 15050,
       "high_price": 16580,
+      "high_price_time": null
+    },
+    "001440": {
+      "open_price": 51700,
+      "close_price": 56300,
+      "high_price": 59400,
       "high_price_time": null
     }
   },
@@ -411,7 +411,7 @@
     }
   },
   "fear_greed": {
-    "score": 63.6285714285714,
+    "score": 63.4285714285714,
     "rating": "greed"
   }
 }
