@@ -1,32 +1,32 @@
 {
   "kospi": {
     "status": "bullish",
-    "current": 6936.99,
+    "current": 7394.75,
     "ma_values": {
-      "MA5": 6696.56,
-      "MA10": 6545.97,
-      "MA20": 6209.99,
-      "MA60": 5768.86,
-      "MA120": 5048.22
+      "MA5": 6852.51,
+      "MA10": 6663.54,
+      "MA20": 6307.21,
+      "MA60": 5803.98,
+      "MA120": 5076.29
     },
     "reason": "KOSPI 정배열 (현재가>MA5>MA10>MA20>MA60>MA120)",
     "signal_adjustment": 0.5,
-    "evaluated_at": "2026-05-05T19:14:37.107663+09:00",
-    "data_days": 139
+    "evaluated_at": "2026-05-06T13:11:51.244305+09:00",
+    "data_days": 140
   },
   "kosdaq": {
-    "status": "bullish",
-    "current": 1213.74,
+    "status": "mixed",
+    "current": 1202.06,
     "ma_values": {
-      "MA5": 1213.62,
-      "MA10": 1198.13,
-      "MA20": 1151.6,
-      "MA60": 1135.74,
-      "MA120": 1038.6
+      "MA5": 1208.8,
+      "MA10": 1200.85,
+      "MA20": 1159.33,
+      "MA60": 1136.7,
+      "MA120": 1041.13
     },
-    "reason": "KOSDAQ 정배열 (현재가>MA5>MA10>MA20>MA60>MA120)",
-    "signal_adjustment": 0.5,
-    "evaluated_at": "2026-05-05T19:14:39.106466+09:00",
-    "data_days": 139
+    "reason": "KOSDAQ 혼조 (정배열도 역배열도 아님)",
+    "signal_adjustment": 0.0,
+    "evaluated_at": "2026-05-06T13:11:52.740483+09:00",
+    "data_days": 140
   }
 }
