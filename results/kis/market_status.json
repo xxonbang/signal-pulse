@@ -11,7 +11,7 @@
     },
     "reason": "KOSPI 정배열 (현재가>MA5>MA10>MA20>MA60>MA120)",
     "signal_adjustment": 0.5,
-    "evaluated_at": "2026-05-08T19:14:50.566499+09:00",
+    "evaluated_at": "2026-05-10T19:12:47.644236+09:00",
     "data_days": 141
   },
   "kosdaq": {
@@ -26,7 +26,7 @@
     },
     "reason": "KOSDAQ 혼조 (정배열도 역배열도 아님)",
     "signal_adjustment": 0.0,
-    "evaluated_at": "2026-05-08T19:14:52.604859+09:00",
+    "evaluated_at": "2026-05-10T19:12:49.336341+09:00",
     "data_days": 141
   }
 }
