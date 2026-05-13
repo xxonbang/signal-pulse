@@ -1,32 +1,32 @@
 {
   "kospi": {
-    "status": "mixed",
-    "current": 7476.67,
+    "status": "bullish",
+    "current": 7801.47,
     "ma_values": {
-      "MA5": 7586.02,
-      "MA10": 7218.24,
-      "MA20": 6762.58,
-      "MA60": 5998.92,
-      "MA120": 5221.84
+      "MA5": 7650.98,
+      "MA10": 7250.73,
+      "MA20": 6778.82,
+      "MA60": 6004.33,
+      "MA120": 5224.54
     },
-    "reason": "KOSPI 혼조 (정배열도 역배열도 아님)",
-    "signal_adjustment": 0.0,
-    "evaluated_at": "2026-05-13T09:44:22.399511+09:00",
+    "reason": "KOSPI 정배열 (현재가>MA5>MA10>MA20>MA60>MA120)",
+    "signal_adjustment": 0.5,
+    "evaluated_at": "2026-05-13T13:14:28.590402+09:00",
     "data_days": 141
   },
   "kosdaq": {
     "status": "mixed",
-    "current": 1158.66,
+    "current": 1172.93,
     "ma_values": {
-      "MA5": 1190.44,
-      "MA10": 1200.43,
-      "MA20": 1187.55,
-      "MA60": 1143.01,
-      "MA120": 1053.51
+      "MA5": 1193.29,
+      "MA10": 1201.86,
+      "MA20": 1188.26,
+      "MA60": 1143.25,
+      "MA120": 1053.63
     },
     "reason": "KOSDAQ 혼조 (정배열도 역배열도 아님)",
     "signal_adjustment": 0.0,
-    "evaluated_at": "2026-05-13T09:44:24.466256+09:00",
+    "evaluated_at": "2026-05-13T13:14:30.471293+09:00",
     "data_days": 141
   }
 }
