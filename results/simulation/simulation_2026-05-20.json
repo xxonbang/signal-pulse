@@ -1,6 +1,6 @@
 {
   "date": "2026-05-20",
-  "collected_at": "2026-05-20T15:40:26.842807+09:00",
+  "collected_at": "2026-05-20T20:02:03.746622+09:00",
   "categories": {
     "vision": [
       {
@@ -11,7 +11,7 @@
         "close_price": 60000,
         "high_price": 60000,
         "low_price": 60000,
-        "high_price_time": "14:50",
+        "high_price_time": "14:51",
         "return_pct": 0.0,
         "return_pct_net": -0.33,
         "high_return_pct": 0.0,
@@ -26,7 +26,7 @@
       "open_price": 60000,
       "close_price": 60000,
       "high_price": 60000,
-      "high_price_time": "14:50"
+      "high_price_time": "14:51"
     }
   },
   "all_signals": {
@@ -432,7 +432,7 @@
     }
   },
   "fear_greed": {
-    "score": 62.1714285714286,
+    "score": 59.2571428571429,
     "rating": "greed"
   }
 }
