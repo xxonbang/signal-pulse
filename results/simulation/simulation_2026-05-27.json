@@ -1,0 +1,56 @@
+{
+  "date": "2026-05-27",
+  "collected_at": "2026-05-27T15:40:33.137810+09:00",
+  "categories": {
+    "vision": [],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {},
+  "all_signals": {
+    "307950": {
+      "name": "현대오토에버",
+      "vision_signal": "중립"
+    },
+    "005490": {
+      "name": "POSCO홀딩스",
+      "vision_signal": "적극매도"
+    },
+    "034220": {
+      "name": "LG디스플레이",
+      "vision_signal": "중립"
+    },
+    "000270": {
+      "name": "기아",
+      "vision_signal": "중립"
+    },
+    "009420": {
+      "name": "한올바이오파마",
+      "vision_signal": "매수"
+    },
+    "006800": {
+      "name": "미래에셋증권",
+      "vision_signal": "중립"
+    },
+    "035420": {
+      "name": "NAVER",
+      "vision_signal": "매도"
+    },
+    "010140": {
+      "name": "삼성중공업",
+      "vision_signal": "매도"
+    },
+    "105560": {
+      "name": "KB금융",
+      "vision_signal": "중립"
+    },
+    "079550": {
+      "name": "LIG디펜스앤에어로스페이스",
+      "vision_signal": "중립"
+    }
+  },
+  "fear_greed": {
+    "score": 60.7428571428571,
+    "rating": "greed"
+  }
+}
