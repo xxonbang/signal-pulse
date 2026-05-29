@@ -1,8 +1,18 @@
 {
-  "updated_at": "2026-05-29 10:41:33",
+  "updated_at": "2026-05-29 13:55:03",
   "retention_days": 30,
-  "total_records": 241,
+  "total_records": 242,
   "history": [
+    {
+      "date": "2026-05-29",
+      "time": "1355",
+      "filename": "kis_2026-05-29_1355.json",
+      "total_stocks": 30,
+      "signals": {
+        "매도": 1,
+        "중립": 29
+      }
+    },
     {
       "date": "2026-05-29",
       "time": "1041",
