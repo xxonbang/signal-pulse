@@ -1,0 +1,96 @@
+{
+  "date": "2026-06-02",
+  "collected_at": "2026-06-02T15:40:30.105024+09:00",
+  "categories": {
+    "vision": [],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {},
+  "all_signals": {
+    "005930": {
+      "name": "삼성전자",
+      "vision_signal": "중립"
+    },
+    "000660": {
+      "name": "SK하이닉스",
+      "vision_signal": "매도"
+    },
+    "066570": {
+      "name": "LG전자",
+      "vision_signal": "중립"
+    },
+    "009150": {
+      "name": "삼성전기",
+      "vision_signal": "중립"
+    },
+    "035420": {
+      "name": "NAVER",
+      "vision_signal": "중립"
+    },
+    "005935": {
+      "name": "삼성전자우",
+      "vision_signal": "중립"
+    },
+    "005380": {
+      "name": "현대차",
+      "vision_signal": "중립"
+    },
+    "454910": {
+      "name": "두산로보틱스",
+      "vision_signal": "중립"
+    },
+    "011070": {
+      "name": "LG이노텍",
+      "vision_signal": "매도"
+    },
+    "034220": {
+      "name": "LG디스플레이",
+      "vision_signal": "중립"
+    },
+    "012450": {
+      "name": "한화에어로스페이스",
+      "vision_signal": "매도"
+    },
+    "066575": {
+      "name": "LG전자우",
+      "vision_signal": "중립"
+    },
+    "028260": {
+      "name": "삼성물산",
+      "vision_signal": "중립"
+    },
+    "307950": {
+      "name": "현대오토에버",
+      "vision_signal": "매도"
+    },
+    "032830": {
+      "name": "삼성생명",
+      "vision_signal": "중립"
+    },
+    "353200": {
+      "name": "대덕전자",
+      "vision_signal": "매도"
+    },
+    "329180": {
+      "name": "HD현대중공업",
+      "vision_signal": "중립"
+    },
+    "003550": {
+      "name": "LG",
+      "vision_signal": "매도"
+    },
+    "010120": {
+      "name": "LS ELECTRIC",
+      "vision_signal": "매도"
+    },
+    "047040": {
+      "name": "대우건설",
+      "vision_signal": "적극매도"
+    }
+  },
+  "fear_greed": {
+    "score": 59.0285714285714,
+    "rating": "greed"
+  }
+}
