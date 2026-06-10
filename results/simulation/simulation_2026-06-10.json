@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-10",
+  "collected_at": "2026-06-10T15:40:26.576280+09:00",
+  "categories": {
+    "vision": [],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {},
+  "all_signals": {
+    "017900": {
+      "name": "광전자",
+      "vision_signal": "중립"
+    },
+    "047040": {
+      "name": "대우건설",
+      "vision_signal": "중립"
+    },
+    "010060": {
+      "name": "OCI홀딩스",
+      "vision_signal": "중립"
+    },
+    "000810": {
+      "name": "삼성화재",
+      "vision_signal": "중립"
+    },
+    "018260": {
+      "name": "삼성에스디에스",
+      "vision_signal": "매도"
+    },
+    "000150": {
+      "name": "두산",
+      "vision_signal": "중립"
+    },
+    "373220": {
+      "name": "LG에너지솔루션",
+      "vision_signal": "매도"
+    },
+    "005490": {
+      "name": "POSCO홀딩스",
+      "vision_signal": "중립"
+    },
+    "051910": {
+      "name": "LG화학",
+      "vision_signal": "매도"
+    },
+    "007660": {
+      "name": "이수페타시스",
+      "vision_signal": "중립"
+    }
+  },
+  "fear_greed": {
+    "score": 33.5428571428571,
+    "rating": "fear"
+  }
+}
