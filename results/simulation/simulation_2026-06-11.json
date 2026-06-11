@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-11",
+  "collected_at": "2026-06-11T15:40:30.218986+09:00",
+  "categories": {
+    "vision": [],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {},
+  "all_signals": {
+    "000660": {
+      "name": "SK하이닉스",
+      "vision_signal": "중립"
+    },
+    "005930": {
+      "name": "삼성전자",
+      "vision_signal": "매도"
+    },
+    "009150": {
+      "name": "삼성전기",
+      "vision_signal": "매도"
+    },
+    "402340": {
+      "name": "SK스퀘어",
+      "vision_signal": "중립"
+    },
+    "005380": {
+      "name": "현대차",
+      "vision_signal": "적극매도"
+    },
+    "005935": {
+      "name": "삼성전자우",
+      "vision_signal": "매도"
+    },
+    "066570": {
+      "name": "LG전자",
+      "vision_signal": "적극매도"
+    },
+    "035420": {
+      "name": "NAVER",
+      "vision_signal": "매도"
+    },
+    "011070": {
+      "name": "LG이노텍",
+      "vision_signal": "중립"
+    },
+    "475150": {
+      "name": "SK이터닉스",
+      "vision_signal": "중립"
+    }
+  },
+  "fear_greed": {
+    "score": 27.5714285714286,
+    "rating": "fear"
+  }
+}
