@@ -1,8 +1,23 @@
 {
-  "updated_at": "2026-06-15 20:19:55",
+  "updated_at": "2026-06-16 10:26:11",
   "retention_days": 30,
-  "total_records": 279,
+  "total_records": 280,
   "history": [
+    {
+      "date": "2026-06-16",
+      "time": "1026",
+      "filename": "combined_2026-06-16_1026.json",
+      "total_stocks": 86,
+      "match_count": 4,
+      "avg_confidence": 0.3252325581395349,
+      "signals": {
+        "적극매수": 0,
+        "매수": 2,
+        "중립": 51,
+        "매도": 3,
+        "적극매도": 0
+      }
+    },
     {
       "date": "2026-06-15",
       "time": "2019",
