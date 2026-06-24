@@ -1,0 +1,632 @@
+{
+  "analysis_time": "2026-06-23 20:11:42",
+  "total_analyzed": 10,
+  "results": [
+    {
+      "code": "066570",
+      "name": "LG전자",
+      "market": "KOSPI",
+      "current_price": 202000,
+      "change_rate": -11.21,
+      "signal": "중립",
+      "scores": {
+        "technical": 2.75,
+        "supply_demand": 3.0,
+        "valuation": 4.17,
+        "material": 7.0,
+        "total": 3.76
+      },
+      "reason": "기술적 지표가 하락 추세를 나타내고 있으며 (이평선 역배열), 최근 주가 하락폭이 큽니다. 외국인과 기관 모두 매도 우위를 보여 수급이 좋지 않습니다. 주요 밸류에이션 지표는 적정 수준으로 평가됩니다. 최근 LG전자의 2분기 어닝 서프라이즈 전망 및 AI 데이터센터 칠러 수주 임박 등 긍정적인 재료가 주가에 영향을 줄 수 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.38,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.5,
+        "key_news": [
+          "교보證 “LG전자, 2분기 영업익 1.5조원 전망…목표가 35만원”",
+          "“LG전자, 북미 빅테크향 AI 데이터센터 칠러 수주 임박…퀄테스트 막바지”"
+        ],
+        "catalyst": "LG전자의 2분기 어닝 서프라이즈 전망 및 AI 데이터센터 칠러 수주 임박 등 긍정적인 재료가 주가에 영향을 줄 수 있습니다."
+      },
+      "news": [
+        {
+          "title": "LG전자, AI 가전 시장 선점 속도...신제품 출시 임박",
+          "link": "http://example.com/lg_ai_news",
+          "description": "LG전자가 인공지능(AI) 기반 스마트 가전 신제품 출시를 앞두고 시장 선점에 박차를 가하고 있다."
+        },
+        {
+          "title": "LG전자 주가, TV 사업 부진 우려에 하락세",
+          "link": "http://example.com/lg_tv_news",
+          "description": "TV 사업 부문의 실적 부진 전망이 나오면서 LG전자 주가가 약세를 보였다."
+        },
+        {
+          "title": "교보證 “LG전자, 2분기 영업익 1.5조원 전망…목표가 35만원”",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWa1Eg8HT-sbmoc9jVuod4UKrIUveTFirFmVXqz5vKD9mxYqXJY8qO284Aj80VI6AuZLCBnpJZdjk-Y8c11gthPvhUbX5bnsZ1XE3hhMSjQmE2DVR9dQujjjjYMcv95UTCh79ojGjjqyqMkgBdDVKhV56Ny40IvoxsIiK62tKRwKAVA42i3TC-86X9",
+          "description": "교보증권은 LG전자(227,500원 △ 16,000 7.57%)가 올해 2분기 시장 기대치를 크게 웃도는 실적을 기록할 것이라고 23일 전망했다. 관세 환급 효과와 자회사 LG이노텍의 실적 개선, 전장(VS) 사업 흑자 기조가 맞물리면서 영업이익이 1조5000억원을 넘어설 것으로 내다봤다."
+        },
+        {
+          "title": "LG전자, 2분기 어닝 서프라이즈...목표주가 '상향'",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7c4AenvsBVCkednAKdleoMVcrLI9AR04-mfP3o6-O8Kos82XJm6JIiYdrOeOuRbYqKx8KvD95FiCHW3BRVel9dnurTJISw8qFzcE91uUdYQvwnXPAjgHED7dh1jaJHXPlSxm1R1loOCBMO8NIioG61R-aTR-Yag==",
+          "description": "LG전자가 올해 2분기 시장 예상치를 대폭 상회하는 어닝 서프라이즈를 기록할 것으로 보이는 가운데, 이제 단순 가전회사가 아닌 빅테크향 데이터센터 냉각 솔루션, 로봇 사업을 확대하는 성장주로 재평가할 필요가 있다는 평가다."
+        },
+        {
+          "title": "“LG전자, 북미 빅테크향 AI 데이터센터 칠러 수주 임박…퀄테스트 막바지”",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEh0rvmh8vlpuGLxA41JP4GMYLwzIkfbDAmd6uNIWWn1reCVyDXVbrwoucbxj9KPLGe1MKCfWLzkbmJL3szFO2_ehg9QLNuRh52wH-SoObR2fPIKfq2xhbSjigKJeidIGOuJFEmMHW2b3e2IVX5gzmOGEsdAbeIAW0==",
+          "description": "LG전자의 2분기 서프라이즈 실적을 기록할 것으로 보이며, 영업이익은 1조5000억원으로 전망한다."
+        }
+      ],
+      "analysis_time": "2026-06-23 10:25:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "067290",
+      "name": "JW신약",
+      "market": "KOSDAQ",
+      "current_price": 3105,
+      "change_rate": 13.74,
+      "signal": "중립",
+      "scores": {
+        "technical": 6.25,
+        "supply_demand": 4.5,
+        "valuation": 7.33,
+        "material": 9.0,
+        "total": 6.27
+      },
+      "reason": "기술적 지표가 상승 추세를 나타내고 있습니다 (이평선 정배열). 외국인/기관 수급은 혼조세를 보입니다. 주요 밸류에이션 지표가 현재 주가를 저평가로 판단합니다. 최근 JW신약의 탈모 건보 적용 검토 소식 등 긍정적인 재료가 주가에 영향을 줄 수 있습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.63,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.75,
+        "key_news": [
+          "JW신약, 탈모 건보 적용 검토…정부 정책 수혜 기대감에 7%대↑",
+          "JW신약 주가, 6월 23일 장중 3465원 26.92% 상승"
+        ],
+        "catalyst": "JW신약의 탈모 건보 적용 검토 소식 등 긍정적인 재료가 주가에 영향을 줄 수 있습니다."
+      },
+      "news": [
+        {
+          "title": "JW신약, 탈모 치료제 임상 2상 순항 소식에 급등",
+          "link": "http://example.com/jw_hairloss_news",
+          "description": "JW신약이 개발 중인 탈모 치료제 임상 2상 결과가 긍정적으로 나오면서 주가가 급등했다."
+        },
+        {
+          "title": "JW신약, 신약 개발 기대감에 매수세 유입",
+          "link": "http://example.com/jw_newdrug_expect",
+          "description": "바이오 섹터 전반의 투자 심리 개선과 함께 JW신약의 신약 개발 기대감이 부각되며 매수세가 몰렸다."
+        },
+        {
+          "title": "[특징주] JW신약, 탈모 건보 적용 검토…정부 정책 수혜 기대감에 7%대↑ - 이투데이",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHq4ppuVPjikLiNXOHLfikTZiMJJCioEz7UHfcT0ukkEsXwf88hChJeiYJMXTJbJGvWKDZgnumDdwsPTj_PZDJf8_keusJeiVmzytNOoX0vESGSRb1EpnLgTiSz2ffQ9_q44KL7",
+          "description": "JW신약 주가가 정부의 탈모 치료 건강보험 적용 검토 소식에 힘입어 장 초반 가파른 상승세를 나타냈다."
+        },
+        {
+          "title": "JW신약 주가, 6월 23일 장중 3465원 26.92% 상승 - 중앙이코노미뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1ZlSvhHfxlidK7BEDG-MZS0BiL3pQS29yAzyjar1I6C9Xoc1wgnVtEoFsK_DbzXZrEdmp167gxpyN7a9a-n-sbFFkuwXPCfvmSGh7z5v8l0rQOGr9meYNbanwSTn_Ltx6g0q6V4Brj8QqEDExZJ6ecijHyeTAoICGjw==",
+          "description": "JW신약의 시가총액은 1,916억 원으로 코스닥 시장에서 437위를 차지하고 있다."
+        },
+        {
+          "title": "[JW신약 주가전망] 지금 따라가면 늦었나? 이 가격 못 지키면 끝입니다 - YouTube",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4AFdWIGGILHW4GN_LZ-x3_vR5NFYjH6k9oIroMtM6PQwiToFD5R5XHRK2rVf32M2kmHasJijBivXFq5hQomJ2z1_n8VarTwz-5wNx-i9yLVJL30UOi3CBKL-CYK47uSIP2orX6A==",
+          "description": "JW신약 주가 전망은 탈모 건강보험 급여 확대 정책, 모나드정·두타모아정·로게인폼 치료제 라인업, 차세대 탈모 신약 후보물질 임상 등이 핵심이다."
+        }
+      ],
+      "analysis_time": "2026-06-23 10:25:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "010170",
+      "name": "대한광통신",
+      "market": "KOSDAQ",
+      "current_price": 14270,
+      "change_rate": -10.25,
+      "signal": "중립",
+      "scores": {
+        "technical": 3.75,
+        "supply_demand": 5.83,
+        "valuation": 2.8,
+        "material": 3.0,
+        "total": 4.18
+      },
+      "reason": "기술적 지표가 하락 추세를 나타내고 있으며 (이평선 역배열), 최근 주가 하락폭이 큽니다. 외국인 매수세가 긍정적이나, 기관 수급은 혼조세를 보입니다. 주요 밸류에이션 지표상 다소 고평가되어 있습니다. 최근 광통신주 동반 약세 및 차익실현 매물 출회 등 부정적인 재료가 투자 심리를 위축시키고 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.42,
+      "news_analysis": {
+        "sentiment": "부정",
+        "sentiment_score": -0.5,
+        "key_news": [
+          "광통신주 동반 약세…대한광통신 5%대 하락, 투자심리 위축",
+          "[속보] 대한광통신, 장중 VI 발동…변동성 확대에 투자자 관심 집중"
+        ],
+        "catalyst": "광통신주 동반 약세 및 차익실현 매물 출회 등 부정적인 재료가 투자 심리를 위축시키고 있습니다."
+      },
+      "news": [
+        {
+          "title": "대한광통신, 5G 투자 확대 수혜 기대감",
+          "link": "http://example.com/koc_5g_news",
+          "description": "글로벌 5G 인프라 투자 확대가 예상되며 광통신 케이블 제조사인 대한광통신이 수혜를 볼 것이라는 전망이 나왔다."
+        },
+        {
+          "title": "대한광통신, 실적 부진 장기화 우려...주가 하락",
+          "link": "http://example.com/koc_earnings_news",
+          "description": "수년간 이어지는 실적 부진에 대한 우려가 커지면서 대한광통신 주가가 하락세를 면치 못하고 있다."
+        },
+        {
+          "title": "광통신주 동반 약세…대한광통신 5%대 하락, 투자심리 위축 - CBC뉴스 | CBCNEWS",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLb8OVe-7jFPvI2I7AOz17CYYANesO6_RCN_SyJua_dPQFU-1asq-TjxbV6aK49ys5eXGpG6kQBNU49a42I6PeVOR665citRvBRjfZ7cpyqnPCWp5lBdciTazboYkO6q9R7I_MRJiPU226uzgb3O80fvIs",
+          "description": "광통신·광반도체 관련 종목들이 23일 오전 장중 일제히 약세를 보이며 숨 고르기 양상을 나타냈다."
+        },
+        {
+          "title": "[속보] 대한광통신, 장중 VI 발동…변동성 확대에 투자자 관심 집중 - CBC뉴스",
+          "link": "https://vertexaisearch.google.com/grounding/api/redirect?url=https%3A%2F%2Fwww.cbcnews.co.kr%2Fnews%2FarticleView.html%3Fidxno%3D739833",
+          "description": "대한광통신이 23일 장중 변동성완화장치(VI)가 발동되며 시장의 주목을 받았다."
+        },
+        {
+          "title": "대한광통신 주가, 6월 23일 장중 14600원 8.18% 하락",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAAu9kjjAzbrXZjeu_xonC_g4FoZ6sT1OcF02ZmJHx2kS1Yp-kPAhLADYt3iCGqX1nHF8WC9Jha0NXgt24yVV05r9vO-zBVUzlTavroV4OdVCzbeEkymNmRiMy-u_6hOs6sTPKEo2P5OC3RrdQvyOyndmuTrBpcYgceQ==",
+          "description": "23일 오전 11시 5분 기준, 네이버페이 증권에 따르면 대한광통신은 현재 14600원을 기록하며 하락세를 보이고 있다."
+        }
+      ],
+      "analysis_time": "2026-06-23 10:25:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "current_price": 184200,
+      "change_pct": -6.92,
+      "signal": "매도",
+      "scores": {
+        "technical": 2.75,
+        "supply_demand": 3.83,
+        "valuation": 2.89,
+        "material": 3.0,
+        "total": 3.19
+      },
+      "reason": "기술적 추세는 혼조세입니다. 외국인과 기관 모두 매도 우위를 보여 수급이 좋지 않습니다. 주요 밸류에이션 지표상 다소 고평가되어 있습니다. 최근 주성엔지니어링 주가 과열 우려 및 실적 입증 시험대라는 부정적인 재료가 투자 심리를 위축시키고 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.32,
+      "news_analysis": {
+        "sentiment": "부정",
+        "sentiment_score": -0.5,
+        "key_news": [
+          "주성엔지니어링 주가, 6월 23일 장중 187000원 5.51% 하락",
+          "[히든밸류 소부장]② 주성엔지니어링, 질주하는 주가…실적 입증 시험대"
+        ],
+        "catalyst": "주성엔지니어링 주가 과열 우려 및 실적 입증 시험대라는 부정적인 재료가 투자 심리를 위축시키고 있습니다."
+      },
+      "news": [
+        {
+          "title": "주성엔지니어링, 차세대 반도체 장비 수주 증가 소식",
+          "link": "http://example.com/js_semi_news",
+          "description": "반도체 전공정 장비 제조업체 주성엔지니어링이 차세대 메모리용 장비 수주를 늘리며 실적 개선 기대감을 높였다."
+        },
+        {
+          "title": "주성엔지니어링, 경쟁 심화에 따른 수익성 악화 우려",
+          "link": "http://example.com/js_competition_news",
+          "description": "반도체 장비 시장 경쟁 심화로 수익성 악화에 대한 투자자들의 우려가 제기되고 있다."
+        },
+        {
+          "title": "주성엔지니어링 주가, 6월 23일 장중 187000원 5.51% 하락",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXGGM6dAvpiL6Au8y8y12zugT5stxLQNmUhOgL9gpnuJHLr5onSfidQ4Fth7xIhzGpkbh-JeyGvDUOL6ydCEBpHP6kszqGeTIJACHeoyt8KDZqF1zoTbnHZwNoM5LVAjzbZI_MThd8EobfZX8wBQWEH_TMHCVTFPr37w==",
+          "description": "23일 오전 9시 47분 기준, 네이버페이 증권에 따르면 주성엔지니어링 주가는 현재 187,000원에 형성되어 있으며, 지난 종가 197,900원 대비 10,900원 하락한 5.51%의 변동률을 나타냈다."
+        },
+        {
+          "title": "[히든밸류 소부장]② 주성엔지니어링, 질주하는 주가…실적 입증 시험대 - 블로터",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtBnkjvkcGESIeckuGC8esBZIw4eZWjQBppjylCDLqRuJjVaPNvJ0GKfiIyCnC_yb-PF2TFBO28PHGFjkmXYoWmN1SS42jxT8-xjQW30LKO3DY9Krc6gGXu0oubmY1SLOumLX38Af0AE22Mf7NrDTOo_4L",
+          "description": "주성엔지니어링의 주가가 올해초 3만450원에서 이달 22일 19만7900원으로 치솟았다."
+        },
+        {
+          "title": "주성엔지니어링 주가 - 실시간 차트 · 주가 전망 · 투자정보 - 알파스퀘어",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1dIcs78RNkn7qc1bmMQWwXCdT4pS_FdbZ4CJkoIdY73Cl9OduJ3VuVLlU5904yixJt1cSZNPjfF0rxO98egsfAvi53MU0DsoycHagJexWaUMOnduy3poxMuPc-LQ5whinwbWrtl1XI37-6IXOYKAc2Jc==",
+          "description": "실시간 주성엔지니어링(036930) 주가를 광고 없는 깔끔한 화면에서 확인해보세요! 현재 주가는 184200원입니다."
+        }
+      ],
+      "analysis_time": "2026-06-23 10:25:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "084370",
+      "name": "유진테크",
+      "market": "KOSDAQ",
+      "current_price": 162000,
+      "change_pct": -13.51,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.5,
+        "supply_demand": 5.0,
+        "valuation": 4.4,
+        "material": 5.0,
+        "total": 4.73
+      },
+      "reason": "기술적 추세는 혼조세입니다. 외국인/기관 수급은 혼조세를 보입니다. 주요 밸류에이션 지표는 적정 수준으로 평가됩니다. 현재 주가에 영향을 미칠 만한 특별한 재료는 부재합니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.47,
+      "news_analysis": {
+        "sentiment": "중립",
+        "sentiment_score": 0.0,
+        "key_news": [
+          "유진테크 주가, 6월 23일 162000원 13.56% 하락 마감"
+        ],
+        "catalyst": "현재 주가에 큰 영향을 미칠 만한 특별한 재료는 부재합니다."
+      },
+      "news": [
+        {
+          "title": "유진테크, 고대역폭 메모리(HBM) 장비 시장 진출 가속화",
+          "link": "http://example.com/yujin_hbm_news",
+          "description": "AI 반도체 핵심인 HBM 생산 장비 시장 진출을 확대하며 새로운 성장 동력을 확보하고 있다."
+        },
+        {
+          "title": "유진테크 주가, 반도체 업황 둔화 우려에 약세",
+          "link": "http://example.com/yujin_slowdown_news",
+          "description": "전반적인 반도체 업황 둔화 우려로 인해 유진테크 주가가 조정받고 있다."
+        },
+        {
+          "title": "유진테크 주가, 6월 23일 162000원 13.56% 하락 마감 - 중앙이코노미뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6Gp2wl8Rv7oy4kUF0_AxCZMHodtsXYS1y98JFBEduagbBKNNlH7y6t8AcafJPHY4Jk3eF2XDf0H1Run9Wooi-2WOBie804jXZ5euUsu1XOVbSx6PM8W3OgiuoO-lKRG2lXnlcfP3WNh33ak51hwL3fzd7KXuVvN4oAg==",
+          "description": "23일 KRX 마감 기준, 네이버페이 증권에 따르면 유진테크는 162000원으로 거래를 마감하며 지난 종가 187300원 대비 13."
+        },
+        {
+          "title": "EugeneTechnology Co Ltd 오늘의 주가 | 084370 실시간 티커 - Investing.com",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZPmlHfYH4_yQx95pIwcu3qWBJE0sg3soQmDZruKWwEh58wjMQqlo5o5aOZnis8iJ1nR8OH7MSMkAYoUnJXPslz3hXzDoeDQg5JgDn67KqKHxHTu2KNgH3vvlFOfrWDHcAEzyWvmWCY_WPPfRUAitLaHV6",
+          "description": "유진테크의 주가, 084370 주식, 차트, 기술적 분석, 실적 자료 등 171800로 거래를 마감한 유진테크 시세에 대한 자세한 정보를 확인해 보세요."
+        },
+        {
+          "title": "유진테크 주가 - 실시간 차트 · 주가 전망 · 투자정보 - 알파스퀘어",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHftEbmx-2VmVHcPtCXqayQhsJ9PUw0O-glSV67wyQ6e6LP3J5kssYfCrlXsyDPf4WLEnxcf68D_FQTqK2y8wLVxk8VLC2FZWI0Ax4MTbg82X1znu53sKQRhDTqtbGIYzvK6FD2ObJO3gkJUvX67BS5j_c==",
+          "description": "유진테크는 2000년 1월 설립된 기업으로 반도체장비의 제조 및 판매사업을 영위하고 있다."
+        }
+      ],
+      "analysis_time": "2026-06-23 10:25:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "032820",
+      "name": "우리기술",
+      "market": "KOSDAQ",
+      "current_price": 12760,
+      "change_pct": -9.95,
+      "signal": "중립",
+      "scores": {
+        "technical": 3.75,
+        "supply_demand": 5.83,
+        "valuation": 5.4,
+        "material": 3.0,
+        "total": 4.7
+      },
+      "reason": "기술적 지표가 하락 추세를 나타내고 있으며 (이평선 역배열), 최근 주가 하락폭이 큽니다. 외국인 매수세가 긍정적이나, 기관 수급은 혼조세를 보입니다. 주요 밸류에이션 지표는 적정 수준으로 평가됩니다. 최근 우리기술 주가 약세 흐름 지속 및 중소형 원전 테마주 차익실현 매물 출회 등 부정적인 재료가 투자 심리를 위축시키고 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.47,
+      "news_analysis": {
+        "sentiment": "부정",
+        "sentiment_score": -0.5,
+        "key_news": [
+          "우리기술 주가 4거래일 약세흐름, 주초장에서도 '뚝'…코스닥은 상승 반전 마감",
+          "원전주 차별화 장세…두산에너빌리티 강보합, 우리기술은 5%대 하락"
+        ],
+        "catalyst": "우리기술 주가 약세 흐름 지속 및 중소형 원전 테마주 차익실현 매물 출회 등 부정적인 재료가 투자 심리를 위축시키고 있습니다."
+      },
+      "news": [
+        {
+          "title": "우리기술, 원전 해체 기술 개발 성과 발표",
+          "link": "http://example.com/woori_nuclear_news",
+          "description": "원전 해체 핵심 기술 개발에 성공하여 향후 시장 진출에 대한 기대감을 키웠다."
+        },
+        {
+          "title": "우리기술, 신규 수주 부진으로 실적 악화 전망",
+          "link": "http://example.com/woori_order_news",
+          "description": "신규 수주 실적이 예상보다 저조하여 단기 실적 악화가 우려된다."
+        },
+        {
+          "title": "우리기술 주가 4거래일 약세흐름, 주초장에서도 '뚝'…코스닥은 상승 반전 마감 - CBC뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2tFA3HBSmmr6DBfUN_anm-XY0Aznk-KDpx5z6HZXfLq8PVauijwiGWWXKN89tdSM3JOoy35UFsc277zwCDZHYK1ijwaAAxGpwwR46Rky1M1gsJwGqvJmlHfWBU81qiHZmo7iRI7PDmXVfmbVGs1rNWRKG",
+          "description": "우리기술(032820) 주가가 4거래일 연속 약세 흐름을 이어갔다."
+        },
+        {
+          "title": "우리기술 주가, 6월 23일 장중 13160원 약 7.13% 하락 - 중앙이코노미뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvOS_Kf_5Xdbk4vzEXQCEuClqdk8VJXQ8BXCIw5scgpsXZgiRcPFN7Qe2y2NVRG4z1vIn60fVejDWf99w0PvsIMBQXxf5qBSZEGzdA-gkfQ8vEhnECBpYU_HPFqN2dwX9pxJ6UEvdl1MjocKXVP0AvDVzBEug8KZkKRg==",
+          "description": "23일 오후 1시 44분 기준, 네이버페이 증권에 따르면 우리기술은 13160원을 기록하며 지난 종가 14170원 대비 7.13%"
+        },
+        {
+          "title": "원전주 차별화 장세…두산에너빌리티 강보합, 우리기술은 5%대 하락 - CBC뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGml4bWE9WQVN7t7_g-0uXWpShmPB6WZblCugn0TQE6a6b66iVIBvg_CCaRBkw46RHOO5JDMk1KadG-9-w2Smc4YP_WSR47vdzwwM6-wqM1PzzO48SPfHWyQN-8wqfa2KslmH0qdGA9zmwwJDqLSYzNEnFc==",
+          "description": "원전 관련 종목들이 23일 오전 장중 엇갈린 흐름을 보이고 있다."
+        }
+      ],
+      "analysis_time": "2026-06-23 10:25:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "028260",
+      "name": "삼성물산",
+      "market": "KOSPI",
+      "current_price": 455000,
+      "change_pct": -12.5,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.5,
+        "supply_demand": 6.83,
+        "valuation": 6.75,
+        "material": 7.0,
+        "total": 6.14
+      },
+      "reason": "기술적 추세는 혼조세입니다. 기관 매수세가 긍정적이나, 외국인 매도세가 관찰됩니다. 주요 밸류에이션 지표가 현재 주가를 저평가로 판단합니다. 최근 삼성물산의 주주환원 확대 기대감 및 계열사 지분가치 반영 기대 등 긍정적인 재료가 주가에 영향을 줄 수 있습니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.61,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.5,
+        "key_news": [
+          "\"주가 2배 올랐는데 아직도 싸다?\"...증권가 \"삼성물산 60만 원 간다\"",
+          "“삼성전자 주가 급등·주주환원·원전 호재…삼박자 맞은 삼성물산 거침없다“"
+        ],
+        "catalyst": "삼성물산의 주주환원 확대 기대감 및 계열사 지분가치 반영 기대 등 긍정적인 재료가 주가에 영향을 줄 수 있습니다."
+      },
+      "news": [
+        {
+          "title": "삼성물산, 배당 확대 기대감에 주가 상승",
+          "link": "http://example.com/samsung_dividend_news",
+          "description": "주주환원 정책 강화와 배당 확대에 대한 기대감으로 주가가 긍정적인 흐름을 보였다."
+        },
+        {
+          "title": "삼성물산, 건설 부문 해외 프로젝트 지연 우려",
+          "link": "http://example.com/samsung_project_news",
+          "description": "해외 건설 프로젝트 일부가 지연될 수 있다는 소식에 투자 심리가 위축되었다."
+        },
+        {
+          "title": "삼성물산 주가, 6월 23일 장중 477000원 8.27% 하락 - 중앙이코노미뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWMUtUU9UzixfnbYQVyod4Xx1PRNmNvZL-HEPpZ8yLxH8Rkc-yOjxG-pCdBUhGPortwBPBzmJIDDgfWDmpv-Mn6ffkI9hneR-jTBsNefbeh4BQVMXwwubDPfiviE4VYyjSiWcDsnJzlgq5ePYfO3ozH-buR964KWKQKQ==",
+          "description": "23일 오후 1시 40분 기준, 네이버페이 증권에 따르면 삼성물산 주가는 477,000원을 기록하며 지난 종가 520,000원 대비 8.27% 하락한 상태에서 거래되고 있다."
+        },
+        {
+          "title": "\"주가 2배 올랐는데 아직도 싸다?\"...증권가 \"삼성물산 60만 원 간다\" - 파이낸셜뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAYrWvuHx2uRSPNmHtzHNgClXjogYRSgEHBlPa_c6XQ_KfX6beq50hOf6gahnD-Ur33QGxeHFi8MTCwSzPYRjagn70gS-B3phMVRyGgIJZ3vSFxxYolln-Qan5QecAZyU0CLKhqbdqrw==",
+          "description": "올해 들어 주가가 100% 이상 급등하며 무서운 상승세를 보이고 있는 삼성물산에 대해 증권가가 연일 장밋빛 전망을 쏟아내고 있다."
+        },
+        {
+          "title": "“전자 대신 '이 종목' 사자”…삼성생명·물산, 삼전 지분가치 반영 기대감에 '쑥' - 서울경제",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG41QWHEzenWlwqvIPZAR-1zLv-g_OG9AWCN0n4P8CPVIsG1jZLrMZ1grzOAQ7i6tde9J2nHNWcl3Z8rNkVDlEeDCnU4KNYKQLG3UE6nri8L6hs4LK53DChot-1b9ukcGHqqA==",
+          "description": "삼성생명과 삼성물산이 23일 상승 중이다."
+        }
+      ],
+      "analysis_time": "2026-06-23 10:25:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "122640",
+      "name": "예스티",
+      "market": "KOSDAQ",
+      "current_price": 38500,
+      "change_pct": 0.0,
+      "signal": "매수",
+      "scores": {
+        "technical": 6.75,
+        "supply_demand": 6.83,
+        "valuation": 5.4,
+        "material": 7.0,
+        "total": 6.55
+      },
+      "reason": "기술적 지표가 상승 추세를 나타내고 있습니다 (이평선 정배열). 외국인/기관 수급은 혼조세를 보이지만, 기관의 순매수가 긍정적입니다. 주요 밸류에이션 지표는 적정 수준으로 평가됩니다. 최근 예스티의 특허 분쟁 승소 및 HBM/DRAM 수요 폭증 수혜 등 긍정적인 재료가 주가에 영향을 줄 수 있습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.65,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.5,
+        "key_news": [
+          "예스티, 특허 분쟁 승소로 가치 재발견…HBM·DRAM 수요 폭증 수혜로 본격 리레이팅"
+        ],
+        "catalyst": "예스티의 특허 분쟁 승소 및 HBM/DRAM 수요 폭증 수혜 등 긍정적인 재료가 주가에 영향을 줄 수 있습니다."
+      },
+      "news": [
+        {
+          "title": "예스티, 고대역폭 메모리(HBM) 웨이퍼 장비 공급 계약 체결",
+          "link": "http://example.com/yes_hbm_news",
+          "description": "HBM 제조에 필수적인 웨이퍼 장비 공급 계약을 체결하며 실적 성장 기대감을 높였다."
+        },
+        {
+          "title": "예스티 주가, 과도한 상승에 따른 차익 실현 매물 출회",
+          "link": "http://example.com/yes_profit_taking_news",
+          "description": "최근 주가 급등에 따른 차익 실현 매물이 나오면서 단기적인 조정을 보였다."
+        },
+        {
+          "title": "예스티, 특허 분쟁 승소로 가치 재발견…HBM·DRAM 수요 폭증 수혜로 본격 리레이팅",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8_GkmGRyWxyjCVPKv48xJxEuhipCw3-wKWiXwQyJk7xw7Dfbwxj2ep4PwAi9F9XQXodUE1Wvi17TtQiaGgx6PUmf0r4xQnIj0asct5ltNOAwbzqeuQ9-rIlsnH_b68kJY57S90KMrkYDJ8X0ilFS8wT77VKo-",
+          "description": "리딩투자증권은 23일 예스티(122640)에 대해 경쟁사와의 특허 분쟁 2심에서 승소하며 그간 기업 가치를 누르고 있던 할인 요소를 해소한 가운데, 고대역폭메모리(HBM) 및 디램(DRAM)향 장비 수요 증가에 힘입어 본격적인 멀티플 리레이팅(재평가) 국면에 진입했다며 투자의견 '매수'를 유지했다."
+        },
+        {
+          "title": "예스티 주가 - 실시간 차트 · 주가 전망 · 투자정보 - 알파스퀘어",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxRoV-8Io-bjiwcQT_360ybWvYehsTKLnHV5Ls-lQwoUxfb3_VER0NQ1bhXGM43PBWLpSJaNmJuG1UTXSylhb9SK9rLguw1GY-G1-sTvM73b8fITZFyVe6KR2_EIND0WN2T4h8N-2WzSPbLrwXs5vuIX8==",
+          "description": "최신 예스티 관련 뉴스와 시장 동향을 확인하세요."
+        },
+        {
+          "title": "예스티 | 한국경제",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAsIykbruQl2pr6vtnHmPbuu8hdCEprtQf7vdRsr03xMN4ndlZJ5nnaZBHZObJNV7bQY-omcNcLMM1JB_5w8ajIXeXH-9D5T88drmdSeZ1U6F1PrZSAtQ587kFL27FY8SRAtc=",
+          "description": "예스티 122640 코스닥."
+        }
+      ],
+      "analysis_time": "2026-06-23 10:25:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "247540",
+      "name": "에코프로비엠",
+      "market": "KOSDAQ",
+      "current_price": 150900,
+      "change_pct": -9.48,
+      "signal": "매도",
+      "scores": {
+        "technical": 2.75,
+        "supply_demand": 3.83,
+        "valuation": 2.14,
+        "material": 3.0,
+        "total": 3.04
+      },
+      "reason": "기술적 지표가 하락 추세를 나타내고 있으며 (이평선 역배열), 최근 주가 하락폭이 큽니다. 외국인과 기관 모두 매도 우위를 보여 수급이 좋지 않습니다. 주요 밸류에이션 지표상 다소 고평가되어 있습니다. 최근 에코프로비엠의 2차전지 수요 둔화 우려 및 CB 풋옵션 임박 등 부정적인 재료가 투자 심리를 위축시키고 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "증가",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.3,
+      "news_analysis": {
+        "sentiment": "부정",
+        "sentiment_score": -0.5,
+        "key_news": [
+          "에코프로비엠 4400억 CB 풋옵션 임박…'이자율 상향'도 재부상"
+        ],
+        "catalyst": "에코프로비엠의 2차전지 수요 둔화 우려 및 CB 풋옵션 임박 등 부정적인 재료가 투자 심리를 위축시키고 있습니다."
+      },
+      "news": [
+        {
+          "title": "에코프로비엠, 2차전지 수요 둔화 우려에 주가 하락",
+          "link": "http://example.com/ecopro_battery_news",
+          "description": "전기차 시장 성장 둔화와 2차전지 소재 수요 감소 우려로 주가가 약세를 면치 못하고 있다."
+        },
+        {
+          "title": "에코프로비엠, 신규 고객사 확보 노력 지속",
+          "link": "http://example.com/ecopro_newclient_news",
+          "description": "글로벌 신규 고객사 확보를 위한 노력을 지속하고 있어 중장기 성장 가능성은 여전하다."
+        },
+        {
+          "title": "에코프로비엠 4400억 CB 풋옵션 임박…'이자율 상향'도 재부상 - 인베스트조선",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3iIiAjDtI0vhQQCltp1F-niDuNaR3fRRjcTrFALrPAPEJVPMlv6lzYO-ayQXzE1PUg9KnkPeLUCCm2OwWH-ut5EXnmspP-Ojxh8l3N_kI6DmWu2On0tsgoANGWCsiJw2oMrKW9SEfbC0e6PgctP5UTSYzUkWdEBD2z08C0oo==",
+          "description": "에코프로비엠의 4400억원 규모 전환사채(CB) 풋옵션 행사 시점이 임박하면서, 조건 변경이나 조기상환 요구가 재부상할 가능성이 제기되고 있다."
+        },
+        {
+          "title": "에코프로비엠 247540 코스닥 - 다음 금융",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFiWDLLyCxkolfDWXVWlaWxGKVfTfpzibcQu27mF4NOdITisJjqQfdXyFI89oB-lSdDc8jlcAEV8RH3CyQuhDe76opNqnou_MEEpBLcfPP08rV-tBYOPEQ5zIBjahueWajgPx2kPyxFGQ==",
+          "description": "에코프로비엠 247540 코스닥."
+        },
+        {
+          "title": "뉴스&공지 – EcoPro BM - 에코프로비엠",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKBjakax-2h-J01G6WhV7mpZaspKbDboNEVeXH8sgIW3i3Xv6_34iWDQkXCPKGWgHFOG2RPYdA7mnZNbgC83JJf9GFReoqMt1d31VPs0-X5wITEf1EUw==",
+          "description": "에코프로비엠, 유럽 전기차 회복세 등으로 흑자 기조 이어."
+        }
+      ],
+      "analysis_time": "2026-06-23 10:25:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "055550",
+      "name": "신한지주",
+      "market": "KOSPI",
+      "current_price": 97700,
+      "change_pct": 0.21,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.0,
+        "supply_demand": 6.83,
+        "valuation": 5.67,
+        "material": 7.0,
+        "total": 6.07
+      },
+      "reason": "기술적 추세는 혼조세입니다. 외국인 매수세가 긍정적이며, 기관 수급은 혼조세를 보입니다. 주요 밸류에이션 지표는 적정 수준으로 평가됩니다. 최근 신한지주의 고금리 기조 유지에 따른 이자 이익 증가 기대 등 긍정적인 재료가 주가에 영향을 줄 수 있습니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.61,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.5,
+        "key_news": [
+          "신한지주, 고금리 기조 유지에 따른 이자 이익 증가 기대"
+        ],
+        "catalyst": "신한지주의 고금리 기조 유지에 따른 이자 이익 증가 기대 등 긍정적인 재료가 주가에 영향을 줄 수 있습니다."
+      },
+      "news": [
+        {
+          "title": "신한지주, 고금리 기조 유지에 따른 이자 이익 증가 기대",
+          "link": "http://example.com/shinhan_interest_news",
+          "description": "고금리 환경이 지속되면서 은행권의 이자 이익 증가에 대한 기대감이 커지고 있다."
+        },
+        {
+          "title": "신한지주, 경기 둔화 우려에 건전성 지표 악화 가능성",
+          "link": "http://example.com/shinhan_economy_news",
+          "description": "경기 둔화가 장기화될 경우 대출 부실 증가로 건전성 지표가 악화될 수 있다는 우려가 제기되었다."
+        },
+        {
+          "title": "[주식뉴스!] 특징주 뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdF3Zoz1SveWdDmjPbfLrF2NSjopVp3kkXUWR5MomMe1kIbSvtWU9WMVAgYjIdv2u71fBC4J1ZKfDuQ0Xjo9mvCMEXpefmApt1QqNPLn8aWPTnm6OiCqZ1mz-ZDt1K73P_EkhuSCoSMHtaIuBFhOP-bTjhpAFXOq4F7DCEq75PkGHQ4-hA_KHwn2PyAJIHofV_aEoi8Q==",
+          "description": "신한지주 주가가 상승세를 보이고 있다."
+        },
+        {
+          "title": "Shinhan Financial Group 주식 뉴스 (055550) - Investing.com",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkmUpaeonykQG7AM3uqVDW_D8Ti5BbiB-odpjmNAVxbGb3NJWPQoJUPIxBqUDt-ZhZRg1SGH35o4KAj3TB7-2S2UmVnhtDUgicA749l-JM9Qqu2y6pkitGyiArFHBGzfvCxtq4pO9Tvozy0AKtPcN1oubxaYCizz0==",
+          "description": "신한지주 (055550) · 일반 · 개요 · 프로필 · 소유권 · 과거 데이터 · 과거 액면분할 · 지수 구성요소 · 차트 · 스트리밍 차트 · 인터랙티브 차트 · 뉴스 & 분석."
+        },
+        {
+          "title": "신한지주 주가 - 실시간 차트 · 주가 전망 · 투자정보 - 알파스퀘어",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfiQUdlwX2GYoZI7b4QfZeGPkysrB9FFo-TcgXCPao2mkkT3ZiNL9YP6Fo-cMIpQwd_ZyZIz6aiMUah1Dz8JwQIvXYjGCeVF7nS59MYcvtuslPfnUfz5NQcoPifJt3ARsHWPITfWdRqJvDcKnFKJN1QWg==",
+          "description": "국내 증시 부진에도…금리인상 신호에 은행·보험株 '나홀로 강세'."
+        }
+      ],
+      "analysis_time": "2026-06-23 10:25:00",
+      "data_source": "KIS_API"
+    }
+  ]
+}
