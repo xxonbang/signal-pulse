@@ -11,8 +11,8 @@
     },
     "reason": "KOSPI 혼조 (정배열도 역배열도 아님)",
     "signal_adjustment": 0.0,
-    "evaluated_at": "2026-07-03T19:13:30.746848+09:00",
-    "data_days": 140
+    "evaluated_at": "2026-07-05T19:11:57.812356+09:00",
+    "data_days": 139
   },
   "kosdaq": {
     "status": "bearish",
@@ -26,7 +26,7 @@
     },
     "reason": "KOSDAQ 역배열 (현재가<MA5<MA10<MA20<MA60<MA120)",
     "signal_adjustment": -0.5,
-    "evaluated_at": "2026-07-03T19:13:32.514555+09:00",
-    "data_days": 140
+    "evaluated_at": "2026-07-05T19:11:59.378931+09:00",
+    "data_days": 139
   }
 }
