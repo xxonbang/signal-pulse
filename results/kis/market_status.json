@@ -1,32 +1,32 @@
 {
   "kospi": {
     "status": "mixed",
-    "current": 7475.94,
+    "current": 6883.92,
     "ma_values": {
-      "MA5": 7544.46,
-      "MA10": 7863.32,
-      "MA20": 8300.86,
-      "MA60": 7688.3,
-      "MA120": 6559.15
+      "MA5": 7310.97,
+      "MA10": 7712.25,
+      "MA20": 8217.76,
+      "MA60": 7703.57,
+      "MA120": 6577.16
     },
     "reason": "KOSPI 혼조 (정배열도 역배열도 아님)",
     "signal_adjustment": 0.0,
-    "evaluated_at": "2026-07-12T19:14:38.707394+09:00",
-    "data_days": 139
+    "evaluated_at": "2026-07-13T13:15:29.267065+09:00",
+    "data_days": 140
   },
   "kosdaq": {
-    "status": "mixed",
-    "current": 837.43,
+    "status": "bearish",
+    "current": 802.38,
     "ma_values": {
-      "MA5": 818.95,
-      "MA10": 859.6,
-      "MA20": 907.83,
-      "MA60": 1053.92,
-      "MA120": 1076.6
+      "MA5": 810.01,
+      "MA10": 847.78,
+      "MA20": 896.25,
+      "MA60": 1048.59,
+      "MA120": 1075.43
     },
-    "reason": "KOSDAQ 혼조 (정배열도 역배열도 아님)",
-    "signal_adjustment": 0.0,
-    "evaluated_at": "2026-07-12T19:14:40.666008+09:00",
-    "data_days": 139
+    "reason": "KOSDAQ 역배열 (현재가<MA5<MA10<MA20<MA60<MA120)",
+    "signal_adjustment": -0.5,
+    "evaluated_at": "2026-07-13T13:15:31.222623+09:00",
+    "data_days": 140
   }
 }
