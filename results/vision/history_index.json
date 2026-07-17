@@ -1,8 +1,20 @@
 {
-  "updated_at": "2026-07-16 19:46:49",
+  "updated_at": "2026-07-17 13:46:59",
   "retention_days": 30,
-  "total_records": 322,
+  "total_records": 323,
   "history": [
+    {
+      "date": "2026-07-17",
+      "time": "1346",
+      "filename": "vision_2026-07-17_1346.json",
+      "total_stocks": 100,
+      "signals": {
+        "매도": 22,
+        "중립": 69,
+        "매수": 8,
+        "적극매도": 1
+      }
+    },
     {
       "date": "2026-07-16",
       "time": "1946",
