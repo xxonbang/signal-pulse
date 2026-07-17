@@ -1,6 +1,6 @@
 {
   "date": "2026-07-17",
-  "collected_at": "2026-07-17T15:40:40.030777+09:00",
+  "collected_at": "2026-07-17T19:52:59.586704+09:00",
   "categories": {
     "vision": [],
     "kis": [],
@@ -14,7 +14,7 @@
     },
     "005930": {
       "name": "삼성전자",
-      "vision_signal": "매도"
+      "vision_signal": "적극매도"
     },
     "402340": {
       "name": "SK스퀘어",
@@ -22,7 +22,7 @@
     },
     "009150": {
       "name": "삼성전기",
-      "vision_signal": "매도"
+      "vision_signal": "적극매도"
     },
     "005935": {
       "name": "삼성전자우",
@@ -30,7 +30,7 @@
     },
     "042700": {
       "name": "한미반도체",
-      "vision_signal": "매도"
+      "vision_signal": "적극매도"
     },
     "005380": {
       "name": "현대차",
@@ -40,17 +40,9 @@
       "name": "LG전자",
       "vision_signal": "매도"
     },
-    "105560": {
-      "name": "KB금융",
-      "vision_signal": "중립"
-    },
-    "042660": {
-      "name": "한화오션",
-      "vision_signal": "중립"
-    },
     "096770": {
       "name": "SK이노베이션",
-      "vision_signal": "매수"
+      "vision_signal": "중립"
     },
     "028260": {
       "name": "삼성물산",
@@ -58,7 +50,7 @@
     },
     "475150": {
       "name": "SK이터닉스",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "006400": {
       "name": "삼성SDI",
@@ -74,15 +66,15 @@
     },
     "034020": {
       "name": "두산에너빌리티",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "055550": {
       "name": "신한지주",
-      "vision_signal": "중립"
+      "vision_signal": "매수"
     },
     "086790": {
       "name": "하나금융지주",
-      "vision_signal": "중립"
+      "vision_signal": "매수"
     },
     "298040": {
       "name": "효성중공업",
@@ -118,7 +110,7 @@
     },
     "017670": {
       "name": "SK텔레콤",
-      "vision_signal": "매수"
+      "vision_signal": "중립"
     },
     "267260": {
       "name": "HD현대일렉트릭",
@@ -146,14 +138,14 @@
     },
     "000810": {
       "name": "삼성화재",
-      "vision_signal": "중립"
+      "vision_signal": "매수"
     },
     "034730": {
       "name": "SK",
       "vision_signal": "중립"
     },
     "079550": {
-      "name": "LIG디펜스앤에어로스페이스",
+      "name": "LIG넥스원",
       "vision_signal": "중립"
     },
     "035720": {
@@ -186,7 +178,7 @@
     },
     "002990": {
       "name": "금호건설",
-      "vision_signal": "매도"
+      "vision_signal": "적극매도"
     },
     "010950": {
       "name": "S-Oil",
@@ -198,7 +190,7 @@
     },
     "000020": {
       "name": "동화약품",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "003490": {
       "name": "대한항공",
@@ -206,7 +198,7 @@
     },
     "015760": {
       "name": "한국전력",
-      "vision_signal": "매수"
+      "vision_signal": "매도"
     },
     "240810": {
       "name": "원익IPS",
@@ -218,23 +210,23 @@
     },
     "028300": {
       "name": "HLB",
-      "vision_signal": "매도"
+      "vision_signal": "중립"
     },
     "080220": {
       "name": "제주반도체",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "319660": {
       "name": "피에스케이",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "095610": {
       "name": "테스",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "950160": {
       "name": "코오롱티슈진",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "049080": {
       "name": "기가레인",
@@ -258,11 +250,11 @@
     },
     "413630": {
       "name": "씨피시스템",
-      "vision_signal": "매수"
+      "vision_signal": "중립"
     },
     "347850": {
       "name": "디앤디파마텍",
-      "vision_signal": "적극매도"
+      "vision_signal": "매도"
     },
     "214450": {
       "name": "파마리서치",
@@ -270,7 +262,7 @@
     },
     "089970": {
       "name": "브이엠",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "069540": {
       "name": "빛과전자",
@@ -282,11 +274,11 @@
     },
     "024060": {
       "name": "흥구석유",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "067310": {
       "name": "하나마이크론",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "476060": {
       "name": "온코닉테라퓨틱스",
@@ -294,27 +286,27 @@
     },
     "010170": {
       "name": "대한광통신",
-      "vision_signal": "매도"
+      "vision_signal": "적극매도"
     },
     "222800": {
       "name": "심텍",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "039030": {
       "name": "이오테크닉스",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "089030": {
       "name": "테크윙",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "031980": {
       "name": "피에스케이홀딩스",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "042110": {
       "name": "에스씨디",
-      "vision_signal": "중립"
+      "vision_signal": "매수"
     },
     "226950": {
       "name": "올릭스",
@@ -326,19 +318,19 @@
     },
     "440110": {
       "name": "파두",
-      "vision_signal": "매도"
+      "vision_signal": "중립"
     },
     "044340": {
       "name": "위닉스",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "058470": {
       "name": "리노공업",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "122350": {
       "name": "삼기",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "387690": {
       "name": "레메디",
@@ -346,11 +338,11 @@
     },
     "477850": {
       "name": "마키나락스",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "131290": {
       "name": "티에스이",
-      "vision_signal": "매수"
+      "vision_signal": "중립"
     },
     "141080": {
       "name": "리가켐바이오",
@@ -362,15 +354,15 @@
     },
     "087010": {
       "name": "펩트론",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "119850": {
       "name": "지엔씨에너지",
-      "vision_signal": "매수"
+      "vision_signal": "중립"
     },
     "108490": {
       "name": "로보티즈",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "420770": {
       "name": "기가비스",
@@ -386,7 +378,7 @@
     },
     "047770": {
       "name": "코데즈컴바인",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "084370": {
       "name": "유진테크",
@@ -398,7 +390,7 @@
     },
     "178320": {
       "name": "서진시스템",
-      "vision_signal": "매도"
+      "vision_signal": "적극매도"
     },
     "356860": {
       "name": "티엘비",
@@ -407,10 +399,18 @@
     "047920": {
       "name": "HLB제약",
       "vision_signal": "중립"
+    },
+    "105560": {
+      "name": "KB금융",
+      "vision_signal": "중립"
+    },
+    "042660": {
+      "name": "한화오션",
+      "vision_signal": "매수"
     }
   },
   "fear_greed": {
-    "score": 41.8285714285714,
+    "score": 42.5714285714286,
     "rating": "fear"
   }
 }
