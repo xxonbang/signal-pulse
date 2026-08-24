@@ -1,8 +1,19 @@
 {
-  "updated_at": "2026-08-23 19:47:44",
+  "updated_at": "2026-08-24 10:11:48",
   "retention_days": 30,
-  "total_records": 431,
+  "total_records": 432,
   "history": [
+    {
+      "date": "2026-08-24",
+      "time": "1011",
+      "filename": "kis_2026-08-24_1011.json",
+      "total_stocks": 99,
+      "signals": {
+        "중립": 93,
+        "매수": 4,
+        "매도": 2
+      }
+    },
     {
       "date": "2026-08-23",
       "time": "1947",
