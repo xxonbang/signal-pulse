@@ -1,6 +1,6 @@
 {
   "date": "2026-08-28",
-  "collected_at": "2026-08-28T15:40:40.931159+09:00",
+  "collected_at": "2026-08-28T20:01:54.463655+09:00",
   "categories": {
     "vision": [],
     "kis": [],
@@ -9,7 +9,7 @@
   "all_prices": {},
   "all_signals": {},
   "fear_greed": {
-    "score": 57.9142857142857,
+    "score": 57.7428571428571,
     "rating": "greed"
   }
 }
