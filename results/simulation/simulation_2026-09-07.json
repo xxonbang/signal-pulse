@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-07",
+  "collected_at": "2026-09-07T15:40:44.208508+09:00",
+  "categories": {
+    "vision": [],
+    "kis": [],
+    "combined": []
+  },
+  "all_prices": {},
+  "all_signals": {
+    "000660": {
+      "name": "SK하이닉스",
+      "vision_signal": "중립"
+    },
+    "005930": {
+      "name": "삼성전자",
+      "vision_signal": "매수"
+    },
+    "009150": {
+      "name": "삼성전기",
+      "vision_signal": "중립"
+    },
+    "402340": {
+      "name": "SK스퀘어",
+      "vision_signal": "매수"
+    },
+    "005935": {
+      "name": "삼성전자우",
+      "vision_signal": "매수"
+    },
+    "066570": {
+      "name": "LG전자",
+      "vision_signal": "중립"
+    },
+    "034020": {
+      "name": "두산에너빌리티",
+      "vision_signal": "중립"
+    },
+    "336260": {
+      "name": "두산퓨얼셀",
+      "vision_signal": "중립"
+    },
+    "042700": {
+      "name": "한미반도체",
+      "vision_signal": "중립"
+    },
+    "006400": {
+      "name": "삼성SDI",
+      "vision_signal": "중립"
+    }
+  },
+  "fear_greed": {
+    "score": 41.8571428571429,
+    "rating": "fear"
+  }
+}
