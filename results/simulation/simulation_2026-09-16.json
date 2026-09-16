@@ -1,6 +1,6 @@
 {
   "date": "2026-09-16",
-  "collected_at": "2026-09-16T15:40:39.725728+09:00",
+  "collected_at": "2026-09-16T20:01:52.565022+09:00",
   "categories": {
     "vision": [
       {
@@ -8,12 +8,12 @@
         "name": "삼성전자우",
         "market": "KOSPI",
         "open_price": 187200,
-        "close_price": 194600,
+        "close_price": 194300,
         "high_price": 195900,
         "low_price": 186100,
         "high_price_time": null,
-        "return_pct": 3.95,
-        "return_pct_net": 3.62,
+        "return_pct": 3.79,
+        "return_pct_net": 3.46,
         "high_return_pct": 4.65,
         "stop_result": null
       }
@@ -24,7 +24,7 @@
   "all_prices": {
     "005935": {
       "open_price": 187200,
-      "close_price": 194600,
+      "close_price": 194300,
       "high_price": 195900,
       "high_price_time": null
     }
@@ -432,7 +432,7 @@
     }
   },
   "fear_greed": {
-    "score": 28.4571428571429,
+    "score": 27.7142857142857,
     "rating": "fear"
   }
 }
