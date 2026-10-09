@@ -11,7 +11,7 @@
     },
     "reason": "KOSPI 혼조 (정배열도 역배열도 아님)",
     "signal_adjustment": 0.0,
-    "evaluated_at": "2026-10-09T13:14:04.777451+09:00",
+    "evaluated_at": "2026-10-09T19:12:27.434154+09:00",
     "data_days": 141
   },
   "kosdaq": {
@@ -26,7 +26,7 @@
     },
     "reason": "KOSDAQ 혼조 (정배열도 역배열도 아님)",
     "signal_adjustment": 0.0,
-    "evaluated_at": "2026-10-09T13:14:06.683102+09:00",
+    "evaluated_at": "2026-10-09T19:12:29.245609+09:00",
     "data_days": 141
   }
 }
