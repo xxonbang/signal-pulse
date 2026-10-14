@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "collected_at": "2026-10-14T15:40:36.900581+09:00",
+  "collected_at": "2026-10-14T19:54:12.828467+09:00",
   "categories": {
     "vision": [
       {
@@ -8,12 +8,12 @@
         "name": "성호전자",
         "market": "KOSDAQ",
         "open_price": 30400,
-        "close_price": 29800,
+        "close_price": 30100,
         "high_price": 30900,
         "low_price": 28700,
         "high_price_time": null,
-        "return_pct": -1.97,
-        "return_pct_net": -2.3,
+        "return_pct": -0.99,
+        "return_pct_net": -1.32,
         "high_return_pct": 1.64,
         "stop_result": "stop_loss"
       }
@@ -24,7 +24,7 @@
   "all_prices": {
     "043260": {
       "open_price": 30400,
-      "close_price": 29800,
+      "close_price": 30100,
       "high_price": 30900,
       "high_price_time": null
     }
@@ -38,49 +38,45 @@
       "name": "삼성전자",
       "vision_signal": "중립"
     },
-    "009150": {
-      "name": "삼성전기",
-      "vision_signal": "중립"
-    },
     "005935": {
       "name": "삼성전자우",
       "vision_signal": "중립"
     },
-    "006400": {
-      "name": "삼성SDI",
+    "009150": {
+      "name": "삼성전기",
       "vision_signal": "중립"
     },
     "402340": {
       "name": "SK스퀘어",
-      "vision_signal": "중립"
+      "vision_signal": "매수"
+    },
+    "006400": {
+      "name": "삼성SDI",
+      "vision_signal": "매수"
     },
     "373220": {
       "name": "LG에너지솔루션",
-      "vision_signal": "중립"
-    },
-    "105560": {
-      "name": "KB금융",
-      "vision_signal": "중립"
-    },
-    "096770": {
-      "name": "SK이노베이션",
       "vision_signal": "중립"
     },
     "278470": {
       "name": "에이피알",
       "vision_signal": "중립"
     },
-    "002720": {
-      "name": "국제약품",
+    "105560": {
+      "name": "KB금융",
+      "vision_signal": "매수"
+    },
+    "096770": {
+      "name": "SK이노베이션",
       "vision_signal": "중립"
     },
     "012450": {
       "name": "한화에어로스페이스",
       "vision_signal": "중립"
     },
-    "353200": {
-      "name": "대덕전자",
-      "vision_signal": "중립"
+    "055550": {
+      "name": "신한지주",
+      "vision_signal": "매도"
     },
     "034020": {
       "name": "두산에너빌리티",
@@ -88,106 +84,122 @@
     },
     "005380": {
       "name": "현대차",
-      "vision_signal": "중립"
-    },
-    "055550": {
-      "name": "신한지주",
-      "vision_signal": "중립"
-    },
-    "028670": {
-      "name": "팬오션",
-      "vision_signal": "매수"
-    },
-    "066570": {
-      "name": "LG전자",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "042700": {
       "name": "한미반도체",
+      "vision_signal": "중립"
+    },
+    "353200": {
+      "name": "대덕전자",
+      "vision_signal": "매도"
+    },
+    "028260": {
+      "name": "삼성물산",
+      "vision_signal": "중립"
+    },
+    "066570": {
+      "name": "LG전자",
       "vision_signal": "매도"
     },
     "086790": {
       "name": "하나금융지주",
       "vision_signal": "중립"
     },
-    "003670": {
-      "name": "포스코퓨처엠",
+    "028670": {
+      "name": "팬오션",
       "vision_signal": "중립"
     },
-    "010140": {
-      "name": "삼성중공업",
+    "002720": {
+      "name": "국제약품",
       "vision_signal": "중립"
     },
-    "028260": {
-      "name": "삼성물산",
-      "vision_signal": "중립"
-    },
-    "298040": {
-      "name": "효성중공업",
-      "vision_signal": "중립"
-    },
-    "011200": {
-      "name": "HMM",
+    "034730": {
+      "name": "SK",
       "vision_signal": "중립"
     },
     "012330": {
       "name": "현대모비스",
       "vision_signal": "중립"
     },
-    "034730": {
-      "name": "SK",
-      "vision_signal": "매수"
+    "003670": {
+      "name": "포스코퓨처엠",
+      "vision_signal": "중립"
+    },
+    "035420": {
+      "name": "NAVER",
+      "vision_signal": "매도"
     },
     "128940": {
       "name": "한미약품",
+      "vision_signal": "매도"
+    },
+    "267260": {
+      "name": "HD현대일렉트릭",
       "vision_signal": "중립"
     },
-    "066970": {
-      "name": "엘앤에프",
+    "010140": {
+      "name": "삼성중공업",
       "vision_signal": "중립"
     },
-    "011070": {
-      "name": "LG이노텍",
+    "298040": {
+      "name": "효성중공업",
       "vision_signal": "중립"
     },
     "272210": {
       "name": "한화시스템",
       "vision_signal": "중립"
     },
-    "267260": {
-      "name": "HD현대일렉트릭",
+    "011070": {
+      "name": "LG이노텍",
       "vision_signal": "중립"
-    },
-    "000150": {
-      "name": "두산",
-      "vision_signal": "중립"
-    },
-    "035420": {
-      "name": "NAVER",
-      "vision_signal": "매수"
     },
     "329180": {
       "name": "HD현대중공업",
+      "vision_signal": "중립"
+    },
+    "011200": {
+      "name": "HMM",
+      "vision_signal": "중립"
+    },
+    "000270": {
+      "name": "기아",
       "vision_signal": "중립"
     },
     "010120": {
       "name": "LS ELECTRIC",
       "vision_signal": "중립"
     },
-    "084670": {
-      "name": "동양고속",
-      "vision_signal": "매도"
+    "005490": {
+      "name": "POSCO홀딩스",
+      "vision_signal": "중립"
     },
     "068270": {
       "name": "셀트리온",
+      "vision_signal": "중립"
+    },
+    "066970": {
+      "name": "엘앤에프",
+      "vision_signal": "중립"
+    },
+    "000150": {
+      "name": "두산",
       "vision_signal": "중립"
     },
     "009830": {
       "name": "한화솔루션",
       "vision_signal": "중립"
     },
-    "005490": {
-      "name": "POSCO홀딩스",
+    "457190": {
+      "name": "이수스페셜티케미컬",
+      "vision_signal": "중립"
+    },
+    "051910": {
+      "name": "LG화학",
+      "vision_signal": "중립"
+    },
+    "032830": {
+      "name": "삼성생명",
       "vision_signal": "중립"
     },
     "007660": {
@@ -196,39 +208,27 @@
     },
     "000990": {
       "name": "DB하이텍",
-      "vision_signal": "중립"
-    },
-    "000270": {
-      "name": "기아",
-      "vision_signal": "중립"
-    },
-    "051910": {
-      "name": "LG화학",
-      "vision_signal": "중립"
-    },
-    "001210": {
-      "name": "금호전기",
-      "vision_signal": "중립"
-    },
-    "042660": {
-      "name": "한화오션",
-      "vision_signal": "중립"
-    },
-    "457190": {
-      "name": "이수스페셜티케미컬",
-      "vision_signal": "중립"
-    },
-    "017670": {
-      "name": "SK텔레콤",
-      "vision_signal": "중립"
+      "vision_signal": "매도"
     },
     "000720": {
       "name": "현대건설",
+      "vision_signal": "매도"
+    },
+    "000810": {
+      "name": "삼성화재",
+      "vision_signal": "중립"
+    },
+    "316140": {
+      "name": "우리금융지주",
       "vision_signal": "중립"
     },
     "207940": {
       "name": "삼성바이오로직스",
       "vision_signal": "중립"
+    },
+    "017670": {
+      "name": "SK텔레콤",
+      "vision_signal": "매수"
     },
     "036930": {
       "name": "주성엔지니어링",
@@ -238,12 +238,24 @@
       "name": "LS머트리얼즈",
       "vision_signal": "중립"
     },
+    "222800": {
+      "name": "심텍",
+      "vision_signal": "중립"
+    },
     "240810": {
       "name": "원익IPS",
       "vision_signal": "중립"
     },
-    "222800": {
-      "name": "심텍",
+    "486510": {
+      "name": "글로벌테크놀로지",
+      "vision_signal": "중립"
+    },
+    "396300": {
+      "name": "HT로보틱스",
+      "vision_signal": "매수"
+    },
+    "403870": {
+      "name": "HPSP",
       "vision_signal": "중립"
     },
     "042510": {
@@ -254,44 +266,28 @@
       "name": "서산",
       "vision_signal": "중립"
     },
-    "072950": {
-      "name": "빛샘전자",
-      "vision_signal": "중립"
-    },
-    "403870": {
-      "name": "HPSP",
-      "vision_signal": "중립"
-    },
     "452280": {
       "name": "한선엔지니어링",
       "vision_signal": "중립"
     },
-    "396300": {
-      "name": "HT로보틱스",
+    "031980": {
+      "name": "피에스케이홀딩스",
+      "vision_signal": "중립"
+    },
+    "072950": {
+      "name": "빛샘전자",
+      "vision_signal": "중립"
+    },
+    "078600": {
+      "name": "대주전자재료",
       "vision_signal": "중립"
     },
     "067310": {
       "name": "하나마이크론",
       "vision_signal": "중립"
     },
-    "010170": {
-      "name": "대한광통신",
-      "vision_signal": "중립"
-    },
     "086520": {
       "name": "에코프로",
-      "vision_signal": "매도"
-    },
-    "131970": {
-      "name": "두산테스나",
-      "vision_signal": "중립"
-    },
-    "012210": {
-      "name": "삼미금속",
-      "vision_signal": "중립"
-    },
-    "080220": {
-      "name": "제주반도체",
       "vision_signal": "중립"
     },
     "058470": {
@@ -302,133 +298,137 @@
       "name": "에코프로비엠",
       "vision_signal": "중립"
     },
-    "069540": {
-      "name": "빛과전자",
+    "080220": {
+      "name": "제주반도체",
       "vision_signal": "중립"
     },
-    "078600": {
-      "name": "대주전자재료",
+    "131970": {
+      "name": "두산테스나",
       "vision_signal": "중립"
     },
-    "038500": {
-      "name": "삼표시멘트",
-      "vision_signal": "중립"
-    },
-    "031980": {
-      "name": "피에스케이홀딩스",
-      "vision_signal": "중립"
-    },
-    "225530": {
-      "name": "HC보광산업",
-      "vision_signal": "중립"
-    },
-    "319660": {
-      "name": "피에스케이",
-      "vision_signal": "중립"
-    },
-    "089030": {
-      "name": "테크윙",
-      "vision_signal": "중립"
-    },
-    "043260": {
-      "name": "성호전자",
-      "vision_signal": "중립"
-    },
-    "468670": {
-      "name": "브릴스",
-      "vision_signal": "매도"
-    },
-    "053260": {
-      "name": "금강철강",
+    "010170": {
+      "name": "대한광통신",
       "vision_signal": "중립"
     },
     "196170": {
       "name": "알테오젠",
       "vision_signal": "중립"
     },
-    "486510": {
-      "name": "글로벌테크놀로지",
+    "319660": {
+      "name": "피에스케이",
+      "vision_signal": "중립"
+    },
+    "098460": {
+      "name": "고영",
+      "vision_signal": "중립"
+    },
+    "089030": {
+      "name": "테크윙",
+      "vision_signal": "매도"
+    },
+    "043260": {
+      "name": "성호전자",
+      "vision_signal": "중립"
+    },
+    "038500": {
+      "name": "삼표시멘트",
+      "vision_signal": "중립"
+    },
+    "069540": {
+      "name": "빛과전자",
+      "vision_signal": "중립"
+    },
+    "012210": {
+      "name": "삼미금속",
       "vision_signal": "중립"
     },
     "327260": {
       "name": "RF머트리얼즈",
       "vision_signal": "중립"
     },
-    "098460": {
-      "name": "고영",
-      "vision_signal": "매도"
-    },
-    "178320": {
-      "name": "서진시스템",
+    "131290": {
+      "name": "티에스이",
       "vision_signal": "중립"
     },
-    "142280": {
-      "name": "녹십자엠에스",
-      "vision_signal": "매도"
+    "468670": {
+      "name": "브릴스",
+      "vision_signal": "중립"
     },
     "039030": {
       "name": "이오테크닉스",
       "vision_signal": "중립"
     },
+    "290650": {
+      "name": "엘앤씨바이오",
+      "vision_signal": "중립"
+    },
+    "225530": {
+      "name": "HC보광산업",
+      "vision_signal": "중립"
+    },
     "036540": {
       "name": "SFA반도체",
-      "vision_signal": "매도"
+      "vision_signal": "적극매도"
+    },
+    "178320": {
+      "name": "서진시스템",
+      "vision_signal": "중립"
     },
     "108490": {
       "name": "로보티즈",
-      "vision_signal": "중립"
-    },
-    "084370": {
-      "name": "유진테크",
-      "vision_signal": "중립"
-    },
-    "131290": {
-      "name": "티에스이",
-      "vision_signal": "중립"
-    },
-    "039610": {
-      "name": "화성밸브",
       "vision_signal": "중립"
     },
     "356860": {
       "name": "티엘비",
       "vision_signal": "중립"
     },
-    "054930": {
-      "name": "유신",
-      "vision_signal": "매수"
+    "053260": {
+      "name": "금강철강",
+      "vision_signal": "중립"
+    },
+    "084370": {
+      "name": "유진테크",
+      "vision_signal": "매도"
+    },
+    "095610": {
+      "name": "테스",
+      "vision_signal": "매도"
+    },
+    "087010": {
+      "name": "펩트론",
+      "vision_signal": "적극매도"
     },
     "232140": {
       "name": "와이씨",
       "vision_signal": "중립"
     },
-    "087010": {
-      "name": "펩트론",
-      "vision_signal": "매도"
-    },
-    "095610": {
-      "name": "테스",
-      "vision_signal": "중립"
-    },
-    "028300": {
-      "name": "HLB",
+    "095340": {
+      "name": "ISC",
       "vision_signal": "매도"
     },
     "089970": {
       "name": "브이엠",
-      "vision_signal": "매도"
+      "vision_signal": "적극매도"
     },
-    "226950": {
-      "name": "올릭스",
-      "vision_signal": "매도"
+    "039610": {
+      "name": "화성밸브",
+      "vision_signal": "중립"
+    },
+    "142280": {
+      "name": "녹십자엠에스",
+      "vision_signal": "중립"
     },
     "033790": {
       "name": "피노",
+      "vision_signal": "적극매도"
+    },
+    "440110": {
+      "name": "파두",
       "vision_signal": "매도"
     }
   },
   "fear_greed": {
-    "score": 44.7428571428571,
-    "rating": "fear"
+    "score": 45.0857142857143,
+    "rating": "neutral"
   }
 }
