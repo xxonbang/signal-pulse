@@ -1,0 +1,4097 @@
+{
+  "analysis_time": "2026-10-21 13:52:22",
+  "total_analyzed": 79,
+  "results": [
+    {
+      "code": "458350",
+      "name": "에스팀",
+      "market": "KOSDAQ",
+      "current_price": 4345,
+      "change_rate": 14.49,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.75,
+        "supply_demand": 4.67,
+        "valuation": 4.5,
+        "material": 6.0,
+        "total": 5.16
+      },
+      "reason": "강한 가격 상승세와 높은 거래량을 보이며 기술적 모멘텀이 있으나, 52주 고점 근처에 위치하고 있습니다. 외국인과 기관의 연속적인 순매도세가 관찰되며 수급 측면의 부담이 있습니다. 낮은 부채비율은 긍정적이지만, 음의 영업이익률과 EPS 성장률은 밸류에이션 매력을 제한합니다. 패션 콘텐츠 사업 성장 가능성에 대한 언급이 있으나 구체적인 호재는 부족합니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.52,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.2,
+        "key_news": [
+          "에스팀, 패션 콘텐츠 및 브랜드 육성 사업 성장 가능성 언급"
+        ],
+        "catalyst": "패션 콘텐츠 및 브랜드 육성 사업의 성장 가능성에 대한 긍정적 시각이 존재합니다."
+      },
+      "news": [
+        {
+          "title": "[오늘의 특징주] 형지엘리트·유니테크노 상한가...ESS 수주·상장폐지 유예 기대에 급등주 속출",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFn8u5LgR3KTHenfbSgGkA_YowV0eGiQ25NburZ7PHaFLCzc9htswSN7SvnFF6fMj6w79WtlVYSerqyOLZBCWDIFQZ9WejO5O-v7cARYroYx1vmNEK6Csepfgs76XS6XlA7lmO72tH2voqOpVT2Dsi99w==",
+          "description": "에스팀은 패션 콘텐츠와 브랜드 육성 사업의 성장 가능성이 영향을 미친 것으로 해석된다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:16:10",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "031980",
+      "name": "피에스케이홀딩스",
+      "market": "KOSDAQ",
+      "current_price": 185300,
+      "change_rate": 3.52,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.25,
+        "supply_demand": 6.5,
+        "valuation": 6.0,
+        "material": 8.5,
+        "total": 6.03
+      },
+      "reason": "혼조세의 기술적 추세와 보통 수준의 거래량을 보이지만, 외국인과 기관이 당일 모두 순매수하며 긍정적인 수급 흐름이 나타났습니다. 52주 고저 위치는 중간이며, PER은 높지만 높은 ROE와 영업이익률, 긍정적인 영업이익 성장률을 바탕으로 밸류에이션 부담을 일부 상쇄합니다. 첨단 패키징 증설 수혜 기대감이 강한 호재로 작용하고 있습니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.7,
+        "key_news": [
+          "피에스케이홀딩스, 첨단 패키징 증설 수혜 기대",
+          "3분기 실적 및 연간 매출액, 영업이익 성장 전망"
+        ],
+        "catalyst": "첨단 패키징 증설에 따른 수혜 기대와 긍정적인 3분기 실적 및 연간 성장 전망이 주요 호재입니다."
+      },
+      "news": [
+        {
+          "title": "피에스케이홀딩스, 첨단 패키징 증설 수혜 기대에 7%대 강세",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8H0jV8vg1WeUZZU-ogdM4wOQKwUyuWBS5McemMJoapVwE7E4_B7YMZWPHxgOSC138gA9nT4Hzp5Ht04uDe2-_nbeM6A4EPGlrgDvC_FbuAMBWP8TcAVpjdvWcJy7BaDnsUymkTIeNTV0=",
+          "description": "현대차증권은 피에스케이홀딩스의 3분기 실적 추정치로 매출 749억원, 영업이익 315억원을 제시하며 첨단 패키징 증설 수혜를 언급했습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:16:10",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "079550",
+      "name": "LIG디펜스앤에어로스페이스",
+      "market": "KOSPI",
+      "current_price": 473000,
+      "change_rate": -13.69,
+      "signal": "중립",
+      "scores": {
+        "technical": 6.5,
+        "supply_demand": 4.5,
+        "valuation": 4.67,
+        "material": 0.5,
+        "total": 4.53
+      },
+      "reason": "급격한 하락 추세와 함께 RSI가 과매도 구간에 진입했으나, 방위사업청으로부터 2년간 입찰 참가 자격 제한이라는 대형 악재가 오늘 주가에 반영되어 하락세를 보이고 있습니다. 높은 부채비율과 PER이 밸류에이션 부담을 가중시키며, 외국인과 기관 모두 당일 순매도하며 수급도 좋지 않습니다. 시장의 과도한 반응이라는 분석도 있으나, 불확실성이 큽니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "급증",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.45,
+      "news_analysis": {
+        "sentiment": "부정",
+        "sentiment_score": -0.9,
+        "key_news": [
+          "LIG디펜스앤에어로스페이스, 방위사업청 2년간 입찰 참가 자격 제한",
+          "뇌물공여 혐의로 제재 처분",
+          "일부 증권사 '과민 반응' 분석 제시"
+        ],
+        "catalyst": "방위사업청의 뇌물공여 및 원가 부정 혐의에 따른 2년간 입찰 참가 자격 제한 처분 결정이 가장 큰 악재로 작용하고 있습니다."
+      },
+      "news": [
+        {
+          "title": "[특징주] LIG디펜스앤에어로스페이스, 방위청 제재.. '급락'",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHujKAbQpcsUrAQSlCSxVrvTz0erv384_EnkodiI6wPoonel4sdOEAFpgsak_0dLXORAp8DB-9Oms1Whklm_196l43ZLXnPh11DcWhXKFmLBjvUnbEfp9XIndaX7wZ0BSMHAsRtJY8QNTeoHe5Lal6x8Y5iUEFJw_yYDfHvCjeosriMd82oMr01cI1rkw==",
+          "description": "LIG디펜스앤에어로스페이스(이하 LIG D&A)가 방위사업청으로부터 2년간 입찰 참가 자격을 제한하는 제재를 받았다는 소식에 급락했습니다."
+        },
+        {
+          "title": "LIG D&A, 방사청 2년간 입찰 제한에 장 초반 10% 급락",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhDV_wVyzCitgzsahY4qaxUNPfOUEoeuN0bAqfhoO_o3jF9f_6eu-CJOu4q6S77Wt4t6ZX0myy2YJbRZYLHgoCAj7tGzFQINvIkRuympq9LBNv--pnC1jaxKoWFXwUmebMsej6Z6KKGjY=",
+          "description": "방위사업청은 지난 20일 방위사업계약심의위원회를 열어 LIG에 국가계약법상 최고 수준인 24개월 입찰 참가 자격 제한 처분을 내리기로 결정했다고 밝혔습니다."
+        },
+        {
+          "title": "삼성증권 “LIG디펜스앤에어로스페이스, 입찰 제한 우려에 급락…과민 반응”",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqKhzZgmEVCT-NxZv8IeLPBNftjicd4w5KjWMw1MvlIMf-dXPvdl1MA9XbcLmeaHTotCMd14ZwP5IvnEVJZcz8TojDdGMSg6Cdf7siWAXDm4j2bouYtnVd8_NvPwLMWiKYbOvoG9PHBRmWdAprycr75djcMJtP_xs=",
+          "description": "삼성증권은 방위사업청의 입찰 참가자격 제한 결정에도 불구하고 영업활동에 미칠 영향을 비관하기는 이르다며 투자의견 '매수'를 유지했습니다."
+        },
+        {
+          "title": "DS투자증권 \"LIG D&A 중단기 EPS 영향 미미..방산 최선호주\"",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFH9nShsMxxOtquWG-90Qs5qY6rRZkkLNpaYwhlLfnwMc5nRGjVpDwd3Bd4B_uHPE0LzwSpVbWigaDS-jcoCNSXjAj01VgFY70wXHivPiBiAYYEHUiqG8GjBMWrPvUNqDXALzIaXOITxBwMAAQK",
+          "description": "DS투자증권은 LIG D&A의 부정당업자 제재 결정이 중단기 실적에 미치는 영향은 제한적일 것이며, 방산 최선호주 의견을 내놓았습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:16:10",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "468670",
+      "name": "브릴스",
+      "market": "KOSDAQ",
+      "current_price": 16840,
+      "change_rate": 3.63,
+      "signal": "중립",
+      "scores": {
+        "technical": 3.67,
+        "supply_demand": 6.67,
+        "valuation": 4.75,
+        "material": 8.0,
+        "total": 5.59
+      },
+      "reason": "기술적 추세는 혼조세이며 거래량은 낮은 편입니다. 외국인 순매수가 유입되었고 호가 잔량도 매수 우위를 보여 수급은 긍정적입니다. EPS와 PER이 0이지만, 낮은 부채비율과 양호한 영업이익률 및 영업이익 성장률을 보이고 있습니다. 최근 코스닥 상장 후 로봇 모듈화 플랫폼 솔루션 기업으로서 AI 로봇 시장 성장 기대감이 큽니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.56,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.6,
+        "key_news": [
+          "브릴스, 코스닥 상장 첫날 127% 급등 (10월 1일)",
+          "로봇 모듈화 플랫폼 솔루션 기업",
+          "AI 로봇 실증 및 현대차 등과 협업"
+        ],
+        "catalyst": "로봇 모듈화 플랫폼 솔루션 기업인 브릴스가 코스닥 상장 후 AI 로봇 시장 성장에 대한 기대감을 받고 있으며, 현대차 등 대기업과의 협업 소식도 긍정적입니다."
+      },
+      "news": [
+        {
+          "title": "[특징주] 브릴스, 코스닥 입성 첫날 127%↑",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjPfyFKvhQ_Oa7ecxceHn6bd8VjucECR5bRgWTogiUMpASMd-_xKsXMT_Jsq-qLBumj-tIQrpF6SEHsvdgsEwM3JX8IGhhxoL5Q-tp_8SBVCjim5pEPGZJrqXoLYumt9scM0UrFjbKR_0ahg==",
+          "description": "피지컬 인공지능(AI) 및 온디바이스 AI 기반 로봇 모듈화 플랫폼 솔루션 기업 브릴스가 코스닥 상장 첫날 127% 넘게 오르며 강세를 나타냈습니다."
+        },
+        {
+          "title": "로봇기업 브릴스, 코스닥 상장 첫날 120% 급등",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsy4qtjgQWy9sN-vCLzjpIs6J9ICQF2XbpZSJqlW46z3i88Aprh-P2zIaJpZBovwWCM2XooJyKN6SfhISvKUW1buwvXU86hr-jAP6pRJv1lkukOb5KxqnnFVsLS0d7cVw65Vl0b4LvxZ2zxw-GZV-deg==",
+          "description": "브릴스는 로봇 시스템 설계부터 소프트웨어 개발, 생산, 설치, 사후관리까지 전 과정을 내재화한 로봇 모듈화 플랫폼 솔루션 기업입니다."
+        },
+        {
+          "title": "[코스닥 새내기] 반짝 상승 '브릴스', 연착륙 신고식",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZC71tuYXAjJceUEbCR4DdR8DlsWr46Qnwltif6O4f1HvU4UVrQoEPgArsi1qoMpYKuYhV_Sy9RDs6uRlwAyQP9YVY-Dri3qy4hyqO_WXSJLNnziheqhKQ-O0dwetmVhOtlPYyCb0Z-y06bb7cOW9c13aWombtkA==",
+          "description": "브릴스는 공모를 통해 확보한 자금을 기반으로 수직적 지리적 확장 전략을 전개해 연구개발 센터 확장 및 피지컬 AI 기술 고도화에 활용할 계획입니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:16:10",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "425040",
+      "name": "티이엠씨",
+      "market": "KOSDAQ",
+      "current_price": 16120,
+      "change_rate": 6.26,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.0,
+        "supply_demand": 6.83,
+        "valuation": 3.5,
+        "material": 7.5,
+        "total": 5.72
+      },
+      "reason": "강세 기술적 추세를 보이며 최근 단기 및 중기 수익률이 높지만, RSI가 과매수권에 진입했습니다. 외국인 매수세와 매우 높은 호가 잔량으로 수급이 강하나, 밸류에이션 지표가 저조합니다. 최근 반도체 특수가스 사업의 성장 기대감이 주가에 긍정적으로 작용하고 있습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.57,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.5,
+        "key_news": [
+          "티이엠씨 주가 장중 8.11% 상승 (10월 21일)",
+          "고순도 헬륨가스 양산 및 DRAM/로직 반도체용 디보란 공정 진입 기대"
+        ],
+        "catalyst": "오늘 장중 주가 상승세가 관찰되었으며, 중장기적으로 고순도 헬륨가스 양산 및 반도체 특수가스(디보란) 공정 진입이 성장 동력으로 작용할 것으로 기대됩니다."
+      },
+      "news": [
+        {
+          "title": "티이엠씨 주가, 10월 21일 장중 16400원 8.11% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaZvP3NO4JXThIxqqMRD8twh9KWFItYxi7BDKHXcexk3LIN0OCsJovXzdeiKum9O0kpU7sVbUxVKwphnM2G0klJZ2JwMLaBZz_-_YWOjE-mw93i8lKIeVZcBC5f5sd0pg2w6rYikWB6kwkjVSlHeacV8fToQZwbPXSDvA=",
+          "description": "21일 오전 11시 0분 기준, 네이버페이 증권에 따르면 티이엠씨의 주가가 상승세를 보이며 16400원에 거래되고 있습니다."
+        },
+        {
+          "title": "디보란 신규 가스에 수익성 개선, 성장 초입인가 매출 둔화 함정인가 #티이엠씨",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnq3mUcPz1twuIpo1XUZUP9iSo17qQXHncGLUNSi4NNlJfgi6RTgDnriVtGPXYb6fmyrkhM6Li4kVapSx9Lj1KBu2o9LmUcXz7E0_qPcyBKTUL99X1pghZPwEo3tNy8yESmUaohmo=",
+          "description": "티이엠씨는 2025년 연결 기준 수익성 개선을 보였으며, 올해 상반기 고순도 헬륨가스 양산과 DRAM·로직 반도체용 디보란 공정 진입이 중장기 성장 재료로 꼽힙니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:16:10",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "000270",
+      "name": "기아",
+      "market": "KOSPI",
+      "current_price": 110600,
+      "change_rate": -1.6,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.25,
+        "supply_demand": 6.0,
+        "valuation": 5.0,
+        "material": 5.0,
+        "total": 5.43
+      },
+      "reason": "혼조세 기술적 추세와 보통 수준의 거래량을 보이고 있으며, 외국인 순매도세가 지속되는 가운데 기관은 혼조 양상을 보였습니다. PER과 PBR은 낮은 수준으로 저평가되어 있으나, EPS 및 영업이익 성장률이 음수를 기록하여 펀더멘탈에 대한 우려가 있습니다. 전반적으로 시장 환경에 대한 복합적인 뉴스가 존재합니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.54,
+      "news_analysis": {
+        "sentiment": "중립",
+        "sentiment_score": 0.0,
+        "key_news": [
+          "기아 주가 하락 중 (10월 21일)",
+          "AI 인프라 부채 및 수익성 우려로 기술주/반도체주 하락 영향",
+          "현대차그룹 '스스로 진화하는 공장' 시동, 조지아 공장 낙수효과 기대"
+        ],
+        "catalyst": "오늘 장중 주가 하락이 보고되었으나, 현대차그룹의 혁신적인 공장 투자 및 미국 조지아 공장의 낙수효과에 대한 긍정적 전망도 함께 존재합니다."
+      },
+      "news": [
+        {
+          "title": "기아 주가 하락 중",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaVa0AJDFU0n9-O8pFH6J42dzc-VSAnHYCBcm3Cr_P0wKJ1au8P6DGPQfw6zAdlJ7zRkSGJozpXkzRAXltf-QaxS0U06Hn7HnKal-_f827VpIJwn_RzCgSvGJaAIfm6v5HJZxD21nXnY1ST4nrzJFsfdJdS6sYatwdL72ptQ==",
+          "description": "기아 주가가 21일 오전 9시 30분 기준으로 1.07% 하락 중 입니다."
+        },
+        {
+          "title": "Kia Corp 주식 뉴스 (000270)",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdKUzwO8S2HyGfvs-KbB0tdYmU661vx4xeV2RLmY99H3TPisWQt7QEU4-KsxbyEf1ehtAIlxO16dkP-FoEPnMElXZg4wlGy_cBKG7RXvIBIeZfpKy9dhrxjCC32aVooONZdWW4OqwBtntRung=",
+          "description": "미 증시의 AI 인프라 부채 및 수익성 우려에 따른 기술주·반도체주 폭락이 시장에 영향을 주었으나, 현대차그룹의 '스스로 진화하는 공장' 시동 소식과 기아 조지아 공장 낙수효과 재현 평가도 있었습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:16:10",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "034730",
+      "name": "SK",
+      "market": "KOSPI",
+      "current_price": 480000,
+      "change_rate": 12.15,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.25,
+        "supply_demand": 4.33,
+        "valuation": 7.29,
+        "material": 9.5,
+        "total": 5.97
+      },
+      "reason": "혼조세의 기술적 추세 속에서도 강한 당일 상승률을 보였지만, 호가 잔량은 매우 낮아 단기적인 변동성이 예상됩니다. PEG, ROE, EPS 및 영업이익 성장률 등 밸류에이션 지표가 매우 우수하며, 행동주의 펀드의 저평가 제기와 기업가치 제고 기대감이 강력한 호재로 작용하고 있습니다. 외국인 매수세가 유입되었으나 기관은 순매도하여 수급은 혼조 양상입니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.9,
+        "key_news": [
+          "SK, 행동주의 펀드 저평가 제기에 12%대 급등 (10월 21일)",
+          "얼라인파트너스자산운용, SK 지분 보유 공개 및 기업가치 저평가 지적",
+          "SK하이닉스 지분 가치 중복 할인 문제 제기",
+          "연내 기업가치 제고 계획 기대"
+        ],
+        "catalyst": "행동주의 펀드 얼라인파트너스자산운용이 SK 지분 보유 사실을 공개하며 SK하이닉스 지분 가치 저평가 문제를 제기, 연내 새로운 기업가치 제고 계획에 대한 기대감을 높이며 주가 급등을 이끌었습니다."
+      },
+      "news": [
+        {
+          "title": "[특징주] SK·SK하이닉스, 행동주의 펀드 저평가 제기에 동반 '강세'",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZBmIj_3H0ysin2zLlnHXzC3JYYqVemnHSl0Sp8QgSBgzKwTYF1Rmec2p3zAHL_a8m1A3XO9PZZdLsB1b6pB37Lu31eU-DKNEXHIv1yEIk0uiFbZ9iAB1UpRR4dRRdiF9zY7HHHlO9I6Bd69JGmHF9jkmil5vcwHuYWYVRGMv3bj4Lkjx_2eVTAyfUDw==",
+          "description": "행동주의 펀드 얼라인파트너스자산운용이 SK 지분 보유 사실을 공개하며 기업가치 저평가 문제를 제기하면서 SK 주가가 강세를 보였습니다."
+        },
+        {
+          "title": "얼라인 지분 1.5% 보유 소식에…SK 13%대 급등[종목NOW]",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEc941Yt_E_slfumXu9SQS7DwEPFqJAbF6MUWz1hArpqRlN5xnDxEVdYyV6ciu5BY4jZifB9BvfScHSL2nGnc2bfRjuhhHnuPYt9MaJU3025dqcaIrfBhk7TPJ3OEKN3WV9eEsha-ZUE8=",
+          "description": "얼라인은 SK가 SK스퀘어를 통해 보유한 SK하이닉스 지분 가치가 중복 할인되고 있다고 지적하며, SK의 순자산가치(NAV) 대비 현재 시가총액이 75% 낮은 수준이라고 평가했습니다."
+        },
+        {
+          "title": "노무라, SK하이닉스 주가 270% 상승 여력 제시···투자 기회로 주목",
+          "link": "https://vertexaisearch.google.com/grounding/documents/aHR0cHM6Ly9iZW56aW5nYWRhaWx5LmNvLmtyLz9wPTE1MTcxOA",
+          "description": "노무라가 SK하이닉스에 대해 '매수' 투자의견과 470만원의 목표주가를 제시하며 268% 상승 여력을 전망했습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:16:10",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "108490",
+      "name": "로보티즈",
+      "market": "KOSDAQ",
+      "current_price": 239500,
+      "change_rate": 0.21,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.0,
+        "supply_demand": 4.83,
+        "valuation": 3.2,
+        "material": 8.5,
+        "total": 5.11
+      },
+      "reason": "로봇 산업 테마 속 생산 능력 확대 및 신사업 확장 기대감으로 재료 점수는 높지만, 높은 PER과 음수 ROE 등 밸류에이션 지표가 좋지 않아 주의가 필요합니다. 외국인 순매도세가 지속되고 있습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.51,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.7,
+        "key_news": [
+          "로보티즈, 다이나믹셀 출하 확대 및 휴머노이드 사업 주목",
+          "LS증권, 로보티즈 목표가 329,000원 제시하며 'BUY' 의견",
+          "로보월드 국제 컨퍼런스 개최, 로봇·AI 산업 모멘텀 기대"
+        ],
+        "catalyst": "스마트 액추에이터 '다이나믹셀'의 글로벌 연구개발 수요 증가와 생산 능력 확대, 휴머노이드 등 신사업 확장 기대감."
+      },
+      "news": [
+        {
+          "title": "로보티즈 주가 24만원대 올라서…다이나믹셀 출하 확대와 휴머노이드 사업 주목 - CBC뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVRMUwlNHEW31fFWiWT65fY1tOJGcRXtbmnR3eOyTMSQgRrssPSlqPLXUZ8o3G0Cg3TRUY5z0piapjyc9FXHdBoZvPWrOCQjc_DoCWgBrxuFLT-rOXn698CgvbgKaowgQsvOqdmZs5vqmTtWcT962XeYHV",
+          "description": "로보티즈가 상승세를 보이며 24만원대에서 거래되고 있으며, LS증권은 다이나믹셀 출하 확대와 휴머노이드 사업 확장에 주목했습니다."
+        },
+        {
+          "title": "[리포트 브리핑]로보티즈, '확인된 수요, 이제는 생산 확대' 목표가 329,000원 - LS증권 - 뉴스핌",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHu9KDPXTds4zvzpV85J1uTfUU8k1L8GLk4X-BQEMrTHOpsCRdI_fnJj0zHZ4jTgES-Rcu2iQdFOpEeEg5E6w00UbJisYH1GymmB_nQ0IQai-fMrUKav5t56KzReaJVVLchKj-zTYCsGA==",
+          "description": "LS증권은 로보티즈에 대해 'BUY' 투자의견과 목표가 329,000원을 제시하며 글로벌 연구개발 수요 증가에 따른 생산 능력 확대를 긍정적으로 평가했습니다."
+        },
+        {
+          "title": "로보티즈 주가 - 실시간 차트 · 주가 전망 · 투자정보 - 알파스퀘어",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbUdsASqMpwnOVd3Ls5CMqOEXTE67CjzEIMFq020a0RReZr2vvOPFb_AYNRYuRs8Dzfi7sX4rGWhqViHHdVVGOyaWfMvhyUy9yfG4jxBngdl8LVJvPvWYvTtlGq0nW1PVMrwhQGaeLMjMvEHTtzsdPk2w",
+          "description": "로보티즈는 서비스로봇 솔루션 및 로봇부품을 연구개발, 생산 및 판매하며 모바일 로봇 하드웨어 플랫폼 제작 기술과 자율 주행 기술 등을 확보하고 있습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:16:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "043260",
+      "name": "성호전자",
+      "market": "KOSDAQ",
+      "current_price": 28400,
+      "change_rate": 5.77,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.75,
+        "supply_demand": 6.0,
+        "valuation": 6.0,
+        "material": 5.0,
+        "total": 5.48
+      },
+      "reason": "높은 호가 잔량 비율과 PEG, ROE, EPS 성장률 등 밸류에이션 지표가 긍정적이나, 외국인 순매도세가 지속되고 있고 전반적인 시장의 방향성이 불분명하여 중립적인 시그널입니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.55,
+      "news_analysis": {
+        "sentiment": "중립",
+        "sentiment_score": 0.0,
+        "key_news": [
+          "성호전자 주가, 10월 21일 장중 27450원 2.23% 상승"
+        ],
+        "catalyst": "당일 주가 상승 소식 외에 특별한 개별 호재는 부재하며, 시장 전반의 반도체 매도세 흐름 속에서 중립적인 시각을 유지합니다."
+      },
+      "news": [
+        {
+          "title": "성호전자 주가, 10월 21일 장중 27450원 2.23% 상승 - 톱스타뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjHHxdLby06zy2wInkVSb8dRlrML5T_aXIV1VgW3pRUDlo7jt_GXxYSpsdzvIVFPSjTj9j9Yz60XxBkXws9x5czNmWQ8osZ9RKSgMoiEfDOx-szf6EnJWcC0AVWA6veXvTE9CbIvv55fq2HJJZxZsF6pBu328YeifCsQ==",
+          "description": "21일 오전 기준 성호전자 주가가 지난 종가 대비 상승하여 거래되고 있습니다."
+        },
+        {
+          "title": "성호전자 뉴스 | 알파스퀘어 종목이슈",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-ujAiQJvOjPV04RwuDWoDrBFqhZV4Nk99callM5vQ50BdOpFhdUWwvNH2XeCG8HYaG6qDz5J-E9-HESWMWtYNuJOWHd49NYwvL3LXHITBHzGLdgXTu6UDw9jQId0ZPjeicYnjam2qdTESulQAkowyqNr8pNcAfiOThzg==",
+          "description": "코스피가 급락하는 가운데 주식 초고수들은 삼성전자와 SK하이닉스 등 반도체주를 매도하고 LG전자와 에이피알 등 낙폭이 큰 종목을 저가 매수했습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:16:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "353200",
+      "name": "대덕전자",
+      "market": "KOSPI",
+      "current_price": 130500,
+      "change_rate": -1.36,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.0,
+        "supply_demand": 6.17,
+        "valuation": 6.83,
+        "material": 8.0,
+        "total": 5.93
+      },
+      "reason": "3분기 영업이익 급증 전망과 고부가 제품 비중 확대로 인한 긍정적인 재료가 있으나, 매우 높은 PER과 최근 외국인 순매도세가 부담 요인으로 작용하고 있습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.59,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.6,
+        "key_news": [
+          "대덕전자, 3분기 영업이익 229% 급등 전망",
+          "대덕전자, 삼성전기 대규모 반도체 기판 공급계약 수혜",
+          "반도체 기판 가격 인상 및 증설 투자"
+        ],
+        "catalyst": "FC-BGA 및 다층인쇄회로기판(MLB) 등 고부가 제품 비중 확대와 판가 인상 효과가 3분기 실적 개선을 견인할 것으로 전망되며, 삼성전기와의 대규모 계약도 긍정적입니다."
+      },
+      "news": [
+        {
+          "title": "“기판 공급 부족 수혜… 대덕전자, 3분기 영업이익 229% 급등 전망” ｜주간동아",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3I-0bj8tidrWfBHTKV6kRQmn4lAj5RRL-bUu6QpBF6QnqUffcS65VtZO-LKihIL8E4yVMpBS_fBuvDwAh-JVErLepNLKYKqNKRc9s3JcDZwxO7D6V5GQtsnmHBrdmys8t7te6_JohyW1c4QbpVnMM83p8",
+          "description": "미래에셋증권은 대덕전자의 3분기 영업이익이 전년 동기 대비 228.7% 급증한 804억 원을 기록할 것으로 전망했습니다."
+        },
+        {
+          "title": "[대덕전자 주가전망] 호재 터진 날 -5.8% 급락 외인 41만 주 던졌습니다 세력 의도 공개",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMbd5xjDrj5EjqX5B34ub4MhPa8fPM0OBwT6UxV5-Pj6m3pL3DHWEYMAkkEQmu2HwRROTcoZIXyDR28MsXI1aV5WTwmbQ3Y43UcG6obFzqPCAGk_gLIQ04rlDHgeSofJZPuq6XGw==",
+          "description": "삼성전기와의 대규모 반도체 기판 공급계약 호재에도 불구하고 외국인 순매도로 주가가 급락했습니다."
+        },
+        {
+          "title": "대덕전자 353200 코스피 - 다음 금융 - Daum",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1lY6HfPw0mP36EdZgOzY44qvaABL0Mneij9c6th2U34UdrYQTMvcb4dT6jZYKS6Ji3CtPKW6FPe9ftZPIZETILc-EqgvJE7HCLZ-MGwKK66IeOyLUSoFQikyJVGi_qVx1egrCXm8N0w==",
+          "description": "대덕전자 주요 뉴스로는 삼성전기 3605억 계약과 반도체 기판 가격 인상 관련 기사가 있습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:16:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "055550",
+      "name": "신한지주",
+      "market": "KOSPI",
+      "current_price": 92100,
+      "change_rate": 0.33,
+      "signal": "중립",
+      "scores": {
+        "technical": 2.25,
+        "supply_demand": 4.17,
+        "valuation": 4.6,
+        "material": 7.5,
+        "total": 4.18
+      },
+      "reason": "롯데손해보험 인수 및 비이자이익 성장 동력 확보 등 긍정적인 재료가 있으나, 하락 추세와 높은 부채비율, 낮은 RSI 등 기술적 지표가 부정적입니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.42,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.5,
+        "key_news": [
+          "신한지주, 중·장기 비이자이익 성장 동력 확보 (롯데손보 인수)",
+          "IBK투자증권, 신한지주 투자의견 '매수' 및 목표가 140,000원 제시",
+          "신한지주 3분기 지배주주 순이익 시장 기대치 부합 전망"
+        ],
+        "catalyst": "롯데손해보험 지분 인수를 통한 비은행 사업 포트폴리오 강화와 이익 창출력 확대, 안정적인 이익 창출력 기반의 주주환원 정책 유지 기대."
+      },
+      "news": [
+        {
+          "title": "신한지주 주가 하락 중 - 아시아뉴스통신",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3eIft8GQWkO9G8eyyyX13AXEAD7AYvX31BmfSushWVLD4AWeAcuf2D-l_H1IucpQf_ilpRqr77SWr8w4iXSb6v5-m4-JGbG9nsALpfv794FLGYTKEvF_lNzselJ54utZdV48ALLJkEjL6qbw_ZbBwbK2ZKmox-Lns81NR",
+          "description": "21일 오전 신한지주 주가가 하락 중인 것으로 나타났습니다."
+        },
+        {
+          "title": "[리포트 브리핑]신한지주, '중·장기 비이자이익 성장 동력 확보' 목표가 140,000원 - IBK투자증권",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsiktvjVPlM82cApzw1MWxBmmNsHlrwUfsJfbf40h_L4bUiwgNcNfZ98MV55KIfv-aJEpDatpRMwXi7z99o8MzpdSbd4fvFhHjNvYlvYnBpPjfo6J8n0YhXfk9XOj9sn9At7VaOZ5Z7g==",
+          "description": "IBK투자증권은 신한지주에 대해 '매수' 투자의견과 목표가 140,000원을 제시하며 롯데손해보험 인수를 통한 중·장기 비이자이익 성장 동력 확보를 긍정적으로 평가했습니다."
+        },
+        {
+          "title": "신한지주, 롯데손보 인수로 비이자이익 성장 동력 확보 - 메디컬투데이",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG67tutJbnwNu2YlVR6ht5oEqDAU1whfjlj2iAvJ0mZ1vyTulcudabzlf6c5GcOVMAWRUxBijABEjgF1La1x8u0aEim-W4XJgq0M98aFQfid1mfyJKDMBC75bM8mXE16SAE84AWIJ4Je9ESPBK2Al4A3zV-OUSb",
+          "description": "신한지주가 롯데손해보험 인수를 통해 비은행 사업 포트폴리오 강화와 이익 창출력을 확대할 것으로 기대됩니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:16:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "007660",
+      "name": "이수페타시스",
+      "market": "KOSPI",
+      "current_price": 95600,
+      "change_rate": -0.31,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.5,
+        "supply_demand": 5.83,
+        "valuation": 5.8,
+        "material": 6.5,
+        "total": 5.53
+      },
+      "reason": "고사양 제품 비중 확대와 가격 인상으로 인한 수익성 개선 기대감은 존재하나, 높은 PER과 EPS 성장률이 음수인 점은 밸류에이션 부담으로 작용하고 있습니다. 최근 외국인/기관 동반 순매도세도 관찰됩니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.55,
+      "news_analysis": {
+        "sentiment": "혼재",
+        "sentiment_score": 0.3,
+        "key_news": [
+          "이수페타시스, 고사양 제품 비중 확대 및 판매가격 인상으로 수익성 개선 전망",
+          "미국 반도체주 하락에 따른 국내 기판주 동반 약세"
+        ],
+        "catalyst": "AI 가속기용 고사양 제품의 비중 확대와 판매 가격 인상이 실적 개선을 견인할 것으로 보이지만, 반도체 업황 전반의 약세는 부담 요인으로 작용할 수 있습니다."
+      },
+      "news": [
+        {
+          "title": "이수페타시스 뉴스 | 알파스퀘어 종목이슈",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_BLB6-SnK4y3kP0Vf4Oxp_dtUvVtAdxDpDG05p2Wet6T8Sg2N0ms2W92jdrdRTnJa55S-pPvT9_2beCiHhqS7g-L4ZdneQgvktI2cK9T5WoymgAAyHZqPUi9hQpMpjXVK77uaFkK_ZhyKqTsRa9lg6kJ3yr81D9aN7w==",
+          "description": "다올투자증권은 이수페타시스가 고사양 제품 비중 확대와 판매가격 인상에 힘입어 수익성 개선을 이어갈 것으로 전망하며, 미국 반도체주 하락에 기판주도 동반 약세를 보였습니다."
+        },
+        {
+          "title": "이수페타시스 뉴스 | 리틀빗",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFsaAGqzMA-3Zl0ObYl_sPD5azghDctR1KjspQb5jDzrqQVzhY1Bs8F0C7kv2RK_6FG5K44Sa7f8v-vNjkcR--bSozQ2D-_1RxY-Xh2e3ScLocZZVk9kUS5kpBqMvXpy780VQlN-cFMFBjUKBQMuhFrn-jkxsjtA==",
+          "description": "메리츠증권은 AI 수요와 가격 인상으로 이수페타시스 3분기 영업이익이 65% 증가할 것으로 전망했습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:16:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "003490",
+      "name": "대한항공",
+      "market": "KOSPI",
+      "current_price": 26700,
+      "change_rate": 1.71,
+      "signal": "중립",
+      "scores": {
+        "technical": 3.75,
+        "supply_demand": 4.5,
+        "valuation": 2.8,
+        "material": 7.0,
+        "total": 4.31
+      },
+      "reason": "고유가에도 불구하고 3분기 영업이익 증가 및 2027년 실적 개선 전망 등 긍정적인 재료가 있으나, 높은 부채비율과 음수 ROE, EPS 성장률 등 밸류에이션 지표가 좋지 않아 중립적인 시그널입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.43,
+      "news_analysis": {
+        "sentiment": "혼재",
+        "sentiment_score": 0.4,
+        "key_news": [
+          "대한항공 3분기 영업이익 12% 증가 전망",
+          "KB증권, 대한항공 목표가 42,000원 유지하며 'BUY' 의견",
+          "고유가에도 화물 및 여객 사업 구조적 이익 개선"
+        ],
+        "catalyst": "고유가 상황에도 불구하고 화물 및 여객 사업의 구조적 이익 개선으로 3분기 영업이익이 증가할 것으로 예상되며, 2027년에는 유가 하락, 합병 비용 감소 등으로 영업이익 급증이 기대됩니다."
+      },
+      "news": [
+        {
+          "title": "대한항공 주가 상승 중 - 아시아뉴스통신",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECHH-h3n_-K-j_68U15brJVIgQpTrroSIdzmdme575pZ1wUT0iZYu8mAMswcr06s5zERgbyuxwiC8-v8PZ9gKIjrfsB983_7sX8rzGyqiOXoq2Wi_KdbpS3OOiW7Xb26MWyZngNAU7IDvOfQ9Gu8E9qOAlgARFjChQorSi",
+          "description": "21일 오전 대한항공 주가가 상승 중인 것으로 나타났습니다."
+        },
+        {
+          "title": "[리포트 브리핑]대한항공, '고유가 충격 어디로 갔나요? 영업이익 12% 증가' 목표가 42,000원 - KB증권 - 뉴스핌",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGW9v9689H1cQppHd0YGfA9IrilbQ4frsqmEtzjMObIBoPK3P7wY78JBxm_xiVG0OtoBHKePukHBon_4GMqROft4-g19BwLYR9xM3bkT9FXFxmR18-PtsTV4PxtRgGtXfDerQ2Pkkm0dA==",
+          "description": "KB증권은 대한항공에 대해 투자의견 'BUY'와 목표주가 42,000원을 유지하며 3분기 영업이익 12% 증가와 2027년 영업이익 급증을 전망했습니다."
+        },
+        {
+          "title": "대한항공 003490 코스피 - 다음 금융 - Daum",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAZUrQyPAhfhdMUORNRtCxPdlBGX5839_LCI4-GuDGlNSIGbTkLitlXEO8cC_2ZATx4E4NkYyGGqEaL57i4Uo8ctpU-e66RXOwfqIss7G3AnxhlA1XQzdQc0WsZkRCNITb_JzOYxAurQ==",
+          "description": "대한항공 관련 뉴스로는 '업무 기록 사라졌다'는 직원 반발 기사가 있습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:16:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "market": "KOSPI",
+      "current_price": 413500,
+      "change_rate": -0.12,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.75,
+        "supply_demand": 4.5,
+        "valuation": 2.6,
+        "material": 6.0,
+        "total": 4.42
+      },
+      "reason": "이동평균선이 정배열을 보이며 기술적 추세는 긍정적이나, 적자 PER과 ROE 등 펀더멘탈 지표가 좋지 않고 부채비율도 높은 편입니다. 외국인 순매도세가 지속되고 있습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.44,
+      "news_analysis": {
+        "sentiment": "중립",
+        "sentiment_score": 0.2,
+        "key_news": [
+          "LG에너지솔루션 주가 412000원 기록",
+          "미국, 중국 원료 규제에 LFP 양극재 국산화 속도"
+        ],
+        "catalyst": "LFP 양극재 국산화 및 K-배터리 공급망 재편 움직임은 장기적으로 긍정적인 산업 환경을 조성할 수 있으나, 당장의 기업 실적에 대한 직접적인 호재는 부재합니다."
+      },
+      "news": [
+        {
+          "title": "LG에너지솔루션 주가 - 실시간 차트 · 주가 전망 · 투자정보 - 알파스퀘어",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBMz51yh5GZVXUrnMGaTFiVjreOkPw-JM9T8DYHBaJPYIVtnVa5ARCxH-wNRsbzTIKfpxU2by0UrfzQyGK0XrY39tu4LJ-7zkKvmtP8seaJ0_qkfGiRW8bpyeJh2HgI9g33uvHzcDREgPeKbnw9pE6k20",
+          "description": "21일 현재 LG에너지솔루션 주가는 412000원에 거래되고 있습니다."
+        },
+        {
+          "title": "LG에너지솔루션 373220 코스피 - 다음 금융",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmP4a3Z72PXfxcI3A6EzNUFAx5o1-tsiOn4WjkPNYjqUp8LCGPQFm01-8vxNI8VF9lI1u-FKArSmYbbdNSw5CAieiE4j-xI8vV0Y1VlwkUaC-BGKftmPSIKsfOr5BPQNI2IyDpdzx--g==",
+          "description": "미국의 중국 원료 규제에 따라 LFP 양극재 국산화 속도가 빨라지며 K-배터리 공급망 재편 움직임이 나타나고 있습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:16:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "010950",
+      "name": "S-Oil",
+      "market": "KOSPI",
+      "current_price": 145900,
+      "change_rate": 1.32,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.25,
+        "supply_demand": 4.5,
+        "valuation": 6.0,
+        "material": 7.0,
+        "total": 5.1
+      },
+      "reason": "고급 기유 경쟁력 강화와 AI 관련 신사업 확장 기대감이 긍정적이나, 높은 PER과 기관 순매도세, 지정학적 리스크 등이 복합적으로 작용하여 중립적인 시그널입니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.51,
+      "news_analysis": {
+        "sentiment": "혼재",
+        "sentiment_score": 0.4,
+        "key_news": [
+          "S-Oil, 고급 기유 경쟁력 강화 및 AI 관련 신사업 확장 기대",
+          "이수화학과 1조1600억원 규모 중질등유 공급계약 체결",
+          "미국·이란 전쟁 국면 속 석유에너지 관련주 혼조세"
+        ],
+        "catalyst": "기존 윤활기유 사업의 데이터센터용 액침 냉각유 확장, 이수화학과의 대규모 중질등유 공급계약 체결 등 신성장 동력 확보가 긍정적이나, 중동발 지정학적 리스크는 변수로 작용합니다."
+      },
+      "news": [
+        {
+          "title": "[리포트 브리핑]S-Oil, '고급 기유 경쟁력에 AI라는 새 수요처가 붙는다' 목표가 210,000원 - IBK투자증권 - 뉴스핌",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0ncQu7VRRqO0NI2-wwfWe0ZzYZQcmZyTwDNUKTlY0U1mR753iibM-cB8rh2CJ1dzlPMfazVGU_gDZFH1p5WHEGgTohSHo5ppDQdSbokzrFd5QuEihEdzzvnlgTuDAShyOolfHmFwLBg==",
+          "description": "IBK투자증권은 S-Oil에 대해 '매수' 투자의견과 목표가 210,000원을 제시하며 윤활기유 사업의 AI 데이터센터용 액침 냉각유로의 확장을 긍정적으로 평가했습니다."
+        },
+        {
+          "title": "S-Oil 주가 - 실시간 차트 · 주가 전망 · 투자정보 - 알파스퀘어",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1knBeMEGsGUd1RLNm80S_XcRbQvny3JmsppfY0Yu7NRLaD9uU5gCE5bhBM-7HcD_QUMCPRu9RdirzdBPsY5RzjX6C8w1--bsOpUhZFr14rmdwu5q_HeVbaSObNFL-Z-eD2b_eD3vvbalqxavxubQbbus=",
+          "description": "S-Oil이 이수화학과 1조1600억원 규모의 중질등유 공급계약을 체결했습니다."
+        },
+        {
+          "title": "[속보] 미국·이란 전쟁 국면 속 석유에너지 관련주 혼조…흥구석유·SK이노베이션 상승, S-Oil 하락 - CBC뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBMHUS9nFN6xCHcx7-w-ejHZzM8l-x2TdoHSGMG36dWpj2c9L3O0huw6tV555bUtiBqFS4-_UxYNKYDL5qY24mPzqy6ATVTpyNvisOiBh2Ihe4etAzfPHcszQXJulnIlaQ5Nab547vJuu_Qw-4BTSx3OMY",
+          "description": "미국과 이란의 군사적 충돌 긴장감 속 국내 석유에너지 관련주들이 혼조세를 보이며 S-Oil은 하락세를 나타냈습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:16:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "078600",
+      "name": "대주전자재료",
+      "market": "KOSDAQ",
+      "current_price": 109200,
+      "change_pct": 5.2,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.0,
+        "supply_demand": 5.83,
+        "valuation": 2.8,
+        "material": 6.0,
+        "total": 5.0
+      },
+      "reason": "높은 PER과 낮은 ROE, 음수 EPS 성장률 등 밸류에이션 지표가 좋지 않으나, 700억 규모 전환사채 발행을 통한 자금 조달은 긍정적입니다. 단기적으로 외국인 수급이 혼재되어 있습니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "혼재",
+        "sentiment_score": 0.2,
+        "key_news": [
+          "대주전자재료, 700억 규모 무이자 전환사채 발행 결정",
+          "대주전자재료 주가, 10월 16일 장중 6.51% 하락"
+        ],
+        "catalyst": "700억원 규모의 무이자 전환사채 발행은 운영 자금 확보 측면에서 긍정적이나, 최근 주가 하락과 결합되어 중립적인 시장 반응이 예상됩니다."
+      },
+      "news": [
+        {
+          "title": "대주전자재료 주가, 10월 16일 장중 104900원 기록 6.51% 하락 - 톱스타뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqWXzYaUnGHUucmxW_BP0HMnmDLCGVHEhqSDATeXjufZjr8qtnjuwU_UaHSIAjEofb259NzQkS2Rz9H3wiBaOcFrEbdO3li5pbOVNGCb3MYgOeWcxdMGlCIB0RYeN8I8_b7FSC-M-0O2C-6_5JwuK5HgUwBaqH8dDDSQ==",
+          "description": "16일 오전 대주전자재료 주가가 지난 종가 대비 6.51% 하락한 104900원에 거래되었습니다."
+        },
+        {
+          "title": "[메자닌 투자파일] 대주전자재료, 700억 무이자 CB…콜옵션 주목 - 블로터",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFi9UvHPZA0PqjRtPyWtV6vUN2YagJlyMr9PNDDhsxnSYk4jvZdvF-K2usXqgvZlKs7m9Td-tHd2LzVa6VAVmmRCRwAPc4KifxoPPRWMFripEPKEJGiY0jq9fIHFJNNsLyfEpqO5bOUqmVL7E-WKDB_eFZ",
+          "description": "대주전자재료가 700억원 규모의 무이자 전환사채를 발행하여 운영자금을 확보하며, 발행 물량의 절반에는 콜옵션을 설정했습니다."
+        },
+        {
+          "title": "대주전자재료 078600 코스닥 - 다음 금융",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQaqHOwJfIGv7qx4wpmWXwSl5qd2YxNlc0MPI4H_7sr5O-4P-x4XGY9WrgzC9rMRDhxpY7758j5Wfwz8X5RLKat2ebGZUpG4vgfZe3l-POF94aJCYA1RWLZKOcVTUYWw7N",
+          "description": "대주전자재료는 700억 규모 전환사채 발행을 결정했습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:16:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "290720",
+      "name": "푸드나무",
+      "market": "KOSDAQ",
+      "current_price": 1815,
+      "change_rate": 19.41,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.0,
+        "supply_demand": 4.17,
+        "valuation": 2.2,
+        "material": 5.0,
+        "total": 3.85
+      },
+      "reason": "사모펀드의 경영권 인수 소식은 긍정적이지만, 한국거래소의 시황변동 조회공시 요구와 실적 부진은 불확실성을 높이고 있습니다. 모든 펀더멘탈 지표가 부정적이며 하락 추세가 심화되고 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "급증",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.38,
+      "news_analysis": {
+        "sentiment": "중립",
+        "sentiment_score": 0.0,
+        "key_news": [
+          "그린하버파트너스, 푸드나무 경영권 인수 추진",
+          "한국거래소, 푸드나무에 현저한 시황변동 조회공시 요구"
+        ],
+        "catalyst": "사모펀드의 경영권 인수는 새로운 경영을 통한 기업 정상화 기대를 불러오지만, 한국거래소의 조회공시 요구는 기업의 실적 부진과 불확실성에 대한 시장의 우려를 반영하고 있습니다."
+      },
+      "news": [
+        {
+          "title": "[단독]그린하버, '랭킹닭컴' 푸드나무 품는다…355억에 경영권 인수 - 한국경제",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQo-2MNyIHGUFzEoZL71iLSnI2cIGvQPsD4VqjDOZftFUHfWMPhX7O6sJfvkKs7ATd26O3f6xSHZtq7q_cvqAjwDrvflQONAw_NjrWIRv8Qgh3sia-G8BDaNRdJBj_Y3jVAjrQGQOjww==",
+          "description": "사모펀드 운용사 그린하버파트너스가 닭가슴살 유통 플랫폼 '랭킹닭컴'을 운영하는 푸드나무의 경영권 지분을 약 355억원에 인수할 예정입니다."
+        },
+        {
+          "title": "한국거래소, 푸드나무에 현저한 시황변동 조회공시 요구 - 데이터투자",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFETEdYKcLqykuCCc-Y1LlZwYOPGkevjMgHCVjdZvybkL9y1ftpcHjc8E2xlYEXo0Pr6mUc7L9l-A2u1JKDzLDVB3X8SiTvvF4aaUYmQjxHWxFy-tIYRL22X9pjjBA_6FiF-4ZcRI8bBklCUUb32_9wQeKPIAmsqXOL",
+          "description": "한국거래소 코스닥시장본부는 푸드나무에 현저한 시황변동과 관련해 공시규정상 공시대상 정보가 존재하는지 조회공시를 요구했습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:16:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "226950",
+      "name": "올릭스",
+      "market": "KOSDAQ",
+      "current_price": 108100,
+      "change_rate": 10.76,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.75,
+        "supply_demand": 4.17,
+        "valuation": 3.4,
+        "material": 1.0,
+        "total": 3.71
+      },
+      "reason": "최근 황반변성 치료제 뉴질랜드 임상 2a상 시험계획이 반려되며 신약 개발에 대한 우려가 커졌습니다. 기술적 추세는 혼조세이나 52주 고점 대비 중간 위치에 있으며, 외국인 및 기관 수급은 중립적인 흐름을 보입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.37,
+      "news_analysis": {
+        "sentiment": "부정",
+        "sentiment_score": -0.8,
+        "key_news": [
+          "황반변성 치료제 뉴질랜드 2a상 시험계획 반려"
+        ],
+        "catalyst": "황반변성 치료제 임상시험 계획 반려로 신약 개발 지연 우려가 있음."
+      },
+      "news": [
+        {
+          "title": "올릭스, 황반변성 치료제 뉴질랜드 2a상 시험계획 반려에 하락",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzJLJwEBChJm4R3srcVMy-ocs-9VcCHzEoE4VYAvl8Ye2ID4KLh9KNFZ5AbjiSZAAA2uKromoql73onY_btjyDvIh3VMhwgqYfUmM5mVJHjvXW_5dLb9B3rMLxa1p0V_gjTPH2",
+          "description": "올릭스의 황반변성 치료제 OLX301A의 뉴질랜드 임상 2a상 시험계획이 윤리 기준 및 관련 법규 미충족으로 반려되었다."
+        },
+        {
+          "title": "올릭스, 美 FDA·DIA 콘퍼런스서 황반변성 RNAi 임상 성과 발표",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEB_fAbqzlz3c8UCnK0zz4C3ZNr08Vr2qASkYodwibo3HZE900zfTfUTf7_TrtWMzi-j95p-MtR36MqIlihbicM5tks9e3gHs1vhQJ3s3bOSH9aK9fdQKUHd7OBrUe2H2yAdnS2K-0DPMwqOWgbI3XuvDMJWD_Xx_NHigw",
+          "description": "올릭스가 미국 FDA와 DIA 공동 올리고핵산 치료제 콘퍼런스에서 황반변성 치료제 OLX301A의 임상 개발 성과를 발표하며 초기 효능 신호를 확인했다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:18:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "032830",
+      "name": "삼성생명",
+      "market": "KOSPI",
+      "current_price": 243000,
+      "change_rate": 2.53,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.5,
+        "supply_demand": 5.17,
+        "valuation": 2.6,
+        "material": 7.0,
+        "total": 5.03
+      },
+      "reason": "삼성생명은 오늘 장중 주가 상승 흐름을 보였으나, 밸류에이션 지표(PER 21.1, ROE 3.34%)가 상대적으로 낮아 부담이 있습니다. 52주 고점 대비 중간 위치에 있으며, RSI는 과매도 반등 구간에 진입했습니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.4,
+        "key_news": [
+          "삼성생명 주가 상승 중"
+        ],
+        "catalyst": "장중 주가 상승 흐름을 보이고 있으며, 시장 심리가 개선될 가능성이 있음."
+      },
+      "news": [
+        {
+          "title": "삼성생명 주가 상승 중",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5ao_WBkQaCmNWDNRUM52iyz36_Sy_a6sZ1O6EZzNc8qvGTyH4ksKypg7RTY3jal5yq0rjKdptVuONmjPCcNq0CEYr400AD_Nk9GlG5zeqmHtbChVMS5vsguhGMWns6j6F_D9At8VGHT9FBAuPhQ-f8Uf2X3mfmh-plJ_L5g==",
+          "description": "21일 오전 9시 32분 기준으로 삼성생명 주가가 3.16% 상승 중이다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:18:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "403870",
+      "name": "HPSP",
+      "market": "KOSDAQ",
+      "current_price": 50600,
+      "change_rate": 0.6,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.5,
+        "supply_demand": 6.67,
+        "valuation": 5.0,
+        "material": 8.5,
+        "total": 5.96
+      },
+      "reason": "HPSP는 최근 삼성증권의 목표가 상향 리포트와 함께 내년 이익 성장에 대한 기대감이 높습니다. 외국인과 기관 모두 20일 누적 순매수 우위를 보이며 수급 상황이 양호합니다. 밸류에이션 지표는 제공된 데이터가 없어 중립으로 평가되었습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.7,
+        "key_news": [
+          "삼성증권 목표가 상향 및 'BUY' 투자의견 유지",
+          "내년 이익 레벨업 기대",
+          "3분기 실적 컨센서스 부합"
+        ],
+        "catalyst": "높은 밸류에이션에도 불구하고 증권사의 긍정적인 목표가 상향 리포트와 내년 이익 성장 기대감이 주가에 긍정적으로 작용할 것으로 예상."
+      },
+      "news": [
+        {
+          "title": "HPSP 주가, 10월 21일 장중 51400원 2.19% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNZS39hkHeuXBmMq0QU4zRo5bZQpsMTnhMo5CVQdIxYepwU_MDxvgz5vJ9b30xR2symPu05dIrHv8uTSoY_bcN5_-OH7D9QRBekp3Krc6NmztNUezYyxYpm05PEWl53eklOZf9viNvOTDa-0mzw-5OebY3CfEamRZZcCs=",
+          "description": "21일 오전 10시 29분 기준 HPSP 주가가 상승 흐름을 나타낸다."
+        },
+        {
+          "title": "[리포트 브리핑]HPSP, '아직 한 발 남았다 ' 목표가 75,000원 - 삼성증권",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEIU31ceJkiyfDevdKZTxZLXtNvsiuBRY2TN1s4Z7tvfFeOlkrLHHLboRzkRbIgItxBQ-GAGPO_NBHeoewoh1DgZKCpMSyZJYvITWwy3Ls38ZEyRIMgrz0hCXosxhEP_CcCzvdqyj17-INgEA==",
+          "description": "삼성증권은 19일 HPSP에 대해 투자의견 'BUY'와 목표가 75,000원을 제시하며 내년 이익 레벨업을 기대했다."
+        },
+        {
+          "title": "HPSP, '고객사 추가 확보' 내년 상반기 가시화 - 금융소비자뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2QLFINIKtP68k83deb9U2IW0i_a5F6v1SwzIEGmMYj9clpcYiNVqevnMTSRzzR--nKEEvfV8iwIjVdFFnMcjPRPXo0UmD45EAd3JMsccdYc6NOhMY6v3LHY4OYMyams6vmvZiYA_HQ4Url-8YMPMJiWFIaNQ==",
+          "description": "HPSP는 NAND와 함께 국내 매출액이 다시 증가하기 시작했으나, 북미 파운드리향 매출 인식 지연 등의 영향도 있었다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:18:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "058470",
+      "name": "리노공업",
+      "market": "KOSDAQ",
+      "current_price": 66900,
+      "change_rate": -0.89,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.0,
+        "supply_demand": 6.5,
+        "valuation": 5.0,
+        "material": 8.5,
+        "total": 5.75
+      },
+      "reason": "리노공업은 AI 시대 비메모리 R&D 수혜와 4분기 생산 극대화에 대한 긍정적인 증권사 리포트가 있습니다. 다만, 기술적 추세는 하락세이고, 거래량이 전일 대비 감소하여 관망세가 필요합니다. 밸류에이션 지표는 제공된 데이터가 없어 중립으로 평가되었습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.58,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.7,
+        "key_news": [
+          "AI 시대 비메모리 R&D 수혜 전망",
+          "생산 정상화 및 4분기 생산 극대화 기대"
+        ],
+        "catalyst": "AI 및 비메모리 반도체 시장 확대에 따른 수혜와 생산 정상화 및 4분기 실적 개선 기대감."
+      },
+      "news": [
+        {
+          "title": "리노공업, AI 시대의 비메모리 R&D 수혜",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdzoaZ7ENsmGyFB8X7JYee7TRHQ9r0fZGaorZIU7TPKFRzxwDX-nT3osbYTsjsigvWty7GMjbLChlEcl0PCsD2316O_xZQnDe4zEWMgqrHp8ZNAvY5WyDIhZosFKDsFOsOxLtP",
+          "description": "LS증권은 리노공업이 AI 시대 비메모리 R&D 수혜를 받을 것으로 전망하며, 생산 정상화 및 4분기 생산 극대화를 예상했다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:18:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "current_price": 203000,
+      "change_rate": 2.47,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.75,
+        "supply_demand": 5.17,
+        "valuation": 3.2,
+        "material": 5.0,
+        "total": 4.62
+      },
+      "reason": "주성엔지니어링은 차세대 반도체 장비 기술력과 AI/HBM 시장 확대로 중장기 성장 가능성이 있으나, 현재 실적 회복이 필요한 상황입니다. 밸류에이션 지표상 PER이 매우 높고 영업이익률이 좋지 않아 부담이 있습니다. 외국인 누적 순매수는 긍정적입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.46,
+      "news_analysis": {
+        "sentiment": "중립",
+        "sentiment_score": 0.0,
+        "key_news": [
+          "차세대 반도체 장비로 재도약 기대",
+          "AI 반도체 및 HBM 시장 확대 기회 모색"
+        ],
+        "catalyst": "차세대 반도체 장비 기술력과 AI/HBM 시장 확대로 중장기 성장 가능성이 있으나, 현재 실적 회복이 중요함."
+      },
+      "news": [
+        {
+          "title": "주성엔지니어링 주가 11,400원 하락 후 마감",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLeTz1XTj_52rIJ5Qsuf32CLKcURb1sOueO9Mwis-T7CZatIEOpK2BaP-LkMyAARaZVL9209pq4JoylmcyQwtfvgcBWDkmiFWKOqm8JkhzhNQa-NwcfIh2gMFnSfNzR4gFKKsZ13QGOmHhQFPFKh6c7hVYrR66UdXb9ObbaQ==",
+          "description": "주성엔지니어링 주가가 20일 5.44% 하락 마감했다."
+        },
+        {
+          "title": "주성엔지니어링 주가, 10월 21일 장중 202000원 1.97% 상승",
+          "link": "https://vertexaisearch.google.com/grounding-api-redirect/AUZIYQGKtE-fXDi6sf6COaSga-17cUmRi2SSJiFOE0eJO77Jb8GpnA-TnOgR-O6V-1iLKL4EuCtw4lGPOQttrePn6glYtDnGbhPgCu41xCxHmlEJ5r52-RYjTulVeURGYvfyqMYSkE4DYFr3TW6tCPB7a-OX7QgRMwQ6a3PO4eA",
+          "description": "21일 오전 주성엔지니어링은 1.97% 상승한 202000원에 거래되고 있다."
+        },
+        {
+          "title": "주성엔지니어링, 차세대 반도체 장비로 재도약…실적 회복이 관건",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBrhbVyOX43rMVQhe2IvWV3MJYIkokCJqRuTU1EZw44AFUW2rEz_N6Ras4wB7Y_7-Ep2YsAIc3fI0TCTpve4dhkeVQhsS9n-n3kltuDDiAkfFhXIzoAx4YJUKGu4zjxtgKEfzDQLl0uC3gZv_MEA==",
+          "description": "주성엔지니어링이 차세대 반도체 장비를 앞세워 성장 기회를 모색 중이며, 실적 회복이 중요한 과제로 꼽힌다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:18:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "010120",
+      "name": "LS ELECTRIC",
+      "market": "KOSPI",
+      "current_price": 163200,
+      "change_rate": 5.15,
+      "signal": "중립",
+      "scores": {
+        "technical": 6.0,
+        "supply_demand": 5.67,
+        "valuation": 4.0,
+        "material": 9.5,
+        "total": 6.01
+      },
+      "reason": "LS ELECTRIC은 3분기 영업이익이 시장 예상치를 크게 상회하며 100분기 연속 흑자를 달성하는 등 강력한 실적 모멘텀을 보유하고 있습니다. 그러나 밸류에이션 부담이 있으며, 수급은 중립적인 흐름을 보입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.9,
+        "key_news": [
+          "3분기 영업이익 전망치 상회",
+          "100분기 연속 흑자 달성",
+          "북미 고부가가치 전력 솔루션 판매 호조"
+        ],
+        "catalyst": "시장 예상치를 뛰어넘는 3분기 실적 발표와 100분기 연속 흑자 달성으로 강력한 펀더멘털을 입증하며 주가에 긍정적인 모멘텀을 제공."
+      },
+      "news": [
+        {
+          "title": "LS ELECTRIC, 10월 21일 장중 160800원 3.61% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrEE0Ex7pmvWGVjrAWGyHnZ5r2qCGdUx2ZkpTMgpkx2785UrKl9l8XwO3beW5SSuxGK88UrrAGINwyJTwLGZXGvFcLDTGbjalkFi00pFs2roFGQg9NPG-jFGphJeZNMgT4PwNMjNfKbfEvS073ySFJd2lavaKhlBJGhcU=",
+          "description": "21일 오전 LS ELECTRIC의 주가는 지난 종가 대비 3.61% 상승한 160,800원에 거래되고 있다."
+        },
+        {
+          "title": "LS일렉, 100분기 연속 흑자…3Q 영업익 전망치 상회",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKMslAGWn98buHLjLpVUhPkGiuFX_aXCA-DSdUPuJqHzQoQ45vizXCbL0MybFialQD6u6mWWOqEiaScBzwoxt3VphpNL_WRSjeTBT2bLtZcZpTzaW74uNA83fua9OZp_5OQ2JN_XEu42GKMVc2z1dy4iA2b7_rOT9F1w==",
+          "description": "LS ELECTRIC이 3분기 잠정 매출 1조8천778억원, 영업이익 2천335억원을 기록하며 시장 전망치를 상회하고 100분기 연속 흑자를 달성했다."
+        },
+        {
+          "title": "LS일렉트릭, 3Q 영업익 2.3배↑…100분기 연속 흑자",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCfIrzIDNMBCZcUyP1YBGKNNeJM2D20BkZ7FXluBouNsriNicAmS13sNRDMfXxGh1QKt2PpQGtj2te6IVIGI9xK7dbN8aD8a0LpP_uVOHGD9IPCt10-moYbqM9qstLyx5Sv3_oaqfSRQeR9NqyxMRkPUjSXq9cgA==",
+          "description": "LS ELECTRIC이 북미 중심의 고부가가치 전력 솔루션 판매 호조에 힘입어 분기 사상 최대 실적을 달성하며 100분기 연속 영업이익 흑자를 기록했다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:18:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "222800",
+      "name": "심텍",
+      "market": "KOSDAQ",
+      "current_price": 125000,
+      "change_rate": 0.81,
+      "signal": "중립",
+      "scores": {
+        "technical": 3.75,
+        "supply_demand": 6.5,
+        "valuation": 4.83,
+        "material": 8.0,
+        "total": 5.57
+      },
+      "reason": "심텍은 외국인 순매수가 지속되고 증권사의 긍정적인 목표가 상향 리포트 및 ABF 기판 수요 증가 전망이 호재로 작용하고 있습니다. 기술적 흐름은 약세이나, 밸류에이션 지표 중 PEG와 EPS 성장률이 양호하여 긍정적인 요소가 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.56,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.6,
+        "key_news": [
+          "외국인 순매수 지속",
+          "iM증권 목표가 상향 (25만원)",
+          "ABF 기판 수요 및 가격 인상 전망",
+          "3분기 출하 및 ASP 개선 전망"
+        ],
+        "catalyst": "외국인 순매수가 지속되고 증권사의 긍정적인 목표가 상향 리포트, ABF 기판의 견조한 수요 및 가격 인상 전망이 긍정적인 주가 흐름을 뒷받침할 것으로 기대."
+      },
+      "news": [
+        {
+          "title": "심텍 주가, 10월 21일 장중 125100원 0.89% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHU4xGKorAfcpNps52Xa1Sk16Rjt876H-q7IcGA1zu6yer4QO2qBhZ-C8AMiCfB03l2iJJS5QQlZLHMUH-t_nCq-7nPK_o5tl3-QWmUJysWjOOEKy1lr7xrJhuTBkQbGdYkE-G9Ilwdm7muV35dxuz4CIQVzDlCGKxKmHE=",
+          "description": "21일 오전 심텍 주가가 125,100원을 기록하며 소폭 상승하고 있다."
+        },
+        {
+          "title": "[심텍 주가전망] 5퍼센트대 하락에도 외국인 이달 1700억 순매수 113000원 지지 확인",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG7Uf30F6dFYgHisERZPfxVHS9_CQUGCz-fKKfM4efxSbLP5dwrrRoEPKWa08pzt444uPVTiHQxFqKKFVoU4oV0fNz8gmPOP2ssdQkXvfnZm4AULa0_ooQM13joFRfViXoEniBkas=",
+          "description": "최근 주가 하락에도 불구하고 외국인 순매수가 지속되며 ABF 기판 납기 지연 및 가격 인상 전망이 긍정적이다."
+        },
+        {
+          "title": "iM증권, 심텍 목표가 25만원으로 상향",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVXHFoKhGj7tSxqSjzcjVylouBKPDw-UcYOpa53X-k_AJKbLA3KZnx0bhS4mi9qySlDbADshBTps67kW6vjiXgskCyivqrVL8bXTGjZKiq_E0vZZ-CJ0XqJt_9OsTPocBexS86dkAC3iGWGvx3aUZKQMLig56jVb0",
+          "description": "iM증권은 심텍의 증설 효과와 AI 수요를 반영하여 목표가를 25만원으로 상향 조정했다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:18:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "046970",
+      "name": "우리로",
+      "market": "KOSDAQ",
+      "current_price": 8475,
+      "change_rate": 2.11,
+      "signal": "매수",
+      "scores": {
+        "technical": 5.25,
+        "supply_demand": 6.67,
+        "valuation": 6.5,
+        "material": 9.75,
+        "total": 6.67
+      },
+      "reason": "우리로는 228억 원 규모의 AI 데이터센터용 광반도체 공급 계약을 체결하며 강력한 성장 동력을 확보했습니다. 최근 주가가 급등하며 긍정적인 흐름을 보이고 있으며, 수급 또한 외국인과 기관의 순매수 우위로 양호합니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.67,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.95,
+        "key_news": [
+          "228억원 규모 광반도체 공급 계약 체결",
+          "AI 데이터센터 사업 확대",
+          "최근 주가 급등세"
+        ],
+        "catalyst": "AI 데이터센터용 광반도체 대규모 공급 계약 체결로 실적 개선 기대감이 높아지고 있으며, 이는 최근 주가 급등의 주요 원인으로 작용."
+      },
+      "news": [
+        {
+          "title": "우리로 주가, 10월 21일 장중 8350원 0.60% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGc4tMas9FxP6OLqgfellkgwsMRcXbLVc4HPVPMk5g5r9C4cN2MkonDCc6kVVBFy_NWcA8nBW_goafVmpEbex-1YoSqi0_RA7AP2UoUd-lbiN3nRvn_341uBXgB9Q3DILoazcyPlPt4zYpTc1wkF_elMwUtdFlzWBWrW8M=",
+          "description": "21일 오전 우리로 주가가 장중 상승 흐름을 나타내고 있다."
+        },
+        {
+          "title": "우리로, 24%대 급등…새주 흐름 '주목'",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjuZEVPtc-5Ko6DBX0SxiwwNEuISY6El32cZw4TtuVm6ICy01racHzKvDa-VkPA56U2onflWAd9mUiHDSX_VQc5OKPKTLs55YFI0E1M668X0_Idl1LnQlAuXEn9CPPEujg483NRhdULECxWO4DSHpzWADnZQ==",
+          "description": "우리로가 전날 약세를 딛고 16일 거래에서 급등하며 24.90% 오른 8930원에 거래를 마쳤다."
+        },
+        {
+          "title": "우리로, 228억원 광반도체 공급 수주..AI 데이터센터 사업 확대",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUe1W7z_aKslcpxRqKPNAiiTDy8UMim7LEt87VnS_NnV7JKE51IVZ3irkfFVPkWzhacB6Lhi42YXow5n1PIAAV2sFix9SFzKeUjjirboNh2wkZS9ibXMmHw78qXWr6nWE7vrC7ECZxvrGk=",
+          "description": "광통신·양자통신 반도체 전문기업 우리로가 228억원 규모의 데이터센터용 광반도체 공급계약을 체결했다."
+        },
+        {
+          "title": "우리로, 228억원 규모 공급계약에 9% 급등",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3RXlTNVWtFkFi0WOcE_PBuZxQgOfLwxFyoGMPkF9rse6f3wqP_0jb_C2F2m0eOloMXNyDkabOlRWZC-b_eSPO91Ml4R2oGkvP2KTcpQQbHK_pL9AyKwIjWA2kzRepCcRH0JftqEXNRmh6nyyMJvcAOJhcLHISHA==",
+          "description": "우리로 주가가 10월 16일 228억원 규모 공급계약 공시에 9% 급등했다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:18:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "069540",
+      "name": "빛과전자",
+      "market": "KOSDAQ",
+      "current_price": 3680,
+      "change_rate": -2.0,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.5,
+        "supply_demand": 6.67,
+        "valuation": 5.5,
+        "material": 1.5,
+        "total": 5.31
+      },
+      "reason": "빛과전자는 최근 며칠 연속 주가 하락세를 보이고 있으며, 벡트로보틱스의 지분 추가 취득과 관련하여 자본시장법 위반 의혹이 제기되어 투자 심리에 부정적인 영향을 주고 있습니다. 호가 잔량은 매수 우위이나, 부정적인 재료가 주가 하방 압력으로 작용할 수 있습니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.53,
+      "news_analysis": {
+        "sentiment": "부정",
+        "sentiment_score": -0.7,
+        "key_news": [
+          "주가 연속 하락세",
+          "새 주인 지분 추가 취득 관련 자본시장법 위반 의혹 제기"
+        ],
+        "catalyst": "연속적인 주가 하락과 새로운 주주의 지분 취득 과정에서 자본시장법 위반 의혹이 제기되어 투자 심리에 부정적인 영향을 미치고 있음."
+      },
+      "news": [
+        {
+          "title": "빛과전자 주가, 10월 21일 장중 3660원 2.53% 하락",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjQpGquuiPjYY8VC2lNl-0UCh5IYgw_-wkSAQTqHGOYGuFL7_RjZowki0HK7-ry406HVM1YwZqlKA4iup3eCe-b8aSfcTvHERQePHsH4EXbQcD0AlvwlSMrwZfOZXolQhklfcozOJtVH1qfuYm-gL5GL0hggPnbgh9T8=",
+          "description": "21일 오전 빛과전자 주가는 지난 종가 대비 2.53% 하락한 3660원을 기록하고 있다."
+        },
+        {
+          "title": "빛과전자 주가, 10월 20일 장중 3900원 1.64% 하락",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXrn4UxtJJe9PbwxA6IQbt1P82Z-9z-99ANb6E16lzthX8HgykHKVEl78xmnkEoj83TwdorhP-9gm70_CsRVvEQY9MCD1QMl4zrEKqdOrvQi-qD8KzEj2hRVjdWvcFwnYx_4XkbpNqevnfgVHC-GsfFoY3Inoh815gFZE=",
+          "description": "20일 오전 빛과전자 주가가 장중 하락세를 보이며 현재 3900원에 거래되고 있다."
+        },
+        {
+          "title": "대한광통신·빛과전자 19일 하락…광통신·광반도체주 혼조",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnaMNVwtxOOW1Osh4raxLsOv_QPxG2ehcwWVg9F_l4fvRuvon1rbyi_Y9n5KLVnoxO7BjOX8pUuXkOXNloappkmJHG3iWdsgARYGVSM8WHkGhSG43pTd-GfijaXfopmRgdvfllTKp9nFe6MHvMctFOBCZMkA==",
+          "description": "19일 오전 광통신·광반도체 관련주가 대체로 하락하는 가운데 빛과전자도 약세를 보였다."
+        },
+        {
+          "title": "[카드뉴스]벡트로보틱스③ 새 주인, 신고기한 어기고 지분 추가취득…'자본시장법 위반' 의혹",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXgEhJYoA-NHdnfBUOcy25uFY6TadBBTifvUePaunwexg-8DyfXJIVOSmNJspMR7lDzp2ViHsKMTVNy634oo9ojhEd7qZFtL2aB1VN009YoeP_Yo9u3EVGZk6sjfaucE99i-imE31D9QEBX579Qzjm5-gFxcx2Y61D0kI=",
+          "description": "빛과전자의 새 주인이 신고 기한을 어기고 지분을 추가 취득했다는 '자본시장법 위반' 의혹이 제기되었다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:18:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "036540",
+      "name": "SFA반도체",
+      "market": "KOSDAQ",
+      "current_price": 9450,
+      "change_rate": 6.3,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.0,
+        "supply_demand": 5.17,
+        "valuation": 5.5,
+        "material": 6.0,
+        "total": 5.31
+      },
+      "reason": "SFA반도체는 오늘 장중 주가 상승을 보이며 긍정적인 흐름을 이어가고 있으며, 반도체 소부장 섹터 전반에 대한 관심 증가가 긍정적 영향을 미칠 수 있습니다. 외국인의 20일 누적 순매수는 긍정적이지만, 밸류에이션 지표는 혼조세를 보입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.53,
+      "news_analysis": {
+        "sentiment": "중립",
+        "sentiment_score": 0.2,
+        "key_news": [
+          "장중 주가 상승세",
+          "반도체 소부장 ETF 출시로 섹터 관심 증대"
+        ],
+        "catalyst": "오늘 장중 주가 상승을 보이며 긍정적인 흐름을 이어가고 있으며, 반도체 소부장 섹터 전반에 대한 관심 증가가 긍정적 영향을 미칠 수 있음."
+      },
+      "news": [
+        {
+          "title": "SFA반도체 주가, 10월 21일 장중 9600원 7.99% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUkjhT3FhUzTizZ3_EUGBsPwU8MbkDMi6ERFy1_gwS2tdVXAXO_cKT0toqid4-vtaMIzXY5POJa580ow8m7VmAaS3Eb3q2iQ6bL32hAxKrLgiC31rtld481QX6xnTOyIxVknz65_DDX28X3kqQ5Mow-Yu461FDPZt-fcE=",
+          "description": "21일 오전 SFA반도체 주가가 지난 종가 대비 7.99% 상승한 9600원을 기록하고 있다."
+        },
+        {
+          "title": "삼성전기·테스·심텍 골라 담는다…반도체 소부장 ETF 출격",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMVB1UWim_1oByF-iZjM8weD4CX7r7rx_DTfG6UzstD0D7dxhU5uxC88E4KxAe3Yuu4gePGsKlBsiseBqvLAasVB0J3E_M00jp42cJzeN1MbVk0L5vjgL0iA2EGjoj0wdevBYu",
+          "description": "반도체 소재·부품·장비(소부장) 관련 ETF 출시로 섹터 전반에 대한 관심이 증가할 것으로 예상된다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:18:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "042510",
+      "name": "라온시큐어",
+      "market": "KOSDAQ",
+      "current_price": 18410,
+      "change_rate": 1.32,
+      "signal": "중립",
+      "scores": {
+        "technical": 3.5,
+        "supply_demand": 4.33,
+        "valuation": 3.6,
+        "material": 9.0,
+        "total": 4.64
+      },
+      "reason": "주요 하락 요인은 기술적 분석과 밸류에이션입니다. 약세 추세와 낮은 거래량이 지속되고, PER 60.96 수준으로 밸류에이션 부담이 있습니다. 특히 정부 AI 보안 사업 선정 및 AI 보안 솔루션 출시로 성장 기대감이 높습니다. 등의 강력한 재료가 주가에 반영될 것으로 기대됩니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.46,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.8,
+        "key_news": [
+          "AI 보안 피지컬AI 사업 주관기관 선정",
+          "AI 보안 솔루션 '원쉴드' 확인서 획득",
+          "AI 관련주 부진 속 주가 강세"
+        ],
+        "catalyst": "정부 AI 보안 사업 선정 및 AI 보안 솔루션 출시로 성장 기대감이 높습니다."
+      },
+      "news": [
+        {
+          "title": "라온시큐어 주가 4%대 상승…AI 관련주 부진 속 약진, 외국인·프로그램 수급 촉각",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_CcsQoyRtMdEExRJ-KQLhBM-KnzddbuCFWXqhKjCEl3QEBph3fM9rV5uGhWNOxKqqc50pC9Pu_xXoMgKJSvlXmwO6OBzdyL8gm39g7Hhpw9pz6hjsQgATyrVGBZB9HuC7SZgD2r6LcxU-VupdQbqUvt_lCA==",
+          "description": "AI 관련주 부진 속 라온시큐어 주가 상승, 정부 피지컬AI 보안 사업 주관기관 선정 등 호재."
+        },
+        {
+          "title": "증시 폭락에도 라온시큐어 17% 급등...보안주 약세 속 '나홀로 질주'",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHE8uDTLb0YwCMxp5R7qZPkyZIjjxzBbKT7nOHeaQPqVT1Of4xw503JAyk_kvwKQUJGHInfgEx3BGHNR7EQHjBRUJrdA-pSwqrQeJkH9IXTQ1DFO1D8iqazkyxkDyTM5tcUATf4B6NhYOnF9uAk",
+          "description": "정부 피지컬AI 보안 연구개발 사업 주관기관 선정 소식에 주가 급등, 52주 신고가 경신."
+        },
+        {
+          "title": "[라온시큐어 주가전망] 코스닥 폭락에도 3퍼센트대 상승 1차 방어선 17700원",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjnqhFBvNqQT9QrG33OOXF8tLTWl-Z5DYuw13QYk3HeT6rFacI-H7G2RmMXGz7mhw5yEOuCDMy-b2AfUCnbOQsTn9Y6flu0SzfKcCYlehOFBApZ9UmFWVMzmS3pmupmJK5PvnLPEw=",
+          "description": "코스닥 하락장 속에서도 견조한 흐름을 보이는 라온시큐어 주가 동향."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:20:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "005490",
+      "name": "POSCO홀딩스",
+      "market": "KOSPI",
+      "current_price": 302000,
+      "change_rate": 0.0,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.25,
+        "supply_demand": 5.0,
+        "valuation": 5.75,
+        "material": 5.5,
+        "total": 5.0
+      },
+      "reason": "혼조세의 기술적 흐름(mixed)과 중립적인 수급이 관찰됩니다. 밸류에이션은 PER 37.35 수준입니다. 재료 측면에서는 전반적인 이차전지 섹터의 긍정적인 분위기에 영향을 받을 수 있으나, POSCO홀딩스 자체의 직접적인 호재는 부재합니다. 등의 요인이 있습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "중립",
+        "sentiment_score": 0.2,
+        "key_news": [
+          "이차전지주 장중 강세",
+          "테슬라 판매 호조로 전방 산업 기대감"
+        ],
+        "catalyst": "전반적인 이차전지 섹터의 긍정적인 분위기에 영향을 받을 수 있으나, POSCO홀딩스 자체의 직접적인 호재는 부재합니다."
+      },
+      "news": [
+        {
+          "title": "이차전지주 장중 강세…\"테슬라, 잘 팔렸네\"",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtrnvCky3UF-tiQOfNtWYPu8Ccs8Zv7JtjhjwEMwbAzW-pUJZPkzGLdVoNdJZquSERqNIKORZMG738L8O15bTpa2YhgYxFZUxSrFzLyznFY9z4eJOKHvBMkvDabsPplGEf1f5RDEERwqpsCWlnYYNaAIel",
+          "description": "테슬라의 3분기 전기차 인도량 호조로 이차전지 섹터 강세."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:20:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "253590",
+      "name": "네오셈",
+      "market": "KOSDAQ",
+      "current_price": 16280,
+      "change_rate": 6.2,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.75,
+        "supply_demand": 5.83,
+        "valuation": 6.5,
+        "material": 9.5,
+        "total": 6.49
+      },
+      "reason": "주요 모멘텀은 재료 분석과 밸류에이션입니다. 특히 기관의 대규모 순매수와 삼성전자와의 공급계약, HBM 시장 성장이 긍정적인 모멘텀으로 작용하고 있습니다. 등 재료 모멘텀이 강합니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.65,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.9,
+        "key_news": [
+          "기관 114만주 순매수",
+          "삼성전자 86억 규모 CLT 메모리 테스터 공급계약",
+          "AI 인프라 투자 견조 기대감 속 반도체 장비주 강세",
+          "HBM 증설 본격화 후공정 생태계 수혜 주목"
+        ],
+        "catalyst": "기관의 대규모 순매수와 삼성전자와의 공급계약, HBM 시장 성장이 긍정적인 모멘텀으로 작용하고 있습니다."
+      },
+      "news": [
+        {
+          "title": "[네오셈 주가전망] 기관 114만주 쓸어 담았습니다! 세력 최종 목표가 긴급 공개",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaJQwQuQGz6b-8Dl7-IDiJtOeZkw-6kt0aoc7LYRgCB3OtLFSZCIvGOK9ab2AbCrNHI1KrrBidJMpuMActnRd4KnHb6T-K-FhdD0JqjWrwmh2Od_fWEpx9oJSGxFNAZAy14X6ibjM=",
+          "description": "기관 대규모 순매수, 삼성전자 공급계약 등 호재로 주가 상승 기대."
+        },
+        {
+          "title": "실적발 훈풍에 장비株 강세…미래산업 16%·네오셈 9%↑[코주부]",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSlAAPdAvJNwS1AR1Ge6qxmOE9w2fDSaGNM7fbvMUw3Ney9r8GKSnne95yJW5Z8YLedJ1K8b-Lgyp95adcJsulFdNkSs4FGCGPlEYGN9-h4o9crKcemKL-aWlL0763k19A1bxjKZ0QFfSyxvDZtLA5zOD6Qvq-2LCLls8=",
+          "description": "미국 빅테크 실적 발표에 따른 AI 인프라 투자 기대감으로 반도체 장비주 강세."
+        },
+        {
+          "title": "삼성·SK HBM 증설 본격화…후공정 생태계 수혜 주목",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJiVoRJbmFrhqUwMwp4dqgQDEs7fhqKNJDTDkcSTiqqGR65ZRPxcBYo92zuRFoaHw7y300djLPmHpsJu_6r3t3gF7lWBvg3KLKoLkTNMvCKD_cA8onWlcuDoF_zR7hPIWYSIzpkdKmDWu5FZyuyvRPYpZj",
+          "description": "HBM 확대로 인한 반도체 후공정 관련 업체들의 수혜 전망."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:20:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "387690",
+      "name": "레메디",
+      "market": "KOSDAQ",
+      "current_price": 16050,
+      "change_rate": 6.29,
+      "signal": "중립",
+      "scores": {
+        "technical": 6.0,
+        "supply_demand": 5.83,
+        "valuation": 5.0,
+        "material": 8.0,
+        "total": 6.04
+      },
+      "reason": "주요 모멘텀은 재료 분석과 기술적 분석입니다. 특히 신규 상장 테마의 강세와 초소형 X-ray 기술에 대한 기대감이 주가에 긍정적으로 작용하고 있습니다. 등 재료 모멘텀이 강합니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.6,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.6,
+        "key_news": [
+          "2026 하반기 신규상장 테마 상승세에 편승",
+          "초소형 X-ray 생산 기업",
+          "상장 첫날 공모가 상회"
+        ],
+        "catalyst": "신규 상장 테마의 강세와 초소형 X-ray 기술에 대한 기대감이 주가에 긍정적으로 작용하고 있습니다."
+      },
+      "news": [
+        {
+          "title": "특징주, 레메디-2026 하반기 신규상장 테마 상승세에 5.83% ↑",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1z-6pLaFFdGz8EV3gV4TZJO0ZLgjM8CVTq_T6bekdCiZY_UKNRCZO4J3YuW0pzaiA6nhWtO9iGmpHuAm4n3kqHnfpMajLcWe6-ZJry-zJCGAVW73f3xxzirZuDaHz_0FD8Dc=",
+          "description": "2026 하반기 신규상장 테마 강세 속에 레메디 주가 상승."
+        },
+        {
+          "title": "'상장 삼수생' 레메디, 상장 첫날 공모가 상회 [IPO톡톡] / 한국경제TV뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaKMp5CsTm0OT0a-upg-LYGfw7-f5mrqsIICX2XivyZ2mzZ3zP_Zq0OnmMnxsZZarwzyAmTpnvkOhJH2W2bS-KtWD0RMWNAseIcHeJCOMTauQewPBcTCe1mFrSrDutE-huYu9HDv8=",
+          "description": "초소형 X-ray 기술을 가진 레메디, IPO 도전 끝에 코스닥 상장 성공."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:20:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "006400",
+      "name": "삼성SDI",
+      "market": "KOSPI",
+      "current_price": 553000,
+      "change_rate": -0.54,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.0,
+        "supply_demand": 5.17,
+        "valuation": 4.17,
+        "material": 8.5,
+        "total": 5.12
+      },
+      "reason": "혼조세의 기술적 흐름(mixed)과 중립적인 수급이 관찰됩니다. 밸류에이션은 PER -66.43 수준입니다. 재료 측면에서는 중국 경쟁사 이슈와 전반적인 배터리 섹터 강세가 주가에 긍정적인 영향을 미치고 있습니다. 등의 요인이 있습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.51,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.7,
+        "key_news": [
+          "배터리주 강세",
+          "중국 ESS 업체 미국 철수 소식",
+          "삼성SDI 9% 급등"
+        ],
+        "catalyst": "중국 경쟁사 이슈와 전반적인 배터리 섹터 강세가 주가에 긍정적인 영향을 미치고 있습니다."
+      },
+      "news": [
+        {
+          "title": "삼성SDI 주가, 10월 21일 장중 559000원 0.54% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwilrlWDfguDVCZpdqV4ttV1JQqVdzUQZrHupbNSTUAb3muTagi1Hhzl-Q0yCgyNrMCqQMYA1MIamzYZpblMyb_mq_3mB_BUDDQGbofDWuJyFHj3DBzl20T_BnfLz9Fz-8NG_QiLef_SJPzff28cjOjbDtdQ7oJnveWrc=",
+          "description": "삼성SDI 주가가 장중 상승 흐름을 보임."
+        },
+        {
+          "title": "\"하루 만에 11% 올랐다\"…美 선거 앞두고 들썩이는 종목 [분석+]",
+          "link": "https://vertexaisearch.cloud.google.google.com/grounding-api-redirect/AUZIYQG16_WZ4MA9V610-v7AtWyAYtRG6AndIdRc5YcJLtROqUFWmkvEJC3wLo43X8UKl8A8y9p_LWEno4oS59JrbLNDCH79bTXWm0QDHmCBsghwJCzxrHHRWQVrGbWuBKNZim9n1Gf_",
+          "description": "미국 선거를 앞두고 배터리 관련주들이 움직임을 보임."
+        },
+        {
+          "title": "삼성SDI 9% 급등·삼바 7%대 상승… SK하이닉스는 1.3% 하락",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqrKetrDPrt9NBDQyYEzKN_jf7uMxdy85_1ervtdI2r7Bp2oSZVrP169fO-kTnjs0eIkPKVexw7LGE_oA1buQPaDkH_YxHf-UepWShqJUK5WRMsOdOIs-giwft1fmthmLANQE8PkAULuE=",
+          "description": "삼성SDI 주가 급등 소식. 배터리 섹터 전반의 강세 반영."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:20:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "market": "KOSPI",
+      "current_price": 1272000,
+      "change_rate": 4.01,
+      "signal": "중립",
+      "scores": {
+        "technical": 3.75,
+        "supply_demand": 4.5,
+        "valuation": 5.6,
+        "material": 1.5,
+        "total": 4.04
+      },
+      "reason": "주요 하락 요인은 재료 분석과 기술적 분석입니다. 특히 AI 관련 지출 지속 가능성 우려, 경쟁 심화, 자회사 IPO 불확실성 등 복합적인 악재가 주가에 부정적인 영향을 미치고 있습니다. 등 악재가 심화될 수 있습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "보통",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.4,
+      "news_analysis": {
+        "sentiment": "부정",
+        "sentiment_score": -0.7,
+        "key_news": [
+          "ADR 한 달간 25% 하락",
+          "중국 메모리 업체와 경쟁 심화 우려",
+          "솔리다임 IPO 불확실성 및 규제 당국 조사",
+          "국민연금 보유 자산 가치 급감"
+        ],
+        "catalyst": "AI 관련 지출 지속 가능성 우려, 경쟁 심화, 자회사 IPO 불확실성 등 복합적인 악재가 주가에 부정적인 영향을 미치고 있습니다."
+      },
+      "news": [
+        {
+          "title": "SK하이닉스 ADR, 한 달간 25% 하락···중국 업체와 경쟁 및 솔리다임 IPO 불확실성 부각",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAEiu7BixDdeTtxB43t6KBQ8_xNT_gqN8AaQvjTvFqxW1bfuD9xZzu0OVeQ9TjEulW6hqNIm2zw4wYIzCibJTd-Y8gE6r4CMxbxOBjjtI0vHxrMhPOrXUQYhwB4IHhgtQyXmkdUOJiAycyvWvs5_3RB47LpxMDy9rbNPgzlgBzNB59ya6yLcFN6dm0imiSOmh-d5V5tF_qyMNIFb2R6wlU2Hl_-49Q1ZGnYDY_i0CeHpIPDp8YBM_P50W8DD8LxL7O6s3LVxSe0u1t70XMlsWl6m1vB5hHKrfNZL6bXXVxe0UzkMyGmQCnY-CBf0cT4_RHe7yJz3B07yd-gH_ZZV-lBpRJWf1P1-7BkmhQYH4sw68a4tHjqnUm",
+          "description": "AI 지출 지속 가능성, 중국 경쟁, 솔리다임 IPO 불확실성 등으로 SK하이닉스 ADR 하락."
+        },
+        {
+          "title": "[SK하이닉스 솔리다임 상장] 중복상장 논란 있지만…실익 따질 때",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaAF3hVFFF6FUVa-SzNC3F0ifaZjiyX0pLAdZXHJ1OGMs-7GrC61kDBN6trGHA2nnPFIMQiNvlWHRxCGiy58rqwlN6GgDCEGXzF1TK0O0SkjCHlO9xcM9BO3QTmkwnxeGuaqTywec=",
+          "description": "솔리다임의 미국 상장 추진에 대한 중복 상장 논란과 실익 분석."
+        },
+        {
+          "title": "삼전닉스 주가 금융위기 때 수준…투자심리 반전 전환점은?[주末머니]",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXonHGnuehVuUOLzIuU3iFc-BKD77jvH8cqg0Ut7Z42id4VlQPagAQ7otD2G2Cfi_Tj1LVeA165TlTpf4w0Ar4Gy0kFDR6lMW4ylBS-MM4h5_PbeXeIA9hDC2l4PgHUGIEEdnJgqH0JpM=",
+          "description": "삼성전자 및 SK하이닉스 주가가 금융위기 수준까지 하락하며 투자 심리 전환점 모색."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:20:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "042660",
+      "name": "한화오션",
+      "market": "KOSPI",
+      "current_price": 59500,
+      "change_rate": 1.02,
+      "signal": "매도",
+      "scores": {
+        "technical": 2.0,
+        "supply_demand": 4.0,
+        "valuation": 4.5,
+        "material": 1.0,
+        "total": 3.05
+      },
+      "reason": "주요 하락 요인은 재료 분석과 기술적 분석입니다. 특히 한화시스템의 한화오션 지분 유동화 계약에 따른 주가 하방 압력, LNG선 매출 비중 감소 전망 등 부정적인 요인이 많습니다. 등 악재가 심화될 수 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.31,
+      "news_analysis": {
+        "sentiment": "부정",
+        "sentiment_score": -0.8,
+        "key_news": [
+          "한화시스템, 한화오션 지분 매각 (PRS 계약)에 따른 주가 하락 위험",
+          "LNG선 매출 비중 감소 전망",
+          "주가 하락 흐름 지속"
+        ],
+        "catalyst": "한화시스템의 한화오션 지분 유동화 계약에 따른 주가 하방 압력, LNG선 매출 비중 감소 전망 등 부정적인 요인이 많습니다."
+      },
+      "news": [
+        {
+          "title": "한화오션 주가, 10월 21일 장중 58400원 0.85% 하락",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRc0PGPsJAkwgSTN42EFqnzabU1MBUf9KsWMF7fIM5rvCtx0fea0zv1mmqNLn7f1I10xtVU9EKxCyd1feoYtulHy7oW2y8qUwedLGT-e-lW2xpvVtkoazbafH9KGpiT5W-xc1gCV4qjLIexFNIP1tSOe8s_cWNBaZrNwY=",
+          "description": "한화오션 주가가 장중 하락 흐름을 보임."
+        },
+        {
+          "title": "한화오션 지분으로 3조 마련한 한화시스템, 어디에 어떻게 쓸까",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLPMWLllzvbRgWfcEcpIWuE_Awj8kRlfBINPaU6euzWtSDORq4aJjeFpbid6uPB1Vn36M5W7e5ObZXwjOXmoYBtNnY6-_S9Dx6GWIbLujYoa9WlRQ2QELjC1J7RHL4MvXTG4Jt-nmqxq5VLe4xh2BxEZpiO1lBK2_yF3FjdJ_EwmtW5C4jq2pv",
+          "description": "한화시스템의 한화오션 지분 매각(PRS 계약) 관련, 주가 하락 시 차액 부담 우려."
+        },
+        {
+          "title": "\"한화오션, LNG선 매출 비중 올해 70%→내년 40%까지 감소\"-IBK",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjqJRoxrokIKp2TOIbTF6i4qLZnpXJgFhQ42_qVFnc60n40npeeyenBRLFXrC5WSNXtFuVW9YJ7l6eTjO0JiXTpM8ATqd5PgUR3f1iQ-Xgq8BiV_Ye70Cek2BPKAti7XZh09J1",
+          "description": "LNG선 매출 비중 감소에 대한 부정적인 전망."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:20:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "327260",
+      "name": "RF머트리얼즈",
+      "market": "KOSDAQ",
+      "current_price": 44550,
+      "change_rate": 1.6,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.25,
+        "supply_demand": 5.17,
+        "valuation": 6.8,
+        "material": 7.5,
+        "total": 5.87
+      },
+      "reason": "혼조세의 기술적 흐름(mixed)과 중립적인 수급이 관찰됩니다. 밸류에이션은 PER 109.73 수준입니다. 재료 측면에서는 AI 데이터센터 관련 광통신 기술의 성장 기대감이 있으나, 전반적인 반도체 시장 조정 우려도 공존합니다. 등의 요인이 있습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.59,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.5,
+        "key_news": [
+          "광반도체·광통신 관련주 강세",
+          "AI 데이터센터 및 고속 통신망 관심",
+          "반도체 조정은 매수 기회"
+        ],
+        "catalyst": "AI 데이터센터 관련 광통신 기술의 성장 기대감이 있으나, 전반적인 반도체 시장 조정 우려도 공존합니다."
+      },
+      "news": [
+        {
+          "title": "[속보] 대한광통신·라이콤·RF머트리얼즈 상승…광반도체·광통신 관련주 강세",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH38eC5yM8uUrcO8cs-DbytlJDty-REQyy9sLPc8BF0W4VrhViPje7oR_wpKyaq9AJzbcx4UR6_OJmYDzr8abKjCrnIbSmqunFK-kuwxGxw3wN8aJ8sdRkNvACUe7RCBmpP9m1J_Q6uyisw0GOJ53IuHSOCVw=",
+          "description": "AI 데이터센터 및 고속 통신망 관심 속 광반도체·광통신 관련주 강세."
+        },
+        {
+          "title": "RF머트리얼즈(327260) | 기업정보, 재무제표, 최신 뉴스 분석",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKnEaJ4061tjGiGrbTWA9czgf5vtYgCgKkoWbNU3TC7P02cNVKzrSM44e2sULU-dnDkPxGZIZpxy-wO8gc0r721usbfpnxc1SRQCiVdibouT5k6Dd1i51u0-_WLG6rKr50-Cjg",
+          "description": "반도체 시장 조정이 투자 심리 위축 요인으로 작용했으나, 장기적인 관점에서는 매수 기회일 수 있다는 언급이 있음."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:20:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "144960",
+      "name": "뉴파워프라즈마",
+      "market": "KOSDAQ",
+      "current_price": 14380,
+      "change_rate": 12.26,
+      "signal": "중립",
+      "scores": {
+        "technical": 6.25,
+        "supply_demand": 5.83,
+        "valuation": 6.0,
+        "material": 8.0,
+        "total": 6.32
+      },
+      "reason": "주요 모멘텀은 재료 분석과 기술적 분석입니다. 특히 주요 고객사 확보와 뛰어난 1분기 실적, 그리고 회장 장내매수 소식은 주가 반등의 긍정적인 요인입니다. 등 재료 모멘텀이 강합니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.63,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.6,
+        "key_news": [
+          "급락 뒤 10% 반등",
+          "최대규 회장 장내매수 공시",
+          "1분기 호실적 (매출, 영업이익, 순이익 대폭 증가)",
+          "주요 반도체 기업 거래처 확보"
+        ],
+        "catalyst": "주요 고객사 확보와 뛰어난 1분기 실적, 그리고 회장 장내매수 소식은 주가 반등의 긍정적인 요인입니다."
+      },
+      "news": [
+        {
+          "title": "[뉴파워프라즈마 주가전망] 급락 뒤 10퍼센트 반등 11500원 지키면 13200원 시험",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWNkPJh0AnYc91E8CKPQQzYlYVitOsRtwCeO-kEjDsOYsC698lJTnRYUQxEPUtFFKFPdHuw8-LdG2z2yPxmIdPgTin9b1FB_FYHCmjjLue9IBz7oKiMzuKHwSaevvq__byM3QMkPk=",
+          "description": "미국 물가 충격에 따른 반도체주 하락 후 반등, 회장 장내매수 소식."
+        },
+        {
+          "title": "[서치 e종목] 뉴파워프라즈마, 올해 전 사업 부문 성장 확대 전망…주가 향방은?",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHuIhkDLPeXdE6d3_EwRfVLZpYB87mGh4YyVJw0wiigrk4Y2OAVIHUQR1Q2wKn-vxtVK8XiYvZClN_aGGV8CeDtFokjxU2dPgL8nHLtBF4NbIJVnPtbC03t2XF7jOQGwHaS8wFvfkNGZGwL2ZDGKqzuZec6XCo",
+          "description": "1분기 호실적 기록 및 전 사업 부문 성장 확대 전망, 삼성전자 등 주요 고객사 확보."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:20:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "028260",
+      "name": "삼성물산",
+      "market": "KOSPI",
+      "current_price": 290000,
+      "change_rate": 5.45,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.0,
+        "supply_demand": 5.33,
+        "valuation": 5.33,
+        "material": 9.5,
+        "total": 5.86
+      },
+      "reason": "주요 모멘텀은 재료 분석과 수급 분석입니다. 특히 증권사의 긍정적인 목표가 상향과 하이테크/원전/바이오 부문의 견조한 실적 전망 및 수주 기대감이 매우 긍정적인 모멘텀입니다. 등 재료 모멘텀이 강합니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "보통",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.59,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.9,
+        "key_news": [
+          "유안타증권 목표가 510,000원 제시 (BUY)",
+          "하이테크 건설 부문 실적 개선 가속화 전망",
+          "용인 산단 수주 기대",
+          "바이오 및 하이테크 원전 모멘텀 지속",
+          "3분기 견조한 실적 예상"
+        ],
+        "catalyst": "증권사의 긍정적인 목표가 상향과 하이테크/원전/바이오 부문의 견조한 실적 전망 및 수주 기대감이 매우 긍정적인 모멘텀입니다."
+      },
+      "news": [
+        {
+          "title": "삼성물산 주가 상승 중",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwxRGyabzUw_1CYPTiEYs1WHIXmdfu6ztGXES1Jy02ywke5jkukFZWv7hpqzTA56Njp01slCRwQGR1AJXf-ih5aUFFl6tJ-bNILCZvRA3oTjZTQy-PRUMevyLvisbRqlSGVeDoSS1PWeNDQ7SOVAsg86H2J_shxyOfFsRAww==",
+          "description": "삼성물산 주가가 21일 장중 상승 흐름을 보임."
+        },
+        {
+          "title": "[리포트 브리핑]삼성물산, '하이테크 가즈아!' 목표가 510,000원 - 유안타증권",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbNXdsVzihpSCIG5box4CMwOxV7BBrcvd2NGgiX-ZCLm0Q8Ghca8v2_lPmQ4wuSW4_DIw4uHpvTODI95bFNklcfNGdhJnXfw5_JIjc7zo1YahMBOSkMrYITaiJUAIo_1lm3EchnQYuAbo=",
+          "description": "유안타증권에서 삼성물산에 대한 투자의견 'BUY'와 목표가 510,000원을 제시하며 하이테크 부문의 실적 개선을 전망."
+        },
+        {
+          "title": "삼성물산, 상반기 하이테크 목표수주 94% 기확보 - 알파경제",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHv-89RNhl18at46ohRS9xthBCLtVgLUtf5dQo7ybl5W7G3kQERmpRaHWe4c47wJ8l05MQoUrt_mgruVuv8ZGT9mPXw1sA6Kfhw8fzRvy34Lzx9fJCQTdc-Qc7sd7wdklC_QV356LLO2tLpPj1CdMHvGzUl2feDuo=",
+          "description": "하이테크 건설을 중심으로 한 하반기 실적 개선 기대."
+        },
+        {
+          "title": "삼성물산, '하이테크·원전 모멘텀' 계속된다 - 연합인포맥스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFghD7WhZzVBHbOp6ktve5AnjQ8bMvvJynb_1Obq-6rRFBy55HRdSOf96SH0fMemK-pyr_8P1UZzyJ8A4ydzfgfwdMpPCcerNIMYNhyapqyD-8mo9TMmemmc7q6W1c-Q-gDTYx6lfyOi50ztC00ioEZrCGd1WlAXKIYRw=",
+          "description": "바이오와 하이테크 건설 부문의 강력한 뒷받침으로 3분기 견조한 실적 예상."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:20:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "010170",
+      "name": "대한광통신",
+      "market": "KOSDAQ",
+      "current_price": 13900,
+      "change_rate": 9.02,
+      "signal": "중립",
+      "scores": {
+        "technical": 6.0,
+        "supply_demand": 6.33,
+        "valuation": 3.6,
+        "material": 6.0,
+        "total": 5.64
+      },
+      "reason": "AI 광섬유 수요 증가 및 미국 광케이블 추가 수주 소식 등 긍정적 재료가 있으나, 최근 주가는 혼조세를 보이며 외국인과 기관 모두 순매매 교차 패턴을 나타내고 있습니다. 또한, 수익성 지표가 부진하여 밸류에이션 점수가 낮습니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "급증",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.56,
+      "news_analysis": {
+        "sentiment": "약간 긍정",
+        "sentiment_score": 0.2,
+        "key_news": [
+          "AI발 광섬유 품귀 현상 및 미국 광케이블 추가 수주 기대",
+          "외국인 10일 연속 매도 후 첫 매수 전환",
+          "뉴욕 증시 AI 투자 수익성 우려로 기술주 하락 영향"
+        ],
+        "catalyst": "AI 광섬유 수요 증가 및 미국 광케이블 수주 기대감으로 중장기 성장 가능성."
+      },
+      "news": [
+        {
+          "title": "[대한광통신 주가전망] 외국인 10일 연속 매도 후 첫 매수 전환! 12360원 지지선 긴급 분석",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmIIwf6uMgV0AGRiavgLdCPpXWahpacQN91v81YSzPUBKcT3_N4zsfQjhwFlVZJ9SujV6k7BibdpNpArfyX5nlI70eVgwj2PQ-OJqfuBMljoVCYh01rL3sx61qP5OA9aZV6owa-w==",
+          "description": "AI발 광섬유 품귀가 2028년까지 이어지고 미국 광케이블 추가 수주 소식이 긍정적이나, 최근 외국인/기관 순매도 전환 여부가 중요합니다."
+        },
+        {
+          "title": "[특징주] 광통신주, AI 투자 수익성 우려에 동반 하락",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpOcOOTdPXuDLpSA3FN4mNltf5oau_AgNJSRzxF1a-FZWbKr5MXm0scRNUHuAle15aseMb-S2L0Lx5x5dzeFUb90sAM6kArER1TqmLMEvo-7o_BX2JoEehWn9XKP59BNPOPBSLkSs-hA0Axde3BkMu3zwMvrwXLEW7YA==",
+          "description": "뉴욕 증시에서 AI 투자 수익성 우려가 재차 점화되며 국내 광통신주가 동반 하락세를 보였습니다."
+        },
+        {
+          "title": "대한광통신 15일 거래대금 851억…5일 최고는 8일",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQxkclck4VZE0PNg9ZtxdzC1tgB0QtswuvD-mWG6E7dcfbKzJlXVRlqG0IfSDEV7hu7vQpHCMMKMMcS9Z9PrXElDRnnVSb_Abj5-beyNt4QJeC0Ana8Pjg4zYxu0oLTgkEvYUVl4BUQeiL_hw96wD5BQ==",
+          "description": "대한광통신의 15일 거래대금은 약 851억원으로, 최근 5거래일 중 최대는 아니며 8일 거래대금이 가장 높았습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:23:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "247540",
+      "name": "에코프로비엠",
+      "market": "KOSDAQ",
+      "current_price": 107600,
+      "change_rate": 2.28,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.25,
+        "supply_demand": 6.5,
+        "valuation": 2.0,
+        "material": 6.5,
+        "total": 4.93
+      },
+      "reason": "성공적인 유상증자를 통해 니켈 제련소 및 헝가리 공장 투자 계획을 밝혀 미래 성장 동력 확보는 긍정적입니다. 하지만 높은 PER과 낮은 ROE 등 밸류에이션 부담이 있으며, 전환사채 협상 지연 가능성도 존재합니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.49,
+      "news_analysis": {
+        "sentiment": "약간 긍정",
+        "sentiment_score": 0.3,
+        "key_news": [
+          "8,861억 유상증자 성공, 인도네시아 니켈 제련소 및 헝가리 공장 투자",
+          "증자 마무리 후 4,400억 전환사채(CB) 협상 가속화 전망",
+          "장중 주가 상승세 이어가"
+        ],
+        "catalyst": "성공적인 유상증자를 통한 양극재 핵심 원료 확보 및 생산 거점 강화로 중장기 성장 기반 마련."
+      },
+      "news": [
+        {
+          "title": "에코프로비엠 주가, 10월 21일 장중 109100원 3.71% 상승세 이어가",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9Ao58jGT2PRrm8qFrABGZhuxnwo1kBiVxKGGfPsg0GdZXTgod3ugXWBWLSgHEwSprr7kEMAnd1UgbGKqChiD4pvzgy_4XpTyyQ5QWdkHVnJkmIdUbyB1LV-6aLinjbsxFXD98mIovYhMavQg6KLCoeMek4rx7_EIq9Q==",
+          "description": "에코프로비엠 주가가 21일 장중 상승세를 이어가고 있습니다."
+        },
+        {
+          "title": "에코프로비엠, 8천861억 유상증자…내달 5일 신주 상장",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHuZU0oCdjDr9dXBiO5sCgqUbDCHR59JEYsLmiF_G9_DgKSR98jpQP8XrQSrjqkSd9e8uK_qV2rCbYSG-nyZGtAjLEfntgerFM6L_AT2pKwuqLBnNYkMGEBysWlQ-6ajYPoaI_79mrkj_ySgPDmQmyfQWpHf6KeKy7t",
+          "description": "에코프로비엠이 유상증자로 8,861억원을 조달하고 인도네시아 니켈 제련소 및 헝가리 공장 투자에 활용할 예정입니다."
+        },
+        {
+          "title": "증자 고비 넘긴 에코프로비엠…미뤄둔 4400억 CB 협상 속도 낸다",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKBRoSzfnGD_JJhzzwlQU2HyhoQFhx1074PBNnZmUamLETYMtN8-DWLL7UNEGep5yOqz9cykZyk7ds318nXn3aLlaD1ctAduabOqqJ8y7dx8-w_iTO7p-IkqpQhUABql-kNPaF1nvsVv6azqX5laj_RrvsC8SPpo4alQ==",
+          "description": "유상증자를 성공적으로 마친 에코프로비엠이 4,400억원 규모의 전환사채 협상에 속도를 낼 것으로 보입니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:23:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "047040",
+      "name": "대우건설",
+      "market": "KOSPI",
+      "current_price": 14730,
+      "change_rate": 4.03,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.5,
+        "supply_demand": 5.0,
+        "valuation": 4.0,
+        "material": 4.5,
+        "total": 4.88
+      },
+      "reason": "최근 3분기 어닝 서프라이즈에도 불구하고 주가가 하락했으며, 높은 부채비율과 현금 회수 지연 가능성이 부담 요인으로 작용하고 있습니다. 다만 역대급 수주 실적은 긍정적이며, RSI가 과매도 구간에 진입하여 반등 가능성도 존재합니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "저평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.49,
+      "news_analysis": {
+        "sentiment": "약간 부정",
+        "sentiment_score": -0.1,
+        "key_news": [
+          "IBK투자증권, '수주는 역대급, 현금 회수는 숙제' 목표가 하향 조정",
+          "3분기 EPS 서프라이즈에도 주가는 -7% 변동",
+          "보통주 2만1918주 소각으로 상장 주식 수 변경"
+        ],
+        "catalyst": "역대급 수주 실적은 긍정적이나, 현금 회수 지연 우려와 목표가 하향 조정은 투자 심리에 부정적."
+      },
+      "news": [
+        {
+          "title": "대우건설 주가, 10월 21일 장중 14350원 1.34% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5_IpkdnaW_mB6AwvhfZfrUrHYMJk4M4N_oS9pOlCvit--GvH-nK20X6p4mPPtu0FSiazSLVvhysk6tWqEFGaZ65r0EgdlK0vVv2D3QbXWQpuxUcTM_lh5auIyyXf7F3sLo3s00Mdbc1TkQvAlhQwv2lkSgvkD0fJZgQ==",
+          "description": "대우건설 주가가 21일 장중 상승세를 보이고 있습니다."
+        },
+        {
+          "title": "대우건설 상장주식 4억1088만5720주로 변경",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhsTBZ-vJESoTEqpLwO78uRKKA016P9koePr9tg8iY9VLoySSkHlDnbapwWKlV11o259AzMHESuwyevdyXBUzWSRsGssPvRR4OSBxmCE1jGlgRZLQNBgswNpFzdblGVQmkdP2fix3LZifw4etAl53s5A==",
+          "description": "대우건설 보통주 2만1918주 소각이 반영돼 오는 22일 상장주식 수가 변경됩니다."
+        },
+        {
+          "title": "[리포트 브리핑]대우건설, '수주는 역대급, 현금 회수는 숙제' 목표가 22,000원 - IBK투자증권",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE63t6AaxDgsrSjvvbNRBpbRW1SkLdZZ_UrprLLiUFcCXg6HNBK5K-X2xgItilTyi5-NVLFeBKTq0Pco5XV0pCsXA80YsT5Ef97Vdaln2GPaP_2dHsd7ahqGC3Ph42O9L2ZhK6S0C_c5Q==",
+          "description": "IBK투자증권은 대우건설의 수주 실적은 좋으나, 현금 회수 문제가 존재한다며 목표가를 하향 조정했습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:23:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "000500",
+      "name": "가온전선",
+      "market": "KOSPI",
+      "current_price": 241500,
+      "change_rate": 4.09,
+      "signal": "중립",
+      "scores": {
+        "technical": 3.25,
+        "supply_demand": 4.17,
+        "valuation": 2.4,
+        "material": 9.0,
+        "total": 4.26
+      },
+      "reason": "3분기 매출액과 영업이익이 역대 최대 실적을 달성하며 어닝 서프라이즈를 기록했습니다. 하지만 기술적으로 하락 가속 구간에 있으며, 높은 PER과 부채비율은 밸류에이션 부담으로 작용하고 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.43,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.8,
+        "key_news": [
+          "3분기 매출액 및 영업이익 분기 최대 실적 달성 (어닝 서프라이즈)",
+          "전선·전력기기 관련주 동반 강세",
+          "장중 주가 상승"
+        ],
+        "catalyst": "미국 전력 인프라 시장 성장 및 수출 확대에 힘입어 분기 최대 실적을 달성하며 강력한 긍정적 모멘텀 확보."
+      },
+      "news": [
+        {
+          "title": "가온전선 주가, 10월 21일 장중 236500원 1.94% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjawn5uk9QHWET_geKgvy_ykhkE-6VgWr7iamKVfSM_6kXdV2cJRzXmhtRpoeoDkOhJmOM4EGPodriA_QsLLK2hIvIollMOycuaeE7WipJv8Llhyyl1Kqrp23MHYyUyvvBVxkeQwKR8LeC9H4pcYlWq0B0iqV_0NlQvw==",
+          "description": "가온전선 주가가 21일 장중 상승했습니다."
+        },
+        {
+          "title": "'어닝서프라이즈' 가온전선, 3Q 매출액·영업익 분기 최대 실적(종합)",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEi9Rf4PncB4M0u92kxGOyjMIEjn8qGHgsGO438ZSFhTgBXua17G8zAvONZfgZht4d4djc-1F25ovLPUdJemgokygls6-92QQeLpoeQbukh1EZymJSsHDQl1i3LYm5nFhqbRkpJ8NIomRReg_6bwvjO9WO3EZ_JUebF",
+          "description": "가온전선이 3분기 매출액과 영업이익 모두 역대 최대 실적을 달성하며 시장 기대치를 크게 상회했습니다."
+        },
+        {
+          "title": "[속보] LS ELECTRIC·산일전기·가온전선 상승…전선·전력기기 관련주 동반 강세",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSNhm8JFKVp5jTsevL9VUpR9jF-2_40HzIF6vem6zYrHZdj2ws_mYjGkzc2Lz0B0Zb-JubQww4X3COD5WkaMxJ6Uw1QRF9A0D1VxrLf9EEKRG6-nN-G6NcfmConMvjELpGqFjqj80VJZegjuT7MgQ6t1eV",
+          "description": "LS ELECTRIC, 산일전기 등과 함께 가온전선이 상승하며 전선 및 전력기기 관련주가 동반 강세를 보였습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:23:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "329180",
+      "name": "HD현대중공업",
+      "market": "KOSPI",
+      "current_price": 319500,
+      "change_rate": 0.47,
+      "signal": "중립",
+      "scores": {
+        "technical": 2.75,
+        "supply_demand": 4.83,
+        "valuation": 5.2,
+        "material": 4.0,
+        "total": 4.16
+      },
+      "reason": "최근 환율 하락과 파업 영향으로 3분기 실적이 주춤하고 목표가가 하향 조정되었으나, 상선 및 엔진 부문 수주 목표를 초과 달성하며 가격 매력이 부각되어 '매수' 투자의견은 유지되었습니다. 기술적으로는 하락 가속 구간에 있으나 RSI는 과매도 수준을 보이고 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.42,
+      "news_analysis": {
+        "sentiment": "약간 부정",
+        "sentiment_score": -0.2,
+        "key_news": [
+          "3분기 실적 환율 하락 및 일시적 조업 중단으로 주춤, 목표가 하향 조정",
+          "상선 및 엔진 부문 연간 수주 목표 초과 달성, 투자의견 '매수' 유지",
+          "장중 주가 하락세"
+        ],
+        "catalyst": "단기적으로는 환율 및 파업 영향으로 실적 부진 우려가 있으나, 중장기적으로는 수주 목표 달성과 가격 매력에 대한 기대감이 상존."
+      },
+      "news": [
+        {
+          "title": "HD현대중공업 주가, 10월 21일 장중 316500원 0.47% 하락",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjIBse46APbigljpRi13gvwqqSMRQvD_T7bCk20UiTVnFQQfxQYAfDYPvb4BSzdU9Cd8MFJ30gdklEE72yGk_ah82JZpZgEAwMnaRcJ1yfhxYi9zG5PFxsAOX9m6J2Q26d61VA2f0kXDqKg5CVcT-6kaaXr35ihgFk4A==",
+          "description": "HD현대중공업 주가가 21일 장중 하락세를 보이고 있습니다."
+        },
+        {
+          "title": "HD현대중공업, 환율·파업에 3분기 실적 주춤'…목표가↓-KB",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHd37peXbhYNfFw0qp8rLPJlSPFWoTE6SUrLDgY6lnKV34KMVuybBu3aYV11P5mdYKbmcLEkrwTsn39mxiSL8FTYKmBI790D0_nCyqCZ8opDatPXDtDHbhLXXaUijUnT8PQFmKAQbtBw==",
+          "description": "KB증권은 HD현대중공업의 3분기 실적이 환율 하락과 일시적 조업 중단으로 주춤할 것으로 예상하며 목표가를 하향 조정했습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:23:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "market": "KOSPI",
+      "current_price": 31700,
+      "change_rate": -0.31,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.0,
+        "supply_demand": 6.67,
+        "valuation": 4.0,
+        "material": 8.5,
+        "total": 5.91
+      },
+      "reason": "3분기 순이익은 일회성 요인으로 감소했으나 경상 이익 창출력은 개선되었고, IBK투자증권은 자본비율 개선에 따른 주주환원 확대를 기대하며 '매수' 의견을 제시했습니다. 하지만 높은 부채비율은 여전히 주의가 필요합니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "낮음",
+      "confidence": 0.59,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.7,
+        "key_news": [
+          "IBK투자증권, 자본비율 개선 및 주주환원 확대 기대에 '매수' 제시",
+          "3분기 순이익 감소에도 경상 이익 창출력 개선",
+          "대출 성장 회복 및 비은행 사업 강화 긍정적 평가"
+        ],
+        "catalyst": "개선된 경상 이익 창출력과 자본비율 상승에 따른 주주환원 정책 확대 기대로 투자 매력 부각."
+      },
+      "news": [
+        {
+          "title": "IBK투자 \"우리금융지주 주식 매수 제시, 자본비율 개선에 주주환원 확대 기대\" - 비즈니스포스트",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbbxTueS_kxWn-rc-C0KJ3kl8en3iVyb3VAtg48Aton0GnWIKE0V3GozkfdtJeXhrG6mojnC95wH_YNxQTaWVFVhpxlX-tbc9Q_yRmQ3U-9v8j_l7fPyz2Tzi622SolsqQ8AxHyj9HAvd9rw2KMuwEsmZNHTHe9G8L9So=",
+          "description": "IBK투자증권은 우리금융지주에 대해 대출 성장, 비은행 사업 강화, 자본비율 개선에 따른 주주환원 확대를 기대하며 '매수' 의견을 제시했습니다."
+        },
+        {
+          "title": "우리금융지주 주가 하락 중 - 아시아뉴스통신",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHX_gZWlmkG6s5ZiScI6m4xP9wcV5eVePh6zwJ67TGmGv25-zaTPei5J2A1DEqy__3hiiXfNvzJfZB4Qa4yBw1uhFh-3-4NGD06vQv2-7yz4hrsjiG_tzfguJD1tcYmoFcA_ZTsgfKxq81A3jEw00qCIfMYUMsGtH6J67yw",
+          "description": "우리금융지주 주가가 21일 장중 하락세를 보였습니다."
+        },
+        {
+          "title": "우리금융, 3분기 감익에도 경상 이익 창출력은 개선 - 알파경제",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJpafYX1NQCd7ZriF0j9tdB7ABcMMFisK9fP7ASDNP6oUH9Lz5H3pAf28Aoiil7oaoQPDRAyaEAcVxY6DbMpvpVCKVVXfbJ0UNcPikV2i7zEOxu49cJuY7GB6kCovgnXM6kMhWcua_FUxgq0ApCnz93o3xDtNAGQ==",
+          "description": "우리금융지주의 3분기 순이익은 감소했지만, 이는 일회성 요인에 따른 것이며 대출 성장과 비은행 편입으로 경상 이익 창출력은 개선되었습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:23:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "051910",
+      "name": "LG화학",
+      "market": "KOSPI",
+      "current_price": 256000,
+      "change_rate": 1.39,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.75,
+        "supply_demand": 5.17,
+        "valuation": 4.0,
+        "material": 5.0,
+        "total": 4.78
+      },
+      "reason": "증권사 목표가 상향 소식과 함께 일회성 요인 소멸 및 LGES 자산유동화 기대감이 있으나, 전지 부문 수익성 저하 및 석유화학 업황 부진에 대한 우려도 상존합니다. 기술적 분석과 밸류에이션은 중립적인 수준입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.48,
+      "news_analysis": {
+        "sentiment": "중립",
+        "sentiment_score": 0.0,
+        "key_news": [
+          "증권사 목표가 상향 및 전기/석화 일회성 요인 소멸, LGES 자산유동화 기대",
+          "전지 부문 수익성 저하 및 석유화학 업황 부진으로 영업현금창출력 회복 지연 우려",
+          "장중 주가 상승"
+        ],
+        "catalyst": "LG에너지솔루션 자산유동화 가능성 및 비닐체인 과징금 예상 대비 낮은 수준 전망은 긍정적이나, 양극재 사업 부진은 부정적."
+      },
+      "news": [
+        {
+          "title": "LG화학 주가 상승 중 - 아시아뉴스통신",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfCcwv_xYEDbtXY9nm9R_sMQ1FWZkzJtLUyaqc-2TqiwkBXlyRH0Je5q4tcewVp73ad2vVdTHf8Y9AEu1Ajlx6EOhLM-8kSu5Fcq35ahflx6JaSAr97MHZvfV7ky7-DlfqOuSMiqBws27qWlT4DIg-1lylH1j_dOukJj6q",
+          "description": "LG화학 주가가 21일 장중 1.58% 상승했습니다."
+        },
+        {
+          "title": "LG화학, 증권사 목표가 상향에 강세…4.33% - 매일경제",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElY-pgpyadb90qoRKAu1BtMXvFof8C2Dym8SLbPt5Mzrfz46WkFq9sZoVZP1yeMM0TLkc5hK5NaU6IGAcP5nZdtwY3uPzU4a3V3D7YcoRhU8Jm32LFszxrIAm-CufZgHXdPQ==",
+          "description": "증권사 목표가 상향 조정에 힘입어 LG화학 주가가 강세를 보였으며, 전기·석화 일회성 요인 소멸 및 LGES 자산유동화 기대감이 언급되었습니다."
+        },
+        {
+          "title": "[핀포인트] [LG화학] 투자 줄여도 돈줄 막혀…양극재 회수도 지연 - DealSite경제TV",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJJpb2LpxYP96B5l_TZgDZteNNNU3tjQMZ8jrRAvBxBkzJy7MRj4dJUT_ti_wCl7WaBPUGD6Tp9rcrT43Qqg9vaXjjd0Z0G4DD5OeRv-La9vQf1V2dXhXewuqutZWAliQ6NQnt6A==",
+          "description": "전지 부문의 수익성 저하와 석유화학 업황 부진으로 영업현금창출력 회복이 지연되고 양극재 회수도 늦어지고 있다는 우려가 제기되었습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:23:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "010060",
+      "name": "OCI홀딩스",
+      "market": "KOSPI",
+      "current_price": 211000,
+      "change_rate": 4.98,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.25,
+        "supply_demand": 6.5,
+        "valuation": 4.8,
+        "material": 9.5,
+        "total": 6.24
+      },
+      "reason": "미국의 중국산 태양광 우회 수출 차단 조치에 대한 수혜 기대감으로 주가가 강세를 보이고 있으며, 호가 잔량도 매수 우위를 나타내고 있습니다. 다만, 과거 수익성 악화로 인한 낮은 밸류에이션 점수는 개선이 필요합니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.62,
+      "news_analysis": {
+        "sentiment": "극히 긍정",
+        "sentiment_score": 0.9,
+        "key_news": [
+          "미국의 중국산 태양광 우회 수출 차단에 따른 수혜 기대",
+          "장중 주가 9%대 상승"
+        ],
+        "catalyst": "미국의 중국산 태양광 제품 우회 수출 차단 규제 강화로 비중국 공급망을 보유한 OCI홀딩스가 직접적인 수혜를 받을 것으로 예상됨."
+      },
+      "news": [
+        {
+          "title": "OCI홀딩스 주가 장중 9%대 올라, 미국의 중국산 태양광 우회수출 차단에 수혜",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuF0DhrXoW_rehgFSpaN9fH8ssoqNvlyh73K6cNy0KFNKu1QXDtDs0IOAxAVqGdrBkkUR8uF9Y441yUDsPWpjRG9xeiCkvn7-GniFx6ASWZBwu-Y6PWNjBihqXUL07kqRFv2lC_viJKVADnM_N1UTfrbe-wZ62H9Fy8-0=",
+          "description": "미국이 중국산 태양광 제품의 우회 수출을 차단하기 위한 무역 규제를 강화하면서 OCI홀딩스가 수혜를 볼 것이라는 기대감에 주가가 장중 크게 상승했습니다."
+        },
+        {
+          "title": "OCI홀딩스 주가, 10월 21일 장중 216000원 7.46% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEi12zyK2Zp18GLfwE3Mfc1gkyrTMHoip40335zoqksQeJzKb4Y_VCpYZJlhxLFmzlnXPklcX6u2QewDhVsBGqNVGCxsDfwIEefI3jdOdXo57UjcA2nyBAcSI3VfJVeGnzJRwM1EsEQeV3g6dJpEsR-cNADGvgA0ACmjQ==",
+          "description": "OCI홀딩스 주가가 21일 장중 7.46% 상승한 216,000원에 거래되고 있습니다."
+        },
+        {
+          "title": "OCI홀딩스 장중 7.46% 올라 21만6000원",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFw1XjqZdUZKBMeUduzOmBgC3S0C0ZG4D4Y3kELK3WaAVfTkOibDSwtj-iM8gBAWGBfnLst1y0LXvw92dsKdH0gW4SJVz_qqL2bb7i8DHnGJOJ-ZDiHm4zjpR4Bmp6XuJovRNk3bjd8uu3gnADn2-YapQ==",
+          "description": "OCI홀딩스 주가가 21일 장중 강세를 보이며 21만6000원에 거래됐습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:23:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "042700",
+      "name": "한미반도체",
+      "market": "KOSPI",
+      "current_price": 200000,
+      "change_rate": 0.05,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.75,
+        "supply_demand": 4.17,
+        "valuation": 6.0,
+        "material": 4.5,
+        "total": 4.76
+      },
+      "reason": "RSI가 과매도 구간에 진입하여 기술적 반등 가능성이 있으나, 전반적인 추세는 약세 흐름을 보이고 있습니다. 반도체 업종의 AI 투자 수익성 우려가 시장 심리에 부정적인 영향을 미치고 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.48,
+      "news_analysis": {
+        "sentiment": "약간 부정",
+        "sentiment_score": -0.1,
+        "key_news": [
+          "뉴욕 증시 AI 투자 수익성 우려로 기술주 하락에 영향",
+          "장중 주가 소폭 상승",
+          "최근 5거래일 중 15일 거래대금 최대 기록"
+        ],
+        "catalyst": "반도체 업황 전반의 AI 투자 수익성 우려가 주가에 부담으로 작용하고 있으나, 최근 거래대금 증가세는 관심 유지 필요."
+      },
+      "news": [
+        {
+          "title": "한미반도체 주가, 10월 21일 장중 201000원 0.55% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTHwtJeDZ1B2vVvWc-Dv9_3Ojr9ntCushRuYrl_-37QmEw5LAPOATlm6XMzw9bh-1TycXlyuu3BXijeeEblyK5p0evA2QGDd2GiIzOfn-T9oWawdXWbSHZb5vp_YqrqKRSeGixm4lD-wAtNx8bBKaFLWsiYDBRr2xxdA==",
+          "description": "한미반도체 주가가 21일 장중 소폭 상승했습니다."
+        },
+        {
+          "title": "한미반도체 주가 상승 중 - 아시아뉴스통신",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwFGnF25n4UDaUH-_EMoIeFqNje35D3TYStET_a6__Ns8D59yYsmuZOeZz5_1Tv6kmu4VGIzzh4lvLFmaN4EwTPWj3aG03exTukMRgkXe82arezuv84iDT3cckat-PENsHKjWvcHCbyVUiVFCOTyhdUPNgcuIMOZlE0C9n",
+          "description": "한미반도체 주가가 21일 장중 3.05% 상승 중입니다."
+        },
+        {
+          "title": "[특징주] 광통신주, AI 투자 수익성 우려에 동반 하락",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpOcOOTdPXuDLpSA3FN4mNltf5oau_AgNJSRzxF1a-FZWbKr5MXm0scRNUHuAle15aseMb-S2L0Lx5x5dzeFUb90sAM6kArER1TqmLMEvo-7o_BX2JoEehWn9XKP59BNPOPBSLkSs-hA0Axde3BkMu3zwMvrwXLEW7YA==",
+          "description": "뉴욕 증시에서 AI 투자 수익성 우려가 재차 점화되며 필라델피아 반도체지수가 급락하는 등 반도체 관련주가 약세를 보였습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:23:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "486510",
+      "name": "글로벌테크놀로지",
+      "market": "KOSDAQ",
+      "current_price": 7550,
+      "change_rate": 8.32,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.25,
+        "supply_demand": 5.0,
+        "valuation": 2.0,
+        "material": 9.0,
+        "total": 4.78
+      },
+      "reason": "외국인/기관 동시 순매수세와 함께 하반기 신규 상장 테마의 강세에 힘입어 주가가 장중 크게 상승하고 있습니다. 하지만 재무 정보가 부족하고, PER, PBR, EPS가 0으로 밸류에이션 판단이 어렵습니다. RSI가 과매도 수준으로 단기 급락에 대한 주의가 필요합니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "불분명"
+      },
+      "risk_level": "높음",
+      "confidence": 0.48,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.8,
+        "key_news": [
+          "외국인/기관 동시 순매수, 주가 15.06% 상승",
+          "2026 하반기 신규상장 테마 상승세에 주가 급등",
+          "장중 주가 9.04% 상승"
+        ],
+        "catalyst": "외국인/기관의 강한 동시 순매수와 하반기 신규상장 테마 모멘텀에 힘입어 단기적인 주가 상승 기대감 증폭."
+      },
+      "news": [
+        {
+          "title": "글로벌테크놀로지 주가, 10월 21일 장중 7600원 9.04% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEI5oI1BA3VEWMtF4FOtoybJ-8zcysi_A1rGEhn5_3CQoNDnihhdeaBe45oKwEsnu1mRVPJ9xfjS2r2_1CVcV4nckS0x29EPmGZ_Z9d3NeR7R5qmh-7NiRW_o3UchPaIKmpaCzLGGDsVr5Otb2njL7ycM_N1z_XA75fRw==",
+          "description": "글로벌테크놀로지 주가가 21일 장중 상승했습니다."
+        },
+        {
+          "title": "[장중수급포착] 글로벌테크놀로지, 외국인/기관 동시 순매수… 주가 +15.06% - 뉴스핌",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0ioJeyEKh28rccDsCbN5l3vcBaPHpEtwmfzrr-QxM3FOtfwoDSliPWcXAFdlQ1Ex0sHltHytemhmr8Gcy5e4FyeSnJaK-T94KINd8iMeUPzmboHufh7S8K4k0s_bh4jQjY20iM4dH3A==",
+          "description": "21일 11시 37분 현재 글로벌테크놀로지는 외국인과 기관이 동시 순매수하며 주가가 15.06% 상승하고 있습니다."
+        },
+        {
+          "title": "특징주, 글로벌테크놀로지-2026 하반기 신규상장 테마 상승세에 8.61% ↑ - 매일경제",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEI6br4I4WwJh3Pqsci7_XKo-Ps8EtvLo7RYQW1jIeadHWofQ2OOBEQ6BgZuIjkRsWrtOxYw8g9-0Il9sRbg9UsWR1fPkQGztDTLw372R5a7RTJhVQHHgkAx1Q8KLAhtkukaA==",
+          "description": "2026 하반기 신규상장 테마의 상승세에 힘입어 글로벌테크놀로지 주가가 급등했습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:23:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "086790",
+      "name": "하나금융지주",
+      "market": "KOSPI",
+      "current_price": 122200,
+      "change_rate": 0.33,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.25,
+        "supply_demand": 5.17,
+        "valuation": 3.8,
+        "material": 8.5,
+        "total": 5.12
+      },
+      "reason": "하나금융지주는 기관 순매수세와 긍정적인 애널리스트 리포트에 힘입어 긍정적인 재료 점수를 기록했습니다. 그러나 기술적 추세는 약세이며 거래량이 감소하여 추가 상승 모멘텀이 제한될 수 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.51,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.7,
+        "key_news": [
+          "IBK투자증권, 하나금융지주 목표가 172,000원 제시",
+          "3Q26 지배주주순이익 시장 기대치 부합",
+          "자사주 매입·소각 및 배당 확대 기대"
+        ],
+        "catalyst": "은행 중심 성장 전망 및 강화된 주주환원 정책에 대한 기대감이 주가에 긍정적으로 작용할 것으로 보입니다."
+      },
+      "news": [
+        {
+          "title": "[리포트 브리핑]하나금융지주, '은행 중심 성장에 주목' 목표가 172,000원 - IBK투자증권",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpCMCX64hhuQUoVIYiL4JFnjfQglxEsyipdFPTYYagYWo3xqI7in_MOWjCoV2mQQa6R9Njoi4m3mpQsI0WBTj0-4Cibo3-Xag8Pm2i0ZV1KAjYzMPCqU9Gx3sF1ozHunFKVwLDF5wQ38c=",
+          "description": "IBK투자증권에서 하나금융지주에 대한 투자의견 '매수'와 목표가 172,000원을 제시하며 3분기 실적과 주주환원 확대를 기대했습니다."
+        },
+        {
+          "title": "하나금융, 은행 중심 성장...자사주 매입·소각 기대 - 알파경제",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERxcro3Y6qX4aQCLbMOwJjB3OH8UD0I5MKbYqHPWLS4o0Ww0a0EBbVoCnPuznb-WO0u8_v5IYdsSGMPStJMin5gw1C9DA2A4HKzkYB92mbz3ugpea9OOH9JsBafydtzTm62ijWVoM_J-s2cgeC6PzdY1yuxu_9Tg4=",
+          "description": "하나금융지주의 3분기 지배주주 순이익이 시장 기대치에 부합할 것으로 예상되며, CET1 자본비율 개선에 따른 자사주 매입·소각 및 배당 확대가 기대됩니다."
+        },
+        {
+          "title": "[IB토마토](Deal모니터)하나금융, 영구채 2700억 차환…흥행해도 금리는 부담",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEATGEyJSrK4YGQoN3fdae7KvJQDrkaAo_k08kAtWutDU5MSDvRarIcDWCyhrdrQB8E89Sz10Qk_LqXr2zaUSxwnQublW5AfubNKSeEMVXY1sfayXPuHFVkVxFshFhVroUf422A2TiSSCOBYIinlCM7jd-E",
+          "description": "하나금융지주가 2700억원 규모의 영구채를 차환 발행했으며, 금리 부담이 있을 수 있다는 분석이 나왔습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:27:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "098460",
+      "name": "고영",
+      "market": "KOSDAQ",
+      "current_price": 31250,
+      "change_rate": 3.14,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.5,
+        "supply_demand": 5.83,
+        "valuation": 6.5,
+        "material": 8.0,
+        "total": 5.89
+      },
+      "reason": "고영은 반도체 업황 회복과 AI 데이터센터 수주 소식 등 긍정적인 재료를 바탕으로 높은 재료 점수와 양호한 밸류에이션 점수를 받았습니다. 그러나 기술적 흐름과 거래량은 아직 강한 상승 추세를 보이지 않고 있어 보수적인 접근이 필요합니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.59,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.6,
+        "key_news": [
+          "반도체 업황 턴어라운드 및 외국계 스마트머니 유입",
+          "삼성전자, SK하이닉스 등 반도체주 동반 강세 속 상승",
+          "북미 AI 데이터센터 340억 수주"
+        ],
+        "catalyst": "반도체 업황 회복과 AI 데이터센터 관련 수주 및 로봇 의료 시장 진출 가능성이 중장기적인 성장 동력으로 작용할 것으로 기대됩니다."
+      },
+      "news": [
+        {
+          "title": "[고영 주가전망] 주주님들 절대 지금 던지지마세요. \"이 가격\" 까지 무조건 올라 갑니다.",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGC1kI_3Jf8IQ1Y26X5-ru20miFde4cHMwJlh9W5d2xp0LTYqccd5CyMmWSpjegiLu6rlGdBNNi81KIheYTUpk-Qu6sXhThbdjXBMLnikS3SPFBOYx--cFsW5NRT2-xRYCzIHLYo=",
+          "description": "고영이 3D 검사 장비 제조사로 반도체 업황 회복과 함께 검사 장비 수요 증가가 예상되며, 외국계 스마트머니 유입이 포착되었습니다."
+        },
+        {
+          "title": "[속보] SK하이닉스 130만원 돌파·삼성전자 22만원대 급등…반도체주 동반 강세 - CBC뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZgOPoC5WOzXF1LdvpxXOYBE8Z4h6tgzYZyw2wQXh1vi9YlzKYLuvow4Bw_FgT7yJKbdqg1DjSWWGw-sqLoxlyB-o2ZHIeHRkQkafnbOAEBkylsyFhdO59zqUYy-UZAUFaz4j8iVz8sAAVC-uh1bFz44kxbQ==",
+          "description": "삼성전자, SK하이닉스 등 대형 반도체주가 급등하며 반도체 관련 종목들이 전반적으로 강세를 보였고, 고영도 이에 동참했습니다."
+        },
+        {
+          "title": "[Koh Young Stock Outlook] A Must-Watch for Koh Young Shareholders: North American AI Contract Wor...",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeThRdX1PuFOW75BiExbgCPR7PUlNHJqCWEFTIUiqjmLGwycG94m5oj4OjxSJZrnLEpVCzFZifXXUqZp20dL8fO7qDfbPRwY0gwkSDzRyIuM2JAlmvBnTpFGj3q4488kNdRSn-5DI=",
+          "description": "고영이 북미 AI 데이터센터 340억 원 규모 수주 및 의료로봇 미국 진출 소식으로 주가가 상승했습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:27:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "008970",
+      "name": "KBI동양철관",
+      "market": "KOSPI",
+      "current_price": 1580,
+      "change_pct": 0.45,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.5,
+        "supply_demand": 6.5,
+        "valuation": 4.4,
+        "material": 5.5,
+        "total": 5.33
+      },
+      "reason": "KBI동양철관은 강세 추세를 보이며 호가 잔량 비율이 높지만, 거래량이 감소하고 밸류에이션 지표가 혼재되어 있습니다. 과거 철강 산업 관련 호재가 있었으나 최근 시의성 있는 강력한 재료가 부족한 상황입니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.53,
+      "news_analysis": {
+        "sentiment": "중립",
+        "sentiment_score": 0.1,
+        "key_news": [
+          "KBI동양철관 주가 10월 21일 장중 1.72% 상승",
+          "과거 트럼프 알래스카 LNG 프로젝트 수혜 기대감"
+        ],
+        "catalyst": "최근 주가 상승은 있었으나, 현재 시점에서 주가를 견인할 만한 강력한 신규 재료보다는 과거 철강 업종 테마에 대한 기대감이 언급되고 있습니다."
+      },
+      "news": [
+        {
+          "title": "KBI동양철관 주가, 10월 21일 장중 1600원 1.72% 상승 - 톱스타뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-TTo-qYsrRW4cMDLqJAhKFoFRimYFX_BF0HaqdCatII71g_BR3Mz53HEvTpwC_I7ZlL-T-rzPwhagrifEo9EVS075QRbHvclhYBM9ek_389_ymCjeeg7BhQHGz2R3CJA4FTYGLVstI97uSl15VIqW6h3y4v2dA8z2x5c=",
+          "description": "KBI동양철관 주가가 10월 21일 장중 전일 종가 대비 1.72% 상승한 1600원을 기록하며 변동성을 보였습니다."
+        },
+        {
+          "title": "KBI동양철관 (008970) 주가 - 트렌드 종목 | 돌핀",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEi_KirguIMOE0KFvb6tIt1tjCCMaL0w9hMxtcFIp4ERePilzgm8vHwRQfY84XuzyVchlKn2ta5TM2LcqVEtGhPX2q9h4I2gPnbJRlehvS3Bdz8fPiAYtwvC-ypxeAybYE=",
+          "description": "과거 철강주가 트럼프 전 대통령의 알래스카 LNG 프로젝트 발언 및 중동 재건 기대감에 급등했던 소식이 있습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:27:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "138360",
+      "name": "앤로보틱스",
+      "market": "KOSDAQ",
+      "current_price": 1496,
+      "change_pct": 8.72,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.25,
+        "supply_demand": 6.5,
+        "valuation": 4.25,
+        "material": 9.5,
+        "total": 5.83
+      },
+      "reason": "앤로보틱스는 AI 도서관 로봇 글로벌 독점 공급 계약과 삼성전자 로봇 사업 조직 개편 소식에 힘입어 강력한 재료 모멘텀을 보유하고 있습니다. 다만, 기술적 흐름과 밸류에이션 지표는 혼재된 신호를 보이고 있어 변동성이 클 수 있습니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.58,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.9,
+        "key_news": [
+          "비블리오테카와 AI 도서관 로봇 '로미' 글로벌 독점 공급",
+          "삼성전자 로봇 사업 조직 개편 소식",
+          "주가 10월 21일 장중 15.41% 상승"
+        ],
+        "catalyst": "AI 도서관 로봇의 글로벌 독점 공급 계약과 대기업의 로봇 사업 확대 움직임에 따른 수혜 기대감이 주가에 긍정적인 영향을 미치고 있습니다."
+      },
+      "news": [
+        {
+          "title": "앤로보틱스 뉴스 | 알파스퀘어 종목이슈",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4WXURxFYuVfeHqYUpACeZ3cRuY6Utnvj4wIyh6LVBYdLcgT2pp767iQhA2e1FlN4POHOGHdxAMJQfZR-rwJbewq0PjM4c2nbqFamD71tujemY6bV0TPCgi4W9aiY5AcROkO_I0uF3GUYnWemCjFo5_7m7VQaw332dm5g=",
+          "description": "앤로보틱스가 비블리오테카와 손잡고 AI 도서관 안내 로봇 '로미'를 글로벌 시장에 독점 공급하며, 삼성전자의 로봇 사업 조직 개편도 긍정적입니다."
+        },
+        {
+          "title": "앤로보틱스 주가, 10월 21일 장중 1588원 15.41% 상승 - 톱스타뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHl6jpjSK7lCb-mzlJK2Lz8VQe-SL9SC2ELS4FZvGISbRe__1nV8-yKisOwE0KNX-LjTpsbkfU_Dr5des46NUVLtZB2Xy5njjAz4RpNDtlnA99qsDaX9mnphjmJshYt70hTPbOUyvzgmYh10X16iuWbgH7eooqEYCcLb8=",
+          "description": "앤로보틱스 주가가 10월 21일 장중 전날 종가 대비 15.41% 상승한 1588원에 거래되고 있습니다."
+        },
+        {
+          "title": "앤로보틱스, 삼성·현대차도 뛰어들더니…'24% 폭등' 관심 쏟아진 종목",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVaEkp2qiJ0IcBJepO3F5dWN0gTrAviu4YbfC4MZe8DHSgq03N0rgne0ZVPsH06m4x-eNiyTBG-ZKrZHtOstAwCw3_JfkPVxj0P8BkPiV1p01U1KFHQ5UqLqnby2-xHCyHykqS",
+          "description": "삼성과 현대차 등 대기업의 로봇 사업 투자 확대 소식에 앤로보틱스 등 로봇 관련 종목들이 관심을 받고 있습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:27:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "080220",
+      "name": "제주반도체",
+      "market": "KOSDAQ",
+      "current_price": 67900,
+      "change_pct": 2.88,
+      "signal": "매수",
+      "scores": {
+        "technical": 5.0,
+        "supply_demand": 6.67,
+        "valuation": 7.33,
+        "material": 9.5,
+        "total": 6.73
+      },
+      "reason": "제주반도체는 온디바이스 AI 테마와 LPDDR 공급 부족 수혜로 1분기 영업이익이 크게 증가하는 등 강력한 재료와 밸류에이션 매력을 보여주고 있습니다. 수급 상황도 긍정적이나, 기술적 추세는 아직 혼재된 모습을 보입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "보통",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.67,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.9,
+        "key_news": [
+          "온디바이스 AI 테마 상승세에 6.52% 급등",
+          "LPDDR 공급 부족 수혜로 1분기 영업이익 1,714% 증가",
+          "모바일·IoT용 저전력 메모리 설계 전문업체"
+        ],
+        "catalyst": "온디바이스 AI 시장의 성장과 LPDDR 공급 부족에 따른 실적 개선 기대가 제주반도체의 주가를 견인하는 핵심 동력입니다."
+      },
+      "news": [
+        {
+          "title": "특징주, 제주반도체-온디바이스 AI 테마 상승세에 6.52% ↑ - 매일경제",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzoicCeMQuwp2Gdk95szxP7eHqDdiX91gzN7wwlSSuqFIBdgRHFmZerDmE8Am0-gErdvFw5y_niFbO2OM32vHO5Y0w-y19GNqB6-Bnyz5fA0Gr58rcw7kK1d14kOshwZMz-RE=",
+          "description": "제주반도체가 온디바이스 AI 테마의 강세 속에 전일 대비 6.52% 상승하며 주목받고 있습니다."
+        },
+        {
+          "title": "[특징주]제주반도체, LPDDR 공급 부족 수혜 기대에 7.57% 올라…1분기 영업익 1천714% 증가",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHT96Ccco3LEnoyK448BzIDlZ6DmMAsK1siELjasRA12X-XIbNbtFk2mwp6Y3h0yNqCdHpUyyFhXKxKfAnO96fBN5jdJABdeCroBT8OygUEo2lSN_NrlDKRpjD1KIm-6Q_GlHQ8au61DivoO4T_r8QymdyCbgqGOw==",
+          "description": "제주반도체가 저전력 D램(LPDDR) 공급 부족 수혜와 함께 1분기 영업이익이 전년 동기 대비 1,714% 급증하는 사상 최대 실적을 기록했습니다."
+        },
+        {
+          "title": "제주반도체 주가 상승 중 - 아시아뉴스통신",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgnhtr4dq5Yq668DU2oRe-qvDQUauCxSWO5e1ZVzWdYpm219Lt3_WqiHqjScaVpLMTmVuLJoZHKA6atm7pAFJcSxmIJveVjPfSOfOMUZpd6lZzZQIVy9nV_tVuVts6ni_-RVCXws4dpZpIsruzpX6aCSUFBitRfPwpSbaIiw==",
+          "description": "제주반도체 주가가 10월 21일 9시 14분 기준으로 4.24% 상승하는 등 강세를 보였습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:27:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "market": "KOSPI",
+      "current_price": 220000,
+      "change_pct": 4.02,
+      "signal": "매수",
+      "scores": {
+        "technical": 5.25,
+        "supply_demand": 6.33,
+        "valuation": 8.0,
+        "material": 9.5,
+        "total": 6.82
+      },
+      "reason": "삼성전자는 최근 반도체 업종의 저가 매수세 유입과 미국 AI 서버 제조업체의 호실적 발표에 따른 AI 투자 낙관론으로 강한 반등세를 보였습니다. 밸류에이션 지표도 성장주로서 매력적인 수준을 유지하고 있어 긍정적인 신호입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "저평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.68,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.9,
+        "key_news": [
+          "주가 장중 7%대 강세, '저가매수세 유입'",
+          "美 AI 서버 제조업체 호실적 발표로 AI 투자 낙관론 재점화",
+          "SK하이닉스와 반도체주 동반 강세"
+        ],
+        "catalyst": "글로벌 AI 투자 심리 회복과 반도체 산업 전반의 강세가 삼성전자의 주가 상승을 이끌고 있으며, 이는 당분간 지속될 가능성이 있습니다."
+      },
+      "news": [
+        {
+          "title": "삼성전자 주가 장중 7%대 강세, '저가매수세 유입'에 SK하이닉스도 8%대 올라",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFd8UfIVqF5tY15lvcnUtCqbn2XwMFPYF_8qa8qOAFPHHPoHYMxhf1xcjxOV6qKY591QVasD6G6s4RWBg07pHerfM1UCGnaQWyfs7Cu4UQXiwfuZL9nNgOpR5Nh_cjgZska4065qcjxMzS4VhJy3PepVUUvSKWdGpL5Kh3k",
+          "description": "삼성전자 주가가 10월 21일 장중 크게 오르며 저가매수세가 유입되는 것으로 풀이되고 있습니다."
+        },
+        {
+          "title": "삼성전자 주가, 오늘 급등한 이유는? - Investing.com",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmvjQyvR_4e0xMwZdk5mOOiOKnwrWhCE16bEeepZVFHrkjY1O9V-Ob2y0yuEwKDW7dP2FmhHHc7tkJ39gwrTU-d09RHNux3k93VaTNxMT1k2rAWVpkFGK-ctBHjmm7vfVabPc9vFXxvsssUxYOpaKtJ8nSN_dTqvVpqX9V2gtO",
+          "description": "삼성전자 주가는 미국 AI 서버 제조업체의 예상 밖 호실적 발표로 글로벌 인공지능 투자 지속성에 대한 낙관론이 되살아나면서 급등했습니다."
+        },
+        {
+          "title": "[속보] SK하이닉스 130만원 돌파·삼성전자 22만원대 급등…반도체주 동반 강세 - CBC뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZgOPoC5WOzXF1LdvpxXOYBE8Z4h6tgzYZyw2wQXh1vi9YlzKYLuvow4Bw_FgT7yJKbdqg1DjSWWGw-sqLoxlyB-o2ZHIeHRkQkafnbOAEBkylsyFhdO59zqUYy-UZAUFaz4j8iVz8sAAVC-uh1bFz44kxbQ==",
+          "description": "SK하이닉스와 삼성전자 등 대형 반도체주가 급등하며 관련 업종 전반에 걸쳐 상승세가 나타나고 있습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:27:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "347700",
+      "name": "스피어",
+      "market": "KOSDAQ",
+      "current_price": 22200,
+      "change_pct": 2.54,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.5,
+        "supply_demand": 6.67,
+        "valuation": 3.83,
+        "material": 9.5,
+        "total": 6.18
+      },
+      "reason": "스피어는 스페이스X의 어닝 서프라이즈와 스페이스X 공급망 참여 소식으로 강력한 재료 모멘텀을 확보했습니다. 다만, 매우 높은 PER과 낮은 ROE, 높은 부채비율은 밸류에이션 리스크를 높입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.62,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.9,
+        "key_news": [
+          "스페이스X 어닝 서프라이즈에 관련주 강세",
+          "스페이스X 공급망 참여",
+          "주가 10월 21일 장중 4.62% 상승"
+        ],
+        "catalyst": "스페이스X의 실적 호조와 스피어가 스페이스X 공급망에 참여하고 있다는 점이 부각되며 주가에 강한 상승 동력으로 작용하고 있습니다."
+      },
+      "news": [
+        {
+          "title": "스피어 주가, 10월 21일 장중 22650원 4.62% 상승 - 톱스타뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWzyvhe2Lj4E9QLc-88YHWRKgTsXkuOmYjnInbUbTQybK8O2jlu6J5uipxTwelv2t5Fi8UqaclkXeL72XBCFqb4m9h_gKiL_BHDbZy86alK9PkhWnkdZfShVvDqnqkoMSecD8_qOWH6MxAgwDNXLaV_OvObbAfFsg2VM0=",
+          "description": "스피어 주가가 10월 21일 장중 전일 종가 대비 4.62% 상승했으며, 동일업종 하락세 속에서 차별화된 움직임을 보였습니다."
+        },
+        {
+          "title": "특징주, 스피어-스페이스X(SpaceX) 테마 상승세에 7.87% ↑ - 매일경제",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6QZmbOw0UP013bwRFkA9XkkvcpqWwOcRPHhXl5e5hMaacguqBr-3Q4g5r84GqNk7f9GCor8O1XrbeLb_yp3YHOZjFCHdUD69ukNLX3PxkkBqsiKyGaI2eoeId6G7YxJzSbg=",
+          "description": "스피어가 스페이스X(SpaceX) 테마 상승세에 힘입어 전일 대비 7.87% 급등했으며, 스페이스X 테마 전반의 기대감이 상승했습니다."
+        },
+        {
+          "title": "스페이스X, 어닝 서프라이즈에 관련주 강세 - 스마트투데이",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4kQBsNUZu_cKbO8kfVA4-3H_GT_FAN9IckBb3lsBgTGqLpV6un4hrvAVSMumEDgvsBlYBuflDYNmjv6_m7mM1yutBx6_1pT4VHwOTKUld8X9tbZGCV-r1ECMU1IfTDGfnPDBvtLEDAoA2baai",
+          "description": "스페이스X의 3분기 어닝 서프라이즈 발표에 스피어 등 국내 관련 종목들이 강세를 보였으며, 스피어는 스페이스X 공급망에 참여하고 있습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:27:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "396300",
+      "name": "HT로보틱스",
+      "market": "KOSDAQ",
+      "current_price": 11120,
+      "change_pct": 13.82,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.25,
+        "supply_demand": 5.83,
+        "valuation": 2.8,
+        "material": 9.5,
+        "total": 5.3
+      },
+      "reason": "HT로보틱스는 7천억 원 규모의 수주잔고와 로봇·ESS 부품 확대 기대감에 힘입어 강력한 재료 모멘텀으로 주가가 급등하고 있습니다. 그러나 밸류에이션 지표가 매우 높고 RSI가 과매수 구간에 있어 단기 급등에 따른 조정 가능성이 있습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.53,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.9,
+        "key_news": [
+          "수주잔고 7천억 원 부각 및 로봇·ESS 부품 확대 기대",
+          "로봇 중심 기업 정체성 확보를 위한 사명 변경",
+          "주가 10월 21일 장중 9.83% 상승"
+        ],
+        "catalyst": "로봇 및 ESS 부품 사업의 성장 기대와 대규모 수주잔고가 HT로보틱스의 주가를 견인하고 있습니다."
+      },
+      "news": [
+        {
+          "title": "HT로보틱스 주가, 10월 21일 장중 10730원 9.83% 상승 - 톱스타뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEuoaxGHrKGz51OYgct_QO9-zPiDTBGF99OPsdPZ5eeaQLQBNZo7ONA_apcEeCeKDhT-EQus0p8gs_UegTS2BJUZw_-FdOREfe15k_2XYpWbOTvUuWt2qMn419n-bGdV14MTT2z83sqvxuzdrHT5yDP-p4IzM_66BqKbw=",
+          "description": "HT로보틱스 주가가 10월 21일 장중 전일 종가 대비 9.83% 상승한 10730원을 기록했습니다."
+        },
+        {
+          "title": "[52주 최고가] HT로보틱스, 전일비 7.13%↑... 현재가 9,770원 - 버핏연구소",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2uRXljc_0-U2e9wQLS0mt6z5RVvAnxTxC8fU7mvxgmMtplj97VNS8PgQU_mancfcmnu-bfsMd790v_gfJRBx7D83_Oiso9E7JcA-mcutwyVxyw6kT_xZjdHLmUXbQzCJvv2zGOQXloRQ6cac_5-g=",
+          "description": "HT로보틱스가 10월 20일 52주 최고가를 기록하며 로봇 중심 기업 정체성 확보에 대한 기대감을 높였습니다."
+        },
+        {
+          "title": "[특징주]HT로보틱스, 수주잔고 7천억 원 부각에 20.61% 상승…로봇·ESS 부품 확대 기대",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEX4GTmpQbNbjx8S-8OVSN6xME91s7F4OZPy1x14apV4q9Rp2ua_J0q-7oMPJWMVCOguRjz063ekZ02VHV-zzUd5pz97OrvcULfuITzZO9DbbX8MoxcqdI6rnZsiyBws-XGWXPmc-Fv48BnKp0RkOUlFwmS30xYgw==",
+          "description": "HT로보틱스의 7천억 원 수주잔고와 로봇·ESS 부품 확대 기대감이 부각되며 주가가 20.61% 상승했습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:27:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "440110",
+      "name": "파두",
+      "market": "KOSDAQ",
+      "current_price": 51800,
+      "change_pct": 1.17,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.5,
+        "supply_demand": 6.5,
+        "valuation": 4.4,
+        "material": 8.5,
+        "total": 5.78
+      },
+      "reason": "파두는 유진투자증권의 긍정적인 리포트와 3분기 잠정 실적 흑자 전환 소식으로 재료 측면에서 강한 상승 동력을 확보했습니다. 그러나 기술적 추세는 약세이며 과거 외국인 매도세가 이어지는 점은 부담 요인입니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "보통",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.58,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.7,
+        "key_news": [
+          "'eSSD 수요 서프라이즈에 주목' 목표가 110,000원 제시",
+          "3Q26 잠정 실적 시장 기대치 상회, 흑자전환",
+          "파일 시맨틱 SSD 첫 공개, AI 데이터센터 겨냥"
+        ],
+        "catalyst": "eSSD 수요 증가와 AI 데이터센터용 신제품 출시, 그리고 3분기 실적의 흑자 전환이 파두의 주가에 긍정적인 영향을 미칠 것으로 예상됩니다."
+      },
+      "news": [
+        {
+          "title": "[리포트 브리핑]파두, 'eSSD 수요 서프라이즈에 주목' 목표가 110,000원 - 유진투자증권",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpcrG63jt8_NDXcUcVRo4CQoBtImNDfiIhqyErnBblT6Av_KlOwQpfrWAQDRkdAMCUf4wDGPw_WefIeA7Xe9kkp-alloACBth4JZPy1HN7xfBBUjcPTLG7kki4biIgNOdfXKqJWmMt1pBzpg==",
+          "description": "유진투자증권은 파두에 대해 eSSD 수요 서프라이즈에 주목하며 목표가 110,000원을 제시, 3분기 잠정 실적이 시장 기대치를 상회하며 흑자 전환을 기록했다고 분석했습니다."
+        },
+        {
+          "title": "파두(440110) | 기업정보, 재무제표, 최신 뉴스 분석 - 이데일리 TV",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6JjSrUZlSy6qGoJ55J6fe-zkeAYu_pRgWwPIIqfJswcwCO8yYPKKBtalZFJ5y3y3AHlcATjyPYBg0qcE_SbfS7_IqU6QBI0gMMOP2RGWjz2jrSbPoHmQXkHQJ0MEZK0BXLQBb",
+          "description": "파두는 파일 시맨틱 SSD를 처음 공개하며 AI 데이터센터 시장을 겨냥하고 있으며, 2026년 3분기 매출액 1,436억 원, 영업이익 363억 원을 기록했습니다."
+        },
+        {
+          "title": "파두 주가, 10월 20일 51200원 6.57% 하락 - 톱스타뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmEFcEagzxdeAVHQWEufKbgeIfrNRWnsn_E_-FRszrN3JAg-9HqD8GzVfZr1YkGWzzy-_Xzmrn05pS2vWSkK26iELzDP7RiuKnIOACEAeFESkaVEYWfx7FqKjMTNwkjdFzSu3nHe814sy9xmhz4-9HTUYIx8_2XatMwQo=",
+          "description": "파두 주가가 10월 20일 전일 종가 대비 6.57% 하락한 51200원에 거래를 마쳤습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:27:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "300080",
+      "name": "플리토",
+      "market": "KOSDAQ",
+      "current_price": 11440,
+      "change_pct": 6.42,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.25,
+        "supply_demand": 5.33,
+        "valuation": 5.4,
+        "material": 8.5,
+        "total": 5.5
+      },
+      "reason": "플리토는 3분기 영업이익이 큰 폭으로 증가하며 상한가를 기록하는 등 강력한 긍정적 재료가 있습니다. AI 통번역 및 데이터 사업의 글로벌 확장도 긍정적입니다. 다만, RSI가 과매수 구간에 있고 EPS 성장률이 음수인 점은 리스크 요인입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.55,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.7,
+        "key_news": [
+          "3분기 영업이익 89억, 오후 상한가 기록",
+          "'보글(Vogl)' 브랜드 앞세워 AI 통번역·데이터 사업 글로벌 확장",
+          "뉴욕 스타트업 행사에 AI 통번역 지원"
+        ],
+        "catalyst": "예상치를 뛰어넘는 3분기 실적 발표와 AI 통번역 및 언어 데이터 사업의 글로벌 확장 노력이 플리토의 주가 상승을 이끌고 있습니다."
+      },
+      "news": [
+        {
+          "title": "플리토 주가 전망 | 3분기 영업이익 89억, 오후 상한가 (feat. AI 학습 데이터 - YouTube",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqAXwhbDeZc7ObQuTwGq-pn8BIC1UApChmh1_AGj9cP7Xb8pOpIPEZDLz7cruTaIPkZkZIbfiJaRFMvvqVdAga6BT8U57IFBtOA0yJIZeOg8A5KHbhO_EI39MZ7FlZAQyd4hWs",
+          "description": "플리토가 3분기 잠정 실적 공시 후 상한가를 기록했으며, 3분기 영업이익은 89억 원으로 지난해 연간 영업이익을 넘어섰습니다."
+        },
+        {
+          "title": "플리토 뉴스 | 알파스퀘어 종목이슈",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFW7DzM2ssopXdvMGns_B72iI_1GmsbGD2Df1tCpLXpO9isiCw0IuumVYzp44kkOPIRW4IvW7eyehiussJRjiJsPwAE3vfSouA7Yf2L4fGukmcUvl9sKqHjK9kRGAY_Pv4vzq_C290AOyuG7zBAH0XQ0s1wGgLGWqPID_w=",
+          "description": "플리토가 '보글(Vogl)' 브랜드를 통해 AI 통번역 및 데이터 사업의 글로벌 확장에 나선다고 밝혔습니다."
+        },
+        {
+          "title": "플리토 주가 - 실시간 차트 · 주가 전망 · 투자정보 - 알파스퀘어",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFygAUWfxP-ABkIjQMOMl_2TYwREnCwiwzatxTFuAr0h1H9bFNx5b1iddD8FEXkE7rXL81_pwSNr3zwePI7FQVDgHSOrGFhSGI8Q-2A_kV59e1onOIytythOviMU01yi2qCOrSLmFReCuZHzBmYpH4bcrEE",
+          "description": "플리토가 뉴욕 스타트업 행사에 AI 통번역 솔루션 '보글'을 공급하며 글로벌 시장에서의 AI 기술력을 선보였습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:27:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "064350",
+      "name": "현대로템",
+      "market": "KOSPI",
+      "current_price": 88700,
+      "change_rate": 2.07,
+      "signal": "매도",
+      "scores": {
+        "technical": 2.25,
+        "supply_demand": 4.0,
+        "valuation": 5.4,
+        "material": 1.5,
+        "total": 3.38
+      },
+      "reason": "현대로템은 3분기 실적이 시장 전망치를 하회했고, 폴란드 K2 전차 등 해외 수주 지연에 대한 우려가 커지며 주가에 부정적인 영향을 미쳤습니다. 기술적으로도 하락 추세와 낮은 거래량을 보이며 매도 압력이 우세한 상황입니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.34,
+      "news_analysis": {
+        "sentiment": "부정",
+        "sentiment_score": -0.7,
+        "key_news": [
+          "현대로템, 3분기 영업이익 전년 대비 11% 감소, 시장 전망치 하회.",
+          "폴란드 K2 전차 수출 계약 지연 및 내년 이익 둔화 우려.",
+          "현대위아 방산 특수사업부문 인수로 중장기 경쟁력 강화 기대."
+        ],
+        "catalyst": "해외 신규 수주 가시화 및 현대위아 방산 사업 인수 시너지."
+      },
+      "news": [
+        {
+          "title": "현대로템, 3Q 영업익 전년비 11%↓…전망치 하회 - 연합인포맥스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHizut7vDS3-ss9DA9TZvonjdCyPGeoen_DhL2Ri9ylvmrQA1SRHP-EnDv3e7iDXORa3JWE8QGEYOD6_dVRUFMkg2Q5vrtA2rXnmYzDzUChMD2maCqqY1zcqtKYLDY-yEoLAA56Cit4AszhZBmcX3K0C5xQDPD5ep_k",
+          "description": "현대로템[064350]의 올해 3분기 영업이익이 전년 동기 대비 10% 이상 줄었다."
+        },
+        {
+          "title": "SK증권 \"현대로템, 3분기 실적 기대치 하회…해외 수주 가시화 전 보수적 접근 필요\"",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_8Eqm0melE0jygfucLI5G_EWWkJ-vGVr1fqj6-W5R_6gCQQE8lpvwgEHh94fG1oZ7mt3EkN9fKIoJXhwk8VZxn-A9g9-9A3o_zDE_EKm0wLAQ-C71BBpu7g23QSL_zyWkwMTdoKSmZqrYKybBnNSVaQeOzw==",
+          "description": "SK증권은 현대로템에 대해 3분기 영업이익이 시장 기대치를 밑돌았지만 폴란드 K2 전차 수출 사업을 중심으로 견조한 수익성을 유지했다고 평가했다."
+        },
+        {
+          "title": "[심층] 현대로템, 영업익 기대치 하회...신규 수주 지연에 내년 이익 공백 우려 - 알파경제",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQftuFuWRwnUEf3NHhAnPkIfMCd6wKvgo5LucIef9S2Hs_PAv0fLHn90E5ljxJvhREKa0aDzSlrsIHN1E02frnDgrqgcP2D7P3pYsFxId4p2gpm5Rb6RuY8-4KDWz7VqJTiwwIc1Fo9wHYtwJwE1fZ0NNoyQ-SDw==",
+          "description": "현대로템이 올해 3분기 원화 강세와 수출 매출 이연 여파로 시장 기대치를 하회하는 실적을 기록했다."
+        },
+        {
+          "title": "현대로템, 3분기 영업익 11% 감소…현대위아 방산 인수로 돌파구 - 녹색경제신문",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6Sl1H5RhF5-bb9H2I2vaoi2ciYQnS4xoZlUF0wYKlvwbQ9MXXBYdr9ZmPKr5J8OQw94xtHKc8cCfIJWth6n9qJhlFRPbbDyE--6zsws_2l7A2Mr_xmA2W7GPzUCnPZ61oWODFGjHHVG565nv_EOvPwLqO",
+          "description": "현대로템의 올해 3분기 영업이익이 전년 동기대비 11% 감소했다."
+        },
+        {
+          "title": "“현대로템, 폴란드 전차에 발목 잡히고 수출 비중도 뚝”…목표가↓ - 매일경제",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaaXd3YTF-EVgEPKde4MTmjVKnnSR62l5zP-ZzeLs_yhOm_Ijjxfiywpz_wzFeoSQm0fNOtK05YypzQAabuO51bWLdpZ5OBrUQKxgzKE3j07G6si27pJUkKQNCqSDmTdLE8g==",
+          "description": "대신증권은 현대로템에 대해 폴란드 전차 생산·매출 인식이 늦어지고 있고, 2027년에는 수출 비중 하락으로 수익성이 떨어질 것으로 예상된다며 목표주가를 기존 20만원에서 16만원으로 하향 조정했다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:30:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "072950",
+      "name": "빛샘전자",
+      "market": "KOSDAQ",
+      "current_price": 14640,
+      "change_rate": 3.9,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.75,
+        "supply_demand": 5.83,
+        "valuation": 5.2,
+        "material": 5.0,
+        "total": 5.56
+      },
+      "reason": "빛샘전자는 혼조세의 주가 추세와 보통 수준의 밸류에이션을 보입니다. 대규모 거래량 증가는 긍정적이나, 외국인과 기관의 뚜렷한 순매수 기조는 보이지 않아 중립적인 시그널로 판단됩니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "급증",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.56,
+      "news_analysis": {
+        "sentiment": "중립",
+        "sentiment_score": 0.0,
+        "key_news": [],
+        "catalyst": "특이 재료 없음"
+      },
+      "news": [],
+      "analysis_time": "2026-10-21 04:30:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "009900",
+      "name": "명신산업",
+      "market": "KOSPI",
+      "current_price": 9290,
+      "change_rate": 7.4,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.75,
+        "supply_demand": 6.33,
+        "valuation": 5.6,
+        "material": 9.0,
+        "total": 6.41
+      },
+      "reason": "명신산업은 테슬라 로드스터 시연 소식에 대한 기대감으로 주가가 급등하며 긍정적인 시장 심리를 형성했습니다. 기술적으로는 상승 추세를 보이지만, 외국인과 기관의 뚜렷한 연속 매수 패턴은 나타나지 않고 있습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.64,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.8,
+        "key_news": [
+          "테슬라 로드스터 시연 영상 공개 후 명신산업 주가 급등.",
+          "명신산업, 미국 자회사 통해 테슬라 텍사스 기가팩토리에 자동차 부품 공급."
+        ],
+        "catalyst": "테슬라의 신형 로드스터 출시 및 공급망 내에서의 역할 확대 기대."
+      },
+      "news": [
+        {
+          "title": "테슬라 시연 효과에 명신산업 장초반 두자릿수 급등 - 뉴시스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0wwnsWyOV69y0nac4PufIxcGk8MJ3qrSZNohiSav3DOg04wrg9YrhvWe1abWem_nd0KA8Sef_G6n8OR7kjuidY92xlyFdsjErf1m6hdGzAnD4vT2deRhDUE2bQpQkAP5mnDvGqafB0_6wqzVk",
+          "description": "명신산업은 미국 내 자회사 심원을 통해 테슬라 텍사스 기가 팩토리에 자동차 부품을 공급하고 있다."
+        },
+        {
+          "title": "[특징주] 테슬라 로드스터 시연…명신산업 12%대 급등 - 한스경제",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGO9nLdKpu3VRDVMmfBjj20IrTis7TPQUql7RuEhthnAN9keQcV-zTFaWXGLpH7cLWHcqxgmI3gX7ORXal3T-FkirA00TM79VCBSd2WZ5b3xZtKpAjfEry5wNi-8yCmuAiQSDt68U6qXUrZ8DYdswuEWRPVUY=",
+          "description": "명신산업이 급등하고 있다. 테슬라 차체 부품사인 명신산업은 테슬라가 하늘을 나는 자동차라고 불리는 전기 스포츠카 '로드스터(Roadster)'의 시연 영상을 공개하면서 수혜 기대감이 커진 것으로 풀이된다."
+        },
+        {
+          "title": "명신산업 주가, 웃음꽃 활짝... 왜? - 금강일보",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHMQV9suZ1caAjAO9jRaqkMV66PFeSSkGKTPvszKgg3f9NMtK95pc9G1ev_zwy_gt3KfQhegOGl77704F5SJQpJll6e375RQEF02Q1CKBrCh9hO4-VO3CmeEaC0sHr2rKpaIQ69iZ8A4ylLdqFf1nbNnk_ig==",
+          "description": "명신산업의 미국 자회사 심원을 통해 테슬라 텍사스 기가 팩토리에 차 부품을 공급하는 방식으로, 회사는 현재 테슬라 공급망을 기반으로 사업 확대를 추진 중인 것으로 전해졌다."
+        },
+        {
+          "title": "[특징주] 명신산업, 테슬라 '로드스터' 영상 공개.. '급등' - 글로벌이코노믹",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1RlY0UiRAn20GQMSBJ7nJdeoNmiMfjt-0O95_QdR28xVyK2V3S336KE4B6PJtLMev4Nf9Y5fgxgN2WtvykE20D5icofgBMvf0Y90DG9xJL-Ou__GbXIBjKEmnCqHAKVerqvott5jpG1xfv28Kv1-kfyH-LD8IAHWs_pwmW2xC9QwRxI10rg-ER6OA",
+          "description": "명신산업이 급등하고 있다. 테슬라 차체 부품사인 명신산업은 테슬라가 하늘을 나는 자동차라고 불리는 전기 스포츠카 '로드스터(Roadster)'의 시연 영상을 공개하면서 수혜 기대감이 커진 것으로 풀이된다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:30:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "028050",
+      "name": "삼성E&A",
+      "market": "KOSPI",
+      "current_price": 47950,
+      "change_rate": 9.98,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.5,
+        "supply_demand": 4.17,
+        "valuation": 4.4,
+        "material": 10.0,
+        "total": 5.49
+      },
+      "reason": "삼성E&A는 사우디 대규모 플랜트 수주 및 연간 수주 목표 조기 달성 등 매우 긍정적인 재료를 보유하고 있습니다. 그러나 혼조세의 기술적 흐름과 낮은 호가 잔량비, 그리고 밸류에이션 측면에서의 일부 아쉬움이 복합적으로 작용하여 중립적인 시그널을 형성했습니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.55,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 1.0,
+        "key_news": [
+          "35억달러 규모 사우디 비료 플랜트 수주.",
+          "3분기 누적 신규 수주액 12조원 돌파, 연간 수주 목표액 조기 달성.",
+          "해외 및 신사업 확장으로 사상 최대 수주 및 연간 영업이익 1조원 달성 기대."
+        ],
+        "catalyst": "대규모 해외 플랜트 수주 및 비화공/뉴에너지 등 신사업 분야에서의 지속적인 성장."
+      },
+      "news": [
+        {
+          "title": "[이슈 체크] 건설, 신규 수주 소식(삼성E&A, DL이앤씨) - 버핏연구소",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkPgYcRmEWg7Sss_Op9bFT0qs7S0TJwi7v8napN0PBQtbGRJA7O5fvf-BV-bOyYzhyT-ucxz6-qDgWP7ywwIwd5Y8oSjtw-m1Cdwt6eKnQh30G3HmoFaC_oWStRyE46oCuFA3ui4FLTzeO",
+          "description": "대형 수주 소식의 중심에는 삼성E&A가 있다."
+        },
+        {
+          "title": "해외·신사업 쌍끌이에…삼성E&A, 올해 사상최대 수주·이익 전망 [비즈360]",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYU73FUpQbuDUSFl_J1tuwcUzd03Jy19x0dqEwkqgvdS_fuc0tVseqL4NfAfqu_Vsb0L8KVlz4lAmxuqRwtfez8F_lIlBYYTep0khcxIXwLKK1iv0GK4-mfCLN1lyIPC90scx40pPHwt-4z7NR",
+          "description": "삼성E&A가 올해 수주 목표액을 조기 달성하는 데 성공했다."
+        },
+        {
+          "title": "삼성E&A - 기업뉴스ㅣ뉴스룸ㅣSAMSUNG E&A",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPqy8_QK8XxrDlD1_j31R0HB514Msr7u7_ayYTJXxiQGXHc141W9q42V3h8Wk7pgs5DkE6qqNQ5rPSXtPA4c6gmBuw2mUrk2F8jYOnpPrMDXQ6-BbNdlL4dqg57yD7WZ5vF2MfytEjIY_A",
+          "description": "삼성E&A, 35억달러 규모 사우디 비료 프로젝트 수주."
+        },
+        {
+          "title": "삼성 E&A 수주 목표 초과 달성! 하반기 기대 상승 - YouTube",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEArIyBIpbpiS0t29cHX2NOagysZzfirzTLWsY0LCRksZq0NV9bEZnWT56E-qtvbTS-9Wot5Un8-kBfbk2gl1kTmq8fGkiL3kfAhxg2JBhponWPpS4bP1QLcI5jtx9tw6YlPgIr",
+          "description": "삼성 E&A가 올해 수주 목표를 12조에서 14조로 초과 달성했습니다."
+        },
+        {
+          "title": "해외건설 수주 반토막에도 삼성E&A '독주'…화공·반도체·LNG로 성장축 확대 - 오피니언뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrG1Ep-wLTJRnIIsCUk70lqMVmzeGk9YWkp95n3_TggAxVSeo8Cl4bTrbbRUqK2r-wGxiYQbQsT-A6E_SvoQ0y2Ow7HXNTbFAZnQifpnYfMRasjerXWM6eWuZk9j_fo2dKDJKaqgO_5BdRLUKe4czYGsoGxOa-FJI6lg==",
+          "description": "국내 건설사들의 해외 수주가 급감한 가운데 삼성E&A가 사우디아라비아에서 대형 플랜트 사업을 따내며 연간 수주 목표를 조기 달성했다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:30:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "178320",
+      "name": "서진시스템",
+      "market": "KOSDAQ",
+      "current_price": 35400,
+      "change_rate": -7.21,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.5,
+        "supply_demand": 6.5,
+        "valuation": 3.2,
+        "material": 9.0,
+        "total": 5.92
+      },
+      "reason": "서진시스템은 3분기 흑자전환 전망과 ESS 및 반도체 매출 성장 기대 등 긍정적인 사업 재료를 보유하고 있습니다. 그러나 현재 기술적 흐름은 혼조세이며, 밸류에이션 지표가 부정적인 점이 부담으로 작용하고 있습니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.59,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.8,
+        "key_news": [
+          "3분기 흑자전환 전망, ESS 출하 정상화 및 반도체 매출 2배 성장 기대.",
+          "SK증권 목표주가 상향 조정 (5만5천원→7만원).",
+          "AI 데이터센터 투자 확대, 수소연료전지 장기계약 등 사업 영역 확장."
+        ],
+        "catalyst": "ESS 및 반도체 부문 실적 개선 가속화와 AI 인프라 공급망 확대."
+      },
+      "news": [
+        {
+          "title": "[모닝 리포트] \"서진시스템, ESS 출하 정상화·반도체 매출 2배…3분기 흑자전환\" - 뉴스핌",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC-HgCAynR13jaWpYcY6Yfoo2EGYIBBpPDRqQ1C9Yl-f-PyphoRp_7a8U_s61gB-YXZ_Zmlb_6HM0QRCF0tYH7MEjBfdragsaWS3DbEsANyIEhqHyhhPskvyCaQEpRS2XBAylM4Gc9sQtU",
+          "description": "서진시스템이 3분기 흑자전환에 나설 전망이다."
+        },
+        {
+          "title": "SK증권 \"서진시스템, 하반기 수익성 회복 전망…목표가↑\" - 바로(baro)",
+          "link": "https://vertexaisearch.google.com/grounding-api-redirect/AUZIYQHzTDn0DfwC-1CCEeXqw3hYodzlDfh3wbkTpftjPHz0llZ3mw9jar0mq4HH7h2VYNCR1XkFinQMvBBjLBNRcDMtRcYE41ynCWXNiWZ1sFoIgM3wAGD_71fIpehuqzQsbh87Ftzw1z-iMglzzk4DA-a7EJW8tVG9YqKYdfqd",
+          "description": "SK증권은 서진시스템에 대해 하반기 반도체 장비와 ESS(에너지저장장치) 부문의 수익성 회복이 본격화될 것으로 전망했다."
+        },
+        {
+          "title": "Seojin System Co Ltd 주식 뉴스 (178320) - Investing.com",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHu2ShV9_GEAZ7YdmgIpfvlBkGToFAEbo7zkitw6UJ631SqFUH92CyglWdU7Xuu_LTv3d4gA0SoQ1b-eVuOJ1wRcat_efK17NdxQ_mlSQn8RDsHo_C7i776B3A5Mm5nxUd32pOZzmBLNszXK20reuNHlPF5Vms=",
+          "description": "이 페이지에는 서진시스템 (서진시스템) 주식에 관한 가장 최근의 소식을 기재하였습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:30:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "market": "KOSPI",
+      "current_price": 152900,
+      "change_rate": 3.24,
+      "signal": "중립",
+      "scores": {
+        "technical": 3.75,
+        "supply_demand": 4.33,
+        "valuation": 4.4,
+        "material": 7.5,
+        "total": 4.65
+      },
+      "reason": "SK이노베이션은 AI 냉각 시장 진출이라는 긍정적인 중장기 재료를 가지고 있습니다. 그러나 낮은 거래량과 혼조세의 기술적 흐름, 그리고 현재 실적을 반영한 밸류에이션 지표가 부정적이라는 점이 복합적으로 작용하고 있습니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.46,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.5,
+        "key_news": [
+          "IBK투자증권, AI 냉각 시장 경쟁력 부각하며 목표가 21만원 제시.",
+          "SK엔무브, 액침 냉각유 개발 및 미국 GRC 지분 투자로 AI 데이터센터 열관리 시장 진출."
+        ],
+        "catalyst": "윤활유 사업 기반 AI 데이터센터 열관리 시장으로의 확장 및 기술 경쟁력 확보."
+      },
+      "news": [
+        {
+          "title": "[리포트 브리핑]SK이노베이션, '윤활유의 기술이 AI 냉각의 경쟁력이 된다' 목표가 210,000원 - IBK투자증권 - 뉴스핌",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFn7Q7dKbykq0Mh_ZddR-UUYZ59qiVPZ1PWi1A4tQ3-hhSuip38GnoRbhaLXZasb68NuevuE-Ev_JBJyLdSn0PXYsmDlw39sU6WSp21fSSbD8fryyd1N7grtGqyEzjCXkQCnh2as7eNTw==",
+          "description": "IBK투자증권에서 SK이노베이션(096770)에 대해 'AI 열관리로 넓어지는 윤활 사업의 가치: SK이노베이션의 투자 포인트는 윤활 사업에서 축적한 기술과 생산 기반이 AI 데이터센터의 열관리 시장으로 확장되고 있다는 데 있다."
+        },
+        {
+          "title": "SK이노베이션 주가, 10월 20일 148100원 9.14% 하락 - 톱스타뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHo3cM8K3Y9POMK5zh_wKu9zqXFFbLERspKn-l611ASpu8_F6B5yPq0HI56ch0loyD5X7DtkVtdLEou4vDvCQbvECd2n6xlGQ0i6CDsZ14t7a8R5GIxmCoZYK6Er4_WaGRxbhjVVKtfre9y_XaH3YLWhp7x0FUzdDS49Q==",
+          "description": "20일 KRX 마감 기준, 네이버페이 증권에 따르면 SK이노베이션 주가가 지난 종가 163000원 대비 14900원 하락하며 현재 148100원에 거래되고 있다."
+        },
+        {
+          "title": "SK Innovation 주식 뉴스 (096770) - Investing.com",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElB20ofhWSEmVbSQSckkZZQZh2FJEPzHq2cY-1VnrHktO376_JN0PtWb3WGUBHyaIoZqgEW3HcGhEXhc0MYUWX4xROTn7gS9wnXkM6cyQ8CQYAJFoDmO22m1dBs8WM7OVW63EdEU_2wvLffs-8Xw==",
+          "description": "이 페이지에는 SK이노베이션 (SK이노베이션) 주식에 관한 가장 최근의 소식을 기재하였습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:30:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "456160",
+      "name": "지투지바이오",
+      "market": "KOSDAQ",
+      "current_price": 44200,
+      "change_rate": 19.46,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.5,
+        "supply_demand": 4.17,
+        "valuation": 2.0,
+        "material": 9.5,
+        "total": 4.63
+      },
+      "reason": "지투지바이오는 장기지속형 비만 치료제 평가 계약 체결 및 알츠하이머 치료제 임상 순항 등 매우 긍정적인 재료를 보유하고 있습니다. 그러나 현재 음수 PER과 EPS 성장률 등 밸류에이션 지표가 매우 부정적인 점과 함께 기술적 흐름도 혼조세를 보이며 중립 시그널로 판단됩니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.46,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.9,
+        "key_news": [
+          "UBT와 장기지속형 비만 치료제 평가 계약 체결, 글로벌 제약사 본계약 기대.",
+          "알츠하이머 치매 치료제 GB-5001A 임상 1상에서 안전성 및 내약성 확인.",
+          "InnoLAMP 플랫폼 기술 검증 및 추가 기술이전 기대."
+        ],
+        "catalyst": "장기지속형 비만 치료제 개발 관련 글로벌 제약사와의 본계약 가능성 및 치매 치료제 임상 순항."
+      },
+      "news": [
+        {
+          "title": "지투지바이오, 15%대 급등…신한투자증권 “글로벌 제약사 본계약 기대” - CBC뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrsMaU2pFvWZ1C4ebkRyHXKeZhHstNGP1dibNZf_iTtpp_Kg18ET8nuSew27Jw2B9Jo4KQL7uXbMFZIFFV5vKzdAhAZWjWULjsRRwIQHpjYJ-XjrJuueUcq97NTEvHKm1UQZUvVDVEDFzjcwm1",
+          "description": "지투지바이오(456160)가 21일 오전 현재 전 거래일보다 5650원(15.27%) 오른 4만2650원에 거래되고 있다."
+        },
+        {
+          "title": "[리포트 브리핑]지투지바이오, '빅파마 계약 전 마지막 모의고사' Not Rated - 신한투자증권",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErZQIOgvFoyzSyuzH9Cca8MzvQBUxc03pUV8TD96X5oc8ZdvjlbxaqmwKKtXDvitPQcY_Akys_D8llcTWjq-fpMi6O4rPEmJmkPF-5OV5HngG-ElKa7SrlB69C2P6C6WdJtEU9Zhhv-w==",
+          "description": "신한투자증권에서 21일 지투지바이오(456160)에 대해 '빅파마 계약 전 마지막 모의고사'라며 신규 리포트를 발행하였고, 투자의견을 'Not Rated'로 제시하였다."
+        },
+        {
+          "title": "지투지바이오 주가, 10월 21일 장중 42800원 15.68% 상승 - 톱스타뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPWrtAMALJTb8peh3eWdEiZJSyHm1m6nB58nYx5OK0MMlCyfKBBzNLh0yeU7mqgRUGIueZOsSGH2tMO-p9Q3ONpoOshwBJZdtdDAxShbuMsjGfqJMLpuYZtADMPa2HD5e_W-WByJ2Ndwb7-llzfyXrEHy9SuS4_Yt2Dg==",
+          "description": "21일 오전 10시 4분 기준, 네이버페이 증권에 따르면 지투지바이오 주가가 42800원에 거래되며 지난 종가 대비 5800원 상승, 15.68%의 등락률을 기록하고 있다."
+        },
+        {
+          "title": "[특징주]지투지바이오, 노보 노디스크 기술이전 UBT와 평가 계약에 17.43% 상승 - 남도일보",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzG9_jOOqjlnqD45vi2X2T6Ijidd908i5oU2KZRV0_aTfzg_bA3IazDOmOElXNRKy8RP4BwsOIc_ySwms7H4-vryD7X2Nu0OndSgruHZKmw-z_IsFOEbTVNYhS0HvU5Pt9BLUXHX1ylKBkgLLISy-a19cUzu_p",
+          "description": "지투지바이오가 중국 바이오기업 유나이티드 바이오 테크놀로지(UBT)와 장기지속형 주사제 플랫폼 평가 계약을 맺었다는 소식에 연이틀 강세다."
+        },
+        {
+          "title": "지투지바이오, 월1회 치매 주사제 1상에서 안전성·내약성 확인 - 히트뉴스",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHb8AVvtLZP2IhbKiZWNJnVOm9xvuKyEkndJA-3dRZQP7TERnj1RVAijZ-Yt31AItCGSDcHubIS1JybSLusZqDzyDBorMQyFgXk8MewpK66T9fno6gYjXAc-DNQ8bLo8oYALP2dCoSnwwGuTAxbmNP-JI4Kyg8=",
+          "description": "지투지바이오가 장기지속형 치매 신약 후보물질 GB-5001의 임상 1상 임상시험결과보고서(CSR) 초안을 수령하고 안전성과 내약성을 확인했다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:30:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "039860",
+      "name": "나노엔텍",
+      "market": "KOSDAQ",
+      "current_price": 4750,
+      "change_rate": 11.9,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.5,
+        "supply_demand": 5.0,
+        "valuation": 5.17,
+        "material": 8.0,
+        "total": 5.63
+      },
+      "reason": "나노엔텍은 랩온어칩 기술을 기반으로 체외진단 및 실험 자동화 시장 성장이 기대되는 긍정적인 재료를 가지고 있습니다. 높은 거래량 급증도 주목할 만하지만, 높은 PER 수준과 외국인/기관의 뚜렷한 수급 방향성 부재로 인해 전반적으로 중립적인 시그널을 보입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "급증",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.56,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.6,
+        "key_news": [
+          "랩온어칩 기술 기반 체외진단 및 실험 자동화 시장 선도.",
+          "바이오 로봇 EVE-HT A26 글로벌 제약 시장 공급, 로레알과 공동 개발 제품 필드 테스트.",
+          "여성 건강 진단 라인업 확장 추진."
+        ],
+        "catalyst": "체외진단 및 생명공학 장비 시장 성장, 글로벌 파트너십 확대를 통한 신사업 동력 확보."
+      },
+      "news": [
+        {
+          "title": "[리포트 브리핑]나노엔텍, '랩온어칩 기술 기반 체외진단 및 실험 자동화 시장 선도' Not Rated",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnLuTOxGsebQ1L3XkkwVh3luPZAlUw6q-rAEhbuUwIwwA2ILzcpw00ZSmV4ef7dlFsXmKkhcxBFwBIxKMkXRmFozDWEe-wHwKFr1VDiJQnkicmBO8Ds0q-ihl4l139slMW3T1nLM-FcUky",
+          "description": "한국투자증권에서 나노엔텍(039860)에 대해 '랩온어칩 기반 체외진단 및 실험 자동화 솔루션 전문 기업."
+        },
+        {
+          "title": "FREND™ System | 나노엔텍",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKxA5CZEJruKZHdSFDiVSGAHYsJA8QVCcpVwiv6FWpq0sMHyn0tv7mPMgG7BkX4IfeoZlPkiTx_hnSmcRwoN2Bx6mYRdZ-ZL5dz-JjcFfRD3AYbaA7R_OANPL5CdeJ18IVeKy7_GfWJSM62eIXhVH5hd4vlfGI3a8pK8fII81pDnyRMI6r7CvmglRIc-E=",
+          "description": "FREND™ System은 미세유체역학(Microfluidics) 기술과 면역 형광 기법을 적용한 체외진단기기입니다."
+        },
+        {
+          "title": "나노엔텍 - 위키백과, 우리 모두의 백과사전",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoyEfSaCtLTFnqqzBl7ZPJZriOsgJnopsoRXrfXBgUjfhBpMicW7Mbx68BfqlJ0S33CydVa-cDnr_erXFfZdzZJfR9gNS6-ZzTZUlLp-PWwNUYb2nsraFu4upDAHqNk7aXyG9Vd_CN-B8pXDGIJs6vVpv92J6sP0y0VsCv",
+          "description": "주식회사 나노엔텍(NanoenTek )은 초소형 정밀 기계 기술(MEMS)과 미세유체역학(Micro-Fluidics)을 융합한 랩온어칩(Lab-on-a-chip) 기술을 기반으로 생명공학 연구기기 및 체외진단 의료기기를 개발, 제조, 판매하고 있는 대한민국의 제조 기업이다."
+        },
+        {
+          "title": "기업주식탐방 - YouTube",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUFiALe0yTTDR_IwfW2tkcrOoe8fU60AMspp6whfR3HB75MlafhSIHzUhv-ns4vdzMMRAXv8Vav6MTsPJ90wysUuKZlNTZj979RWtt2EwboefHZ0515xNXUb8l7Twc2k_M3r5_rg==",
+          "description": "나노엔텍 성장 동력 나노엔텍은 기존 랩온어칩 기반 체외진단 사업에 더해 지난해 10월 100% 자회사로 편입한 AAI헬스케어 효과가 연결 실적에 반영되고 있습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:30:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "179880",
+      "name": "멜콘",
+      "market": "KOSDAQ",
+      "current_price": 14820,
+      "change_rate": 22.68,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.67,
+        "supply_demand": 6.33,
+        "valuation": 5.5,
+        "material": 9.0,
+        "total": 6.07
+      },
+      "reason": "멜콘은 코스닥 상장 후 급등락이 있었으나, 오늘 강한 반등세를 보이며 긍정적인 시장 반응을 이끌었습니다. 반도체 장비 핵심 부품 공급을 통한 기술력은 높이 평가되지만, 기관의 연속 순매도 패턴이 아쉽습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.61,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.8,
+        "key_news": [
+          "코스닥 상장 후 급등락 있었으나, 10월 21일 강한 반등세.",
+          "반도체 초정밀 환경제어 시스템 전문기업으로 ASML, 도쿄일렉트론 등 공급.",
+          "2025년 초정밀 정제제어시스템(XPS) 국내 최초 ASML 퀄리파이드 서플라이어 등록."
+        ],
+        "catalyst": "반도체 산업 성장 및 ASML 등 주요 장비사 공급을 통한 기술력 입증."
+      },
+      "news": [
+        {
+          "title": "상장 첫날 2.8만원 찍었던 멜콘, 1.3만원으로 '뚝' [핫종목] - 뉴스1",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCzdsJNBzNsQS33qBqx5HF3oe41tEaKMA1a3uhcTGqIskHwhJiSfrhkGYJ9goMum-o80S6KP9jg1sJXgKAm4kRm_76ntOo8IxVaLqTlFPp368LDe7798zyfB0Vz-7LRRJW6V3Yz77QoycZOnc=",
+          "description": "반도체 초정밀 환경제어 시스템 전문기업 멜콘(179880)이 상장 4거래일 만에 공모가 수준에거 거래되고 있다."
+        },
+        {
+          "title": "멜콘 주가, 급등세... 무슨 회사길래? - 금강일보",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgyEEW9FN2Ty1sCIl2edhvXh-pzzkH4F2ErkvENz-14ofucKYEGqDXDv6MVxuHTghPCDz1ZSqvm-FBVGKhTJNPhaPEOIK4l3WtW7rzbGaiyWlgZb_VENEypFIKuCDLU_A01a5IQiDahEE7ShVpY0EPYFSX",
+          "description": "멜콘 주가가 급등세를 보이고 있다."
+        },
+        {
+          "title": "멜콘 주가 - 실시간 차트 · 주가 전망 · 투자정보 - 알파스퀘어",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjU04H4yLKLgygKMF19T02f0ZH9xLGEzdSY6zsHzYApyk-4RwklZ8Ci9dRopTg-M12QcTY5pn0FdMF6bfiQj_LCjieRHghETssSuxR-WrIGbPXVf16dD2sPenDdhsj4Mx_zWWYvPaifBBkKWb2Au5lrqA=",
+          "description": "반도체 초정밀 환경제어 시스템 전문기업 멜콘이 코스닥 상장 첫날 공모가를 크게 웃돌고 있다."
+        },
+        {
+          "title": "반도체 공정 기업 '멜콘', 코스닥 상장 첫날 70%대 급등 - 머니투데이",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4cbbMp7O0FBhXutyns-SJiPuXJTCgJ3-WQeFHReDW3dCbDHHM8aGF7V_bueWX8KNfAANP3Hjzqvy0chYnTiww86H8R74Tgp_QiIhWNIBPTzfEVIDPF3o3jCffgfWMSfc0FE34DFKmvyfaZNtYyYwVNTTI",
+          "description": "반도체 공정 기업인 멜콘이 코스닥 상장 첫날 공모가 대비 70%를 상회하는 주가를 나타내고 있다."
+        },
+        {
+          "title": "반도체 공정 기업 '멜콘', 코스닥 상장 첫날 70%대 급등 - 스포탈코리아",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAsH_DISnRDdTR1Dl9txsxkHJOWJtYQUTkeTQz1oOHgmKlFQ0OiMN78n7UA0cktPMfa_u4wCtFQ73Gde33th1qnBOF2uxS_wr653Kh9kEdDLn595O4wIq-enmE0mGlDXm_oSEudA7sAeV_fFEzq3uOl86MlOT_njtEJ5QiXItB0HYiMhTtFg==",
+          "description": "반도체 공정 기업인 멜콘이 코스닥 상장 첫날 공모가 대비 70%를 상회하는 주가를 나타내고 있다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:30:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "012330",
+      "name": "현대모비스",
+      "market": "KOSPI",
+      "current_price": 346500,
+      "change_rate": -0.43,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.0,
+        "supply_demand": 4.17,
+        "valuation": 5.4,
+        "material": 5.0,
+        "total": 4.79
+      },
+      "reason": "현대모비스는 견조한 밸류에이션 지표를 보이지만, 전반적으로 혼조세의 기술적 흐름과 외국인 순매도, 기관 순매수 기조가 섞여 있어 중립적인 시그널을 형성했습니다. 시장에 큰 영향을 미칠 만한 특별한 뉴스는 현재 부재합니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.48,
+      "news_analysis": {
+        "sentiment": "중립",
+        "sentiment_score": 0.0,
+        "key_news": [],
+        "catalyst": "특이 재료 없음"
+      },
+      "news": [],
+      "analysis_time": "2026-10-21 04:30:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "034020",
+      "name": "두산에너빌리티",
+      "market": "KOSPI",
+      "current_price": 64000,
+      "change_rate": 1.91,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.75,
+        "supply_demand": 4.0,
+        "valuation": 3.83,
+        "material": 8.5,
+        "total": 4.87
+      },
+      "reason": "기술적 분석은 약세 추세와 낮은 거래량을 나타내지만, RSI는 과매도 반등 구간에 있습니다. 수급은 외국인과 기관 모두 순매도 기조를 보여 중립적입니다. 밸류에이션은 높은 PER과 PBR로 고평가 상태이나, 최근 LIG D&A와의 유도무기 엔진 국산화 및 항공기 엔진 개발 협력 뉴스가 긍정적으로 작용하고 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.49,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.7,
+        "key_news": [
+          "LIG D&A와 유도무기 엔진 국산화 및 항공기용 엔진 개발 협력 계약 체결"
+        ],
+        "catalyst": "유도무기 및 항공기 엔진 개발 협력을 통한 신성장 동력 확보 및 실적 기대감."
+      },
+      "news": [
+        {
+          "title": "두산에너빌리티 주가 상승 중",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpDsnK8qpNGx5qlDad_IWRIGVP0SmwLt50j4pOaYjilJcmRz0bsGUVmkSgWRMeem69RZysR253kn6u4jFSnRt6kW1UIaThHmaq16s-xkYIP310wVWMQsrFWys0ewCGIoKuGUrdAxV2Yc2VcH7A5WTOruED7kzZtDErOwcWMw==",
+          "description": "두산에너빌리티 주가 21일 9시 32분 기준으로 2.23% 상승 중이다."
+        },
+        {
+          "title": "LIG D&A-두산에너빌, 유도무기 엔진 국산화 '맞손'",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxegB89aUikIii0aLx6ZRo2bjoW0As6LadH82OiWbMyepuXV5aou1BOIeAyOzz5lsUzVgKoOXGsUNbyizmEc-TZYqYW0aJjp28abpKaY_pO0CVUdm0lFLj34cO9yPiqgBfokHBTyE7B1k=",
+          "description": "LIG넥스원과 유도무기 및 항공기 엔진 개발을 위한 협력 계약을 체결했다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:44:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "078350",
+      "name": "한양디지텍",
+      "market": "KOSDAQ",
+      "current_price": 36200,
+      "change_rate": 13.48,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.75,
+        "supply_demand": 5.17,
+        "valuation": 4.17,
+        "material": 6.5,
+        "total": 5.04
+      },
+      "reason": "기술적 분석상 혼조세이나 단기 상승 전환 징후를 보이고 있으며, 거래량은 증가 추세입니다. 기관의 20일 누적 순매수가 긍정적이지만, 전반적인 수급은 중립입니다. 밸류에이션은 PER과 PEG가 높은 수준으로 다소 부담스럽습니다. 최근 기관의 연속 순매수 소식이 있었지만, 현재는 매수/매도 교차 상태입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "증가",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.3,
+        "key_news": [
+          "기관 10일 연속 순매수 행진 (10/14 기준)"
+        ],
+        "catalyst": "기관 수급 개선에 대한 기대감."
+      },
+      "news": [
+        {
+          "title": "[장중수급포착] 한양디지텍, 기관 10일 연속 순매수행진... 주가 +4.95%",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6Mz_gfy1Vs4DUwb_jjkqzU_SvUuI9vic4wC7IHt6TI5_YgI2U8RkACV9MjaLMELD54kfw96xYrEToMVxrYQlFEiAiXxBnSfnv7fpY7ZufKHY-fjmUHVgGnZlRHC1nEm7AXTe3qYzYmpqnog==",
+          "description": "10월 14일 기준 기관의 10일 연속 순매수가 관찰되었습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:44:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "010140",
+      "name": "삼성중공업",
+      "market": "KOSPI",
+      "current_price": 17700,
+      "change_rate": 2.19,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.25,
+        "supply_demand": 4.0,
+        "valuation": 3.2,
+        "material": 9.0,
+        "total": 4.67
+      },
+      "reason": "기술적으로는 하락 가속 추세를 보이며 거래량이 감소하고 있습니다. 외국인과 기관 모두 순매도 기조가 이어지고 있어 수급은 부정적입니다. 밸류에이션 지표도 낮은 점수를 받았습니다. 그러나 조선업 인공지능 전환을 위한 M.AX 프로젝트 주목 및 3분기 영업이익이 47% 증가할 것이라는 긍정적인 전망이 주가를 지지하고 있습니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.47,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.8,
+        "key_news": [
+          "K-조선 M.AX 프로젝트 추진 주목",
+          "3분기 영업이익 47% 상승 전망"
+        ],
+        "catalyst": "조선업 AI 전환 프로젝트 및 긍정적인 3분기 실적 전망으로 인한 성장 기대감."
+      },
+      "news": [
+        {
+          "title": "삼성중공업·한화오션·HJ중공업 상승…K-조선, 1.4조원 M.AX 프로젝트 주목",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5oTrhfuX3Z-hP03HMaDEVLKsDK-9o0aIlJ7ks3EBO_uxMjzmUAfG5XPtnguw0LbUPnoHg7qeDRpzEBuMSYt3F5_6xznNRgpmsvpcUdBcPDArXIC9WhLGpz1ls5jQ--iZdd4KRj-98URHGY0Z_NsoNvSCX_w==",
+          "description": "정부가 추진하는 조선업 인공지능 전환 정책인 M.AX 프로젝트가 국내 조선 관련주에 관심을 모으고 있다."
+        },
+        {
+          "title": "조선업서 나홀로 웃을까…삼성重, 3Q 영업익 47%↑ 전망",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhhIQht0ynXuX7SM5Hbn-PYWSSS8Sfvv7cpejl6LRyQEwPvOFm5W61fAKpMmtY2H3gCaTKM85jUWYoNwWYBW1N8Ztauv0o0Ps8-0CMbW835x4vc-ueba-BdV9rutRvdWcqvhMrR8pGriY=",
+          "description": "삼성중공업의 3분기 영업이익이 전년 대비 47% 증가할 것으로 전망된다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:44:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "009830",
+      "name": "한화솔루션",
+      "market": "KOSPI",
+      "current_price": 30850,
+      "change_rate": 0.98,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.75,
+        "supply_demand": 6.5,
+        "valuation": 3.33,
+        "material": 9.0,
+        "total": 5.72
+      },
+      "reason": "기술적으로는 혼조세를 보이지만, RSI는 중립 구간에 위치합니다. 수급 측면에서는 기관의 20일 누적 순매수가 긍정적이며, 호가 잔량도 매수 우위를 나타내고 있습니다. 밸류에이션은 PER이 음수이고 ROE가 낮은 점이 부담입니다. 그러나 미국의 중국산 태양광 견제 강화 정책이 한화솔루션에게 호재로 작용하며 주가 상승을 이끌고 있습니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "중립",
+        "institution_flow": "매수우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.57,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.8,
+        "key_news": [
+          "미국의 중국산 태양광 견제 강화 수혜 기대"
+        ],
+        "catalyst": "미국 정책 변화에 따른 태양광 사업의 긍정적인 업황 기대."
+      },
+      "news": [
+        {
+          "title": "美 중국산 태양광 견제 강화…OCI홀딩스7%·한화솔루션 4% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFe8gjUt8hn56ERAYYDyUk6wKAmB83zvjEDINMpfGLhgku3hjtmDn1oktDksptq-fIsiuP4-iaactSvRHkUp55lx55fw0VCJk9gatlyjN2PbzCoyU_s0gEs2M8fmU2QiYt3AjEY",
+          "description": "미국의 중국산 태양광 제품 견제가 강화되면서 한화솔루션의 주가가 상승세를 보이고 있다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:44:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "003670",
+      "name": "포스코퓨처엠",
+      "market": "KOSPI",
+      "current_price": 181400,
+      "change_rate": 1.8,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.0,
+        "supply_demand": 4.67,
+        "valuation": 2.4,
+        "material": 7.5,
+        "total": 4.44
+      },
+      "reason": "기술적 분석상 혼조세 속에 거래량이 저조하며, 밸류에이션은 PER이 매우 높고 ROE, EPS 성장률이 낮아 부담스러운 수준입니다. 외국인과 기관 모두 순매도 기조로 수급은 좋지 않습니다. 하지만 LFP 양극재 양산으로 인한 실적 개선 전망과 목표주가 상향 뉴스가 긍정적으로 작용하고 있습니다. 다만, 추가 유상증자 가능성도 언급되어 단기적인 불확실성이 존재합니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.44,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.5,
+        "key_news": [
+          "LFP 양극재 양산으로 실적 개선 전망, 목표주가 상향",
+          "경영진 자사주 매입 지속, 추가 유상증자 가능성 언급"
+        ],
+        "catalyst": "LFP 양극재 사업 성과 기대 및 실적 개선 전망, 다만 유상증자 가능성은 부담 요인."
+      },
+      "news": [
+        {
+          "title": "LS증권 \"포스코퓨처엠 목표주가 상향, LFP 양극재 양산으로 실적 개선 전망\"",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlcu5jHZrqcy4mLHoZAdm1m_7L_cSSKvZfdtVZNC-7JBRXXi3GtFchDqQEvPm8FKikAlPYRAf9zgVFUNGViHCrhlH_IEQaDj5e2iukp_XynnBqDBNEg3WiSZbiK6qYdoecJwu2RjPenewqjSF4WmSyl6Ix1EaTWKddQ6W",
+          "description": "LS증권은 포스코퓨처엠의 LFP 양극재 생산 개시를 통해 실적 개선이 본격화할 것으로 전망하며 목표주가를 상향했습니다."
+        },
+        {
+          "title": "'1일1주' 매입 나선 포스코퓨처엠 경영진…추가 유증설 '솔솔'",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2zJawySV9kwLcDS0e4qqmhRMOg0BqiJfQduJc0jRmSxWuZVpcxuCrFoBj-EnTfVddnFq2zrFDsb73Txau75C6Zv2GPDK2FiQpHU8FwCa7saJ7y8wiLH0fyJEilIbvB4leKY_Q2eFlUaOuYsYvkPltotVAlA==",
+          "description": "엄기천 대표이사 사장을 포함한 경영진의 자사주 매입이 이어지고 있으나, 추가 유상증자 가능성도 제기되고 있습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:44:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "067310",
+      "name": "하나마이크론",
+      "market": "KOSDAQ",
+      "current_price": 38500,
+      "change_rate": 1.99,
+      "signal": "중립",
+      "scores": {
+        "technical": 4.5,
+        "supply_demand": 6.67,
+        "valuation": 6.5,
+        "material": 5.5,
+        "total": 5.81
+      },
+      "reason": "기술적으로 약세 추세에 있으며, 52주 고점 대비 낮은 위치에 있습니다. 그러나 외국인과 기관의 20일 누적 순매수가 긍정적이고 호가 잔량도 매수 우위를 보여 수급은 견조합니다. 밸류에이션은 PEG와 ROE가 양호한 수준으로 매력적입니다. 특별한 단기 재료는 없으나, 반도체 업황의 전반적인 흐름에 영향을 받을 것으로 보입니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매수우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.58,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.1,
+        "key_news": [
+          "10/16 주가 상승 마감",
+          "중국 메모리 기술 추격 우려 속 반도체주 동향 주시"
+        ],
+        "catalyst": "특별한 단기 재료 부재, 반도체 업황 전반의 흐름에 영향."
+      },
+      "news": [
+        {
+          "title": "하나마이크론 주가 2,050원 상승 후 마감",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6MH3VuoVM0KeVnpe6yxvXIdKfwvUjU95SHuzT_xrzzD_tQ1q81SNTfiFT1bzDURbPdDRbzMe7J2v-PHjKTz2awHr67fME6Klarsbj7D6GR0fp4nNLeSa6UcGt0xuf26W_MjIQWthpALqxXLymMH8d9FQQ3pMsXrCU_0SmfA==",
+          "description": "10월 16일 하나마이크론의 주가가 5.28% 상승하며 마감했습니다."
+        },
+        {
+          "title": "하나마이크론 주가, 10월 14일 애프터마켓 44600원 9.63% 하락",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPttV2zSyN-JLouOzgILzlOkjQC_x9NAdG7j8v3C5ZqMO6Q8rMdO5xQZjxPqXyjlxMaw62lFNKNddq2ZzF3b4T5rcmpT1amfXKvSSPXDE66_PCzZxsK8M6--QMKNoFdCokxeRMdH9ElKG5p9-GKfcJ7Lc-7mXCMjz9c3M=",
+          "description": "10월 14일 애프터마켓에서 하나마이크론 주가가 큰 폭으로 하락했습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:44:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "122640",
+      "name": "예스티",
+      "market": "KOSDAQ",
+      "current_price": 31050,
+      "change_rate": 9.91,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.75,
+        "supply_demand": 6.5,
+        "valuation": 4.67,
+        "material": 9.5,
+        "total": 6.36
+      },
+      "reason": "기술적으로 혼조세이나 최근 5일간 26% 이상 급등하며 단기 상승 모멘텀이 강합니다. 외국인 20일 누적 순매수가 긍정적이며 호가 잔량도 매수 우위를 보여 수급이 좋습니다. 밸류에이션은 PER과 PEG가 음수이지만 EPS 성장률과 영업이익률이 높아 성장성은 기대됩니다. 특히 유진투자증권의 목표가 상향과 3분기 실적 호조 전망 뉴스가 매우 긍정적입니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "증가",
+        "foreign_flow": "매수우위",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.64,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.9,
+        "key_news": [
+          "유진투자증권 목표가 57,000원 제시, HPA 매출 효과 시작 전망",
+          "3분기 영업이익 전년 대비 271% 증가 전망, 시장 기대치 상회"
+        ],
+        "catalyst": "HPA 장비 매출 본격화 및 3분기 실적 호조 전망으로 강한 상승 모멘텀 형성."
+      },
+      "news": [
+        {
+          "title": "[리포트 브리핑]예스티, 'HPA 효과 시작' 목표가 57,000원 - 유진투자증권",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvWmzAC7sdTJcM4VBOkjZIAE2QCCc1Wu6zQjdxGRG-CMyuXxPtPbh41ugJw8m9isN6DZ5_YQ9wC25iyE_6_brlS4qG2eP-8LDjeq1YbCipbNMLoLbZBGplJz9iEepd8ID7NLRN6x6aSJA=",
+          "description": "유진투자증권은 예스티에 대해 'HPA 효과 시작'이라며 투자의견 'BUY'와 목표가 57,000원을 제시했습니다."
+        },
+        {
+          "title": "예스티, 장중 3.55% 상승…리딩증권 “3분기 영업이익 기대치 상회 전망”",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFF_I2SFlxN5mW2c1_P9CIhQlDB2f5Bqx3yDMa54tN7hZtgoj6OjkC7i4LtiOKi3Rykfk1PxaFYwSVXrSUJfmAL0C-xLnML6CgRD9Lq-vIRIBdg6JQSeEv_yYHeCP-X8IiI1jCXOalLQ0p69Fq3HyCbGnjDPw==",
+          "description": "리딩투자증권은 예스티의 3분기 매출액과 영업이익이 시장 기대치를 웃돌 것으로 전망했습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:44:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "005935",
+      "name": "삼성전자우",
+      "market": "KOSPI",
+      "current_price": 169800,
+      "change_rate": 2.35,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.0,
+        "supply_demand": 6.33,
+        "valuation": 2.0,
+        "material": 6.0,
+        "total": 5.02
+      },
+      "reason": "기술적 분석상 혼조세 속에 단기 상승 전환 징후가 보입니다. 호가 잔량은 매수 우위를 나타내고 있으나, 외국인과 기관 모두 20일 누적 순매도 기조입니다. 밸류에이션은 PER과 EPS가 0으로 부정적입니다. 당일 주가는 상승하고 있으나, 고수익 투자자들의 매도 동향이 관찰되어 복합적인 수급 상황입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "중간",
+      "confidence": 0.5,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.2,
+        "key_news": [
+          "장 초반 5.06% 상승",
+          "고수익 투자자, 삼성전자우 매도 동향"
+        ],
+        "catalyst": "단기적인 가격 상승에도 불구하고 고수익 투자자들의 매도세가 관찰되어 복합적인 수급 상황."
+      },
+      "news": [
+        {
+          "title": "삼성전자우 주가, 10월 21일 장중 174300원 5.06% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtZPczNjTAbCN-a18RanlQ4gGmS7OY5qEdwSmYSZcY4e9P1OmFSnXXyAeJRb9oeX_bpLmTQGFK-ap1er9isj2JxVJCGa9M2ee_kH3E1cx2EY_he-2LKG1qBslE0_1kOAdQEarfk1yzM2becCzewwBxMlq45vukgHbymFM=",
+          "description": "10월 21일 장 초반 삼성전자우 주가가 5.06% 상승했습니다."
+        },
+        {
+          "title": "반도체 반등 올라탄 초고수…삼성전기 사고 삼전우 팔았다",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLOQzoovpu4y4fgEfuHirWzvd_IkodsSbwzOwmn2MgkDSxc1wabC8ipvhO-VbgOurX1-CdaIM414w65t8w2IjETsDvLtB2zN6ScxNp40XQ9sxARqg8o1bd1vsEUp5YrwCPLvzRjGHkdRI=",
+          "description": "미래에셋증권 고수익 투자자들이 10월 21일 장 초반 삼성전자우를 순매도 1위에 올렸습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:44:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "066970",
+      "name": "엘앤에프",
+      "market": "KOSPI",
+      "current_price": 99200,
+      "change_rate": 0.1,
+      "signal": "중립",
+      "scores": {
+        "technical": 3.75,
+        "supply_demand": 4.0,
+        "valuation": 3.33,
+        "material": 6.5,
+        "total": 4.17
+      },
+      "reason": "기술적으로 하락 추세가 이어지고 있으며 거래량도 저조합니다. 외국인과 기관 모두 20일 누적 순매도 기조로 수급이 좋지 않습니다. 밸류에이션은 PER과 ROE가 음수이고 부채비율이 매우 높아 부담스러운 수준입니다. 미국 내 ESS 시장에서 중국 업체 철수로 인한 국내 LFP 양극재 기업 수혜 기대감이 있으나, 높은 부채비율과 잠재적 희석 물량 부담이 존재합니다",
+      "key_factors": {
+        "price_trend": "하락",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.42,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.3,
+        "key_news": [
+          "미국 시장 내 중국 ESS 업체 철수, 국내 LFP 양극재 기업 수혜 기대",
+          "높은 부채비율 및 잠재적 희석 물량 부담 언급"
+        ],
+        "catalyst": "미국 내 ESS 시장 기회 확대는 긍정적이나, 높은 부채비율과 잠재적 희석 요인이 부담으로 작용."
+      },
+      "news": [
+        {
+          "title": "중국의 빈자리 메울 국내 ESS 업계의 호재, 그 중심의 엘앤에프",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMvkA8CMeYyshW8Eby6s3XP2AhEmxcwRLmL2fGnkDt2UcLMbcRXEW4OEinzLv8eObJzJIp61xcYESSmbpznZTuX8BhaMyPbx6PN5sI7XN2NwpvrWqcLVblk8kd27urfw-nW9RbNKc3yRHxyOtJpFkIdKSIwtWK3QCHrLM2fvjjRkO/",
+          "description": "미국의 중국산 소재 규제와 북미 ESS 수요 확대로 국산 LFP 양극재 공급망 재편 수혜가 기대되나, 높은 부채비율과 잠재적 희석 가능성이 존재합니다."
+        },
+        {
+          "title": "배터리주 들썩…\"中 ESS 업체 美서 철수\"",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlgVKMagG-2iWwTKkAM0o7fYklOzDvLO2KeoP5EucHTmxxL3RbMKHhbSiitq2-LZubMTzlqU5YEClZKmIwEcNPr901BexSZR3Baiw7ffl1r7x7oB3B11AEa_JMrfzbi3JZSSSk",
+          "description": "중국 ESS 업체가 미국 시장에서 철수하면서 국내 배터리 관련주에 긍정적인 영향을 미치고 있습니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:44:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "365660",
+      "name": "레몬헬스케어",
+      "market": "KOSDAQ",
+      "current_price": 3825,
+      "change_rate": 29.88,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.75,
+        "supply_demand": 5.25,
+        "valuation": 2.0,
+        "material": 8.0,
+        "total": 5.16
+      },
+      "reason": "기술적으로는 혼조세이나 높은 거래량과 52주 신고가 경신이 강한 단기 상승 모멘텀을 나타냅니다. 호가 잔량 데이터 부재로 수급 판단이 제한적입니다. 밸류에이션은 PER과 EPS가 음수로 매우 저조합니다. 최근 장 초반 주가 급등 소식이 긍정적이나, 전일 공모가 대비 70% 급락과 투자금 회수 난망 보도가 있어 높은 변동성과 잠재적 리스크를 내포하고 있습니다",
+      "key_factors": {
+        "price_trend": "상승",
+        "volume_signal": "급증",
+        "foreign_flow": "중립",
+        "institution_flow": "중립",
+        "valuation": "고평가"
+      },
+      "risk_level": "높음",
+      "confidence": 0.52,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.6,
+        "key_news": [
+          "주가 장 초반 25% 이상 급등, 52주 신고가 경신",
+          "공모가 대비 70% 하락, 한화자산운용 투자금 회수 난망 보도 (전일)"
+        ],
+        "catalyst": "최근 단기 급등세 및 52주 신고가 경신, 하지만 과거 공모가 대비 급락 이력과 투자금 회수 난항 보도가 잠재적 리스크."
+      },
+      "news": [
+        {
+          "title": "레몬헬스케어 주가, 우렁찬 함성... 최근 흐름은?",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8YtPRuG5WeRDG7ObexISVWmTz-s3XAK_YlMjfWiZVfQZxHOJvTWi0uY2D1nf92olIB3ATT6fqMjszmdHh2g_Ud5xlCmaW_2sdu39W1tMVFFpeSFxn3xMMIuzROaFvvJuM8t0rn4i5CtYGidyqAIJEsZDhiuM=",
+          "description": "10월 21일 레몬헬스케어 주가가 장 초반 25% 넘게 급등하며 강세를 보였습니다."
+        },
+        {
+          "title": "주가 70% 빠진 레몬헬스케어, 한화자산운용 투자금 회수 난망",
+          "link": "https://vertexaisearch.google.com/grounding-api-redirect/AUZIYQF2g56gpCXdTFGCn0dIkiJsquHrZPZZb2W4O246iFEuLyV8zEMpW0bWbzPJrPhFtjNYXsUzBQGIT9E1pI_9FjKhEFEs9MOvR0QC7RN8bOFV92oiFkWsMGmCyexSsjH3pw==",
+          "description": "7월 초 상장한 레몬헬스케어 주가가 공모가 대비 69.8% 급락하여 한화자산운용의 투자금 회수가 장기화될 것으로 전망됩니다."
+        }
+      ],
+      "analysis_time": "2026-10-21 04:44:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "market": "KOSPI",
+      "current_price": 179500,
+      "change_rate": 0.84,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.5,
+        "supply_demand": 4.67,
+        "valuation": 5.8,
+        "material": 6.5,
+        "total": 5.42
+      },
+      "reason": "NAVER는 혼조세인 이동평균 추세와 52주 고점 대비 중간 위치, 낮은 거래량에도 불구하고 RSI-14 지표가 과매도 구간에서 반등을 시사하고 있습니다. 외국인과 기관의 20일 누적 순매도세가 지속되고 있어 수급 측면의 불확실성이 존재하지만, 오늘 장중 주가 상승 흐름이 관찰되어 단기적인 긍정적 모멘텀이 확인됩니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매도우위",
+        "valuation": "적정"
+      },
+      "risk_level": "중간",
+      "confidence": 0.54,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.3,
+        "key_news": [
+          "NAVER 주가 10월 21일 장중 상승 흐름",
+          "전일 장중 약세 흐름 보였으나 뚜렷한 악재는 없어"
+        ],
+        "catalyst": "특정 악재 없이 시장 흐름에 연동되었던 전일 약세 이후, 금일 장중 주가 회복세를 보이며 단기적인 긍정적 흐름이 예상됩니다."
+      },
+      "news": [
+        {
+          "title": "NAVER 주가, 10월 21일 장중 179400원 0.79% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwZc_fvyrrDwxJDQXCfX7KAqsArT02h_MpXwIYjD56_PXSP8qpqhH6FW77KMDi2hzDlstfzNytokGu1CY0TOaQO_mIN3xNfeUFdUvkMSTCiVH-uOe_74uN2Cu_GWU9NtQvq_-GXUoMsgurj85RNYdzzNJ4R5tIoaruAw==",
+          "description": "21일 오전 10시 31분 기준, 네이버페이 증권에 따르면 NAVER는 현재 179400원에 거래되고 있으며, 지난 종가 대비 1400원, 즉 0.79% 상승한 흐름을 보이고 있다."
+        },
+        {
+          "title": "NAVER 주가, 10월 21일 장중 180300원 1.29% 상승",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXSGCEY2NA-TBsFwCzJMLKDablIRtOUR1z2MG3-hFJBsrUpX8R25qJM0thkYgEys_zPDT5XNwj_DQGEtjkEin9KcusJKUuvbzuJ2MfqpTj8ve_HwdMNySLLp3X6Qv2K-rgVLH_iHafKoqpdzICDpeBc0MrxqddySNrXA==",
+          "description": "21일 오전 11시 18분 기준, NAVER는 10월 21일 장중 180,300원을 기록하며 지난 종가 대비 2,300원 상승, 1.29%의 등락률을 보이고 있다."
+        },
+        {
+          "title": "NAVER 주가 상승 중",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHP980SePLa1gyt7hIltzMBOb3kFLrXYC_rbeuz5Zut1CyCnJqNh5yODJ3pM5MyjCnP2yHEFdhKGvQr7B6a80f6snGeVZygc5jP7KMhuIrX5wo97wO8kUJsYIGfkZ8SA6CBzw0O0U7k7OcH4t0rVjL0Dz6-LQvf6QgKgHvM",
+          "description": "NAVER 주가 21일 9시 00분 기준으로 1.23% 상승 중 이다. 시가는 180,000원이다."
+        },
+        {
+          "title": "[특징주] NAVER, 장중 약세 흐름… 17만8900원선 기록",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQ0wYmxAT1vc6GvdEYycbNFieTw2bAM53Ty8pBnx9yfrJW5oXLH4yzC1E3kTpYv9_H7FYR1QTk4aCyiNPZH8w560RTUSZ1IiE6mBcS4aDeQlqgLL8LibppM6Wh3_s=",
+          "description": "유가증권시장의 대표 플랫폼 기업 NAVER가 장중 2% 넘게 하락하고 있다. 현재 NAVER는 전 거래일 대비 4,000원(2.19%) 내린 178,900원에 거래 중이다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:48:00",
+      "data_source": "KIS_API"
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "market": "KOSPI",
+      "current_price": 162400,
+      "change_rate": 0.93,
+      "signal": "중립",
+      "scores": {
+        "technical": 5.0,
+        "supply_demand": 6.5,
+        "valuation": 4.0,
+        "material": 9.0,
+        "total": 5.93
+      },
+      "reason": "KB금융은 현재 혼조세의 기술적 추세와 52주 고점 대비 중간 위치에 있으며, 낮은 거래량을 보입니다. 20일 누적 기관 순매수가 긍정적이고 호가 잔량비가 매수 우위를 보여 수급이 양호합니다. 주주환원 확대 전망과 함께 IBK투자증권의 신규 매수 의견 및 목표가 상향 리포트가 발표되어 재료 측면에서 매우 긍정적입니다",
+      "key_factors": {
+        "price_trend": "횡보",
+        "volume_signal": "감소",
+        "foreign_flow": "매도우위",
+        "institution_flow": "매수우위",
+        "valuation": "적정"
+      },
+      "risk_level": "높음",
+      "confidence": 0.59,
+      "news_analysis": {
+        "sentiment": "긍정",
+        "sentiment_score": 0.8,
+        "key_news": [
+          "IBK투자증권, KB금융 목표가 206,000원으로 매수 리포트 발행",
+          "추가 주주환원 동력 확보 및 자본 여력 확보",
+          "다각화된 수익 포트폴리오 매력 부각"
+        ],
+        "catalyst": "견고한 자본 여력을 바탕으로 한 추가 주주환원 확대 가능성과 다각화된 수익 포트폴리오에 대한 긍정적 증권사 리포트가 핵심 재료입니다."
+      },
+      "news": [
+        {
+          "title": "[리포트 브리핑]KB금융, '추가 주주환원 동력확보' 목표가 206,000원 - IBK투자증권",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8Jhr2ZIDnncC9cLlrd4DaEniRds9FU5jXWEmczNwsY0uIR47Yn-7s5-tAyliVyscOq1-FHTHr5_ugHsT9MwZqTqsXZXyw250yAHD5NuCvClVTg4hfalbwUwZ2EdTUJPkMTymePJFNww==",
+          "description": "IBK투자증권에서 21일 KB금융(105560)에 대해 '추가 주주환원 동력확보'라며 투자의견 '매수(신규)'의 신규 리포트를 발행하였고, 목표가 206,000원을 내놓았다."
+        },
+        {
+          "title": "KB금융, 다각화된 수익 포트폴리오와 추가 주주환원",
+          "link": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdWJpZpIevSntu2woNB450BX0qFSdj7Oolj3K_5Ihdyh9CdiLzWszgJcqMFqPuvQDv2h3FrEkedaBkwRbSc0jAyA3nI5iWPYeNEUTisGbGlIXN1Qa-irwoQMFjnEJZXG0yfwzDLteKkeC8nWmMS9L7aZDiDed-",
+          "description": "KB금융이 증권 자회사의 수수료 이익 감소 여파로 3분기 순이익이 시장 컨센서스를 소폭 하회할 전망이다."
+        }
+      ],
+      "analysis_time": "2026-10-21 13:48:00",
+      "data_source": "KIS_API"
+    }
+  ]
+}
