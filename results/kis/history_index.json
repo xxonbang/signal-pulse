@@ -1,8 +1,15 @@
 {
-  "updated_at": "2026-11-27 09:45:02",
+  "updated_at": "2026-11-27 13:15:14",
   "retention_days": 30,
-  "total_records": 644,
+  "total_records": 645,
   "history": [
+    {
+      "date": "2026-11-27",
+      "time": "1315",
+      "filename": "kis_2026-11-27_1315.json",
+      "total_stocks": 0,
+      "signals": {}
+    },
     {
       "date": "2026-11-27",
       "time": "0944",
